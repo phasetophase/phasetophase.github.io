@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://www.phasetophase.nl/boek/boek_2_7.html -->
+<html lang="en" class="wf-ffscalasansweb-n7-active wf-ffscalasansweb-n4-active wf-ffscalasansweb-i4-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Phase to Phase – Netten voor distributie van elektriciteit</title>
+    <!-- Bootstrap -->	
+<link href="./rekentechnische basis_files/bootstrap-2-boek.css" rel="stylesheet">
+<style type="text/css">
+	body,td,th {
+	font-family: ff-scala-sans-web, sans-serif;
+}
+body {
+	background-color: #F7F7F7;
+}
+    </style>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+<script src="./rekentechnische basis_files/qke6lfb.js.download"></script>
+<style type="text/css">.tk-ff-scala-sans-web{font-family:"ff-scala-sans-web",sans-serif;}</style><style type="text/css">@font-face{font-family:tk-ff-scala-sans-web-n7;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-n4;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-i4;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style><script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script src="./rekentechnische basis_files/jquery-1.11.3.min.js.download"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./rekentechnische basis_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H8Q9E8BJ7Q');
+</script>
+<script>
+$(function(){
+  $("#includedHeader").load("/boek/header.html");
+  $("#includeFooter").load("/boek/footer.html"); 
+});
+</script><style type="text/css">@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style>	  
+</head>
+<body style="padding-top: 50px">
+
+<div id="includedHeader"> <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topFixedNavbar1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="https://www.phasetophase.nl/">Phase to Phase</a></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="topFixedNavbar1">
+      <ul class="nav navbar-nav">
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+	<p></p>
+	
+    </div>
+    </div>
+  </div>
+
+<div class="container-fluid-boek">
+  <div class="container">
+
+<div class="row-in-header">
+	<div class="text-justify col-xs-6 col-sm-6">
+    <img class="hidden-xs" src="./rekentechnische basis_files/logo-s-360px-wit.png" alt="Phase to Phase logo 360px" width="366">
+	<img class="visible-xs" src="./rekentechnische basis_files/logo-s-360px-wit.png" alt="Phase to Phase logo 261px" width="261"> 
+	</div>
+		<div class="col-xs-6 hidden-xs col-sm-6">
+	</div>
+</div>
+
+<div class="row-in-header">
+	<div class="text-left col-xs-9 col-sm-9">        <p></p><h8>ICT voor elektriciteitsnetten</h8>
+</div>
+	<div class="col-xs-3 col-sm-3">
+	</div>
+</div>
+
+<div class="row-in-header-2">
+	<div class="text-justify col-xs-6 col-sm-6">&nbsp;
+	</div>
+	<div class="col-xs-6 hidden-xs col-sm-6">
+	  <h7>&nbsp;</h7>
+	</div>
+</div>
+
+</div>
+</div>
+
+<div class="container">
+
+<div class="row-intro">
+<h1><a href="https://www.phasetophase.nl/boek/index.html"> Netten voor distributie van elektriciteit</a></h1>
+</div></div></div>
+
+  <div class="row-ohm-center-white"> <a name="top"></a>
+    <div class="row-b">
+		  <a href="https://www.phasetophase.nl/boek/index.html"><button type="button" class="btn btn-default">I – De opbouw van een net</button></a>
+		  <a href="https://www.phasetophase.nl/boek/boek_2_7.html"><button type="button" class="btn  btn-default active">II – Rekenen aan een net</button></a>
+		  <a href="https://www.phasetophase.nl/boek/boek_3_13.html"><button type="button" class="btn  btn-default">III – Ontwerpen en bedrijfsvoeren</button></a>
+	</div>
+    <div class="row-b">
+<a href="https://www.phasetophase.nl/boek/boek_2_7.html">
+      <button type="button" class="btn btn-default1 active">7 Rekentechnische basis</button>
+      </a> <a href="https://www.phasetophase.nl/boek/boek_2_8.html">
+      <button type="button" class="btn btn-default1">8 Modellen</button>
+      </a> <a href="https://www.phasetophase.nl/boek/boek_2_9.html">
+      <button type="button" class="btn btn-default1">9 Loadflowberekeningen</button>
+      </a> <a href="https://www.phasetophase.nl/boek/boek_2_10.html">
+      <button type="button" class="btn btn-default1">10 Kortsluitstroomberekeningen</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_2_11.html">
+      <button type="button" class="btn btn-default1">11 Power Quality</button>
+      </a> <a href="https://www.phasetophase.nl/boek/boek_2_12.html">
+      <button type="button" class="btn btn-default1">12 Betrouwbaarheid</button>
+      </a>
+    <div class="row">
+      <div class="col-md-12 col-lg-10">
+        <h3>Rekentechnische basis </h3>
+        <p>Deel 2 begint in hoofdstuk 7 met een korte uiteenzetting van enkele belangrijke basisbegrippen die nodig zijn voor het rekenen aan elektriciteitsnetten. De basis wordt gelegd met de beschrijving van het wisselspanningsysteem en de toepassing van de complexe rekenwijze. Vervolgens wordt de voor het doen van kortsluitberekeningen zo belangrijke symmetrische componentenmethode toegelicht. </p>
+        <div class="row">
+          <div class="col-md-6">
+            <ul style="list-style-type:none">
+              <li><a href="https://www.phasetophase.nl/boek/boek_2_7.html#_7"><strong>7&nbsp;&nbsp;Rekentechnische basis</strong></a></li>
+              <li><a href="https://www.phasetophase.nl/boek/boek_2_7.html#_7">7.1&nbsp;&nbsp;Tekenafspraken belasting en opwekking </a></li>
+              <li><a href="https://www.phasetophase.nl/boek/boek_2_7.html#_7.2">7.2&nbsp;&nbsp;Het wisselspanningsysteem </a></li>
+              <li><a href="https://www.phasetophase.nl/boek/boek_2_7.html#_7.3">7.3&nbsp;&nbsp;Fasor-notatie in het complexe vlak </a></li>
+              <li><a href="https://www.phasetophase.nl/boek/boek_2_7.html#_7.4">7.4&nbsp;&nbsp;Driefasen wisselstroomsysteem </a></li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul style="list-style-type:none">
+              <li><a href="https://www.phasetophase.nl/boek/boek_2_7.html#_7.5">7.5&nbsp;&nbsp;Methode symmetrische componenten </a></li>
+              <ul style="list-style-type:none">
+                <li><a href="https://www.phasetophase.nl/boek/boek_2_7.html#_7.5.1">7.5.1&nbsp;&nbsp;Een nieuwe fasor-notatie </a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_2_7.html#_7.5.2">7.5.2&nbsp;&nbsp;Splitsing in drie spanningsstelsels </a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_2_7.html#_7.5.3">7.5.3&nbsp;&nbsp;Wiskundige decompositie </a></li>
+              </ul>
+              <li><a href="https://www.phasetophase.nl/boek/boek_2_7.html#_7.6">7.6&nbsp;&nbsp;Asymmetrisch stroomstelsel en homopolaire impedantie </a></li>
+              <li><a href="https://www.phasetophase.nl/boek/boek_2_7.html#_7.7">7.7&nbsp;&nbsp;Rekenen met behulp van genormeerde grootheden </a></li>
+            </ul>
+          </div>
+        </div>
+		
+        <hr>
+		  <h1> 7 Rekentechnische basis </h1>
+        <div id="_7.1"></div>
+        <h2>7.1 Tekenafspraken belasting en opwekking</h2>
+        <p> Bij de netberekeningen wordt veel gewerkt met vervangingsschema’s voor belastingen en elektrische machines. Een elektrische machine kan zowel een motor als
+          een generator zijn. Een motor neemt elektrische energie uit het net op en een generator levert elektrische energie. Voor de duidelijkheid wordt eerst
+          afgesproken welke richting voor stroom, spanning en vermogen positief of negatief is. Hiervoor kan worden gekozen uit de motorconventie en de
+          generatorconventie. Figuur 7.1 illustreert dit voor een belasting of motor en een generator die aangesloten zijn op een netwerk. Kenmerkend voor de
+          tekenafspraak is: </p>
+        <ul>
+          <li>motorconventie: het aangesloten apparaat neemt actief vermogen (P, wattvermogen) uit het net op </li>
+          <li>generatorconventie: het aangesloten apparaat levert actief vermogen (P, wattvermogen) aan het net. </li>
+        </ul>
+        <p> <img src="./rekentechnische basis_files/7.1.png" width="714" height="280" alt="pics_2.7" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 7.1 Tekenafspraken voor motorconventie (links) en generatorconventie (rechts) </h5>
+        <p> Indien het aangesloten apparaat een zuivere weerstand is, vloeit in de motorconventie de stroom van het netwerk naar het apparaat en is het teken positief.
+          Ook het opgenomen vermogen is positief. In de generatorconventie is het teken van de stroom negatief. Het aan het netwerk afgegeven vermogen is dan ook
+          negatief. </p>
+        <p> Spanning en stroom kunnen in het complexe vlak als wijzers worden afgebeeld. Ook de impedanties van de componenten kunnen in datzelfde vlak worden
+          afgebeeld. De impedantie van een zuivere weerstand wordt dan gerepresenteerd met een vector op de positieve reële as. De impedantie van een zuivere spoel
+          zonder weerstand wordt afgebeeld met een vector langs de positieve imaginaire as. De impedantie van een zuivere condensator wordt afgebeeld met een vector
+          langs de negatieve imaginaire as. Alle fysieke componenten hebben een positieve weerstand en een positieve of negatieve reactantie. Als gevolg worden hun
+          impedanties afgebeeld in de kwadranten <em>I</em> en <em>IV</em> in het rechtervlak van figuur 7.2. Een belasting in kwadrant <em>I</em> wordt inductief genoemd en een belasting in
+          kwadrant <em>IV</em> capacitief. </p>
+        <p> <img src="./rekentechnische basis_files/7.2.png" width="411" height="290" alt="pics_2.7" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 7.2 Tekenafspraken voor de motorconventie </h5>
+        <p> Een generator wordt meestal niet met een impedantie gemodelleerd. In hetzelfde vlak worden daarom ook actief vermogen en reactief vermogen (blindvermogen)
+          afgebeeld. In het complexe vlak wordt daarbij gebruik gemaakt van de vier kwadranten. De eigenschappen voor de motor- en generatorconventie zijn samengevat
+          in tabel 7.1. </p>
+        <h5> Tabel 7.1 Tekenafspraken </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="57" rowspan="2" valign="top"><p> <strong>Kwadrant</strong> </p></td>
+              <td width="142" colspan="2" valign="top"><p> <strong>Motorconventie</strong> </p></td>
+              <td width="142" colspan="2" valign="top"><p> <strong>Generatorconventie</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="142" valign="top"><p> <strong>P</strong> </p></td>
+              <td width="142" valign="top"><p> <strong>Q</strong> </p></td>
+              <td width="142" valign="top"><p> <strong>P</strong> </p></td>
+              <td width="142" valign="top"><p> <strong>Q</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="57" valign="top"><p> <strong>I</strong> </p></td>
+              <td width="142" valign="top"><p> &gt; 0 </p>
+                <p> (verbruik,  motor) </p></td>
+              <td width="142" valign="top"><p> &gt; 0 </p>
+                <p> (verbruik,  spoel) </p></td>
+              <td width="142" valign="top"><p> &gt; 0 </p>
+                <p> (opwekking, generator) </p></td>
+              <td width="142" valign="top"><p> &gt; 0 </p>
+                <p> (opwekking, condensator) </p></td>
+            </tr>
+            <tr>
+              <td width="57" valign="top"><p> <strong>II</strong> </p></td>
+              <td width="142" valign="top"><p> &lt; 0 </p>
+                <p> (opwekking, generator) </p></td>
+              <td width="142" valign="top"><p> &gt; 0 </p>
+                <p> (verbruik,  spoel) </p></td>
+              <td width="142" valign="top"><p> &lt; 0 </p>
+                <p> (verbruik, motor) </p></td>
+              <td width="142" valign="top"><p> &gt; 0 </p>
+                <p> (opwekking, condensator) </p></td>
+            </tr>
+            <tr>
+              <td width="57" valign="top"><p> <strong>III</strong> </p></td>
+              <td width="142" valign="top"><p> &lt; 0 </p>
+                <p> (opwekking, generator) </p></td>
+              <td width="142" valign="top"><p> &lt; 0 </p>
+                <p> (opwekking, condensator) </p></td>
+              <td width="142" valign="top"><p> &lt; 0 </p>
+                <p> (verbruik, motor) </p></td>
+              <td width="142" valign="top"><p> &lt; 0 </p>
+                <p> (verbruik, spoel) </p></td>
+            </tr>
+            <tr>
+              <td width="57" valign="top"><p> <strong>IV</strong> </p></td>
+              <td width="142" valign="top"><p> &gt; 0 </p>
+                <p> (verbruik, motor) </p></td>
+              <td width="142" valign="top"><p> &lt; 0 </p>
+                <p> (opwekking, condensator) </p></td>
+              <td width="142" valign="top"><p> &gt; 0 </p>
+                <p> (opwekking, generator) </p></td>
+              <td width="142" valign="top"><p> &lt; 0 </p>
+                <p> (verbruik, spoel) </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Het is voor de eenduidigheid in de netberekeningen belangrijk om eenmalig te kiezen voor motor- of generatorconventie. </p>
+        <p> Ter verduidelijking van de samenhang wordt het volgende voorbeeld gegeven. Het actieve vermogen en het blindvermogen dat in de motorconventie in kwadrant <em>III</em> door een synchrone generator is opgewekt, wordt door een motor in kwadrant <em>I</em> verbruikt. </p>
+        <p> Een synchrone machine kan zowel als motor of als generator werken en kan daarbij blindvermogen opnemen en leveren. Deze machine is daarmee in staat om in
+          alle kwadranten te werken. Maar het blijft belangrijk om ook in dit geval voor elk werkpunt eenmalig te kiezen voor hetzij de motorconventie dan wel de
+          generatorconventie. </p>
+        <p> Ook een asynchrone machine kan zowel als motor of als generator werken maar kan daarbij alleen blindvermogen opnemen. In de motorconventie kan de
+          asynchrone machine dan werken in de kwadranten <em>I</em> en <em>II</em>. </p>
+        <h5>Tabel 7.2 Samenvatting richtingen en tekens van vermogens </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="55" valign="top"><p><strong> Vermogen </strong></p></td>
+              <td width="78" valign="top"><p><strong> Motor-conventie </strong></p></td>
+              <td width="92" valign="top"><p><strong> Generator-conventie </strong></p></td>
+              <td width="64" valign="top"><p><strong> Stroom en lasthoek </strong></p></td>
+              <td width="78" valign="top"><p><strong>Diagram </strong></p></td>
+            </tr>
+            <tr>
+              <td width="55" valign="top"><p> <strong>P positief</strong> </p></td>
+              <td width="78" valign="top"><p> actief vermogen opnemen </p></td>
+              <td width="92" valign="top"><p> actief vermogen leveren </p></td>
+              <td width="64" valign="top"></td>
+              <td width="78" valign="top"></td>
+            </tr>
+            <tr>
+              <td width="55" valign="top"><p> <strong>P negatief</strong> </p></td>
+              <td width="78" valign="top"><p> actief vermogen leveren </p></td>
+              <td width="92" valign="top"><p> actief vermogen opnemen </p></td>
+              <td width="64" valign="top"></td>
+              <td width="78" valign="top"></td>
+            </tr>
+            <tr>
+              <td width="55" valign="top"><p> <strong>Q positief</strong> </p></td>
+              <td width="78" valign="top"><p> blindvermogen opnemen </p>
+                <p> (inductieve belasting) </p></td>
+              <td width="92" valign="top"><p> blindvermogen leveren </p>
+                <p> (overbekrachtigde generator) </p></td>
+              <td width="64" valign="top"><p> naijlende stroom </p>
+                <p> hoek φ positief </p></td>
+              <td width="78" valign="top"><table cellpadding="0" cellspacing="0" width="100%">
+                </table>
+                <table cellpadding="0" cellspacing="0" width="100%">
+                </table>
+                <img src="./rekentechnische basis_files/7.2-tabel-a.png" alt="formules_2.7"><table cellpadding="0" cellspacing="0" width="100%">
+                  
+                </table></td>
+            </tr>
+            <tr>
+              <td width="55" valign="top"><p> <strong>Q negatief</strong> </p></td>
+              <td width="78" valign="top"><p> blindvermogen leveren </p>
+                <p> (capacitieve belasting) </p></td>
+              <td width="92" valign="top"><p> blindvermogen opnemen </p>
+                <p> (onderbekrachtigde generator) </p></td>
+              <td width="64" valign="top"><p> voorijlende stroom </p>
+                <p> hoek φ negatief </p></td>
+              <td width="78" valign="top"><img src="./rekentechnische basis_files/7.2-tabel-b.png" alt="formules_2.7"><table cellpadding="0" cellspacing="0" width="100%">
+                  
+                </table>
+                <table cellpadding="0" cellspacing="0" width="100%">
+                  <tbody>
+                    <tr>
+                      <td>&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table cellpadding="0" cellspacing="0" width="100%">
+                  <tbody>
+                    <tr>
+                      <td>&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <a href="https://www.phasetophase.nl/boek/boek_2_7.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_7.2"></div>
+        <br>
+        <h2>7.2 Het wisselspanningsysteem</h2>
+        <p> De wisselspanning kan in principe een willekeurige vorm hebben die zich elke periode herhaalt. De periode dat de vorm zich herhaalt bepaalt de frequentie
+          f, die gelijk is aan het omgekeerde van de periodeduur. Door deze eigenschap kan de wisselspanning worden beschreven met een functie van de tijd. Het
+          resultaat van deze functie is de momentane waarde van de spanning. In bijna alle elektriciteitssystemen is de wisselspanning sinusvormig. Het is
+          gebruikelijk deze wisselspanning te beschrijven met onderstaande cosinusfunctie: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="318" valign="top"><img src="./rekentechnische basis_files/formule-7.1.png" alt="formules_2.7"></td>
+              <td width="2%" valign="bottom"><p align="left"> [ </p></td>
+              <td width="6%" valign="bottom"><p align="center"> 7.1 </p></td>
+              <td width="2%" valign="bottom"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <p> waarin: </p>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td width="100"><em>û = √2·U<sub>eff</sub></em></td>
+              <td>topwaarde van de spanning</td>
+            </tr>
+            <tr>
+              <td><em>ω = 2πf</em></td>
+              <td>nethoekfrequentie (rad/s)</td>
+            </tr>
+            <tr>
+              <td><em>ψ<sub>u</sub></em></td>
+              <td>spanningfasehoek (rad)</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+		  <p> De frequentie wordt uitgedrukt in de hoekfrequentie, in radialen per seconde. De fasehoek wordt uitgedrukt in radialen, door de hoek in graden te vermenigvuldigen met <em>2π/360</em>.</p>
+        <p> <img src="./rekentechnische basis_files/7.3.png" width="709" height="349" alt="pics_2.7" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 7.3 Spanning als functie van de tijd voor f = 50 Hz en ψ = 20·(2π/360) rad </h5>
+        <p> De functie van formule 7.1 beschrijft de wisselende waarde van de spanning als cosinusfunctie van de tijd. In figuur 7.3 is deze functie getekend, waarbij
+          de fase als voorbeeld 20 graden verschoven is. </p>
+        <p> Ook de stroom is wiskundig op vergelijkbare wijze te beschrijven. De stroom heeft veelal een andere fasehoek en een andere grootte dan de spanning. Dit
+          wordt veroorzaakt door de eigenschappen van de componenten in het netwerk en de wet van Ohm. De hoek van de stroom wordt uitgedrukt met behulp van de
+          stroomfasehoek <em>ψ<sub>i</sub></em>. De momentane waarde van de stroom is dan: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./rekentechnische basis_files/formule-7.2.png" alt="formules_2.7"></td>
+              <td width="2%" valign="top"><p align="left"> [ </p></td>
+              <td width="6%" valign="top"><p align="center"> 7.2 </p></td>
+              <td width="2%" valign="top"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> waarin: </p>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td width="100"><em>î = √2·I<sub>eff</sub></em></td>
+              <td>topwaarde van de stroom</td>
+            </tr>
+            <tr>
+              <td><em>ω = 2πf</em></td>
+              <td>nethoekfrequentie</td>
+            </tr>
+            <tr>
+              <td><em>ψ<sub>i</sub></em></td>
+              <td>stroomfasehoek</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Het hoekverschil tussen stroom en spanning is: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./rekentechnische basis_files/formule-7.3.png" alt="formules_2.7"></td>
+              <td width="2%" valign="bottom"><p align="left"> [ </p></td>
+              <td width="6%" valign="bottom"><p align="center"> 7.3 </p></td>
+              <td width="2%" valign="bottom"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Hierdoor kan de stroomfasehoek ook geschreven worden als: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./rekentechnische basis_files/formule-7.4.png" alt="formules_2.7"></td>
+              <td width="2%" valign="bottom"><p align="left"> [ </p></td>
+              <td width="6%" valign="bottom"><p align="center"> 7.4 </p></td>
+              <td width="2%" valign="bottom"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> waardoor vergelijking 7.2 over gaat in: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./rekentechnische basis_files/formule-7.5.png" alt="formules_2.7"></td>
+              <td width="2%" valign="bottom"><p align="left"> [ </p></td>
+              <td width="6%" valign="bottom"><p align="center"> 7.5 </p></td>
+              <td width="2%" valign="bottom"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Uit de functies van de momentane waarde van stroom en spanning kan de functie voor de momentane waarde van het vermogen worden afgeleid door het product te
+          nemen van de momentane spanning en stroom. </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.6.png" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.6 </p></td>
+              <td width="44"><p align="left"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Door gebruik te maken van de algemene goniometrische relaties volgt uit vergelijking 7.6: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.7.png" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.7 </p></td>
+              <td width="44"><p align="left"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Deze vergelijking kan worden opgesplitst in twee delen. Hierin valt op dat in het eerste deel de bekende cos(φ) voorkomt, die ook wel aangeduid wordt als
+          ‘arbeidsfactor‘. Het eerste deel van de vergelijking is tijdsonafhankelijk en wordt het gemiddelde vermogen genoemd. Het tweede deel van de vergelijking is
+          tijdsafhankelijk en wisselt met de dubbele frequentie. </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.8.png" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.8 </p></td>
+              <td width="44"><p align="left"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Bij beschouwing van het vermogen door een zuivere weerstand is stroom zuiver resistief en is het hoekverschil tussen stroom en spanning <em>φ = 0 rad</em>. In dat
+          geval vereenvoudigt formule 7.7 in: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.9.png" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.9 </p></td>
+              <td width="44"><p align="left"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Figuur 7.4 illustreert dit. Hier is duidelijk te zien dat het momentane vermogen steeds positief is en met de dubbele frequentie wisselt om het gemiddelde
+          vermogen (P gemiddeld) van ongeveer 0,4 pu. Het gemiddelde vermogen is het vermogen waarmee arbeid wordt verricht. </p>
+        <p> <img src="./rekentechnische basis_files/7.4.png" width="716" height="352" alt="pics_2.7" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 7.4 Momentane waarden van spanning, stroom en vermogen </h5>
+        <p> Het volgende voorbeeld gaat uit van een impedantie, waarbij de stroom 45 graden na-ijlt op de spanning. Volgens tabel 7.2 is dit een inductieve belasting.
+          In geval van een 45 graden na-ijlende stroom is <em>φ = 45·(2π/360) rad</em> en ontstaat figuur 7.5. In deze figuur valt op dat het momentane vermogen nu niet meer
+          altijd positief is. Het gemiddelde vermogen, waarmee arbeid wordt verricht, is in dat geval ook kleiner geworden (ongeveer 0,3 pu), doordat cos(φ) nu
+          gelijk is aan 0,7. </p>
+        <p> <img src="./rekentechnische basis_files/7.5.png" width="715" height="357" alt="pics_2.7" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 7.5 Momentane waarden van spanning, 45 graden naijlende stroom en vermogen </h5>
+        <p> In geval van een zuiver inductieve belasting ontstaat een 90 graden na-ijlende stroom met<em> φ = 90·(2π/360) rad</em> en ontstaat figuur 7.6. In deze figuur valt
+          op dat het momentane vermogen even vaak positief als negatief is. Het gemiddelde vermogen, waarmee arbeid wordt verricht, is in dat geval gelijk aan nul
+          geworden, doordat cos(φ) nu gelijk is aan 0. Dat betekent dat in dit geval geen actief vermogen wordt getransporteerd. Dat klopt, want dit is een
+          eigenschap van een ideale spoel. </p>
+        <p> <img src="./rekentechnische basis_files/7.6.png" width="715" height="357" alt="pics_2.7" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 7.6 Momentane waarden van spanning, 90 graden na-ijlende stroom (zuiver inductief) en vermogen </h5>
+        <p> Het gemiddelde vermogen <em>P<sub>gemiddeld </sub></em>, waarmee arbeid wordt verricht, is gelijk aan het bekende actieve vermogen P, uitgedrukt in Watt (W). </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.10.png" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.10 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Het product van de effectieve waarde van spanning en stroom wordt het schijnbare vermogen <em>S</em> genoemd, uitgedrukt in Volt-Ampère (VA). Dit is een zeer
+          belangrijke waarde, omdat alle installaties op basis van het schijnbare vermogen worden ontworpen. Deze ontwerpparameter wordt op de naamplaat van onder
+          andere transformatoren vermeld. </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.11.png" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.11 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Hiermee kan het blindvermogen <em>Q</em>, het vermogensaandeel waarmee geen arbeid kan worden verricht, worden uitgerekend. Het wordt uitgedrukt in var. </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.12.png" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.12 </p></td>
+              <td width="6%"><p align="center"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <a href="https://www.phasetophase.nl/boek/boek_2_7.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_7.3"></div>
+        <br>
+        <h2>7.3 Fasor-notatie in het complexe vlak</h2>
+        <p> Behalve met een wisselende cosinusfunctie kan de spanning ook worden weergegeven met een ronddraaiende wijzer in het complexe vlak. De wijzer draait met
+          dezelfde snelheid rond als de rotor van een generator, die uit twee magneetpolen is opgebouwd. De snelheid wordt uitgedrukt in de hoekfrequentie ω en is
+          als zodanig terug te vinden in de vergelijkingen 7.1 en 7.2. Figuur 7.7 illustreert dit. </p>
+        <p> <img src="./rekentechnische basis_files/7.7.png" width="663" height="217" alt="pics_2.7" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 7.7 Vergelijking ronddraaiende generatorrotor en spanningswijzer in het complexe vlak </h5>
+        <p> De ronddraaiende wijzer wordt beschreven door de cosinus-tijdfunctie van vergelijking 7.1 uit te breiden met een imaginair deel, waarmee de functie van de
+          complexe momentane waarde ontstaat. Deze uitgebreide vergelijking beschrijft de positie van de pijlpunt van de wijzer van figuur 7.7 in het complexe vlak
+          als functie van de tijd. De functie kan worden beschreven met cosinus- en sinustermen, maar ook met een complexe e-macht. </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.13.png" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.13 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> De stroom wordt in het complexe vlak beschreven met onderstaande formule: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.14.png" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.14 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Door gebruik te maken van vergelijking 7.4, kan de complexe stroomfunctie van vergelijking 7.14 ook als volgt geschreven worden: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.15.png" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.15 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> De uitgebreide complexe vergelijkingen voor spanning (7.13) en stroom (7.15) zijn de basis voor het complexe rekenen met stromen, spanningen en vermogens.
+          In de elektrische energietechniek wordt veelvuldig gebruik gemaakt van wijzers in het complexe vlak. Daarbij wordt steeds gerekend met de effectieve
+          waarden en wordt de tijdsafhankelijkheid weggelaten. De relatie tussen de effectieve waarde en de topwaarde is een factor <em>√2</em>. De tijdsafhankelijkheid is in
+          de complexe e-macht notatie vertegenwoordigd door de term <em>e<sup>jωt</sup></em>. Als vergelijking 7.13 wordt gedeeld door <em>√2</em> en door <em>e<sup>jωt</sup></em>, gaat deze over in de tijdsonafhankelijke fasor: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.16.png" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.16 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Deze fasor is een wijzer in het complexe vlak, waarvan de lengte gelijk is aan de effectieve waarde <em>U<sub>eff</sub></em> van de spanning en de hoek op <em> t=0</em> ten opzichte van de reële as gelijk is aan de spanningfasehoek <em>ψ<sub>u</sub></em>. </p>
+        <div class="row">
+          <div class="col-sm-6"><img src="./rekentechnische basis_files/7.8.png" width="296" height="215" alt="pics_2.7" class="img-responsive-leon-15px center-block"></div>
+          <div class="col-sm-6"><img src="./rekentechnische basis_files/7.9.png" width="317" height="230" alt="pics_2.7" class="img-responsive-leon-15px center-block"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <h5> Figuur 7.8 Spanningfasor in het complexe vlak </h5>
+          </div>
+          <div class="col-sm-6">
+            <h5> Figuur 7.9 Spanningfasor en na-ijlende (inductieve) stroomfasor in het complexe vlak </h5>
+          </div>
+        </div>
+        <p> Dit gaat ook op voor de stroom. Als evenzo vergelijking 7.15 wordt gedeeld door <em>√2</em> en door <em>e<sup>jωt</sup></em>, gaat deze over in
+          de fasor-notatie voor de stroom: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.17.png" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.17 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Figuur 7.9 illustreert dit voor de fasors van spanning en na-ijlende (inductieve) stroom. Hierin is ook het verband tussen de fasehoeken van spanning (<em>ψ<sub>u</sub></em>) en stroom (<em>ψ<sub>i</sub></em>) en de verschilhoek (<em>φ</em>) zichtbaar. </p>
+        <p> Het complexe vermogen is gedefinieerd met de fasor <em><u>S</u></em>, waarvan de lengte <em>S</em> gelijk is aan het schijnbare vermogen. Het reële deel is gelijk aan het
+          actieve vermogen <em>P</em> en het imaginaire deel is gelijk aan het blindvermogen <em>Q</em>. </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.18.png" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.18 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Door gebruik te maken van vergelijkingen 7.10 voor P en vergelijking 7.12 voor <em>Q</em> gaat vergelijking 7.18 voor <em>S</em> over in onderstaande vergelijking, waarbij
+          de cosinus- en sinustermen ook beschreven kunnen worden met een complexe e-macht. </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.19.png" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.19 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> De hoek van de vermogenfasor <em><u>S</u></em> wordt dus geheel bepaald door de hoek <em>φ</em> tussen de spanning- en stroomfasoren <em><u>U</u></em> en <em><u>I</u></em>. Verder uitwerken van vergelijking 7.19, door <em>U<sub>eff</sub></em> te vermenigvuldigen met <em>e<sup>jψu</sup></em> en door <em>I<sub>eff</sub></em> te vermenigvuldigen met <em>e<sup>–jψi</sup></em>, levert: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.20.png" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.20 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> In vergelijking 7.20 valt het op dat de eerste term gelijk is aan de spanningfasor <em><u>U</u></em> en dat de tweede term, op het minteken van de complexe e-macht
+          na, gelijk is aan de stroomfasor <em><u>I</u></em>. Voor het vervolg wordt nu de toegevoegd complexe waarde van de fasor <em><u>I</u></em> gedefinieerd, waarvoor geldt dat
+          de imaginaire waarde een tegengesteld teken heeft: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.21.png" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.21 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Hierdoor kan het complexe vermogen als volgt worden geschreven: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.22.png" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.22 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Deze laatste is de bekende vergelijking waarmee het complexe vermogen direct uit de complexe spanning en stroom wordt bepaald. Deze vergelijking is de
+          basis van elke loadflowberekening. </p>
+        <p> Bij het vergelijken van figuur 7.9 met de in tabel 7.2 gegeven vectordiagrammen wordt de relatie tussen fasehoek (voorijlend of na-ijlend) en belastingtype
+          duidelijk. Onderstaand rekenvoorbeeld gaat hier nader op in. Uitgangspunt is een spanning van 1 V en een belasting met een inductieve impedantie van 1+j Ω.
+          Onder gebruikmaking van de motorconventie volgt: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.23.png" width="294" height="180" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.23 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Volgens vergelijking 7.23 is het actieve vermogen P gelijk aan 0,5 W en is het blindvermogen Q gelijk aan 0,5 var. Ter controle van de juistheid van de
+          tekenafspraken van de vermogens en de fasehoeken kunnen de vermogens ook worden afgeleid uit het schijnvermogen en het hoekverschil tussen de spanning en
+          de stroom: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.24.png" width="330" height="136" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.24 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <a href="https://www.phasetophase.nl/boek/boek_2_7.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_7.4"></div>
+        <br>
+        <h2>7.4 Driefasen wisselstroomsysteem</h2>
+        <p> De meeste wisselstroomsystemen zijn uitgevoerd als driefasensystemen, waarvan de drie fasen telkens een hoek van 120 graden met elkaar maken. In radialen
+          is de onderlinge hoek dan gelijk aan <em>2/3 π</em>. Figuur 7.10 toont hoe met drie paren van spoelen, die telkens 120 graden ten opzichte van elkaar zijn
+          aangebracht op de stator van een generator, de spanningen worden opgewekt. In het voorbeeld zijn de spoelen in ster geschakeld. Door het linksom draaien
+          van de rotor is de volgorde van de fasen: a, b, c. </p>
+        <img src="./rekentechnische basis_files/7.10.png" width="707" height="514" alt="pics_2.7" class="img-responsive-leon-15px center-block">
+        <h5>Figuur 7.10  Driefasengenerator als bron van drie fasenspanningen, in ster geschakeld </h5>
+        <p> De complexe momentane spanning van een gebalanceerde driefasige spanningsbron kan, naar analogie van vergelijking 7.13 in de vorige paragraaf, worden
+          beschreven met onderstaande drie tijdfuncties voor de fasen a, b en c. Hierin zijn de drie spanningswijzers telkens 120 graden onderling verschoven. In
+          radialen is dat <em>–2/3 π</em> en <em>–4/3 π</em>. De waarde van <em>–4/3 π</em> komt overeen met <em>+2/3 π</em>. In de functies voor de drie spanningen wordt bij <em>ψ<sub>u</sub></em> voor de drie fasen respectievelijk de waarden <em>0</em>, <em>–2/3 π</em> en <em>+2/3 π</em> opgeteld. </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.25.png" width="626" height="165" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.25 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> In bovenstaande vergelijkingen is <em>y<sub>u</sub></em> de hoek van de spanning van fase a op <em>t=0</em>. Figuur 7.11 illustreert dit, waarbij te zien is dat de
+          fasevolgorde is: a-b-c. In de afbeelding is <em>ψ<sub>u</sub></em> gelijk aan nul genomen. </p>
+        <img src="./rekentechnische basis_files/7.11.png" width="715" height="357" alt="pics_2.7" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 7.11 Gebalanceerde driefasenspanningen als functie van de tijd </h5>
+        <a href="https://www.phasetophase.nl/boek/boek_2_7.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_7.5"></div>
+        <br>
+        <h2>7.5 Methode symmetrische componenten</h2>
+        <p> De berekeningen aan driefasensystemen vereisen dat gelijktijdig aan de drie fasen van het totale systeem wordt gerekend. De berekeningen worden vele malen
+          eenvoudiger indien ervan wordt uitgegaan dat de spanningen in het system perfect driefasensymmetrisch, ofwel gebalanceerd, zijn. Een driefasensysteem wordt
+          in dat geval gemodelleerd alsof er maar één fase aanwezig is. De spanningen in de andere fasen kunnen dan eenvoudig worden afgeleid omdat bekend is dat zij
+          plus of min 120 graden verschillen van de berekende fase. In het vervolg wordt ervan uitgegaan dat de in het net opgestelde voedingsbronnen een
+          gebalanceerde spanning leveren. De kabels en transformatoren worden gemodelleerd als driefasensymmetrische componenten. </p>
+        <p> Er zijn echter altijd oorzaken van onbalans, zoals een asymmetrische belasting of een asymmetrische storing in het net. Om niet terug te vallen op de
+          berekeningen met alle fasen tegelijk, worden dit soort asymmetrische situaties in de meeste berekeningsmethoden berekend met behulp van de methode van de
+          symmetrische componenten. Deze methode is in 1918 beschreven door Fortescue. Ook de internationale standaard IEC 60909 voor kortsluitberekeningen maakt
+          gebruik van deze methode. </p>
+        <p> Belangrijk uitgangspunt bij de methode is dat het net symmetrisch is. De voedingen zijn over de drie fasen verdeeld en de verbindingen zijn driefasig
+          symmetrisch. De methode van symmetrische componenten transformeert een driefasig wisselstroomnet in drie onafhankelijke enkelpolige systemen, genaamd:
+          normaal netwerk, invers netwerk en homopolair netwerk. De Engelstalige benamingen voor deze drie systemen zijn respectievelijk: positive sequence, negative
+          sequence en zero sequence. De specifieke onbalans op een foutplaats bepaalt de wijze waarop de drie onafhankelijke enkelpolige systemen
+          (componentennetwerken) met elkaar worden verbonden. Een belangrijk voordeel van deze methode is dat netten en storingen in netten met deze methode
+          eenvoudig kunnen worden doorgerekend. De methode maakt het mogelijk de berekeningen met de hand uit te voeren. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_2_7.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_7.5.1"></div>
+        <br>
+        <h3>7.5.1 Een nieuwe fasor-notatie</h3>
+        <p> De basis voor de symmetrische componentenmethode wordt gevormd door drie vectoren in het complexe vlak, die 120 graden van elkaar zijn verschoven en de
+          lengte 1 hebben. De methode introduceert een complexe vector <em>a</em>, van lengte 1 en met een hoek van 120 graden ten opzichte van de reële as. Een hoek van 120
+          graden is gelijk aan <em>2/3 π</em> radialen. Deze vector kan op diverse manieren worden beschreven: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="480"><table width="100%" border="0">
+                  <tbody>
+                    <tr>
+                      <td width="200">Complexe e-macht:</td>
+                      <td><img src="./rekentechnische basis_files/formule-7.26a.png" alt="formules_2.7"></td>
+                    </tr>
+                    <tr>
+                      <td>Polair:</td>
+                      <td><img src="./rekentechnische basis_files/formule-7.26b.png" alt="formules_2.7"></td>
+                    </tr>
+                    <tr>
+                      <td>Polair:</td>
+                      <td><img src="./rekentechnische basis_files/formule-7.26c.png" alt="formules_2.7"></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.26 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Door een vector met <em>a</em> te vermenigvuldigen ontstaat een nieuwe vector die 120 graden, ofwel <em>2/3 π</em>, verder gedraaid is. Zo ontstaat de vector <em>a<sup>2</sup></em> door de vector <em>a</em> met zichzelf te vermenigvuldigen. De hoek is 240 graden, ofwel <em>4/3 π</em>, ten opzichte van de reële as en dat is gelijk aan –120 graden, ofwel <em>–2/3 π</em>. Figuur 7.12 illustreert dit voor de vectoren <em>1, a</em> en <em>a<sup>2</sup></em>. </p>
+        <img src="./rekentechnische basis_files/7.12.png" width="320" alt="pics_2.7" class="img-responsive-leon-15px center-block">
+        <h5>Figuur 7.12 Vectoren 1, a en a<sup>2</sup> in het complexe vlak </h5>
+        <p> De drie vectoren worden op de volgende wijze als complexe e-macht of polair beschreven: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.27.png" width="189" height="136" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.27 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> De vectoriële som van deze drie vectoren is gelijk aan nul. Dat betekent dat: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.28.png" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.28 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Met behulp van deze vectoren kunnen de vergelijkingen van vergelijking 7.25 voor de momentane waarden van de spanning van een gebalanceerd stelsel ook als
+          volgt geschreven worden: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.29.png" width="381" height="130" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.29 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Hierbij wordt opgemerkt dat <em>e <sup>-j 2/3 π</sup></em> gelijk is aan <em>e <sup>j 4/3 π</sup></em>. Uit vergelijking 7.29 kan geconcludeerd worden dat een gebalanceerd
+          stelsel spanningsvectoren kan worden beschreven met één linksom roterende vector, vermenigvuldigd met drie vectoren die elk 120 graden ten opzichte van
+          elkaar zijn verschoven. </p>
+        <p> In de complexe fasor-notatie gaat het stelsel vergelijkingen van 7.29 voor een driefasensymmetrisch spanningsstelsel op dezelfde manier als vergelijking
+          7.16, door te delen door <em>√2</em> en door <em>e<sup>jωt</sup></em>, over in: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.30.png" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.30 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <a href="https://www.phasetophase.nl/boek/boek_2_7.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_7.5.2"></div>
+        <br>
+        <h3>7.5.2 Splitsing in drie spanningsstelsels</h3>
+        <p> Het idee van Fortescue was om ieder willekeurig ongebalanceerd stelsel van vectoren te beschrijven met behulp van drie onafhankelijke gebalanceerde linksom
+          draaiende stelsels van vectoren, genaamd het normale, inverse en homopolaire stelsel. In het homopolaire stelsel zijn de drie vectoren gelijk aan elkaar en
+          gelijk gericht. In het normale stelsel zijn de drie vectoren gelijk aan elkaar en maken zij een hoek van 120 graden ten opzichte van elkaar. In het normale
+          stelsel is de vectorvolgorde a-b-c. </p>
+        <img src="./rekentechnische basis_files/7.13.png" width="712" alt="pics_2.7" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 7.13 Spanningen in het homopolaire, normale en inverse stelsel </h5>
+        <p> Ook in het inverse stelsel zijn de drie vectoren gelijk aan elkaar en maken zij een hoek van 120 graden ten opzichte van elkaar, maar is de vectorvolgorde
+          a-c-b. Elk componentstelsel heeft een eigen specifieke hoekverdraaiing ten opzichte van de reële as. Deze drie componentstelsels zijn hierboven afgebeeld.
+          Met de drie vectorstelsels van figuur 7.13 kunnen alle (asymmetrische) driefasenstelsels worden samengesteld. Dit wordt geïllustreerd aan de hand van een
+          voorbeeld. Onderstaand voorbeeld geeft de constructie weer van een willekeurig asymmetrisch spanningsstelsel. </p>
+        <img src="./rekentechnische basis_files/7.14.png" width="380" alt="pics_2.7" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 7.14 Voorbeeld van een asymmetrisch spanningsstelsel </h5>
+        <p> Hieronder zal met behulp van een grafische decompositie worden aangetoond dat dit stelsel kan worden samengesteld met behulp van: </p>
+        <ul>
+          <li> homopolaire component: 20% en hoek 10° </li>
+          <li> normale component: 100% en hoek 0° </li>
+          <li> inverse component: 30% en hoek –20° </li>
+        </ul>
+        <br>
+        <img src="./rekentechnische basis_files/7.15.png" width="712" alt="pics_2.7" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 7.15 Spanningen in het homopolaire, normale en inverse stelsel </h5>
+        <p> Het asymmetrische stelsel wordt geconstrueerd door voor elke fase de vectoren op te tellen. Zo geldt voor de drie fasen: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.31.png" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.31 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <img src="./rekentechnische basis_files/7.16.png" width="712 " alt="pics_2.7" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 7.16 Constructie van een asymmetrisch stelsel uit het homopolaire, normale en inverse stelsel </h5>
+        <a href="https://www.phasetophase.nl/boek/boek_2_7.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_7.5.3"></div>
+        <br>
+        <h3>7.5.3 Wiskundige decompositie</h3>
+        <p> De componentspanningen van figuur 7.15 kunnen worden ontbonden in drie genormeerde componentstelsels, die zijn opgebouwd met de vectoren <em>1</em>, <em>a</em> en <em>a<sup>2</sup></em>, en drie bijbehorende complexe vectoren. Figuur 7.17 geeft de ontbinding van de drie componentstelsels van figuur 7.15 weer. </p>
+        <img src="./rekentechnische basis_files/7.17.png" width="712 " alt="pics_2.7" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 7.17 Genormeerde homopolaire, normale en inverse stelsels met vermenigvuldigingsfactoren </h5>
+        <p> Voor het stelsel van figuur 7.15 kunnen alle vectoren worden beschreven met behulp van de drie genormeerde componentenstelsels en hun complexe
+          vermenigvuldigingsfactoren. In de vergelijkingen 7.32 zijn de vermenigvuldigingsfactoren <em><u>U</u><sub>0</sub></em>, <em><u>U</u><sub>1</sub></em> en <em><u>U</u><sub>2</sub></em> de complexe spanningsvectoren die voor ieder componentstelsel de effectieve waarde en de fasehoek vastleggen. Bijvoorbeeld voor fase b geldt: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="480" valign="top"><img src="./rekentechnische basis_files/formule-7.32.png" alt="formules_2.7"></td>
+              <td width="2%" valign="top"><p align="left"> [ </p></td>
+              <td width="6%" valign="top"><p align="center"> 7.32 </p></td>
+              <td width="2%" valign="top"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Analoog aan vergelijking 7.31 kan de constructie van elk driefasensystelsel vanuit de genormeerde symmetrische componenten worden beschreven als de som van
+          de drie componentspanningen: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.33.png" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.33 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Dit kan worden omgezet in een matrixvergelijking. Het stelsel van vergelijking 7.33 gaat dan over in vergelijking 7.34, waarbij de matrix A de
+          transformatiematrix wordt genoemd. </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.34.png" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.34 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Van het voorbeeld van figuur 7.14 zijn de complexe waarden van de drie componenten: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.35.png" width="172" height="134" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.35 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Door deze waarden in te vullen in de vergelijkingen 7.33, worden de waarden van de fasen van het asymmetrische spanningsstelsel berekend: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.36.png" width="200" height="134" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.36 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <p> <br>
+          De fysische analogie kan het best worden aangetoond met figuur 7.18, waar een asymmetrische spanningsbron wordt beschreven met een serieschakeling van de
+          drie componentspanningsbronnen. Het is echter een fictieve ontbinding, aangezien de homopolaire, inverse en normale spanningsbronnen in werkelijkheid niet
+          bestaan. </p>
+        <img src="./rekentechnische basis_files/7.18.png" width="712" alt="pics_2.7" class="img-responsive-leon-15px center-block">
+        <h5>Figuur 7.18 Fysische interpretatie van het samenstellen met componentensystemen </h5>
+        <p> In het ideale gebalanceerde geval is <em>U<sub>0</sub> = 0</em> en <em>U<sub>2</sub> = 0</em> zodat we alleen te maken hebben met <em>U<sub>1</sub></em>. In praktijk is echter <em>U<sub>0</sub> ≠ 0</em> en<em> U<sub>2</sub> ≠ 0</em>. Dit wordt veroorzaakt door de onbalans in het driefasensysteem. </p>
+        <p> Het is dus mogelijk om de fysieke spanningen <em><u>U</u><sub>a</sub></em>, <em><u>U</u><sub>b</sub></em> en <em><u>U</u><sub>c</sub></em> in een driefasenstelsel te beschrijven met
+          behulp van de componentspanningen <em><u>U</u><sub>0</sub>, <u>U</u><sub>1</sub></em> en <em><u>U</u><sub>2</sub></em>. Omgekeerd is het ook mogelijk om de
+          componentspanningen te berekenen uit de fysieke spanningen. Door het stelsel vergelijkingen van 7.33 te inverteren, worden de navolgende vergelijkingen
+          voor de decompositie uit de fysieke grootheden verkregen. </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.37.png" width="222" height="155" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.37 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Ook dit kan worden opgeschreven als een matrixvergelijking. Hierbij is de matrix <em>A<sup>-1</sup></em> de inverse transformatiematrix. Hiermee worden de grootheden van het componentensysteem afgeleid uit de grootheden van het fysieke systeem, zodat de componentspanningen in matrixnotatie als volgt worden berekend: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.38.png" width="401" height="102" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.38 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Samengevat geldt voor de transformatiematrix en de inverse transformatiematrix: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.39.png" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.39 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> De toestand in het net wordt niet alleen met spanningen beschreven maar ook met stromen. Voor de stroomvectoren <em>I<sub>abc</sub></em> en <em>I<sub>012</sub></em> kunnen
+          de hierboven beschreven transformaties op dezelfde manier worden uitgevoerd. In matrixnotatie ziet dat er als volgt uit: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.40.png" width="355" height="102" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.40 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Het kan worden aangetoond dat ook impedanties van driefasensystemen beschreven kunnen worden met behulp van de symmetrische componentenmethode. Met de wet
+          van Ohm en het gebruiken van de transformatie voor de stroom- en spanningsvectoren volgt namelijk: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.41.png" width="231" height="117" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.41 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Hierin zijn <em><u>U</u><sub>abc</sub> , <u>I</u><sub>abc</sub></em> en <em><u>Z</u><sub>abc</sub></em> respectievelijk de spanningsmatrix, de stroommatrix en de
+          impedantiematrix in het abc-stelsel en zijn <em><u>U</u><sub>012</sub> , <u>I</u><sub>012</sub></em> en <em><u>Z</u><sub>012</sub></em> respectievelijk de spanningsmatrix,
+          de stroommatrix en de impedantiematrix in het componentenstelsel. Voor de relatie tussen de impedantiematrix in het abc- en componentenstelsel geldt: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.42.png" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.42 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Ook elke kabelverbinding, transformator, belasting en opwekker kan worden gemodelleerd met normale, inverse en homopolaire impedanties. Voor de meeste
+          berekeningen is het voldoende als wordt aangenomen dat de systemen driefasensymmetrisch zijn. In dat geval vereenvoudigt het systeem zodanig dat alleen
+          rekening hoeft worden gehouden met de normale impedantie <em><u>Z</u><sub>1</sub> </em>en de homopolaire impedantie <em><u>Z</u><sub>0</sub></em>. De normale impedantie is
+          gelijk aan de fase-impedantie. De inverse impedantie hoeft niet apart te worden bepaald, want deze is in dit geval gelijk aan de normale impedantie. De
+          homopolaire impedantie wijkt af van de normale impedantie en moet wel apart vastgesteld worden. De volgende paragraaf beschrijft een asymmetrisch
+          stroomstelsel en de homopolaire impedantie. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_2_7.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_7.6"></div>
+        <br>
+        <h2>7.6 Asymmetrisch stroomstelsel en homopolaire impedantie</h2>
+        <p> Figuur 7.19 is een uitbreiding op figuur 7.18, waarin een spanningsbron met homopolaire, normale en inverse componenten <em>(U<sub>0</sub>, U<sub>1</sub></em> en <em>U<sub>2</sub></em>) zijn opgenomen. Achter de samengestelde spanningsbron is een willekeurig driefasencircuit met een retourpad opgenomen. Het driefasencircuit
+          bestaat uit de impedanties <em>Z<sub>a</sub>, Z<sub>b</sub></em> en <em>Z<sub>c</sub></em> , die niet gelijk aan elkaar hoeven te zijn. In de meeste driefasensystemen zijn
+          deze drie impedanties wel gelijk aan elkaar, waardoor aangenomen mag worden dat de normale impedantie <em>Z<sub>1</sub></em> gelijk is aan de fase-impedantie,
+          bijvoorbeeld <em>Z<sub>a</sub></em>. De inverse impedantie <em>Z<sub>2</sub></em> is dan gelijk aan de normale impedantie. Er is een retourpad met een retourimpedantie <em>Z<sub>E</sub></em>. Het retourpad kan een vierde geleider zijn, zoals bij LS-kabels, en het kan door aarde lopen, zoals in MS-netten. </p>
+        <img src="./rekentechnische basis_files/7.19.png" width="712" alt="pics_2.7" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 7.19 Voedingsbron met belasting en retourimpedantie </h5>
+        <p> De van vergelijkingen 7.40 afgeleide componenttransformatie beschrijft de relatie tussen de stromen in het fictieve componentnetwerk en het fysieke
+          stelsel: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.43.png" width="178" height="155" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.43 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Hieruit blijkt dat de homopolaire stroom gelijk is aan een derde van de som van de drie fasestromen. In geval van een perfect gebalanceerd
+          driefasensysteem, zal de homopolaire stroom nul zijn. In geval van een niet gebalanceerd systeem loopt er een retourstroom en is uit figuur 7.19 af te
+          leiden dat deze gelijk is aan de vectoriële som van de drie fasenstromen en dus gelijk is aan: <em>I<sub>E</sub> = I<sub>a</sub> + I<sub>b</sub> + I <sub>c</sub> = 3I<sub>0</sub></em>. </p>
+        <p> Hieruit kan een manier worden afgeleid om de homopolaire impedantie te meten. Dit vindt plaats door het aanbrengen van een homopolaire spanning op de drie
+          parallelgeschakelde fasen, zoals aangegeven in figuur 7.20. De amplitudes van de normale en inverse spanningsbronnen <em>(U<sub>1</sub></em> en <em>U<sub>2</sub>)</em> zijn
+          in dat geval nul. </p>
+        <img src="./rekentechnische basis_files/7.20.png" width="383" alt="pics_2.7" class="img-responsive-leon-15px center-block">
+        <h5>Figuur 7.20 Meting van de homopolaire impedantie </h5>
+        <p> In een gebalanceerd driefasensymmetrisch net geldt voor de te meten lijnimpedantie: <em>Z<sub>L</sub> = Z<sub>a</sub> = Z<sub>b</sub> = Z<sub>c</sub></em> , zodat
+          voor de stromen geldt: <em>I<sub>a</sub> = I<sub>b</sub> = I<sub>c</sub> = I<sub>0</sub></em>. Dan is uit de afbeelding af te leiden dat voor de meting volgt: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.44.png" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.44 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Uit bovenstaande vergelijking volgt voor de homopolaire impedantie: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.45.png" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.45 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Tijdens de meting worden drie fasen kortgesloten en wordt derhalve de parallelschakeling van drie homopolaire impedanties gemeten: <em>I<sub>M</sub> = 3I<sub>0</sub></em>. Als gevolg wordt de homopolaire impedantie uit de meting bepaald door de gemeten impedantie met 3 te vermenigvuldigen. </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.46.png" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.46 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> De homopolaire impedantie wordt dus bepaald door het totale retourcircuit, dat bestaat uit de nulgeleider (indien aanwezig), de afscherming en wapening van
+          de kabel, de grond, geleidende buizen, tram- en treinrails en alle andere geleidende voorwerpen in het retourcircuit. Dit maakt het zo moeilijk de waarde
+          van de homopolaire impedantie te berekenen. Om die reden is het verstandig van belangrijke circuits, voordat zij in bedrijf worden genomen, de homopolaire
+          impedantie te meten. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_2_7.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_7.7"></div>
+        <br>
+        <h2>7.7 Rekenen met behulp van genormeerde grootheden</h2>
+        <p> In veel berekeningsprogramma’s wordt niet gerekend met de werkelijke fysische grootheden, maar met genormeerde grootheden. Dit wordt gedaan zodat het
+          mogelijk wordt om tegelijkertijd aan laagspannings- middenspannings en hoogspanningssystemen te rekenen, waarvan de grootheden numeriek onderling veel
+          verschillen. In computerprogramma’s zou gebruik van fysische grootheden namelijk kunnen leiden tot numerieke problemen. De genormeerde grootheden worden
+          uitgedrukt in per unit (pu). Een tweede voordeel van deze methode is dat het met de hand berekenen van kortsluitstromen over de spanningniveaus van
+          meerdere transformatoren veel eenvoudiger wordt. </p>
+        <p> Alle grootheden worden genormeerd met behulp van basisgrootheden. Een aantal basisgrootheden wordt gekozen, waarna de overige basisgrootheden worden
+          afgeleid. Meestal wordt de basisgrootheid voor spanning en voor vermogen gekozen, waarna de basisgrootheden voor stroom en impedantie worden afgeleid.
+          Indien de basisgrootheid van het vermogen willekeurig gekozen wordt en de basisgrootheid van de spanning gelijk genomen wordt aan de nominale spanning per
+          spanningniveau, geldt voor de basisgrootheden: </p>
+        <table width="100%" border="0">
+          <tbody>
+            <tr>
+              <td width="80"><em>S<sub>basis</sub></em></td>
+              <td width="420">keuze voor een 3-fasig basis vermogen</td>
+              <td>(MVA)</td>
+            </tr>
+            <tr>
+              <td><em>U<sub>basis</sub></em></td>
+              <td>gekoppelde spanning per spanningsniveau</td>
+              <td>(kV)</td>
+            </tr>
+            <tr>
+              <td><em>I<sub>basis</sub></em></td>
+              <td>basis fasestroom: <img src="./rekentechnische basis_files/p301a.png" alt="formules_2.7"></td>
+              <td>(kA)</td>
+            </tr>
+            <tr>
+              <td><em>Z<sub>basis</sub></em></td>
+              <td>basis impedantie: <img src="./rekentechnische basis_files/p301b.png" alt="formules_2.7"></td>
+              <td>(Ω)</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><br>
+          Indien in de relatie voor de basisimpedantie teller en noemer met <em>U<sub>basis</sub></em> vermenigvuldigd worden, gaat deze over in: </p>
+        <table width="100%" border="0">
+          <tbody>
+            <tr>
+              <td width="80"><em>Z<sub>basis</sub></em></td>
+              <td width="420">basis impedantie: <img src="./rekentechnische basis_files/p301c.png" alt="formules_2.7"></td>
+              <td>(Ω)</td>
+            </tr>
+          </tbody>
+        </table>
+        <p><br>
+          De relatie tussen vermogen, spanning, stroom en impedantie is aldus bepaald: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.47.png" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.47 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> De genormeerde grootheden worden dan als volgt afgeleid uit de fysische grootheden en hun basisgrootheden: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.48.png" width="117" height="239" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.48 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Als gevolg geldt voor de wet van Ohm: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.49.png" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.49 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Door links en rechts van het gelijkteken te delen door de basisspanning, volgens de bovenstaande definitie, volgt dezelfde uitdrukking in per unit: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./rekentechnische basis_files/formule-7.50.png" alt="formules_2.7"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 7.50 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Bij het gebruik van het per unit systeem geldt voor de per unit-waarden: </p>
+        <ul>
+          <li> het vermogen representeert het driefasig vermogen </li>
+          <li> de spanning representeert de gekoppelde spanning </li>
+          <li> de stroom representeert de fasestroom </li>
+          <li> de impedantie representeert de fase-impedantie. </li>
+        </ul>
+      </div>
+      <div class="col-lg-2 hidden-md">&nbsp;</div>
+    </div>
+  </div>
+</div>
+	
+
+<div id="includeFooter" class="container-fluid-footer"><div class="container">
+  <div class="row">
+    <div class="text-justify col-xs-6 col-sm-3">
+      <img src="./rekentechnische basis_files/logo-s-360px-grijs.png" alt="ptp_logo" width="230">
+    </div>
+    <div class="col-xs-6 col-sm-9">
+        <p> Phase to Phase is onderdeel van <a href="https://www.technolution.nl/">Technolution</a>. © 2009-2021 </p>
+    </div>
+  </div>
+</div></div></body></html>

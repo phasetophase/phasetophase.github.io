@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+
+<!-- saved from url=(0047)https://www.phasetophase.nl/boek/boek_2_12.html -->
+<html class="wf-ffscalasansweb-n7-active wf-ffscalasansweb-n4-active wf-ffscalasansweb-i4-active wf-active" lang="en"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Phase to Phase – Netten voor distributie van elektriciteit</title>
+<!-- Bootstrap -->
+<link href="./betrouwbaarheid_files/bootstrap-2-boek.css" rel="stylesheet"/>
+<style type="text/css">
+	body,td,th {
+	font-family: ff-scala-sans-web, sans-serif;
+}
+body {
+	background-color: #F7F7F7;
+}
+    </style>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+<script src="./betrouwbaarheid_files/qke6lfb.js.download"></script>
+<style type="text/css">.tk-ff-scala-sans-web{font-family:"ff-scala-sans-web",sans-serif;}</style><style type="text/css">@font-face{font-family:tk-ff-scala-sans-web-n7;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-n4;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-i4;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style><script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script src="./betrouwbaarheid_files/jquery-1.11.3.min.js.download"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./betrouwbaarheid_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H8Q9E8BJ7Q');
+</script>
+<script>
+$(function(){
+  $("#includedHeader").load("/boek/header.html");
+  $("#includeFooter").load("/boek/footer.html"); 
+});
+</script><style type="text/css">@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style>
+</head>
+<body style="padding-top: 50px">
+<div id="includedHeader"> <nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="container">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button aria-expanded="false" class="navbar-toggle collapsed" data-target="#topFixedNavbar1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+<a class="navbar-brand" href="https://www.phasetophase.nl/">Phase to Phase</a></div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="topFixedNavbar1">
+<ul class="nav navbar-nav">
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li></li>
+</ul>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container -->
+</nav>
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<p></p>
+</div>
+</div>
+</div>
+<div class="container-fluid-boek">
+<div class="container">
+<div class="row-in-header">
+<div class="text-justify col-xs-6 col-sm-6">
+<img alt="Phase to Phase logo 360px" class="hidden-xs" src="./betrouwbaarheid_files/logo-s-360px-wit.png" width="366"/>
+<img alt="Phase to Phase logo 261px" class="visible-xs" src="./betrouwbaarheid_files/logo-s-360px-wit.png" width="261"/>
+</div>
+<div class="col-xs-6 hidden-xs col-sm-6">
+</div>
+</div>
+<div class="row-in-header">
+<div class="text-left col-xs-9 col-sm-9"> <p></p><h8>ICT voor elektriciteitsnetten</h8>
+</div>
+<div class="col-xs-3 col-sm-3">
+</div>
+</div>
+<div class="row-in-header-2">
+<div class="text-justify col-xs-6 col-sm-6"> 
+	</div>
+<div class="col-xs-6 hidden-xs col-sm-6">
+<h7> </h7>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row-intro">
+<h1><a href="https://www.phasetophase.nl/boek/index.html"> Netten voor distributie van elektriciteit</a></h1>
+</div></div></div>
+<div class="row-ohm-center-white"> <a name="top"></a>
+<div class="row-b">
+<a href="https://www.phasetophase.nl/boek/index.html"><button class="btn btn-default" type="button">I – De opbouw van een net</button></a>
+<a href="https://www.phasetophase.nl/boek/boek_2_7.html"><button class="btn btn-default active" type="button">II – Rekenen aan een net</button></a>
+<a href="https://www.phasetophase.nl/boek/boek_3_13.html"><button class="btn btn-default" type="button">III – Ontwerpen en bedrijfsvoeren</button></a>
+</div>
+<div class="row-b">
+<a href="https://www.phasetophase.nl/boek/boek_2_7.html">
+<button class="btn btn-default1" type="button">7 Rekentechnische basis</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_2_8.html">
+<button class="btn btn-default1" type="button">8 Modellen</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_2_9.html">
+<button class="btn btn-default1" type="button">9 Loadflowberekeningen</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_2_10.html">
+<button class="btn btn-default1" type="button">10 Kortsluitstroomberekeningen</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_2_11.html">
+<button class="btn btn-default1" type="button">11 Power Quality</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_2_12.html">
+<button class="btn btn-default1 active" type="button">12 Betrouwbaarheid</button>
+</a>
+<div class="row">
+<div class="col-md-12 col-lg-10">
+<h3>Betrouwbaarheid</h3>
+<p>Chapter 12 provides an introduction to the reliability of delivery. It is based on the processes of failure, recovery, and repair.</p>
+<div class="row">
+<div class="col-md-6">
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_2_12.html#_12"><strong>12  Reliability</strong></a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_12.html#_12.1">12.1 Reliability Metrics</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_12.html#_12.2">12.2  Failure, recovery, and repair</a></li>
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_2_12.html#_12.2.1">12.2.1  Failure</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_12.html#_12.2.2">12.2.2  Recovery of delivery</a></li>
+</ul>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_12.html#_12.3">12.3  Improvement of Reliability</a></li>
+</ul>
+</div>
+<div class="col-md-6"> </div>
+</div>
+<hr/>
+<h1>12 Reliability</h1>
+<p>In addition to safety, load capacity, and the Power Quality discussed in the previous chapter, the reliability of delivery is one of the quality aspects on which a distribution network is assessed. Availability is determined by the planned unavailability and the unplanned unavailability (UU). Planned unavailability is determined by maintenance and work on the network. In the medium-voltage (MV) networks, maintenance will almost never lead to planned unavailability. Unplanned unavailability is caused by spontaneously occurring failures in components. Depending on the function of a network, a failure may or may not lead to an interruption in the electricity supply. A transmission network is usually designed and protected in such a way that a failure leads to the immediate shutdown of the faulty component, allowing the supply to continue uninterrupted. In the MV distribution network, a cable failure, due to the chosen protection philosophy, will in most cases lead to a shutdown of the faulty section. Only after isolating the short-circuited cable segment can the supply be resumed via an alternative route.</p>
+<p>In the past, cost considerations led to the decision that a fault in the distribution network would result in an interruption. Unlike the transmission network, the costs of investments to guarantee uninterrupted supply do not outweigh the costs of the undelivered energy. Only in exceptional situations does the network operator, together with the connected party, opt for a more expensive and reliable connection. Examples include large industrial connections and hospitals. Nevertheless, the likelihood of a supply interruption in the Netherlands is very small. According to the annual fault survey by Netbeheer Nederland, the average availability in 2010 was 99.994%. The average outage duration was 33.7 minutes per year. Interruptions in the medium-voltage network have the largest share in the total average outage duration (Kema, 2011). In 2009, the average outage duration was 26.5 minutes per year. The five-year average is 30.2 minutes per year.</p>
+<p>Reliability is described using several characteristic terms. Initially, this can be approached from the perspective of the customer. The reliability of the supply is characterized by:</p>
+<ul>
+<li> <em>f</em>: interruption frequency (or interruption expectation) in number of times per year for a customer, also known as SAIFI; not to be confused with the failure frequency of a component</li>
+<li> <em>d</em>: average interruption duration in minutes, also known as CAIDI</li>
+<li> <em>p</em>: annual outage duration in minutes per year for a customer, also known as SAIDI</li>
+<li> <em>NGE</em>: non-delivered energy, average amount of energy per year that cannot be delivered due to outages, also known as ENS or EENS</li>
+<li>the number of affected customers.</li>
+</ul>
+<p>The annual average outage duration is a measure of the quality of delivery and is equal to the product of the interruption frequency and the average interruption duration:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_2.12" src="./betrouwbaarheid_files/formule-12.1.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">12.1</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>The average amount of unserved energy (NGE) to a customer or a group of customers is equal to the product of the annual outage duration<em>p</em>, corrected to hours per year) and the average delivered power<em>P<sub>gem</sub></em>in kW.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_2.12" src="./betrouwbaarheid_files/formule-12.2.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">12.2</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>Not every fault leads to the failure of a component or an interruption in delivery. Due to redundancy, interruptions caused by faults in the HS network occur relatively the least often. In 2010, the percentage of faults that resulted in an interruption was 96.7% for the LS network, 80.9% for the MS network, and 39.8% for the HS network. There are three levels of increasing consequences:</p>
+<ul>
+<li>fault: an unforeseen defect of a component in the electricity supply system</li>
+<li>unavailability: a malfunction that results in a component in the electricity supply system being unusable</li>
+<li>interruption of supply: a malfunction that results in one or more connected users being unable to receive electricity.</li>
+</ul>
+<a href="https://www.phasetophase.nl/boek/boek_2_12.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_12.1"></div>
+<br/>
+<h2>12.1 Reliability Metrics</h2>
+<p>Figure 12.1 provides an overview of the average outage duration<em>p</em>) in minutes per year per customer from 2000 to 2010 (Kema, 2011). 
+          The influence of outages in the LV, MV, and HV networks can be clearly distinguished here. It is evident that the contribution of outages in the 
+          LV network remains fairly constant over the years, while the contribution of outages in the MV and HV networks shows considerable variations. The average 
+          contribution of outages in the MV network fluctuates between 12 and 23 minutes per year. This is due to the fact that outages occur much less frequently 
+          in the MV networks compared to the LV networks, while the consequences of the outages are much greater. The average contribution of outages in the 
+          HV network fluctuates even more, between 1 and 11 minutes. For instance, in 2007, there were two major outages in the HV network, causing both circuits 
+          of 'runners' that could not be switched to be disrupted. The first case involved damage due to ice, and the second case involved a helicopter accident. 
+          In 2010, there was a busbar fault due to leakage in a closed SF<sub>6</sub>-installation, a short circuit in a transformer field, and a defective current transformer were the causes of three interruptions in the high-voltage network, which together led to a significant outage duration.</p>
+<p> <img alt="pics_2.12" class="img-responsive-leon-15px center-block" height="354" src="./betrouwbaarheid_files/12.1.png" width="708"/> </p>
+<h5>Figure 12.1 Annual outage duration (p) per customer (min/year)</h5>
+<p>Figure 12.2 provides an overview of the average interruption duration<em>d</em>) per outage, caused by failures in the LV, MV, HV, and EHV networks,
+          in minutes, for the years 2000 through 2010. It is clear that the average interruption duration due to failures in the LV network is the highest.
+          In most LV networks, there is no switching capability, so the supply is restored by repair or by deploying a generator truck. Due to the relatively large number of failures, the average interruption duration shows little fluctuation over the years. In 2010, the average interruption duration due to failures in the LV network was 154 minutes.</p>
+<p> <img alt="pics_2.12" class="img-responsive-leon-15px center-block" height="354" src="./betrouwbaarheid_files/12.2.png" width="708"/> </p>
+<h5>Figure 12.2 Average interruption duration (d) per failure (min)</h5>
+<p>The average interruption duration due to failures in the MV network also shows little fluctuation over the years. Because the MV network is very extensive, failures occur relatively frequently. The average duration is shorter than for failures in the LV network because in the MV network, the supply is almost always restored by switching. In 2010, the average interruption duration due to failures in the MV network was 89 minutes.</p>
+<p>The average interruption duration due to failures in the HS and EHS networks shows significant fluctuations over the years, as it is highly dependent on random incidents. In 2010, the average interruption duration due to failures in the HS network was 63 minutes.</p>
+<p>Figure 12.3 shows the average interruption frequency (or interruption expectation,<em>f</em>) of a connected user due to failures in the LS, MS, HS, and EHS networks, in number of interruptions per year. The graph is not included in the report of the annual outage survey but can be easily calculated using the relationship in formula 12.1 from the annual outage duration (Figure 12.1) and the average interruption duration (Figure 12.2). Figure 12.3 shows that the interruption frequency for a connected user due to failures in the LS network is the smallest. In 2010, the interruption frequency due to failures in the LS network was 0.046 times per year, or once every 22 years.</p>
+<p>The interruption frequency due to failures in the MS network is, however, much higher than due to failures in the LS network. This is because the MS network that supplies a particular customer is much more extensive than the specific LS network that supplies the same customer. In 2010, the interruption frequency for a customer due to failures in the MS network was 0.21 times per year, or once every 5 years.</p>
+<p>The interruption frequency due to failures in the HS network is again smaller than due to failures in the MS network. This is because the HS network is designed in such a way that a single failure is immediately disconnected by the protection system, after which the network continues to function. Only in cases where there is no single failure reserve, or if a double-circuit connection of a feeder goes out of service, will the supply be interrupted. In 2010, the interruption frequency for a customer due to failures in the HS network was 0.12 times per year, or once every 8 years.</p>
+<p> <img alt="pics_2.12" class="img-responsive-leon-15px center-block" height="354" src="./betrouwbaarheid_files/12.3.png" width="708"/> </p>
+<h5>Figure 12.3 Average interruption frequency (f) per customer (number/year)</h5>
+<p>Table 12.1 provides an overview of the average values from the years 2000 to 2010 of the failure data, which are derived from the data in Figure 12.1, Figure 12.2, and Figure 12.3. The table presents the failure data for a customer connected to the LV network due to failures in the LV, MV, and HV networks. It is clear that the average annual outage duration (P) due to failures in the LV network is of the same order of magnitude as that due to failures in the HV network, but that in the HV network relatively frequent short interruptions occur, while in the LV network relatively many long-term failures occur. Due to the size of the MV network, this contributes the most to the annual outage duration. For this reason, it is important to pay a lot of attention to the reliability of the MV network.</p>
+<h5>Table 12.1 Average outage data for LV connections in the Netherlands (2000-2010)</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td nowrap="" rowspan="2" valign="top" width="25%"><p> <strong>Kenmerk</strong> </p></td>
+<td colspan="5" nowrap="" valign="top" width="75%"><p align="center"> <strong>Cause in</strong> </p></td>
+</tr>
+<tr>
+<td nowrap="" valign="top" width="15%"><p align="center"> <strong>&lt; 1kV</strong> </p>
+<p align="center"> <strong>LS</strong> </p></td>
+<td nowrap="" valign="top" width="15%"><p align="center"> <strong>1..35 kV</strong> </p>
+<p align="center"> <strong>MS</strong> </p></td>
+<td nowrap="" valign="top" width="15%"><p align="center"> <strong>35..220 kV</strong> </p>
+<p align="center"> <strong>HS</strong> </p></td>
+<td nowrap="" valign="top" width="15%"><p align="center"> <strong>Totaal</strong> </p></td>
+<td valign="top" width="15%"><p align="center"> <strong>Eenheid</strong> </p></td>
+</tr>
+<tr>
+<td nowrap="" valign="bottom" width="140"><p>Interruption expectation<em>f</em>)</p></td>
+<td valign="center" width="35"><p align="center">0.03</p></td>
+<td valign="center" width="43"><p align="center">0.20</p></td>
+<td valign="center" width="50"><p align="center">0.11</p></td>
+<td valign="center" width="35"><p align="center">0.34</p></td>
+<td valign="center" width="37"><p align="center">per year</p></td>
+</tr>
+<tr>
+<td nowrap="" valign="bottom" width="140"><p>Average interruption duration<em>d</em>)</p></td>
+<td nowrap="" width="35"><p align="center">158</p></td>
+<td nowrap="" width="43"><p align="center">90</p></td>
+<td nowrap="" width="50"><p align="center">50</p></td>
+<td nowrap="" width="35"><p align="center">83</p></td>
+<td width="37"><p align="center">min</p></td>
+</tr>
+<tr>
+<td nowrap="" valign="bottom" width="140"><p>Annual outage duration (<em>p</em>)</p></td>
+<td nowrap="" valign="bottom" width="35"><p align="center">4.8</p></td>
+<td nowrap="" valign="bottom" width="43"><p align="center">18.3</p></td>
+<td nowrap="" valign="bottom" width="50"><p align="center">5.5</p></td>
+<td nowrap="" valign="bottom" width="35"><p align="center">28.6</p></td>
+<td valign="top" width="37"><p align="center">min/year</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>In English-speaking countries, terms used to define reliability data are based on the number of affected connections. Although defined slightly differently, the values are equivalent to the outage characteristics used in the Netherlands.</p>
+<h6>SAIFI: System Average Interruption Frequency Index</h6>
+<p>This term is equivalent to the interruption expectation or interruption frequency<em>f</em>) of the supply. SAIFI is the average number of interruptions
+          that a connected customer can expect and is calculated as follows:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr> <td width="90%"><img alt="formules_2.12" src="./betrouwbaarheid_files/formule-12.3.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">12.3</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<p>The number of interruptions for connected customers usually pertains to a year. For North American grid operators, the average value is 1.1 interruptions per customer per year (IEEE Standard 1366-1998). In the Dutch grids, according to Table 12.1, this was an average of 0.34 per year for the period 2000-2010.</p>
+<h6>SAIDI: System Average Interruption Duration Index</h6>
+<p>This term is equal to the annual outage duration<em>p</em>). SAIDI is the expected outage duration for each connected customer and is calculated as follows:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr> <td width="90%"><img alt="formules_2.12" src="./betrouwbaarheid_files/formule-12.4.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">12.4</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<p>SAIDI is measured in minutes and usually pertains to a year. For North American grid operators, the average value is 90 minutes per customer per year. In the Dutch grids, according to table 12.1, this was an average of 28.6 minutes per year for the period 2000-2010.</p>
+<h6>CAIDI: Customer Average Interruption Duration Index</h6>
+<p>This term is equal to the average interruption duration<em>d</em>). CAIDI is related to SAIFI and SAIDI in a manner similar to the relationship in formula 12.1:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr> <td width="90%"><img alt="formules_2.12" src="./betrouwbaarheid_files/formule-12.5.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">12.5</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<p>CAIDI is the average outage duration that a customer can expect and can also be seen as the average restoration time. For North American grid operators, the average value is 82 minutes. In the Netherlands, according to Table 12.1, this was an average of 83 minutes for the period 2000-2010.</p>
+<h6>EENS: Expected Energy Not Served</h6>
+<p>This term is equal to the average amount of energy not served (ENS) to a customer or a group of customers. EENS is equal to the product of the annual outage duration and the average delivered power in kW:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr> <td width="90%"><img alt="formules_2.12" src="./betrouwbaarheid_files/formule-12.6.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">12.6</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<p>On average, in 2010, a customer experienced 0.38 interruptions. Figure 12.4 provides an overview of the average interruption duration versus the average interruption frequency for the years 2000 through 2010. Each marker represents an annual average. During the period considered, the interruption frequency varied<em>f</em>) between 0.31 and 0.42, and the interruption duration varied (<em>d</em>) between 65 and 101 minutes. There is no correlation between the frequency and the duration. The curves represent the constant annual outage duration<em>p</em>) increasing by 10 min/year and based on
+          the product of interruption frequency (<em>f</em>) and interruption duration (<em>d</em>).</p>
+<p>Compared to other European countries, the Dutch electricity supply system has a high reliability. In Europe, the annual averages for interruption duration range from 30 to 100 minutes, but also include high values of 200 to 300 minutes. Similarly, the annual averages for interruption frequency in Europe show high values of up to 2 times per year (Kema, 2011).</p>
+<p> <img alt="pics_2.12" class="img-responsive-leon-15px center-block" height="354" src="./betrouwbaarheid_files/12.4.png" width="708"/> </p>
+<h5>Figure 12.4 Average interruption duration (d) versus interruption frequency (f) from 2000 to 2010</h5>
+<p>The distribution network is almost entirely laid underground. Records have shown that excavation work is one of the main causes of interruptions. To reduce the number of excavation damages, the Underground Networks Information Exchange Act (WION) regulates the exchange of information about the location of cables and pipelines. Additionally, interruptions in cable joints are notorious. Figure 12.5 provides an overview of the main causes of interruptions in the medium voltage network of a network operator (Alliander, 2009). This overview clearly shows that the vast majority of all interruptions are related to cables and their accessories. It can be seen that approximately one-third of the interruptions are caused by joints and one-quarter by excavation damage. About one-fifth of the interruptions are due to a defect in a cable. For instance, the 'pumping and suction effect,' caused by a high fluctuating load, is a significant cause of accelerated aging of a GPLK cable.</p>
+<p>The fact that the medium voltage (MV) distribution network has the greatest influence on reliability is because the single fault reserve is only present in the network's structure and not in its operation, as is the case with transmission networks. Every short circuit results in the disconnection of the entire section. Detecting the fault and switching after a failure is done manually, which takes more time than in a transmission network, which is equipped with remotely readable measurements and remote control. Moreover, the consequences of a failure in the MV distribution network are quite significant, as the failure of a section affects a relatively large number of connected users.</p>
+<p> <img alt="pics_2.12" class="img-responsive-leon-15px center-block" height="354" src="./betrouwbaarheid_files/12.5.png" width="708"/> </p>
+<h5>Figure 12.5 Causes of Electricity Outage Duration</h5>
+<p>Each network operator uses its own reliability criteria. The average interruption duration for the different levels is adjusted based on the costs associated with not delivering energy. In low-voltage (LV) networks, sometimes an absolute duration is used for the average interruption. In other cases, such as at the medium-voltage (MV) level, the criterion is that the amount of undelivered energy, the product of the average recovery time and total affected load, must not exceed a specific value, in MWh. Additionally, in certain situations, a connected user can agree on reliability requirements with the network operator.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_12.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_12.2"></div>
+<br/>
+<h2>12.2 Failure, recovery, and repair</h2>
+<p>Reliability is determined by the combination of two processes: the failure of a component and the restoration of the supply to the disconnected subnet. It is not always the case that the supply is only resumed after the faulty component has been repaired. Therefore, in addition to knowledge about the repair data, insight into the restoration process of the supply is also needed. The failure of a component and the restoration of the supply are two separate processes that are approached independently.</p>
+<p>The failure frequency and repair duration of the individual components are defined:</p>
+<ul>
+<li>failure frequency (<em>λ</em>): the average number of times per year that a component fails</li>
+<li>repair duration<em>T<sub>rep</sub></em>): the average time required to repair or replace a defective component.</li>
+</ul>
+<p>The failure and repair data of components in the electricity grid are listed in the annual outage survey of Netbeheer Nederland (Kema, 2011). This annual report includes the recorded outages of that year. Given the relatively small number of outages, the data can vary significantly from year to year, both in the number of outages and in repair duration. There are also differences in failure frequency and repair time per grid operator. For example, a grid operator may have used joints of a certain type from a specific manufacturer in the past, which all show the same signs of degradation over time. Differences in repair strategies can also lead to variations in repair times. Tables 12.2, 12.3, and 12.4 provide an overview of the outage data of components in the LV, MV, and HV networks in the Netherlands for the years 2007, 2008, 2009, and 2010. The repair duration is the average recovery time of a component whose failure led to outages.</p>
+<h5>Table 12.2 Failure Data of LV Components in the Netherlands</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td nowrap="" valign="bottom" width="85"><p> <a name="_Ref286662897"><strong>LS</strong></a> </p></td>
+<td colspan="6" valign="top" width="28"><p align="center"> <strong>Faalfrequentie</strong> </p></td>
+<td colspan="5" valign="top" width="28"><p align="center"> <strong>Repair duration (h)</strong> </p></td>
+</tr>
+<tr>
+<td nowrap="" width="85"><p> <strong> </strong> </p>
+<p> <strong> </strong> </p>
+<p> <strong> </strong> </p>
+<p> <strong>Component</strong> </p></td>
+<td nowrap="" width="18"><p align="right">2007</p></td>
+<td nowrap="" width="18"><p align="right">2008</p></td>
+<td nowrap="" width="18"><p align="right">2009</p></td>
+<td width="18"><p align="right">2010</p></td>
+<td nowrap="" width="18"><p align="right">Gemiddeld</p></td>
+<td nowrap="" width="18"><p align="right">eenheid</p></td>
+<td nowrap="" width="18"><p align="right">2007</p></td>
+<td nowrap="" width="18"><p align="right">2008</p></td>
+<td nowrap="" width="18"><p align="right">2009</p></td>
+<td width="18"><p align="right">2010</p></td>
+<td nowrap="" width="18"><p align="right">Gemiddeld</p></td>
+</tr>
+<tr>
+<td nowrap="" width="85"><p>Network cable GPLK</p></td>
+<td nowrap="" width="18"><p>0.0465</p></td>
+<td nowrap="" width="18"><p>0.0441</p></td>
+<td nowrap="" width="18"><p>0.0440</p></td>
+<td width="18"><p>0.0502</p></td>
+<td nowrap="" width="18"><p>0.0462</p></td>
+<td nowrap="" width="18"><p>/km</p></td>
+<td nowrap="" width="18"><p>6</p></td>
+<td nowrap="" width="18"><p>10</p></td>
+<td nowrap="" width="18"><p>10</p></td>
+<td width="18"><p>24</p></td>
+<td nowrap="" width="18"><p>13</p></td>
+</tr>
+<tr>
+<td nowrap="" width="85"><p>Network cable plastic</p></td>
+<td nowrap="" width="18"><p>0.0347</p></td>
+<td nowrap="" width="18"><p>0.0308</p></td>
+<td nowrap="" width="18"><p>0.0288</p></td>
+<td width="18"><p>0.0352</p></td>
+<td nowrap="" width="18"><p>0.0324</p></td>
+<td nowrap="" width="18"><p>per km</p></td>
+<td nowrap="" width="18"><p>5</p></td>
+<td nowrap="" width="18"><p>7</p></td>
+<td nowrap="" width="18"><p>9</p></td>
+<td width="18"><p>16</p></td>
+<td nowrap="" width="18"><p>9</p></td>
+</tr>
+<tr>
+<td nowrap="" width="85"><p>Connection cable GPLK</p></td>
+<td nowrap="" width="18"><p>0.0952</p></td>
+<td nowrap="" width="18"><p>0.1028</p></td>
+<td nowrap="" width="18"><p>0.0975</p></td>
+<td width="18"><p>0.0578</p></td>
+<td nowrap="" width="18"><p>0.0883</p></td>
+<td nowrap="" width="18"><p>per km</p></td>
+<td nowrap="" width="18"><p>6</p></td>
+<td nowrap="" width="18"><p>13</p></td>
+<td nowrap="" width="18"><p>27</p></td>
+<td width="18"><p>30</p></td>
+<td nowrap="" width="18"><p>19</p></td>
+</tr>
+<tr>
+<td nowrap="" width="85"><p>Connection cable plastic</p></td>
+<td nowrap="" width="18"><p>0.0658</p></td>
+<td nowrap="" width="18"><p>0.0689</p></td>
+<td nowrap="" width="18"><p>0.0624</p></td>
+<td width="18"><p>0.0816</p></td>
+<td nowrap="" width="18"><p>0.0697</p></td>
+<td nowrap="" width="18"><p>per km</p></td>
+<td nowrap="" width="18"><p>4</p></td>
+<td nowrap="" width="18"><p>8</p></td>
+<td nowrap="" width="18"><p>17</p></td>
+<td width="18"><p>19</p></td>
+<td nowrap="" width="18"><p>12</p></td>
+</tr>
+<tr>
+<td nowrap="" width="85"><p>Splice mass</p></td>
+<td nowrap="" width="18"><p>0.0002</p></td>
+<td nowrap="" width="18"><p>0.0002</p></td>
+<td nowrap="" width="18"><p>0.0003</p></td>
+<td width="18"><p>0.0005</p></td>
+<td nowrap="" width="18"><p>0.0003</p></td>
+<td nowrap="" width="18"><p>/each</p></td>
+<td nowrap="" width="18"><p>8</p></td>
+<td nowrap="" width="18"><p>9</p></td>
+<td nowrap="" width="18"><p>15</p></td>
+<td width="18"><p>35</p></td>
+<td nowrap="" width="18"><p>17</p></td>
+</tr>
+<tr>
+<td nowrap="" width="85"><p>Plastic sleeve</p></td>
+<td nowrap="" width="18"><p>0.0002</p></td>
+<td nowrap="" width="18"><p>0.0001</p></td>
+<td nowrap="" width="18"><p>0.0002</p></td>
+<td width="18"><p>0.0003</p></td>
+<td nowrap="" width="18"><p>0.0002</p></td>
+<td nowrap="" width="18"><p>/each</p></td>
+<td nowrap="" width="18"><p>8</p></td>
+<td nowrap="" width="18"><p>11</p></td>
+<td nowrap="" width="18"><p>14</p></td>
+<td width="18"><p>32</p></td>
+<td nowrap="" width="18"><p>16</p></td>
+</tr>
+<tr>
+<td nowrap="" width="85"><p>End termination mass</p></td>
+<td nowrap="" width="18"><p>0.0001</p></td>
+<td nowrap="" width="18"><p>0.0001</p></td>
+<td nowrap="" width="18"><p>0.0001</p></td>
+<td width="18"><p>0.0000</p></td>
+<td nowrap="" width="18"><p>0.0001</p></td>
+<td nowrap="" width="18"><p>/each</p></td>
+<td nowrap="" width="18"><p>5</p></td>
+<td nowrap="" width="18"><p>4</p></td>
+<td nowrap="" width="18"><p>4</p></td>
+<td width="18"><p>11</p></td>
+<td nowrap="" width="18"><p>6</p></td>
+</tr>
+<tr>
+<td nowrap="" width="85"><p>Plastic end termination</p></td>
+<td nowrap="" width="18"><p>0.0001</p></td>
+<td nowrap="" width="18"><p>0.0001</p></td>
+<td nowrap="" width="18"><p>0.0001</p></td>
+<td width="18"><p>0.0001</p></td>
+<td nowrap="" width="18"><p>0.0001</p></td>
+<td nowrap="" width="18"><p>/each</p></td>
+<td nowrap="" width="18"><p>3</p></td>
+<td nowrap="" width="18"><p>3</p></td>
+<td nowrap="" width="18"><p>9</p></td>
+<td width="18"><p>18</p></td>
+<td nowrap="" width="18"><p>8</p></td>
+</tr>
+<tr>
+<td nowrap="" width="85"><p>Load separator, cartridge</p></td>
+<td nowrap="" width="18"><p>0.0016</p></td>
+<td nowrap="" width="18"><p>0.0017</p></td>
+<td nowrap="" width="18"><p>0.0015</p></td>
+<td width="18"><p>0.0014</p></td>
+<td nowrap="" width="18"><p>0.0016</p></td>
+<td nowrap="" width="18"><p>/each</p></td>
+<td nowrap="" width="18"><p>2</p></td>
+<td nowrap="" width="18"><p>2</p></td>
+<td nowrap="" width="18"><p>2</p></td>
+<td width="18"><p>3</p></td>
+<td nowrap="" width="18"><p>2</p></td>
+</tr>
+<tr>
+<td nowrap="" width="85"><p>Low voltage rack, cabinet</p></td>
+<td nowrap="" width="18"><p>0.0011</p></td>
+<td nowrap="" width="18"><p>0.0012</p></td>
+<td nowrap="" width="18"><p>0.0012</p></td>
+<td width="18"><p>0.0017</p></td>
+<td nowrap="" width="18"><p>0.0013</p></td>
+<td nowrap="" width="18"><p>/each</p></td>
+<td nowrap="" width="18"><p>3</p></td>
+<td nowrap="" width="18"><p>8</p></td>
+<td nowrap="" width="18"><p>16</p></td>
+<td width="18"><p>69</p></td>
+<td nowrap="" width="18"><p>24</p></td>
+</tr>
+<tr>
+<td nowrap="" width="85"><p>Smeltveiligheid</p></td>
+<td nowrap="" width="18"><p>0.0012</p></td>
+<td nowrap="" width="18"><p>0.0013</p></td>
+<td nowrap="" width="18"><p>0.0014</p></td>
+<td width="18"><p>0.0017</p></td>
+<td nowrap="" width="18"><p>0.0014</p></td>
+<td nowrap="" width="18"><p>/each</p></td>
+<td nowrap="" width="18"><p>2</p></td>
+<td nowrap="" width="18"><p>2</p></td>
+<td nowrap="" width="18"><p>4</p></td>
+<td width="18"><p>6</p></td>
+<td nowrap="" width="18"><p>4</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>Table 12.2 shows that the variation over the years in the failure frequency of low-voltage cables is between 5 and 20%. In particular, GPLK cables are more prone to disturbances than plastic cables. It is also notable that the failure frequency of low-voltage connection cables is twice as high as that of network cables. The variation in repair duration is especially significant for connection cables. For network cables, the repair duration is expected to be around 8 to 12 hours. It is anticipated that the repair duration for a splice is approximately the same as for a cable.</p>
+<h5>Table 12.3 Failure Data of Medium Voltage Components in the Netherlands</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td nowrap="" valign="bottom" width="100"><p> <strong>MS</strong> </p></td>
+<td colspan="6" valign="top" width="131"><p align="center"> <strong>Faalfrequentie</strong> </p></td>
+<td colspan="5" valign="top" width="109"><p align="center"> <strong>Repair duration (h)</strong> </p></td>
+</tr>
+<tr>
+<td nowrap="" width="100"><p> <strong> </strong> </p>
+<p> <strong> </strong> </p>
+<p> <strong> </strong> </p>
+<p> <strong>Component</strong> </p></td>
+<td nowrap="" width="22"><p align="right">2007</p></td>
+<td nowrap="" width="22"><p align="right">2008</p></td>
+<td nowrap="" width="22"><p align="right">2009</p></td>
+<td width="22"><p align="right">2010</p></td>
+<td nowrap="" width="22"><p align="right">Gemiddeld</p></td>
+<td nowrap="" width="22"><p align="right">eenheid</p></td>
+<td nowrap="" width="22"><p align="right">2007</p></td>
+<td nowrap="" width="22"><p align="right">2008</p></td>
+<td nowrap="" width="22"><p align="right">2009</p></td>
+<td width="22"><p align="right">2010</p></td>
+<td nowrap="" width="22"><p align="right">Gemiddeld</p></td>
+</tr>
+<tr>
+<td nowrap="" width="100"><p>Cable GPLK</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0114</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0108</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0110</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0128</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0115</p></td>
+<td nowrap="" valign="top" width="22"><p>/km</p></td>
+<td nowrap="" valign="top" width="22"><p>87</p></td>
+<td nowrap="" valign="top" width="22"><p>92</p></td>
+<td nowrap="" valign="top" width="22"><p>154</p></td>
+<td nowrap="" valign="top" width="22"><p>120</p></td>
+<td nowrap="" valign="top" width="22"><p>113</p></td>
+</tr>
+<tr>
+<td nowrap="" width="100"><p>Plastic cable</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0069</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0078</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0101</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0048</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0074</p></td>
+<td nowrap="" valign="top" width="22"><p>per kilometer</p></td>
+<td nowrap="" valign="top" width="22"><p>101</p></td>
+<td nowrap="" valign="top" width="22"><p>66</p></td>
+<td nowrap="" valign="top" width="22"><p>93</p></td>
+<td nowrap="" valign="top" width="22"><p>149</p></td>
+<td nowrap="" valign="top" width="22"><p>102</p></td>
+</tr>
+<tr>
+<td nowrap="" width="100"><p>Splice mass</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0026</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0029</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0032</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0037</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0031</p></td>
+<td nowrap="" valign="top" width="22"><p>/each</p></td>
+<td nowrap="" valign="top" width="22"><p>96</p></td>
+<td nowrap="" valign="top" width="22"><p>65</p></td>
+<td nowrap="" valign="top" width="22"><p>150</p></td>
+<td nowrap="" valign="top" width="22"><p>126</p></td>
+<td nowrap="" valign="top" width="22"><p>109</p></td>
+</tr>
+<tr>
+<td nowrap="" width="100"><p>Splice oil</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0004</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0003</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0005</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0004</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0004</p></td>
+<td nowrap="" valign="top" width="22"><p>/each</p></td>
+<td nowrap="" valign="top" width="22"><p>213</p></td>
+<td nowrap="" valign="top" width="22"><p>105</p></td>
+<td nowrap="" valign="top" width="22"><p>159</p></td>
+<td nowrap="" valign="top" width="22"><p>150</p></td>
+<td nowrap="" valign="top" width="22"><p>157</p></td>
+</tr>
+<tr>
+<td nowrap="" width="100"><p>Plastic coupling</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0019</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0018</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0010</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0011</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0015</p></td>
+<td nowrap="" valign="top" width="22"><p>/each</p></td>
+<td nowrap="" valign="top" width="22"><p>89</p></td>
+<td nowrap="" valign="top" width="22"><p>59</p></td>
+<td nowrap="" valign="top" width="22"><p>105</p></td>
+<td nowrap="" valign="top" width="22"><p>76</p></td>
+<td nowrap="" valign="top" width="22"><p>82</p></td>
+</tr>
+<tr>
+<td nowrap="" width="100"><p>End termination mass</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0001</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0000</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0001</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0001</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0001</p></td>
+<td nowrap="" valign="top" width="22"><p>/each</p></td>
+<td nowrap="" valign="top" width="22"><p>50</p></td>
+<td nowrap="" valign="top" width="22"><p>38</p></td>
+<td nowrap="" valign="top" width="22"><p>346</p></td>
+<td nowrap="" valign="top" width="22"><p>63</p></td>
+<td nowrap="" valign="top" width="22"><p>124</p></td>
+</tr>
+<tr>
+<td nowrap="" width="100"><p>End termination oil/grease</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0001</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0001</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0002</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0002</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0002</p></td>
+<td nowrap="" valign="top" width="22"><p>/each</p></td>
+<td nowrap="" valign="top" width="22"><p>77</p></td>
+<td nowrap="" valign="top" width="22"><p>51</p></td>
+<td nowrap="" valign="top" width="22"><p>164</p></td>
+<td nowrap="" valign="top" width="22"><p>163</p></td>
+<td nowrap="" valign="top" width="22"><p>114</p></td>
+</tr>
+<tr>
+<td nowrap="" width="100"><p>End termination plastic</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0002</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0001</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0002</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0002</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0002</p></td>
+<td nowrap="" valign="top" width="22"><p>/each</p></td>
+<td nowrap="" valign="top" width="22"><p>28</p></td>
+<td nowrap="" valign="top" width="22"><p>25</p></td>
+<td nowrap="" valign="top" width="22"><p>54</p></td>
+<td nowrap="" valign="top" width="22"><p>97</p></td>
+<td nowrap="" valign="top" width="22"><p>51</p></td>
+</tr>
+<tr>
+<td nowrap="" width="100"><p>Rail</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0002</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0001</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0003</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0004</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0003</p></td>
+<td nowrap="" valign="top" width="22"><p>/each</p></td>
+<td nowrap="" valign="top" width="22"><p>126</p></td>
+<td nowrap="" valign="top" width="22"><p>128</p></td>
+<td nowrap="" valign="top" width="22"><p>33</p></td>
+<td nowrap="" valign="top" width="22"><p>125</p></td>
+<td nowrap="" valign="top" width="22"><p>103</p></td>
+</tr>
+<tr>
+<td nowrap="" width="100"><p>Transformer MS/LS</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0007</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0006</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0008</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0006</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0007</p></td>
+<td nowrap="" valign="top" width="22"><p>/each</p></td>
+<td nowrap="" valign="top" width="22"><p>105</p></td>
+<td nowrap="" valign="top" width="22"><p>31</p></td>
+<td nowrap="" valign="top" width="22"><p>59</p></td>
+<td nowrap="" valign="top" width="22"><p>70</p></td>
+<td nowrap="" valign="top" width="22"><p>66</p></td>
+</tr>
+<tr>
+<td nowrap="" width="100"><p>Vermogenschakelaar</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0019</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0019</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0013</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0009</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0015</p></td>
+<td nowrap="" valign="top" width="22"><p>/each</p></td>
+<td nowrap="" valign="top" width="22"><p>22</p></td>
+<td nowrap="" valign="top" width="22"><p>26</p></td>
+<td nowrap="" valign="top" width="22"><p>88</p></td>
+<td nowrap="" valign="top" width="22"><p>64</p></td>
+<td nowrap="" valign="top" width="22"><p>50</p></td>
+</tr>
+<tr>
+<td nowrap="" width="100"><p>Lastscheider</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0002</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0002</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0002</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0002</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0002</p></td>
+<td nowrap="" valign="top" width="22"><p>/each</p></td>
+<td nowrap="" valign="top" width="22"><p>43</p></td>
+<td nowrap="" valign="top" width="22"><p>60</p></td>
+<td nowrap="" valign="top" width="22"><p>71</p></td>
+<td nowrap="" valign="top" width="22"><p>53</p></td>
+<td nowrap="" valign="top" width="22"><p>57</p></td>
+</tr>
+<tr>
+<td nowrap="" width="100"><p>Scheider</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0001</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0000</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0001</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0001</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0001</p></td>
+<td nowrap="" valign="top" width="22"><p>/each</p></td>
+<td nowrap="" valign="top" width="22"><p>236</p></td>
+<td nowrap="" valign="top" width="22"><p>1</p></td>
+<td nowrap="" valign="top" width="22"><p>13</p></td>
+<td nowrap="" valign="top" width="22"><p>154</p></td>
+<td nowrap="" valign="top" width="22"><p>101</p></td>
+</tr>
+<tr>
+<td nowrap="" width="100"><p>Smoorspoel</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0000</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0000</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0005</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0000</p></td>
+<td nowrap="" valign="top" width="22"><p>0.0001</p></td>
+<td nowrap="" valign="top" width="22"><p>/each</p></td>
+<td nowrap="" valign="top" width="22"></td>
+<td nowrap="" valign="top" width="22"></td>
+<td nowrap="" valign="top" width="22"><p>2620</p></td>
+<td nowrap="" valign="top" width="22"></td>
+<td nowrap="" valign="top" width="22"><p>2620</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>Table 12.3 shows that the failure frequencies of components in the MS network are lower than those of components in the LS network: the failure frequency of cables is approximately four times lower. Here too, GPLK cables are more frequently disturbed than plastic cables. This is not necessarily due to the age or quality of the cables. GPLK cables are typically located in older urban areas, where they can be damaged by excavation work for urban renewal projects.</p>
+<p>It is immediately noticeable that the repair duration for medium-voltage (MV) cables is much longer than for low-voltage (LV) cables. Additionally, the variation in repair duration over the years is quite large. In general, repairs in 2009 and 2010 seem to take longer than in the previous two years. The fact that the repair durations for MV cables are longer than for LV cables is because, in the event of failures in MV cables, the supply can usually be restored by switching, making the repair less urgent. For other components, such as rails, transformers, circuit breakers, and reactors, the repair duration is the time required to replace the defective component. The failure frequency of these components is so low that the repair duration has a fairly large variation, making it difficult to find a realistic value. For instance, there is only one record of reactor replacement in 2009, where the replacement duration was apparently very long.</p>
+<h5>Table 12.4 Failure Data of HS Components in the Netherlands</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td nowrap="" valign="bottom" width="100"><p> <strong>HS</strong> </p></td>
+<td colspan="6" valign="top" width="131"><p align="center"> <strong>Faalfrequentie</strong> </p></td>
+<td colspan="5" valign="top" width="109"><p align="center"> <strong>Repair duration (h)</strong> </p></td>
+</tr>
+<tr>
+<td nowrap="" width="100"><p> <strong> </strong> </p>
+<p> <strong> </strong> </p>
+<p> <strong> </strong> </p>
+<p> <strong>Component</strong> </p></td>
+<td nowrap="" width="22"><p align="right">2007</p></td>
+<td nowrap="" width="22"><p align="right">2008</p></td>
+<td nowrap="" width="22"><p align="right">2009</p></td>
+<td width="22"><p align="right">2010</p></td>
+<td nowrap="" width="22"><p align="right">Gemiddeld</p></td>
+<td nowrap="" width="22"><p align="right">eenheid</p></td>
+<td nowrap="" width="22"><p align="right">2007</p></td>
+<td nowrap="" width="22"><p align="right">2008</p></td>
+<td nowrap="" width="22"><p align="right">2009</p></td>
+<td width="22"><p align="right">2010</p></td>
+<td nowrap="" width="22"><p align="right">Gemiddeld</p></td>
+</tr>
+<tr>
+<td nowrap="" width="100"><p>Kabel</p></td>
+<td nowrap="" width="22"><p>0.0047</p></td>
+<td nowrap="" width="22"><p>0.0025</p></td>
+<td nowrap="" width="22"><p>0.0032</p></td>
+<td width="22"><p>0.0037</p></td>
+<td nowrap="" width="22"><p>0.0035</p></td>
+<td nowrap="" width="22"><p>/km</p></td>
+<td nowrap="" width="22"><p>145</p></td>
+<td nowrap="" width="22"><p>235</p></td>
+<td nowrap="" width="22"><p>102</p></td>
+<td width="22"><p>397</p></td>
+<td nowrap="" width="22"><p>220</p></td>
+</tr>
+<tr>
+<td nowrap="" width="100"><p>Overhead line</p></td>
+<td nowrap="" width="22"><p>0.0060</p></td>
+<td nowrap="" width="22"><p>0.0036</p></td>
+<td nowrap="" width="22"><p>0.0038</p></td>
+<td width="22"><p>0.0057</p></td>
+<td nowrap="" width="22"><p>0.0048</p></td>
+<td nowrap="" width="22"><p>per km</p></td>
+<td nowrap="" width="22"><p>433</p></td>
+<td nowrap="" width="22"><p>7</p></td>
+<td nowrap="" width="22"><p>4</p></td>
+<td width="22"><p>210</p></td>
+<td nowrap="" width="22"><p>164</p></td>
+</tr>
+<tr>
+<td nowrap="" width="100"><p>Mof</p></td>
+<td nowrap="" width="22"><p>0.0000</p></td>
+<td nowrap="" width="22"><p>0.0000</p></td>
+<td nowrap="" width="22"><p>0.0001</p></td>
+<td width="22"><p>0.0000</p></td>
+<td nowrap="" width="22"><p>0.0000</p></td>
+<td nowrap="" width="22"><p>/per piece</p></td>
+<td nowrap="" width="22"></td>
+<td nowrap="" width="22"></td>
+<td nowrap="" width="22"></td>
+<td width="22"></td>
+<td nowrap="" width="22"></td>
+</tr>
+<tr>
+<td nowrap="" width="100"><p>Eindsluiting</p></td>
+<td nowrap="" width="22"><p>0.0014</p></td>
+<td nowrap="" width="22"><p>0.0013</p></td>
+<td nowrap="" width="22"><p>0.0007</p></td>
+<td width="22"><p>0.0004</p></td>
+<td nowrap="" width="22"><p>0.0010</p></td>
+<td nowrap="" width="22"><p>/per piece</p></td>
+<td nowrap="" width="22"><p>730</p></td>
+<td nowrap="" width="22"><p>99</p></td>
+<td nowrap="" width="22"><p>89</p></td>
+<td width="22"><p>11</p></td>
+<td nowrap="" width="22"><p>232</p></td>
+</tr>
+<tr>
+<td nowrap="" width="100"><p>Vermogenschakelaar</p></td>
+<td nowrap="" width="22"><p>0.0012</p></td>
+<td nowrap="" width="22"><p>0.0032</p></td>
+<td nowrap="" width="22"><p>0.0044</p></td>
+<td width="22"><p>0.0016</p></td>
+<td nowrap="" width="22"><p>0.0026</p></td>
+<td nowrap="" width="22"><p>/per piece</p></td>
+<td nowrap="" width="22"><p>48</p></td>
+<td nowrap="" width="22"><p>18</p></td>
+<td nowrap="" width="22"><p>161</p></td>
+<td width="22"><p>3</p></td>
+<td nowrap="" width="22"><p>58</p></td>
+</tr>
+<tr>
+<td nowrap="" width="100"><p>Scheider</p></td>
+<td nowrap="" width="22"><p>0.0004</p></td>
+<td nowrap="" width="22"><p>0.0002</p></td>
+<td nowrap="" width="22"><p>0.0006</p></td>
+<td width="22"><p>0.0005</p></td>
+<td nowrap="" width="22"><p>0.0004</p></td>
+<td nowrap="" width="22"><p>/per piece</p></td>
+<td nowrap="" width="22"><p>3</p></td>
+<td nowrap="" width="22"><p>4</p></td>
+<td nowrap="" width="22"><p>6</p></td>
+<td width="22"><p>1652</p></td>
+<td nowrap="" width="22"><p>416</p></td>
+</tr>
+<tr>
+<td nowrap="" width="100"><p>Rail</p></td>
+<td nowrap="" width="22"><p>0.0014</p></td>
+<td nowrap="" width="22"><p>0.0015</p></td>
+<td nowrap="" width="22"><p>0.0042</p></td>
+<td width="22"><p>0.0109</p></td>
+<td nowrap="" width="22"><p>0.0045</p></td>
+<td nowrap="" width="22"><p>/per piece</p></td>
+<td nowrap="" width="22"></td>
+<td nowrap="" width="22"></td>
+<td nowrap="" width="22"></td>
+<td width="22"><p>10</p></td>
+<td nowrap="" width="22"><p>10</p></td>
+</tr>
+<tr>
+<td nowrap="" width="100"><p>Transformer HV/MV</p></td>
+<td nowrap="" width="22"><p>0.0021</p></td>
+<td nowrap="" width="22"><p>0.0197</p></td>
+<td nowrap="" width="22"><p>0.0196</p></td>
+<td width="22"><p>0.0205</p></td>
+<td nowrap="" width="22"><p>0.0155</p></td>
+<td nowrap="" width="22"><p>/per piece</p></td>
+<td nowrap="" width="22"><p>67</p></td>
+<td nowrap="" width="22"><p>38</p></td>
+<td nowrap="" width="22"><p>123</p></td>
+<td width="22"><p>67</p></td>
+<td nowrap="" width="22"><p>74</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>Table 12.4 shows that the failure frequency of components in the HV network is generally lower than that of components in the MV network. In general, the average repair duration is longer than that of components in the MV network. Because the HV network is relatively small compared to the MV and LV networks, there are relatively few failures, resulting in a wide variation in repair duration.</p> <a href="https://www.phasetophase.nl/boek/boek_2_12.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_12.2.1"></div>
+<br/>
+<h3>12.2.1 Failures</h3>
+<p>Failure is defined as a component becoming so defective that it is immediately taken out of service. The interruption frequency<em>f</em>) of a string is calculated from the sum of the failure frequencies (<em>λ</em>) of all components of the string, plus the interruption frequency (<em>f<sub>voeding</sub></em>) of the upstream network. Figure 12.6 illustrates that a connected user in the LV network deals with the chain of reliability of the LV network, the substation, the MV network, the feeder station, and the HV and EHV networks. If a short circuit occurs in one of the cables of an MV string, the protection of that string will activate and disconnect, causing the entire string, including all connected users, to be out of service.</p>
+<p> <img alt="pics_2.12" class="img-responsive-leon-15px center-block" height="166" src="./betrouwbaarheid_files/12.6.png" width="712"/> </p>
+<h5>Figure 12.6 Chain of reliability influences</h5>
+<p>In the following equation, the interruption frequency of a point in the LV network is calculated from the sum of the interruption frequency of the HV busbar of the HV/MV substation and the failure frequencies of the components of the substation up to the LV network. The interruption frequency of the HV network is not calculated but is taken from the fault registration data in Table 12.1, because the reliability calculation of the N-1 secure transmission network requires a more extensive calculation than the method presented in this chapter for distribution networks.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr><td width="90%"><img alt="formules_2.12" src="./betrouwbaarheid_files/formule-12.7.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">12.7</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<p>with:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="150"><em>f</em></td>
+<td>onderbrekingsfrequentie</td>
+</tr>
+<tr>
+<td valign="top"><em>λ<sub>HV/MV transformer</sub></em></td>
+<td>failure frequency of the power transformer (per year)</td>
+</tr>
+<tr>
+<td valign="top"><em>l<sub>MS</sub></em></td>
+<td>length of MV cable (km)</td>
+</tr>
+<tr>
+<td valign="top"><em>λ<sub>MV cable</sub></em></td>
+<td>failure frequency of MV cable (per year and per km)</td>
+</tr>
+<tr>
+<td valign="top"><em>l<sub>LS</sub></em></td>
+<td>length of LV cable (km)</td>
+</tr>
+<tr>
+<td valign="top"><em>λ<sub>LV cable</sub></em></td>
+<td>voltage phase angle (rad) failure frequency of LV cable (per year and per km)</td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>The failure process is explained using the example network in figure 12.7. In this network, the reliability of the EHS and HS network, and thus the reliability of the supply at the HS node of the substation, is modeled in the reliability of the network supply.</p>
+<p> <img alt="pics_2.12" class="img-responsive-leon-15px center-block" height="219" src="./betrouwbaarheid_files/12.7.png" width="712"/> </p>
+<h5>Figure 12.7 MV and LV distribution network with HV supply</h5>
+<p>All MV cables in this example are of equal length: 1000 m. Similarly, all LV cables behind substation MS11 are of equal length: 100 m. The failure frequency of a cable is equal to the product of its length and its failure frequency per unit length. The failure frequencies are derived from Table 12.1, Table 12.2, Table 12.3, and Table 12.4. The failure frequency of an MV cable is set at 0.01 /km/year and that of an LV cable at 0.03 /km/year. The failure frequencies of busbars and nodes are neglected in this example. The failure parameters of the components of the network in Figure 12.7 for use in a reliability calculation are then:</p>
+<h5>Table 12.5 Failure Data for the Example Network in Figure 12.7</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="133"><p> <strong>Component</strong> </p></td>
+<td valign="top" width="128"><p> <strong>Faalfrequentie</strong> <strong>λ (per year)</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="133"><p>Netvoeding</p></td>
+<td valign="top" width="128"><p>0.11</p></td>
+</tr>
+<tr>
+<td valign="top" width="133"><p>HS/MS transformer</p></td>
+<td valign="top" width="128"><p>0.014</p></td>
+</tr>
+<tr>
+<td valign="top" width="133"><p>MS cable (1 km x l)<sub>MS cable</sub>)</p></td>
+<td valign="top" width="128"><p>0.01</p></td>
+</tr>
+<tr>
+<td valign="top" width="133"><p>MS/LS transformer</p></td>
+<td valign="top" width="128"><p>0.001</p></td>
+</tr>
+<tr>
+<td valign="top" width="133"><p>LS cable (0.1 km x l)<sub>Low-voltage cable</sub>)</p></td>
+<td valign="top" width="128"><p>0.003</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>A short circuit only affects the part of the network that is jointly protected. This means that in the event of a short circuit in the substation, the supply to the entire underlying medium-voltage (MV) network is interrupted. All cables and substations in the MV string are jointly protected. In the event of a short circuit in a cable of the MV string, the supply to that string and all connected substations is interrupted. All cables in the low-voltage (LV) string are also jointly protected. In the event of a short circuit in an LV cable, only the supply to all connections on that LV string is interrupted. This, of course, assumes that the protection is selectively set and functioning properly. By applying formula 12.7, the failure frequency for all network parts can be calculated. Each 'jump' in the calculated failure frequency in table 12.6 is caused by a protection device.</p>
+<h5>Table 12.6 Calculated interruption frequencies (f) for the example network in figure 12.7</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td rowspan="2" valign="top" width="105"><p> <strong>Failing component</strong> </p></td>
+<td colspan="2" valign="top" width="93"><p> <strong>Voedingsstation</strong> </p></td>
+<td colspan="2" valign="top" width="90"><p> <strong>Substation MS11</strong> </p></td>
+<td valign="top" width="75"><p> <strong>LV node</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="46"><p> <strong>HS rail</strong> </p></td>
+<td valign="top" width="47"><p> <strong>MV rail</strong> </p></td>
+<td valign="top" width="47"><p> <strong>MV rail</strong> </p></td>
+<td valign="top" width="43"><p> <strong>LV rail</strong> </p></td>
+<td valign="top" width="75"><p> <strong> </strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="105"><p>Netvoeding</p></td>
+<td valign="top" width="46"><p align="center">0.110</p></td>
+<td valign="top" width="47"><p align="center">0.110</p></td>
+<td valign="top" width="47"><p align="center">0.110</p></td>
+<td valign="top" width="43"><p align="center">0.110</p></td>
+<td valign="top" width="75"><p align="center">0.110</p></td>
+</tr>
+<tr>
+<td valign="top" width="105"><p>HV/MV transformer</p></td>
+<td valign="top" width="46"></td>
+<td valign="top" width="47"><p align="center">0.014</p></td>
+<td valign="top" width="47"><p align="center">0.014</p></td>
+<td valign="top" width="43"><p align="center">0.014</p></td>
+<td valign="top" width="75"><p align="center">0.014</p></td>
+</tr>
+<tr>
+<td valign="top" width="105"><p>5 MV cables</p></td>
+<td valign="top" width="46"></td>
+<td valign="top" width="47"></td>
+<td valign="top" width="47"><p align="center">0.050</p></td>
+<td valign="top" width="43"><p align="center">0.050</p></td>
+<td valign="top" width="75"><p align="center">0.050</p></td>
+</tr>
+<tr>
+<td valign="top" width="105"><p>HV/LV transformer</p></td>
+<td valign="top" width="46"></td>
+<td valign="top" width="47"></td>
+<td valign="top" width="47"></td>
+<td valign="top" width="43"><p align="center">0.001</p></td>
+<td valign="top" width="75"><p align="center">0.001</p></td>
+</tr>
+<tr>
+<td valign="top" width="105"><p>5 LV cables</p></td>
+<td valign="top" width="46"></td>
+<td valign="top" width="47"></td>
+<td valign="top" width="47"></td>
+<td valign="top" width="43"></td>
+<td valign="top" width="75"><p align="center">0.015</p></td>
+</tr>
+<tr>
+<td valign="top" width="105"><p>Totaal</p></td>
+<td valign="top" width="46"><p align="center">0.110</p></td>
+<td valign="top" width="47"><p align="center">0.124</p></td>
+<td valign="top" width="47"><p align="center">0.174</p></td>
+<td valign="top" width="43"><p align="center">0.175</p></td>
+<td valign="top" width="75"><p align="center">0.190</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The failure frequencies<em>l</em>) of components are often assumed to be constant. In practice, the failure frequency is not constant but depends, among other things, on the age of the component, the degree of (over)loading in the past, and the maintenance performed. Protections can also fail, in the sense that they may trip incorrectly or fail to trip when they should (protection refusal). In the case of a refusing protection, the backup protection will need to trip, resulting in less selective disconnection.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_12.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_12.2.2"></div>
+<br/>
+<h3>12.2.2 Restoration of Supply</h3>
+<p>In addition to the repair duration, the restoration time is important for determining the unavailability. The restoration time is the duration between the moment of the fault and the restoration of supply. In most cases, nothing is repaired yet, and the supply is restored through switching actions after the faulty component has been isolated. The restoration time consists of several steps, each with its own duration:</p>
+<ul>
+<li>detecting fault</li>
+<li>deploying the troubleshooting team</li>
+<li>locating fault site</li>
+<li>isolate fault site</li>
+<li>activate opened switches and switch network openings</li>
+</ul>
+<h6>Detecting fault</h6>
+<p>After a fault has occurred, causing a part of the network to be shut down, it takes a while before the fault is known at the operations center. With an automatic notification, this happens almost immediately. In other cases, the fault only becomes known after customers have reported it by phone.</p>
+<h6>Deploy repair crew</h6>
+<p>After the fault is detected, a repair crew is dispatched to the affected area. The time this takes depends on many factors, such as the time of day and traffic conditions. Experience statistics of the relevant network operator play a significant role in this.</p>
+<h6>Locating fault site</h6>
+<p>When the troubleshooting team arrives on site, the step for locating the fault site begins. If remotely readable fault indicators are used or a fault location system is employed, the fault site can be found relatively quickly. If that is not the case, the fault site must be located by inspecting the short-circuit indicators station by station. If only one troubleshooting team is working, they can choose between the sequential and binary search methods. In the sequential method, the troubleshooting team checks the status of the short-circuit indicators of all network stations in the affected string from the substation towards the network opening (Figure 12.8). If the fault is close to the substation, that is advantageous. However, if the fault is at the end of the string, the search will take a lot of time.</p>
+<p>In the binary search method, half of the search area is eliminated each time using a halving method (Figure 12.9). If a short-circuit indicator has detected a continuous short-circuit current, the search continues in the direction of the network opening. If this is not the case, the search moves back toward the substation. Particularly in long strings, the binary search method has an advantage over the sequential search method. This depends on the distances and travel times. In practice, the search method used will be a combination of both methods, where as many network stations with branches as possible are visited first.</p>
+<p> <img alt="pics_2.12" class="img-responsive-leon-15px center-block" height="163" src="./betrouwbaarheid_files/12.8.png" width="712"/> </p>
+<h5>Figure 12.8 Sequential Search Method</h5>
+<p> <img alt="pics_2.12" class="img-responsive-leon-15px center-block" height="164" src="./betrouwbaarheid_files/12.9.png" width="712"/> </p>
+<h5>Figure 12.9 Binary Search Method</h5>
+<p>If the short circuit is located, it is isolated by opening the disconnectors on both sides. In most cases, the short circuit is found in a cable segment or a joint. The short circuit is often caused by excavation work or a spontaneous fault in a cable or joint. If the short circuit is located in a network station, the cables on both sides are disconnected, and the network station can no longer be powered.</p>
+<h6>Activate opened switches and switch network openings</h6>
+<p>In most cable trace faults, the supply is restored by closing the circuit breakers opened by the protection system and by closing one or more disconnectors that are normally open. After the fault location is isolated, the section is split into two parts. The supply to the first part of the section can be easily restored by closing the switch in the substation that was opened by the protection system. The restoration of the supply to the second part of the section can occur in three ways:</p>
+<ul>
+<li>switching via a neighboring network by closing normally open network switches</li>
+<li>deploying an emergency power supply if switching is not possible</li>
+<li>repair or replacement of the faulty component if switching and deploying an emergency power supply are not possible.</li>
+</ul>
+<p>Figure 12.10 shows a ring-shaped medium voltage (MV) network with a network opening at substation 'MS15'. If the cable between substations 'MS13' and 'MS14' is short-circuited, the entire section is shut down.</p>
+<p> <img alt="pics_2.12" class="img-responsive-leon-15px center-block" height="230" src="./betrouwbaarheid_files/12.10.png" width="712"/> </p>
+<h5>Figure 12.10 MV section deactivated due to short circuit</h5>
+<p>Figure 12.11 shows that the fault was located between substations 'MS13' and 'MS14', after which the disconnectors on both sides were opened. The supply was restored by, on one hand, switching on the circuit breaker in the substation and, on the other hand, closing the normally open disconnector at substation 'MS15'.</p>
+<p> <img alt="pics_2.12" class="img-responsive-leon-15px center-block" height="236" src="./betrouwbaarheid_files/12.11.png" width="712"/> </p>
+<h5>Figure 12.11 Isolated cable section and restored supply through switching on and switching over</h5>
+<p>It depends on the capacity of the network section to be switched whether all substations can be re-energized by closing normally open disconnectors. If the maximum current load of the alternative circuit is insufficient, the supply to the affected substations will, if possible, be distributed over two or more alternative circuits.</p>
+<h6>Noodstroomvoorziening</h6>
+<p>In the medium-voltage network, there are branches that cannot be fed from another side by closing normally open disconnectors. In such cases, the supply can only be restored by setting up an emergency power supply. This consists of one or more generators that can be connected to the substations. The repair will be carried out as quickly as possible.</p>
+<p>If the short circuit is located in a substation, the supply to the downstream low-voltage (LV) network usually cannot be restored through a switching action. Chapter 2 explains that LV networks are often designed with a radial structure, which lacks a fault reserve. In such cases, the supply can only be restored using an emergency power supply.</p>
+<h6>Reparatie</h6>
+<p>If the supply cannot be restored through switching actions or by using an emergency power supply, the outage duration is determined by the repair duration. According to Table 12.2, repairing an LV cable takes approximately 10 hours. According to Table 12.3, repairing an MV cable takes an average of about 100 hours. This repair duration is based on non-urgent repair of a cable in an MV distribution network where the supply has been restored by switching. If the supply cannot be restored by switching, the repair becomes urgent and the cable will be repaired in a shorter time.</p>
+<h6>Herstelduur</h6>
+<p>The expected repair duration depends on the size of the network and can be calculated from the sum of the time durations involved in all individual repair actions. Table 12.7 provides an overview. The time durations vary from company to company and also depend on the level of automation in each distribution network, the ability to remotely read the short-circuit indicators, and the presence of a fault location system.</p>
+<h5>Table 12.7 Definition of Time Durations for Recovery Actions</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="25%"><p>T<sub>signaleren</sub> </p></td>
+<td valign="top" width="75%"><p>Duration for detecting a short circuit</p></td>
+</tr>
+<tr>
+<td valign="top" width="64"><p>T<sub>storingsploeg</sub> </p></td>
+<td valign="top" width="276"><p>Duration for deploying the fault team</p></td>
+</tr>
+<tr>
+<td valign="top" width="64"><p>T<sub>lokaliseren</sub> </p></td>
+<td valign="top" width="276"><p>Duration for locating the fault site</p></td>
+</tr>
+<tr>
+<td valign="top" width="64"><p>T<sub>isoleren</sub> </p></td>
+<td valign="top" width="276"><p>Duration for isolating the fault site</p></td>
+</tr>
+<tr>
+<td valign="top" width="64"><p>T<sub>inschakelen</sub> </p></td>
+<td valign="top" width="276"><p>Duration for switching on the circuit breaker that was tripped by the protection system</p></td>
+</tr>
+<tr>
+<td valign="top" width="64"><p>T<sub>omschakelen</sub> </p></td>
+<td valign="top" width="276"><p>Duration for closing normally open disconnectors</p></td>
+</tr>
+<tr>
+<td valign="top" width="62"><p>T<sub>noodstroom</sub> </p></td>
+<td valign="top" width="278"><p>Duration for deploying an emergency power supply</p></td>
+</tr>
+<tr>
+<td valign="top" width="62"><p>T<sub>reparatie</sub> </p></td>
+<td valign="top" width="278"><p>Duration for repairing the faulty component</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>It depends on the structure of the network whether the supply can be restored by switching and transferring or if an emergency power supply needs to be deployed or if it is necessary to wait for repairs. Depending on the method of restoration, the recovery time is determined using the formulas below. Formula 12.8 calculates the recovery for the network section between the substation and the fault location:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr> <td width="90%"><img alt="formules_2.12" src="./betrouwbaarheid_files/formule-12.8.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">12.8</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<p>Formula 12.9 calculates the recovery for the network section between the fault location and a network opening:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr> <td width="90%"><img alt="formules_2.12" src="./betrouwbaarheid_files/formule-12.9.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">12.9</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<p>Formula 12.10 calculates the recovery for a network section using an emergency power supply:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr> <td width="90%"><img alt="formules_2.12" src="./betrouwbaarheid_files/formule-12.10.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">12.10</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<p>Formula 12.11 calculates the recovery for a network section where repair must be awaited:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr> <td width="90%"><img alt="formules_2.12" src="./betrouwbaarheid_files/formule-12.11.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">12.11</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<p>For the short circuit in the cable segment between the nodes 'MS13' and 'MS14', as shown in figure 12.11, the recovery duration of the medium voltage nodes is explained below. In table 12.8, the time durations of the individual recovery actions are assumed arbitrarily.</p>
+<h5>Table 12.8 Time Durations for Recovery Actions</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="25%"><p>T<sub>signaleren</sub> </p></td>
+<td valign="top" width="75%"><p>2 minutes</p></td>
+</tr>
+<tr>
+<td valign="top" width="64"><p>T<sub>storingsploeg</sub> </p></td>
+<td valign="top" width="276"><p>30 minutes</p></td>
+</tr>
+<tr>
+<td valign="top" width="64"><p>T<sub>lokaliseren</sub> </p></td>
+<td valign="top" width="276"><p>10 minutes per station</p></td>
+</tr>
+<tr>
+<td valign="top" width="64"><p>T<sub>isoleren</sub> </p></td>
+<td valign="top" width="276"><p>10 minutes</p></td>
+</tr>
+<tr>
+<td valign="top" width="64"><p>T<sub>inschakelen</sub> </p></td>
+<td valign="top" width="276"><p>15 minutes</p></td>
+</tr>
+<tr>
+<td valign="top" width="64"><p>T<sub>omschakelen</sub> </p></td>
+<td valign="top" width="276"><p>15 minutes</p></td>
+</tr>
+<tr>
+<td valign="top" width="64"><p>T<sub>noodstroom</sub> </p></td>
+<td valign="top" width="276"><p>120 minutes</p></td>
+</tr>
+<tr>
+<td valign="top" width="64"><p>T<sub>reparatie</sub> </p></td>
+<td valign="top" width="276"><p>given per component</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The repair time for a fault in the high-voltage network is taken from table 12.1, which shows the average interruption duration.<em>d</em>) for faults in the high-voltage network
+          is 50 minutes. The repair time for a fault in the high-voltage/medium-voltage supply transformer is determined by the time required to switch to the backup transformer. For this duration, an arbitrary 52 minutes has been assumed. For a fault in one of the cable segments, the repair time by switching on the disconnected circuit breaker in the substation according to formula 12.8 and table 12.8 is equal to: T<sub>herstel</sub>= 2 + 30 + 5 x
+          10 + 10 + 15 = 107 minutes. The repair time by switching on the normally open disconnector in substation 'MS15' according to formula 12.9 and table 12.8
+          is equal to: T<sub>herstel</sub>= 2 + 30 + 5 x 10 + 10 + 15 + 15 = 122 minutes. With this, table 12.9 for the MS nodes of the disturbed section can be compiled.</p>
+<h5>Table 12.9 Restoration times (d) for the MS section</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td rowspan="2" valign="top"><p> <strong>Failing component</strong> </p></td>
+<td colspan="6" valign="top"><p align="center"> <strong>Restoration time (min)</strong> </p></td>
+</tr>
+<tr>
+<td valign="top"><p align="center"> <strong>MS rail</strong> </p></td>
+<td valign="top"><p align="center"> <strong>MS11</strong> </p></td>
+<td valign="top"><p align="center"> <strong>MS12</strong> </p></td>
+<td valign="top"><p align="center"> <strong>MS13</strong> </p></td>
+<td valign="top"><p align="center"> <strong>MS14</strong> </p></td>
+<td valign="top"><p align="center"> <strong>MS15</strong> </p></td>
+</tr>
+<tr>
+<td valign="top"><p>Netvoeding</p></td>
+<td valign="top"><p align="center">50</p></td>
+<td valign="top"><p align="center">50</p></td>
+<td valign="top"><p align="center">50</p></td>
+<td valign="top"><p align="center">50</p></td>
+<td valign="top"><p align="center">50</p></td>
+<td valign="top"><p align="center">50</p></td>
+</tr>
+<tr>
+<td valign="top"><p>HV/MV transformer</p></td>
+<td valign="top"><p align="center">52</p></td>
+<td valign="top"><p align="center">52</p></td>
+<td valign="top"><p align="center">52</p></td>
+<td valign="top"><p align="center">52</p></td>
+<td valign="top"><p align="center">52</p></td>
+<td valign="top"><p align="center">52</p></td>
+</tr>
+<tr>
+<td valign="top"><p>MS cable: MS rail MS11</p></td>
+<td valign="top"><p align="center">0</p></td>
+<td valign="top"><p align="center">122</p></td>
+<td valign="top"><p align="center">122</p></td>
+<td valign="top"><p align="center">122</p></td>
+<td valign="top"><p align="center">122</p></td>
+<td valign="top"><p align="center">122</p></td>
+</tr>
+<tr>
+<td valign="top"><p>MS cable: MS11-MS12</p></td>
+<td valign="top"><p align="center">0</p></td>
+<td valign="top"><p align="center">107</p></td>
+<td valign="top"><p align="center">122</p></td>
+<td valign="top"><p align="center">122</p></td>
+<td valign="top"><p align="center">122</p></td>
+<td valign="top"><p align="center">122</p></td>
+</tr>
+<tr>
+<td valign="top"><p>MS cable: MS12-MS13</p></td>
+<td valign="top"><p align="center">0</p></td>
+<td valign="top"><p align="center">107</p></td>
+<td valign="top"><p align="center">107</p></td>
+<td valign="top"><p align="center">122</p></td>
+<td valign="top"><p align="center">122</p></td>
+<td valign="top"><p align="center">122</p></td>
+</tr>
+<tr>
+<td valign="top"><p>MS cable: MS13-MS14</p></td>
+<td valign="top"><p align="center">0</p></td>
+<td valign="top"><p align="center">107</p></td>
+<td valign="top"><p align="center">107</p></td>
+<td valign="top"><p align="center">107</p></td>
+<td valign="top"><p align="center">122</p></td>
+<td valign="top"><p align="center">122</p></td>
+</tr>
+<tr>
+<td valign="top"><p>MS cable: MS14-MS15</p></td>
+<td valign="top"><p align="center">0</p></td>
+<td valign="top"><p align="center">107</p></td>
+<td valign="top"><p align="center">107</p></td>
+<td valign="top"><p align="center">107</p></td>
+<td valign="top"><p align="center">107</p></td>
+<td valign="top"><p align="center">122</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>By using formula 12.1, table 12.10 for the annual outage duration can be compiled. Here, the calculated repair durations from table 12.9 are multiplied by the outage frequency of the respective failing component. Thus, the annual outage duration for node 'MS13' for a short circuit in the MS cable between nodes 'MS12' and 'MS13' is given by:</p>
+<p>p = 0.01 x 122 = 1.22 min/year</p>
+<p>and for a short circuit in the MS cable between nodes 'MS13' and 'MS14' given by:</p>
+<p>p = 0.01 x 107 = 1.07 min/year.</p>
+<h5>Table 12.10 Annual outage duration (p) for the MS string</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td rowspan="2" valign="top"><p> <strong>Failing component</strong> </p></td>
+<td colspan="6" valign="top"><p align="center"> <strong>Annual outage duration (min/year)</strong> </p></td>
+</tr>
+<tr>
+<td valign="top"><p align="center"> <strong>MS string</strong> </p></td>
+<td valign="top"><p align="center"> <strong>MS11</strong> </p></td>
+<td valign="top"><p align="center"> <strong>MS12</strong> </p></td>
+<td valign="top"><p align="center"> <strong>MS13</strong> </p></td>
+<td valign="top"><p align="center"> <strong>MS14</strong> </p></td>
+<td valign="top"><p align="center"> <strong>MS15</strong> </p></td>
+</tr>
+<tr>
+<td valign="top"><p>Netvoeding</p></td>
+<td valign="top"><p align="center">5.50</p></td>
+<td valign="top"><p align="center">5.50</p></td>
+<td valign="top"><p align="center">5.50</p></td>
+<td valign="top"><p align="center">5.50</p></td>
+<td valign="top"><p align="center">5.50</p></td>
+<td valign="top"><p align="center">5.50</p></td>
+</tr>
+<tr>
+<td valign="top"><p>HV/MV transformer</p></td>
+<td valign="top"><p align="center">0.73</p></td>
+<td valign="top"><p align="center">0.73</p></td>
+<td valign="top"><p align="center">0.73</p></td>
+<td valign="top"><p align="center">0.73</p></td>
+<td valign="top"><p align="center">0.73</p></td>
+<td valign="top"><p align="center">0.73</p></td>
+</tr>
+<tr>
+<td valign="top"><p>MS cable: MS rail-MS11</p></td>
+<td valign="top"><p align="center">0</p></td>
+<td valign="top"><p align="center">1.22</p></td>
+<td valign="top"><p align="center">1.22</p></td>
+<td valign="top"><p align="center">1.22</p></td>
+<td valign="top"><p align="center">1.22</p></td>
+<td valign="top"><p align="center">1.22</p></td>
+</tr>
+<tr>
+<td valign="top"><p>MS cable: MS11-MS12</p></td>
+<td valign="top"><p align="center">0</p></td>
+<td valign="top"><p align="center">1.07</p></td>
+<td valign="top"><p align="center">1.22</p></td>
+<td valign="top"><p align="center">1.22</p></td>
+<td valign="top"><p align="center">1.22</p></td>
+<td valign="top"><p align="center">1.22</p></td>
+</tr>
+<tr>
+<td valign="top"><p>MS cable: MS12-MS13</p></td>
+<td valign="top"><p align="center">0</p></td>
+<td valign="top"><p align="center">1.07</p></td>
+<td valign="top"><p align="center">1.07</p></td>
+<td valign="top"><p align="center">1.22</p></td>
+<td valign="top"><p align="center">1.22</p></td>
+<td valign="top"><p align="center">1.22</p></td>
+</tr>
+<tr>
+<td valign="top"><p>MS cable: MS13-MS14</p></td>
+<td valign="top"><p align="center">0</p></td>
+<td valign="top"><p align="center">1.07</p></td>
+<td valign="top"><p align="center">1.07</p></td>
+<td valign="top"><p align="center">1.07</p></td>
+<td valign="top"><p align="center">1.22</p></td>
+<td valign="top"><p align="center">1.22</p></td>
+</tr>
+<tr>
+<td valign="top"><p>MS cable: MS14-MS15</p></td>
+<td valign="top"><p align="center">0</p></td>
+<td valign="top"><p align="center">1.07</p></td>
+<td valign="top"><p align="center">1.07</p></td>
+<td valign="top"><p align="center">1.07</p></td>
+<td valign="top"><p align="center">1.07</p></td>
+<td valign="top"><p align="center">1.22</p></td>
+</tr>
+<tr>
+<td valign="top"><p>Totaal</p></td>
+<td valign="top"><p align="center">6.23</p></td>
+<td valign="top"><p align="center">11.73</p></td>
+<td valign="top"><p align="center">11.88</p></td>
+<td valign="top"><p align="center">12.03</p></td>
+<td valign="top"><p align="center">12.18</p></td>
+<td valign="top"><p align="center">12.33</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The individual contributions to the annual outage duration, as listed in table 12.10, can be summed per node. Thus, the total annual outage duration of substation 'MS13' due to all failures in this example is equal to 12.03 minutes (12 minutes and 2 seconds).</p>
+<p>Using the calculated failure frequencies from Table 12.6, the average interruption duration for each substation can be calculated using Formula 12.1. All calculated reliability indices for this example are summarized in Table 12.11.</p>
+<h5>Table 12.11 Reliability Indices for the MV Feeder</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="99"><p> <strong> </strong> </p></td>
+<td valign="top" width="40"><p> <strong>MV feeder</strong> </p></td>
+<td valign="top"><p> <strong>MS11</strong> </p></td>
+<td valign="top"><p> <strong>MS12</strong> </p></td>
+<td valign="top"><p> <strong>MS13</strong> </p></td>
+<td valign="top"><p> <strong>MS14</strong> </p></td>
+<td valign="top"><p> <strong>MS15</strong> </p></td>
+<td valign="top"><p> <strong> </strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="99"><p>Failure frequency<em>f</em>)</p></td>
+<td valign="top" width="40"><p>0.124</p></td>
+<td valign="top"><p>0.174</p></td>
+<td valign="top"><p>0.174</p></td>
+<td valign="top"><p>0.174</p></td>
+<td valign="top"><p>0.174</p></td>
+<td valign="top"><p>0.174</p></td>
+<td valign="top"><p>per year</p></td>
+</tr>
+<tr>
+<td valign="top" width="99"><p>Annual outage duration (<em>p</em>)</p></td>
+<td valign="top" width="40"><p>6.23</p></td>
+<td valign="top"><p>11.73</p></td>
+<td valign="top"><p>11.88</p></td>
+<td valign="top"><p>12.03</p></td>
+<td valign="top"><p>12.18</p></td>
+<td valign="top"><p>12.33</p></td>
+<td valign="top"><p>min/year</p></td>
+</tr>
+<tr>
+<td valign="top" width="99"><p>Average interruption duration<em>d</em>)</p></td>
+<td width="40"><p>50</p></td>
+<td><p>67</p></td>
+<td><p>68</p></td>
+<td><p>69</p></td>
+<td><p>70</p></td>
+<td><p>71</p></td>
+<td><p>min</p></td>
+</tr>
+</tbody>
+</table><br/>
+<a href="https://www.phasetophase.nl/boek/boek_2_12.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_12.3"></div>
+<br/>
+<h2>12.3 Improvement of reliability</h2>
+<p>The economic importance of good reliability is difficult to determine unequivocally. While it is relatively simple to calculate the costs of unserved energy (USE) based on the expected annual outage duration and a price per kWh of unserved energy, the consequences for all connected users are very diverse. For instance, it is assumed that most household users can easily resume their activities after a short interruption. It becomes more challenging when users depend on an uninterrupted supply for data processing. The costs of data loss and recovery efforts can be significant. In process technology, the consequences of an interruption also vary widely. Some computer-controlled processes come to a complete halt after a very brief interruption. In other processes, such as in the chemical industry, an interruption can lead to the discharge of chemical substances causing environmental damage, and pipelines can become clogged due to the stoppage.</p>
+<p> <img alt="pics_2.12" class="img-responsive-leon-15px center-block" height="354" src="./betrouwbaarheid_files/12.12.png" width="708"/> </p>
+<h5>Figure 12.12 Interruption duration versus interruption frequency in Europe</h5>
+<p>In the Netherlands, the regulator monitors reliability using a bonus/malus system. Within Netbeheer Nederland, it has been agreed that each network operator will accurately record reliability according to a mutually agreed system. One of the key parameters published is the average annual interruption duration. This important societal parameter is compared to the national average (Figure 12.1), with the aim of keeping their own figure lower than the national average. Incidentally, the electricity grid in the Netherlands has high reliability compared to other European countries, as shown in Figure 12.12 (CEER, 2008), (Kema, 2011). The average annual interruption duration in the Netherlands was 33.7 minutes per year in 2010 (Figure 12.1), which, along with the grids of Denmark and Germany, is the lowest in Europe. In most other European countries, this value ranges between 50 and 100 minutes per year. Values of 200 minutes per year and more also occur. Additionally, the average interruption frequency due to failures in the HV, MV, and LV grids was 0.34 times per year in 2010 (Figure 12.3), the lowest in Europe. Most neighboring countries have an average interruption frequency between 0.5 and 1.0 per year, but values between 2.0 and 2.5 also occur in European countries.</p>
+<p>Reliability can be improved by reducing the risk of interruptions on one hand and limiting the consequences of failures on the other. On one side, there are forces that threaten reliability, and on the other side, there are forces that maintain reliability. Table 12.12 provides an overview of the main forces.</p>
+<h5>Table 12.12 Threatening and Maintaining Forces of Reliability</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="158"><p> <strong>Threatening forces</strong> </p></td>
+<td valign="top" width="210"><p> <strong>Maintaining forces</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="158"><p>Graafwerkzaamheden</p>
+<p>Failing components</p>
+<p>Poor assembly</p>
+<p>Overbelasting</p>
+<p>Strongly fluctuating load</p>
+<p>Overspanning</p></td>
+<td valign="top" width="210"><p>Registration of excavation work and cable routes</p>
+<p>Onderhoud</p>
+<p>Training of personnel</p>
+<p>Preventive troubleshooting</p>
+<p>Switching under overload</p>
+<p>Repairing standby components</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>Since the annual outage duration is determined by both the number of interruptions and the duration of those interruptions, attention is given to both aspects.
+          When reducing the risk of interruptions, the causes must first be examined. According to figure 12.5, one-third of the interruptions are caused by failures in joints and one-quarter by damage during excavation work. Additionally, one-fifth is caused by a defect in a cable. In summary, the risk of interruptions can be reduced by:</p>
+<ul>
+<li>better documentation of excavation work and good information exchange of cable routes</li>
+<li>defective joints: detect and replace</li>
+<li>careful selection of network components: proper sizing, preventing overload</li>
+<li>careful installation of network components: installing cable joints is largely manual work, where errors usually become apparent after a longer period</li>
+<li>ensuring an adequate maintenance schedule: specifically keeping substations and network stations dust-free and dry reduces the number of malfunctions</li>
+<li>proper network and load management: this prevents the network from becoming unexpectedly overloaded due to an increase in the number of connections</li>
+<li>Sectioning of strands: in the event of a short circuit at the end of a strand, only a portion of the strand is disconnected.</li>
+</ul>
+<p>The consequences of malfunctions are reduced by:</p>
+<ul>
+<li>preventing stray currents: make a connection to a nearby power supply point</li>
+<li>more MS power supply points: this can reduce MS strand lengths</li>
+<li>installing fault indicators that can potentially be read remotely</li>
+<li>implementing a fault location system.</li>
+</ul>
+<p>All measures to improve reliability are only meaningful if the costs are lower than the achieved benefits. Measures that lead to a lower interruption risk also have the advantage of reducing repair costs. In this light, it should also be considered that postponing investments can lead to a higher failure rate. Here too, the savings must be compared with the expected costs associated with an interruption.</p>
+<p>The Dutch electricity grid has expanded significantly since 1960. Considering a lifespan expectation of 40 to 70 years for most components of the grid, a large number of components will need to be replaced soon. For this reason, studies are being conducted to determine to what extent components should be replaced earlier or later. By replacing critical components at the right time, not only are costs saved, but the expected wave of replacements becomes manageable. In particular, cables and joints that have been exposed to (too) high loads and short-circuit currents in the past are more likely to be replaced sooner. Cables that have always been loaded to an optimal current strength (about 70% of their nominal value) generally have a longer lifespan.</p>
+</div>
+<div class="col-lg-2 hidden-md"> </div>
+</div>
+</div>
+</div>
+<div class="container-fluid-footer" id="includeFooter"><div class="container">
+<div class="row">
+<div class="text-justify col-xs-6 col-sm-3">
+<img alt="ptp_logo" src="./betrouwbaarheid_files/logo-s-360px-grijs.png" width="230"/>
+</div>
+<div class="col-xs-6 col-sm-9">
+<p> Phase to Phase is onderdeel van <a href="https://www.technolution.nl/">Technolution</a>. © 2009-2021 </p>
+</div>
+</div>
+</div></div></body></html>

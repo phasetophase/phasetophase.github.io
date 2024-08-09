@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://www.phasetophase.nl/boek/boek_3_13.html -->
+<html lang="en" class="wf-ffscalasansweb-n7-active wf-ffscalasansweb-n4-active wf-ffscalasansweb-i4-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Phase to Phase – Netten voor distributie van elektriciteit</title>
+    <!-- Bootstrap -->	
+<link href="./ontwerpen van distributienetten_files/bootstrap-2-boek.css" rel="stylesheet">
+<style type="text/css">
+	body,td,th {
+	font-family: ff-scala-sans-web, sans-serif;
+}
+body {
+	background-color: #F7F7F7;
+}
+    </style>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+<script src="./ontwerpen van distributienetten_files/qke6lfb.js.download"></script>
+<style type="text/css">.tk-ff-scala-sans-web{font-family:"ff-scala-sans-web",sans-serif;}</style><style type="text/css">@font-face{font-family:tk-ff-scala-sans-web-n7;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-n4;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-i4;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style><script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script src="./ontwerpen van distributienetten_files/jquery-1.11.3.min.js.download"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./ontwerpen van distributienetten_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H8Q9E8BJ7Q');
+</script>
+<script>
+$(function(){
+  $("#includedHeader").load("/boek/header.html");
+  $("#includeFooter").load("/boek/footer.html"); 
+});
+</script><style type="text/css">@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style>	  
+</head>
+<body style="padding-top: 50px">
+
+<div id="includedHeader"> <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topFixedNavbar1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="https://www.phasetophase.nl/">Phase to Phase</a></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="topFixedNavbar1">
+      <ul class="nav navbar-nav">
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+	<p></p>
+	
+    </div>
+    </div>
+  </div>
+
+<div class="container-fluid-boek">
+  <div class="container">
+
+<div class="row-in-header">
+	<div class="text-justify col-xs-6 col-sm-6">
+    <img class="hidden-xs" src="./ontwerpen van distributienetten_files/logo-s-360px-wit.png" alt="Phase to Phase logo 360px" width="366">
+	<img class="visible-xs" src="./ontwerpen van distributienetten_files/logo-s-360px-wit.png" alt="Phase to Phase logo 261px" width="261"> 
+	</div>
+		<div class="col-xs-6 hidden-xs col-sm-6">
+	</div>
+</div>
+
+<div class="row-in-header">
+	<div class="text-left col-xs-9 col-sm-9">        <p></p><h8>ICT voor elektriciteitsnetten</h8>
+</div>
+	<div class="col-xs-3 col-sm-3">
+	</div>
+</div>
+
+<div class="row-in-header-2">
+	<div class="text-justify col-xs-6 col-sm-6">&nbsp;
+	</div>
+	<div class="col-xs-6 hidden-xs col-sm-6">
+	  <h7>&nbsp;</h7>
+	</div>
+</div>
+
+</div>
+</div>
+
+<div class="container">
+
+<div class="row-intro">
+<h1><a href="https://www.phasetophase.nl/boek/index.html"> Netten voor distributie van elektriciteit</a></h1>
+</div></div></div>
+
+<div class="row-ohm-center-white">
+<a name="top"></a>
+    <div class="row-b">
+		  <a href="https://www.phasetophase.nl/boek/index.html"><button type="button" class="btn btn-default">I – De opbouw van een net</button></a>
+		  <a href="https://www.phasetophase.nl/boek/boek_2_7.html"><button type="button" class="btn  btn-default">II – Rekenen aan een net</button></a>
+		  <a href="https://www.phasetophase.nl/boek/boek_3_13.html"><button type="button" class="btn  btn-default active">III – Ontwerpen en bedrijfsvoeren</button></a>
+	</div>
+    <div class="row-b">
+<a href="https://www.phasetophase.nl/boek/boek_3_13.html">
+  <button type="button" class="btn btn-default1 active">13 Ontwerpen van distributienetten</button>
+  </a> <a href="https://www.phasetophase.nl/boek/boek_3_14.html">
+  <button type="button" class="btn btn-default1">14 Bedrijfsvoering van de MS- en LS-netten</button>
+  </a> <a href="https://www.phasetophase.nl/boek/boek_3_15.html">
+  <button type="button" class="btn btn-default1">15 Intelligente netten</button>
+  </a> <a href="https://www.phasetophase.nl/boek/boek_3_16.html">
+  <button type="button" class="btn btn-default1">16 Geografische visualisatie van distributienetten</button>
+  </a> 
+<div class="row">
+<div class="col-md-12 col-lg-10">
+  <h3>Ontwerpen van distributienetten</h3>
+  <p>Dit deel begint in hoofdstuk 13 met een toelichting over het ontwerpen van distributienetten. Uitgangspunt hierbij is het laagspanningsnet. De maximale lengte van een laagspanningskabel wordt voornamelijk bepaald door de eisen ten aanzien van de Power Quality en de aanrakingsveiligheid. Hiermee ligt de maximale omvang van het voorzieningsgebied van een netstation vast. Vervolgens komt het ontwerp van een middenspanningsnet aan de orde. </p>
+<div class="row">
+  <div class="col-md-6">
+    <ul style="list-style-type:none">
+      <li><a href="https://www.phasetophase.nl/boek/boek_3_13.html#_7"><strong>13&nbsp;&nbsp;Ontwerpen van distributienetten</strong></a></li>
+      <li><a href="https://www.phasetophase.nl/boek/boek_3_13.html#_13.1">13.1&nbsp;&nbsp;MS/LS-Netstations</a></li>
+      <li><a href="https://www.phasetophase.nl/boek/boek_3_13.html#_13.2">13.2&nbsp;&nbsp;Laagspanningsnet </a></li>
+      <ul style="list-style-type:none">
+        <li><a href="https://www.phasetophase.nl/boek/boek_3_13.html#_13.2.1">13.2.1&nbsp;&nbsp;LV-ontwerp voor een gebied met woningen </a></li>
+        <li><a href="https://www.phasetophase.nl/boek/boek_3_13.html#_13.2.2">13.2.2&nbsp;&nbsp;LV-ontwerp voor een grootverbruiker tot 300 kVA (type A.3) </a></li>
+      </ul>
+    </ul>
+  </div>
+  <div class="col-md-6">
+    <ul style="list-style-type:none">
+      <li><a href="https://www.phasetophase.nl/boek/boek_3_13.html#_13.3">13.3&nbsp;&nbsp;Middenspanningsnet </a></li>
+      <ul style="list-style-type:none">
+        <li><a href="https://www.phasetophase.nl/boek/boek_3_13.html#_13.3.1">13.3.1&nbsp;&nbsp;Voorbeeldberekening aan een MS-net</a></li>
+        <li><a href="https://www.phasetophase.nl/boek/boek_3_13.html#_13.3.2">13.3.2&nbsp;&nbsp;Voorbeeldberekening aan een schakel/regelstation </a></li>
+      </ul>
+      <li><a href="https://www.phasetophase.nl/boek/boek_3_13.html#_13.4">13.4&nbsp;&nbsp;Verlieskosten</a></li>
+    </ul>
+  </div>
+</div>
+		
+        <hr>
+	<h1>13 Ontwerpen van distributienetten</h1>
+<p> Basis voor het ontwerpen van elektriciteitsnetten is de geplande vermogensuitwisseling in een geografisch gebied. Op het hoogste spanningsniveau (220 en
+  380 kV) wordt de vermogensuitwisseling tussen de omliggende landen gerealiseerd en worden de eigen regio's gevoed (50, 110 en 150 kV). Op distributieniveau
+  wordt de vermogensuitwisseling ten behoeve van het regionale verbruik en de decentrale productie gerealiseerd. </p>
+<p> Bij het beheren van elektriciteitsnetten wordt onder andere onderscheid gemaakt tussen een meerjarenplanning en een ontwerp. De meerjarenplanning bevat een
+  prognose van het energieverbruik van de bestaande aangeslotenen en de voorziene ontwikkelingen in de markt. Het bestaande elektriciteitsnet wordt hierbij
+  getoetst op mogelijke knelpunten die bij het toekomstige productie- en verbruiksniveau kunnen ontstaan. Hierbij wordt rekening gehouden met vervanging door
+  veroudering van installaties en van delen van het net. Een planning wordt gemaakt met een in principe beperkte hoeveelheid gegevens van beperkte
+  nauwkeurigheid. </p>
+<p> Bij het oplossen van de knelpunten wordt een nieuw of aangepast net ontworpen. Een netontwerp heeft doorgaans betrekking op het uitbreiden of versterken
+  van een elektriciteitsnet voor het aansluiten van nieuwe individuele klanten binnen de randvoorwaarden van standaarden en praktijkrichtlijnen. In het
+  netontwerp worden parameters, die in de planningsfase nog onzeker waren, redelijkerwijs beter gedetailleerd en verder uitgewerkt. Bij het plannen moet men
+  kunnen omgaan met een beperkte hoeveelheid onnauwkeurige gegevens, terwijl men bij het ontwerpen de beschikking moet hebben over goed gefundeerde aannames
+  over het gedrag van de aangeslotenen in een lange periode in de toekomst (Carter-Brown, 2002). </p>
+<p> Voor alle aangeslotenen op het distributienet zijn de belangrijkste voorwaarden betreffende de kwaliteit van de geleverde dienst vastgelegd in de
+  Elektriciteitswet en de daarin beschreven Netcode, Meetcode en Systeemcode (zie hoofdstuk 11 over Power Quality). Daarnaast hanteert elke netbeheerder
+  eigen specifieke richtlijnen voor het ontwerpen van de distributienetten. Bij het plannen van de distributienetten wordt rekening gehouden met meer dan
+  alleen technische kwaliteitsaspecten, waarvan de belangrijkste zijn: </p>
+<ul>
+  <li> veiligheid </li>
+  <li> betrouwbaarheid </li>
+  <li> duurzaamheid </li>
+  <li> Power Quality </li>
+  <li> onderhoudbaarheid </li>
+  <li> flexibiliteit </li>
+  <li> transparantie. </li>
+</ul>
+<h6> Veiligheid </h6>
+<p> Voor het waarborgen van de persoonlijke veiligheid moet worden voldaan aan de veiligheidscriteria van de Netcode, aan de veiligheidscriteria van de
+  internationale en nationale normen en aan de bedrijfseigen richtlijnen. Daarnaast moet het distributienet in primaire aanleg thermisch en dynamisch
+  kortsluitvast zijn. </p>
+<h6> Betrouwbaarheid </h6>
+<p> Ook de betrouwbaarheid is geregeld in de Netcode. Hierin is opgenomen dat de uitvalfrequentie, de gemiddelde uitvalduur en de jaarlijkse uitvalduur als
+  gevolg van onderbrekingen geregistreerd worden met behulp van een door de netbeheerders onderling ontwikkeld en vastgesteld systeem. Aan de hand van
+  kengetallen worden deze kwaliteitsaspecten bewaakt. De netbeheerders streven naar een gemiddelde jaarlijkse uitvalduur die lager ligt dan het landelijk
+  gemiddelde. Zij proberen dit te bereiken door de onderbrekingsfrequentie en de onderbrekingsduur door kwaliteitsverbetering te verlagen. </p>
+<h6> Duurzaamheid </h6>
+<p> De toezichthouder (Energiekamer van de NMa) toetst de elektriciteitsvoorziening op duurzaamheid. De in het elektriciteitsnet te gebruiken componenten mogen
+  niet meer milieubelasting geven dan mogelijke alternatieve componenten. Hierbij moeten de economische beginselen in acht worden genomen. Dit houdt in dat
+  de duurzaamheid niet ten koste mag gaan van een gezonde economische bedrijfsvoering. Ook een laag verliesniveau is onderdeel van de
+  duurzaamheiddoelstelling. Bij het ontwerp moet rekening worden gehouden met de toepassing van nieuwe duurzame technieken bij aangeslotenen. Het net dient
+  deze toepassingen mogelijk te maken en te faciliteren. </p>
+<h6> Power Quality </h6>
+<p> Power Quality aspecten zijn geregeld in de Netcode. Hiervan wordt altijd eerst gekeken naar de spanningskwaliteit. Voor het spanningsniveau zijn in de
+  Netcode langzame spanningsvariaties tussen plus en min 10% ten opzichte van de nominale of gecontracteerde spanning toegestaan. Bedrijfseigen richtlijnen
+  bevinden zich daar meestal binnen. Zo kan bijvoorbeeld voor de extremen van de spanning gelden: </p>
+<ul>
+  <li> 20 kV middenspanningsniveau: U = 20,8 kV ± 7% </li>
+  <li> 10 kV middenspanningsniveau: U = 10,4 kV ± 7% </li>
+  <li> 0,4 kV middenspanningsniveau: U = 0,4 kV ± 7% </li>
+</ul>
+<p> Ook de maximale spanningsval over een streng en de maximale spanningsvariatie ten gevolge van inschakelen van een belasting kunnen in een bedrijfseigen
+  richtlijn worden vastgelegd. </p>
+<h6> Onderhoudbaarheid en flexibiliteit </h6>
+<p> Bij het uitvoeren van onderhoudswerkzaamheden in het net moet de continuïteit van de levering volgens de geldende regels met het oog op de reserve
+  zijn gewaarborgd. Tevens moet het net zodanig flexibel zijn uitgevoerd dat de werkzaamheden voor onderhoud en voor het realiseren van nieuwe aansluitingen
+  binnen een 'redelijke termijn' kunnen worden gerealiseerd. Onder invloed van door duurzaamheid gestimuleerde energietransities zal naar verwachting de
+  elektriciteitsvraag in de toekomst steeds meer onvoorspelbaar worden, zodat van de netbeheerder de nodige flexibiliteit zal worden geëist. De tendens
+  is dat met betrekking tot het realiseren van nieuwe aansluitingen meer modulair wordt gebouwd zodat snel geanticipeerd kan worden op vermogensgroei of
+  -afname. </p>
+<h6> Transparantie </h6>
+<p> Transparantie van het net heeft te maken met de bedrijfsvoering. Het distributienet moet zodanig ontworpen zijn dat de structuur voor een goede
+  operationele bedrijfsvoering overzichtelijk is. Hierdoor zullen de kansen op bedieningsfouten en ontwerpfouten bij uitbreidingen en verzwaringen zo klein
+  mogelijk zijn. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_3_13.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_13.1"></div>
+        <br>
+<h2>13.1 MS/LS-Netstations</h2>
+<p> Basis van het ontwerpen van distributienetten is de geplande vermogensuitwisseling in een beperkt geografisch gebied. De vermogensuitwisseling vindt hier
+  voor het grootste deel op laagspanningsniveau plaats. Als gevolg wordt het verzorgingsgebied van een netstation bepaald door de maximale lengten van de
+  LS-strengen. In stedelijke omgeving wordt de maximale lengte voornamelijk beperkt door de maximale stroombelasting en in landelijke omgeving door de
+  spanningshuishouding. De hoeveelheid aan te sluiten LS-strengen in het verzorgingsgebied van een netstation is grotendeels bepaald door de omvang en de
+  vermogensdichtheid van het verzorgingsgebied van het netstation. Het verzorgingsgebied en de hoeveelheid uit te wisselen vermogen bepalen de omvang van de
+  MS/LS-nettransformator. </p>
+<p> De ontwikkeling van de vermogensuitwisseling in het verzorgingsgebied is de belangrijkste randvoorwaarde voor de planning van het distributienet. Als
+  eerste wordt daarbij gekeken naar de lange termijnplanning van de ontwikkeling van het uitgewisselde vermogen. Elke netbeheerder heeft specifieke eigen
+  richtlijnen voor het ontwerpen van LS-netten. Hierbij wordt traditioneel uitgegaan van aangeslotenen die alleen elektriciteit verbruiken en die kunnen
+  worden gemodelleerd als belastingen met de modellen van Velander en Rusck (<a href="https://www.phasetophase.nl/boek/boek_1_3.html">hoofdstuk 3</a>). Door maatschappelijk gedreven ontwikkelingen op het gebied van de
+  energietransitie wordt enerzijds meer elektriciteit decentraal opgewekt met behulp van micro-WKK- en PV-installaties en wordt anderzijds meer elektriciteit
+  verbruikt door toepassing van warmtepompen en elektrisch rijden. Met name de groei van het elektrische rijden en ruimteverwarming met behulp van
+  warmtepompen zijn factoren die goed in het oog gehouden moeten worden. Normale huishoudelijke belastingen hebben een kleine gelijktijdigheidfactor en
+  kunnen goed met de traditionele belastingsmodellen behandeld worden. Grote belastingen zoals warmtepompen hebben echter een grote gelijktijdigheid. De
+  elektrische vermogens variëren van 2 tot 5 kW. Daarnaast is de warmtepomp veelal uitgerust met een bijverwarming met een vermogen van circa 6 kW, die
+  in kan komen bij lage buitentemperatuur en na een langdurige storing van het elektriciteitsnet. Deze ontwikkelingen leiden ertoe dat de maximale
+  kabellengtes korter moeten zijn dan bij traditionele netontwerpen. </p>
+<p> Bij een grote vermogensdichtheid zal een netstation maar een beperkt geografisch gebied kunnen voeden. Hierbij is gedetailleerde informatie nodig over de
+  ruimtelijke verdeling van de totale belasting. In een vroeg planningsstadium is het moeilijk om aan deze gegevens te komen, maar voor het ontwerp van een
+  toekomstbestendig distributienet is het essentieel. Voor het schatten van de ontwikkeling van de belasting kan uitgegaan worden van de verdeling in soorten
+  aansluitingen, zoals huishoudens, kantoren, winkels en industrie. Een geografische ondergrond is hierbij de basis van het planningswerk. Ook met de
+  uniformiteit van de vermogens moet rekening worden gehouden. Aansluitingen van kleine vermogens vragen een heel andere aanpak dan een aansluiting van groot
+  vermogen. Afhankelijk van het voorziene uitgewisselde vermogen wordt de aansluiting aangesloten op de LS-netkabel, op een eigen LS-kabel of op een
+  MS-aansluiting (<a href="https://www.phasetophase.nl/boek/boek_1_2.html#_2.4">zie paragraaf 2.4</a>). De structuur van de netten is voor de netbeheerder een vaste eigen keuze. De LS-netten zijn meestal radiaal en de
+  MS-netten zijn meestal ringvormig aangelegd. Hierdoor zullen de LS-netten geen storingsreserve hebben en de MS-netten wel. </p>
+<p> Met de voorgaande stap worden de locaties van de netstations in het geografische gebied gepland. De volgende stap is het inpassen van de netstations in het
+  MS-distributienet. Meestal worden de locaties van de netstations zodanig gekozen dat er zo weinig mogelijk wijzigingen in het bestaande MS-net hoeven
+  worden uitgevoerd. In geval van grootschalige nieuwbouw zal ook een nieuw gedeelte van het MS-net samen met het LS-net ontworpen worden. Figuur 13.1 geeft
+  een voorbeeld van de geografische spreiding van netstations in het MS-distributienet. De netstations zijn met cirkeltjes afgebeeld en de MS-kabels met
+  gekleurde lijnen. De onderliggende LS-distributienetten zijn niet afgebeeld. Duidelijk zichtbaar zijn de verzorgingsgebieden van de netstations, die met
+  polygonen zijn benaderd. De grootte van de verzorgingsgebieden wordt bepaald door de lengtes van de LS-strengen en het aantal strengen dat vanuit elk
+  netstation vertrekt. </p>
+<p> <img src="./ontwerpen van distributienetten_files/13.1.png" width="712" height="400" alt="pics_3.13" class="img-responsive-leon-15px center-block"> </p>
+<h5> Figuur 13.1 Geografische spreiding van netstations met hun dekkingsgebieden </h5>
+<p> Het aantal netstations is niet of nauwelijks afhankelijk van het MS-net, maar wordt voornamelijk bepaald door het LS-net. Samenvattend wordt het aantal
+  netstations bepaald door: </p>
+<ul>
+  <li> grootte van het geografische voorzieningsgebied </li>
+  <li> hoeveelheid vermogensuitwisseling </li>
+  <li> uniformiteit van de vermogens. </li>
+</ul>
+<p> Bij het plannen van een nieuwbouwwijk wordt in het algemeen uitgegaan van vuistregels voor het jaarverbruik en de maximale belasting per woning. Deze
+  waarden worden afgeleid van statistisch bepaalde parameters (zie de formule van Velander, zoals beschreven in paragraaf 3.5.3). Voor een woning met een
+  verbruik van 4500 kWh per jaar kan met de in die paragraaf genoemde parameters gerekend worden op een piekvermogen van 2,6 kW. Afhankelijk van het aantal
+  woningen neemt de gelijktijdigheid af. Zo wordt een gelijktijdigheid van 0,59 aangenomen voor 10 woningen, 0,49 voor 50 woningen en 0,46 voor 100 woningen.
+  Worden echter op grote schaal warmtepompen aangebracht, dan moet hiermee apart rekening worden gehouden door het vermogen met een grote gelijktijdigheid
+  bij de belasting op te tellen. Het ontwerp moet toereikend zijn voor een langere periode, bijvoorbeeld van 30 jaren, waarbij eveneens met een jaarlijkse
+  groei rekening wordt gehouden. Daarnaast is een veiligheidsmarge gewenst. Als voorbeeld wordt hieronder het ontwerpvermogen voor een netstation voor 100
+  woningen zonder elektrische verwarming berekend: </p>
+<blockquote><p><em>P<sub>max</sub></em> voor één woning: <em>2,6 kW</em> <br>
+gelijktijdigheid voor 100 woningen: <em>0,46</em> <br>
+<em>P<sub>max</sub></em> voor 100 woningen: <em>119 kW</em> <br>
+vermenigvuldigingsfactor na 30 jaren met 1% groei per jaar: <em>groeifactor = 1,01<sup>30</sup> = 1,35</em> <br>
+veiligheidsmarge: <em>10%</em> <br>
+<em>P<sub>max,30 jr</sub> = 119 kW </em><em>×</em><em> 1,35 </em><em>×</em><em> 1,1 = 177 kW</em> <br>
+<em>cos(</em><em>φ</em><em>) = 0,9</em> <br>
+<em>S</em> <sub>max,30 jr</sub> <em>= 177 kW / 0,9 = 197 kVA</em> <br>
+Eerstvolgende normtransformator: <em>S<sub>nom</sub> = 250 kVA</em></p></blockquote>
+<p>
+ Indien dezelfde woningen met warmtepompen zonder elektrische bijverwarming worden uitgerust, moet dit vermogen worden opgeteld. In dit voorbeeld wordt
+  ervan uitgegaan dat het vermogen van de warmtepompen niet groeit. Als bijvoorbeeld de warmtepompen een vermogen hebben van 5 kW en bij 100 woningen een
+  gelijktijdigheid hebben van 0,9, wordt de vermogensbehoefte als volgt bepaald: </p>
+<blockquote>
+<p> <em>P<sub>max</sub></em> voor één woning: <em>2,6 kW</em> <br> gelijktijdigheid voor 100 woningen: <em>0,46</em> <br>
+<em>P<sub>max</sub></em> voor één warmtepomp: <em>5 kW</em> <br>
+gelijktijdigheid voor 100 warmtepompen: <em>0,9</em> <br>
+<em>P<sub>max</sub></em> voor 100 woningen: <em>119 + 450 kW</em> <br>
+vermenigvuldigingsfactor na 30 jaren met 1% groei per jaar: <em>groeifactor = 1,01<sup>30</sup> = 1,35</em> <br>
+veiligheidsmarge: <em>10%</em> <br>
+<em>P<sub>max</sub>= (119 kW × 1,35 + 450 kW) × 1,1 = 672 kW</em> <br>
+<em>cos(φ) = 0,9</em> <br>
+<em>S<sub>max,30 jr</sub> = 672 kW / 0,9 = 747 kVA</em> <br>
+Eerstvolgende normtransformator: <em>S<sub>nom</sub> = 1000 kVA</em> </p>
+</blockquote>
+<p> Verschillende nettypen stellen verschillende eisen ten aanzien van het ontwerp. Niet elk net wordt op een standaard wijze ontworpen, maar afhankelijk van
+  de situatie waarvoor het geschikt zal moeten zijn. Een aansluiting in een flatgebouw stelt hele andere eisen dan een aansluiting in een wijk met
+  vrijstaande woningen. Netten in stedelijke omgeving hebben in het algemeen veel kortere kabels dan netten in landelijke omgeving. Bij het selecteren van
+  een type kabel wordt eerst gekeken naar de technische eisen als kabelbelastbaarheid, spanningsvastheid, kortsluitvastheid en aanrakingsveiligheid. Het kan
+  zo zijn dat op grond van spanning en stroombelasting een dunne kabel geschikt is, maar dat in verband met de kortsluitstroom en de gekozen beveiliging toch
+  een grotere geleiderdoorsnede gekozen wordt. Pas na de technische eisen komen zaken als economische optimalisatie aan de orde. </p>
+<p> Het ontwerpproces gaat van klein naar groot vermogen, zodat na het LS-net het MS-net aan de beurt komt. Een middenspanningsnet kan op diverse manieren
+  ontworpen worden. Een gebied kan bijvoorbeeld gevoed worden door: </p>
+<ul>
+  <li> een beperkt aantal HS/MS-onderstations en met per onderstation een vermaasd of ringvormig MS-distributienet </li>
+  <li> een beperkt aantal HS/MS-onderstations, met per onderstation een ringvormig MS-transportnet, in combinatie met een ringvormig MS-distributienet </li>
+  <li> een HS/TS-voedingsstation, een radiaal TS-net en per TS/MS-voedingsstation een vermaasd of ringvormig MS-distributienet </li>
+  <li> een HS/TS-voedingsstation, een radiaal TS-net, een ringvormig MS-transportnet en per MS-verdeelstation een radiaal MS-distributienet. </li>
+</ul>
+<p> De uitvoering en de voedingswijze van het MS-net wordt voornamelijk bepaald door de dichtheid van de HS- of TS-voedingsstations. Het MS-net kan een puur
+  distributienet zijn, maar in sommige gevallen zal het nodig zijn een MS-transportverbinding te gebruiken. De uitvoering is tevens afhankelijk van: </p>
+<ul>
+  <li> de geografische belastingsdichtheid en de lokale spreiding </li>
+  <li> de technische en economische eisen, zoals netverliezen en betrouwbaarheid </li>
+  <li> het gevoerde beleid en bestaande tradities binnen het bedrijf ten aanzien van het ontwerpen en bedrijfsvoeren van netten. </li>
+</ul>
+<p> In <a href="https://www.phasetophase.nl/boek/boek_1_2.html#_2.5">paragraaf 2.5</a> is een aantal standaardaansluitingen beschreven (Tarievencode, 2009). Voor de categorieën A.1 en A.2 (kleinverbruikers) zijn
+  gebruikelijke aansluitcapaciteiten 3x25, 35, 63 of 80 A. Voor grotere aansluitcapaciteiten zijn de categorieën ingedeeld naar het uitgewisseld
+  vermogen. Tot 300 kVA wordt de aansluiting gerealiseerd op de LS-zijde van de nettransformator en bij hogere vermogens door middel van een knip in het
+  MS-net. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_3_13.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_13.2"></div>
+        <br>
+<h2>13.2 Laagspanningsnet</h2>
+<p> Een van de belangrijkste onderwerpen bij het ontwerpen van een laagspanningsnet is de keuze van het kabeltype en de geleiderdoorsnede. Bij het
+  dimensioneren van het kabeltype wordt gelet op de criteria, waarvan de eisen zijn opgenomen in tabel 13.1. Iedere netbeheerder stelt deze eisen zelf samen
+  zodat zij binnen de randvoorwaarden van de Netcode vallen. </p>
+<h5> Tabel 13.1	Voorbeeld voor bedrijfseigen criteria voor het ontwerpen van een LS-net </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="50%" valign="top"><p> <strong>Criterium</strong> </p></td>
+      <td width="50%" valign="top"><p> <strong>Eis</strong> </p></td>
+    </tr>
+    <tr>
+      <td width="170" valign="top"><p> Stroombelastbaarheid </p></td>
+      <td width="170" valign="top"><p> I<sub>max</sub> &lt; I<sub>optimaal</sub> </p></td>
+    </tr>
+    <tr>
+      <td width="170" valign="top"><p> Spanningshuishouding </p></td>
+      <td width="170" valign="top"><p> 215 V &lt; U &lt; 245 V </p></td>
+    </tr>
+    <tr>
+      <td width="170" valign="top"><p> Spanningsval LS-streng </p></td>
+      <td width="170" valign="top"><p> DU &lt; 5% (=11,5 V) </p></td>
+    </tr>
+    <tr>
+      <td width="170" valign="top"><p> Spanningsvastheid éénfase belasting <br>
+          3,5 kVA </p></td>
+      <td width="170" valign="top"><p> d &lt; 3% (=6,9 V) </p></td>
+    </tr>
+    <tr>
+      <td width="170" valign="top"><p> Netveiligheid </p></td>
+      <td width="170" valign="top"><p> Maximale fouttijd: 5 s </p></td>
+    </tr>
+    <tr>
+      <td width="170" valign="top"><p> Kortsluitvastheid </p></td>
+      <td width="170" valign="top"><p> I<sub>k</sub><sup>2</sup> t &lt; I<sub>k,1s</sub><sup>2</sup> </p></td>
+    </tr>
+    <tr>
+      <td width="170" valign="top"><p> Aanrakingsveiligheid (bij het aanbieden van aarding volgens het TN-systeem) </p></td>
+      <td width="170" valign="top"><p> Maximale fouttijd <br>
+          volgens kromme C1 uit IEC 60479 </p></td>
+    </tr>
+  </tbody>
+</table><br>
+<p> De factoren die de maximale stroombelastbaarheid van kabels beïnvloeden zijn behandeld in <a href="https://www.phasetophase.nl/boek/boek_1_4.html">hoofdstuk 4</a>. Hierbij moet worden gelet op: thermische
+  weerstand van de grond, materiaal van bodem en kabelbed, uitdroging van de bodem en bodemtemperatuur. Kabelfabrikanten specificeren de belastbaarheid van
+  kabels voor nominale omstandigheden en zij geven correctiefactoren voor afwijkingen van temperaturen en liggingomstandigheden van de nominale waarden. Ook
+  de norm NEN 1010 maakt gebruik van correctiefactoren. Daarboven wordt in verband met de levensduur van de kabels een factor voor de optimale stroom
+  vastgesteld, waarboven de bedrijfsstroom niet mag uitkomen. De optimale stroom bedraagt bij sommige netbeheerders voor GPLK kabels 70% en voor XLPE kabels
+  90% van de nominale stroom. Dit percentage staat los van de op investeringen en verlieskosten gebaseerde optimale stroombelasting. </p>
+<p> Voor wat de spanning betreft is volgens tabel 13.1 zowel sprake van een minimum- en maximumwaarde waar de spanning tussen moet liggen als van een maximale
+  spanningsval over de LS-streng. De maximale spanningsval is in het voorbeeld van tabel 13.1 gelijk aan 11,5 V. Door een maximum voor de spanningsval te
+  definiëren wordt ruimte gecreëerd voor de spanningsvariaties in het MS-net door variaties in belasting en decentrale opwekking. </p>
+<p> Mede door toename van grote belastingen zoals warmtepompen wordt naast de stroombelasting de spanningskwaliteit een steeds belangrijkere factor voor het
+  netontwerp, waarbij rekening moet worden gehouden met zowel het maximale opgenomen vermogen als het in- en uitschakelen van de belasting. Ook kan het zijn
+  dat een LS-streng op grond van het aantal aan te sluiten percelen met het oog op de stroombelasting nog lang niet ten volle benut wordt, maar dat bij grote
+  omvang van de percelen de kabellengte met het oog op de spanningskwaliteit te groot wordt. </p>
+<p> Een kortsluiting tussen fase en nul en aarde zal in een TN-geaard systeem, waarbij aardingsvoorziening wordt aangeboden, leiden tot verhoging van de
+  potentiaal van de beschermende leiding, zoals beschreven in <a href="https://www.phasetophase.nl/boek/boek_1_5.html">hoofdstuk 5</a>. Afhankelijk van de hoogte van deze spanning moet de kortsluiting snel worden
+  afgeschakeld. De aanrakingsveiligheid moet gelden voor het voedende net, inclusief de aansluitkabel tot en met het overdrachtspunt. Met de keuze voor
+  kabeltype en smeltveiligheid ligt de maximale lengte van de LS-streng vast. In <a href="https://www.phasetophase.nl/boek/boek_1_5.html">hoofdstuk 5</a> is beschreven dat de snelheid waarmee moet worden afgeschakeld
+  een functie is van de stroom door het menselijk lichaam. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_3_13.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_13.2.1"></div>
+        <br>
+<h3>13.2.1 LV-ontwerp voor een gebied met woningen</h3>
+<p> Aan de hand van een aantal voorbeelden wordt het ontwerpproces hieronder toegelicht. Uitgangspunt is het aansluiten van woningen met onderstaande
+  parameters: </p>
+  <blockquote>
+<p> Aantal: 100 <br>
+Verbruik: <em>V = 4500 kWh/jaar</em> <br>
+Groei: 1% per jaar <br>
+<em>α</em> <em> = 0,23 </em> <em>×</em> <em> 10<sup>-3</sup></em> <br>
+<em>β</em> <em> = 0,023</em> <br>
+Gelijktijdigheid voor 100 woningen: <em>g = 0,46</em> <br>
+cos(φ) = <em>1</em><br>
+Perceelbreedte: <em>15 m</em> </p>
+</blockquote>
+<p> De toe te passen hoofdkabel is van het type: 4 x 150 mm<sup>2</sup> VVMvKsas/Alk: </p>
+<blockquote>
+<p> <em>I<sub>max</sub> = 240 A</em> bij G=1 Km/W <br>
+Geleiderweerstand: <em>R<sub>f</sub> = 0,206 Ω/km</em> (bij 20°C) <br>
+Geleiderreactantie: <em>X<sub>f</sub> = 0,079 Ω/km</em> <br>
+Schermweerstand: <em>R<sub>PE</sub> = 0,387 Ω/km</em> (bij 20°C) <br>
+<em><u>Z</u><sub>retour</sub></em> <em> = <u>Z</u><sub>f</sub> // R<sub>PE</sub> = 0,139 + j 0,033 Ω/km</em> <br>
+Homopolaire impedantie: <em><u>Z</u></em><em><sub>f,0</sub></em><em> = 0,60 + j0,15 </em><em>Ω/km</em> <br>
+Kortsluitvastheid: <em>I<sub>k,1s</sub> = 8,5 kA</em> </p>
+</blockquote>
+<p> De toe te passen aansluitkabel is gemiddeld 10 m lang en is van het type: 4 x 16 VGVMvKas/Alk: </p>
+<blockquote>
+<p> <em>I<sub>max</sub> = 65 A</em> bij G=1 Km/W <br>
+Geleiderweerstand: <em>R<sub>f</sub> = 1,910 Ω/km</em> (bij 20°C) <br>
+Geleiderreactantie: <em>X<sub>f</sub> = 0,096 Ω/km</em> <br>
+Homopolaire impedantie: <em><u>Z</u></em><em><sub>fa,0</sub></em><em> = 5,73 + j0,19 Ω/km</em> <br>
+Kortsluitvastheid: <em>I<sub>k,1s</sub> = 1,3 kA</em> </p>
+</blockquote>
+<h6> Toetsen op kabelcapaciteit </h6>
+<p> Het maximaal gelijktijdige vermogen van 100 woningen is aan het einde van de planperiode van 30 jaren: </p>
+<blockquote>
+<p> <em>P<sub>max,100</sub> = 100 </em> <em>×</em> <em> 2,58 kW </em> <em>×</em> <em> 0,46 </em> <em>×</em> <em> 1,01<sup>30</sup> = 160 kW.</em> </p>
+</blockquote>
+<p> Verdeeld over 3 fasen is de maximale stroom: </p>
+<blockquote>
+<p> <em>I<sub>max,100</sub> = 160 kW / 3 / 230 V = 232 A.</em> </p>
+</blockquote>
+<p> <img src="./ontwerpen van distributienetten_files/13.2.png" width="712" height="400" alt="pics_3.13" class="img-responsive-leon-15px center-block"> </p>
+<h5> Figuur 13.2 Voeding van 100 woningen met één kabel </h5>
+<p> In principe kan de 150 mm<sup>2</sup> Al-kabel bij cos(φ) = 1 de stroom voeren voor voeding van alle 100 woningen. Figuur 13.2 laat zien dat de
+  stroombelasting van de kabel 95% van de nominale stroomsterkte is. De afgebeelde spanningen zijn de maximale en de minimale waarden van de drie
+  fasespanningen ten opzichte van de nul. Het verschil tussen minimum en maximum wordt veroorzaakt door de stochastische belasting (zie voor het model
+  paragraaf 3.5.1 en voor de berekening paragraaf 9.7.2). In dit voorbeeld wordt alleen gelet op de minimale waarde van de spanning: 191 V op knooppunt A1,
+  veroorzaakt door de maximale waarde van de stochastische belasting. </p>
+<h6> Toetsen op spanningscriterium </h6>
+<p> Bij een gemiddelde perceelbreedte van 15 m en als alle woningen achter elkaar gesitueerd zijn, zouden alle woningen qua stroombelastbaarheid in principe
+  kunnen worden aangesloten via een 1500 m lange LS-kabel. Met het oog op de spanningshuishouding is deze lengte volgens figuur 13.2 echter veel te groot.
+  Bij een verdeelde belasting van 100 woningen leidt deze kabellengte namelijk tot 17% spanningsdaling. Op grond van een maximaal toegestane spanningsdaling
+  van 5% mag de LS-kabel maximaal 825 m lang zijn, waardoor 55 woningen kunnen worden aangesloten. De maximale belastingstroom is dan 133 A (55%). </p>
+<p> <img src="./ontwerpen van distributienetten_files/13.3.png" width="712" height="400" alt="pics_3.13" class="img-responsive-leon-15px center-block"> </p>
+<h5> Figuur 13.3 Voeding van 55 woningen met één kabel </h5>
+<p> Bij een kabel van deze lengte mag het inschakelen van een belasting niet leiden tot een te grote spanningsdip. Het inschakelen van een driefasige belasting
+  van 11,5 kW leidt tot een stroom van 3 x 16 A. De berekening van de spanningsdip is beschreven in hoofdstuk 11 en is bij benadering gelijk aan: </p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="318" valign="top"><img src="./ontwerpen van distributienetten_files/formule-13.1.png" alt="formules_2.7"></td>
+      <td width="2%" valign="center"><p align="left"> [ </p></td>
+      <td width="6%" valign="center"><p align="center"> 13.1 </p></td>
+      <td width="2%" valign="center"><p align="right"> ] </p></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<p> Deze waarde is lager dan de in de Netcode genoemde waarde. Het inschakelen van een enkelfasige belasting van 3,5 kW leidt tot een stroom van 16 A, hetgeen
+  bij benadering leidt tot een spanningsdip van: </p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="318" valign="top"><img src="./ontwerpen van distributienetten_files/formule-13.2.png" alt="formules_2.7"></td>
+      <td width="2%" valign="center"><p align="left"> [ </p></td>
+      <td width="6%" valign="center"><p align="center"> 13.2 </p></td>
+      <td width="2%" valign="center"><p align="right"> ] </p></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<p> Ook deze waarde is lager dan de in de Netcode geëiste waarde, zodat deze lengte ten aanzien van de spanningsvastheid voldoet. </p>
+<h6> Toetsen op netveiligheid </h6>
+<p> Bij het toetsen op de netveiligheid van de <em>l<sub>hk</sub> = </em><em>0,825</em><em> km</em> lange LS-streng wordt bekeken of een kortsluiting binnen 5
+  s wordt afgeschakeld. Voor de berekening van de kortsluitstroom zijn de impedanties van de nettransformator en van de netvoeding nodig. De berekening van
+  de transformatorimpedantie is beschreven in hoofdstuk 8 en deze is voor een 630 kVA normtransformator gelijk aan: </p>
+  <blockquote>
+<p><em> Z<sub>T,1</sub> = 0,002 + 0,010 Ω </em></p>
+</blockquote>
+<p> De homopolaire transformatorimpedantie wordt gelijk genomen aan de normale transformatorimpedantie: </p>
+<blockquote>
+<p><em> Z<sub>T,0</sub> = Z<sub>T,1</sub> </em></p>
+</blockquote>
+<p> Het beschikbare vermogen aan de primaire zijde van de transformator wordt geacht zo groot te zijn dat de impedantie van de netvoeding mag worden
+  verwaarloosd. De driefasenkortsluitstroom bij een kabellengte van 825 m is dan: </p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="318" valign="top"><img src="./ontwerpen van distributienetten_files/formule-13.3.png" alt="formules_2.7"></td>
+      <td width="2%" valign="center"><p align="left"> [ </p></td>
+      <td width="6%" valign="center"><p align="center"> 13.3 </p></td>
+      <td width="2%" valign="center"><p align="right"> ] </p></td>
+    </tr>
+  </tbody>
+</table>
+<p> Een standaard gG 250 A smeltveiligheid is geschikt voor de maximale stroombelastbaarheid van de toegepaste 150 mm<sup>2</sup> Al-kabel. In dat geval wordt
+  de driefasenkortsluitstroom van een kortsluiting in de hoofdkabel binnen 3 s afgeschakeld, hetgeen binnen de 5 s eis valt. Wel moeten alle drie de fasen
+  tegelijkertijd worden afgeschakeld. Indien de kortsluiting zich echter bevindt aan het einde van de laatste aansluitkabel in de LS-streng, moet de
+  impedantie van deze <em>l<sub>ak</sub> = 0,010 km</em> lange aansluitkabel bij de totale circuitimpedantie worden opgeteld. De driefasenkortsluitstroom
+  wordt dan 1118 A. In dat geval blijkt de kortsluiting na ongeveer 1,2 s te worden afgeschakeld, waardoor het net voor deze kortsluiting voldoet. </p>
+<p> Bij het berekenen van de fase-aardkortsluitstroom  moet bij voorkeur het complete model van de LS-kabel met fasegeleiders, nulgeleider en aardscherm
+  worden gebruikt (hoofdstuk 8). Een eenvoudiger alternatief is de berekening zoals aangegeven in paragraaf 10.3.6 betreffende de kortsluitberekening in een
+  LS-net. Bij deze laatstgenoemde methode is de homopolaire impedantie van de kabel <em><u>Z</u></em><em><sub>f,0</sub></em> nodig. Een fase-aardkortsluiting
+  in de hoofdkabel aan het einde van de LS-streng leidt dan bij een kabellengte van 825 m tot een kortsluitstroom van: </p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+  <tr>
+    <td width="318" valign="top"><img src="./ontwerpen van distributienetten_files/formule-13.4.png" alt="formules_2.7"></td>
+    <td width="2%" valign="center"><p align="left"> [ </p></td>
+    <td width="6%" valign="center"><p align="center"> 13.4 </p></td>
+    <td width="2%" valign="center"><p align="right"> ] </p></td>
+  </tr>
+</tbody>
+</table>
+
+<p> Indien een standaard 250 A smeltveiligheid is toegepast, schakelt deze in ongeveer 70 s af, zie figuur 13.4. De eis voor de netveiligheid is echter dat
+  binnen 5 s afgeschakeld wordt. Er bestaan ook snel onderbrekende (F) of supersnel onderbrekende (FF) smeltveiligheden. Een supersnel onderbrekende
+  smeltveiligheid gFF 250 A schakelt volgens zijn specificatie (Figuur 13.4) bij een stroom van 750 A op 10 s af,  zodat bij deze smeltveiligheid de fase-aardkortsluitstroom aan het einde van de LS-streng nog steeds te laat wordt afgeschakeld. Voor een kortsluiting aan
+  het einde van de laatste 10 m lange aansluitkabel in de LS-streng is de kortsluitstroom nog kleiner, zodat deze berekening niet hoeft te worden uitgevoerd. </p>
+<p> <img src="./ontwerpen van distributienetten_files/13.4.png" width="712" height="400" alt="pics_3.13" class="img-responsive-leon-15px center-block"> </p>
+<h5> Figuur 13.4 Uitschakelkarakteristieken van een gG-patroon en een gFF-patroon </h5>
+<p> Aangezien al een supersnelle smeltveiligheid is toegepast moet met het oog op de netveiligheid de lengte van de LS-streng verder beperkt worden. Bij een
+  lengte van <em>l<sub>hk</sub> = 0,675 km</em> (45 woningen) is de fase-aardkortsluitstroom bij een kortsluiting aan het einde van de laatste <em>l<sub>ak</sub> = 0,010 km</em> lange aansluitkabel aan het einde van de LS-streng: </p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="318" valign="top"><img src="./ontwerpen van distributienetten_files/formule-13.5.png" alt="formules_2.7"></td>
+      <td width="2%" valign="center"><p align="left"> [ </p></td>
+      <td width="6%" valign="center"><p align="center"> 13.5 </p></td>
+      <td width="2%" valign="center"><p align="right"> ] </p></td>
+    </tr>
+  </tbody>
+</table>
+<p> Volgens de specificaties van de supersnelle smeltveiligheid wordt deze kortsluitstroom op 4,4 s afgeschakeld. Hiermee is het net netveilig. De
+  fase-aard­kortsluitstroom bij een kortsluiting aan het einde van de <em>l<sub>hk</sub> = 0,675 km</em> lange hoofdkabel van de LS-streng is: </p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="318" valign="top"><img src="./ontwerpen van distributienetten_files/formule-13.6.png" alt="formules_2.7"></td>
+      <td width="2%" valign="center"><p align="left"> [ </p></td>
+      <td width="6%" valign="center"><p align="center"> 13.6 </p></td>
+      <td width="2%" valign="center"><p align="right"> ] </p></td>
+    </tr>
+  </tbody>
+</table>
+<p> Deze kortsluitstroom wordt volgens de specificaties van de supersnelle smeltveiligheid op 2,3 s afgeschakeld. </p>
+<h6> Toetsen op kortsluitvastheid </h6>
+<p> De opwarming van de kabel tijdens een kortsluiting is een adiabatisch proces, hetgeen betekent dat het opwarmingsproces zo kort duurt dat er geen warmte
+  naar de omgeving wordt afgestaan. Het opwarmingsproces speelt zich alleen in en rond de geleiders af. De kortsluitvastheid wordt bepaald door het product
+  van het kwadraat van de stroomsterkte en de duur van deze stroom. De toegepaste LS-hoofdkabel heeft met een gespecificeerde <em>I<sub>k,1s</sub></em> van
+  8,5 kA gedurende één seconde een maximale waarde voor <em>I<sub>k</sub><sup>2</sup>t</em> van: </p>
+  <blockquote>
+<p><em> I<sub>k</sub><sup>2</sup>t = I<sub>k,1s</sub><sup>2</sup> × 1 = 8,5<sup>2</sup> × 1 = 72,3 MA<sup>2 </sup>s </em></p>
+</blockquote>
+<p> De kortsluitvastheid kan worden bekeken voor een driefasenkortsluiting en een fase-aardkortsluiting. In het geval van een driefasenkortsluiting zijn de
+  stroomsterktes door de drie fasen niet geheel gelijk aan elkaar. Dit wordt veroorzaakt door de asymmetrie in de 675 m lange LS-kabel (zie paragraaf 8.2.8).
+  Als gevolg schakelen de smeltveiligheden de drie fasen na elkaar af: de fase met de grootste stroomsterkte eerst en de fase met de laagste stroomsterkte
+  het laatst. Doordat de fase met de laagste stroomsterkte na het afschakelen van de andere twee fasen uiteindelijk een fase-aardkortsluitstroom voert, die
+  kleiner is dan de fasestroom bij een driefasenkortsluitstroom, kan het voorkomen dat de smeltveiligheid van de laatste fase pas veel later doorsmelt. Tabel
+  13.2 vat de resultaten samen voor de kortsluit- en afschakelsequentie, berekend met een netberekeningsprogramma. Per sequentie zijn de grootste
+  kortsluitstroom, de duur dat deze onveranderd vloeit en de bijdrage aan de kortsluitbelasting weergegeven. </p>
+<h5>Tabel 13.2 Resultaten van een driefasenkortsluitstroomberekening</h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="33%" valign="top"><p align="center"> <strong>I (A)</strong> </p></td>
+      <td width="33%" valign="top"><p align="center"> <strong>Dt (s)</strong> </p></td>
+      <td width="33%" valign="top"><p align="center"> <strong>I<sup>2</sup>t (MA<sup>2</sup>s)</strong> </p></td>
+    </tr>
+    <tr>
+      <td width="115" valign="top"><p align="center"> 1602 </p></td>
+      <td width="115" valign="top"><p align="center"> 0,097 </p></td>
+      <td width="115" valign="top"><p align="center"> 0,2489 </p></td>
+    </tr>
+    <tr>
+      <td width="115" valign="top"><p align="center"> 1403 </p></td>
+      <td width="115" valign="top"><p align="center"> 0,162 </p></td>
+      <td width="115" valign="top"><p align="center"> 0,3189 </p></td>
+    </tr>
+    <tr>
+      <td width="115" valign="top"><p align="center"> 919 </p></td>
+      <td width="115" valign="top"><p align="center"> 2,669 </p></td>
+      <td width="115" valign="top"><p align="center"> 2,2541 </p></td>
+    </tr>
+    <tr>
+      <td width="115" valign="top"></td>
+      <td width="115" valign="top"><p align="center"> -------------- + </p></td>
+      <td width="115" valign="top"><p align="center"> -------------- + </p></td>
+    </tr>
+    <tr>
+      <td width="115" valign="top"></td>
+      <td width="115" valign="top"><p align="center"> 2,928 </p></td>
+      <td width="115" valign="top"><p align="center"> 2,9280 </p></td>
+    </tr>
+  </tbody>
+</table><br>
+<p> Uit deze resultaten blijkt dat de kortsluitstroom in de eerste en tweede afgeschakelde fasen zo snel worden afgeschakeld, dat deze een relatief kleine
+  bijdrage aan de kortsluitbelasting leveren. De kleinere overgebleven fase-aardkortsluitstroom in de laatst afgeschakelde fase duurt echter veel langer,
+  waardoor deze een grotere bijdrage aan de kortsluitbelasting levert. Uiteindelijk is de totale kortsluitbelasting met 2,928 MA<sup>2</sup>s ruim onder de
+  maximale waarde van 72,3 MA<sup>2</sup>s. </p>
+<p> In het geval van een fase-aardkortsluiting aan het einde van de LS-streng wordt niet gerekend met de waarde van 919 A uit tabel 13.2, omdat dit de
+  stroomwaarde is van de laatst uitgeschakelde fase en daarmee de laagste waarde voor een fase-aardkortsluiting. De waarde, zoals berekend in vergelijking
+  13.6 komt beter in de buurt van de maximale waarde voor een fase-aardkortsluiting. Bij een kortsluitstroom van <em>I<sub>k</sub> = 0,946 kA</em> gedurende
+  2,3 s is de kortsluitbelasting van de kabel ruim onder de maximale waarde van 72,3 MA<sup>2</sup>s: </p>
+  <blockquote>
+<p><em> I<sub>k</sub><sup>2</sup>t = 0,946<sup>2</sup> × 2,3 = 2,1 MA<sup>2 </sup>s </em></p>
+</blockquote>
+<p> Met deze waarde is de LS-hoofdkabel met de gFF 250 A smeltveiligheid kortsluitvast voor een fase-aardkortsluitstroom. In het geval van een
+  fase-aardkortsluiting aan het einde van de laatste aansluitkabel is de kortsluitbelasting van de kabel (I<sub>k</sub> uit vergelijking 13.5): </p>
+  <blockquote>
+<p><em> I<sub>k</sub><sup>2</sup>t = 0,840<sup>2</sup> × 4,4 = 3,1 MA<sup>2 </sup>s </em></p>
+</blockquote>
+<p> De aansluitkabel heeft een gespecificeerde <em>I<sub>k,1s</sub></em> van 1,3 kA, hetgeen leidt tot een maximale waarde voor <em>I<sub>k</sub><sup>2</sup>t</em> van 1,7 MA<sup>2</sup>, waardoor de aansluitkabel niet kortsluitvast is. De aansluitkabel is alleen kortsluitvast te
+  krijgen door nog sneller af te schakelen of door de kortsluitstroom te reduceren. </p>
+<h6> Toetsen op aanrakingsveiligheid </h6>
+<p> Indien een aardingsvoorziening wordt aangeboden via het TN-systeem, moet ook de aanrakingsveiligheid worden getoetst. In het voorbeeld van figuur 13.5 is
+  niet meer gerekend met de impedantie van het symmetrisch veronderstelde kabelmodel (paragraaf 10.3.6), maar met het complete model van de LS-kabel met
+  fasegeleiders, nulgeleider en aardscherm (hoofdstuk 8), waardoor de kortsluitstroom iets groter is dan in voorgaande voorbeelden. De afwijking wordt
+  veroorzaakt doordat de waarde van de homopolaire impedantie geschat was en niet berekend. Bij een fase-aardkortsluiting op het einde van de laatste
+  aansluitkabel op de LS-streng met lengte <em>l<sub>hk </sub>=0,675 km</em> blijkt volgens figuur 13.5 de foutspanning 85,4 V te zijn. Rekening houdend met
+  een schoeiselweerstand van 1000 W en de 5%-lichaamsweerstands-curve is de berekende aanrakingsspanning 37,3 V. De stroom door het menselijk lichaam is dan
+  48 mA, die volgens de C1 stroom-tijd gevarencurve binnen 1,2 s moet worden afgeschakeld. De kortsluitstroom ter grootte van 860 A wordt echter op 4,1 s
+  afgeschakeld, zodat met deze benadering het net niet voldoet aan de eis ten aanzien van de aanrakingsveiligheid. In de meeste gevallen dat een
+  aardingsvoorziening volgens het TN-systeem wordt aangeboden, blijkt niet de stroombelasting en de spanningsvastheid de beperkende factor voor de lengte van
+  de LS-kabel te zijn, maar de aanrakingsveiligheid. </p>
+<p> <img src="./ontwerpen van distributienetten_files/13.5.png" width="712" height="400" alt="pics_3.13" class="img-responsive-leon-15px center-block"> </p>
+<h5> Figuur 13.5 Aanrakingsveiligheid bij een LS-streng van 675 m </h5>
+<p> Op grond van de aanrakingsveiligheid kan worden berekend dat de maximale lengte van de LS-streng 525 m bedraagt. In dat geval is de stroom bij een
+  fase-aardkortsluiting aan het einde van de laatste aansluitkabel volgens figuur 13.6 gelijk aan 1069 A. De aanrakingsspanning is dan 37,1 V, die met 1,08 s
+  wordt afgeschakeld. Hierdoor is het net aanrakingsveilig. Bovendien is de aansluitkabel door deze snellere afschakeling nu wel kortsluitvast. </p>
+<p> <img src="./ontwerpen van distributienetten_files/13.6.png" width="712" height="400" alt="pics_3.13" class="img-responsive-leon-15px center-block"> </p>
+<h5> Figuur 13.6 Aanrakingsveiligheid bij een LS-streng van 525 m </h5>
+<p> In de praktijk is in het net een zekere hoeveelheid 'verborgen aarde' aanwezig. Bij elke aansluiting zal een meer of minder goede verbinding van de PE met
+  de lokale aarde aanwezig zijn. Deze verborgen aarde heeft een gunstige werking op de hoogte van de foutspanning en daarmee op de aanrakingsspanning. Als
+  gevolg hiervan is het net in de praktijk veiliger dan in de slechtste situatie berekend. Indien op deze verborgen aarde vertrouwd kan worden, kan hiermee
+  in de berekening rekening worden gehouden en kunnen de LS-strengen in de meeste gevallen langer gekozen worden. Indien bij elke woning een verborgen aarde
+  van 100 W wordt toegepast, daalt de aanrakingsspanning naar 31,0 V en verbetert de aanrakingsveiligheid, zoals afgebeeld in figuur 13.7, doordat de marge
+  tussen maximale en daadwerkelijke afschakeltijd toeneemt. </p>
+<p> <img src="./ontwerpen van distributienetten_files/13.7.png" width="712" height="400" alt="pics_3.13" class="img-responsive-leon-15px center-block"> </p>
+<h5> Figuur 13.7 Aanrakingsveiligheid bij een LS-streng van 525 m en 100 W verborgen aarde per woning </h5>
+<p> Bovendien is het mogelijk nul en PE van naburige LS-strengen met elkaar te verbinden, zodat een betere betrouwbaarheid van het aardnet verkregen wordt. </p>
+<p> Een nieuwe richtlijn is in ontwerp die stelt dat een kortsluiting voor wat betreft de aanrakingsveiligheid niet hoeft worden afgeschakeld als de
+  foutspanning op de installatie onder de 66 V blijft. Wel moet deze met het oog op de netveiligheid binnen 5 s worden afgeschakeld. Deze richtlijn gaat uit
+  van een zekere hoeveelheid verborgen aarde in het distributienet en van de potentiaalvereffening in en rondom de woning van de aangeslotene. Door
+  toepassing van deze richtlijn zal een net eenvoudiger aan de aanrakingsveiligheidseis voldoen dan wanneer de C1-curve wordt toegepast. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_3_13.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_13.2.2"></div>
+        <br>
+<h3>13.2.2 LV-ontwerp voor een grootverbruiker tot 300 kVA (type A.3)</h3>
+<p> Op industrieterreinen worden vaak kabels van het type 150 mm<sup>2</sup> Al toegepast. De in het netstation toegepaste transformatoren hebben vermogens van
+  630 of 1000 kVA. De maximale lengte van de hoofdkabels is afhankelijk van het type aardingsvoorziening. Indien via het TN-systeem aarding wordt aangeboden,
+  kan de netbeheerder ervoor kiezen een maximale lengte van bijvoorbeeld 350 m aan te houden. In dat geval moeten de netstations op maximaal 700 m van elkaar
+  gesitueerd worden. Volgens de Netcode moeten grootverbruikers tot 300 kVA (type A.3) op het netstation worden aangesloten. Een extra eis zou kunnen zijn
+  dat het net op het eindpunt in ieder geval geschikt moet zijn voor een 3x80 A aansluiting (55 kVA). </p>
+<p> Bij het vaststellen van de belasting van de aangeslotenen wordt geen gebruik gemaakt van de methode van Velander, omdat het op industrieterreinen vaak gaat
+  om een klein aantal aansluitingen van groot vermogen en divers gedrag. De gelijktijdigheidfactor en de cos(φ)-waarde op het aansluitpunt moeten voor
+  grootverbruikers afzonderlijk worden bepaald. </p>
+<p> Figuur 13.8 laat zien dat een industriële grootverbruiker met een maximaal vermogen van 200 kVA en een cos(φ) van 0,9 gevoed kan worden door middel
+  van een verbinding van 300 m lengte, bestaande uit twee parallelle 150 mm<sup>2</sup> Al-kabels. </p>
+<p> <img src="./ontwerpen van distributienetten_files/13.8.png" width="712" height="400" alt="pics_3.13" class="img-responsive-leon-15px center-block"> </p>
+<h5> Figuur 13.8 Aansluiting van een industriële aangeslotene van 200 kVA, cos(φ) = 0,9 </h5>
+<p> De aansluiting voldoet indien aan alle eisen van de Netcode en de netbeheerder (zie tabel 13.1) wordt voldaan. De berekeningen hiervoor verlopen op
+  dezelfde wijze als in het voorbeeld van paragraaf 13.2.1. De maximale stroomsterkte door de kabelverbinding is 61% van de nominale stroomsterkte. De
+  laagste spanning van de drie fasen is 219 V en de spanningsval over de kabelverbinding is 4,6%. De spanningsvastheid bij het inschakelen van een
+  éénfasebelasting van 3,5 kVA is met 0,35% ruim binnen de gestelde grens. Een fase-aardkortsluiting wordt bij toepassing van een 250 A gG
+  smeltveiligheid met 0,4 s afgeschakeld, waarmee aan de eis van netveiligheid (maximaal 5 s) wordt voldaan. De kortsluitbelasting is 2% van de maximale
+  waarde, waarmee ook aan de eis ten aanzien van de kortsluitvastheid wordt voldaan. Ook op het gebied van de aanrakingsveiligheid voldoet het net
+  ruimschoots aan de eis: bij een fase-aardkortsluiting is de kortsluitstroom 3990 A en is de foutspanning 80 V en de aanrakingsspanning 35,4 V. Volgens de
+  C1-kromme moet binnen maximaal 1,4 s worden afgeschakeld. Aangezien met 0,4 s wordt afgeschakeld is dit in orde. </p>
+<p> Voor een aangeslotene met het maximale vermogen voor categorie A.3 (300 kVA op de LS-rail van de transformator, zie paragraaf 2.4) is de lengte van de
+  aansluitkabel met het oog op de spanningseis maximaal 200 m. Bij een vermogen van 300 kVA en een cos(φ) van 0,9 is de spanningsval over de kabelverbinding
+  4,6%. Gezien de kortere lengte en de snellere uitschakeling wordt ook aan de andere eisen ten aanzien van spanningsvastheid, netveiligheid,
+  kortsluitvastheid en aanrakingsveiligheid voldaan. </p>
+<p> <img src="./ontwerpen van distributienetten_files/13.9.png" width="712" height="400" alt="pics_3.13" class="img-responsive-leon-15px center-block"> </p>
+<h5> Figuur 13.9 Aansluiting van een industriële aangeslotene van 300 kVA, cos(φ) = 0,9 </h5>
+        <a href="https://www.phasetophase.nl/boek/boek_3_13.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_13.3"></div>
+        <br>
+<h2>13.3 Middenspanningsnet</h2>
+<p> De beslissing ten aanzien van een investering in het middenspanningsnet wordt genomen doordat de gewenste capaciteit van het net onvoldoende is, doordat de
+  leveringszekerheid in geval van onderhoud of storingen onvoldoende wordt geacht, of doordat de spanningskwaliteit in het geding komt. Ook uitbreidingen in
+  het LS-net zijn reden voor investeringen. Voor het bepalen van de belasting van het net wordt gekeken naar de toestand nu en in de toekomst. Als de
+  klantvraag concreet is of als de groei van de belasting voldoende onderbouwd is, kan met behulp van het model van het net een capaciteitstekort aangetoond
+  worden. Ten aanzien van de leveringszekerheid moet het mogelijk zijn bij een storing de levering te herstellen. Dit herstel moet mogelijk zijn met een
+  beperkt aantal (om)schakelhandelingen of op LS-niveau met behulp van een noodstroomvoorziening (generatorwagen). Als dat niet mogelijk is, moet het net
+  worden aangepast. De spanningskwaliteit is geregeld in de Netcode en in bedrijfseigen praktijkregels. Het spanningsverlies over een MS-streng moet in de
+  normale bedrijfstoestand en in een omgeschakelde toestand hieraan voldoen. Als aan de eisen niet kan worden voldaan, dan moet er geïnvesteerd worden. </p>
+<p> De belastingprognose is de basis van aanpassingen in het MS-distributienet. Daarbij is het ontwerp van een middenspanningsnet sterk afhankelijk van het
+  laagspanningsnet, want meestal is een uitbreiding van aansluitingen op LS-niveau de oorzaak van uitbreiding op MS-niveau. De verdeling en de geografische
+  spreiding van de netstations bepaalt in hoge mate de ruimtelijke structuur van het middenspanningsnet. Nieuwe netstations worden ingepast door ze in te
+  lussen in een bestaande MS-verbinding of door ze aan te sluiten op een nieuwe MS-streng op het onderstation. Bij een MS-netontwerp worden de volgende
+  aandachtspunten nader beschouwd: </p>
+<ul>
+  <li> onderstation, regelstations, schakelstations </li>
+  <li> netontwerp </li>
+  <li> middenspanningsaansluitingen </li>
+  <li> netstations </li>
+  <li> beveiliging. </li>
+</ul>
+<p> Een onderstation wordt gevoed door een HS- of TS-net. In het onderstation zijn een of meer transformatoren opgesteld. De transformatoren zijn parallel
+  geschakeld, maar worden meestal niet parallel bedreven om het kortsluitvermogen niet te groot te laten worden. De transformatoren zijn voorzien van een
+  spanningsregeling, eventueel voorzien van stroomcompensatie. Door de spanningsregeling blijft de spanning aan de MS-zijde van de transformator binnen een
+  ingestelde bandbreedte. Indien decentrale opwekking in het MS-net aanwezig is, wordt geen of weinig stroomcompensatie toegepast. De MS-zijde van de
+  transformator is meestal in driehoek geschakeld, maar ook een sterschakeling komt voor. Bij een sterschakeling kan het MS-sterpunt via een impedantie
+  geaard worden. Bij een driehoekschakeling is het net zwevend of wordt het middels een sterpuntstransformator geaard. De keuze wordt bepaald op grond van
+  historie (de bestaande netdelen zijn zo uitgevoerd) of op basis van de beveiligingsfilosofie van het MS-net. De grootte van de kortsluitstroom is hier een
+  bepalende factor. In het MS-net worden naast de onderstations nog regelstations en schakelstations onderscheiden. Een regelstation bevat een
+  regeltransformator om de spanning over een grote afstand op niveau te houden. Een schakelstation wordt vanuit het onderstation gevoed door middel van een
+  MS-transportverbinding en voedt op zijn beurt een aantal MS-strengen. </p>
+<p> Ten aanzien van de structuur van het MS-netontwerp zijn theoretisch beschouwd drie typen netwerken mogelijk, namelijk het stralennetwerk, het ringnetwerk
+  en het vermaasde netwerk (zie hoofdstuk 2 over netstructuren). Een vermaasd net op MS-niveau is minder gewenst vanwege de complexe beveiliging en vanwege
+  mogelijk ongewenst vermogenstransport vanuit het HS-niveau. Meestal wordt gekozen voor de structuur van het ringnetwerk, waarbij de uitgangspunten zijn: </p>
+<ul>
+  <li> leg het netwerk zo eenvoudig mogelijk uit </li>
+  <li> maak zoveel mogelijk zuivere ringen en maak geen verbindingen die geen directe waarde creëren voor het netwerk </li>
+  <li> het maken van subringen tussen twee hoofdringen is toegestaan als deze subring wordt voorzien van een eigen beveiliging </li>
+  <li> het maken van uitlopers is toegestaan. </li>
+</ul>
+<p> Het uitgewisselde vermogen bepaalt de wijze waarop de aansluitingen worden gerealiseerd. Kleinverbruikers worden aangesloten op de LS-hoofdkabel of
+  rechtstreeks op de LS-rail van het netstation. Het netstation zelf is ingelust in de MS-streng. Hierdoor ontstaat een zogenaamde KKT-configuratie
+  (MS-schakelinstallatie met twee kabelscheiders en een transformatorveld). Grootverbruikers met een aansluitcapaciteit van 0,3 tot 4 MVA worden eveneens
+  ingelust in de bestaande MS-streng (typen A.4 en A.5, zie paragraaf 2.4). Aangeslotenen met een aansluitcapaciteit van 3 MVA tot en met 10 MVA worden met
+  een eigen voedingskabel op het onderstation aangesloten (type A.6). </p>
+<p> De beveiliging wordt zodanig ingesteld dat er een selectieve afschakeling ontstaat in de MS-streng, de subringen en de uitlopers. Het is gebruikelijk in de
+  opeenvolgende beveiligingstrappen een tijdstaffeling aan te houden van bijvoorbeeld 0,3 s (zie hoofdstuk 6 over beveiligingen). Het netwerk wordt hierbij
+  radiaal bedreven. </p>
+<p> De kabeltypes moeten zodanig gekozen worden dat aan de randvoorwaarden van de spanning wordt voldaan en dat de stroomsterkte niet groter wordt dan de
+  optimale belasting van de kabel. De optimale stroom bedraagt bij sommige netbeheerders voor GPLK kabels 70% en voor XLPE kabels 90% van de nominale
+  belasting bij gegeven bodemeigenschappen (onder andere warmteweerstand en temperatuur). Bij het berekenen van de kabelcapaciteit wordt er tevens rekening
+  mee gehouden dat de kabel door omschakelacties in geval van herstel na een kortsluiting de belasting van de hele ring moet kunnen voeren. </p>
+<p> Net als in de LS-netten wordt de maximale stroombelastbaarheid van kabels beïnvloed door thermische weerstand van de grond, materiaal van bodem en
+  kabelbed, uitdroging van de bodem en bodemtemperatuur (zie hoofdstuk 4 over netcomponenten). Ook naburige circuits beïnvloeden de maximale
+  stroombelastbaarheid. Bij MS-kabels wordt nauwkeuriger dan bij LS-kabels gekeken naar de omgevingsfactoren die de maximale stroombelastbaarheid
+  beïnvloeden. De afwijking van de stroombelastbaarheid ten opzichte van de door de fabrikant gespecificeerde waarden kunnen met een computerprogramma
+  voor berekening van de kabelbelastbaarheid worden geanalyseerd (Phase, 2006) of, voor eenvoudige gevallen, met behulp van correctiefactoren worden benaderd
+  (Phase, 2008-2). Tabel 13.3 geeft enkele correctiefactoren voor MS-kabels ten opzichte van de uitgangssituatie: 1 circuit, thermische grondweerstand G = 1
+  Km/W, bodemtemperatuur 20 °C, liggingsdiepte 1 m. De correctiefactor voor ondergrondse kabels is samengesteld uit meerdere factoren: </p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="318" valign="top"><em>f = f<sub>C</sub> × f<sub>G</sub> × f<sub>T</sub> × f<sub>L</sub></em></td>
+      <td width="2%" valign="center"><p align="left"> [ </p></td>
+      <td width="6%" valign="center"><p align="center"> 13.7 </p></td>
+      <td width="2%" valign="center"><p align="right"> ] </p></td>
+    </tr>
+  </tbody>
+</table>
+<p>Hierin zijn: </p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td width="50"><em>f<sub>C</sub></em>:</td>
+      <td>correctiefactor voor meerdere parallelle circuits</td>
+    </tr>
+    <tr>
+      <td><em>f<sub>G</sub></em>:</td>
+      <td>correctiefactor voor afwijkende thermische grondweerstand</td>
+    </tr>
+    <tr>
+      <td><em>f<sub>T</sub></em>:</td>
+      <td>correctiefactor voor afwijkende bodemtemperatuur</td>
+    </tr>
+    <tr>
+      <td><em>f<sub>L</sub></em>:</td>
+      <td>correctiefactor voor afwijkende liggingdiepte</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<h5> Tabel 13.3 Correctiefactoren voor de kabelbelastbaarheid </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="25%" colspan="2" valign="top"><p> <strong>Circuits</strong> </p></td>
+      <td width="25%" colspan="2" valign="top"><p> <strong>G</strong> </p></td>
+      <td width="25%" colspan="2" valign="top"><p> <strong>Temperatuur</strong> </p></td>
+      <td width="25%" colspan="2" valign="top"><p> <strong>Liggingsdiepte</strong> </p></td>
+    </tr>
+    <tr>
+      <td width="12%" valign="top"><p> aantal </p></td>
+      <td width="12%" valign="top"><p> <em>f<sub>C</sub></em> </p></td>
+      <td width="12%" valign="top"><p> Km/W </p></td>
+      <td width="12%" valign="top"><p> <em>f<sub>G</sub></em> </p></td>
+      <td width="12%" valign="top"><p> °C </p></td>
+      <td width="12%" valign="top"><p> <em>f<sub>T</sub></em> </p></td>
+      <td width="12%" valign="top"><p> m </p></td>
+      <td width="12%" valign="top"><p> <em>f<sub>L</sub></em> </p></td>
+    </tr>
+    <tr>
+      <td width="36" valign="top"><p> 1 </p></td>
+      <td width="43" valign="top"><p> 1,00 </p></td>
+      <td width="38" valign="top"><p> 0,50 </p></td>
+      <td width="42" valign="top"><p> 1,25 </p></td>
+      <td width="36" valign="top"><p> 10 </p></td>
+      <td width="36" valign="top"><p> 1,07 </p></td>
+      <td width="36" valign="top"><p> 0,8 </p></td>
+      <td width="36" valign="top"><p> 1,02 </p></td>
+    </tr>
+    <tr>
+      <td width="36" valign="top"><p> 2 </p></td>
+      <td width="43" valign="top"><p> 0,83 </p></td>
+      <td width="38" valign="top"><p> 0,75 </p></td>
+      <td width="42" valign="top"><p> 1,10 </p></td>
+      <td width="36" valign="top"><p> 15 </p></td>
+      <td width="36" valign="top"><p> 1,04 </p></td>
+      <td width="36" valign="top"><p> 1,0 </p></td>
+      <td width="36" valign="top"><p> 1,00 </p></td>
+    </tr>
+    <tr>
+      <td width="36" valign="top"><p> 3 </p></td>
+      <td width="43" valign="top"><p> 0,73 </p></td>
+      <td width="38" valign="top"><p> 1,00 </p></td>
+      <td width="42" valign="top"><p> 1,00 </p></td>
+      <td width="36" valign="top"><p> 20 </p></td>
+      <td width="36" valign="top"><p> 1,00 </p></td>
+      <td width="36" valign="top"><p> 1,2 </p></td>
+      <td width="36" valign="top"><p> 0,98 </p></td>
+    </tr>
+    <tr>
+      <td width="36" valign="top"><p> 4 </p></td>
+      <td width="43" valign="top"><p> 0,66 </p></td>
+      <td width="38" valign="top"><p> 1,50 </p></td>
+      <td width="42" valign="top"><p> 0,85 </p></td>
+      <td width="36" valign="top"><p> 25 </p></td>
+      <td width="36" valign="top"><p> 0,96 </p></td>
+      <td width="36" valign="top"></td>
+      <td width="36" valign="top"></td>
+    </tr>
+    <tr>
+      <td width="36" valign="top"><p> 5 </p></td>
+      <td width="43" valign="top"><p> 0,62 </p></td>
+      <td width="38" valign="top"><p> 2,00 </p></td>
+      <td width="42" valign="top"><p> 0,75 </p></td>
+      <td width="36" valign="top"></td>
+      <td width="36" valign="top"></td>
+      <td width="36" valign="top"></td>
+      <td width="36" valign="top"></td>
+    </tr>
+    <tr>
+      <td width="36" valign="top"></td>
+      <td width="43" valign="top"></td>
+      <td width="38" valign="top"><p> 2,50 </p></td>
+      <td width="42" valign="top"><p> 0,67 </p></td>
+      <td width="36" valign="top"></td>
+      <td width="36" valign="top"></td>
+      <td width="36" valign="top"></td>
+      <td width="36" valign="top"></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<h5> Tabel 13.4 Voorbeeld voor bedrijfseigen criteria voor het ontwerpen van een MS-net </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="36%" valign="top"><p> <strong>Criterium</strong> </p></td>
+      <td width="64%" valign="top"><p> <strong>Eis</strong> </p></td>
+    </tr>
+    <tr>
+      <td width="165" valign="top"><p> Stroombelastbaarheid </p></td>
+      <td width="175" valign="top"><p> I<sub>max</sub> &lt; I<sub>optimaal</sub> </p></td>
+    </tr>
+    <tr>
+      <td width="165" valign="top"><p> Spanningshuishouding </p></td>
+      <td width="175" valign="top"><p> DU &lt; 7%: </p>
+        <p> • 10 kV-net: 10,15 kV &lt; U &lt; 10,85 kV </p>
+        <p> • 20 kV-net: 20,30 kV &lt; U &lt; 21,70 kV </p></td>
+    </tr>
+    <tr>
+      <td width="165" valign="top"><p> Spanningsval MS-streng </p></td>
+      <td width="175" valign="top"><p> Normale bedrijfstoestand: DU &lt; 5% </p>
+        <p> Omgeschakelde bedrijfstoestand: DU &lt; 7% </p></td>
+    </tr>
+    <tr>
+      <td width="165" valign="top"><p> Spanningsvastheid </p></td>
+      <td width="175" valign="top"><p> d &lt; 3% </p></td>
+    </tr>
+    <tr>
+      <td width="165" valign="top"><p> Netveiligheid </p></td>
+      <td width="175" valign="top"><p> Maximale fouttijd: 5 s </p></td>
+    </tr>
+    <tr>
+      <td width="165" valign="top"><p> Kortsluitvastheid </p></td>
+      <td width="175" valign="top"><p> I<sub>k</sub><sup>2</sup> t &lt; I<sub>k,1s</sub><sup>2</sup> </p></td>
+    </tr>
+  </tbody>
+</table><br>
+<p> In het MS-net wordt bij het dimensioneren van het kabeltype gelet op criteria die de netbeheerder zodanig heeft vastgesteld dat zij binnen de eisen van de
+  Netcode vallen. Tabel 13.4 geeft een voorbeeld van bedrijfseigen criteria voor het ontwerpen van een MS-net. </p>
+<p> De maximale lengte van een MS-streng wordt bepaald door de kabelbelasting, de spanningseisen en de netveiligheid. Omdat het beschikbare kortsluitvermogen
+  uit het TS-net of HS-net aanzienlijk kan zijn, moet goed gelet worden op de kortsluitvastheid van de gekozen kabel in relatie tot de maximale
+  uitschakeltijd door de beveiliging in de MS-streng. In veel gevallen zal hierdoor de kabel zwaarder gekozen moeten worden dan op grond van de
+  spanningseisen en de te verwachten kabelbelasting. Eventueel worden aan het begin van de MS-strengen smoorspoelen toegepast om de maximale kortsluitstroom
+  te beperken. Ook de betrouwbaarheid wordt in grote mate bepaald door het netontwerp. Hieronder vallen het aantal getroffen aangeslotenen indien een
+  beveiliging aanspreekt en de omschakelbaarheid ten behoeve van de herstelacties. Indien alleen gekeken wordt naar de maximale spanningsval over een
+  MS-streng van 7%, kan voor elk type kabel de maximale lengte worden bepaald als functie van de kabelbelasting. Figuur 13.10 geeft de maximale lengte van
+  een 3 x 240 mm<sup>2</sup> Al kabel voor een belasting met een cos(φ) van 0,9. </p>
+<p> Bij het ontwerp van het MS-net wordt niet alleen rekening gehouden met het door de aangeslotenen opgenomen vermogen maar ook met het aanwezige en
+  geprojecteerde decentraal opgewekte vermogen. De spanning in MS-netten wordt beïnvloed door de decentrale opwekking. Hierdoor is niet alleen sprake
+  van spanningsval door verbruikers maar ook van spanningsopdrijving door producenten. Een loadflowberekening voor situaties van minimale en maximale
+  belasting en van minimale en maximale opwekking geeft inzicht in de extreme situaties. Met het oog op de beveiliging wordt een MS-ring meestal niet
+  gesloten bedreven, maar geopend. De optimale locatie van de netopening wordt mede met het oog op minimalisering van het netverlies gekozen. Decentrale
+  opwekking leidt ook tot verhoging van het kortsluitvermogen. Bovendien beïnvloedt decentrale opwekking de werking van de beveiliging, zoals beschreven
+  in paragraaf 6.7. </p>
+<p> <img src="./ontwerpen van distributienetten_files/13.10.png" width="712" height="400" alt="pics_3.13" class="img-responsive-leon-15px center-block"> </p>
+<h5> Figuur 13.10 Maximale lengte van een 3 x 240 mm<sup>2 </sup>Al MS-kabel als functie van de belasting </h5>
+        <a href="https://www.phasetophase.nl/boek/boek_3_13.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_13.3.1"></div>
+        <br>
+<h3>13.3.1 Voorbeeldberekening aan een MS-net</h3>
+<p> Bij wijze van voorbeeld wordt een ontwerp van een MS-net getoetst aan de criteria van tabel 13.4. Het net is afgebeeld in figuur 13.11 en bestaat uit twee
+  MS-strengen met elk 6 secties van 1000 m. Elke sectie bevat een netstation met een belasting van 300 kW bij een cos(φ) van 0,9. Aan het begin van iedere
+  MS-streng bevindt zich een smoorspoel om de kortsluitstromen te beperken. Het MS-net wordt gevoed door een 150/10 kV onderstation met twee 66 MVA
+  transformatoren, waarvan er een in bedrijf is. De secundaire zijden van de transformatoren zijn in driehoek geschakeld en het MS-net is geaard met behulp
+  van een nulpunttransformator. Een equivalente verbinding van knooppunt 'OS MS-rail' naar het equivalente knooppunt 'K_eq' representeert de homopolaire
+  capaciteit van de overige MS-strengen, die op het onderstation zijn aangesloten. De equivalente waarde is: <em>C<sub>0</sub> = 70 </em><em>m</em><em>F</em> . </p>
+<p> <img src="./ontwerpen van distributienetten_files/13.11.png" width="712" height="400" alt="pics_3.13" class="img-responsive-leon-15px center-block"> </p>
+<h5> Figuur 13.11 Voorbeeld van een MS-net </h5>
+<p> De gegevens van het MS-net zijn hieronder samengevat. </p>
+<p><em> Onderstation: </em></p>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="33%" valign="top"><p> <strong>Netvoeding</strong> </p></td>
+      <td width="33%" valign="top"><p> <strong>Voedingstransformatoren</strong> </p></td>
+      <td width="33%" valign="top"><p> <strong>Nulpunttransformator</strong> </p></td>
+    </tr>
+    <tr>
+      <td width="113" valign="top"><p> U<sub>nom</sub> = 150 kV </p>
+        <p> S<sub>k</sub>"<sub>max</sub> = 3000 MVA </p></td>
+      <td width="113" valign="top"><p> U<sub>nom</sub> = 150/10 kV </p>
+        <p> S<sub>nom</sub> = 66 MVA </p>
+        <p> Schakeling: YNd5 </p>
+        <p> u<sub>k</sub> = 20 % </p>
+        <p> P<sub>k</sub> = 230 kW </p>
+        <p> R<sub>0</sub> = 6 Ω </p>
+        <p> Z<sub>0</sub> = 127 Ω </p>
+        <p> Trapgrootte: 2,5 kV </p></td>
+      <td width="113" valign="top"><p> R<sub>0</sub> = 0 Ω </p>
+        <p> Z<sub>0</sub> = 7 Ω </p></td>
+    </tr>
+  </tbody>
+</table><br>
+<p><em> MS-net: </em></p>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="33&amp;" valign="top"><p> <strong>Smoorspoelen</strong> </p></td>
+      <td width="33%" valign="top"><p> <strong>MS-kabel 3 x 150 mm<sup>2</sup> Al</strong> </p></td>
+      <td width="33%" valign="top"><p> <strong>MS-kabel 3 x 95 mm<sup>2</sup> Al</strong> </p></td>
+    </tr>
+    <tr>
+      <td width="113" valign="top"><p> S<sub>nom</sub> = 5,8 MVA </p>
+        <p> I<sub>nom</sub> = 335 A </p>
+        <p> u<sub>k</sub> = 1,74 % </p>
+        <p> P<sub>k</sub> = 2,69 kW </p>
+        <p> R = 0,008 Ω </p>
+        <p> X = 0,3 Ω </p>
+        <p> R<sub>0</sub> = 0,008 Ω </p>
+        <p> X<sub>0</sub> = 0,3 Ω </p></td>
+      <td width="113" valign="top"><p> Lengte = 1000 m </p>
+        <p> Inom = 280 A </p>
+        <p> R = 0,208 Ω </p>
+        <p> X = 0,093 Ω </p>
+        <p> C = 0,37 μF </p>
+        <p> R0 = 0,96 Ω </p>
+        <p> X0 = 0,11 Ω </p>
+        <p> C0 = 0,37 μF </p>
+        <p> I<sub>k,1s</sub> = 14,1 kA </p></td>
+      <td width="113" valign="top"><p> Lengte = 1000 m </p>
+        <p> Inom = 215 A </p>
+        <p> R = 0,322 Ω </p>
+        <p> X = 0,102 Ω </p>
+        <p> C = 0,32 μF </p>
+        <p> R0 = 1,07 Ω </p>
+        <p> X0 = 0,11 Ω </p>
+        <p> C0 = 0,32 μF </p>
+        <p> I<sub>k,1s</sub> = 8,9 kA </p></td>
+    </tr>
+  </tbody>
+</table><br>
+<p><em> Zes netstations per MS-streng: </em></p>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="50%" valign="top"><p> <strong>Transformator</strong> </p></td>
+      <td width="50%" valign="top"><p> <strong>Belasting</strong> </p></td>
+    </tr>
+    <tr>
+      <td width="170" valign="top"><p> Unom = 10,5/0,42 kV </p>
+        <p> Snom = 0,4 MVA </p>
+        <p> Schakeling: Dyn5 </p>
+        <p> uk = 4 % </p>
+        <p> Pk = 3,1 kW </p>
+        <p> Trapgrootte: 0,25 kV </p></td>
+      <td width="170" valign="top"><p> P = 0,3 MW </p>
+        <p> S = 0,33 MVA </p>
+        <p> I = 19,245 A </p>
+        <p> cos(φ) = 0,9 </p>
+        <p> Constante stroomgedrag </p></td>
+    </tr>
+  </tbody>
+</table>
+<h6> Toetsen op stroombelastbaarheid </h6>
+<p> De belasting van 6 netstations per MS-streng is: <em>I<sub>streng</sub> = 6 x 19,245 A = 115,5 A</em>. Deze waarde bedraagt 46% van de optimale stroom van
+  de 3 x 150 mm<sup>2</sup> Al kabel (252 A bij een reductiefactor 0,9) en 60% van de 3 x 95 mm<sup>2</sup> Al kabel (193 A bij een reductiefactor 0,9),
+  zodat beide typen voldoen. Indien in het geval van een storing aan de eerste sectie van een van beide MS-strengen de totale belasting van beide MS-strengen
+  na een omschakelactie door een MS-streng gevoed moet worden, bedraagt de belasting 231 A. Hierom moeten de eerste kabels van elke MS-streng van het type 3
+  x 150 mm<sup>2</sup> Al zijn. In de sectie, verderop in de MS-streng, waar de stroom kleiner dan de optimale waarde van de 3 x 95 mm<sup>2</sup> Al kabel
+  is (193 A), mag deze kabel worden toegepast. Dat is het geval vanaf de derde sectie, na Netstation 12 en Netstation 22. </p>
+<h6> Toetsen op spanningshuishouding </h6>
+<p> Het type kabel in de eerste twee secties van elke MS-streng is 3 x 150 mm<sup>2</sup> Al. Kabels in de derde tot en met de zesde sectie zijn van het type 3
+  x 95 mm<sup>2</sup> Al. De spanning in het MS-net moet zich bevinden tussen 10,15 kV en 10,85 kV. Het verschil tussen de maximale en de minimale waarden
+  bedraagt 7%. Bij een instelling van de spanningsregeling tussen 10,4 en 10,6 kV wordt de trapstand van de voedingstransformator automatisch zodanig
+  geregeld dat de spanning op de MS-rail in het onderstation 10,47 kV is. Figuur 13.12 geeft de spanningen op de overige punten van de MS-streng weer.
+  Bovendien zijn de spanningen van de tweede streng weergegeven, in de omgekeerde richting: van de netopening terug naar het eerste knooppunt van de streng.
+  Bij de maximale belasting bedraagt de laagste spanning 10,26 kV op Netstation 16 en op Netstation 26. In deze toestand voldoet het net aan de spanningseis. </p>
+<p> <img src="./ontwerpen van distributienetten_files/13.12.png" width="705" height="396" alt="pics_3.13" class="img-responsive-leon-15px center-block"> </p>
+<h5> Figuur 13.12 Spanningen in twee MS-strengen, normale bedrijfstoestand </h5>
+<h6> Toetsen op spanningsval MS-streng </h6>
+<p> In de normale bedrijfstoestand mag de spanningsval over de MS-streng maximaal 5% bedragen. In de omgeschakelde bedrijfstoestand is dat 7%. Volgens figuur
+  13.12 bedraagt de spanningsval in de normale bedrijfstoestand vanaf de MS-rail in het onderstation naar netstation MS 16: <em>D</em> <em>U = (10,47 - 10,26) / 10 x 100% = 2,1%</em>. Hiermee voldoet het net ruimschoots aan de eis. </p>
+<p> Indien het net bij een storing in de eerste sectie van MS-streng 2, tussen Smoorspoel 2 en Netstation 21, wordt omgeschakeld door de netopening bij
+  Netstation 16 te sluiten, worden alle netstations van MS-streng 2 via MS-streng 1 gevoed. Figuur 13.13 toont de spanningen van de netstations. De laagste
+  spanning bedraagt 9,64 kV op Netstation 21. De spanningsval vanaf de MS-rail in het onderstation bedraagt: <em>D</em> <em>U = (10,47 - 9,64) / 10 x 100% = 8,3%</em>. Dit is teveel. </p>
+<p> <img src="./ontwerpen van distributienetten_files/13.13.png" width="705" height="396" alt="pics_3.13" class="img-responsive-leon-15px center-block"> </p>
+<h5> Figuur 13.13 Spanningen in twee MS-strengen, omgeschakelde bedrijfstoestand </h5>
+<p> <img src="./ontwerpen van distributienetten_files/13.14.png" width="705" height="396" alt="pics_3.13" class="img-responsive-leon-15px center-block"> </p>
+<h5> Figuur 13.14 Spanningen in twee MS-strengen met grotere geleiderdoorsneden, omgeschakelde bedrijfstoestand </h5>
+<p> Om aan de in tabel 13.4 gestelde eisen te voldoen, moeten enkele kabels met een grotere geleiderdoorsnede worden toegepast. In het verbeterde ontwerp is
+  het type kabel in de eerste tot en met de vijfde secties van elke MS-streng 3 x 150 mm<sup>2</sup> Al. Kabels in de zesde sectie en in de sectie tussen MS
+  16 en MS 26 zijn van het type 3 x 95 mm<sup>2</sup> Al. In de omgeschakelde bedrijfstoestand bedraagt de laagste spanning 9,77 kV op Netstation 21. De
+  spanningsval vanaf de MS-rail in het onderstation bedraagt: DU = (10,47 - 9,77) / 10 x 100% = 7,0%, zodat het net in deze configuratie aan de eis van de
+  maximale spanningsval voldoet. De hoogte van de spanning kan worden aangepast door de trapstand van de voedingstransformator te verstellen. </p>
+<h6> Toetsen op spanningsvastheid </h6>
+<p> Door het inschakelen van een belasting van 1 MW en een cos(φ) van 0,9 op knooppunt MS 16 aan het einde van de MS-streng daalt volgens figuur 13.15 de
+  spanning in het verbeterde ontwerp in de niet omgeschakelde situatie van 10,29 kV naar 10,10 kV. De spanningsverandering is 1,9% en dit is kleiner dan het
+  gestelde maximum van 3%, zodat het net voldoet. </p>
+<p> <img src="./ontwerpen van distributienetten_files/13.15.png" width="705" height="396" alt="pics_3.13" class="img-responsive-leon-15px center-block"> </p>
+<h5> Figuur 13.15 Spanningen in een MS-streng met grotere geleiderdoorsneden, normale bedrijfs­toestand en ingeschakelde belasting </h5>
+<h6> Toetsen op netveiligheid </h6>
+<p> De strengen zijn in het onderstation beveiligd met een onafhankelijk maximaal stroom-tijdbeveiliging met een instelling voor I<sub>&gt;</sub>/t <sub>&gt;</sub> van 250 A/1,6 s en voor I<sub>&gt;&gt;</sub>/t<sub>&gt;&gt;</sub> van 2000 A/0,3 s. De resultaten voor drie typen kortsluiting zijn in
+  tabel 13.5 samengevat voor kortsluitingen op knooppunt MS 16. </p>
+<h5> Tabel 13.5 Resultaten netveiligheid voor kortsluitingen op knooppunt MS 16 </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="33%" valign="top"><p> <strong>Kortsluiting</strong> </p></td>
+      <td width="33%" valign="top"><p align="center"> <strong>I<sub>k</sub>" (kA)</strong> </p></td>
+      <td width="33%" valign="top"><p align="center"> <strong>Uitschakeltijd (s)</strong> </p></td>
+    </tr>
+    <tr>
+      <td width="113" valign="top"><p> Fase-aarde </p></td>
+      <td width="113" valign="top"><p align="center"> 1,23 </p></td>
+      <td width="113" valign="top"><p align="center"> 1,6 </p></td>
+    </tr>
+    <tr>
+      <td width="113" valign="top"><p> Fase-fase </p></td>
+      <td width="113" valign="top"><p align="center"> 2,85 </p></td>
+      <td width="113" valign="top"><p align="center"> 0,3 </p></td>
+    </tr>
+    <tr>
+      <td width="113" valign="top"><p> Drie fasen </p></td>
+      <td width="113" valign="top"><p align="center"> 3,29 </p></td>
+      <td width="113" valign="top"><p align="center"> 0,3 </p></td>
+    </tr>
+  </tbody>
+</table><br>
+<p> Indien het net omgeschakeld zou zijn vanwege een storing in de eerste sectie tussen Smoorspoel 2 en knooppunt MS 21, zijn de resultaten samengevat in tabel
+  13.6. </p>
+<h5>Tabel 13.6 Resultaten netveiligheid voor kortsluitingen op knooppunt MS 21 in omgeschakelde situatie </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="33%" valign="top"><p> <strong>Kortsluiting</strong> </p></td>
+      <td width="33%" valign="top"><p align="center"> <strong>I<sub>k</sub>" (kA)</strong> </p></td>
+      <td width="33%" valign="top"><p align="center"> <strong>Uitschakeltijd (s)</strong> </p></td>
+    </tr>
+    <tr>
+      <td width="113" valign="top"><p> Fase-aarde </p></td>
+      <td width="113" valign="top"><p align="center"> 0,77 </p></td>
+      <td width="113" valign="top"><p align="center"> 1,6 </p></td>
+    </tr>
+    <tr>
+      <td width="113" valign="top"><p> Fase-fase </p></td>
+      <td width="113" valign="top"><p align="center"> 1,53 </p></td>
+      <td width="113" valign="top"><p align="center"> 1,6 </p></td>
+    </tr>
+    <tr>
+      <td width="113" valign="top"><p> Drie fasen </p></td>
+      <td width="113" valign="top"><p align="center"> 1,77 </p></td>
+      <td width="113" valign="top"><p align="center"> 1,6 </p></td>
+    </tr>
+  </tbody>
+</table><br>
+<p> In alle gevallen wordt binnen de maximale fouttijd van 5 s afgeschakeld, waardoor het ontwerp netveilig is. </p>
+<h6> Toetsen op kortsluitvastheid </h6>
+<p> Vanwege de toepassing van een onafhankelijke maximaal stroom-tijdbeveiliging is binnen de parameters van I<sub>&gt;&gt;</sub>/t<sub>&gt;&gt;</sub> de
+  afschakeltijd onafhankelijk van de grootte van de kortsluitstroom. Hierom is de kortsluitbelasting van de kabels het grootst bij een driefasenkortsluiting
+  in de MS-kabel dicht bij de smoorspoel. Indien de kortsluiting zich op 1% van de afstand vanaf de smoorspoel bevindt (10 m), bedraagt de kortsluitstroom
+  9,5 kA. De kortsluiting wordt op 0,3 s afgeschakeld. De kortsluitbelasting voor dit stukje van de kabel is dan: </p>
+  <blockquote>
+<p><em> I<sub>k</sub><sup>2</sup> t = 9,5<sup>2</sup> × 0,3 = 27 MA<sup>2</sup>s </em></p>
+</blockquote>
+<p> Deze waarde is veel kleiner (14%) dan de maximale waarde (198,8 MA<sup>2</sup>s) van de kortsluitvastheid die correspondeert met <em>I<sub>k,1s</sub></em>,
+  waardoor het net voldoet aan de eis van de kortsluitvastheid. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_3_13.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_13.3.2"></div>
+        <br>
+<h3>13.3.2 Voorbeeldberekening aan een schakel/regelstation</h3>
+<p> Bij transport van vermogens groter dan 5 MVA naar een belastingconcentratie op meer dan 5 km vanaf een HS/MS-station wordt geïnvesteerd in extra
+  bedrijfszekerheid. Daartoe wordt een aantal MS-kabels parallel gelegd vanaf het onderstation naar een schakelstation. Het aantal kabels samen met de
+  toegepaste beveiliging zorgt er voor dat bij storing in één van de parallelle kabels deze selectief wordt afgeschakeld terwijl de overige kabels
+  de energielevering ongestoord blijven verzorgen. Vanaf het schakelstation wordt via diverse afgaande MS-strengen het achterliggende gebied gevoed. Deze
+  oplossing wordt toegepast voor vermogens t/m 20 MVA. </p>
+<p> Het komt voor dat een MS-transportverbinding zo lang is dat de spanning bij het schakelstation te laag wordt. Figuur 13.16 toont een voorbeeld van een
+  schakelstation dat gevoed wordt door 5 parallelle 3 x 240 mm<sup>2</sup> Al-kabels van elk 10 km lengte. De spanning in het schakelstation is met 9,96 kV
+  lager dan de minimumwaarde die genoemd is in tabel 13.4. Op het schakelstation zijn ook nog eens MS-strengen aangesloten, waarover de spanningsval maximaal
+  5% mag bedragen, zodat de spanning tot 9,46 kV kan dalen. Het versterken van de transportverbinding helpt maar ten dele. Uitbreiding van het aantal
+  parallelle kabels van 5 naar 8 verhoogt de spanning tot 10,23 kV. Ook deze waarde is niet hoog genoeg om verzekerd te zijn van voldoende spanning aan het
+  einde van de MS-strengen. </p>
+<p> <img src="./ontwerpen van distributienetten_files/13.16.png" width="712" height="243" alt="pics_3.13" class="img-responsive-leon-15px center-block"> </p>
+<h5>Figuur 13.16 MS-transportverbinding met schakelstation </h5>
+<p> Een goed alternatief is het schakelstation te vervangen door een regelstation door een spanningsgeregelde boostertransformator te plaatsen. Figuur 13.17
+  toont de configuratie met een 20 MVA regeltransformator. Door de constructie van de boostertransformator is de relatieve kortsluitspanning u<sub>k</sub> slechts 0,6%. De transformator is uitgerust met een regelschakelaar met 19 trapstanden van elk 150 V, waardoor de overzetverhouding bij een nominale
+  spanning van 10,6 kV geregeld kan worden tussen 9,250 en 11,950 kV. </p>
+<p> <img src="./ontwerpen van distributienetten_files/13.17.png" width="712" height="400" alt="pics_3.13" class="img-responsive-leon-15px center-block"> </p>
+<h5>Figuur 13.17 MS-transportverbinding met regelstation </h5>
+<p> De spanningsregeling van de regeltransformator is ingesteld op een secundaire spanning tussen 10,5 en 10,8 kV. Hierdoor wordt met trapstand 5 een
+  overzetverhouding gerealiseerd van 10,60/11,35 kV. De spanning op de geregelde rail van het regelstation is in het voorbeeld 10,62 kV, maar kan volgens de
+  bandbreedte van de spanningsregeling ook 10,5 kV bedragen. Hierdoor mag volgens tabel 13.4 de spanningsdaling over de MS-strengen 3,5% bedragen. Of de
+  ontwerper hier genoegen mee neemt, hangt onder andere af van de lengtes van de MS-strengen in relatie tot het afgenomen vermogen. Figuur 13.18 toont als
+  voorbeeld een 23 MVA regeltransformator, waar de drie in- en uitgaande fasen zichtbaar zijn. </p>
+<p> <img src="./ontwerpen van distributienetten_files/13.18.jpg" width="263" height="148" alt="pics_3.13" class="img-responsive-leon-15px center-block"> </p>
+<h5> Figuur 13.18 Regeltransformator 23 MVA </h5>
+        <a href="https://www.phasetophase.nl/boek/boek_3_13.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_13.4"></div>
+        <br>
+<h2>13.4 Verlieskosten</h2>
+<p> De keuzes bij het netontwerp worden naast de technische randvoorwaarden mede bepaald door de investeringskosten en operationele kosten. De operationele
+  kosten bestaan uit beheerskosten, onderhoudskosten, storingskosten en verlieskosten. De verlieskosten maken een belangrijk deel uit van de operationele
+  kosten. Deze bestaan uit de nullastverliezen in transformatoren en de weerstandsverliezen in transformatoren en kabels. </p>
+<p> De nullastverliezen worden veroorzaakt door het magnetiseren van de transformatoren en zijn niet afhankelijk van de netbelasting. Het is gebruikelijk het
+  nullastverlies constant te veronderstellen, waardoor de jaarlijkse kosten op eenvoudige wijze berekend kunnen worden: </p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="318" valign="top"><img src="./ontwerpen van distributienetten_files/formule-13.8.png" alt="formules_2.7"></td>
+      <td width="2%" valign="center"><p align="left"> [ </p></td>
+      <td width="6%" valign="center"><p align="center"> 13.8 </p></td>
+      <td width="2%" valign="center"><p align="right"> ] </p></td>
+    </tr>
+  </tbody>
+</table>
+<p>met: </p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td width="50"><em>P<sub>nullast</sub></em></td>
+      <td>nominaal nullastverlies (kW)</td>
+    </tr>
+    <tr>
+      <td><em>T<sub>i</sub></em></td>
+      <td>jaarlijkse inschakelduur van de transformator (h)</td>
+    </tr>
+    <tr>
+      <td><em>p</em></td>
+      <td>kWh-prijs (EUR)</td>
+    </tr>
+    <tr>
+      <td><em>q</em></td>
+      <td>kW-kosten (EUR)</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<p> De weerstandsverliezen in transformatoren worden veroorzaakt door het vermogenstransport en de weerstand van de wikkelingen. Het weerstandsverlies is
+  daarmee afhankelijk van de momentane stroomsterkte door de transformator. Het weerstandsverlies in een transformator bij nominale stroom wordt aangeduid
+  met het kortsluitverlies <em>P<sub>k</sub></em>. Indien wordt uitgegaan van een vrij constante belasting, kunnen de met het weerstandsverlies verband
+  houdende jaarlijkse kosten als volgt benaderd worden: </p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="318" valign="top"><img src="./ontwerpen van distributienetten_files/formule-13.9.png" alt="formules_2.7"></td>
+      <td width="2%" valign="center"><p align="left"> [ </p></td>
+      <td width="6%" valign="center"><p align="center"> 13.9 </p></td>
+      <td width="2%" valign="center"><p align="right"> ] </p></td>
+    </tr>
+  </tbody>
+</table>
+<p>met: </p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td width="50"><em>P<sub>k</sub></em></td>
+      <td>nominaal weerstandsverlies (kW)</td>
+    </tr>
+    <tr>
+      <td><em>T<sub>v</sub></em></td>
+      <td>bedrijfstijd van het jaarlijkse maximale verlies (h)</td>
+    </tr>
+    <tr>
+      <td valign="top"><em>α</em></td>
+      <td>belastinggraad van de transformator (quotiënt maximaal schijnbaar vermogen/nominaal schijnbaar vermogen)</td>
+    </tr>
+    <tr>
+      <td><em>p</em></td>
+      <td>kWh-prijs (EUR)</td>
+    </tr>
+    <tr>
+      <td><em>q</em></td>
+      <td>kW-prijs (EUR)</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
+
+<p> De bedrijfstijd van het maximale verlies moet per component berekend worden en is moeilijk te bepalen. Omdat de energieverliezen in een elektriciteitsnet
+  kwadratisch afhankelijk zijn van de netbelasting, zal het profiel van het verlies voor een component als functie van de tijd een grilliger verloop hebben
+  dan het profiel van de stroombelasting voor diezelfde component. De bedrijfstijd van het maximale verlies kan worden berekend uit de bedrijfstijd van de
+  maximale belasting. Figuur 13.19 geeft een voorbeeld van twee belastingsprofielen die over een heel jaar bezien (8760 uren) beide dezelfde energie-inhoud
+  hebben. De oppervlakte onder de profielen is een maat voor de energie-inhoud. Van het linker belastingsprofiel is de bedrijfstijd van de maximale belasting<em>T<sub>b</sub></em> en is de stroomsterkte daarbuiten in de rest van het jaar nul. Van het rechter belastingsprofiel is de bedrijfstijd <em>T<sub>b</sub></em> van de maximale belasting veel kleiner dan van het linker belastingsprofiel. Gedurende de rest van het jaar is de belasting niet
+  nul. </p>
+<p> <img src="./ontwerpen van distributienetten_files/13.19.png" width="954" height="536" alt="pics_3.13" class="img-responsive-leon-15px center-block"> </p>
+<h5>Figuur 13.19 Twee belastingsprofielen met dezelfde energie-inhoud </h5>
+<p> In het linker belastingsprofiel van figuur 13.19 is de bedrijfstijd van het maximale energieverlies maximaal, in vergelijking met de bedrijfstijd van de
+  maximale belasting: </p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="318" valign="top"><img src="./ontwerpen van distributienetten_files/formule-13.10.png" alt="formules_2.7"></td>
+      <td width="2%" valign="center"><p align="left"> [ </p></td>
+      <td width="6%" valign="center"><p align="center"> 13.10 </p></td>
+      <td width="2%" valign="center"><p align="right"> ] </p></td>
+    </tr>
+  </tbody>
+</table>
+<p> In het rechter belastingsprofiel van figuur 13.19 is de bedrijfstijd van het maximale energieverlies minimaal: </p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="318" valign="top"><img src="./ontwerpen van distributienetten_files/formule-13.11.png" alt="formules_2.7"></td>
+      <td width="2%" valign="center"><p align="left"> [ </p></td>
+      <td width="6%" valign="center"><p align="center"> 13.11 </p></td>
+      <td width="2%" valign="center"><p align="right"> ] </p></td>
+    </tr>
+  </tbody>
+</table>
+<p> met: </p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td width="50"><em>T<sub>v</sub></em></td>
+      <td>bedrijfstijd van het maximale verlies (h)</td>
+    </tr>
+    <tr>
+      <td><em>T<sub>b</sub></em></td>
+      <td>bedrijfstijd van de maximale belasting (h)</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<p> In werkelijkheid is geen sprake van de rechthoekige belastingsprofielen zoals in figuur 13.19. Voor het algemene geval kan de berekening van de
+  bedrijfstijd van het maximale energieverlies worden benaderd met formule 13.12 (EnergieNed, 1996). </p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="318" valign="top"><img src="./ontwerpen van distributienetten_files/formule-13.12.png" alt="formules_2.7"></td>
+      <td width="2%" valign="center"><p align="left"> [ </p></td>
+      <td width="6%" valign="center"><p align="center"> 13.12 </p></td>
+      <td width="2%" valign="center"><p align="right"> ] </p></td>
+    </tr>
+  </tbody>
+</table>
+<p> De factor <em>C</em> is een maat voor de grilligheid van het belastingsprofiel. In de praktijk wordt voor LS-netten vaak gerekend met een waarde <em>C = 0,2</em>. </p>
+<p> De verliezen in de kabelverbindingen kunnen berekend worden uit de stroomsterkte en de weerstand van de betreffende kabel. Ook hier moet rekening gehouden
+  worden met de wisselende kabelbelasting. De jaarlijkse verlieskosten kunnen als volgt benaderd worden: </p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="318" valign="top"><img src="./ontwerpen van distributienetten_files/formule-13.13.png" alt="formules_2.7"></td>
+      <td width="2%" valign="center"><p align="left"> [ </p></td>
+      <td width="6%" valign="center"><p align="center"> 13.13 </p></td>
+      <td width="2%" valign="center"><p align="right"> ] </p></td>
+    </tr>
+  </tbody>
+</table>
+<p> met: </p>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td width="50"><em>I<sub>nom</sub> </em></td>
+      <td>nominale stroomsterkte van de kabel (A)</td>
+    </tr>
+    <tr>
+      <td><em>R</em></td>
+      <td>geleiderweerstand van de kabel (Ω)</td>
+    </tr>
+    <tr>
+      <td><em>T<sub>v</sub></em></td>
+      <td>bedrijfstijd van het jaarlijkse maximale verlies (h)</td>
+    </tr>
+    <tr>
+      <td><em>p</em></td>
+      <td>kWh-prijs (EUR)</td>
+    </tr>
+    <tr>
+      <td><em>q</em></td>
+      <td>kW-prijs (EUR)</td>
+    </tr>
+  </tbody>
+</table><br>
+<p> Het is gebruikelijk om alle MS- en LS-netten regelmatig door te rekenen aan de hand van het voortschrijdende inzicht over ontwikkeling van de belasting in
+  het net en de economische situatie. Met behulp van de belastingsprognose kan het energieverlies worden gekapitaliseerd over de gehele ontwerpperiode. De
+  jaarlijkse groei van de belasting wordt met behulp van het groeipercentage bij de transformator verwerkt in het weerstandsverlies en bij de kabels in het
+  verlies. De jaarlijkse toekomstige kosten kunnen met behulp van een geschat rentepercentage netto contant gemaakt worden. Deze kunnen over een bepaalde
+  periode worden gesommeerd, waardoor, na toevoeging van de overige operationele kosten en de investeringkosten, een goed beeld ontstaat over de totale
+  toekomstige kosten van een onderdeel van het netontwerp. </p>
+<p> De jaarlijkse kosten van transformatoren verschillen met die van kabels door de aanwezigheid van nullastverlies bij transformatoren. De jaarlijkse kosten
+  van een transformator bestaan uit vaste en variabele kosten: </p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="318" valign="top"><img src="./ontwerpen van distributienetten_files/formule-13.14.png" alt="formules_2.7"></td>
+      <td width="2%" valign="center"><p align="left"> [ </p></td>
+      <td width="6%" valign="center"><p align="center"> 13.14 </p></td>
+      <td width="2%" valign="center"><p align="right"> ] </p></td>
+    </tr>
+  </tbody>
+</table>
+<p> De vaste kosten zijn de jaarlijkse kapitaalslasten (op basis van annuïteiten) en de jaarlijkse kosten van het nullastverlies: </p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="318" valign="top"><img src="./ontwerpen van distributienetten_files/formule-13.15.png" alt="formules_2.7"></td>
+      <td width="2%" valign="center"><p align="left"> [ </p></td>
+      <td width="6%" valign="center"><p align="center"> 13.15 </p></td>
+      <td width="2%" valign="center"><p align="right"> ] </p></td>
+    </tr>
+  </tbody>
+</table>
+<p> De variabele kosten zijn de jaarlijkse weerstandsverlieskosten, uitgedrukt in de belastinggraad en de nominale weerstandsverlieskosten. Uit vergelijking
+  13. 9 volgt: </p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="318" valign="top"><img src="./ontwerpen van distributienetten_files/formule-13.16.png" alt="formules_2.7"></td>
+      <td width="2%" valign="center"><p align="left"> [ </p></td>
+      <td width="6%" valign="center"><p align="center"> 13.16 </p></td>
+      <td width="2%" valign="center"><p align="right"> ] </p></td>
+    </tr>
+  </tbody>
+</table>
+<p> Bij een jaarlijkse belastingsgroei <em>a</em> zijn de variabele kosten in jaar <em>i</em>: </p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="318" valign="top"><img src="./ontwerpen van distributienetten_files/formule-13.17.png" alt="formules_2.7"></td>
+      <td width="2%" valign="center"><p align="left"> [ </p></td>
+      <td width="6%" valign="center"><p align="center"> 13.17 </p></td>
+      <td width="2%" valign="center"><p align="right"> ] </p></td>
+    </tr>
+  </tbody>
+</table>
+<p> met: </p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td width="50"><em>a</em></td>
+      <td>jaarlijkse groei (accres) van de belasting (%)</td>
+    </tr>
+    <tr>
+      <td><em>i</em></td>
+      <td>het te beschouwen jaar vanaf het basisjaar</td>
+    </tr>
+  </tbody>
+</table><br>
+<p> De contante waarde van de jaarlijkse vaste kosten over een periode van <em>n</em> jaren, bij een jaarlijkse reële rente <em>r</em> is: </p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="318" valign="top"><img src="./ontwerpen van distributienetten_files/formule-13.18.png" alt="formules_2.7"></td>
+      <td width="2%" valign="center"><p align="left"> [ </p></td>
+      <td width="6%" valign="center"><p align="center"> 13.18 </p></td>
+      <td width="2%" valign="center"><p align="right"> ] </p></td>
+    </tr>
+  </tbody>
+</table>
+<p> met: </p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td width="50"><em>r</em></td>
+      <td>jaarlijkse reële rente (%)</td>
+    </tr>
+    <tr>
+      <td><em>n</em></td>
+      <td>het te beschouwen jaar vanaf het basisjaar</td>
+    </tr>
+  </tbody>
+</table><br>
+<p> De contante waarde van de jaarlijkse variabele kosten over een periode van <em>n</em> jaren, bij een jaarlijkse reële rente <em>r</em> is: </p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="318" valign="top"><img src="./ontwerpen van distributienetten_files/formule-13.19.png" alt="formules_2.7"></td>
+      <td width="2%" valign="center"><p align="left"> [ </p></td>
+      <td width="6%" valign="center"><p align="center"> 13.19 </p></td>
+      <td width="2%" valign="center"><p align="right"> ] </p></td>
+    </tr>
+  </tbody>
+</table>
+<p> met: </p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td width="50"><em>B<sub>var,i</sub></em></td>
+      <td>vastgestelde variabele kosten voor jaar <em>i</em></td>
+    </tr>
+  </tbody>
+</table><br>
+<p> Bij een constante jaarlijkse toename van de belasting met een percentage <em>a</em> gaat formule 13.19 over in: </p>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tbody>
+    <tr>
+      <td width="318" valign="top"><img src="./ontwerpen van distributienetten_files/formule-13.20.png" alt="formules_2.7"></td>
+      <td width="2%" valign="center"><p align="left"> [ </p></td>
+      <td width="6%" valign="center"><p align="center"> 13.20 </p></td>
+      <td width="2%" valign="center"><p align="right"> ] </p></td>
+    </tr>
+  </tbody>
+</table>
+<p> Voor kabels geldt hetzelfde, met dien verstande dat er geen sprake is van nullastverlies. </p>
+</div>
+<div class="col-lg-2 hidden-md">&nbsp;</div>
+</div>
+	</div></div>
+
+
+
+<div id="includeFooter" class="container-fluid-footer"><div class="container">
+  <div class="row">
+    <div class="text-justify col-xs-6 col-sm-3">
+      <img src="./ontwerpen van distributienetten_files/logo-s-360px-grijs.png" alt="ptp_logo" width="230">
+    </div>
+    <div class="col-xs-6 col-sm-9">
+        <p> Phase to Phase is onderdeel van <a href="https://www.technolution.nl/">Technolution</a>. © 2009-2021 </p>
+    </div>
+  </div>
+</div></div></body></html>

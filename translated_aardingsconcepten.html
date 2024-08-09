@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+
+<!-- saved from url=(0046)https://www.phasetophase.nl/boek/boek_1_5.html -->
+<html class="wf-ffscalasansweb-n7-active wf-ffscalasansweb-n4-active wf-ffscalasansweb-i4-active wf-active" lang="en"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Phase to Phase – Netten voor distributie van elektriciteit</title>
+<!-- Bootstrap -->
+<link href="./aardingsconcepten_files/bootstrap-2-boek.css" rel="stylesheet"/>
+<style type="text/css">
+	body,td,th {
+	font-family: ff-scala-sans-web, sans-serif;
+}
+body {
+	background-color: #F7F7F7;
+}
+    </style>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+<script src="./aardingsconcepten_files/qke6lfb.js.download"></script>
+<style type="text/css">.tk-ff-scala-sans-web{font-family:"ff-scala-sans-web",sans-serif;}</style><style type="text/css">@font-face{font-family:tk-ff-scala-sans-web-n7;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-n4;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-i4;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style><script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script src="./aardingsconcepten_files/jquery-1.11.3.min.js.download"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./aardingsconcepten_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H8Q9E8BJ7Q');
+</script>
+<script>
+$(function(){
+  $("#includedHeader").load("/boek/header.html");
+  $("#includeFooter").load("/boek/footer.html"); 
+});
+</script><style type="text/css">@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style>
+</head>
+<body style="padding-top: 50px">
+<div id="includedHeader"> <nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="container">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button aria-expanded="false" class="navbar-toggle collapsed" data-target="#topFixedNavbar1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+<a class="navbar-brand" href="https://www.phasetophase.nl/">Phase to Phase</a></div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="topFixedNavbar1">
+<ul class="nav navbar-nav">
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li></li>
+</ul>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container -->
+</nav>
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<p></p>
+</div>
+</div>
+</div>
+<div class="container-fluid-boek">
+<div class="container">
+<div class="row-in-header">
+<div class="text-justify col-xs-6 col-sm-6">
+<img alt="Phase to Phase logo 360px" class="hidden-xs" src="./aardingsconcepten_files/logo-s-360px-wit.png" width="366"/>
+<img alt="Phase to Phase logo 261px" class="visible-xs" src="./aardingsconcepten_files/logo-s-360px-wit.png" width="261"/>
+</div>
+<div class="col-xs-6 hidden-xs col-sm-6">
+</div>
+</div>
+<div class="row-in-header">
+<div class="text-left col-xs-9 col-sm-9"> <p></p><h8>ICT voor elektriciteitsnetten</h8>
+</div>
+<div class="col-xs-3 col-sm-3">
+</div>
+</div>
+<div class="row-in-header-2">
+<div class="text-justify col-xs-6 col-sm-6"> 
+	</div>
+<div class="col-xs-6 hidden-xs col-sm-6">
+<h7> </h7>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row-intro">
+<h1><a href="https://www.phasetophase.nl/boek/index.html"> Netten voor distributie van elektriciteit</a></h1>
+</div></div></div>
+<div class="row-ohm-center-white"> <a name="top"></a>
+<div class="row-b">
+<a href="https://www.phasetophase.nl/boek/index.html"><button class="btn btn-default active" type="button">I – De opbouw van een net</button></a>
+<a href="https://www.phasetophase.nl/boek/boek_2_7.html"><button class="btn btn-default" type="button">II – Rekenen aan een net</button></a>
+<a href="https://www.phasetophase.nl/boek/boek_3_13.html"><button class="btn btn-default" type="button">III – Ontwerpen en bedrijfsvoeren</button></a>
+</div>
+<div class="row-b">
+<a href="https://www.phasetophase.nl/boek/index.html"><button class="btn btn-default1" type="button">Inhoud</button></a>
+<a href="https://www.phasetophase.nl/boek/boek_1_1.html">
+<button class="btn btn-default1" type="button">1 Inleiding</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_1_2.html">
+<button class="btn btn-default1" type="button">2 Netten</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_1_3.html">
+<button class="btn btn-default1" type="button">3 Belasting en opwekking</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_1_4.html">
+<button class="btn btn-default1" type="button">4 Netcomponenten</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_1_5.html">
+<button class="btn btn-default1 active" type="button">5 Aardingsconcepten en veiligheid</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_1_6.html">
+<button class="btn btn-default1" type="button">6 Beveiliging</button>
+</a>
+</div>
+<div class="row">
+<div class="col-md-12 col-lg-10">
+<h3>Grounding Concepts and Safety</h3>
+<p>Chapter 5 describes the grounding concepts and safety in distribution networks. Customer installations are connected to these networks, which makes the aspect of safety particularly important. In addition to security concepts, attention is given to touch safety during short circuits in low or medium voltage networks.</p>
+<div class="row">
+<div class="col-md-6">
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_1_5.html#_5.6"><strong>5  Grounding Concepts and Safety</strong></a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_5.html#_5.1">5.1 Grounding Concepts</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_5.html#_5.2">5.2  Applications</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_5.html#_5.3">5.3  Connecting a customer to a low voltage network</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_5.html#_5.4">5.4 Grounding Electrode</a></li>
+</ul>
+</div>
+<div class="col-md-6">
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_1_5.html#_5.5">5.5 Potential Equalization</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_5.html#_5.6">5.6 Dangerous Situations</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_5.html#_5.7">5.7  Touch Safety</a></li>
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_1_5.html#_5.7.1">5.7.1 Short Circuit in a TT System</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_5.html#_5.7.2">5.7.2  Short Circuit in a TN System</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_5.html#_5.7.3">5.7.3  Short Circuits in the MV Network</a></li>
+</ul>
+</ul>
+</div>
+</div>
+<hr/>
+<h1>5 Grounding Concepts and Safety</h1>
+<p>Grid operators transport and distribute electricity at various voltage levels. Each voltage level has its own grounding method to ensure reliability, security, and the protection of people and equipment. In the past, the grounding of high, medium, and low voltage networks was often designed and implemented independently of each other.</p>
+<p>Due to the use of interference-sensitive electronics, grounding systems need to be better coordinated, and network operators must address this integrally. One aspect of the integral approach is that the grounding systems of networks with different voltage levels are interconnected. The downside of this is that by integrating grounding systems, faults occurring in higher voltage networks can also be noticeable elsewhere in the electrical grid. Designers must be fully aware of this. An additional complicating factor is that in the past, metal water pipes and lead-sheathed electrical cables significantly contributed to electrical safety in the low voltage network because they had extensive contact with the ground, thereby limiting high voltage differences. Plastic is increasingly replacing metal water pipes. In new constructions and replacements, cables with plastic outer sheaths are often used. Since this reduces contact with the ground, additional measures must be taken to ensure the safety of low voltage connections and equipment. This is achieved by integrating the grounding systems of networks at all voltage levels and the other telecom and cable television networks (Waes, 2003-2).</p>
+<p>Something that people often do not realize is that the current, which departs from the energy source to the connected devices, must also return via a return path to achieve a physical balance. An important route for this is through the ground. By consciously incorporating grounding systems into the design, better control is achieved over the routes the currents will follow to comply with the laws of physics.</p>
+<p>One of the most common failures in the network is that a cable gets damaged by excavation work. This can cause a short circuit between a phase and the protective sheath of the cable. It is usually these short circuits that lead to an increase in touch voltage. For this reason, the study of safety focuses on the applied grounding concepts and the consequences of phase-to-ground faults. This chapter addresses the aspects surrounding grounding and safety. The calculation of the magnitude of short-circuit currents is covered in chapter 10.</p>
+<a href="https://www.phasetophase.nl/boek/boek_1_5.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_5.1"></div>
+<br/>
+<h2>5.1 Grounding Concepts</h2>
+<p>The safety of the networks is ensured by taking the appropriate safety measures during design, installation, operation, inspection, and maintenance. An important aspect of safety is protective grounding.</p>
+<p>Grounding an electrical network begins at the power supply point. This is usually the secondary winding of a transformer. If the secondary winding has an externally accessible neutral point, the neutral point can be grounded: directly (solid) or through a grounding impedance. If the power supply point does not have an externally accessible neutral point, an artificial neutral point can be created using a grounding transformer, which is grounded through an impedance. It is also possible to leave a network ungrounded.</p>
+<h6> <em>Floating network</em></h6>
+<p>In networks with a floating neutral point, as depicted in figure 5.1, there is no specific return path for the currents in the cable sheaths that flow during the contact of a phase with the ground. The return currents can now only flow through the capacitances present in the network between the phase conductors and the cable sheaths. These currents are capacitive, and their magnitude depends on the total length of the floating network behind the supply transformer. Floating networks are particularly used in medium voltage (MV) distribution networks.</p>
+<img alt="pics_1.5" class="img-responsive-leon-15px center-block" src="./aardingsconcepten_files/5.1.png" width="400"/>
+<h5>Figure 5.1 Network with Floating Neutral Point</h5>
+<p>The coupled voltages between the phases themselves are hardly affected in the event of a phase-to-ground fault, so the loads behind a Dy-transformer do not notice it. However, the values of the voltages of the unaffected phases relative to ground will increase by a factor of √3. This is illustrated with the voltage vectors in Figure 5.2. The left graph shows the voltage vectors relative to the ground potential. In normal operating conditions, the voltage of the ungrounded neutral point is equal to the ground potential, and the starting point of the vectors coincides with the origin of the graph. In the event of a phase-to-ground fault in phase<em>a</em>the voltage of that phase with respect to the ground is zero. As a result, the ungrounded neutral point of the network shifts in the negative direction of the original voltage vector of phase<em>a</em>. As a result, the vectors of the phases shift<em>b</em>en<em>c</em>also in
+          the same direction. The entire system has now shifted, and this is made visible with the striped vectors. As a result, the red vectors indicate the
+          voltage of the phases<em>b</em>en<em>c</em>relative to the ground. The coupled voltages between the phases themselves remain unchanged, but the phase voltages relative to the ground change significantly.</p>
+<p>The short-circuit current in the shorted phase can amount to several hundred Amperes but does not necessarily cause much damage due to the relatively low short-circuit current. If the network is expanded, it must be ensured that the short-circuit current does not become too large. Measures can include splitting the floating network or changing the grounding principle of the network by grounding it with a grounding transformer.</p>
+<img alt="pics_1.5" class="img-responsive-leon-15px center-block" src="./aardingsconcepten_files/5.2.png" width="673"/>
+<h5>Figure 5.2 Voltage vectors in a network with a floating neutral point: without (left) and with (right) phase-to-ground connection</h5>
+<p>A phase-to-ground fault in a floating network can persist for several hours in practice. This is considered a significant advantage because the network can remain operational during the fault. However, locating the short circuit is challenging. The fault location is only known when the section containing the fault is disconnected. After disconnection, the phase voltages return to their correct values. The necessity of locating the fault in this manner is considered a major disadvantage. Another disadvantage is that in networks with short cable lengths, the short-circuit current during a phase-to-ground fault can be so small that the fault repeatedly disappears and then reignites, causing high voltage spikes. This phenomenon is caused by the capacitive nature of the fault current, which extinguishes the short circuit at the moment of the maximum voltage value. Repeated reignition can lead to overvoltages that are 3.5 times the phase voltage (EnergieNed, 1996). A third disadvantage is that the increased voltage during the phase-to-ground fault can cause a second short circuit in one of the healthy phases, leading to a large short-circuit current after which the network is disconnected.</p>
+<img alt="pics_1.5" class="img-responsive-leon-15px center-block" src="./aardingsconcepten_files/5.3.png" width="268"/>
+<h5>Figure 5.3  Star-grounded network</h5>
+<h6> <em>Star-grounded network</em></h6>
+<p>In star-grounded networks, the neutral point of the secondary winding of the power transformer is directly connected to the ground, as shown in figure 5.3. Specifically, low-voltage networks are star-grounded. In reality, the grounding impedance is not zero Ohms but is determined by the ground resistance. This return path for the ground currents has a low impedance. Therefore, phase-to-ground faults lead to large short-circuit currents and cause voltage dips in the network. Unlike a fault in an ungrounded network, a fault in a star-grounded network usually does not extinguish spontaneously. In a grounded network, relatively large fault currents occur. This is considered an advantage because the fault can be easily detected with protection devices and can be selectively disconnected. When designing a network, it must be taken into account that the return conductors and cable sheaths are capable of carrying these short-circuit currents.</p>
+<p>During a phase-to-ground fault, the unaffected phases will be barely influenced. Consideration must be given to the possibility that the ground potential at the fault location may be significantly increased.</p>
+<img alt="pics_1.5" class="img-responsive-leon-15px center-block" src="./aardingsconcepten_files/5.4.png" width="297"/>
+<h5>Figure 5.4  Impedance Grounded Network</h5>
+<h6> <em>Impedance grounded network</em></h6>
+<p>Grounding the neutral point via an impedance is applied in medium voltage networks and is usually done with a coil or a grounding transformer, as shown in Figure 5.4. The impedance of a coil and a grounding transformer consists mainly of reactance. The resistance is very small, so the losses during asymmetry, when a current can flow through the neutral point, are minimal. Neutral point grounding via an impedance is used to limit the high fault currents. The fault current and the return current are still high enough to be detected by the protection system and to be selectively disconnected. This is necessary when cables with a limited cross-section of the earth shield, such as plastic cables, are used.</p>
+<p>Networks can be grounded with either high or low impedance. In networks that are grounded with high impedance, the phase-to-ground fault currents will be small, and the undisturbed phases will assume a voltage relative to the ground that is higher than in the undisturbed situation. In networks that are grounded with low impedance, the phase-to-ground fault current is large, but it is limited by the impedance, for example, a coil. As a result, the short-circuit current is controlled to be smaller than in a solidly grounded network situation, and voltage dips and the increase of ground potential at the fault location are limited.</p>
+<p>Low-impedance grounding was previously only applied to cables with a small cross-section of the earth shield. Nowadays, this form of grounding is increasingly used because it offers a good compromise between solidly grounded networks and networks grounded with high impedance. In medium voltage networks that are grounded with low impedance, it must be calculated for long feeders whether a phase-to-ground fault at the end of the feeder does not result in a fault current that is too small to be detected by the phase protection. This aspect must be checked in every network design. If multiple feeders are operated in series, the protection of the preceding feeder must function as backup protection for the underlying feeder. The backup protection must be able to detect a ground fault at the end of the subsequent feeder. This too must be checked in every design.</p>
+<p>A special form of impedance grounding is the use of an arc suppression coil, also known as a Petersen coil. The value of the coil is calculated in such a way that the capacitive current during a phase-to-ground fault is compensated by the inductive current component of the coil. A disadvantage that can occur with this solution is that the phase-to-ground fault current becomes very small when using an arc suppression coil. As a result, a fault can extinguish and potentially reignite. This method of grounding is primarily used in overhead networks. The solution does not work well in practice if there are many cables in the network.</p>
+<h6> <em>Network grounded with grounding transformer</em></h6>
+<p>In the event that no neutral point is available, the network can be grounded using a grounding transformer, also known as a neutral grounding transformer or zero-sequence transformer. The impedance of a grounding transformer consists mainly of reactance, so the losses are limited. Depending on the size of the impedance of the grounding transformer, this method of grounding can be treated as high-impedance or low-impedance grounding. The construction and operation of the grounding transformer are described in section 8.4.</p>
+<img alt="pics_1.5" class="img-responsive-leon-15px center-block" src="./aardingsconcepten_files/5.5.png" width="358"/>
+<h5>Figure 5.5 Network grounded with a grounding transformer</h5>
+<a href="https://www.phasetophase.nl/boek/boek_1_5.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_5.2"></div>
+<br/>
+<h2>5.2 Applications</h2>
+<h6> <em>Hoogspanningsnetten</em></h6>
+<p>At a voltage level of 50 kV or higher, the neutral point is grounded directly or via an arc suppression coil. If a single-phase ground fault occurs in a directly grounded network, the ground fault current is of the same magnitude as the short-circuit current in a three-phase short circuit, and the protection device will disconnect the faulty circuit. Several overhead networks are grounded via an arc suppression coil, also known as a Petersen coil. In a network grounded with an arc suppression coil, the value of the ground fault current is small, so the protection device of the faulty phase does not disconnect but only provides a directional indication. Many phase-to-ground faults in overhead networks are caused by branches or other objects or by lightning strikes. These faults are self-healing and do not lead to an interruption.</p>
+<h6> <em>Middenspanningsnetten</em></h6>
+<p>Most medium voltage networks are fed via HV/MV transformers, whose secondary windings are configured in a delta connection. The primary windings of the connected MV/LV distribution transformers are also configured in a delta connection. Medium voltage networks do not necessarily need to be grounded, but many of these medium voltage networks are impedance grounded. Figure 5.6 shows the grounding situation in the distribution network and the configurations of the HV/MV transformer and the MV/LV transformer. The HV network is impedance grounded (often Petersen grounding). The MV network is floating, and the LV network is impedance grounded. Sometimes MV networks are grounded with a grounding transformer.</p>
+<img alt="pics_1.5" class="img-responsive-leon-15px center-block" src="./aardingsconcepten_files/5.6.png" width="728"/>
+<h5>Figure 5.6 Transformer connections from HV to LV</h5>
+<p>In a small network, a phase-to-ground fault in a cable will not immediately lead to a disconnection. As long as the short-circuit current is not harmful to the cable shields, the fault can remain. The fault can be detected and isolated without interrupting the power supply. Because in a floating network, a phase-to-ground fault causes the voltage between phase and ground of the unaffected phases to become as high as the line voltage, this can lead to a second phase-to-ground fault. Together with the first fault, this will result in a large short-circuit current and thus a disconnection.</p>
+<p>In large medium-voltage networks, a phase-to-ground fault can cause the capacitive short-circuit current to become so large that it can damage the cables. In that case, it is desirable for a phase-to-ground fault to be disconnected. The medium-voltage network is then impedance grounded. This is done either with a coil at the neutral point or with the help of a grounding transformer if no neutral point is present. In that case, any phase-to-ground fault will trigger the protection system.</p>
+<p>When designing a medium voltage network, the following considerations must be taken into account:</p>
+<ul>
+<li>the magnitude of the phase-to-ground short-circuit current decreases with increasing distance from the short-circuit location to the protection system</li>
+<li>the short-circuit current must be large enough to be detected by the protection system</li>
+<li>with multiple strings in series, the backup protection in the preceding string must be able to detect a ground fault at the end of the subsequent string</li>
+<li>the damage to the cable at the fault location must be significant enough to be detected by the repair crew</li>
+<li>The short-circuit current must be small enough to limit the depth of the voltage dips, to avoid safety issues, and to prevent the sheath current in the cable from becoming too large.</li>
+</ul>
+<p>It is clear that not all requirements can always be fully met. Designing a medium voltage network is therefore always a process of optimizing conflicting requirements. However, under all circumstances, touch safety must be guaranteed.</p>
+<p>Impedance-grounded medium voltage networks are designed for a phase-to-ground fault current of 2000 A at the substation. This value must not lead to an unacceptable voltage rise of the local ground and also must not result in excessively high currents through the cable sheaths.</p>
+<h6> <em>Laagspanningsnetten</em></h6>
+<p>Low-voltage networks are powered by MV/LV distribution transformers, whose secondary windings are configured in a star connection. In principle, these networks are solidly grounded. The grounding impedance is determined by the number of ground electrodes and the ground spread resistance of the ground electrodes. The short-circuit current in the event of a phase-to-ground fault in the LV network is high and will be interrupted by the protection system in the substation.</p>
+<a href="https://www.phasetophase.nl/boek/boek_1_5.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_5.3"></div>
+<br/>
+<h2>5.3 Connecting a customer to a low-voltage network</h2>
+<p>The grounding systems in low-voltage networks behind the distribution transformer can be implemented in various ways, with the responsibility for safety being placed more or less on the connected party. The variants are described in the international standard IEC 60364. In the naming of the grounding systems, a letter coding is used, with the most commonly used being designated as TT and TN. The first letter pertains to the grounding of the power source, which in most cases is the distribution transformer. In standard 400V low-voltage networks, this is designated by the letter T, which stands for 'Terre', meaning that the neutral point of the secondary winding of the distribution transformer is solidly grounded. The standard also provides for an isolated or high-impedance grounded neutral point, indicated by the letter I. For the second and subsequent letters:</p>
+<ul>
+<li>T: installation of the connected party is directly grounded</li>
+<li>N: installation of the connected party is connected to the system ground</li>
+<li>C: neutral conductor and protective conductor are combined in a common conductor (PEN)</li>
+<li>S: neutral conductor and protective conductor are implemented with two separate conductors</li>
+</ul>
+<p>The protective conductor is referred to by the term PE, which stands for 'Protective Earth.' Usually, the shielding of a cable is used as the PE conductor.</p>
+<img alt="pics_1.5" class="img-responsive-leon-15px center-block" src="./aardingsconcepten_files/5.7.png" width="608"/>
+<h5>Figure 5.7 TT system</h5>
+<h6> <em>TT grounding system</em> </h6>
+<p>In a TT system, one point of the power source is directly connected to the earth, and the metal frames in the installation are connected to grounding electrodes that are electrically independent of the grounding electrodes of the power source. In the TT system, the grounding systems of the consumer and the distribution network are thus separated, see figure 5.7. In this system, the customer is responsible for the maintenance and proper functioning of their own grounding. The return path for phase-to-earth faults consists of the grounding electrode at the consumer, the grounding electrodes at the substation, and the resistance of the ground between the consumer and the substation. The resistance of the return path must be low enough for the protection to disconnect a phase-to-earth fault. A rule of thumb for the resistance R<sub>c</sub>of the return path in the event that fuses are used is:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.5" src="./aardingsconcepten_files/formule-5.1.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">5.1</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>waarin<em>I<sub>n</sub></em>the nominal current of the fuse is (Provoost, 2004). The impedance of the entire circuit must be low enough to limit the voltage rise and ensure a quick disconnection. This method is only feasible in soil with low specific resistance. A fuse of 16 A requires an impedance of 2 Ω for the return path based on equation 5.1. In sandy soil, a fuse of 16 A is not feasible in this grounding system.</p>
+<p>In the past, with the right type of soil, there was never an issue with the size of the resistance of the return path, partly due to the widespread contact with the earth. However, by replacing metal pipes with plastic pipes and using plastic in cable sheaths, the resistance of the grounding circuit in the TT system has increased compared to the old situation. In cases where the return resistance is not low enough, residual current devices (RCDs) are used as an alternative by the connected party. An advantage of the RCD is that it trips at a small phase-to-earth fault current, reducing the risk of electrocution, damage, or fire. A disadvantage is that RCDs can fail, leaving the fault in place. This necessitates regular testing of RCDs by the connected parties.</p>
+<h6> <em>TN grounding system</em></h6>
+<p>In the TN system, safe grounding is provided by the network operator. In principle, one point of the power source is directly connected to the ground, and the metal frames in the installations are connected to that point via protective conductors. This is achieved with a low-ohm connection between the protective earth of the connected party and the operational earth of the substation. A TN system always provides a sufficiently low impedance for the return path, with an order of magnitude of 0.3 Ω. Using the rule of thumb (equation 5.1), it can be calculated that with this impedance of the return path, all common fuses will disconnect in the event of a phase-to-earth fault in the installation of the connected party.</p>
+<img alt="pics_1.5" class="img-responsive-leon-15px center-block" src="./aardingsconcepten_files/5.8.png" width="609"/>
+<h5>Figure 5.8   TN-S system</h5>
+<p>In the TN system, various configurations are possible. In a TN-S system, the neutral and PE conductor are separated, see figure 5.8. The power supply circuit and the grounding circuit are separated, and the current distribution is well-defined. This system uses five conductors, which are found in most low-voltage cables: three phases, neutral, and shielding as the PE conductor. An interruption in the PE conductor in this system leads to a safety risk.</p>
+<img alt="pics_1.5" class="img-responsive-leon-15px center-block" src="./aardingsconcepten_files/5.9.png" width="624"/>
+<h5>Figure 5.9 TN-C system</h5>
+<p>In a TN-C system, the neutral conductor and the PE conductor are combined into a single PEN conductor, see figure 5.9. These systems use only 4 conductors and are often applied in industrial networks. An interruption in the PEN conductor leads to voltage problems and a safety risk.</p>
+<img alt="pics_1.5" class="img-responsive-leon-15px center-block" src="./aardingsconcepten_files/5.10.png" width="730"/>
+<h5>Figure 5.10  TN-C-S system</h5>
+<p>The TN-C-S system is a combination of a TN-C and a TN-S system, see figure 5.10. The transport section from the distribution transformer uses the TN-C system, and the distribution section at the consumers uses the TN-S system.</p>
+<p>Nowadays, most low-voltage networks are based on the TN-C-S system. To ensure safety, the four-core cables in the TN-C section are equipped with a copper shield of sufficient conductor cross-section. In all joints, the neutral and the shield are connected. In the installation of the consumer, the neutral and PE are also connected. This creates a safe return path, even if the neutral conductor is interrupted. The risk of both the neutral conductor and the shield being interrupted is negligible (Provoost, 2004). This method of grounding combines the advantages of the TN-S and TN-C systems. The parallel connection of the neutral conductor and the shield also reduces the return impedance for asymmetric currents and reduces voltage dips caused by the starting of heavy single-phase loads. Figure 5.11 schematically shows the application of the TN-C-S system for a section of the low-voltage network.</p>
+<img class="img-responsive-leon-15px center-block" src="./aardingsconcepten_files/5.11.png"/>
+<h5>Figure 5.11  Low-voltage line with TN-C-S system</h5>
+<p>In summary, grounding via the TN system for a low-voltage network includes, among other things, the following:</p>
+<ul>
+<li>the grounding is continued in the joints</li>
+<li>the grounding is terminated at the supplying substation</li>
+<li>substations are grounded</li>
+<li>the PE(N) conductor can be connected to the ground at multiple points</li>
+<li>The PE(N) conductor is installed in such a way that the risk of a break is minimized as much as possible.</li>
+</ul>
+<p>Due to the connection of the protective earth of the connected party with the operational earth, there is a risk of increased touch voltage during short circuits in the low-voltage distribution network. More on this in section 5.7.2. If the grounding systems are also connected to those of higher voltage levels, short circuits in those networks also affect the safety of the connected party in the low-voltage network. This must be thoroughly considered when designing the network. More on this in section 5.7.3.</p>
+<p>For a low-voltage network based on the TN system, safety is evaluated for situations involving phase-to-earth faults with the protective conductor. However, the situation where a phase-to-earth fault occurs with a conductive object that is connected to the protective conductor via an impedance can also lead to an increase in potential of the protective conductor and must be evaluated. The voltage on the protective conductor must not become too high in those cases either. The following rule of thumb applies to the situation of a phase-to-earth fault on a conductive object that is not directly connected to the protective conductor:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.5" src="./aardingsconcepten_files/formule-5.2.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">5.2</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>in which:</p>
+<blockquote>
+<table border="0" width="100%">
+<tbody>
+<tr>
+<td valign="top"><em>R<sub>B</sub></em></td>
+<td valign="top">total earth resistance of all parallel-connected earth electrodes plus protective conductor (Ω)</td>
+</tr>
+<tr>
+<td valign="top"><em>R<sub>E</sub></em></td>
+<td valign="top">minimum contact resistance with earth of foreign conductive parts that are not connected to a protective conductor, but through which a phase-to-earth fault could occur (Ω)</td>
+</tr>
+<tr>
+<td valign="top"><em>U<sub>0</sub> </em></td>
+<td valign="top">nominal phase voltage (V)</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<p>This means that in an LV network with a nominal voltage of 230 V, the ratio of<em>R<sub>B</sub></em>tot<em>R<sub>E</sub></em>must be less
+          than 0.278. Assuming that the contact resistance at the point of the phase-to-earth connection R<sub>E</sub>is at least 10 Ω, the fault voltage on the protective conductor relative to earth will not exceed 50 V if the total earth spreading resistance of all parallel-connected earth electrodes plus the protective conductor<em>R<sub>B</sub></em>is less than or equal to 2.7 Ω.</p>
+<img class="img-responsive-leon-15px center-block" src="./aardingsconcepten_files/5.12.png"/>
+<h5>Figure 5.12 Phase-to-earth fault with an object not connected to the protective conductor</h5>
+<a href="https://www.phasetophase.nl/boek/boek_1_5.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_5.4"></div>
+<br/>
+<h2>5.4 Earth Electrode</h2>
+<p>In the event of a phase-to-earth fault, the return current flows through various locations with earth contact. An important earth contact, which is gradually disappearing, is the contact of the metal sheaths of GPLK cables. Additionally, there are numerous local earth contacts in the medium and low voltage network. In a low voltage distribution network, there is a lot of 'hidden earth.' It may be that at every house connection or public lighting connection, the PE conductor makes some contact with the earth, either directly through a driven earth electrode or indirectly through connection to a conductive piping system or through contact with other metal parts embedded in the ground. An earth contact with a reasonably defined resistance value is achieved with an earth electrode.</p>
+<p>The earth electrode is modeled with a resistance to the 'remote earth'. The resistance of the earth electrode depends on the specific soil resistivity.<em>ρ</em>and the physical dimensions of the earth electrode. For a single round rod-shaped earth electrode, formula 5.3 applies for calculating the earth resistance (Happoldt, 1978):</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.5" src="./aardingsconcepten_files/formule-5.3.png"/>(Ohms)</td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">5.3</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>with:</p>
+<blockquote>
+<table border="0" width="100%">
+<tbody>
+<tr>
+<td valign="top"><em>ρ</em></td>
+<td valign="top">specific resistance of the soil (Ωm)</td>
+</tr>
+<tr>
+<td valign="top"><em>L</em></td>
+<td valign="top">length of the vertical earth electrode in the ground (m)</td>
+</tr>
+<tr>
+<td valign="top"><em>d</em></td>
+<td valign="top">diameter of the earth electrode (m)</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<p>The specific resistance depends on the soil material, the amount of moisture in the soil, and the soil temperature. Table 5.1 provides an overview for various soil types.</p>
+<h5>Table 5.1  Specific Resistance of Soil Types</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="33%"><p>Bodemsoort</p></td>
+<td valign="top" width="33%"><p>ρ minimum [Ωm]</p></td>
+<td valign="top" width="33%"><p>ρ maximum [Ωm]</p></td>
+</tr>
+<tr>
+<td valign="top" width="85"><p>Veen</p></td>
+<td valign="top" width="92"><p>5</p></td>
+<td valign="top" width="92"><p>40</p></td>
+</tr>
+<tr>
+<td valign="top" width="85"><p>Klei</p></td>
+<td valign="top" width="92"><p>20</p></td>
+<td valign="top" width="92"><p>200</p></td>
+</tr>
+<tr>
+<td valign="top" width="85"><p>Zand</p></td>
+<td valign="top" width="92"><p>200</p></td>
+<td valign="top" width="92"><p>2500</p></td>
+</tr>
+<tr>
+<td valign="top" width="85"><p>Kiezel</p></td>
+<td valign="top" width="92"><p>2000</p></td>
+<td valign="top" width="92"><p>3000</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>The difference between the minimum and maximum values of the specific soil resistance is determined by the weight percentage of the moisture present in the material. This can be measured during the driving of the ground electrode, assuming that the measurement is representative of the lowest moisture content of the soil.</p>
+<p>In the Netherlands, the ground electrode is often a driven ground electrode made of round copper wire with a diameter of 50 mm.<sup>2</sup> <em>(d = 0.0075 m)</em>Other types of ground electrodes are also used, such as solid steel (round, star-shaped, or cross-shaped) with a well-adhering copper layer on the surface or a galvanized round steel variant. To create a ground electrode with a ground spreading resistance of less than 1 Ω, multiple parallel ground electrodes often need to be driven into the ground, spaced widely apart. According to formula 5.3, the ground spreading resistance for a 10 m ground electrode with a diameter of 7.5 mm in soil with a specific resistance of 100 Ωm is equal to 13.7 Ω. The literature (Happoldt, 1978) (Tleis, 2008) provides formulas for calculating parallel or other forms of ground electrodes.</p>
+<p>In a distribution network, specific values for ground resistance are applied for all voltage levels. The following values may occur.</p>
+<ul>
+<li>A high-voltage/medium-voltage substation has a grounding impedance of 0.2 Ω.</li>
+<li>A medium-voltage/low-voltage substation has a grounding impedance of 2 Ω.</li>
+<li>An LV connection can have a grounding electrode with an impedance of 5 Ω or greater.</li>
+</ul>
+<a href="https://www.phasetophase.nl/boek/boek_1_5.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_5.5"></div>
+<br/>
+<h2>5.5 Potential Equalization</h2>
+<p>The grounding must always be installed in such a way that it does not lead to voltage increases with associated increased risks for people and equipment. The touch voltage is not only determined by the voltage of the PE conductor and the local ground, but especially by the voltage differences between all metal objects that can be touched simultaneously. For this reason, as many conductive parts not belonging to the electrical installation as possible are connected at a central location (the main grounding bar) with the PE conductor of the electrical installation, so that all simultaneously touchable metal frames carry the same potential. The NEN 1010 standard describes that for good potential equalization in every building, all conductive parts of the water supply, gas supply, heating systems, air handling systems, steel structures, and concrete reinforcement must be connected to the main grounding bar. The potential equalization should take place as close as possible to the point of entry into the building. Additionally, it is recommended to connect the protective conductor to as many available well-grounded parts as possible. In a TT system, the local grounding electrode must also be connected to the main grounding bar. Furthermore, the protective conductors of telecom and cable television networks must be grounded at the central location. This is less important for touch safety but crucial for the protection of electronic equipment.</p>
+<p>The grounding in the distribution network is spread across all substations and all connections. Each substation has its own grounding, and LS connections can also have grounding. In an LS network where the TN system is applied, a connected user theoretically does not need their own local ground electrode. The only grounding point is then located at the MS/LS distribution transformer. In practice, however, there is always some connection to the ground present, either through ground electrodes or cable sheaths, or indirectly through contact with conductive pipes laid in the ground.</p>
+<p>In a distribution network, all ground contacts are interconnected. The influence of dispersed ground contacts can be translated into an equivalent ground impedance Z.<sub>eq</sub>This can be calculated from a ladder network. The calculation follows from the development of the series for n segments of a ladder network:</p>
+<img class="img-responsive-leon-15px center-block" src="./aardingsconcepten_files/5.13.png"/>
+<h5>Figure 5.13 Ladder network for distributed ground contacts</h5>
+<p>In formula form, it holds for n sections:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.5" src="./aardingsconcepten_files/formule-5.4.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">5.4</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>in which:</p>
+<blockquote>
+<table border="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="10%"><em>Z<sub>s</sub> </em></td>
+<td valign="top">impedance of the PE conductor between two sections, possibly in parallel with the neutral conductor</td>
+</tr>
+<tr>
+<td valign="top"><em>Z<sub>p</sub></em></td>
+<td valign="top">impedance of the ground contact</td>
+</tr>
+<tr>
+<td valign="top"><em>Z<sub>eq,n-1</sub> </em></td>
+<td valign="top">equivalent impedance of the previous section</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<p>For most applications, the influence of the cable impedance can be neglected, and the equivalent grounding impedance of<em>n</em>ground contacts
+          approximated according to:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.5" src="./aardingsconcepten_files/formule-5.5.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">5.5</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<a href="https://www.phasetophase.nl/boek/boek_1_5.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_5.6"></div>
+<br/>
+<h2>5.6 Hazardous situations</h2>
+<p>Short circuits that make contact with the ground lead to an increase in voltage on the grounding system or the local ground. If all grounding systems are interconnected, a short circuit at any level can result in a hazardous situation for a connected individual.</p>
+<h6> <em>Short circuit in a high-voltage network</em></h6>
+<p>In a substation, the grounding systems of the high-voltage and medium-voltage networks are interconnected. The return current from a phase-to-ground fault in the high-voltage network will not only flow through the return path of the high-voltage network but also through the grounding of the substation and the sheaths of the medium-voltage cables. Particularly, cables that run parallel to the high-voltage line can carry a significant return current. These currents lead to a potential rise in the return conductors of the medium-voltage network.</p>
+<h6> <em>Short circuits in a medium-voltage network</em></h6>
+<p>During a phase-to-earth fault in the medium-voltage network, the return current flows partially through the sheaths of the medium-voltage cables and partially through the grounding electrodes into the earth. In the substations, the grounding systems of the medium-voltage and low-voltage networks are interconnected. The currents through the grounding electrodes in the distribution areas lead to a potential rise in the earth in the substations, which also increases the voltage on the grounding system of the MV/LV distribution transformers. If the grounding systems in the low-voltage network are connected to the grounding system of the distribution transformer, these potential rises can be noticeable in the installations of the connected users. The duration of these voltage rises is determined by the duration of the short-circuit current and is thus dependent on the magnitude of the short-circuit current and the operation of the protection system. The magnitude of these voltage rises is determined by the size of the return current and the impedances of the grounding electrodes and the cable shielding.</p>
+<p>The largest return current occurs during a short circuit between a phase and ground. In floating medium voltage networks, the return current is approximately 1.5 A per km of cable, which for networks with typical summed lengths of 130 to 400 km results in a current between 200 and 600 A. If these currents are greater than 300 A, they can be detected and disconnected by protection systems. If these currents are less than 300 A, they are in the order of magnitude of normal operating currents and will not be disconnected by simple maximum current-time protections. A solution for this is to ground these networks with an impedance, for example, with a grounding transformer. In grounded medium voltage networks, the return current is much larger. It is in the order of magnitude of 700 to 2000 A (Provoost, 2004). Due to the high short-circuit current, the protection can intervene selectively, and the duration of the short circuit is determined by this protection.</p>
+<h6> <em>Short circuits in a low-voltage network</em></h6>
+<p>Low-voltage networks are essentially solidly grounded. The grounding impedance is determined by the earth resistance of the grounding electrode. A short circuit between the phase conductor and the neutral conductor or ground results in a potential increase of the neutral conductor, cable shielding, or ground. Particularly in the application of a TN system, it must be thoroughly considered that short circuits in the distribution network lead to increased touch voltages in the grounding system of the connected users. These voltages and their duration must be limited to safe values. The network designer must check the level of touch voltages and the duration. This can be done, for example, using a computer program for LV network design (Phase, 2009).</p>
+<p>In order to keep the impedance of the return path as low as possible, the low-voltage cables have a neutral conductor and a copper shield. Additionally, for safety reasons, the neutral conductor and the cable shield are often connected to each other in all joints, as shown in figure 5.11.</p>
+<a href="https://www.phasetophase.nl/boek/boek_1_5.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_5.7"></div>
+<br/>
+<h2>5.7 Touch Safety</h2>
+<p>Faults such as phase-to-ground faults are a common occurrence. It is important that these faults do not lead to dangerous situations. 
+          A voltage increase on the grounding provisions can be limited by ensuring that the return path has a sufficiently low impedance. The requirements 
+          that networks and installations must meet are laid down in the national standard NEN 1010. This standard emphasizes timely disconnection in the event 
+          of a voltage increase on the grounding provision. Due to accidents in the past, network operators have been held responsible for situations where a 
+          grounding provision no longer meets the standards. For this reason, network operators provide a reliable ground to the connected party and take 
+          responsibility for the quality of the ground connection.</p>
+<p>In high and medium voltage networks, touching live parts usually leads to serious injury or death. Touching low voltage can also cause injury. The extent of the damage depends on the current strength and the duration of the current passing through the body. A continuous current of several tens of milliamperes is already fatal. In the international standard IEC 60479, hazard curves based on current-time are used to indicate which current strength poses a certain danger over a specific period.</p>
+<img alt="pics_1.5" class="img-responsive-leon-15px center-block" height="676" src="./aardingsconcepten_files/5.14.png" width="711"/>
+<h5>Figure 5.14  Current-time hazard curves according to IEC 60479</h5>
+<p>The graph uses four zones to indicate the extent to which a human body experiences the current:</p>
+<ul>
+<li>AC-1: the area up to line A (0.5 mA); in this area, it is possible that a current is perceived, but it does not lead to a startle reaction.</li>
+<li>AC-2: the area between lines A and B; in this area, the current is felt, but it usually has no harmful physiological effects; at approximately 10 mA lies the so-called let-go threshold.</li>
+<li>AC-3: the area to the right of line B; in this area, strong muscle contractions occur, breathing difficulties, temporary disruption of heart function; immobilization is possible; generally, no organ damage occurs.</li>
+<li>AC-4: the area to the right of line C1: in this area, strong physiological effects occur, such as cardiac arrest, respiratory arrest, organ damage, and burns.</li>
+<ul>
+<li>AC-4.1: between C1 and C2: up to 5% chance of heart fibrillation</li>
+<li>AC-4.2: between C3 and C3: up to 50% chance of heart fibrillation</li>
+<li>AC-4.3: to the right of C3: more than 50% chance of heart fibrillation.</li>
+</ul>
+</ul>
+<img alt="pics_1.5" class="img-responsive-leon-15px center-block" height="386" src="./aardingsconcepten_files/5.15.png" width="716"/>
+<h5>Figure 5.15 Human body resistance as a function of contact voltage (one hand - one hand)</h5>
+<p>In addition to these curves, the Lc-curve is also applied, which is located in the AC-3 area, between curves B and C1. This curve was introduced by the NEN 1010 committee and provides extra assurance. The curve is positioned at such a distance from curve C1 that it is assumed any deviations from the average situation will not result in exceeding curve C1.</p>
+<p>The current through the body depends on the touch voltage and the body's resistance. The latter is not constant but depends on:</p>
+<ul>
+<li>the touch voltage<em>U<sub>a</sub></em>,</li>
+<li>the manner of contact (one hand and one foot or two hands and two feet),</li>
+<li>the footwear resistance.</li>
+</ul>
+<p>The body resistance is established in the international standard IEC 60479. Naturally, body resistance varies from person to person. Therefore, the standard provides the resistances for statistical population groups ("Best knowledge on the Total body impedances for living adults"). Figure 5.15 shows the curves with resistance values where, according to statistics, 5%, 50%, and 95% of the population fall below. The 5% line is the safest and is therefore most commonly used.</p>
+<p>The body resistance is specified for the case where the current travels from one hand to the other hand or from one hand to a foot. Usually, the body resistance is calculated for touching with both hands and with both feet on the ground, so the value from the curves according to IEC 60479 must be divided by 2. The touch voltage is usually only a part of the fault voltage because the human body is in series with the resistance of the floor and the footwear. The footwear resistance<em>R<sub>sch</sub></em>depends on many factors, but a common value is 1000 Ω. Calculating the maximum time within which a fault voltage must be disconnected is an iterative process, because the touch voltage is determined by the voltage division over the resistances.<em>R<sub>m</sub>and R<sub>sch</sub></em>over the fault voltage<em>U<sub>f</sub></em>and the resistance of the human<em>R<sub>m</sub> </em>depends on the touch voltage<em>U<sub>a</sub></em>.</p>
+<img alt="pics_1.5" class="img-responsive-leon-15px center-block" src="./aardingsconcepten_files/5.16.png" width="349"/>
+<h5>Figure 5.16 Voltage division for calculating the touch voltage</h5>
+<p>Despite the fact that the dangerous influencing factor is the current and not the voltage, the protective measures are often formulated as a voltage limitation. This is based on the relationship between the current and the touch voltage. This is done because voltage is easily measurable. However, in this book, the focus is consistently on the current through the human body.</p>
+<br/>
+<a href="https://www.phasetophase.nl/boek/boek_1_5.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_5.7.1"></div>
+<br/>
+<h3>5.7.1 Short Circuit in a TT System</h3>
+<p>When applying the TT system, a phase-to-earth fault in the consumer's installation can lead to an increased voltage of the local earth. Figure 5.17 illustrates this for a short circuit between phase L1 and the PE of the consumer's installation. This can also be a short circuit in a device. As a result, the voltage on the consumer's local grounding system is increased.</p>
+<img alt="pics_1.5" class="img-responsive-leon-15px center-block" src="./aardingsconcepten_files/5.17.png"/>
+<h5>Figure 5.17  Short circuit in a TT system</h5>
+<p>The fault voltage for a phase-to-earth fault in an installation with a TT system can be approximately calculated using a simple equivalent circuit. In this equivalent circuit, the impedances of the transformer are represented.<em>Z<sub>T</sub></em>), the phase conductor (<em>Z<sub>L</sub></em>), the
+          neutral conductor (<em>Z<sub>N</sub></em>) and the grounding electrode at the network transformer (<em>Z<sub>E1</sub></em>) and at the installation of the connected party<em>Z<sub>E2</sub></em>). The fault is a phase-to-earth connection in the installation of the connected party. The fault voltage on the protective conductor of the connected party is<em>U<sub>f</sub></em>.
+          Also indicated: the resistance of the human body (<em>R<sub>m</sub></em>), the footwear resistance to earth (<em>R<sub>sch</sub></em>) and the
+          touch voltage (<em>U<sub>a</sub></em>).</p>
+<img alt="pics_1.5" class="img-responsive-leon-15px center-block" src="./aardingsconcepten_files/5.18.png" width="675"/>
+<h5>Figure 5.18 Short circuit in an installation with TT system</h5>
+<p>In the diagram, it is visible that the return path consists of the series connection of the grounding electrodes at the distribution transformer and at the installation of the connected party. The impedance<em>Z<sub>f</sub></em>of the total circuit for the short-circuit current then consists of the series connection of the transformer impedance, the phase impedance, and the return impedance:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.5" src="./aardingsconcepten_files/formule-5.6.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">5.6</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p></p>
+<p>The short-circuit current is calculated from the nominal transformer phase voltage<em>U<sub>nom</sub></em>) and the circuit impedance. It is assumed that the source on the medium voltage side of the transformer is infinitely strong.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.5" src="./aardingsconcepten_files/formule-5.7.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">5.7</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>The fault voltage on the PE of the connected party is calculated from the fault current and the impedance of the grounding electrode of their installation. This is equal to the voltage division of this impedance over the total circuit impedance.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.5" src="./aardingsconcepten_files/formule-5.8.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">5.8</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>Based on the calculated fault voltage, the current through the human body and thus the maximum duration can be determined. The touch voltage is calculated as follows:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.5" src="./aardingsconcepten_files/formule-5.9.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">5.9</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>Subsequently, the current through the human body can be calculated:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.5" src="./aardingsconcepten_files/formule-5.10.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">5.10</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>Since the body resistance<em>R<sub>m</sub></em>depends on the voltage, this calculation must be performed iteratively.</p>
+<br/>
+<div class="row-ohm-center-dark">
+<p><em>Example calculation TT system</em></p>
+<p>A low-voltage network is powered by a 10250/400 V transformer of 250 kVA (u<sub>k</sub>=4% and P<sub>k</sub>=2.8 kW). The impedance of this transformer is:<em>Z<sub>T</sub>= 0.0072 + j0.0246 Ω.</em><br/>The low-voltage line is 300 meters long. The cable type is 4x95 VVMvKsas/Alk.</p>
+<img alt="pics_1.5" class="img-responsive-leon-15px center-block" src="./aardingsconcepten_files/5.19.png" width="697"/>
+<h5>Figure 5.19 Calculation Example TT System</h5>
+<p align="left">The impedance of the phase conductor over 300 meters is:<em>Z<sub>L</sub>= 0.0960 + j0.0246 Ω</em>.<br/>The impedance of the grounding electrode at the distribution transformer is:<em>Z<sub>E1</sub>= 1 Ω</em>.<br/>The impedance of the grounding electrode at the installation of the connected party is:<em>Z<sub>E2</sub>= 2 Ω.</em> </p>
+<p align="left">From this follows:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.5" src="./aardingsconcepten_files/formule-5.11.png" width="550"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">5.11</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>According to the rule of thumb from formula 5.1, the following must apply for fuse safety:</p>
+<p> <em>I<sub>n</sub>&lt; 30 / Z<sub>retour</sub>= 30 / 3 = 10 A</em></p>
+<p align="left">A phase-to-earth fault at the connected party results in a fault voltage.<em>U<sub>f</sub></em>with an absolute value of 148 V.<br/>The footwear resistance<em>R<sub>sch</sub></em>is 1000 Ω.<br/>The applied curve for body resistance is the 5% curve.<br/>The method of contact is with two hands and two feet. As a result, the body resistance is divided by 2:<em>R<sub>m</sub>' = R<sub>m</sub>/ 2.</em> <br/>The body's resistance of a human depends on the contact voltage to be calculated.<em>U<sub>a</sub></em>and must first be estimated. For example, assume that the resistance<em>R<sub>m</sub></em>is equal to the footwear resistance<em>R<sub>sch</sub> </em>, resulting in:<em>U<sub>a</sub>= U<sub>f</sub>/ 2 = 74 V</em>.</p>
+<p>From the 5% curve follows:<em>R<sub>m</sub>(75) = 1125 Ω</em>.<br/>From the chosen method of contact follows:<em>R<sub>m</sub>(75)’ = 1125 / 2 = 562.5 Ω</em>.<br/>From the voltage division follows for the touch voltage:</p>
+<p><em>U<sub>a</sub>= U<sub>f</sub>· R<sub>m</sub>(75)’ / (R<sub>m</sub>(75)’ + R<sub>sch</sub>) = 148 · 562.5 / (562.5 + 1000) = 53 V</em> </p>
+<p>This is a first approximation of the value of the touch voltage. With this value, the human body's resistance can be corrected. According to the 5% curve from figure 5.15, the body resistance is:<em>R<sub>m</sub>(53) = 1350 Ω</em>.<br/>From the chosen method of contact follows:<em>R<sub>m</sub>(53)’ = 1350 / 2 = 675 Ω.</em> <br/>From the voltage division, the touch voltage is:</p>
+<p> <em>U<sub>a</sub>= U<sub>f</sub>· R<sub>m</sub>(53)’ / (R<sub>m</sub>(53)’ + R<sub>sch</sub>) = 148 · 675 / (675+1000) = 60 V</em></p>
+<p>The calculation must be repeated until the touch voltage no longer changes. In the above calculation example, it is assumed that the correct touch voltage is 60 V.</p>
+<p>The corresponding value for<em>R<sub>m</sub>(60)’ is 1300 / 2 = 650 Ω</em>. Now the current through the human body can be calculated:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.5" src="./aardingsconcepten_files/formule-5.12.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">5.12</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>This current value can be looked up in the current-time hazard curves of figure 5.14. From this, it follows that by applying the C1 curve, this current must be switched off within approximately 550 ms.</p>
+<p>How quickly the short circuit is actually disconnected mainly depends on the impedances of the applied grounding electrodes and the specifications of the applied protection.</p>
+</div>
+<br/>
+<a href="https://www.phasetophase.nl/boek/boek_1_5.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_5.7.2"></div>
+<br/>
+<h3>5.7.2 Short Circuit in a TN System</h3>
+<p>When applying a TN system, it must be taken into account that phase-to-earth faults in the electrical network lead to increased touch voltages on the grounding system relative to the local earth potential at the connected points. Figure 5.20 illustrates this for a short circuit between phase L1 and the neutral conductor, which causes the voltage on the neutral conductor to increase. Because the neutral and PE conductors are connected at as many points as possible, the voltage on the grounding system is also increased. A person who comes into contact with a grounded device will then experience this increased voltage U.<sub>f</sub>relative to the local ground.</p>
+<img alt="pics_1.5" class="img-responsive-leon-15px center-block" height="326" src="./aardingsconcepten_files/5.20.png" width="727"/>
+<h5>Figure 5.20  Short circuit in a TN-C-S system</h5>
+<p>The fault voltage for a phase-to-earth fault in a low voltage line with a TN-C-S system can be approximately calculated using a simple equivalent circuit. In this equivalent circuit, the impedances of the transformer are represented.<em>Z<sub>T</sub></em>), the phase conductor<em>Z<sub>L</sub></em>), the
+          neutral conductor (<em>Z<sub>N</sub></em>), the PE conductor (<em>Z<sub>PE</sub></em>) and the grounding electrode at the network transformer (<em>Z<sub>E1</sub></em>). The fault is a phase-to-earth connection at the end of the low-voltage line. The fault voltage on the protective conductor of the connected equipment is<em>U<sub>f</sub></em>. Also indicated are: the resistance of the human body<em>R<sub>m</sub></em>), the footwear resistance to earth (<em>R<sub>sch</sub></em>) and the touch voltage (<em>U<sub>a</sub></em>).</p>
+<img alt="pics_1.5" class="img-responsive-leon-15px center-block" height="333" src="./aardingsconcepten_files/5.21.png" width="680"/>
+<h5>Figure 5.21 Short circuit in a string with TN-C-S system</h5>
+<p>In the diagram, it is visible that the return path consists of the parallel connection of the neutral and the PE conductor. The impedance Z<sub>f</sub>of the entire circuit for the short-circuit current then consists of the series connection of the transformer impedance, the phase impedance, and the return impedance:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.5" src="./aardingsconcepten_files/formule-5.13.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">5.13</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>The short-circuit current is calculated from the nominal transformer voltage and the circuit impedance. It is assumed that the source on the medium voltage side of the transformer is infinitely strong.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.5" src="./aardingsconcepten_files/formule-5.14.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">5.14</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>The fault voltage on the PE is calculated from the fault current and the return impedance. This is equal to the voltage division of the return impedance over the total circuit impedance.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.5" src="./aardingsconcepten_files/formule-5.15.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">5.15</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<p>The touch voltage, the current through the human body, and the maximum duration are calculated in the same way as in equations 5.9 and 5.10. The touch voltages and their duration must be limited to safe values. Therefore, the impedance of the return path is kept as low as possible. Due to the ratio of impedances of the distribution transformer and the phase and return conductors in the cable, the voltage increase is greatest during short circuits at the end of a section. This limits the length of the cable in a TN system network. Figure 5.22 shows the voltage increase on the PE conductor as a function of the distance from the fault location to the distribution transformer for a low-voltage section of a 300 m long 4x95 VVMvKsas/Alk cable, powered by a 10250/400 V transformer of 250 kVA. This assumes phase-to-earth faults in the network cable.</p>
+<img alt="pics_1.5" class="img-responsive-leon-15px center-block" height="391" src="./aardingsconcepten_files/5.22.png" width="708"/>
+<h5>Figure 5.22 Voltage on the PE as a function of the distance from the short-circuit location to the substation</h5>
+<p>Due to the increasing impedance, the short-circuit current decreases as the fault location moves further towards the end of the line, causing a fuse to take more time to disconnect. This combination of higher voltage on the PE and the longer duration of the short circuit makes a short circuit at the end of the line more dangerous than at the beginning of the line. This phenomenon, in particular, limits the length of the low-voltage cable. The application of fast-acting fuses can provide more flexibility in cable length.</p>
+<p>In summary, safety is enhanced by timely disconnection and by limiting the touch voltage. Timely disconnection is determined by the magnitude of the short-circuit current and the chosen protection. The level of touch voltage is determined by the impedance of the path to ground. In cases where a touch-safe situation cannot be achieved with traditional means, fast-acting fuses are applied.</p>
+<div class="row-ohm-center-dark"> <em>Calculation example TN system</em>
+<p>A low-voltage network is powered by a 10250/400 V transformer of 250 kVA.<sub>k</sub>=4% and P<sub>k</sub>=2.8 kW).<br/>The impedance of this transformer is:<em>Z<sub>T</sub>= 0.0072 + j0.0246 Ω</em>.<br/>The low-voltage line is 300 meters long. The cable type is 4x95 VVMvKsas/Alk.<img alt="pics_1.5" class="img-responsive-leon-15px center-block" src="./aardingsconcepten_files/5.23.gif" width="697"/>
+</p><h5>Figure 5.23 Calculation Example TN System</h5>
+<p>The impedance of the phase conductor over 300 meters is:<em>Z<sub>L</sub>= 0.0960 + j0.0246 Ω</em>.<br/>The impedance of the neutral conductor is equal to that of the phase conductor:<em>Z<sub>N</sub>= Z<sub>L</sub></em>.<br/>The impedance of the PE conductor is:<em>Z<sub>PE</sub>= 0.15 Ω</em>.<br/>Due to the connections between the neutral conductor and the PE conductor, they are connected in parallel.<br/>As an example, a phase-to-earth fault at the end of the low-voltage line is calculated:</p><table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.5" src="./aardingsconcepten_files/formule-5.16.png" width="560"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">5.16</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>A phase-to-earth fault causes a fault voltage at the connected party.<em>U<sub>f</sub></em>with an absolute value of 80 V.<br/>The footwear resistance<em>R<sub>sch</sub></em>is 1000 Ω.<br/>The applied curve for body resistance is the 5% curve.<br/>The method of contact is with two hands and two feet. As a result, the body resistance is divided by 2:<em>R<sub>m</sub>' = R<sub>m</sub>/ 2</em>.<br/>The body resistance of a human depends on the contact voltage to be calculated.<em>U<sub>a</sub> </em>must first be estimated. For example, assume that the resistance<em>R<sub>m</sub></em>is equal to the footwear resistance<em>R<sub>sch</sub> </em>, resulting in:<em>U<sub>a</sub>= U<sub>f</sub>/ 2 = 40 V</em>.<br/>From the 5% curve, it follows: R<sub>m</sub>(40) = 1500 Ω.<br/>From the chosen method of contact, it follows:<em>R<sub>m</sub>(40)’ = 1500 / 2 = 750 Ω</em>.<br/>From the voltage division, it follows for the touch voltage:</p><p> <em>U<sub>a</sub>= U<sub>f</sub>· R<sub>m</sub>(40)’ / (R<sub>m</sub>(40)’ + R<sub>sch</sub>) = 80 · 750 / (750+1000) = 34 V</em> </p>
+<p>This is a first approximation of the value of the touch voltage. With this value, the human body resistance can be corrected. According to the 5% curve from figure 5.15, the body resistance is:<em>R<sub>m</sub>(34) = 1600 Ω</em>.<br/>From the chosen method of contact follows:<em>R<sub>m</sub>(34)’ = 1600 / 2 = 800 Ω</em>.<br/>From the voltage division, the touch voltage is:</p>
+<p> <em>U<sub>a</sub>= U<sub>f</sub>· R<sub>m</sub>(34)’ / (R<sub>m</sub>(34)’ + R<sub>sch</sub>) = 80 · 800 / (800+1000) = 35 V</em></p>
+<p>The calculation must be repeated until the touch voltage no longer changes. In the above calculation example, it is assumed that the correct touch voltage is 35 V. For convenience, it is also assumed that<em>R<sub>m</sub>(35)’ » R<sub>m</sub>(34)’</em>. Now the current through the human body can be calculated:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.5" src="./aardingsconcepten_files/formule-5.17.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">5.17</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>This current value can be looked up in the current-time hazard curves of figure 5.14. From this, it follows that using the C1 curve, this current must be switched off within approximately 1400 ms.</p>
+<p>How quickly a short circuit is actually disconnected in the low-voltage network in the event of a fault depends on the short-circuit power, the type of cable, the distance from the fault location to the source, and the applied protection. A fault in the installation of the connected party is always selectively disconnected by the fuse of the connected party itself.</p>
+</div>
+<br/>
+<a href="https://www.phasetophase.nl/boek/boek_1_5.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_5.7.3"></div>
+<br/>
+<h3>5.7.3 Short Circuits in the Medium Voltage Network</h3>
+<p>Not only phase-to-ground faults in the low voltage (LV) network, but also phase-to-ground faults in the medium voltage (MV) network affect the potential rise in the installations of the connected parties. The phase-to-ground fault can occur on the primary side of the transformer in the substation or elsewhere in the medium voltage network. The fault in the substation has the greatest impact on the potential rise of the protective conductor in the substation and in the LV network fed by the substation. Such faults cause a current to flow in the grounding electrode to which the metallic parts of the substation are connected. The magnitude of the fault current depends on the impedance of the fault current path and the manner in which the high voltage system is grounded.</p>
+<p>The fault current flowing in the grounding system of the substation causes a significant increase in potential relative to the earth, determined by the magnitude of the fault current and the impedance of the substation's grounding system. In a system where the neutral and protective conductors of the low-voltage network are connected to the substation's grounding system, the fault current can result in such an increase in potential in the low-voltage network that it damages the insulation or raises the potential of the protective conductor and all connected metal frames. The magnitude and duration of the voltage across the insulation of the low-voltage equipment in the low-voltage installation due to a ground fault in the high-voltage system are specified in the NEN 1010 standard. If the supplying medium-voltage (MV) network has a floating neutral point, a phase-to-ground fault is allowed to persist for several hours. In that case, the phase voltage in the low-voltage (LV) network may be increased by up to 250 V according to the standard. If the LV network is supplied by a low-impedance grounded MV network, a short circuit must be disconnected within 5 seconds, and the phase voltage may be increased by up to 1200 V according to the standard.</p>
+<img alt="pics_1.5" class="img-responsive-leon-15px center-block" height="254" src="./aardingsconcepten_files/5.24.png" width="460"/>
+<h5>Figure 5.24 Model of a HV/MV substation with a downstream MV network</h5>
+<p>The magnitude of the potential increase on the protective conductors is proportional to the magnitude of the current through the ground spreading resistance in the substation. Therefore, the effect is greater if the substation is fed by a grounded MV network than if it is fed by an ungrounded MV network. The potential increase in the LV network as a result of a phase-to-ground fault in an impedance-grounded MV network is illustrated using the example in Figure 5.24. The MV network is grounded using a grounding transformer with low impedance. The network is fed by a 50 MVA power source. The grounding transformer has a reactance of 7 Ω. The network includes 200 km of cable of the type 3x95 mm².<sup>2</sup>Cu XLPE 6/10 kV connected, which represents the capacity of all cables connected to the substation. A single medium-voltage strand of 15 km of cable of the type 3x95 mm²<sup>2</sup>Cu XLPE
+          6/10 kV is specifically modeled to demonstrate the potential increase as a result of the phase-to-ground fault. At the end of this medium-voltage strand, a substation is modeled with a medium-voltage busbar, transformer, and low-voltage busbar. The substation has a grounding system with a resistance of 0.2 Ω. The network station has a grounding system with a resistance of 2 Ω.</p>
+<p>A phase-to-ground fault is applied to the medium-voltage busbar of the network station. As a result, in this example, a short-circuit current of 677 A flows. This short-circuit current returns to the source via two paths: 576 A flows through the cable shielding and 230 A flows through the ground. This situation is depicted in detail in figure 5.25. The distribution of the current through the shielding and the current through the ground is determined by the cable impedances and the ground spreading resistances. Due to the current through the ground spreading resistance in the network station, a potential rise occurs on the protective conductor, which is equal to the product of the ground spreading resistance and the current flowing through it. The potential rise is theoretically equal to:</p>
+<ul>
+<li>in the substation:<em>U<sub>f</sub>= 0.2 · 230 = 46 V</em> </li>
+<li>in the substation:<em>U<sub>f</sub>= 2 · 230 = 460 V.</em> </li>
+</ul>
+<img alt="pics_1.5" class="img-responsive-leon-15px center-block" height="344" src="./aardingsconcepten_files/5.25.png" width="623"/>
+<h5>Figure 5.25 Model of a HV/MV substation with a connected MV network</h5>
+<p>This voltage is present on all connected protective conductors in the low-voltage network linked to the substation. In practice, a low-voltage network is grounded at multiple points, and in the underlying LV network, due to the applied potential equalization, there are contacts with the earth at several locations for connected users, the so-called hidden earth contacts, which are connected in parallel with the earth distribution resistance present in the substation.<em>R<sub>a</sub></em>This reduces the value of the equivalent earth distribution resistance on the low-voltage side of the substation. An exact value cannot be provided, so the value must be estimated based on the number of connections in the underlying low-voltage network. If, for example, this causes the earth distribution resistance in the low-voltage network of figure 5.25 to be halved, the potential increase on the protective conductor is also halved. It is therefore important to take this into account.</p>
+<p>In the NEN 1010 standard, a relationship is indicated between the level of fault voltage on the protective conductor in the low-voltage network and the duration within which this voltage must be disconnected for touch safety, see figure 5.26. The figure shows that a fault voltage of 460 V must be disconnected within 0.25 seconds and that a fault voltage of 230 V must be disconnected within 0.45 seconds. Therefore, it is important to take hidden grounding electrodes into account.</p>
+<img alt="pics_1.5" class="img-responsive-leon-15px center-block" height="413" src="./aardingsconcepten_files/5.26.png" width="708"/>
+<h5>Figure 5.26 Maximum time for voltage U<sub>f</sub>as a result of a ground fault in the medium voltage network</h5>
+</div>
+<div class="col-lg-2 hidden-md"> </div>
+</div>
+</div>
+<div class="container-fluid-footer" id="includeFooter"><div class="container">
+<div class="row">
+<div class="text-justify col-xs-6 col-sm-3">
+<img alt="ptp_logo" src="./aardingsconcepten_files/logo-s-360px-grijs.png" width="230"/>
+</div>
+<div class="col-xs-6 col-sm-9">
+<p> Phase to Phase is onderdeel van <a href="https://www.technolution.nl/">Technolution</a>. © 2009-2021 </p>
+</div>
+</div>
+</div></div></body></html>

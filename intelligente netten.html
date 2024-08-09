@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://www.phasetophase.nl/boek/boek_3_15.html -->
+<html lang="en" class="wf-ffscalasansweb-n7-active wf-ffscalasansweb-n4-active wf-ffscalasansweb-i4-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Phase to Phase – Netten voor distributie van elektriciteit</title>
+    <!-- Bootstrap -->	
+<link href="./intelligente netten_files/bootstrap-2-boek.css" rel="stylesheet">
+<style type="text/css">
+	body,td,th {
+	font-family: ff-scala-sans-web, sans-serif;
+}
+body {
+	background-color: #F7F7F7;
+}
+    </style>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+<script src="./intelligente netten_files/qke6lfb.js.download"></script>
+<style type="text/css">.tk-ff-scala-sans-web{font-family:"ff-scala-sans-web",sans-serif;}</style><style type="text/css">@font-face{font-family:tk-ff-scala-sans-web-n7;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-n4;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-i4;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style><script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script src="./intelligente netten_files/jquery-1.11.3.min.js.download"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./intelligente netten_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H8Q9E8BJ7Q');
+</script>
+<script>
+$(function(){
+  $("#includedHeader").load("/boek/header.html");
+  $("#includeFooter").load("/boek/footer.html"); 
+});
+</script><style type="text/css">@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style>	  
+</head>
+<body style="padding-top: 50px">
+
+<div id="includedHeader"> <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topFixedNavbar1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="https://www.phasetophase.nl/">Phase to Phase</a></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="topFixedNavbar1">
+      <ul class="nav navbar-nav">
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+	<p></p>
+	
+    </div>
+    </div>
+  </div>
+
+<div class="container-fluid-boek">
+  <div class="container">
+
+<div class="row-in-header">
+	<div class="text-justify col-xs-6 col-sm-6">
+    <img class="hidden-xs" src="./intelligente netten_files/logo-s-360px-wit.png" alt="Phase to Phase logo 360px" width="366">
+	<img class="visible-xs" src="./intelligente netten_files/logo-s-360px-wit.png" alt="Phase to Phase logo 261px" width="261"> 
+	</div>
+		<div class="col-xs-6 hidden-xs col-sm-6">
+	</div>
+</div>
+
+<div class="row-in-header">
+	<div class="text-left col-xs-9 col-sm-9">        <p></p><h8>ICT voor elektriciteitsnetten</h8>
+</div>
+	<div class="col-xs-3 col-sm-3">
+	</div>
+</div>
+
+<div class="row-in-header-2">
+	<div class="text-justify col-xs-6 col-sm-6">&nbsp;
+	</div>
+	<div class="col-xs-6 hidden-xs col-sm-6">
+	  <h7>&nbsp;</h7>
+	</div>
+</div>
+
+</div>
+</div>
+
+<div class="container">
+
+<div class="row-intro">
+<h1><a href="https://www.phasetophase.nl/boek/index.html"> Netten voor distributie van elektriciteit</a></h1>
+</div></div></div>
+
+  <div class="row-ohm-center-white"> <a name="top"></a>
+    <div class="row-b">
+		  <a href="https://www.phasetophase.nl/boek/index.html"><button type="button" class="btn btn-default">I – De opbouw van een net</button></a>
+		  <a href="https://www.phasetophase.nl/boek/boek_2_7.html"><button type="button" class="btn  btn-default">II – Rekenen aan een net</button></a>
+		  <a href="https://www.phasetophase.nl/boek/boek_3_13.html"><button type="button" class="btn  btn-default active">III – Ontwerpen en bedrijfsvoeren</button></a>
+	</div>
+    <div class="row-b">
+   <a href="https://www.phasetophase.nl/boek/boek_3_13.html">
+      <button type="button" class="btn btn-default1">13 Ontwerpen van distributienetten</button>
+      </a> <a href="https://www.phasetophase.nl/boek/boek_3_14.html">
+      <button type="button" class="btn btn-default1">14 Bedrijfsvoering van de MS- en LS-netten</button>
+      </a> <a href="https://www.phasetophase.nl/boek/boek_3_15.html">
+      <button type="button" class="btn btn-default1 active">15 Intelligente netten</button>
+      </a> <a href="https://www.phasetophase.nl/boek/boek_3_16.html">
+      <button type="button" class="btn btn-default1">16 Geografische visualisatie van distributienetten</button>
+      </a>
+    <div class="row">
+      <div class="col-md-12 col-lg-10">
+        <h3>Intelligente netten </h3>
+        <p>Hoofdstuk 15 geeft een beschrijving van de ontwikkelingen rond de intelligente netten en de mogelijke gevolgen voor het ontwerp en de bedrijfsvoering van de netten. De ontwikkelingen gaan snel, waardoor de in dit hoofdstuk besproken zaken snel verouderen.</p>
+        <div class="row">
+          <div class="col-md-6">
+            <ul style="list-style-type:none">
+              <li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15"><strong>15&nbsp;&nbsp;Intelligente netten</strong></a></li>
+              <li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.1">15.1&nbsp;&nbsp;Wat is een intelligent net? </a></li>
+              <li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.2">15.2&nbsp;&nbsp;Waarom intelligente netten? </a></li>
+              <li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.3">15.3&nbsp;&nbsp;Hoe zit een intelligent net in elkaar? </a></li>
+              <ul style="list-style-type:none">
+                <li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.3.1">15.3.1&nbsp;&nbsp;Intelligent MS-distributienet met gecombineerde netstructuur </a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.3.2">15.3.2&nbsp;&nbsp;MS-distributienet met intelligent knooppunt in de open ring </a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.3.3">15.3.3&nbsp;&nbsp;Eerste stap naar een MS-distributienet met automatisering in de onderstations </a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.3.4">15.3.4&nbsp;&nbsp;LS-distributienet </a></li>
+              </ul>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul style="list-style-type:none">
+              <li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.4">15.4&nbsp;&nbsp;Technieken </a></li>
+              <ul style="list-style-type:none">
+                <li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.4.1">15.4.1&nbsp;&nbsp;Afstemmen van belasting op opwekking </a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.4.2">15.4.2&nbsp;&nbsp;Regelen in een laagspanningsnet </a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.4.3">15.4.3&nbsp;&nbsp;Opslagsystemen </a></li>
+              </ul>
+              <li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.5">15.5&nbsp;&nbsp;Toepassingen </a></li>
+              <ul style="list-style-type:none">
+                <li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.5.1">15.5.1&nbsp;&nbsp;Het Mobile Smart Grid concept </a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.5.2">15.5.2&nbsp;&nbsp;Opslag van elektrische energie </a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.5.3">15.5.3&nbsp;&nbsp;Intelligent distributiestation </a></li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+		  
+		
+		  
+        <hr>
+        <h1>15 Intelligente netten </h1>
+        <p> De wereldwijd ingezette energietransitie probeert de overgang te bewerkstelligen van een op fossiele brandstoffen gebaseerde energievoorziening naar een
+          volledig duurzame energievoorziening. Hierbij ontstaat een verschuiving van het gebruik van gas voor cv-ketels naar de inzet van elektrische warmtepompen
+          voor ruimteverwarming en van het gebruik van benzine voor auto's naar biogas of elektrisch rijden. Grootschalige introductie van elektrisch rijden kan
+          resulteren in een verdubbeling van het huidige huishoudelijke elektriciteitsverbruik. Toepassing van warmtepompen voor ruimteverwarming kan in bestaande
+          situaties eveneens tot een verdubbeling leiden. Om de energievoorziening bij dit soort ontwikkelingen te blijven waarborgen zouden de bestaande
+          distributienetten verzwaard moeten worden. Vanwege de omvang en de kosten hiervan is dit niet altijd een geaccepteerde oplossing. </p>
+        <p> Ontwikkelingen in het kader van de energietransitie leiden ook tot een toename van duurzame decentrale opwekking. Helaas laat duurzaam opgewekte
+          elektriciteit zich niet altijd sturen zodat gezocht moet worden naar mogelijkheden om de vraag af te stemmen op het beschikbare duurzame aanbod uit zon en
+          wind. Een natuurkundig probleem hierbij is dat aanbod en vraag van elektrische energie op elk moment in evenwicht moeten zijn, terwijl dit bij het
+          toepassen van duurzame bronnen zonder buffersystemen niet zondermeer mogelijk is. In de loop van tijd zal de behoefte ontstaan aan een meer aanbodvolgend
+          systeem in plaats van een puur vraagvolgend systeem. Het bestaande conventionele distributienet is een vraagvolgend systeem en is niet voor deze
+          ontwikkelingen ontworpen. Het is daarom belangrijk om inzicht te krijgen in de ontwikkelingen van en de maatschappelijke behoefte aan deze nieuwe
+          energiebehoeften, waardoor inzicht kan worden ontwikkeld in de bijbehorende energiestromen. Het gedrag van klanten die beschikken over een elektrische
+          auto, warmtepompsysteem, zonnepanelen en micro-WKK's is nog niet voldoende bekend. Het is de vraag of gerekend kan worden op spreiding van de energievraag
+          over de dag of dat rekening moet worden gehouden met nieuwe pieken in het verbruik, bijvoorbeeld bij ingang van het nachttarief. Toepassing van op afstand
+          uitleesbare elektriciteitsmeters kan daarbij helpen de ontwikkelingen te bewaken. </p>
+        <p> Om de continuïteit en de kwaliteit van de levering van elektrische energie in de toekomst te waarborgen en de ontwikkelingen van
+          elektriciteitsproductie met duurzame bronnen te faciliteren, wordt gezocht naar mogelijkheden om het distributienet 'intelligent' te maken. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_3_15.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_15.1"></div>
+        <br>
+        <h2> 15.1 Wat is een intelligent net? </h2>
+        <p> De term 'intelligent net' of 'smart grid' is een overkoepelend concept waar verschillende innovatieve ontwikkelingen rond energie-infrastructuur in passen
+          (Taskforce, 2010). Er zijn vele definities van een intelligent net. Het European Technology Platform hanteert als definitie (ETP, 2010): 'Een intelligent
+          net is een elektriciteitsnet dat op een intelligente wijze omgaat met het gedrag en de acties van alle aangeslotenen (producenten, afnemers en diegenen die
+          beide doen) teneinde te komen tot een economisch efficiënt en duurzaam elektriciteitsvoorzieningsysteem met weinig verliezen, hoge kwaliteit,
+          betrouwbaarheid en veiligheid.' In een intelligent net worden op basis van meetgegevens componenten en systemen aangestuurd en geregeld om zodoende de
+          kwaliteit van de elektriciteitsvoorziening te waarborgen. </p>
+        <p> Volgens hetzelfde European Technology Platform gebruikt een intelligent net innovatieve producten en diensten, in combinatie met intelligente meting,
+          besturing, communicatie en zelfherstellende technieken, om in de toekomst, vergeleken met de huidige situatie: </p>
+        <ul>
+          <li> het aansluiten en bedrijfsvoeren van opwekeenheden van elke grootte beter te ondersteunen </li>
+          <li> het mogelijk te maken dat aangeslotenen een rol spelen bij het optimaliseren van de bedrijfsvoering van het elektriciteitsnet </li>
+          <li> klanten van informatie te voorzien, zodanig dat zij meer keuze hebben ten aanzien van de levering van elektrische energie </li>
+          <li> de invloed van het totale elektriciteitsvoorzieningsysteem op het milieu significant te reduceren </li>
+          <li> de betrouwbaarheid van de levering te verbeteren. </li>
+        </ul>
+        <p> Bij het realiseren van een intelligent netwerk concentreert men zich op drie hoofddoelstellingen: verhogen van de betrouwbaarheid (herstel na een storing,
+          afschakelbaarheid van belastingen), handhaven van de betaalbaarheid (voor de netbeheerder en voor de aangeslotenen) en verhogen van de duurzaamheid, onder
+          meer door het actiever betrekken van klanten (duurzame bronnen en energietransitie). Bij het realiseren van deze doelstellingen worden verschillende wegen
+          bewandeld: het netgerichte, het marktgerichte en het integrale concept (Slootweg, 2010). </p>
+        <h6> Netgericht concept </h6>
+        <p> Met het netgerichte concept wil de netbeheerder de benutting en de betrouwbaarheid van distributienetten verhogen. Om dit te bereiken worden de netten
+          voorzien van op afstand uitleesbare meters en afstandbesturing. Ook kan decentrale opslag van elektrische energie (zie paragraaf 15.4.3) worden ingevoerd
+          om de pieken en dalen in de productie en afname van elektrisch vermogen op te vangen. In dit concept is geen betrokkenheid van producenten en verbruikers. </p>
+        <h6> Marktgericht concept </h6>
+        <p> Met het marktgerichte concept worden aangeslotenen intensiever betrokken bij de elektriciteitsmarkt. Dit wordt enerzijds bereikt door de aangeslotenen met
+          behulp van tarieven te prikkelen tot een bepaald gedrag voor afname of productie van elektriciteit en anderzijds door specifieke processen van de
+          aangeslotenen beïnvloedbaar te maken voor flexibilisering van de elektriciteitsvraag. In dit concept zijn commerciële energiemarktpartijen,
+          leveranciers en verbruikers betrokken en speelt de netbeheerder geen rol (zie <a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.4.1">paragraaf 15.4.1</a>). Het marktgerichte concept leidt niet tot een intelligent
+          elektriciteitsnet. </p>
+        <h6> Integraal concept </h6>
+        <p> Door het netgerichte en het marktgerichte concept te combineren, ontstaat het integrale concept, waarbij de tariefstructuren gebaseerd zijn op de
+          energiemarkt en op de lokaal beschikbare netcapaciteit. In dit concept kunnen bepaalde apparaten (bijvoorbeeld voor wassen, koelen en verwarmen) op afstand
+          worden in- en uitgeschakeld, rekening houdend met de prijs van elektriciteit op de markt en met de lokale elektriciteitsproductie en netcapaciteit. </p>
+        <p> Er zijn veel initiatieven voor het automatisch afstemmen van de belasting op het aanbod. Deze systemen moeten een balans vinden tussen de belangen van
+          afnemer, producent en netbeheerder zonder dat het elektriciteitsnet overbelast raakt. Doelstelling is dat een consument een zo laag mogelijke prijs betaalt
+          en dat zoveel mogelijk gebruik wordt gemaakt van duurzaam opgewekte energie. Met intelligente systemen, zoals software-agenten, is het mogelijk op basis
+          van actuele meetgegevens (vraag, aanbod, prijs, netcapaciteit) en andere randvoorwaarden snel en rationeel keuzes te maken (Warmer, 2010). </p>
+        <p> Essentieel voor een intelligent net is dat het tweerichtingsverkeer van het elektrische vermogen in het net toestaat. Door de toevoeging van (intelligente)
+          meetsystemen in het distributienet kunnen de energiestromen beter worden bewaakt, bestuurd en beheerd. Door het toepassen van nieuwe ICT-technologieën
+          en het verder ontwikkelen van de gewenste automatiseringssystemen ontstaat een intelligent distributienet waarbij de 'intelligentie' de gewenste
+          betrouwbaarheid, betaalbaarheid en de verduurzaming van de energievoorziening ondersteunt. </p>
+        <p> Het sleutelwoord bij de ontwikkeling van intelligente netten is flexibiliteit. Een intelligent net signaleert knelpunten. De intelligente systemen in het
+          net spelen daar met zelfstandig ingrijpen op in door automatisch schakelingen te veranderen en belastingen te beïnvloeden. Extra flexibiliteit wordt
+          gerealiseerd door toepassing van nieuwe technologie en concepten, zoals opslag van elektrische energie. </p>
+        <p> Belangrijk is dat het intelligente net lokale productie en opslag van elektrische energie mogelijk maakt. Het toekomstige intelligente net moet zoveel
+          mogelijk zelf herstellend zijn. Storingen en foutplaatsen in het netwerk kunnen met de modernste digitale middelen opgespoord worden. Ook moet de 'kleine'
+          aangeslotene de kans krijgen te participeren in de markt. Het intelligente net moet met telecommunicatie en hoogwaardige IT worden uitgerust, zodat ook
+          consumenten thuis hun elektriciteitszaken kunnen regelen en bezitters van een elektrische auto 's avonds en 's nachts tegen voordelig tarief hun accu's
+          kunnen opladen. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_3_15.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_15.2"></div>
+        <br>
+        <h2> 15.2 Waarom intelligente netten? </h2>
+        <p> De overgang naar duurzame energie heeft tot gevolg dat enerzijds meer elektriciteit op MS- en LS-niveau decentraal wordt opgewekt, zoals met zonnepanelen,
+          micro-WKK's en windmolens, en anderzijds, door het geleidelijk afstappen van traditionele energiebronnen, meer elektriciteit wordt gebruikt, zoals voor
+          ruimteverwarming en elektrisch rijden. Deze ontwikkelingen leiden ertoe dat de elektriciteit niet meer alleen traditioneel in een bij het ontwerp bekende
+          richting naar de aangeslotene loopt, maar bi-directioneel wordt. Ten gevolge van toename van de decentrale opwekking en van het elektriciteitsverbruik
+          zullen de variaties van de vermogensstromen in het distributienet fors toenemen. Dit heeft voor het bestaande distributienet onder andere tot gevolg: </p>
+        <ul>
+          <li> de toename van het elektriciteitsverbruik kan leiden tot overbelasting in bestaande netdelen </li>
+          <li> het omkeren van de richting van het energietransport heeft gevolgen voor de werking van de beveiliging; de bestaande beveiligingsconcepten zijn hier
+            nog niet op aangepast </li>
+          <li> de fluctuaties in het vermogenstransport leiden tot verslechtering van de kwaliteit van de spanning. </li>
+        </ul>
+        <p> Om de geschetste problemen te kunnen oplossen, wordt naarstig gezocht naar mogelijkheden om de bestaande distributienetten bestendig te maken voor de
+          geschetste toekomstige ontwikkelingen. Er moeten hierbij keuzes gemaakt worden. Enerzijds kunnen de netten robuuster gemaakt worden en kan de beveiliging
+          uitgevoerd worden met technieken zoals die in transportnetten worden gebruikt. Anderzijds wordt gekeken of introductie van metingen, besturingen en
+          automatisering in combinatie met inzet van vermogenselektronische apparatuur (voor het regelen en bufferen van energie) een oplossing leveren, waarmee
+          tevens meer flexibiliteit verkregen wordt. Deze technieken zijn ingrediënten voor een 'intelligent net'. Het toekomstbestendige distributienet moet
+          voldoende capaciteit hebben en moet tegelijk stabiel en betrouwbaar zijn. Het net moet hiervoor door inzet van 'intelligente' systemen geschikt worden
+          gemaakt. De systemen hiervoor moeten nog ontwikkeld worden en deze moeten leiden tot een efficiënte, duurzame en betrouwbare elektriciteitsvoorziening
+          tegen acceptabele kosten. </p>
+        <p> Nationaal en internationaal is veel aandacht voor de intelligente netten. Organisaties als het European Technology Platform en Cigré beschrijven in
+          diverse publicaties de ontwikkelingen voor nu en de nabije toekomst. Volgens het European Technology Platform zijn de belangrijkste uitdagingen voor
+          intelligente netten (ETP, 2010): </p>
+        <ul>
+          <li> versterken van het elektriciteitsnet: verzekeren dat er voldoende capaciteit is om met name duurzame energiebronnen aan te sluiten </li>
+          <li> energieopwekking op zee mogelijk maken: ontwikkelen van efficiënte verbindingen naar windparken op zee en andere opwekeenheden; de invloed op
+            MS-netten is overigens beperkt, want grote windparken zullen meer op HS-niveau worden ingepast </li>
+          <li> ontwikkeling van gedecentraliseerde infrastructuur: mogelijk maken dat kleinschalige elektriciteitssystemen goed integreren met het totale
+            elektriciteitsvoorzieningsysteem </li>
+          <li> communicatie: ontwikkelen van een communicatie-infrastructuur die het mogelijk maakt voor alle aangeslotenen om actief aan de elektriciteitsmarkt
+            deel te nemen; informatie-uitwisseling tussen partijen behoeft bescherming en regelgeving vanwege de privacy </li>
+          <li> actieve rol van aangeslotenen: mogelijk maken dat alle aangeslotenen met of zonder eigen opwekking een actieve rol spelen in de
+            elektriciteitvoorziening </li>
+          <li> integreren van wisselende opwekking: vinden van de beste oplossingen om sterk wisselende opwekking, zoals huishoudelijke micro-WKK systemen, in te
+            passen; hier is de grootschaligheid waarmee de kleinschalige systemen op het LS-net worden aangesloten van belang </li>
+          <li> toevoegen van intelligente systemen bij opwekking, belasting en met name in het netwerk </li>
+          <li> gebruik maken van de voordelen van decentrale opwekking en opslag van energie </li>
+          <li> voorbereiden van alle elektrische voertuigen: met hun inherent mobiele en decentrale karakter en hun grote vermogensbehoefte stellen zij hoge eisen
+            aan de flexibiliteit van het distributienet. </li>
+        </ul>
+        <p> De hierboven genoemde uitdagingen zijn voor het grootste deel gedreven door de ontwikkelingen rond de verduurzaming van de energievoorziening. Uit de
+          uitdagingen zijn door het European Technology Platform zes prioriteiten gedefinieerd: </p>
+        <ul>
+          <li> optimaliseren van de bedrijfsvoering en de benutting van het elektriciteitsnet </li>
+          <li> optimaliseren van de infrastructuur van het elektriciteitsnet </li>
+          <li> op grote schaal integreren van decentrale opwekking met sterk wisselende vermogens </li>
+          <li> definitie en implementatie van standaards voor informatie- en communicatietechniek </li>
+          <li> ondersteunen van de transitie naar actieve distributienetwerken </li>
+          <li> ondersteunen van de nieuwe marktwerking en energie-efficiëntie. </li>
+        </ul>
+        <p> Van deze prioriteiten hebben de meeste betrekking op het elektriciteitsnet en een op de marktwerking. De meeste uitdagingen komen dus terecht bij de
+          netbeheerder, voor wie het optimaliseren van de bedrijfsvoering en de infrastructuur veel denkwerk en creativiteit vereist. Het integreren van bronnen van
+          sterk wisselende vermogens stelt eisen aan de flexibiliteit van het net. In plaats van de traditionele methodes zullen de planner en de ontwerper zich
+          moeten bedienen van scenario's en risicobeheersing om met de toegenomen beweeglijkheid en onzekerheid van de opwekking van elektriciteit om te gaan. De
+          toepassing van ICT is een voorwaarde voor de werking van intelligente netten, waar het enerzijds gaat om gegevensuitwisseling voor de meting en besturing
+          van het flexibele netwerk en anderzijds om de gegevensuitwisseling tussen de diverse marktpartijen. De ontwikkeling van actieve distributienetwerken
+          markeert de overgang van de huidige netten, die afhankelijk zijn van de geplande acties van de bedrijfsvoering, naar een nieuw type netten, die zich
+          automatisch snel kunnen aanpassen aan sterk wisselende situaties. Volgens Cigré liggen de belangrijkste ontwikkelingen van actieve distributienetten
+          op het gebied van: beveiliging, communicatie, integratie in bestaande systemen en flexibele netwerktopologie (Cigré, 2009-2). Voor wat betreft de
+          toepassingen ziet men mogelijkheden voor: bewaking van de capaciteit van het elektriciteitsnet; verzamelen en beheren van gegevens; spanningshuishouding;
+          bedrijfsvoering van belastingen en decentrale opwekking; snelle wijziging van de configuratie van het netwerk. Als voordelen worden genoemd: verbeterde
+          betrouwbaarheid; toename van de benutting van de bedrijfsmiddelen; verbeterde mogelijkheden voor het aansluiten van decentrale opwekking; bieden van
+          alternatieven voor het verzwaren van de netwerken; verbeterde stabiliteit van het netwerk. </p>
+        <p> Op nationaal niveau buigt de Taskforce Intelligente Netten zich over de mogelijkheden en de ontwikkelingen van intelligente netten. Tabel 15.1 geeft een
+          overzicht van de mogelijkheden die een traditioneel elektriciteitsnet en een intelligent elektriciteitsnet bieden (Taskforce, 2010). </p>
+        <h5> Tabel 15.1 Mogelijkheden in een traditioneel en een intelligent elektriciteitsnet </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="20%" valign="top"><p> <strong>Aspect</strong> </p></td>
+              <td width="40%" valign="top"><p> <strong>Traditioneel netwerk</strong> </p></td>
+              <td width="40%" valign="top"><p> <strong>Intelligent net</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="58" valign="top"><p> Gebruikers </p></td>
+              <td width="112" valign="top"><p> De gebruikers zijn niet geïnformeerd en participeren niet </p></td>
+              <td width="170" valign="top"><p> De gebruikers zijn geïnformeerd, betrokken en actief; besparing door 'slimheid' (met privacy!) </p></td>
+            </tr>
+            <tr>
+              <td width="58" valign="top"><p> Productie </p></td>
+              <td width="112" valign="top"><p> Vooral centraal opgestelde productiemiddelen </p></td>
+              <td width="170" valign="top"><p> Allerlei decentrale productiemiddelen; verbruik kan gekoppeld worden aan soort productiemiddel </p></td>
+            </tr>
+            <tr>
+              <td width="58" valign="top"><p> Duurzame energie </p></td>
+              <td width="112" valign="top"><p> Inpassing (decentrale) duurzame energie beperkt mogelijk en soms moeizaam </p></td>
+              <td width="170" valign="top"><p> Gestandaardiseerde plug-in voor duurzame productie, gestuurd door elektronica en IT </p></td>
+            </tr>
+            <tr>
+              <td width="58" valign="top"><p> Emissies </p></td>
+              <td width="112" valign="top"><p> Emissies en verliezen (warmte) ingebouwd in het systeem en weinig inzichtelijk </p></td>
+              <td width="170" valign="top"><p> De gebruikers zijn geïnformeerd en optimaliseren op de 'kleur' van hun energieverbruik (wel/niet duurzaam) </p></td>
+            </tr>
+            <tr>
+              <td width="58" valign="top"><p> Opslag </p></td>
+              <td width="112" valign="top"><p> Nauwelijks of geen opslagmogelijkheden </p></td>
+              <td width="170" valign="top"><p> Beschikbaarheid van opslagmiddelen die in de markt participeren </p></td>
+            </tr>
+            <tr>
+              <td width="58" valign="top"><p> Marktwerking </p></td>
+              <td width="112" valign="top"><p> Vooral producenten en industriële grootverbruikers actief in de markt </p></td>
+              <td width="170" valign="top"><p> Grote (prijsafhankelijke) vraagrespons op basis van nieuwe diensten en innovatieve applicaties </p></td>
+            </tr>
+            <tr>
+              <td width="58" valign="top"><p> Kwaliteit </p></td>
+              <td width="112" valign="top"><p> Focus op leveringsonderbrekingen </p></td>
+              <td width="170" valign="top"><p> Dynamische interactie tussen prijs en kwaliteit met snelle respons op kwaliteitsissues </p></td>
+            </tr>
+            <tr>
+              <td width="58" valign="top"><p> Systeembeheer </p></td>
+              <td width="112" valign="top"><p> Beperkte integratie van asset management, bedrijfsvoering en operationele data </p></td>
+              <td width="170" valign="top"><p> Real-time systeeminformatie beschikbaar voor bedrijfsvoering, waarbij preventie centraal staat </p></td>
+            </tr>
+            <tr>
+              <td width="58" valign="top"><p> Verstoringen </p></td>
+              <td width="112" valign="top"><p> Systeembeveiliging richt zich op het voorkomen van schade bij componenten </p></td>
+              <td width="170" valign="top"><p> Systeembeveiliging reageert automatisch zodanig dat de levering gewaarborgd blijft (self-healing) </p></td>
+            </tr>
+            <tr>
+              <td width="58" valign="top"><p> Rampen </p></td>
+              <td width="112" valign="top"><p> Systeem gevoelig voor (natuur) rampen en terroristische aanvallen </p></td>
+              <td width="170" valign="top"><p> Systeem is relatief ongevoelig voor rampen ('dispersed' en met efficiënte herstelmechanismen) maar mogelijk gevoelig voor 'cyber attacks' </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <a href="https://www.phasetophase.nl/boek/boek_3_15.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_15.3"></div>
+        <br>
+        <h2> 15.3 Hoe zit een intelligent net in elkaar? </h2>
+        <p> De elektrische midden- en laagspanningsdistributienetten worden de komende jaren in hoog tempo geïnstrumenteerd en gedigitaliseerd. Er ontstaan drie
+          functionele lagen. De traditionele distributienetten vormen een eerste fysieke laag. Deze laag wordt de komende jaren uitgebreid met een tweede laag die
+          bestaat uit sensoren, data verbindingen, verresturing en -regelingen. Er zijn dan meer mogelijkheden tot informatie-uitwisseling waardoor energiestromen
+          beter kunnen worden gecontroleerd, gestuurd en beheerd. Op deze tweede laag wordt langzamerhand een derde laag aangebracht met specifieke 'intelligente'
+          toepassingen voor bijvoorbeeld foutplaatslokalisering, storingsanalyse, decentrale balanshandhaving met decentrale opwek en actief participerende
+          consumenten. </p>
+        <p> De problematiek voor het aanbrengen van de tweede laag in de MS-netten verschilt met die in de LS-netten. Dit wordt enerzijds veroorzaakt door de omvang
+          van het vermogen en de bijbehorende aantallen aangeslotenen. Anderzijds wordt dit veroorzaakt door de verschillen in netstructuur, elektrische
+          eigenschappen en opweksystemen. </p>
+        <ul>
+          <li> Zo zijn er in de MS-netten schakelmogelijkheden door de aanleg in open bedreven ringen, terwijl de LS-netten meestal stervormig aangelegd zijn,
+            waardoor zij de voordelen ervan missen. </li>
+          <li> De elektrische eigenschappen van de kabelverbindingen verschillen op beide spanningsniveaus, waardoor de invloed van vermogenstransport op de
+            spanningshuishouding in een verbinding sterk verschilt. </li>
+          <li> De voedingstransformatoren van de MS-netten zijn voorzien van een spanningsregeling, terwijl de huidige nettransformatoren die de LS-netten voeden
+            op een vaste overzetverhouding zijn ingesteld. </li>
+          <li> Bij de opweksystemen in de MS-netten is sprake van een klein aantal grote opwekeenheden, zoals WKK-systemen (1 tot 20 MW per aansluiting) en
+            windturbines (1 tot 5 MW per aansluiting), terwijl in de LS-netten sprake is van grote aantallen kleine opwekeenheden, zoals micro-WKK (1 tot 5 kW per
+            aansluiting) en PV-systemen (0,5 tot 2 kW per aansluiting). </li>
+          <li> Gezien hun kosten en hun bijdrage in de vermogenshuishouding zullen energie-opslagsystemen voornamelijk op het LS-niveau worden geïntroduceerd. </li>
+          <li> Grote hoeveelheden decentrale opwekking kunnen met name in de MS-netten problemen veroorzaken met de beveiligingen en de spanningshuishouding. In de
+            LS-netten geldt dat ook voor de beveiliging maar geldt dat minder voor de spanningshuishouding. In de LS-netten wordt de spanningshuishouding negatief
+            beïnvloed door de toegenomen belasting als gevolg van de toenemende energietransitie van aangeslotenen. Hierdoor ontstaan in de LS-netten problemen
+            ten aanzien van de belasting van netwerk en kabels. </li>
+          <li> De communicatie-infrastructuur in de LS-netten zal zich concentreren op de informatie-uitwisseling met aangeslotenen via de 'intelligente meters' en
+            besturing van beïnvloedbare belasting, terwijl de communicatie-infrastructuur in de MS-netten zich hoofdzakelijk zal richten op de flexibiliteit van
+            het net. </li>
+        </ul>
+        <p> Tabel 15.2 geeft een samenvatting van de genoemde verschillen. Vanwege al deze verschillen wordt de toepassing van intelligente netten in de
+          elektriciteitsdistributie op MS-niveau anders benaderd dan op LS-niveau. </p>
+        <h5> Tabel 15.2 	Verschillende aspecten van MS- en LS-netten </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="33%" valign="top"><p> <strong>Item</strong> </p></td>
+              <td width="33%" valign="top"><p> <strong>MS-net</strong> </p></td>
+              <td width="33%" valign="top"><p> <strong>LS-net</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="97" valign="top"><p> Netstructuur: schakelmogelijkheden </p></td>
+              <td width="118" valign="top"><p> ja </p></td>
+              <td width="125" valign="top"><p> nee </p></td>
+            </tr>
+            <tr>
+              <td width="97" valign="top"><p> Elektrische eigenschappen </p></td>
+              <td width="118" valign="top"><p> R/X-verhouding ongeveer 1 </p></td>
+              <td width="125" valign="top"><p> R/X-verhouding groot </p></td>
+            </tr>
+            <tr>
+              <td width="97" valign="top"><p> Transformatoren spanningsregeling </p></td>
+              <td width="118" valign="top"><p> ja </p></td>
+              <td width="125" valign="top"><p> nee </p></td>
+            </tr>
+            <tr>
+              <td width="97" valign="top"><p> Opwekeenheden </p></td>
+              <td width="118" valign="top"><p> WKK, windenergie </p></td>
+              <td width="125" valign="top"><p> Micro-WKK, PV-systemen </p></td>
+            </tr>
+            <tr>
+              <td width="97" valign="top"><p> Opslagsystemen </p></td>
+              <td width="118" valign="top"><p> Nog beperkt mogelijk </p></td>
+              <td width="125" valign="top"><p> Goed mogelijk </p></td>
+            </tr>
+            <tr>
+              <td width="97" valign="top"><p> Problematiek DCO </p></td>
+              <td width="118" valign="top"><p> Beveiliging, spanningshuishouding </p></td>
+              <td width="125" valign="top"><p> Beveiliging, beperkte mate spanningshuishouding </p></td>
+            </tr>
+            <tr>
+              <td width="97" valign="top"><p> Problematiek energietransitie </p></td>
+              <td width="118" valign="top"><p> Fluctuerende netbelasting </p></td>
+              <td width="125" valign="top"><p> Belasting netwerk en kabels, spanningshuishouding </p></td>
+            </tr>
+            <tr>
+              <td width="97" valign="top"><p> Communicatie-infrastructuur </p></td>
+              <td width="118" valign="top"><p> Flexibiliteit: meten en besturen netwerk </p></td>
+              <td width="125" valign="top"><p> Markt en netbelasting: meten en besturen belastingen </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> In alle netten is het met de bestaande middelen en netstructuren niet zonder meer mogelijk de capaciteit structureel te vergroten. Door het gebrek aan
+          metingen is de beheersing van de capaciteit gering. Mogelijkheden van afstandsbediening voor vergroting van de flexibiliteit en tweerichtingsverkeer voor
+          het inpassen van grote hoeveelheden decentrale opwekking zijn beperkt. Ook zijn substantiële verlaging van de netverliezen en verhoging van de
+          betrouwbaarheid niet meer haalbaar. Hierom wordt voor de distributienetten naar nieuwe concepten gezocht. Een aantal concepten voor toepassing in de MS- en
+          LS-netten wordt in de volgende paragrafen kort toegelicht. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_3_15.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_15.3.1"></div>
+        <br>
+        <h3> 15.3.1 Intelligent MS-distributienet met gecombineerde netstructuur </h3>
+        <p> De eisen ten aanzien van duurzaamheid, flexibiliteit, betrouwbaarheid, benutting van de bedrijfsmiddelen en klantgerichtheid leiden tot een aantal
+          maatregelen. Ten eerste is het onvermijdelijk dat de capaciteit van het distributienet vergroot moet worden en dat de vermogenstromen gemonitord moeten
+          worden. Ten behoeve van de flexibiliteit moeten de voor de netconfiguratie essentiële vermogenschakelaars op afstand bedienbaar zijn. De beveiliging
+          moet zodanig zijn ingericht dat tweerichtingsverkeer mogelijk is voor het elektrische vermogen. Als het door windparken en WKK-systemen opgewekte vermogen
+          te groot wordt, zal dit op een hoger spanningsniveau moet worden ingepast. De zesde prioriteit van het European Technology Platform, verbetering van de
+          energie-efficiëntie, kan worden bereikt door de netverliezen te reduceren. Dit kan worden bewerkstelligd door in de MS-netten een hoger
+          spanningsniveau te kiezen. </p>
+        <p> In <a href="https://www.phasetophase.nl/boek/boek_1_2.html#_2.4.3">paragraaf 2.4.3</a> is reeds een gecombineerde netstructuur besproken, waarmee aan bovenstaande eisen wordt tegemoet gekomen. In deze structuur wordt het 10
+          kV distributienet gevoed vanuit een 20 kV transportnet, dat is uitgevoerd als een gesloten bedreven ring met meerdere verdeelstations. Het voordeel van het
+          20 kV spanningsniveau is dat de techniek en de prijs van de commercieel verkrijgbare apparatuur niet veel verschilt van die op 10 kV niveau, terwijl het
+          dubbele vermogen getransporteerd kan worden. In een gecombineerde netstructuur worden de verdeelstations in de 20 kV transportring als intelligente
+          distributieruimte (IDR) ingericht. De IDR wordt op afstand gemonitord, beveiligd en bestuurd. In de verdeelstations kan, afhankelijk van de situatie bij de
+          aangeslotenen, het vermogen in twee richtingen lopen. Het verdeelstation kan de 20 kV transportring voeden en voedt de 10 kV strengen waar zich de
+          netstations bevinden. Ook deze netstations kunnen als intelligent netstation worden ingericht, zodat zij op afstand worden gemonitord, beveiligd en
+          bestuurd. </p>
+        <p> Figuur 15.1 illustreert drie mogelijkheden om de gecombineerde netstructuur toe te passen. Het linker voorbeeld laat zien hoe een bestaand net wordt
+          omgebouwd door de 10 kV strengen te voeden vanuit een 20/10 kV IDR. De 20 kV ring wordt bedreven als een gesloten transportring, waarbij elk 20 kV segment
+          beveiligd wordt vanuit de IDR's. Bij een kortsluiting in een van de 20 kV segmenten zal dit direct vanuit de twee naburige IDR's worden afgeschakeld,
+          waarna de levering als geopende transportring wordt gecontinueerd. Bij een kortsluiting in een van de 10 kV-strengen zal deze direct in de IDR worden
+          afgeschakeld, waarna de levering op de traditionele manier via storingzoeken en herstelacties wordt gecontinueerd. </p>
+        <p> Het middelste voorbeeld laat zien dat deze opzet heel goed geschikt is voor een geleidelijke overgang van weinig naar veel intelligentie. In dit voorbeeld
+          komen 10 kV strengen zonder intelligentie voor, maar ook 10 kV strengen met intelligente 10 kV netstations, die op afstand gemonitord, beveiligd en
+          bestuurd worden. Bij een kortsluiting in een 10 kV segment zullen beide aangrenzende intelligente netstations direct afschakelen, waarna de levering
+          ongestoord wordt gecontinueerd. In deze opzet kan er ook voor worden gekozen om bij nieuwbouw te kiezen voor het 20 kV spanningsniveau in de netstations.
+          Deze worden dan ook als intelligent netstation ingericht. </p>
+        <p> <img src="./intelligente netten_files/15.1.png" width="712" height="400" alt="pics_3.15" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 15.1 Gecombineerde netten met 20 kV transportring en 10 kV distributiestrengen </h5>
+        <p> Door het concept met de gecombineerde netstructuur worden de 10 kV strengen gemiddeld korter, omdat de grootste afstand door de 20 kV transportring wordt
+          overbrugd. Het concept zorgt voor meer voedingspunten voor de 10 kV strengen, zodat per streng het aantal netstations kleiner is dan bij de traditionele
+          opzet. Een gevolg hiervan is dat het aantal aangeslotenen per 10 kV streng kleiner is en daarmee de netbelasting in de streng. Hierdoor en door in de
+          transportring een hoger spanningsniveau te kiezen is het netverlies in dit concept aanzienlijk kleiner, waarmee aan de eis ten aanzien van de duurzaamheid
+          wordt tegemoetgekomen. </p>
+        <p> De genoemde voordelen maken het mogelijk dat, in vergelijking met het traditionele netontwerp, nu grotere hoeveelheden decentrale opwekking kunnen worden
+          ingepast in het distributienet, zowel op 10 kV als op 20 kV niveau. De opzet van het beveiligingsconcept is zodanig dat dit geen belemmering vormt voor het
+          tweerichtingsverkeer van het elektrische vermogen. Ook de spanningshuishouding verbetert door de grotere transportcapaciteit van de transportring en
+          doordat de strengen korter zijn. Door het beveiligingsconcept en doordat een 10 kV-streng minder aangeslotenen bedient, wordt het aantal storingsminuten
+          aanzienlijk beperkt. </p>
+        <p> Figuur 15.2 geeft een voorbeeld van een 20/10 kV IDR die 10 kV strengen met conventionele netstations voedt. De inkomende en uitgaande 10 en 20 kV kabels
+          en de 20/10 kV transformator zijn beveiligd met op afstand bestuurbare vermogenschakelaars. Alle velden zijn voorzien van op afstand uitleesbare sensoren. </p>
+        <p> <img src="./intelligente netten_files/15.2.png" width="712" height="400" alt="pics_3.15" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 15.2
+          Voorbeeld van een 20/10 kV IDR en 10 kV netstations </h5>
+        <p> De getoonde gecombineerde structuur kan ook goed worden toegepast in 10 kV netten zonder te kiezen voor omzetting van het vermogenstransport naar het 20 kV
+          niveau. Hierbij worden extra investeringen voor de transformatoren en het 20 kV railsysteem in de IDR's uitgespaard. De voordelen van de toegenomen
+          transportcapaciteit en de afgenomen verliezen vallen dan weg. Ook is dan de hoeveelheid in te passen decentrale opwekking minder groot. Wel is voor
+          bi-directioneel vermogenstransport aanvullende richtingsgevoelige beveiliging nodig. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_3_15.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_15.3.2"></div>
+        <br>
+        <h3> 15.3.2 MS-distributienet met intelligent knooppunt in de open ring </h3>
+        <p> De bestaande MS-distributienetten zijn meestal met een ringstructuur uitgevoerd, maar worden radiaal bedreven. Het normale spanningsprofiel van de
+          MS-strengen is een afnemende spanning met toenemende afstand van het onderstation. De maximale lengte en de maximale belasting van de strengen wordt onder
+          andere begrensd door de maximale spanningsdaling (zie <a href="https://www.phasetophase.nl/boek/boek_3_13.html#_13.3">paragraaf 13.3</a>). Figuur 15.3 geeft een voorbeeld van twee MS-strengen, die beide worden gevoed vanuit
+          een gezamenlijk onderstation. In de onderste van de twee afgebeelde strengen is een decentrale opwekker met een nominaal vermogen van 4 MVA aanwezig. De
+          belasting van de netstations is 300 kW bij een cos(φ) van 0,9. De decentrale opwekker levert 3,2 MW met een cos(φ) van 0,85. </p>
+        <p> <img src="./intelligente netten_files/15.3.png" width="712" height="400" alt="pics_3.15" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 15.3 MS-strengen met en zonder opwekking </h5>
+        <p> Door het opgewekte vermogen in de onderste van de twee afgebeelde strengen is in de kabelsecties tussen het onderstation en de MS-ruimte, waar de generator
+          is aangesloten, de richting van het vermogen naar het onderstation toe. Als gevolg stijgt de spanning in die streng, om in de netstations die verder weg
+          liggen weer af te nemen. Figuur 15.4 laat dit zien voor de 'Open ring met opwekking', waar de spanning in dit voorbeeld oploopt tot 10,7 kV bij een
+          spanning op de MS-rail in het onderstation van 10,54 kV. De spanning van de streng zonder opwekking daalt tot 10,35 kV. </p>
+        <p> Indien de netopening gesloten zou worden, verbetert het spanningsprofiel, omdat het gevraagde vermogen in de bovenste streng nu gedeeltelijk geleverd wordt
+          door de decentrale opwekker in de onderste streng. Figuur 15.4 laat dit zien voor de 'Gesloten ring wel/geen opwekking', waar de spanning maximaal 10,64 kV
+          en minimaal 10,47 kV bedraagt. Het sluiten van de netopening heeft een positieve uitwerking voor de spanningskwaliteit, maar heeft als nadeel dat het
+          kortsluitvermogen in het MS-net toeneemt. Om een selectieve beveiliging voor de configuratie met de gesloten ring te realiseren, moet de beveiliging worden
+          uitgebreid, waardoor deze complexer wordt. </p>
+        <p> <img src="./intelligente netten_files/15.4.png" width="708" height="354" alt="pics_3.15" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 15.4           Spanningsprofiel in MS-strengen met en zonder opwekking </h5>
+        <p> In de literatuur is voorgesteld op de plaats van de netopening van een open bedreven MS-ring een 'intelligent knooppunt' te plaatsen (Provoost, 2005-2).
+          Het idee achter dit concept is de vermogens over twee strengen te verdelen met behulp van een vermogenselektronische power flow controller (PFC). Figuur
+          15.5 geeft een voorbeeld van een toepassing van het intelligente knooppunt. De stromen van de beide aangesloten strengen A en B worden gemeten en door de
+          lokale autonome besturing verwerkt, evenals de spanningen aan beide zijden van de netopening, op de interne knooppunten A en B. Ook de stroom die ontstaat
+          door de werking van de PFC wordt verwerkt. Met deze meetwaarden bestuurt het lokale autonome proces de PFC. </p>
+        <p> Door toepassing van de PFC zal de spanningskwaliteit verbeteren op vergelijkbare wijze als door het sluiten van de netopening zal gebeuren. De PFC laat
+          echter geen kortsluitstromen door, zodat het intelligente knooppunt geen invloed heeft op het kortsluitvermogen. </p>
+        <p> Het intelligente knooppunt komt tegemoet aan de doelstelling om meer decentrale opwekking in het distributienet mogelijk te maken in die gevallen dat de
+          vermogensverdeling over de diverse strengen ongelijk is. Ook bevordert het intelligente knooppunt de betrouwbaarheid, doordat tijdens het herstelproces na
+          een kortsluiting de netopening direct op afstand gesloten kan worden nadat de gestoorde kabelsectie geïsoleerd is. Het probleem dat een grote
+          hoeveelheid decentrale opwekking de beveiliging verblindt voor overbelasting wordt door het intelligente knooppunt niet weggenomen, zodat de beveiliging in
+          dit concept toch aangepast moet worden. </p>
+        <p> <img src="./intelligente netten_files/15.5.png" width="712" height="400" alt="pics_3.15" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 15.5   Toepassing van een intelligent knooppunt bij een netopening </h5>
+        <a href="https://www.phasetophase.nl/boek/boek_3_15.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_15.3.3"></div>
+        <br>
+        <h3> 15.3.3 Eerste stap naar een MS-distributienet met automatisering in de onderstations </h3>
+        <p> De intelligente systemen die ondermeer voor het realiseren van intelligente knooppunten nodig zijn, verkeren in 2011 nog in de conceptuele fase. De eerste
+          stappen naar intelligente systemen worden langzaam gemaakt. Uitgaande van het huidige traditionele MS-distributienet wordt gewerkt aan oplossingen, waarbij
+          onderstations, schakelstations en regelstations worden voorzien van op afstand uitleesbare sensoren en bedienbare schakelaars. Dit is bijvoorbeeld mogelijk
+          met een systeem als de SASensor, zoals beschreven in <a href="https://www.phasetophase.nl/boek/boek_3_14.html#_14.2.7">paragraaf 14.2.7</a> (Riet, 2005). Figuur 15.6 laat zien hoe in een proefproject de SASensor-techniek in
+          een bestaande situatie naast de conventionele beveiliging wordt toegepast. Het systeem meet continu de spanning en stroom. Hierdoor kunnen de
+          beveiligingsfuncties centraal door dit systeem worden uitgevoerd. De metingen staan ter beschikking aan bedrijfsvoering, zodat een betere bewaking mogelijk
+          is. Door continu de kwaliteit van de spanning te bewaken kan tijdig worden ingespeeld op mogelijke problemen. In geval van een storing heeft
+          bedrijfsvoering direct de beschikking over alle meetgegevens en kan met behulp van een foutplaatslokalisatiesysteem de fout snel opgespoord worden. </p>
+        <p> <img src="./intelligente netten_files/15.6.png" width="712" height="400" alt="pics_3.15" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 15.6
+          Onderstation 10 kV installatie met conventionele beveiliging en SASensortechniek </h5>
+        <p> De functies van een dergelijk systeem zijn, samengevat: </p>
+        <ul>
+          <li> nauwkeurige meting van stroom, spanning en vermogen </li>
+          <li> standmelding van vermogenschakelaars, lastscheiders, aarders, kortsluitverklikkers </li>
+          <li> signalering van beveiligingen en smeltveiligheden </li>
+          <li> afstandbesturing schakelaars en lastscheiders </li>
+          <li> alarmafhandeling </li>
+          <li> meting van de spanningskwaliteit </li>
+          <li> foutplaatslokalisatie </li>
+          <li> maximaal stroom-tijdbeveiliging </li>
+          <li> aardfoutbeveiliging. </li>
+        </ul>
+        <p> Naast de onderstations kunnen ook strategische netstations worden uitgerust met afstandmeting, afstandsignalering en op afstand bestuurbare
+          vermogenschakelaars. Hiermee is het al mogelijk een aanzienlijke reductie van de hersteltijd in geval van een kortsluiting te verkrijgen. Door toevoeging
+          van automatisering kan hiermee een zelfherstellend distributienet worden gerealiseerd. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_3_15.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_15.3.4"></div>
+        <br>
+        <h3> 15.3.4 LS-distributienet </h3>
+        <p> De LS-distributienetten hebben de laagste automatiseringsgraad en de minste omschakelmogelijkheden. De nettransformatoren zijn voorzien van een vaste
+          aftakking, zodat de spanning op dit niveau niet geregeld wordt, maar volledig afhangt van de spanningsregeling van de voedingstransformator in het
+          onderstation. Als gevolg van de energietransitie zal de belasting sterk kunnen toenemen door toename van elektrisch rijden en ruimteverwarming met
+          warmtepompen. Ook de hoeveelheid decentrale opwekking, voornamelijk bestaande uit micro-WKK en PV-systemen, zal toenemen. De impact van deze veranderingen
+          op de LS-netten is naar verwachting groter dan de impact op de MS-netten. Het vermogenstransport in de LS-netten zal een veel sterker fluctuerend gedrag
+          vertonen dan nu het geval is, met toenemende belasting van de kabels en nadelige gevolgen voor de spanningskwaliteit. Er zijn diverse ideeën,
+          concepten en systemen om de nadelige gevolgen te beperken. De belangrijkste hebben betrekking op belastingsturing en opslag van elektrische energie.
+          Vanwege de structuur van de LS-netten zijn de mogelijkheden om deze met afstandmeting en afstandbesturing te flexibiliseren vooralsnog gering. Om enig
+          beeld te geven van aspecten die bij de huidige stand van de techniek nog ongewis blijken te zijn en verder onderzoek behoeven, wordt in paragraaf 15.4 een
+          aantal initiatieven kort behandeld. </p>
+        <p> Een voorbeeld van een initiatief met betrekking tot belastingsturing is een proefproject waarin met behulp van intelligente meters het beslisgedrag van
+          aangeslotenen wordt onderzocht. In dit proefproject worden in een nieuw te bouwen woonomgeving 57 woningen en 246 appartementen voorzien van PV-systemen,
+          warmtepompen en een gezamenlijke WKK-installatie. De aangeslotenen krijgen via een display een grote hoeveelheid informatie over onder andere de
+          weersverwachting en actuele energietarieven. Zij kunnen met de aangeboden informatie beslissen wanneer het voordelig is om grote energieverbruikers als
+          wasmachines in te schakelen. De vraag is of met aanvullende prijsprikkels de aangeslotenen tot een voorspelbaar verbruikspatroon zijn te verleiden. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_3_15.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_15.4"></div>
+        <br>
+        <h2> 15.4 Technieken </h2>
+        <p> Op verschillende fronten worden anno 2011 technieken ontwikkeld die worden ingezet in proefprojecten om te komen tot een intelligent net. In deze
+          proefprojecten worden technieken van diverse automatiseringsgraad toegepast. Als voorbeeld hebben deze proefprojecten betrekking op het afstemmen van
+          belasting op opwekking met behulp van duurzame bronnen of betrekking op introductie van schakelende of regelende componenten in het laagspanningsnet.
+          Daarnaast zijn er wereldwijd grote ontwikkelingen rondom de opslag van elektrische energie. Deze twee voorbeelden worden hieronder kort toegelicht. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_3_15.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_15.4.1"></div>
+        <br>
+        <h3> 15.4.1 Afstemmen van belasting op opwekking </h3>
+        <p> In 2011 zijn systemen in ontwikkeling die in een distributienet met hoge concentratie aan decentrale opwekking vraag en aanbod van elektrische energie
+          optimaliseert, gebaseerd op een mogelijk te behalen prijsvoordeel. Uitgangspunt is dat op de daken van woonhuizen zonnecollectoren zijn geïnstalleerd,
+          in de huizen warmtepompen of micro-WKK installaties zijn opgesteld en dat bepaalde verbruikstoestellen automatisch worden aangestuurd. Zo een systeem is
+          gericht op het meedoen in en deelnemen aan de elektriciteitsmarkt, waarbij een goede balans wordt gevonden tussen de belangen van de aangeslotene, de
+          producenten en de netbeheerder. Door de klanten een prijssignaal te geven dat de situatie op de elektriciteitsmarkt weerspiegelt, zullen zij hun verbruik
+          en hun productie (indien aanwezig) daarop afstemmen. De gedachte is dat in een periode van overschot aan duurzame energie, omdat het toevallig hard waait
+          bij zonnig weer, de elektriciteitsprijs laag is en de verbruikers worden aangemoedigd de energie uit het distributienet af te nemen. Bij een tekort aan
+          duurzame energie worden zij financieel aangemoedigd om minder af te nemen en eventueel meer te produceren. Het systeem zorgt dus voor een grotere
+          betrokkenheid van de aangeslotenen bij de energievoorziening. Het bevordert eigen opwekking omdat er geld mee kan worden verdiend en het ondersteunt de
+          duurzame samenleving. Het systeem fungeert als open flexibele marktplaats. Vooral duurzame energie zal hier profijt van hebben, omdat ondanks het variabele
+          en moeilijk voorspelbare karakter van de duurzame bronnen de beschikbaarheid met financiële prikkels aantrekkelijk wordt gemaakt. De terugverdientijd
+          op eigen investeringen in duurzame systemen wordt hierdoor sterk verbeterd. </p>
+        <p> In een van de concepten van een dergelijk systeem wordt elk apparaat gerepresenteerd door een software-agent, die het proces van dat apparaat economisch
+          optimaal probeert te laten werken (Kok, 2006). De software-agenten onderhandelen op een elektronische markt over hun verbruik of productie van
+          elektriciteit. De resulterende marktprijs bepaalt het volume van het vermogen dat elk vertegenwoordigd apparaat mag verbruiken of produceren. De apparatuur
+          wordt ingedeeld in een aantal klassen, waarvan de drie belangrijkste zijn: </p>
+        <ul>
+          <li> apparaten met een stochastisch karakter: PV-systemen en windturbines zijn afhankelijk van het weer en hun productie kan sterk wisselen </li>
+          <li> apparaten waarvan het verbruik in tijd kan worden verschoven: dit zijn apparaten die gedurende een bepaalde tijdsduur moet werken, ongeacht het
+            exacte tijdstip; voorbeelden zijn systemen voor wassen, verwarmen, koelen, ventilatie en oplaadbare auto's </li>
+          <li> apparaten waarvan de werking door de klant is ingesteld: dit zijn apparaten die door de klant worden aangezet om op het specifieke moment arbeid te
+            verrichten; voorbeelden zijn verlichting, computers en apparatuur voor audio en video. </li>
+        </ul>
+        <p> De agenten zorgen ervoor dat het verbruik zoveel mogelijk plaatsvindt tijdens momenten van lage energieprijzen en dat de productie van niet-duurzame
+          bronnen zoveel mogelijk wordt verschoven naar momenten van hoge energieprijzen. Het systeem is voor een proefproject geïnstalleerd in een
+          woonomgeving. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_3_15.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_15.4.2"></div>
+        <br>
+        <h3> 15.4.2 Regelen in een laagspanningsnet </h3>
+        <p> De spanning in een LS-distributienet wordt ten opzichte van het MS-niveau niet geregeld. De transformatoren in de netstations hebben een vaste
+          overzetverhouding, die is ingesteld op een van vijf mogelijke standen. Omdat het in sommige gevallen toch wenselijk is de spanning op een vast niveau te
+          kunnen regelen, is een MS/LS geregelde transformator geïntroduceerd. Deze transformator onderscheidt zich van een standaard distributietransformator
+          door onder belasting te kunnen overschakelen naar een ander spanningsniveau. Bij zwakke netten of sterk wisselende belastingen zal de transformator met
+          zijn traploze regelaar de spanning aan de LS-zijde stabiliseren, onafhankelijk van het getransporteerde vermogen. Dit concept is toegepast op een
+          distributietransformator (10kV/400V, 50Hz, 3 fasen), voorzien van elektronische vermogensregeling en besturing. De wikkelingen van de transformator worden
+          met IGBT-vermogenselektronica op 10kV niveau zodanig geschakeld dat spanningsfluctuaties aan LS-zijde continu en traploos worden weggeregeld, zowel in
+          belaste als in onbelaste toestand. De werking is beschreven in paragraaf 4.3. De regelaar werkt autonoom, maar kan in een intelligent net worden bestuurd. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_3_15.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_15.4.3"></div>
+        <br>
+        <h3> 15.4.3 Opslagsystemen </h3>
+        <p> De grote fluctuatie in de vermogensvraag door de LS-netten leidt tot grote pieken en dalen in het vermogenstransport in het MS-net. Deze pieken en dalen
+          kunnen met behulp van een opslagsysteem voor elektrische energie worden genivelleerd (peak shaving), waardoor meer ruimte voor elektriciteitstransport in
+          het net ontstaat. Een van de mogelijkheden is om bij of onder een netstation een opslagsysteem te bouwen dat duurzame energie kan opslaan en bovendien het
+          MS-net kan ontlasten. Dit concept wordt Smart Storage genoemd. Het systeem is geschikt voor netgekoppeld bedrijf en voor eilandbedrijf en het kan
+          automatisch omschakelen tussen deze twee toestanden. Een bijkomend voordeel van dit systeem is dat bij een storing in het MS-net het achterliggende LS-net
+          gedurende beperkte tijd kan worden gevoed, hetgeen de betrouwbaarheid vergroot. </p>
+        <p> <img src="./intelligente netten_files/15.7.jpg" width="712" height="400" alt="pics_3.15" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 15.7 Redox-flow opslagsysteem voor 10 kW en 100 kWh </h5>
+        <p> Figuur 15.7 toont een Redox-flow opslagsysteem met een vermogen van 10 kW en een hoeveelheid opgeslagen energie van 100 kWh en illustreert dat de systemen
+          voor opslag van elektrische energie nog niet erg compact zijn. </p>
+        <p> Ook voor het MS-niveau worden systemen voor opslag ontwikkeld. Figuur 15.8 toont een Li-ion opslagsysteem dat is opgebouwd uit modules van 646 V en 41 Ah.
+          Deze systemen worden gebruikt in statische blindvermogenscompensatiesystemen (static var) met mogelijkheden voor energieopslag. Een opslagsysteem dat met 8
+          modules is opgebouwd, is geschikt voor een nominale spanning van 5,2 kV en kan gedurende een uur 200 kW energie leveren (Saft, 2008). </p>
+        <p> Figuur 15.9 toont een NaS opslagsysteem op basis van modules van 1 MW en een energie-inhoud van 7,2 MWh. De modules werken op een spanning van 480 V, die
+          via step-up transformatoren wordt omgezet in 12,5 en 34,5 kV. </p>
+        <p> De ontwikkelingen in de batterijtechnologie in de afgelopen 20 jaar zijn voornamelijk te danken aan de inspanningen voor de consumentenelektronica. De
+          ontwikkelingen in de batterijsystemen voor elektrische auto's hebben ertoe geleid dat de ontwikkelingen in batterijtechnologie voor de
+          elektriciteitsystemen in een stroom-versnelling terecht kwamen. Ook ontwikkelingen die de vermogenselektronica economisch interessanter hebben gemaakt,
+          zoals de ontwikkeling van betrouwbare converters, hebben daaraan bijgedragen. Voor de opslagsystemen zijn diverse elektrochemische technologieën
+          ontwikkeld. Een zestal wordt hieronder kort behandeld. </p>
+        <div class="row">
+          <div class="col-md-4"><img src="./intelligente netten_files/15.8.jpg" width="210" alt="pics_3.15" class="img-responsive-leon-15px center-block">
+            <h5> Figuur 15.8 Li-ion opslagsysteem met modules voor 646 V en 41 Ah </h5>
+          </div>
+          <div class="col-md-8"><img src="./intelligente netten_files/15.9.jpg" width="712" alt="pics_3.15" class="img-responsive-leon-15px center-block">
+            <h5> Figuur 15.9 Li-ion opslagsysteem op basis van modules van 1 MW en 7,2 MWh </h5>
+          </div>
+        </div>
+        <h6> Natrium zwavel </h6>
+        <p> De natrium zwavel (NaS) batterij is een batterijsysteem dat op een hoge temperatuur werkt. Het bestaat uit een positieve elektrode van gesmolten zwavel en
+          een negatieve elektrode van gesmolten natrium, gescheiden door een vaste bèta aluminiumoxide keramische elektrolyt. Het elektrolyt laat alleen
+          positieve natriumionen passeren om met de zwavel te reageren. </p>
+        <h6> Flow-batterij technologie </h6>
+        <p> Een flow-batterij is op elektrolyt gebaseerd waarin een of meer elektro-actieve stoffen door een elektrochemische cel stromen. In de cel wordt de chemische
+          energie omgezet in elektrische energie en omgekeerd. De elektrolyt kan buiten het systeem worden opgeslagen en wordt door de elektrochemische cellen
+          gepompt. Flow-batterijen kunnen eenvoudig worden ververst door de elektrolyt te vervangen. Figuur 15.7 toont een voorbeeld van een Redox-flow batterij. </p>
+        <h6> Nikkel-cadmium </h6>
+        <p> De Nikkel-cadmium-accu (NiCd) is een droge accu. In het verleden is bij NiCd-accu's onder zeer specifieke en uitzonderlijke omstandigheden een
+          geheugeneffect aangetoond. Dat houdt in dat bij herhaaldelijk gedeeltelijk ontladen de capaciteit afneemt tot de daarbij daadwerkelijk gebruikte
+          capaciteit. Moderne NiCd-accu's hebben geen last van het geheugeneffect. De capaciteit gaat omlaag door veroudering, te hoge temperatuur, te ver ontladen
+          (hetgeen wel wordt gedaan als remedie tegen het geheugeneffect), te lang opladen, en verkeerd om aansluiten. </p>
+        <p> De energiedichtheid van NiCd-accu's is laag: 45Wh/kg. Daarentegen is de vermogensdichtheid van dit soort accu's hoog: 200W/kg. Tegenwoordig worden
+          NiCd-accu's steeds minder gebruikt en winnen NiMH-accu's terrein. </p>
+        <h6> Nikkel-metaalhydride </h6>
+        <p> De nikkel-metaalhydride-accu (NiMH) gebruikt een waterstofabsorberende legering voor de negatieve elektrode in plaats van cadmium. Een NiMH-accu kan bij
+          dezelfde afmetingen meer energie opslaan dan een NiCd-batterij maar heeft minder vermogen. Vergeleken met de lithium-ion-accu is de energiedichtheid lager
+          en de zelfontlading hoger. NiMH-cellen worden geassembleerd tot opslagsystemen voor een hogere spanning zoals in elektrische auto's. </p>
+        <h6> Lithium-ion </h6>
+        <p> De batterij-technologie die het meest wordt toegepast is lithium-ion. Deze technologie kan worden toegepast in tal van soorten en maten, zoals in een
+          mobiele telefoon of lap top computer. Deze flexibiliteit gaat gepaard met een licht gewicht ten opzichte van op vloeistof gebaseerde
+          batterijtechnologieën zoals lood-zuur. </p>
+        <h6> Lood-zuur </h6>
+        <p> Lood-zuur is de oudste en meest volwassen technologie. Vanwege de ruime ervaring in de autotechniek werden de eerste noodstroomvoorzieningen in de
+          energietechniek met deze accu's uitgerust. Deze batterijsystemen worden nog steeds gebruikt voor back-up energiebronnen in grote centrales voor het
+          uitvoeren van een 'black start' na noodsituaties. </p>
+        <h5> Tabel 15.3 Elektrochemische technologieën voor opslagsystemen </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="14%" valign="bottom"><p> Technologie </p></td>
+              <td width="14%"><p align="center"> Vermogen </p></td>
+              <td width="14%"><p align="center"> Capaciteit </p></td>
+              <td width="14%"><p align="center"> Rendement </p></td>
+              <td width="14%"><p align="center"> Levensduur </p></td>
+              <td width="14%"><p align="center"> Zelfontlading </p></td>
+              <td width="14%"><p align="center"> Kosten </p></td>
+            </tr>
+            <tr>
+              <td width="80" valign="top"><p> Lood-zwavelzuur </p></td>
+              <td width="61" valign="top"><p align="center"> tot 20 MW </p></td>
+              <td width="69" valign="top"><p align="center"> tot 40 MWh </p></td>
+              <td width="59" valign="top"><p align="center"> 75 - 80 % </p></td>
+              <td width="56" valign="top"><p align="center"> 200 - 1200 cycli </p></td>
+              <td width="64" valign="top"><p align="center"> 2 - 5 % per maand </p></td>
+              <td width="92" valign="top"><p align="center"> 200 - 900 EUR/kWh, <br>
+                  40 - 450 EUR/kW </p></td>
+            </tr>
+            <tr>
+              <td width="80" valign="top"><p> Nikkel-Cadmium </p></td>
+              <td width="61" valign="top"><p align="center"> tot 30 MW </p></td>
+              <td width="69" valign="top"><p align="center"> tot 40 MWh </p></td>
+              <td width="59" valign="top"><p align="center"> 60 - 70 % </p></td>
+              <td width="56" valign="top"><p align="center"> 1000 - 3000 cycli </p></td>
+              <td width="64" valign="top"><p align="center"> 5 - 20 % per jaar </p></td>
+              <td width="92" valign="top"><p align="center"> 600 - 1500 EUR/kW </p></td>
+            </tr>
+            <tr>
+              <td width="80" valign="top"><p> Natrium-zwavel </p></td>
+              <td width="61" valign="top"><p align="center"> 0,1 - 50 MW </p></td>
+              <td width="69" valign="top"><p align="center"> tot 400 MWh </p></td>
+              <td width="59" valign="top"><p align="center"> 85 - 90 % </p></td>
+              <td width="56" valign="top"><p align="center"> 1000 - 4000 cycli </p></td>
+              <td width="64" valign="top"></td>
+              <td width="92" valign="top"><p align="center"> 200 - 350 EUR/kWh, <br>
+                  250 EUR/kW </p></td>
+            </tr>
+            <tr>
+              <td width="80" valign="top"><p> Lithium </p></td>
+              <td width="61" valign="top"><p align="center"> tot 2 MW </p></td>
+              <td width="69" valign="top"><p align="center"> tot 15 kWh </p></td>
+              <td width="59" valign="top"><p align="center"> 95 % </p></td>
+              <td width="56" valign="top"><p align="center"> 3000 - 5000 cycli </p></td>
+              <td width="64" valign="top"></td>
+              <td width="92" valign="top"><p align="center"> 500 - 2500 EUR/kWh </p></td>
+            </tr>
+            <tr>
+              <td width="80" valign="top"><p> Redox Flow </p></td>
+              <td width="61" valign="top"><p align="center"> tot 12 MW </p></td>
+              <td width="69" valign="top"><p align="center"> tot 40 MWh </p></td>
+              <td width="59" valign="top"><p align="center"> 65 - 75 % </p></td>
+              <td width="56" valign="top"><p align="center"> 1000 cycli </p></td>
+              <td width="64" valign="top"><p align="center"> nihil </p></td>
+              <td width="92" valign="top"><p align="center"> 500 - 1000 EUR/kWh, <br>
+                  500 EUR/kW </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Tabel 15.3 geeft een samenvatting van een aantal kenmerken van elektrochemische technologieën voor enkele opslagsystemen. De ontwikkelingen van nieuwe
+          technieken gaan snel, zodat de informatie in de tabel snel verouderd zal zijn. Figuur 15.10 geeft een overzicht van de omvang van diverse soorten
+          opslagsystemen. Op de horizontale as is de energie-inhoud per gewichtseenheid uitgezet, in Wh per kilogram. Op de verticale as is het vermogen per
+          gewichtseenheid uitgezet, in W per kilogram (Battery, 2011). In de figuur is goed te zien dat de nieuwe technologieën een veel hogere capaciteit en
+          vermogen per gewichtseenheid hebben dan de oude. Oudere typen, gebaseerd op lood-zwavelzuur, hebben een lage capaciteit en vermogen per gewichtseenheid.
+          Dit betekent dat deze accusystemen vaak groot en zwaar zijn. Dit in tegenstelling tot moderne opslagsystemen, die voor dezelfde capaciteit veel kleiner en
+          lichter zijn. </p>
+        <p> <img src="./intelligente netten_files/15.10.png" width="500" height="280" alt="pics_3.15" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 15.10 Specifieke energie en vermogen van elektrochemische opslagsystemen </h5>
+        <p> Momenteel zijn de op een vaste plaats gestationeerde batterijsystemen nog vaak gebaseerd op lood-zuuraccu's, omdat afmeting en gewicht niet zo
+          doorslaggevend zijn als bij mobiele toepassingen. Ook het beperkte aantal op- en ontlaadcycli (zie tabel 15.3) hoeft niet bezwaarlijk te zijn als deze
+          systemen niet geheel ontladen worden en 'minder diepe' laad- en ontlaadcycli hebben. NiCd batterijen worden gebruikt indien het opslagsysteem wel
+          regelmatig geheel ontladen wordt. Deze batterijen kunnen beter tegen hoge en lage temperaturen dan lood-zuuraccu's. NiCd batterijsystemen zijn echter nog
+          een factor 4 duurder dan lood-zuuraccusystemen. De nieuwste ontwikkelingen voor gebruik in het elektriciteitsnet zijn gebaseerd op NiMH en Li-ion
+          batterijsystemen. Deze systemen hebben een groot temperatuurbereik en de mogelijkheid om 'diep' te ontladen en om snel op te laden. Opslagsystemen,
+          gebaseerd op deze technieken, hebben een lange levensduur. Door hun geringe gewicht zijn deze opslagsystemen ook geschikt voor mobiele uitvoering, zoals
+          voor noodvoorzieningen. Zolang de nieuwe batterijsystemen nog vrij duur zijn, zal op grote schaal nog gebruik gemaakt worden van lood-zuuraccu's. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_3_15.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_15.5"></div>
+        <br>
+        <h2> 15.5 Toepassingen </h2>
+        <p> In <a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.1">paragraaf 15.1</a> is aangetoond dat een intelligent net het tweerichtingsverkeer van het elektrische vermogen toelaat en daarmee de verduurzaming van de
+          energievoorziening ondersteunt. Het intelligente net is op meer plaatsen dan een traditioneel net bemeten en kan bovendien op afstand automatisch bestuurd
+          worden. Door de toevoeging van moderne ICT-technologie en vermogenselektrotechnische oplossingen kan het intelligente net de energiestromen controleren,
+          sturen en beheren. Om een intelligent net te kunnen realiseren is een aantal technische toepassingen in ontwikkeling, waarbij enkele al zijn gerealiseerd: </p>
+        <ul>
+          <li> Bewaking van de spanningshuishouding (handhaven van de Power Quality) </li>
+          <li> Signaleren knelpunten </li>
+          <li> Conditiebewaking netcomponenten </li>
+          <li> Foutplaatslokalisatie </li>
+          <li> Automatisch netherstel </li>
+          <li> Optimalisering van onderhoud en investeringen </li>
+          <li> Belastingsturing en sturing van de beïnvloedbare opwekking </li>
+          <li> Opladen van elektrische auto's (smart charging) </li>
+          <li> Op afstand uitleesbare elektriciteitsmeters </li>
+          <li> Fraudebestrijding </li>
+          <li> Minimaliseren netverlies </li>
+          <li> Tariefdifferentiatie </li>
+          <li> Aan- en afschakelen op afstand </li>
+          <li> Power Quality monitoring </li>
+          <li> Faciliteren VPP </li>
+        </ul>
+        <p> Het bestaande net wordt niet in een simpele handomdraai omgezet in een intelligent net. Het net wordt met graduele toevoegingen van nieuwe technische
+          functionaliteiten stapsgewijs en proefondervindelijk steeds intelligenter gemaakt. In een enkel geval wordt een bestaand net door een omvangrijke
+          projectmatige aanpak op substantiële wijze flexibel en intelligent gemaakt. De basis om te komen tot meer flexibiliteit en intelligentie is een
+          uitgebreid en betrouwbaar meetnetwerk en een systeem om deze metingen efficiënt te verwerken. Vervolgens moet duidelijk zijn wat er met de metingen
+          wordt gedaan: welke meetresultaten worden bewaard en welke metingen zijn alleen beschikbaar voor het verkrijgen van inzicht? Alle opgeslagen gegevens
+          moeten eenvoudig en snel kunnen worden opgevraagd en bewerkt. Dit bevordert het gebruik in de praktijk. Planners, netontwerpers en bedrijfsvoerders zijn
+          met de vele nieuwe gegevens in staat de doelstellingen voor het intelligente net te verwezenlijken. Hieronder worden kort drie concepten genoemd die in
+          2011 in enkele projecten worden toegepast. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_3_15.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_15.5.1"></div>
+        <br>
+        <h3> 15.5.1 Het Mobile Smart Grid concept </h3>
+        <p> Voor het optimaal inpassen van elektrische auto's in de bestaande MS- en LS-elektriciteitsinfrastructuur wordt het Mobile Smart Grid concept ontwikkeld
+          (Veldman, 2011). In dit concept wordt een besturingslaag ontwikkeld om zo goed mogelijk gebruik te kunnen maken van de capaciteit in het distributienet
+          voor het grootschalig aansluiten van elektrische auto's en duurzame bronnen. In veel MS- en LS-distributienetten is een aanzienlijke hoeveelheid capaciteit
+          aan reserve beschikbaar voor het geval dat het net voor herstel na een storing wordt omgeschakeld. In de perioden dat het net niet hoeft te worden
+          omgeschakeld maakt het Mobile Smart Grid concept gebruik van deze reservecapaciteit voor het opladen van elektrische auto's. Door het opladen van de
+          elektrische auto's te regelen kan de totale belasting worden geoptimaliseerd en wordt de transportcapaciteit van het distributienet beter benut. De werking
+          berust op de planning van de bestuurder. </p>
+        <ul>
+          <li> De bestuurder geeft van te voren via een website op hoever hij moet rijden en wanneer. Deze gegevens worden vervolgens gekoppeld aan de lader in de
+            auto. In het concept wordt op basis van het gemeten en voorspelde gedrag van flexibele belastingen een schema voor het opladen van elektrische auto's
+            opgesteld, rekening houdend met de wensen van de klant, de capaciteit van het distributienet en de actuele en geplande beschikbaarheid van decentraal
+            opgewekte energie. </li>
+          <li> De communicatie-infrastructuur voor de benodigde gegevensstromen wordt onder andere geleverd door het internet. Het oplaadproces wordt hierbij,
+            binnen het oplaadschema, zoveel mogelijk aangepast aan de fluctuerende beschikbaarheid van de duurzaam opgewekte energie. In een noodgeval, bijvoorbeeld
+            door een storing in het distributienet, kan het oplaadproces worden uitgesteld. Op deze manier kan gebruik gemaakt worden van de reservecapaciteit in het
+            net, terwijl toch de storingsreserve volledig ter beschikking blijft staan. </li>
+        </ul>
+        <a href="https://www.phasetophase.nl/boek/boek_3_15.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_15.5.2"></div>
+        <br>
+        <h3> 15.5.2 Opslag van elektrische energie </h3>
+        <p> Op diverse plaatsen worden proeven gedaan met opslag van elektrische energie in de LS-netten. Hierbij wordt de vermogensbalans automatisch bewaakt. In een
+          demonstratieproject is in een vakantiepark een systeem op basis van lood-zwavelaccu's operationeel, in combinatie met PV-panelen op de daken van de
+          vakantiehuisjes. De overdag opgewekte elektriciteit wordt opgeslagen en kan in de nacht worden gebruikt. Het systeem probeert de energie-uitwisseling met
+          het net zo laag mogelijk te houden. Een ander project voor energieopslag, ook op basis van lood-zwavelaccu's, maakt deel uit van een woningbouwproject. Ook
+          zijn er projecten waar een accusysteem op basis van Li-ion-accu's wordt gebruikt (CE, 2010). Het doel van deze projecten is aantonen dat opslagsystemen
+          kunnen bijdragen aan het reduceren van de nu optredende pieken en dalen in het energietransport en dat het werkingsprincipe juist is. Tevens wordt
+          onderzocht hoe deze systemen zo compact mogelijk gebouwd kunnen worden. </p>
+        <p> Figuur 15.11 toont de functionele opbouw van een netstation met een opslagsysteem. De opzet is zodanig dat het LS-net zowel in gekoppeld bedrijf als in
+          eilandbedrijf kan functioneren en automatisch tussen deze toestanden kan omschakelen. De inverter werkt twee kanten op en kan het opslagsysteem opladen en
+          ontladen. De inverter wordt aangestuurd door het Smart Storage systeem. Bij uitval van het MS-net moet het netstation worden vrijgeschakeld indien het tot
+          eilandbedrijf overgaat. Dit omdat anders de spanning aan de MS-zijde van de transformator blijft bestaan. </p>
+        <p> <img src="./intelligente netten_files/15.11.png" width="450" height="252" alt="pics_3.15" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 15.11           Functioneel schema van een netstation met opslag </h5>
+        <a href="https://www.phasetophase.nl/boek/boek_3_15.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_15.5.3"></div>
+        <br>
+        <h3> 15.5.3 Intelligent distributiestation </h3>
+        <p> Een intelligent distributiestation (IntDS) is een concept dat in eerste instantie is opgezet om de mogelijkheden van de combinatie van vermogenselektronica
+          en opslagsystemen bij het handhaven of verbeteren van de Power Quality in een LS-net te onderzoeken. De doelen van het IntDS zijn: </p>
+        <ul>
+          <li> beperken van langzame spanningsvariaties </li>
+          <li> reduceren van harmonische vervuiling </li>
+          <li> verzamelen van informatie over vermogensstromen in het LS-net met decentrale opwekking. </li>
+        </ul>
+        <p> Het intelligente distributiestation is gebaseerd op een standaard MS/LS-netstation, maar is aangevuld met een op basis van vermogenselektronica regelende
+          nettransformator (SmartTrafo, <a href="https://www.phasetophase.nl/boek/boek_1_4.html#_4.3">paragraaf 4.3</a>), een via een bidirectionele inverter aangesloten opslagsysteem en een uitgebreid meetsysteem (SASensor,
+          <a href="https://www.phasetophase.nl/boek/boek_3_14.html#_14.2.7">paragraaf 14.2.7</a>). Figuur 15.12 toont het concept van het intelligente distributiestation, met het voedende MS-net en een aantal uitgaande LS-strengen. Het
+          IntDS is zowel aan MS- als aan LS-zijde voorzien van spanning- en stroommetingen. Aan de LS-zijde is bovendien een power qualitymeting aangebracht. De
+          on-line metingen worden uitgevoerd met het SASensorsysteem. Een aanzienlijk aantal woningen heeft een micro-WKK-installatie. Om het effect van de
+          regelingen te bestuderen zijn sommige woningen voorzien van een power qualitymeting. Het systeem is beschreven in een publicatie (Kester, 2009). </p>
+        <p> <img src="./intelligente netten_files/15.12.jpg" width="712" height="400" alt="pics_3.15" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 15.12 Overzicht van het IntDS concept </h5>
+        <p> Het IntDS heeft een aantal mogelijkheden om de Power Quality in het LS-net te verbeteren, waaronder: spanningsregeling, reductie van harmonische
+          vervuiling, compensatie van spanningsdips en compensatie van flikker. </p>
+        <h6> Spanningsregeling </h6>
+        <p> De MS/LS-nettransformator is een SmartTrafo, die met behulp van vermogenselektronica continu regelbaar is. Hiermee wordt een nagenoeg constante spanning op
+          het LS-rek verkregen. De ingestelde waarde wordt zodanig gekozen dat alle aangeslotenen gemiddeld genomen de beste spanning hebben. </p>
+        <h6> Reductie van harmonische vervuiling </h6>
+        <p> Harmonische spanningen worden veroorzaakt door de harmonische vervuiling in het voedende MS-net, door de nettransformator en door de harmonische vervuiling
+          van de aangeslotenen in het LS-net. De harmonischen op het LS-rek kunnen op twee manieren worden gereduceerd: </p>
+        <ul>
+          <li> resistieve harmonische demping door de bidirectionele inverter; de harmonischen worden geabsorbeerd door een virtuele impedantie; de demping werkt
+            tot en met de dertiende harmonische </li>
+          <li> passieve harmonische demping door de condensatoren van de bidirectionele inverter. </li>
+        </ul>
+        <h6> Compensatie van spanningsdips </h6>
+        <p> De spanningsdips op het LS-rek worden gecompenseerd door de regeling van de SmartTrafo en door de regelende werking van de bidirectionele inverter van het
+          opslagsysteem. </p>
+        <h6> Compensatie van flikker </h6>
+        <p> Ook de flikker van de spanning op het LS-rek wordt gecompenseerd door de regeling van de SmartTrafo en door de regelende werking van de bidirectionele
+          inverter van het opslagsysteem. </p>
+        <p> Het concept wordt in een proefproject toegepast op een netstation in een woonwijk, waar in 180 woningen micro-WKK installaties zijn geplaatst. Het systeem
+          is gedurende drie maanden getest (Melnik, 2011). Tijdens de test en de periode daarna is gebleken dat de spanningsregeling de spanningsfluctuaties op het
+          LS-rek en bij de bemeten aangeslotenen aanzienlijk reduceert. De harmonische vervuiling wordt ook aanzienlijk gereduceerd. De spanningsdips kwamen in de
+          testperiode te weinig voor. De flikkercompensatie had een positieve invloed op het niveau en de pieken op het LS-rek. </p>
+      </div>
+      <div class="col-lg-2 hidden-md">&nbsp;</div>
+    </div>
+	  </div>
+  </div>
+
+
+<div id="includeFooter" class="container-fluid-footer"><div class="container">
+  <div class="row">
+    <div class="text-justify col-xs-6 col-sm-3">
+      <img src="./intelligente netten_files/logo-s-360px-grijs.png" alt="ptp_logo" width="230">
+    </div>
+    <div class="col-xs-6 col-sm-9">
+        <p> Phase to Phase is onderdeel van <a href="https://www.technolution.nl/">Technolution</a>. © 2009-2021 </p>
+    </div>
+  </div>
+</div></div></body></html>

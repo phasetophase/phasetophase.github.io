@@ -1,0 +1,2124 @@
+<!DOCTYPE html>
+
+<!-- saved from url=(0047)https://www.phasetophase.nl/boek/boek_2_10.html -->
+<html class="wf-ffscalasansweb-n7-active wf-ffscalasansweb-n4-active wf-ffscalasansweb-i4-active wf-active" lang="en"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Phase to Phase – Netten voor distributie van elektriciteit</title>
+<!-- Bootstrap -->
+<link href="./kortsluitstroomberekeningen_files/bootstrap-2-boek.css" rel="stylesheet"/>
+<style type="text/css">
+	body,td,th {
+	font-family: ff-scala-sans-web, sans-serif;
+}
+body {
+	background-color: #F7F7F7;
+}
+    </style>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+<script src="./kortsluitstroomberekeningen_files/qke6lfb.js.download"></script>
+<style type="text/css">.tk-ff-scala-sans-web{font-family:"ff-scala-sans-web",sans-serif;}</style><style type="text/css">@font-face{font-family:tk-ff-scala-sans-web-n7;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-n4;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-i4;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style><script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script src="./kortsluitstroomberekeningen_files/jquery-1.11.3.min.js.download"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./kortsluitstroomberekeningen_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H8Q9E8BJ7Q');
+</script>
+<script>
+$(function(){
+  $("#includedHeader").load("/boek/header.html");
+  $("#includeFooter").load("/boek/footer.html"); 
+});
+</script><style type="text/css">@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style>
+</head><body style="padding-top: 50px">
+<div id="includedHeader"> <nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="container">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button aria-expanded="false" class="navbar-toggle collapsed" data-target="#topFixedNavbar1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+<a class="navbar-brand" href="https://www.phasetophase.nl/">Phase to Phase</a></div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="topFixedNavbar1">
+<ul class="nav navbar-nav">
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li></li>
+</ul>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container -->
+</nav>
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<p></p>
+</div>
+</div>
+</div>
+<div class="container-fluid-boek">
+<div class="container">
+<div class="row-in-header">
+<div class="text-justify col-xs-6 col-sm-6">
+<img alt="Phase to Phase logo 360px" class="hidden-xs" src="./kortsluitstroomberekeningen_files/logo-s-360px-wit.png" width="366"/>
+<img alt="Phase to Phase logo 261px" class="visible-xs" src="./kortsluitstroomberekeningen_files/logo-s-360px-wit.png" width="261"/>
+</div>
+<div class="col-xs-6 hidden-xs col-sm-6">
+</div>
+</div>
+<div class="row-in-header">
+<div class="text-left col-xs-9 col-sm-9"> <p></p><h8>ICT voor elektriciteitsnetten</h8>
+</div>
+<div class="col-xs-3 col-sm-3">
+</div>
+</div>
+<div class="row-in-header-2">
+<div class="text-justify col-xs-6 col-sm-6"> 
+	</div>
+<div class="col-xs-6 hidden-xs col-sm-6">
+<h7> </h7>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row-intro">
+<h1><a href="https://www.phasetophase.nl/boek/index.html"> Netten voor distributie van elektriciteit</a></h1>
+</div></div></div>
+<div class="row-ohm-center-white"> <a name="top"></a>
+<div class="row-b">
+<a href="https://www.phasetophase.nl/boek/index.html"><button class="btn btn-default" type="button">I – De opbouw van een net</button></a>
+<a href="https://www.phasetophase.nl/boek/boek_2_7.html"><button class="btn btn-default active" type="button">II – Rekenen aan een net</button></a>
+<a href="https://www.phasetophase.nl/boek/boek_3_13.html"><button class="btn btn-default" type="button">III – Ontwerpen en bedrijfsvoeren</button></a>
+</div>
+<div class="row-b">
+<a href="https://www.phasetophase.nl/boek/boek_2_7.html">
+<button class="btn btn-default1" type="button">7 Rekentechnische basis</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_2_8.html">
+<button class="btn btn-default1" type="button">8 Modellen</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_2_9.html">
+<button class="btn btn-default1" type="button">9 Loadflowberekeningen</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_2_10.html">
+<button class="btn btn-default1 active" type="button">10 Kortsluitstroomberekeningen</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_2_11.html">
+<button class="btn btn-default1" type="button">11 Power Quality</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_2_12.html">
+<button class="btn btn-default1" type="button">12 Betrouwbaarheid</button>
+</a>
+<div class="row">
+<div class="col-md-12 col-lg-10">
+<h3>Kortsluitstroomberekeningen</h3>
+<p>Chapter 10 explains the calculation of currents in the event of a short circuit somewhere in the network. For various types of short circuits, it is extensively described how, based on the internationally recognized standard IEC 60909, the current at the short circuit location and the contribution to the short circuit current from other parts of the network can be calculated. The method of sequential fault analysis is also explained, which can provide more information about currents and voltages during a short circuit.</p>
+<div class="row">
+<div class="col-md-6">
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10"><strong>10  Short Circuit Current Calculations</strong></a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.1">10.1  Progression of the Short Circuit Current</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.2">10.2  Characteristic Terms and Quantities</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.2">10.3 Short Circuit Current Calculation according to IEC 60909</a></li>
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.3.1">10.3.1  Calculation</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.3.2">10.3.2  Three-phase and two-phase fault without ground contact in an MV network</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.3.3">10.3.3  Phase-to-ground fault in an ungrounded MV network</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.3.4">10.3.4  Phase-to-ground fault in a resonant grounded network</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.3.5">10.3.5 Phase-to-ground fault in an impedance-grounded MV network</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.3.6">10.3.6 Calculation of the short-circuit current in an LV network</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.3.7">10.3.7 Grounding Concept</a></li>
+</ul>
+</ul>
+</div>
+<div class="col-md-6">
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.4">10.4 Calculation of the short-circuit strength</a></li>
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.4.1">10.4.1  Short-circuit strength of cables</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.4.2">10.4.2 Short-circuit strength of transformers</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.4.3">10.4.3 Short-circuit strength of MV switchgear installations</a></li>
+</ul>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.5">10.5  Measures to Limit the Short-Circuit Current</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.6">10.6 Sequential Short-Circuit Current Calculation</a></li>
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.6.1">10.6.1 Method</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.6.2">10.6.2 Example Based on a Short-Circuit Registration</a></li>
+</ul>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.7">10.7 Fault Location</a></li>
+</ul>
+</div>
+</div>
+<hr/>
+<h1>10 Short-Circuit Current Calculations</h1>
+<p>Electrical installations must be designed and constructed in such a way that no danger arises for individuals in the event of short circuits and that the installation is not damaged. During short circuits, large currents flow, resulting in significant electromagnetic forces between the conductive parts. Additionally, the conductive parts heat up quickly. The consequences of a short circuit can be mitigated with effective protection capable of interrupting the highest occurring short-circuit current. Short-circuit calculations play a crucial role in the design of the electrical network. These calculations investigate whether the network components can withstand short circuits when they occur. The short-circuit current calculation focuses on determining the current behavior in the electrical network and the physical properties of the network component. The purpose of these calculations is threefold:</p>
+<ul>
+<li>determine thermal effects on network components due to the short-circuit current</li>
+<li>determine mechanical forces on network components due to the short-circuit current</li>
+<li>coordination and settings of protections.</li>
+</ul>
+<p>A short circuit is generally accompanied by a relatively large current. In this case, the square of the current value is proportional to:</p>
+<ul>
+<li>heating of the network components that are in the circuit: a thermal effect</li>
+<li>electromagnetic force interaction between current-carrying conductors: a dynamic effect.</li>
+</ul>
+<p>The impact of both effects must be investigated for all network components through which the increased current due to the short circuit flows. In distribution networks, it turns out that the thermal effect deserves the most attention. However, the dynamic effect must also be calculated because of the sometimes very large forces that can occur in the installations. For this reason, components are tested to minimize the damage to people and the environment when allowing a short-circuit current to pass through.</p>
+<p>As an example of the forces released during a short circuit, figure 10.1 shows the result of a short circuit in a 10 kV cable buried at a depth of 60 cm. The short-circuit current was approximately 8 kA. The force of the explosion was so great that the ground next to the pit was lifted, causing the sidewalk tiles to be displaced.</p>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.1.png" width="712"/>
+<h5>Figure 10.1 Damage caused by a short circuit in a 10 kV cable</h5>
+<p>For the calculation of short-circuit strength, it is important to know the maximum value of the short-circuit current. For the coordination of protections and selectivity, the minimum short-circuit current is also important. With good selectivity, the consequences of faults are limited.</p>
+<p>It is possible to calculate a reasonably accurate picture of the current behavior at the fault location over time using a dynamic simulation, from the onset of the short circuit to the moment it is cleared. However, in most practical cases, such an extensive calculation is not necessary. Only a few characteristic values of the current behavior are important. These can be determined with sufficient accuracy using simpler methods, two of which are discussed in this chapter:</p>
+<ul>
+<li>The first method is the short-circuit current calculation according to the internationally recognized standard IEC 60909. This method is conservative but provides results that are sufficiently accurate. The method is designed for manual calculation and is therefore simple. It can be applied to all distribution networks. The method is particularly popular in the design of industrial networks because the calculations can be verified against the standard. This method is discussed in<a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.3">paragraph 10.3</a>.</li>
+<li>The second method is based on the actual load situation and calculates the complete state of the network. Here, the short circuit is introduced into the active network in the pre-fault condition. Because this method allows for the introduction and calculation of a second fault after calculating a single fault, it is also known as sequential fault analysis. With this method, all currents and voltages during the fault are known after the calculation. The method is discussed in<a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.6">paragraph 10.6</a>.</li>
+</ul>
+<a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.1"></div>
+<br/>
+<h2>10.1 Course of the Short-Circuit Current</h2>
+<p>To get a good understanding of the behavior of a short-circuit current, figure 10.2 shows the progression of the current during a three-phase short circuit. In this example, the short circuit is electrically far from a generator. It is noticeable that the current starts at a small value and then reaches a value of nearly twice the amplitude of the short-circuit current. This highest current value occurs within the first period of the short-circuit current and is referred to as the peak value.<em>i<sub>p</sub> </em>mentioned. The maximum value that<em>i<sub>p</sub></em>can assume can be reached if the short circuit begins at the moment of the voltage zero crossing in the involved phase. In a three-phase system, this can only occur in one phase at a time, and therefore this maximum can only occur in that particular phase. The highest peak value of the short-circuit current is also referred to as the peak short-circuit current.</p>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.2.jpg" width="712"/>
+<h5>Figure 10.2 Short circuit far from generators</h5>
+<p>The effective value of the short-circuit current immediately after the onset of the short circuit is the initial short-circuit current.<em>I<sub>k</sub>"</em>The initial short-circuit current is the basis for all other quantities that play a role in the calculation of the short-circuit load. In the example of Figure 10.2, the peak-to-peak value of the short-circuit current, determined by the mutual distance of the lines connecting the positive peaks and the negative peaks of the sinusoidal alternating current, is constant. The distance between the envelope lines relative to each other is equal to<em>2√2 ⋅ I<sub>k</sub>"</em>.</p>
+<p>There is an exponentially decaying direct current component, indicated in figure 10.2 by the middle dashed line. Its value is equal to the average value of the short-circuit current. The direct current component causes a high initial peak in the short-circuit current. The height of this peak depends on the location of the short circuit in the network. Figure 10.3 shows the current behavior during a three-phase short circuit that occurs electrically close to a generator. When comparing this figure with figure 10.2, it is noticeable that the alternating current component between the envelope lines in figure 10.2 has a constant amplitude, but in figure 10.3, it has a decreasing amplitude. This difference is caused by the fact that a generator, which is close to the short circuit, has a relatively large influence on the short-circuit current. The impedance of the generator increases over time as it generates its contribution to the short-circuit current, resulting in a decrease in the short-circuit current contribution from this generator.</p>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.3.jpg" width="712"/>
+<h5>Figure 10.3 Short Circuit Near Generators</h5>
+<p>Over time, the transient phenomenon in the short-circuit current will be damped, and the steady-state short-circuit current will flow.<em>I<sub>k</sub></em>. In the case of a short circuit far from the generators, the effective value of the short-circuit current hardly decreases, if at all, so the steady-state short-circuit current is assumed to be equal to the initial short-circuit current:<em>I<sub>k</sub>= I<sub>k</sub>"</em>.</p>
+<p>The IEC 60909 standard uses the terms 'far from generator' and 'near generator' as two extremes. In the first case, the contribution of synchronous generators to the short-circuit current is taken into account, and in the second case, it is not. According to IEC 60909, for a short circuit 'far from generator':</p>
+<ul>
+<li>a short circuit to which all synchronous machines contribute no more than twice the nominal machine current to the initial short-circuit current<em>I<sub>k</sub>"</em> </li>
+<li>and to which asynchronous motors contribute no more than 5% to the initial short-circuit current<em>I<sub>k</sub>"</em>without motors.</li>
+</ul>
+<p>In this case of a short circuit 'far from the generator,' the short-circuit current consists of the sum of the following two components:</p>
+<ul>
+<li>a symmetrical alternating current component with constant amplitude during the short circuit</li>
+<li>a direct current component<em>i<sub>dc</sub> </em>, which decreases to zero over time.</li>
+</ul>
+<p>The IEC 60909 standard defines a 'near generator' short circuit as follows:</p>
+<ul>
+<li>a short circuit to which at least one synchronous machine contributes to the initial short-circuit current<em>I<sub>k</sub>"</em>and whose short-circuit current contribution is more than twice the nominal current rating of that machine</li>
+<li>or a short circuit to which asynchronous motors contribute more than 5% of the initial short-circuit current<em>I<sub>k</sub>"</em>compared to the situation
+        without motors.</li></ul>
+<p>In the case of a 'near generator' short circuit, the short-circuit current consists of the sum of the following two components:</p>
+<ul>
+<li>a symmetrical alternating current component with decreasing amplitude during the short circuit</li>
+<li>a direct current component i<sub>dc</sub>, which decreases to zero over time.</li>
+</ul>
+<p>In distribution networks, most short circuits are currently of the 'far from generator' type. If the network includes large motors and decentralized generation, the method for a 'near generator' short circuit must be used.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.2"></div>
+<br/>
+<h2>10.2 Characteristic Terms and Quantities</h2>
+<h6>The initial short-circuit current<em>I<sub>k</sub>"</em> </h6>
+<p>In every short circuit, there is a symmetrical alternating current component. The effective value of this at the beginning of the short circuit is called the initial short-circuit current or sub-transient short-circuit current.<em>I<sub>k</sub>"</em>called. This quantity is the basis for all other quantities that play a role in the calculation of the short-circuit load. Using the nominal coupled voltage<em>U<sub>nom</sub></em>the apparent initial short-circuit power is<em>S<sub>k</sub>"</em>calculated:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.1.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.1</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The short-circuit power is a fictitious quantity that is often used instead of<em>I<sub>k</sub>"</em>is used. In most cases, only the maximum value of<em>I<sub>k</sub>"</em>important. For security issues, the minimum value must also be known.</p>
+<h6>Direct current component i<sub>dc</sub> </h6>
+<p>The direct current component (DC component) is the average value of the short-circuit current. It decreases over time, from an initial value determined at the beginning of the short circuit, to zero. The maximum direct current component is calculated using formula 10.2, which includes the frequency and the R/X ratio in the short-circuit path.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.2.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.2</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<h6>The peak short-circuit current i<sub>p</sub> </h6>
+<p>The impulse short-circuit current or the peak current<em>i<sub>p</sub></em>represents the highest peak value of the short-circuit current, including any possible direct current component. This quantity is used in determining the dynamic short-circuit load. The maximum current load of a switchgear and distribution system is specified by the manufacturer. The impulse short-circuit current that may occur in the installation must be below the value specified by the manufacturer. The relationship between the impulse short-circuit current<em>i<sub>p</sub></em>and the initial short-circuit current<em>I<sub>k</sub>"</em>is:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.3.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.3</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<h6>The impulse factor κ</h6>
+<p>The impulse factor<em>κ</em>in expression 10.3 depends on the R/X ratio in the short-circuit path and can be calculated using formula 10.4. Figure 10.4 shows the relationship<em>κ = f(R/X)</em>graphically.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.4.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.4</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.4.png" width="711"/>
+<h5>Figure 10.4 Impulse factor as a function of R/X</h5>
+<p>If only the initial short-circuit current<em>I<sub>k</sub>"</em>is known and not the R/X ratio, a value of 1.8 can be taken for the impulse factor. This is conservative because a high R/X ratio only applies to short circuits in the vicinity of power supplies. Generally, the impulse factor in medium-voltage distribution networks is lower.</p>
+<p>Usually, it is<em>i<sub>p</sub></em>calculated using the three-phase short-circuit current<em>I<sub>k</sub>"<sub>3</sub></em>. In asymmetric short circuits, the same value for<em>k</em>are used. The results are then on the safe side.</p>
+<p>The R/X ratio in the simplest case of a radial operated network follows directly from the sum of the individual R and X values. If the network is meshed, IEC 60909 provides three methods to calculate the peak short-circuit current. In method b of the relevant IEC standard, a factor is used.<em>κ<sub>(b)</sub></em>found from the ratio R/X of the short-circuit impedance at the fault location. The value of<em>i<sub>p</sub></em>then follows from
+          formula 10.5. Here, the factor 1.15 represents a correction for different R/X ratios in the network.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.5.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.5</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<h6>The interrupting alternating current I<sub>b</sub> </h6>
+<p>From the moment of the short circuit until the beginning of disconnection (first switch pole), the value of the short-circuit current will decrease. The effective value at the moment of disconnection is called the interrupting alternating current.<em>I<sub>b</sub></em>called. The IEC 60909 standard describes the method to calculate the interrupting alternating current for disconnection at 20, 50, 100, and 250 ms after the onset of the short circuit.</p>
+<h6>The steady-state short-circuit current<em>I<sub>k</sub></em> </h6>
+<p>Over time, the transient phenomenon in the short-circuit current will be damped, leaving the steady-state short-circuit current.<em>I<sub>k</sub></em>. It is assumed that motors no longer contribute and that the rotors of the generators are saturated, causing them to contribute less than at the beginning of the short circuit.</p>
+<h6>The thermal short-duration current<sub>th</sub> </h6>
+<p>This quantity is calculated to determine the thermal short-circuit strength of network components.</p>
+<p>A short-circuit current generally has a decreasing direct current and alternating current component, and therefore decreases in strength. To easily determine the thermal effect of the short-circuit current, the thermal short-duration current is used.<em>i<sub>th</sub></em>This is a constant effective value that has the same thermal effect and the same duration as the actual short-circuit current.</p>
+<p>The relationship between the thermal short-duration current<em>i<sub>th</sub></em>and the initial short-circuit current<em>I<sub>k</sub>"</em>is shown in formula 10.6.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.6.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.6</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>with:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="60"><em>m</em></td>
+<td>correction factor for the direct current component, which depends on the disconnection time and the peak factor<em>κ</em> </td>
+</tr>
+<tr>
+<td valign="top" width="60"><em>n</em></td>
+<td>correction factor for the decreasing alternating current component, which depends on the disconnection time and the ratio<em>I<sub>k</sub>/ I<sub>k</sub></em>.</td>
+</tr>
+</tbody>
+</table><br/>
+<p>The factors<em>m</em>en<em>n</em>represent the thermal effect of the direct current component and the alternating current component of the short-circuit current, respectively. These are described in the IEC 60909 standard. Figure 10.5 shows the factor<em>m</em>as a function of the short-circuit duration<em>T<sub>k</sub></em>. for various values of the peak factor κ, ranging from 1.1 to 1.95. In figure 10.5, it is clearly visible that the factor<em>m</em>for networks with a small peak factor, it quickly becomes small with increasing short-circuit duration.</p>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.5.png" width="712"/>
+<h5>Figure 10.5 Factor m as a function of T<sub>k</sub>for various impulse factors k</h5>
+<p>Figure 10.6 shows the factor<em>n</em>as a function of the short-circuit duration<em>T<sub>k</sub></em>. for various values of the ratio of the initial short-circuit current<em>I<sub>k</sub>"</em>and the steady-state short-circuit current<em>I<sub>k</sub></em>, ranging from 1.25 to 10. If<em>I<sub>k</sub></em>is equal to<em>I<sub>k</sub>",</em>may be assumed according to IEC 60909 that the factor<em>n</em>is equal to 1. In the
+          figure, it is clearly visible that the factor<em>n</em>for networks with a small ratio of<em>I<sub>k</sub>"</em>en<em>I<sub>k</sub></em>slowly
+          decreases with increasing short-circuit duration.</p>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.6.png" width="712"/>
+<h5>Figure 10.6 Factor n as a function of T<sub>k</sub>for various quotients I<sub>k</sub>"/I<sub>k</sub> </h5>
+<p>In distribution networks, where it is assumed that few machines are connected, a value of according to the standard is allowed.<em>n = 1</em>are used. The standard also states that for short circuits far from the generator, where the duration of the short circuit averages 0.5 seconds or more, it is permissible to assume<em>m+n = 1</em>, so that<em>i<sub>th</sub></em>is equal to<em>I<sub>k</sub>"</em>.</p>
+<p>In summary, two aspects are of great importance in the design phase of a distribution network:</p>
+<ul>
+<li>Dynamic short-circuit strength, based on the peak short-circuit current<em>i<sub>p</sub></em> </li>
+<li>Thermal short-circuit strength, based on the three-phase short-circuit current<em>I<sub>k</sub>"</em>and the decreasing direct current and alternating current components.</li>
+</ul>
+<a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.3"></div>
+<br/>
+<h2>10.3 Short-circuit current calculation according to IEC 60909</h2>
+<p>The short-circuit current calculation according to IEC 60909 is fundamentally defined as a method that can be performed manually. Moreover, efforts have been made to design the method in such a way that there are as few points of contention as possible. The calculation results can be easily assessed and reproduced by third parties. Because many designers in the industry need to refer to an internationally recognized standard, the method according to IEC 60909 is often preferred. For this reason, responsible assumptions and omissions have been incorporated, which are partly compensated by correction factors.</p>
+<p>The method according to IEC 60909 is a worst-case approach used to determine the highest value of the short-circuit current. This involves a number of assumptions and simplifications when creating the network model for the calculation:</p>
+<ul>
+<li>neglecting operational capacities in the connections</li>
+<li>neglecting all network loads except for motors</li>
+<li>all power sources are replaced by a short-circuit impedance</li>
+<li>an equivalent voltage source is applied at the fault location</li>
+<li>Correction factors are applied to the equivalent voltage source and to impedances.</li>
+</ul>
+<p>The aforementioned assumptions and simplifications lead to a passive model of the network without power sources. All power supplies, synchronous and asynchronous machines are replaced by their internal impedances. In this passive network, an equivalent voltage source is placed at the short-circuit location, as shown in figure 10.7 and figure 10.8. The magnitude of the voltage is:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.7.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.7</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The correction factor<em>c</em>was introduced due to several omissions and assumptions and to account for deviations from the ideal situation, such as:</p>
+<ul>
+<li>voltage variation in time and place</li>
+<li>tap position of transformers deviating from the main setting</li>
+<li>neglect of loads</li>
+<li>neglect of line and cable capacities</li>
+<li>the sub-transient behavior of generators and motors.</li>
+</ul>
+<h6>Voltage factor c</h6>
+<p>The voltage factor<em>c</em>depends on the voltage level and the choice of whether the minimum short-circuit current<em>I<sub>k,min</sub></em>(factor<em>c<sub>min</sub></em>) or the
+          maximum short-circuit current<em>I<sub>k,max</sub></em>(factor<em>c<sub>max</sub></em>) must be calculated. Table 10.1 shows the values for the corresponding c-factor.</p>
+<h5>Table 10.1 Values for the c-factor</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="85"><p> <strong>Spanningsniveau</strong> </p></td>
+<td valign="top" width="135"><p> <strong>Spanning</strong> </p></td>
+<td valign="top" width="66"><p> <strong>c<sub>max</sub></strong> </p></td>
+<td valign="top" width="54"><p> <strong>c<sub>min</sub></strong> </p></td>
+</tr>
+<tr>
+<td rowspan="2" valign="top" width="85"><p>LS</p></td>
+<td valign="top" width="135"><p>Voltage tolerance +6%</p></td>
+<td valign="top" width="66"><p>1.05</p></td>
+<td valign="top" width="54"><p>0.95</p></td>
+</tr>
+<tr>
+<td valign="top" width="135"><p>Voltage tolerance +10%</p></td>
+<td valign="top" width="66"><p>1.10</p></td>
+<td valign="top" width="54"><p>0.95</p></td>
+</tr>
+<tr>
+<td valign="top" width="85"><p>MS</p></td>
+<td valign="top" width="135"><p>1 kV &lt; U<sub>nom</sub>≤ 35 kV</p></td>
+<td valign="top" width="66"><p>1.10</p></td>
+<td valign="top" width="54"><p>1.00</p></td>
+</tr>
+<tr>
+<td valign="top" width="85"><p>HS</p></td>
+<td valign="top" width="135"><p>U<sub>nom</sub>&gt; 35 kV</p></td>
+<td valign="top" width="66"><p>1.10</p></td>
+<td valign="top" width="54"><p>1.00</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The currents in the passive network, which arise as a result of the application of the voltage source, are equal to the fault currents in the network, while the total current supplied by the voltage source is equal to the short-circuit current at the fault location.</p>
+<p>Figure 10.7 shows a simple network consisting of three nodes. Node K1 is connected to the power supply, and node K3 contains a load, a generator, and a motor. A symmetrical short circuit is assumed at node K2.</p>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.7.png" width="712"/>
+<h5>Figure 10.7 Network with a short circuit at node K2</h5>
+<p>According to IEC 60909, for the calculation of the short-circuit current, the network can be replaced by the equivalent circuit as shown in figure 10.8. The grid supply is replaced by the short-circuit impedance. The voltage source of the grid supply is short-circuited in this case. The transformer and the cable are replaced by their impedances. The rotating machines are replaced by their short-circuit impedances. Loads and shunts are disregarded. Capacitances of connections of the normal and inverse system are also disregarded.</p>
+<p>At the fault location K2, a voltage source is now applied with a value according to equation 10.7. This value represents the voltage at this node in the undisturbed situation. By simplifying the network in figure 10.8, the short-circuit current can be calculated.</p>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.8.png" width="712"/>
+<h5>Figure 10.8 Replacement diagram according to IEC 60909 for calculating the short circuit at node K2</h5>
+<p>Because the fault is a three-phase symmetrical short circuit, only the network of the positive-sequence component is relevant for the calculation. Therefore, it is sufficient to consider only the positive-sequence impedances.<em><u>Z</u></em><em><sub>1</sub></em>determined. For the calculation of other types of short circuits, such as between two phases and between phase and ground, the zero-sequence impedance must also be considered.<em><u>Z</u><sub>0</sub></em>and the inverse impedance<em><u>Z</u><sub>2</sub></em>are determined. In the homopolar network, the equivalent circuit of the transformer requires special attention, as discussed in<a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8.3.6">paragraph 8.3.6</a>.</p>
+<p>By simplifying the equivalent circuit of figure 10.8 to a single impedance<em><u>Z</u><sub>1</sub></em>, the three-phase short-circuit current can<em>I<sub>k</sub>"</em>can be easily determined from the series and parallel connections of the individual impedances:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.8.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.8</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>All branches (transformers, cables, inductors) and active elements (power supply, generators, motors) have been replaced by short-circuit impedances.<em>R+jX</em>The impedances are described in<a href="https://www.phasetophase.nl/boek/boek_2_8.html">chapter 8</a>(Models). Table 10.2 provides a summary of the method by which the impedances of the main network components can be calculated from generally known data.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.3.1"></div>
+<br/>
+<h3>10.3.1 Calculation</h3>
+<p>The calculation of the maximum and minimum short-circuit current is based on a number of simplifications:</p>
+<ul>
+<li>during the short circuit, the type of short circuit does not change; that is to say, a single-phase ground fault does not change into a two-phase fault or a three-phase fault</li>
+<li>during the short circuit, the topology of the network does not change</li>
+<li>the impedances of the transformers relate to the nominal transformation ratio; any deviations are accounted for by the factor<em>K<sub>T</sub></em>(<a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8.3.7">paragraph 8.3.7</a>) taken into account</li>
+<li>arc resistance is not taken into account</li>
+<li>all capacitances of lines and cables and other shunt admittances and non-rotating loads are neglected</li>
+<li>Capacitances and shunt admittances in the homopolar system are not neglected.</li>
+</ul>
+<p>With these simplifications, the short-circuit current can be calculated with sufficient accuracy. The method is established in the IEC 60909 standard and is globally accepted.</p>
+<h5>Table 10.2 Summary of Short-Circuit Impedances</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top"><p> <strong>Component</strong> </p></td>
+<td valign="top"><p> <strong>Resistance and reactance</strong> </p></td>
+<td valign="top"><p> <strong>Complex impedance and correction factor</strong> </p></td>
+</tr>
+<tr>
+<td><p>Netvoeding</p></td>
+<td><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/tabel-10.2-a1.png"/></td>
+<td><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/tabel-10.2-a2.png"/></td>
+</tr>
+<tr>
+<td><p>Cables and lines</p></td>
+<td><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/tabel-10.2-b1.png"/></td>
+<td><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/tabel-10.2-b2.png"/></td>
+</tr>
+<tr>
+<td><p>Transformatoren</p></td>
+<td><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/tabel-10.2-c1.png"/></td>
+<td><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/tabel-10.2-c2.png"/></td>
+</tr>
+<tr>
+<td><p>Smoorspoelen</p></td>
+<td><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/tabel-10.2-d1.png"/></td>
+<td><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/tabel-10.2-d2.png"/></td>
+</tr>
+<tr>
+<td><p>Synchronous generators and motors</p></td>
+<td><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/tabel-10.2-e1.png"/></td>
+<td><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/tabel-10.2-e2.png"/></td>
+</tr>
+<tr>
+<td><p>Asynchronous motors</p></td>
+<td><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/tabel-10.2-f1.png"/></td>
+<td><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/tabel-10.2-f2.png"/></td>
+</tr>
+</tbody>
+</table><br/>
+<h6>Calculation of the maximum short-circuit current I<sub>k,max</sub> </h6>
+<p>The maximum short-circuit current is calculated to investigate the short-circuit strength of the network components. When calculating maximum short-circuit currents in a network, a factor<em>c<sub>max</sub></em>used. This calculation is based on:</p>
+<ul>
+<li>resistance of the conductors at a temperature of 20 ˚C</li>
+<li>maximum deployment of generators</li>
+<li>maximum deployment of transformers and interconnections</li>
+<li>maximum short-circuit power of the grid supply</li>
+<li>maximum deployment of asynchronous machines (generators and motors).</li>
+</ul>
+<h6>Calculation of the minimum short-circuit current I<sub>k,min</sub> </h6>
+<p>This calculation is applied to investigate the proper functioning of protection devices in the network, particularly for determining whether the protection will activate and establishing selectivity between consecutive protection devices. In the calculation of minimum short-circuit currents in a network, a factor is used.<em>c<sub>min</sub></em>used. The calculation is based on:</p>
+<ul>
+<li>resistance of the conductors at the conductor's final temperature</li>
+<li>minimal deployment of generators</li>
+<li>minimal deployment of transformers and coupling connections</li>
+<li>minimum short-circuit power of grid supply</li>
+<li>no influence from asynchronous machines (generators and motors) and synchronous motors.</li>
+</ul>
+<p>The protection system must be designed for the disconnection of short-circuit currents and ground fault currents. It is important to be aware of the gray area between the maximum allowable current of the protected objects and the activation level of the protection, particularly in relation to the inrush currents of large motors.</p>
+<p>In every electrical network, short circuits can occur in various ways. A distinction is made between: short circuits between 3 phases, short circuits between 2 phases, with or without ground contact, and short circuits between one phase and ground. In calculations, the method of symmetrical components is used.<a href="https://www.phasetophase.nl/boek/boek_2_7.html">chapter 7</a>). Using this method, the short-circuit current for the situations in figure 10.9 can be calculated using simple formulas. To determine the impedances of the components in the network, the models described in<a href="https://www.phasetophase.nl/boek/boek_2_8.html">chapter 8</a>.</p>
+<div class="row">
+<div class="col-lg-6">
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.9a.png" width="334"/>
+<h5>a) three-phase short circuit</h5>
+</div>
+<div class="col-lg-6">
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.9b.png" width="333"/>
+<h5>b) two-phase short circuit</h5>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-6">
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.9c.png" width="334"/>
+<h5>c) two-phase short circuit with ground contact</h5>
+</div>
+<div class="col-lg-6">
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.9d.png" width="333"/>
+<h5>d) single-phase short circuit with ground contact</h5>
+</div>
+</div>
+<h5>Figure 10.9 Types of Short Circuits</h5>
+<p>The basis for short-circuit current calculations is established by the interconnections of the symmetrical component networks (Happoldt, 1978). For each symmetrical component, a model of the network is created, after which the type of short circuit determines how the positive, negative, and zero-sequence component networks are interconnected. The phase currents and phase voltages can be determined after the transformation back (<a href="https://www.phasetophase.nl/boek/boek_2_7.html">see chapter 7</a>) calculated from the component currents and component voltages. The circuits for the four types of short circuits are summarized in figure 10.10. In this figure,<em><u>Z</u><sub>k,1</sub></em>,<em><u>Z</u><sub>k,2</sub></em>en<em><u>Z</u><sub>k,0</sub></em>the short-circuit impedance of the normal, inverse, and homopolar network at the fault location, respectively, and is<em><u>Z</u><sub>f</sub></em>the impedance of the short circuit. The voltage source in the component networks is the nominal phase voltage.</p>
+<p>In short-circuit calculations according to IEC 60909, the impedance of the short circuit<em><u>Z</u><sub>f</sub></em>always zero Ohms and the component currents are not<em>I<sub>1</sub></em>,<em>I<sub>2</sub></em>en<em>I<sub>0</sub></em>calculated, but the short circuit current<em>I<sub>k</sub></em>at the fault location, causing the value of the voltage source to be the nominal coupled voltage, multiplied by the<em>c</em>-factor.</p>
+<div class="row">
+<div class="col-lg-6">
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.10a.png" width="290"/>
+<h5>a) three-phase short circuit</h5>
+</div>
+<div class="col-lg-6">
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.10b.png" width="291"/>
+<h5>b) two-phase short circuit</h5>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-6">
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.10c.png" width="370"/>
+<h5>c) two-phase short circuit with ground contact</h5>
+</div>
+<div class="col-lg-6">
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.10d.png" width="300"/>
+<h5>d) single-phase short circuit with ground contact</h5>
+</div>
+</div>
+<h5>Figure 10.10 Component networks for the types of short circuits</h5>
+<p>For symmetrical short circuits, only the normal impedance appears to be relevant.<em><u>Z</u><sub>1</sub></em>) is important. For asymmetrical short circuits, the inverse impedance must also be considered.<em><u>Z</u><sub>2</sub></em>) are determined. In most cases (far from the generator), this is assumed to be equal to the normal impedance (<em><u>Z</u><sub>1</sub></em>=<em><u>Z</u><sub>2</sub></em>). If the short circuit occurs between one or two phases and ground, the homopolar impedance must also be considered<em><u>Z</u><sub>0</sub></em>) are determined.</p>
+<p>From the symmetrical component circuits of figure 10.10, the formulas for short-circuit current calculations according to IEC 60909 are derived. In this, component currents and phase voltage are not used, but rather the coupled voltage and phase currents. Table 10.3 provides an overview of the calculation of short-circuit currents according to IEC 60909. In this,<em>U<sub>nom</sub></em>the nominal coupled voltage at the fault location and is<em><u>Z</u><sub>k,1</sub></em>the
+          short-circuit impedance at the fault location in the normal system,<em><u>Z</u><sub>k,2</sub></em>the short-circuit impedance at the fault location in the inverse system and<em><u>Z</u><sub>k,0</sub></em>the short-circuit impedance at the fault location in the homopolar system. For a two-phase short circuit with ground contact, the complex operators<em>a</em>en<em>a<sup>2</sup></em>(see<a href="https://www.phasetophase.nl/boek/boek_2_7.html#_7.5">paragraph 7.5</a>) used.</p>
+<h5>Table 10.3 Calculation of the initial short-circuit current at a fault location</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="33%"><p> <strong>Type of short circuit</strong> </p></td>
+<td valign="top" width="66%"><p> <strong>Kortsluitstroom</strong> </p></td>
+</tr>
+<tr>
+<td width="85"><p>Three phases</p></td>
+<td valign="top" width="255"><img alt="" src="./kortsluitstroomberekeningen_files/tabel-10.3-a.png"/></td>
+</tr>
+<tr>
+<td width="85"><p>Two phases without ground contact</p></td>
+<td valign="top" width="255"><img alt="" src="./kortsluitstroomberekeningen_files/tabel-10.3-b.png"/></td>
+</tr>
+<tr>
+<td width="85"><p>Two phases (b and c) with ground contact</p></td>
+<td valign="top" width="255"><img alt="" src="./kortsluitstroomberekeningen_files/tabel-10.3-c.png"/></td>
+</tr>
+<tr>
+<td width="85"><p>One phase with ground contact</p></td>
+<td valign="top" width="255"><img alt="" src="./kortsluitstroomberekeningen_files/tabel-10.3-d.png"/></td>
+</tr>
+</tbody>
+</table><br/>
+<p>A three-phase short circuit almost always produces the largest short-circuit current. In some cases, a phase-to-ground short circuit produces the largest short-circuit current. The magnitude depends on the grounding method in the medium-voltage (MV) and low-voltage (LV) networks. Many MV networks are ungrounded, so the phase-to-ground short-circuit current is mainly determined by the capacitance to ground of all connected cables in the MV network (see<a href="https://www.phasetophase.nl/boek/boek_1_5.html">chapter 5</a>). If the zero-sequence impedance<em>Z<sub>0</sub></em>at the short-circuit location is less than<em>Z<sub>1</sub></em>en<em>Z<sub>2</sub></em>, the phase-to-ground fault current will be greater than the three-phase fault current. This situation can occur with a short circuit at the low-voltage terminals of a distribution transformer. The two-phase short circuit is less significant in the design phase and is therefore not performed as often.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.3.2"></div>
+<br/>
+<h3>10.3.2 Three-phase and two-phase fault without ground contact in an MV network</h3>
+<p>The network from figure 10.7 is repeated below in figure 10.11. In the network of figure 10.11, the calculations of the maximum short-circuit current for a short circuit at the MV node K2 are explained using an example. The MV section is not grounded. The data of the network and the components are summarized in table 10.4.</p>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.11.png" width="697"/>
+<h5>Figure 10.11 Network with a short circuit at node K2</h5>
+<h5>Table 10.4 Input data for the calculation example</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="33%"><p> <strong>Nodes:</strong> </p>
+<table border="0" width="100%">
+<tbody>
+<tr>
+<td width="50%">K1: V<sub>k1,nom</sub>=</td>
+<td width="50%">150 kV</td>
+</tr>
+<tr>
+<td width="50%">K2: U<sub>k2,nom</sub>=</td>
+<td width="50%">10 kV</td>
+</tr>
+<tr>
+<td width="50%">K3: U<sub>k3,nom</sub>=</td>
+<td width="50%">10 kV</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td valign="top" width="33%"><p> <strong>Grid supply:</strong> </p>
+<table border="0" width="100%">
+<tbody>
+<tr>
+<td width="50%">U<sub>nom</sub>=</td>
+<td width="50%">150 kV</td>
+</tr>
+<tr>
+<td width="50%">I<sub>k,max</sub>" =</td>
+<td width="50%">40 kA</td>
+</tr>
+<tr>
+<td width="50%">S<sub>k,max</sub>" =</td>
+<td width="50%">10392 MVA</td>
+</tr>
+<tr>
+<td width="50%">R/X =</td>
+<td width="50%">0</td>
+</tr>
+<tr>
+<td width="50%">Z0/Z1 =</td>
+<td width="50%">1</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td valign="top" width="33%"><p> <strong>Transformer:</strong> </p>
+<table border="0" width="100%">
+<tbody>
+<tr>
+<td width="50%">U<sub>nominal, primary</sub>=</td>
+<td width="50%">150 kV</td>
+</tr>
+<tr>
+<td width="50%">U<sub>nominal, secondary</sub>=</td>
+<td width="50%">10.5 kV</td>
+</tr>
+<tr>
+<td width="50%">S<sub>nom</sub>=</td>
+<td width="50%">50 MVA</td>
+</tr>
+<tr>
+<td width="50%">u<sub>k</sub>=</td>
+<td width="50%">20%</td>
+</tr>
+<tr>
+<td width="50%">P<sub>k</sub>=</td>
+<td width="50%">20 kW</td>
+</tr>
+<tr>
+<td width="50%">Circuit:</td>
+<td width="50%">Ynd5</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr><tr>
+<td valign="top" width="115"><p> <strong>Cable:</strong> </p>
+<table border="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="50%">Type:</td>
+<td width="50%">3x150 Cu<br/>XLPE 6/10</td>
+</tr>
+<tr>
+<td width="50%">Length:</td>
+<td width="50%">5 km</td>
+</tr>
+<tr>
+<td width="50%">R<sub>K</sub>(20°C) =</td>
+<td width="50%">0.621 Ω</td>
+</tr>
+<tr>
+<td width="50%">X<sub>K</sub>=</td>
+<td width="50%">0.475 Ω</td>
+</tr>
+<tr>
+<td width="50%">C<sub>K</sub>=</td>
+<td width="50%">1.8 μF</td>
+</tr>
+<tr>
+<td width="50%">R<sub>K,0</sub>=</td>
+<td width="50%">0.8 Ω</td>
+</tr>
+<tr>
+<td width="50%">X<sub>K,0</sub>=</td>
+<td width="50%">0.5 Ω</td>
+</tr>
+<tr>
+<td width="50%">C<sub>K,0</sub>=</td>
+<td width="50%">1.8 μF</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td valign="top" width="115"><p> <strong>Motor:</strong> </p>
+<table border="0" width="100%">
+<tbody>
+<tr>
+<td width="50%">U<sub>nom</sub>=</td>
+<td width="50%">10 kV</td>
+</tr>
+<tr>
+<td width="50%">P<sub>nom</sub>=</td>
+<td width="50%">2 MW</td>
+</tr>
+<tr>
+<td width="50%">η =</td>
+<td width="50%">95%</td>
+</tr>
+<tr>
+<td width="50%">cos(φ)<sub>nom</sub>=</td>
+<td width="50%">0.85</td>
+</tr>
+<tr>
+<td width="50%">I<sub>a</sub>/I<sub>nom</sub>=</td>
+<td width="50%">5</td>
+</tr>
+<tr>
+<td width="50%">(R/X)<sub>aanloop</sub>=</td>
+<td width="50%">0.1</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td valign="top" width="115"><p> <strong>Generator:</strong> </p>
+<table border="0" width="100%">
+<tbody>
+<tr>
+<td width="50%">U<sub>nom</sub>=</td>
+<td width="50%">10 kV</td>
+</tr>
+<tr>
+<td width="50%">S<sub>nom</sub>=</td>
+<td width="50%">2 MVA</td>
+</tr>
+<tr>
+<td width="50%">cos(φ)<sub>nom</sub>=</td>
+<td width="50%">0.85</td>
+</tr>
+<tr>
+<td width="50%">x<sub>d</sub>" =</td>
+<td width="50%">0.2 pu</td>
+</tr>
+<tr>
+<td width="50%">r<sub>g</sub>=</td>
+<td width="50%">0.1 pu</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top" width="115"><p> <strong>Load:</strong> </p>
+<table border="0" width="100%">
+<tbody>
+<tr>
+<td width="50%">P =</td>
+<td width="50%">2.0 MW</td>
+</tr>
+<tr>
+<td width="50%">Q =</td>
+<td width="50%">1.5 Mvar</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td valign="top" width="115"> </td>
+<td valign="top" width="115"> </td>
+</tr>
+</tbody>
+</table><br/>
+<p>The equivalent circuit diagram from figure 10.8 is repeated below in figure 10.12.</p>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.12.png" width="768"/>
+<h5>Figure 10.12 Equivalent circuit diagram according to IEC 60909 for calculating the short circuit at node K2</h5>
+<p>For the calculation of the three-phase short-circuit current in the equivalent circuit diagram of figure 10.12, the internal impedances of all components are first calculated. All impedances are referenced to the voltage level at the short-circuit location. For the network supply on the high-voltage side:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.9.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.9</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>Because the short circuit is located at the MV node K2, the impedance of the HV network supply must be converted to an equivalent impedance at the MV level. This is done using the transformer’s turns ratio. For the network supply, corrected for the transformer’s turns ratio:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.10.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.10</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>For the transformer:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.11.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.11</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>For the cable applies:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.12.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.12</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>For the generator applies:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.13.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.13</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>For the motor applies:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.14.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.14</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>In the equivalent circuit of figure 10.12, the impedance to the left of node K2 and thus to the left of the voltage source is equal to the series connection of the impedances of the power supply and the transformer:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.15.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.15</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>In the equivalent circuit of figure 10.12, the impedance to the right of the voltage source is equal to the series connection of the cable impedance and the parallel connection of the generator and motor impedances. The impedance of the load is neglected:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.16.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.16</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The total impedance at the fault location is then equal to the parallel connection of the impedances to the left and right of the voltage source:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.17.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.17</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>Now the three-phase short-circuit current at fault location K2 can be calculated:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.18.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.18</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The contribution from the feeding side, to the left of the voltage source in figure 10.12, is equal to:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.19.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.19</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>This is the short-circuit current supplied by the mains power and the transformer.</p>
+<p>The contribution from the motor and the generator, to the right of the voltage source in figure 10.12, is equal to:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.20.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.20</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The short-circuit current for a two-phase short circuit without ground contact at fault location K2 can now also be determined, provided that in accordance with IEC 60909 the inverse impedance is set equal to the normal impedance.<em><u>Z</u><sub>k,2</sub>=<u>Z</u><sub>k,1</sub></em>). The two-phase short-circuit current at the fault location
+          is then according to table 10.3:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.21.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.21</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.13.png" width="712"/>
+<h5>Figure 10.13 Replacement diagram according to IEC 60909 for calculating the short circuit at node K3</h5>
+<p>In the same manner, the short-circuit current at node K3 can also be easily determined. To do this, the equivalent voltage source in figure 10.12 must be moved from node K2 to node K3. Regarding the impedances, the diagram remains unchanged, as shown in figure 10.13.</p>
+<p>The impedance to the left of node K3 in figure 10.13 is equal to the series connection of the impedances of the power supply, the transformer, and the cable:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.22.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.22</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>In the diagram of figure 10.13, the impedance to the right of the power supply at node K3 is equal to the parallel connection of the generator and motor impedances. The impedance of the load is again neglected:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.23.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.23</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The total impedance at the fault location K3 is then equal to the parallel connection of the impedances to the left and right of the power supply:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.24.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.24</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>This allows the three-phase short-circuit current at fault location K3 to be calculated:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.25.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.25</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The short-circuit power at fault location K3 is calculated using the nominal voltage:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.26.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.26</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The R/X ratio at fault location K3 is derived from the impedance at the fault location (equation 10.24) and is equal to:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.27.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.27</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>With the R/X ratio and the three-phase short-circuit current, the peak short-circuit current can be calculated using formulas 10.3 and 10.4:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.28.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.28</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.3.3"></div>
+<br/>
+<h3>10.3.3 Phase-to-ground fault in an ungrounded medium-voltage network</h3>
+<p>The network in figure 10.11 is, according to the data in table 10.4, an MV network. The HV/MV transformer has a star-delta configuration, making it a floating MV network. In a floating network, the phase-to-ground short-circuit current is largely determined by the capacitance to ground of all cables. To calculate the phase-to-ground short-circuit current, the zero-sequence impedance must be considered.<em><u>Z</u><sub>0</sub></em>of the network at the short-circuit location can be determined. The data to be used can be found in figure 10.9.d and figure 10.10.d. In the network diagram in the homopolar system, the equivalent circuits of the transformers and rotating machines differ from the diagram in the normal system. These differences result in the circuit shown in figure 10.14 in the example. It is notable that the transformer, due to the delta connection on the secondary side, does not form a connection with the high-voltage side (see also<a href="https://www.phasetophase.nl/boek/boek_2_8.html">chapter 8</a>). Moreover, the motor and the generator have no homopolar impedance because it is assumed that the windings are connected in a delta configuration. The cable is represented with a Pi-equivalent for the homopolar capacitance (twice<em>jX<sub>k0,transverse</sub>/2</em>) and the homopolar longitudinal impedance<em>R<sub>k,0</sub>+jX<sub>k,0</sub></em>).</p>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.14.png" width="671"/>
+<h5>Figure 10.14 Homopolar network according to IEC 60909 for calculating the short circuit at node K2</h5>
+<p>Omdat<em><u>Z</u><sub>k,0</sub></em>much smaller than<em><u>Z</u><sub>k0,transverse</sub></em>, the homopolar Pi-equivalent of the cable can be simplified to a single transverse impedance<em><u>Z</u><sub>k0,transverse</sub></em>. The value of this is calculated from the homopolar capacitance:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.29.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.29</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>This is the only homopolar impedance at fault location K2, so this value can be inserted into the formula for the phase-to-earth short-circuit current from table 10.3.<em><u>Z</u><sub>k,1</sub>=<u>Z</u><sub>k,2</sub></em>):</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.30.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.30</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The network in figure 10.7 has only a small MV section. Most MV networks are fed via a substation, to which about 20 feeders are connected, each easily having a length of 10 km. Figure 10.15 shows a network where the 20 feeders are represented by an equivalent connection.</p>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.15.png" width="697"/>
+<h5>Figure 10.15 MV network with an equivalent connection for 200 km of cable</h5>
+<p>Volgens<a href="https://www.phasetophase.nl/boek/boek_1_5.html">chapter 5</a>all connected strands have a combined large homopolar capacitance to ground, which ensures that the phase-to-ground short-circuit current can reach a significant magnitude. Figure 10.16 illustrates this using the paths for the short-circuit currents.</p>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.16.png" width="613"/>
+<h5>Figure 10.16 Phase-to-ground fault in an ungrounded medium voltage network</h5>
+<p>The combined homopolar capacitance<em>C<sub>K,0</sub></em>of 200 km of cable of the type 3x150 Cu XLPE 6/10 is 72 μF. This capacitance is included in the additional equivalent connection in figure 10.15. The phase-to-ground short-circuit current<em>I<sub>k1</sub></em>is shown in figure 10.16 and consists of the two currents<em>I<sub>k1a</sub></em>en<em>I<sub>k1b</sub></em>through the two phase capacitances<em>a</em>en<em>b</em>The voltage across each of these capacitances is equal to the coupled voltage during the short circuit. The charging current that flows through each phase due to the existing capacitance is:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.31.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.31</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>As a result, the current through the equivalent capacitors is also equal to 0.238 kA. These currents flow through the phases.<em>a</em>en<em>b</em>to the
+          transformer and the vector sum of these two currents (I<sub>k1c</sub>) flows through the phase<em>c</em>to the short-circuit location. Due to the value of<em>X<sub>C,0</sub></em>by substituting into equation 10.29, the short-circuit current can be calculated, because<em>I<sub>k1</sub>= I<sub>k1c</sub></em><sub> </sub>:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.32.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.32</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>If this value is substituted into the formula for the phase-to-earth short-circuit current from table 10.3<u><em>Z</em></u><em><sub>k,1</sub>=<u>Z</u><sub>k,2</sub> </em>en<em> <u>Z</u> <sub>k,0</sub>=<u>Z</u><sub>K0,transverse</sub></em>), then follows:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.33.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.33</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>This relatively large phase-to-earth short-circuit current in the floating network is in the order of magnitude of the maximum current load of the applied cable and will, depending on the applied protection, be disconnected. If the magnitude of the phase-to-earth short-circuit current does not lead to unacceptable heating of the conductor or the earth shield of the cables, then the short circuit does not need to be immediately disconnected. This is referred to as a 'standing earth fault.' The power supply does not need to be interrupted. The earth fault can be located calmly. It is always advisable to detect an earth fault due to the risk of a second earth fault in the healthy phases. Customers connected to the low-voltage network do not notice anything in the phase-to-neutral voltages from the short circuit in the medium-voltage network. There may be a rise in the potential of the neutral and the PE (see<a href="https://www.phasetophase.nl/boek/boek_1_5.html#_5.7.3">paragraph 5.7.3</a>).</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.3.4"></div>
+<br/>
+<h3>10.3.4 Phase-to-ground fault in a resonant-earthed network</h3>
+<p>In a floating medium-voltage distribution network, the phase-to-ground fault current is caused by the homopolar capacitance of all cables behind the supply transformer. This fault current can become significant in a large network. By using a neutral grounding reactor, the magnitude of this fault current can be limited. The operation is based on the principle of parallel resonance between the total homopolar cable capacitance and the homopolar inductance of the neutral grounding reactor, causing the impedance of the homopolar component network to become infinitely large.</p>
+<p>Figure 10.17 shows a network where the arc suppression coil is installed as a neutral point transformer with a homopolar impedance to ground. The homopolar reactance is equal to the sum of the homopolar transformer impedance plus three times the grounding impedance. The arc suppression coil can also be implemented with a star-delta transformer, whose star point is grounded with an impedance.</p>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.17.png" width="712"/>
+<h5>Figure 10.17 MV network with arc suppression coil</h5>
+<p>For the calculation of the phase-to-ground short-circuit current, the equivalent circuit from figure 10.10.d for the short circuit in one phase with ground contact is applied, where the three component networks (normal, inverse, homopolar) are connected in series. The homopolar network is depicted in figure 10.18. To achieve parallel resonance, the total impedance from node K3 to the reference in the homopolar subnet must be infinitely large. This can be achieved by adjusting the value of X.<sub>BS,0</sub>to choose the value of the arc suppression coil correctly. This also means that with a configuration change of the network, the capacitance changes and thus the resonant frequency as well. To still achieve resonance, theoretically, the value of the arc suppression coil would need to be adjusted.</p>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.18.png" width="718"/>
+<h5>Figure 10.18 Homopolar network according to IEC 60909 with the application of an arc suppression coil</h5>
+<p>The value of<em><u>Z</u><sub>K,0,transverse</sub></em>is calculated in equation 10.29:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-pag-447a.png"/></td>
+<td width="2%"><p align="left"> </p></td>
+<td width="6%"><p align="center"> </p></td>
+<td width="2%"><p align="right"> </p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The value of<em><u>Z</u><sub>C</sub></em>for the equivalent connection, which represents 200 km of cable, is calculated in equation 10.32:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-pag-447b.png"/></td>
+<td width="2%"><p align="left"> </p></td>
+<td width="6%"><p align="center"> </p></td>
+<td width="2%"><p align="right"> </p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The total homopolar impedance, caused by the homopolar capacitances of the cables, is then equal to the parallel connection of these two impedances:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-pag-447c.png"/></td>
+<td width="2%"><p align="left"> </p></td>
+<td width="6%"><p align="center"> </p></td>
+<td width="2%"><p align="right"> </p></td>
+</tr>
+</tbody>
+</table><br/>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.19.png" width="712"/>
+<h5>Figure 10.19 Component currents during a phase-to-earth short circuit in a resonant grounded network</h5>
+<p>For parallel resonance, the homopolar reactance of the arc suppression coil must be equal to the negative homopolar reactance of the homopolar capacitances:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.34.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.34</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The parallel connection of the arc suppression coil with the cables yields a value of<em><u>Z</u><sub>k,0</sub></em>which is infinite. This value can be substituted into the formula for the phase-to-earth short-circuit current from table 10.3, resulting in the magnitude of<em>I<sub>k1</sub>"</em>is zero. Figure 10.19 shows the result of the short-circuit current calculation for this fault situation. It displays all the currents around the short-circuit point in the network grounded with the arc suppression coil. At the location of the short circuit, the short-circuit current is zero. However, there is a homopolar current from the cables (138 plus 3 A) to the arc suppression coil. This is due to the parallel resonance in the homopolar circuit. Additionally, there is a current in the normal circuit from the power transformer (138 A) to the equivalent cable and to the cable leading to node K3. The current to the equivalent cable (138 A) is the capacitive charging current of all cable capacitances (total 72 μF, equal to the homopolar capacitance) in the normal circuit. The current to the cable leading to K3 (164 A) is the normal inductive load flow current to the loads and the generator connected at node K3. These currents flow in the normal circuit and are not affected by the short circuit.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.3.5"></div>
+<br/>
+<h3>10.3.5 Phase-to-earth fault in an impedance-grounded MV network</h3>
+<p>Sometimes it is desirable that phase-to-earth faults in floating MV distribution networks do not persist but are immediately disconnected. The network in figure 10.7 can be grounded in two ways. In some 50/10 kV substations, transformers of the Dyn type are used. In those cases, the neutral point of the 10 kV side can be grounded either solidly or through an impedance, causing the phase-to-earth short-circuit current in the MV network to become large. Values of 8 kA can then be reached. Another grounding method, which is frequently used, employs a neutral grounding transformer.<a href="https://www.phasetophase.nl/boek/boek_2_8.html">see chapter 8</a>). Figure 10.20 provides an example of a grounding transformer, which is installed in the substation.</p>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.20.png" width="712"/>
+<h5>Figure 10.20 MV network with grounding transformer</h5>
+<p>The phase-to-ground fault current is now largely determined by the impedance of the grounding transformer and the capacitance to ground of all cables. To calculate the phase-to-ground fault current, the homopolar circuit of figure 10.21 must be used. In this circuit, the grounding transformer is modeled as a homopolar impedance at node K2. The homopolar impedance of the grounding transformer is 7 Ω (reactive). The homopolar impedance of the equivalent cable is represented by a single homopolar impedance at node K2. The homopolar impedance of the cable is represented with a Pi-equivalent for the homopolar capacitance (twice<em>j2X<sub>k0,transverse</sub></em>) and the homopolar
+          longitudinal impedance (<em>R<sub>k,0</sub>+jX<sub>k,0</sub></em>). The homopolar longitudinal impedance of the cable is again neglected in this calculation.</p>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.21.png" width="712"/>
+<h5>Figure 10.21 Homopolar network according to IEC 60909 with the application of a grounding transformer</h5>
+<p>The value of<em><u>Z</u><sub>K,0,transverse</sub></em>is calculated in equation 10.29:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.35a.png"/></td>
+<td width="2%"><p align="left"></p></td>
+<td width="6%"><p align="center"></p></td>
+<td width="2%"><p align="right"></p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The value of<em><u>Z</u><sub>C</sub></em>for the equivalent connection, which represents 200 km of cable, is calculated in equation 10.32:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="center" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.35b.png"/></td>
+<td width="2%"><p align="left"></p></td>
+<td width="6%"><p align="center"></p></td>
+<td width="2%"><p align="right"></p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The homopolar impedance of the grounding transformer is given and amounts to:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="center" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.35.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.35</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The total homopolar impedance at the fault location is then equal to the parallel connection of the three aforementioned homopolar impedances:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.36.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.36</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>This value can be substituted into the formula for the phase-to-earth short-circuit current from table 10.3<em><u>Z</u><sub>k,1</sub>=<u>Z</u><sub>k,2</sub></em>):</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.37.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.37</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.3.6"></div>
+<br/>
+<h3>10.3.6 Calculation of the short-circuit current in an LV network</h3>
+<p>For an accurate calculation of the short-circuit current in an LV network, the higher-level MV network must also be modeled and included in the calculation. However, for most applications, it is sufficient to perform the calculation from the MV side of the distribution transformer. In that case, the short-circuit power of the MV supply point must be known. This section explains the calculation of short-circuit currents for an LV network that is fed by a distribution transformer at node K3.</p>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.22.png" width="712"/>
+<h5>Figure 10.22 Network with distribution transformer</h5>
+<p>In paragraph 10.3.2, the short-circuit power at node K3 is calculated using equation 10.26. The R/X ratio at this node is calculated using formula 10.27. With this, the upstream supplying HV and MV network can be replaced by an equivalent network supply at node K3. This results in the simplified network shown in figure 10.23:</p>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.23.png" width="500"/>
+<h5>Figure 10.23 LV network with distribution transformer</h5>
+<p>In the calculation example, it is assumed that the MV section is not grounded and that the LV section is grounded through the transformer neutral point with a resistance of 2Ω. The data of the network and the components are summarized in table 10.5.</p>
+<h5>Table 10.5 Input data for the calculation example</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="50%"><p> <strong>Nodes:</strong> </p>
+<table border="0" width="100%">
+<tbody>
+<tr>
+<td width="50%">K3: U<sub>k3,nom</sub>=</td>
+<td width="50%">10 kV</td>
+</tr>
+<tr>
+<td width="50%">K4: U<sub>k4,nom</sub>=</td>
+<td width="50%">0.4 kV</td>
+</tr>
+<tr>
+<td width="50%">K5: U<sub>k5,nom</sub>=</td>
+<td width="50%">0.4 kV</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td valign="top" width="50%"><p> <strong>Power supply:</strong> </p>
+<table border="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="50%">U<sub>nom</sub>=</td>
+<td width="50%">10 kV</td>
+</tr>
+<tr>
+<td width="50%">I<sub>k,max</sub>" =</td>
+<td width="50%">7,084 kA</td>
+</tr>
+<tr>
+<td width="50%">S<sub>k,max</sub>" =</td>
+<td width="50%">122.7 MVA</td>
+</tr>
+<tr>
+<td width="50%">R/X =</td>
+<td width="50%">0.6</td>
+</tr>
+<tr>
+<td width="50%">Z0/Z1 =</td>
+<td width="50%">1</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top" width="140"><p> <strong>Transformer:</strong> </p>
+<table border="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="50%">U<sub>nominal, primary</sub>=</td>
+<td width="50%">10.25 kV</td>
+</tr>
+<tr>
+<td width="50%">U<sub>nominal, secondary</sub>=</td>
+<td width="50%">0.4 kV</td>
+</tr>
+<tr>
+<td width="50%">S<sub>nom</sub>=</td>
+<td width="50%">0.25 MVA</td>
+</tr>
+<tr>
+<td width="50%">Ru<sub>k</sub>=</td>
+<td width="50%">4%</td>
+</tr>
+<tr>
+<td width="50%">P<sub>k</sub>=</td>
+<td width="50%">2.8 kW</td>
+</tr>
+<tr>
+<td width="50%">R<sub>T,0</sub>=</td>
+<td width="50%">0.0072 Ω</td>
+</tr>
+<tr>
+<td width="50%">X<sub>T,0</sub>=</td>
+<td width="50%">0.0235 Ω</td>
+</tr>
+<tr>
+<td width="50%">Circuit:</td>
+<td width="50%">Dyn5</td>
+</tr>
+<tr>
+<td width="50%">Z0/Z1 =</td>
+<td width="50%">2 Ω</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td valign="top" width="135"><p> <strong>Cable:</strong> </p>
+<table border="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="50%">Type:</td>
+<td width="50%">4x150 VVMvKsas/Alk</td>
+</tr>
+<tr>
+<td width="50%">Length:</td>
+<td width="50%">100 m</td>
+</tr>
+<tr>
+<td width="50%">R<sub>k</sub>(20°C) =</td>
+<td width="50%">0.0206 Ω</td>
+</tr>
+<tr>
+<td width="50%">X<sub>k</sub>=</td>
+<td width="50%">0.0079 Ω</td>
+</tr>
+<tr>
+<td width="50%">R<sub>k,0</sub>=</td>
+<td width="50%">0.060 Ω</td>
+</tr>
+<tr>
+<td width="50%">X<sub>k,0</sub>=</td>
+<td width="50%">0.015 Ω</td>
+</tr>
+<tr>
+<td width="50%">C<sub>k,0</sub>=</td>
+<td width="50%">0.043 μF</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>For a short-circuit current calculation according to the IEC 60909 standard, the network is schematically represented with the network of figure 10.24 for the normal component and the network of figure 10.25 for the homopolar component.</p>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.24.png" width="712"/>
+<h5>Figure 10.24 Network for the normal component for calculating the short circuit at node K5</h5>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.25.png" width="612"/>
+<h5>Figure 10.25 Network for the homopolar component for calculating the short circuit at node K5</h5>
+<p>For the calculation of the three-phase short-circuit current at node K5, the low-voltage network is shown in figure 10.24. First, the internal impedances of all components are calculated. All impedances are referenced to the voltage level at the short-circuit location. For the impedance of the power supply, corrected for the transformer turns ratio:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.38.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.38</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>For the transformer applies:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.39.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.39</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>For the cable applies:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="center" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.40.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.40</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>In the diagram of figure 10.24, for fault location K5, the impedance to the left of the voltage source is equal to the series connection of the impedances of the power supply, the transformer, and the cable:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.41.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.41</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>Now the three-phase short-circuit current at fault location K5 can be calculated:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.42.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.42</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The R/X ratio at fault location K5 is derived from the impedance<em>Z<sub>k,1</sub></em>at the fault location (equation 10.41). From<em>Z<sub>k,1</sub>= R<sub>k,1</sub>+ jX<sub>k,1</sub></em>then follows:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.43.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.43</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>With the R/X ratio and the three-phase short-circuit current, the peak short-circuit current at node K5 can be calculated according to formulas 10.3 and 10.4:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.44.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.44</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The network in figure 10.23 has a grounded low-voltage network. The phase-to-ground short-circuit current is determined by the distribution transformer, the ground resistance, and the cable. It is assumed that<em><u>Z</u><sub>k,1</sub>=<u>Z</u><sub>k,2</sub></em>To calculate the phase-to-ground short-circuit current, the homopolar circuit of the network must be determined. This is shown in figure 10.25. When comparing figure 10.25 with figure 10.24, it is noticeable that in the homopolar circuit, the transformer, due to the delta connection on the primary side, does not form a connection with node K3 on the medium voltage side (see also<a href="https://www.phasetophase.nl/boek/boek_2_8.html">chapter 8</a>). The cable is initially represented with a Pi-equivalent for the homopolar
+          capacitance (twice<em>jX<sub>k0,transverse</sub>/2</em>) and the homopolar longitudinal impedance (<em>R<sub>k,0</sub>+jX<sub>k,0</sub></em>), as shown in figure 10.14.
+          Because in a low-impedance grounded LV network the cable capacitance practically plays no role, it is neglected, so the cable in the homopolar circuit is represented only by its homopolar longitudinal impedance.</p>
+<p>The homopolar impedance of the ground spreading resistance is a factor of 3 greater than the ground spreading resistance (see<a href="https://www.phasetophase.nl/boek/boek_2_7.html">chapter 7</a>)</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.45.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.45</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>For a short circuit at node K5, the impedance in the homopolar circuit is equal to the series connection of the homopolar impedance of the ground spreading resistance, the homopolar transformer impedance, and the homopolar cable impedance:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.46.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.46</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>This value can be inserted into the formula for the phase-to-ground short-circuit current from table 10.3:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.47.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.47</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.3.7"></div>
+<br/>
+<h3>10.3.7 Grounding Concept</h3>
+<p>As shown in the previous calculation examples, the effect of ground faults depends on the chosen grounding concept. For the three most commonly used grounding concepts, the following applies:</p>
+<ul>
+<li>Neutral point on the low-voltage side star grounded</li>
+<ul>
+<li>every ground fault leads to a short-circuit current</li>
+<li>the faulty phase is disconnected by the (fuse) protection</li>
+</ul>
+<li>Floating medium-voltage network</li>
+<ul>
+<li>every ground fault leads to a capacitive ground fault current</li>
+<li>an increased voltage occurs for non-faulty phases</li>
+<li>in the case of a minor fault current, no immediate disconnection is required.</li>
+</ul>
+<li>Impedance grounded MV network</li>
+<ul>
+<li>every ground fault leads to a short-circuit current</li>
+<li>the voltage increase on the non-faulty phases is limited</li>
+<li>Disconnection is desired with the help of ground fault protection.</li></ul>
+</ul>
+<a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.4"></div>
+<br/>
+<h2>10.4 Calculation of short-circuit strength</h2>
+<p>In the event of short circuits, the short-circuit current exerts both thermal and mechanical stress on the component. The component must be able to withstand both types of stress. This section delves into short-circuit strength. The short-circuit capacity of components is provided by the manufacturers. The value is often specified as the maximum short-circuit current in kA but is still commonly referred to as short-circuit capacity. The maximum duration that a short-circuit current is present is determined by the settings of the protection in the supplying network. This is determined by the network operator. Based on this information, the installations of the connected users can be dimensioned.</p>
+<p>The basis of short-circuit strength is the nominal short-time current. This is the effective value of the largest short-time current (specified by the manufacturer) that the circuit can carry without damage for a given time. Unless otherwise specified by the manufacturer, the allowed duration of the short-circuit current is 1 second. The specified<em>I<sub>k,1s</sub></em>is therefore the maximum magnitude of the short-circuit current that may flow for 1 second without damaging the respective component. It is also possible that<em>I<sub>k,2s</sub></em>specified is: the maximum magnitude of the short-circuit current that may flow for 2 seconds.</p>
+<p>Determinative for the short-circuit load is the initial short-circuit current.<em>I<sub>k</sub>"</em>or, if this is not known, the breaking current<em>I<sub>A</sub></em>of the
+          preceding circuit breaker and the disconnection time<em>t<sub>K</sub></em>of the short circuit. From this, the effective value of the thermal short-circuit current is determined.<em>i<sub>th</sub></em>calculated (formula 10.6). For all components (cables, transformers, reactors, and switchgear) for which a short-circuit calculation has been performed, it is desirable to determine the maximum allowable short-circuit duration.<em>t<sub>max</sub> </em>to be calculated based on the short-time current specified by the suppliers<em>I<sub>k,1s</sub></em>of<em>I<sub>k,2s</sub></em>.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.4.1"></div>
+<br/>
+<h3>10.4.1 Short-circuit withstand capability of cables</h3>
+<p>The heating of the cable during a short circuit is an adiabatic process. This means that the heating of the conductor occurs over such a short period that no heat exchange with the surroundings takes place during that time. All the heat is then stored in the conductor. The conductor must not become hotter than a specified value. For most XLPE cables, this is 250 °C. The initial temperature value before the onset of the short circuit is also important. It is customary to assume the continuous maximum temperature, which for XLPE cables is 90 °C.</p>
+<p>The permissible short-circuit current of a specific cable<em>I<sub>k</sub></em>as a function of the duration of this constant current, calculated as follows (Heinhold, 1999):</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="center" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.48.png"/>[kA]</td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.48</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>with:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="60"><em>K</em></td>
+<td>constant (0.095 for aluminum and 0.143 for copper conductor) for heating from 90°C to 250°C</td>
+</tr>
+<tr>
+<td valign="top" width="60"><em>t</em></td>
+<td>time that the short-circuit current flows (s)</td>
+</tr>
+<tr>
+<td valign="top" width="60"><em>A</em></td>
+<td>conductor cross-section (mm)<sup>2</sup>)</td>
+</tr>
+</tbody>
+</table><br/>
+<p>The constant<em>K</em>is calculated from the material properties and the initial and final temperatures:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.49.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.49</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>with:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="60"><em>k<sub>1</sub></em></td>
+<td>constant: 148 for aluminum and 226 for copper conductor</td>
+</tr>
+<tr>
+<td valign="top" width="60"><em>k<sub>2</sub></em></td>
+<td>temperature factor, dependent on material properties and the initial and final temperatures</td>
+</tr>
+</tbody>
+</table><br/>
+<p>The variable<em>k<sub>2</sub></em>is calculated from a material-dependent temperature coefficient and the initial and final temperatures:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.50.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.50</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>with:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="60"><em>θ</em></td>
+<td>constant (228 for aluminum and 234.5 for copper conductor)</td>
+</tr>
+<tr>
+<td valign="top" width="60"><em>θ<sub>final</sub></em></td>
+<td>maximum allowable short-circuit temperature (250 °C for XLPE cable)</td>
+</tr>
+<tr>
+<td valign="top" width="60"><em>θ<sub>initial</sub></em></td>
+<td>conductor temperature before the start of the short circuit (90 °C for XLPE cable)</td>
+</tr>
+</tbody>
+</table><br/>
+<p>Figure 10.26 shows the allowable short-circuit current, as calculated with formula 10.48 for a cable with a copper conductor and a cable with an aluminum conductor, both with a conductor cross-section of 95 mm².<sup>2</sup>and an initial temperature of 90 °C and a final temperature of 250 °C.</p>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.26.png" width="712"/>
+<h5>Figure 10.26 Permissible short-circuit current for cables with 95 mm²<sup>2</sup>conductor cross-section as a function of time</h5>
+<p>For cables, it is customary to work with the permissible short-circuit current that may flow for one second:<em>I<sub>k,1s</sub></em>Table 10.6
+          provides the value of<em>I<sub>k,1s</sub></em>for some common plastic cables. This is based on a temperature increase of the conductor from 90°C to 250°C. Different values apply to the shield. The values for the shield are important in the case of phase-to-ground faults. It may be that the shield, rather than the conductor, is the limiting factor for short-circuit resistance. For the values in Table 10.6, a temperature increase of the shield from 50°C to 250°C has been assumed.</p>
+<h5>Table 10.6 Allowable short-circuit current for 1 second for common plastic cables</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="20%"><p> <strong>Materiaal</strong> </p></td>
+<td colspan="2" valign="top" width="40%"><p align="center"> <strong>Geleider</strong> </p></td>
+<td colspan="2" valign="top" width="40%"><p align="center"> <strong>Cu shield</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="20%"> </td>
+<td valign="top" width="20%"><p align="center"> <strong>Cross-section (mm²)<sup>2</sup>)</strong> </p></td>
+<td valign="top" width="20%"><p align="center"> <strong>I<sub>k,1s</sub>(kA)</strong> </p></td>
+<td valign="top" width="20%"><p align="center"> <strong>Cross-section (mm)<sup>2</sup>)</strong> </p></td>
+<td valign="top" width="20%"><p align="center"> <strong>I<sub>k,1s</sub>(kA)</strong> </p></td>
+</tr>
+<tr>
+<td rowspan="4" width="68"><p>Al</p></td>
+<td valign="top" width="68"><p align="center">50</p></td>
+<td valign="top" width="68"><p align="center">4.8</p></td>
+<td valign="top" width="68"><p align="center">25</p></td>
+<td valign="top" width="68"><p align="center">4.1</p></td>
+</tr>
+<tr>
+<td valign="top" width="68"><p align="center">95</p></td>
+<td valign="top" width="68"><p align="center">9.0</p></td>
+<td valign="top" width="68"><p align="center">25</p></td>
+<td valign="top" width="68"><p align="center">4.1</p></td>
+</tr>
+<tr>
+<td valign="top" width="68"><p align="center">150</p></td>
+<td valign="top" width="68"><p align="center">14.1</p></td>
+<td valign="top" width="68"><p align="center">25</p></td>
+<td valign="top" width="68"><p align="center">4.1</p></td>
+</tr>
+<tr>
+<td valign="top" width="68"><p align="center">240</p></td>
+<td valign="top" width="68"><p align="center">22.6</p></td>
+<td valign="top" width="68"><p align="center">50</p></td>
+<td valign="top" width="68"><p align="center">8.2</p></td>
+</tr>
+<tr>
+<td rowspan="4" width="68"><p>Cu</p></td>
+<td valign="top" width="68"><p align="center">50</p></td>
+<td valign="top" width="68"><p align="center">7.1</p></td>
+<td valign="top" width="68"><p align="center">25</p></td>
+<td valign="top" width="68"><p align="center">4.1</p></td>
+</tr>
+<tr>
+<td valign="top" width="68"><p align="center">95</p></td>
+<td valign="top" width="68"><p align="center">13.5</p></td>
+<td valign="top" width="68"><p align="center">25</p></td>
+<td valign="top" width="68"><p align="center">4.1</p></td>
+</tr>
+<tr>
+<td valign="top" width="68"><p align="center">150</p></td>
+<td valign="top" width="68"><p align="center">21.4</p></td>
+<td valign="top" width="68"><p align="center">25</p></td>
+<td valign="top" width="68"><p align="center">4.1</p></td>
+</tr>
+<tr>
+<td valign="top" width="68"><p align="center">240</p></td>
+<td valign="top" width="68"><p align="center">34.2</p></td>
+<td valign="top" width="68"><p align="center">50</p></td>
+<td valign="top" width="68"><p align="center">8.2</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The maximum time that a calculated short-circuit current is allowed to flow through a cable is then (Heinhold, 1999):</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.51.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.51</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>with:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="60"><em>t<sub>max</sub></em></td>
+<td>maximum allowable short-circuit duration (s)</td>
+</tr>
+<tr>
+<td valign="top" width="60"><em>I<sub>k,1s</sub></em></td>
+<td>allowable short-circuit current for 1 second (kA)</td>
+</tr>
+<tr>
+<td valign="top" width="60"><em>i<sub>th</sub></em></td>
+<td>effective value of the short-circuit current in the branch (kA)</td>
+</tr>
+</tbody>
+</table><br/>
+<a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.4.2"></div>
+<br/>
+<h3>10.4.2 Short-circuit withstand capability of transformers</h3>
+<p>The thermal short-circuit withstand capability of a transformer is determined by the steady-state short-circuit current and the maximum allowable thermal load of the insulation material. The duration of the steady-state short-circuit current is set at 2 seconds, unless the network designer chooses a different value.</p>
+<p>The temperature rise of the windings can be calculated using the formula below (NEN-EN-IEC 60076-5):</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.52.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.52</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>with:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="60"><em>T<sub>0</sub></em></td>
+<td>initial temperature (°C)</td>
+</tr>
+<tr>
+<td valign="top" width="60"><em>T<sub>1</sub></em></td>
+<td>final temperature (°C)</td>
+</tr>
+<tr>
+<td valign="top" width="60"><em>J<sub>k</sub></em></td>
+<td>current density in the windings (A/mm²)<sup>2</sup>)</td>
+</tr>
+<tr>
+<td valign="top" width="60"><em>t<sub>k</sub></em></td>
+<td>duration of the short circuit (s)</td>
+</tr>
+<tr>
+<td valign="top" width="60"><em>G</em></td>
+<td>material constant (A)<sup>2</sup>s/mm<sup>4</sup>); Cu:<em>G = 101000</em>; Al: G = 35000<em>G = 45400</em></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The maximum allowable temperature is specified by the manufacturer. This depends on the transformer type (oil-filled or dry) and the insulation temperature class. The maximum time that a calculated short-circuit current is allowed to flow through a cable is then:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.53.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.53</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>with:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="60"><em>t<sub>max</sub></em></td>
+<td>maximum allowable short-circuit duration (s)</td>
+</tr>
+<tr>
+<td valign="top" width="60"><em>I<sub>k,2s</sub></em></td>
+<td>allowable short-circuit current for 2 seconds (kA)</td>
+</tr>
+<tr>
+<td valign="top" width="60"><em>i<sub>th</sub></em></td>
+<td>effective value of the short-circuit current in the branch (kA)</td>
+</tr>
+</tbody>
+</table><br/>
+<a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.4.3"></div>
+<br/>
+<h3>10.4.3 Short-circuit withstand capability of MV switchgear installations</h3>
+<p>The breaking currents and continuous currents for which switching equipment is dimensioned are specified in various IEC publications. For switchgear installations and their components, a duration of 1 second is maintained for the thermal short-time current. If deviation from this is necessary, 3 seconds is recommended. During this time, the equipment must be able to withstand the heat and mechanical forces resulting from the assigned short-circuit current.</p>
+<p>The maximum amplitude of the short-circuit current determines the mechanical load on the installation. In the IEC publications, it is assumed that the peak short-circuit current is 2.5 times the effective value of the steady-state short-circuit current. For most applications, this will be sufficient. However, larger values can occur close to the generators. The maximum allowable peak short-circuit current for various types of installations is derived from the standard series.</p>
+<p>Load disconnectors can be either single-pole or three-pole. The single-pole variant is the cheapest and is by far the most commonly used in the medium voltage distribution network. For connections with network transformers with a nominal power greater than 1000 kVA, three-pole disconnection is applied.</p>
+<p>Table 10.7 provides an overview of some medium voltage switchgear installations frequently used in the Netherlands. The data is sourced from the manufacturer's brochures.</p>
+<h5>Table 10.7 Technical data of some medium voltage switchgear installations used in the Netherlands</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="20%"><p> <strong>Type</strong> </p></td>
+<td valign="top" width="20%"><p align="center"> <strong>Unom (kV)</strong> </p></td>
+<td valign="top" width="20%"><p align="center"> <strong>Inom (A)</strong> </p></td>
+<td valign="top" width="20%"><p align="center"> <strong>I<sub>k,max</sub>(kA/s)</strong> </p></td>
+<td valign="top" width="20%"><p align="center"> <strong>I<sub>p,max</sub>(kA)</strong> </p></td>
+</tr>
+<tr>
+<td rowspan="3" width="68"><p>Innovac MMS</p></td>
+<td valign="top" width="68"><p align="center">12</p></td>
+<td valign="top" width="68"><p align="center">3150</p></td>
+<td valign="top" width="68"><p align="center">31.5/3</p></td>
+<td valign="top" width="68"><p align="center">80</p></td>
+</tr>
+<tr>
+<td valign="top" width="68"><p align="center">17.5</p></td>
+<td valign="top" width="68"><p align="center">3150</p></td>
+<td valign="top" width="68"><p align="center">31.5/3</p></td>
+<td valign="top" width="68"><p align="center">80</p></td>
+</tr>
+<tr>
+<td valign="top" width="68"><p align="center">24</p></td>
+<td valign="top" width="68"><p align="center">2000</p></td>
+<td valign="top" width="68"><p align="center">25/3</p></td>
+<td valign="top" width="68"><p align="center">63</p></td>
+</tr>
+<tr>
+<td valign="top" width="68"><p>Unitole UP</p></td>
+<td valign="top" width="68"><p align="center">3.6-17.5</p></td>
+<td valign="top" width="68"><p align="center">630-3150</p></td>
+<td valign="top" width="68"><p align="center">40/3</p></td>
+<td valign="top" width="68"><p align="center">100</p></td>
+</tr>
+<tr>
+<td rowspan="2" width="68"><p>Innovac SVS06</p></td>
+<td valign="top" width="68"><p align="center">12</p></td>
+<td valign="top" width="68"><p align="center">630</p></td>
+<td valign="top" width="68"><p align="center">20/1</p></td>
+<td valign="top" width="68"><p align="center">50</p></td>
+</tr>
+<tr>
+<td valign="top" width="68"><p align="center">24</p></td>
+<td valign="top" width="68"><p align="center">630</p></td>
+<td valign="top" width="68"><p align="center">20/1</p></td>
+<td valign="top" width="68"><p align="center">50</p></td>
+</tr>
+<tr>
+<td rowspan="2" width="68"><p>Innovac SVS12</p></td>
+<td valign="top" width="68"><p align="center">12</p></td>
+<td valign="top" width="68"><p align="center">1250</p></td>
+<td valign="top" width="68"><p align="center">25/1.5</p></td>
+<td valign="top" width="68"><p align="center">63</p></td>
+</tr>
+<tr>
+<td valign="top" width="68"><p align="center">24</p></td>
+<td valign="top" width="68"><p align="center">1250</p></td>
+<td valign="top" width="68"><p align="center">25/1.5</p></td>
+<td valign="top" width="68"><p align="center">63</p></td>
+</tr>
+<tr>
+<td rowspan="2" width="68"><p>Xiria</p></td>
+<td valign="top" width="68"><p align="center">12</p></td>
+<td valign="top" width="68"><p align="center">200-500</p></td>
+<td valign="top" width="68"><p align="center">20/3</p></td>
+<td valign="top" width="68"><p align="center">50</p></td>
+</tr>
+<tr>
+<td valign="top" width="68"><p align="center">24</p></td>
+<td valign="top" width="68"><p align="center">200-500</p></td>
+<td valign="top" width="68"><p align="center">16/3</p></td>
+<td valign="top" width="68"><p align="center">40</p></td>
+</tr>
+<tr>
+<td valign="top" width="68"><p>Magnefix MD4</p></td>
+<td valign="top" width="68"><p align="center">12</p></td>
+<td valign="top" width="68"><p align="center">400</p></td>
+<td valign="top" width="68"><p align="center">14.4/1</p></td>
+<td valign="top" width="68"><p align="center">31</p></td>
+</tr>
+<tr>
+<td valign="top" width="68"><p>Magnefix MF</p></td>
+<td valign="top" width="68"><p align="center">15</p></td>
+<td valign="top" width="68"><p align="center">630</p></td>
+<td valign="top" width="68"><p align="center">20/1</p></td>
+<td valign="top" width="68"><p align="center">50</p></td>
+</tr>
+</tbody>
+</table><br/>
+<a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.5"></div>
+<br/>
+<h2>10.5 Measures to Limit the Short-Circuit Current</h2>
+<p>The short-circuit power in a distribution network is primarily determined by the impedances of the transformers, the impedances of any existing generators, the network structure, and the location of the short circuit. If a component cannot withstand the expected steady-state and dynamic short-circuit current, the short-circuit power must be limited in magnitude, duration, or both. This can be achieved through the application of distance protection, differential protection, or fast current-time protections. Additionally, the magnitude of the short-circuit current can be limited by interrupting the short-circuit current before it reaches its expected maximum value. This can be done using fuses and I<sub>s</sub>-limiters<a href="https://www.phasetophase.nl/boek/boek_1_4.html">see chapter 4</a>).</p>
+<p>The duration in which the short circuit is allowed to occur can be limited with fast protection such as distance protection. For the sake of selectivity, differential protection is also often applied alongside distance protection. Most current-time protections have the capability to disconnect the current within a very short time once it exceeds a set threshold value.<a href="https://www.phasetophase.nl/boek/boek_1_6.html">see chapter 6</a>).</p>
+<p>By adding an extra impedance to the network, the maximum occurring short-circuit current can be limited. Usually, inductors are used for this purpose. Additionally, the short-circuit power can be limited by installing a busbar separation.</p>
+<p>The application of the inductor is explained using the network in figure 10.27. According to equation 10.19 in<a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.3.2">paragraph 10.3.2</a>the short-circuit contribution from the power supply to a three-phase short circuit directly at the beginning of the cable, thus at the secondary terminals of the power transformer in the substation, is equal to 15 kA. Interposing an inductor, as shown in figure 10.27, will reduce the magnitude of this short-circuit current.</p>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.27.png" width="712"/>
+<h5>Figure 10.27 Application of a choke coil</h5>
+<p>In this example, the choke coil has a nominal current of 320 A and a reactance of 0.3 Ω. From the load flow calculation of the network configuration in figure 10.27, it follows that the choke coil at node K2a causes a limited voltage drop from 10.424 kV to 10.373 kV (0.5% voltage drop) with a power transfer of 2.5 MW and 1.8 Mvar (166 A). This is also confirmed by the approximation formula from chapter 10 for the voltage difference across the choke coil:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.54.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.54</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The impedance to the left of the fault location K2a is equal to the series connection of the impedances of the power supply, the transformer, and the choke coil:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.55.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.55</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>A three-phase short circuit at the beginning of the cable, practically at the node K2a, then leads to a short-circuit current contribution from the power supply of:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.56.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.56</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The choke coil thus has a significant impact on reducing the short-circuit current from 15 kA to 8.8 kA, while its influence on the load flow in this example is limited.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.6"></div>
+<br/>
+<h2>10.6 Sequential Short-Circuit Current Calculation</h2>
+<p>The method according to IEC 60909 calculates only the short-circuit currents in a network. The voltages during a short circuit are not explicitly calculated. In some cases, it is interesting for the designer to know exactly how the network behaves in special cases, for example in a complex network or in cases where special generators or machines are present. In such instances, a method is used that calculates not only the currents but also the voltages of the network, without making the simplifications that are used in the IEC 60909 method.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.6.1"></div>
+<br/>
+<h3>10.6.1 Method</h3>
+<p>The method of sequential short-circuit current calculation is based on the actual load situation and calculates the complete state of the network. The operation of specific protections that consider both current and voltage in their functioning can thus be better analyzed. The method is called 'sequential' because it allows for the simulation of more than one fault successively. For example, it is possible in networks for a phase-to-ground short circuit to lead to a subsequent short circuit at another location. Additionally, the method allows for the calculation of other types of short circuits besides direct ones. The fault impedance of the short circuit can be specified in the calculation.</p>
+<p>The method of sequential fault analysis is based on the situation determined by the load flow before the onset of the short circuit. The power supply and the synchronous and asynchronous machines are modeled in the method as a Norton equivalent with a current source and a short-circuit impedance. The current strength of each current source is calculated based on the load flow voltage before the disturbance. The loads are modeled with constant impedances, which are derived from their actual value. Any transversal elements, such as shunts and capacitances, are also included in the calculation. The method neglects nothing and does not use correction factors.</p>
+<p>The equivalent circuit of the network in figure 10.7, for the calculation according to the method of sequential short-circuit current calculation in the normal system, appears as shown in figure 10.28.</p>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.28.png" width="712"/>
+<h5>Figure 10.28 Equivalent circuit according to sequential fault for calculation of the short circuit at node K2</h5>
+<p>At node K2, a three-phase symmetrical fault is applied in the form of impedance<em>R<sub>f</sub>+ jX<sub>f</sub></em>. With the sequential fault analysis, the subtransient short-circuit current<em>I<sub>k</sub>"</em>calculated at the indicated fault location. Additionally, all voltages, branch currents, and element currents are calculated. Currents and voltages can be represented both complex and absolute per phase (a, b, c) or per system (homopolar, normal, inverse). In the equivalent circuit diagram of figure 10.7, the short circuit at node K2 is fed by the grid supply and the transformer, as well as by the short-circuit current contributions from the generator and the motor. Furthermore, the load in the short-circuit situation is not neglected, so it continues to draw the current determined by the equivalent impedance.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.6.2"></div>
+<br/>
+<h3>10.6.2 Example Based on a Record of a Short Circuit</h3>
+<p>In a calculation example, it is demonstrated how the method can be used to process a series of consecutive actions (short circuits and switching operations) that result in changes to the network. A main feeder, consisting of three parallel circuits with cables with conductors of 150 mm<sup>2</sup>Cu and 240 mm²<sup>2</sup>Al, feeds an MV distribution network from a 50/10 kV substation. The MV distribution network is not explicitly modeled but is represented by a load of 7.8 MW with a power factor (cos(φ)) of 0.9 (500 A at nominal voltage). The network is not grounded. At the substation, 30 MVA of decentralized generation is connected, which is modeled with a single synchronous generator. The network between the substation with supply and the switching station is depicted in figure 10.29. The depicted voltages are phase voltages.</p>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.29.png" width="712"/>
+<h5>Figure 10.29 Medium voltage network between substation and switching station in the state before the short circuit</h5>
+<p>For the network shown in figure 10.29, the currents and voltages have been monitored over an extended period as part of an experiment. During this period, a two-phase short circuit with ground contact occurred in one of the feeder cables at 60% of the distance from the substation. The progression of the short circuit was recorded at the substation. Figure 10.30 shows the progression in the measured current through the phases on the feeding side and in the measured voltage on the feeding busbar in the substation.</p>
+<p>The short circuit between phases A, C, and ground occurs at t = 990 ms. The influence of the decreasing short-circuit contribution from the generator is clearly visible. It is also evident that the peak in phase C is positive and in phase A is negative. The initial short-circuit current has an effective value of approximately 6.4 kA. The voltage of the disturbed phases decreases significantly, and the voltage of the undisturbed phase increases significantly: up to an effective value of 8.3 kV.</p>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.30.png" width="712"/>
+<h5>Figure 10.30 Recording of the short-circuit progression</h5>
+<p>After 290 ms, at t = 1280 ms, the decentralized generation is switched from the grid. As a result of the decreased short-circuit power in the substation, the supply of the short-circuit current is reduced to an effective value of approximately 3.8 kA.</p>
+<p>After 380 ms, at t = 1370 ms, the circuit breaker in the short-circuited circuit on the substation side opens. The protection is directional, allowing for a quick disconnection. This ensures that the supply to the grid beyond the substation can continue. The short circuit is now only fed from the substation. The supply of the short-circuit current increases to an effective value of approximately 5.4 kA.</p>
+<p>After 1060 ms, at t = 2050 ms, the circuit breaker in the short-circuited circuit on the substation side opens. The set time is chosen with selectivity in mind. The voltage recovers immediately, with a rapidly decaying direct current component visible.</p>
+<p>The course of the fault has been simulated using the highly simplified model of the complete distribution network, depicted in figure 10.29. The supplying network has a short-circuit power of 3600 MVA (I<sub>k</sub>" = 40 kA at 52.5 kV) and the transformer has a nominal power of 32 MVA and a relative short-circuit voltage of 19.3%. The cable circuits each have a length of 3 km and consist of cables with 150 mm<sup>2</sup>Cu conductors and 240 mm<sup>2</sup>Aluminum conductors, resulting in a normal impedance of Z1 = 0.426+j0.238 Ω and a homopolar impedance of Z0 = 3.154+j3.253 Ω. A short circuit was simulated at 60% of the distance from the substation.</p>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.31.png" width="712"/>
+<h5>Figure 10.31 Simulation of the two-phase short circuit with ground contact</h5>
+<p>Figure 10.31 shows the result for the calculation of the two-phase short circuit between phases A and C with ground contact. The feeding current in the short-circuited circuit at the substation is 6.5 kA. This is slightly more than the effective value recorded in Figure 10.30. The voltage in the undisturbed phase is 8.9 kV.</p>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.32.png" width="712"/>
+<h5>Figure 10.32 Two-phase short circuit with ground contact and disconnected generator</h5>
+<p>Figure 10.32 shows the result of the calculation, where the generator is disconnected at t = 1280 ms. The supply of the short circuit from the substation has decreased to 3.7 kA. This is slightly less than the effective value recorded in Figure 10.30. The contribution from the other two circuits is 2.5 kA. The total short-circuit current amounts to 6.2 kA.</p>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.33.png" width="712"/>
+<h5>Figure 10.33 Short circuit with disconnected generator and tripped circuit breaker at SS</h5>
+<p>Figure 10.33 shows the result of the calculation, where at t = 1370 ms the circuit breaker in the faulty circuit on the substation side is tripped. The supply of the short-circuit current from the substation is now equal to the short-circuit current itself and amounts to 5.6 kA. This value is slightly less than the effective value recorded in Figure 10.30.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.7"></div>
+<br/>
+<h2>10.7 Fault Location</h2>
+<p>Faults in the medium-voltage network have the greatest impact on the reliability of electricity supply (see<a href="https://www.phasetophase.nl/boek/boek_2_12.html">chapter 12</a>It is customary after a short circuit to locate the fault by inspecting each substation in a medium-voltage string, which is very time-consuming. By estimating the fault location based on voltage and current measurements in the substation during the short circuit and comparing these with a short-circuit calculation of the network model, a lot of time can be saved (Oirsouw, 2003). The accuracy of the method is closely related to the precision of the model and the accuracy of the measurement. The normal impedances of the network are sufficiently well-known, so in the case of a two- or three-phase short circuit, high accuracy can be achieved. However, the homopolar impedance is not always accurately known, so the fault location in the case of a phase-to-ground fault can often be calculated with less precision.</p>
+<p>The measurement can be performed using station automation equipment or digital protection relays. Voltage and current are continuously measured and locally stored for a short period. If a disturbance occurs, the measurements are sent to a central system. The data is then analyzed in two steps. In the first step, the measurements are transformed into signals that represent the instantaneous amplitudes and phases. The instantaneous values of the symmetrical components are also determined from these signals. Each fault exhibits characteristic behavior in the normal, inverse, and homopolar components. By comparing the instantaneous values of the symmetrical components with the characteristic properties of various fault types, the fault type is identified. This process uses a set of knowledge rules derived from practical measurements and the component networks for the short-circuit types shown in figure 10.10:</p>
+<ul>
+<li>there is a short circuit if the normal component of the current<em>I<sub>1</sub></em>) is greater than the normal component of the current before the fault (<em>I<sub>1,pre</sub></em>)</li>
+<li>an inverse component of the current<em>I<sub>2</sub></em>) flows only during an asymmetrical short circuit</li>
+<li>a homopolar component of the current<em>I<sub>0</sub></em>) flows only during an asymmetrical short circuit with ground contact</li>
+<li>in a two- or three-phase short circuit, the increase in the normal component of the current as a result of the short circuit<em>I<sub>1</sub>-I<sub>1, pre</sub></em>) much greater than the value of the homopolar component of the current during the short circuit (<em>I<sub>0</sub></em>); that is not the case with a phase-to-ground fault</li>
+<li>in a two-phase short circuit, the inverse component of the current<em>I<sub>2</sub></em>) much larger than the homopolar component of the current (<em>I<sub>0</sub></em>); that is not the case with a phase-to-ground fault or a three-phase short circuit.</li></ul>
+<p>The aforementioned knowledge rules are summarized as the characteristic properties of short-circuit types in Table 10.8. By comparing the measurements with this table, the actual type of short circuit can be determined.</p>
+<h5>Table 10.8 Characteristic Properties of Short-Circuit Types</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="78"><p> <strong>Kortsluittype</strong> </p></td>
+<td valign="top" width="57"><p align="center"> <strong><em>I<sub>1</sub>&gt; I<sub>1,pre</sub></em></strong> </p></td>
+<td valign="top" width="40"><p align="center"> <strong><em>I<sub>0</sub>&gt; 0</em></strong> </p></td>
+<td valign="top" width="52"><p align="center"> <strong><em>I<sub>2</sub>&gt; 0</em></strong> </p></td>
+<td valign="top" width="64"><p align="center"> <strong><em>I<sub>1</sub>–I<sub>1,pre</sub>&gt;&gt; I<sub>0</sub></em></strong> </p></td>
+<td valign="top" width="50"><p align="center"> <strong><em>I<sub>2</sub>&gt;&gt; I<sub>0</sub></em></strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="78"><p>Phase-to-earth</p></td>
+<td valign="top" width="57"><p align="center">Ja</p></td>
+<td valign="top" width="40"><p align="center">Ja</p></td>
+<td valign="top" width="52"><p align="center">Ja</p></td>
+<td valign="top" width="64"><p align="center">Nee</p></td>
+<td valign="top" width="50"><p align="center">Nee</p></td>
+</tr>
+<tr>
+<td valign="top" width="78"><p>Two-phase-to-earth</p></td>
+<td valign="top" width="57"><p align="center">Ja</p></td>
+<td valign="top" width="40"><p align="center">ja</p></td>
+<td valign="top" width="52"><p align="center">Ja</p></td>
+<td valign="top" width="64"><p align="center">Ja</p></td>
+<td valign="top" width="50"><p align="center">Ja</p></td>
+</tr>
+<tr>
+<td valign="top" width="78"><p>Two phases</p></td>
+<td valign="top" width="57"><p align="center">Ja</p></td>
+<td valign="top" width="40"><p align="center">Nee</p></td>
+<td valign="top" width="52"><p align="center">ja</p></td>
+<td valign="top" width="64"><p align="center">Ja</p></td>
+<td valign="top" width="50"><p align="center">Ja</p></td>
+</tr>
+<tr>
+<td valign="top" width="78"><p>Three phases</p></td>
+<td valign="top" width="57"><p align="center">Ja</p></td>
+<td valign="top" width="40"><p align="center">Nee</p></td>
+<td valign="top" width="52"><p align="center">Nee</p></td>
+<td valign="top" width="64"><p align="center">Ja</p></td>
+<td valign="top" width="50"><p align="center">Nee</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>It is also possible to detect whether an asymmetrical short circuit occurs in a grounded or ungrounded network. This can be derived from the quotient of the homopolar voltage and negative homopolar current determined from the measurements.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="center" width="90%"><img alt="formules_2.10" src="./kortsluitstroomberekeningen_files/formule-10.57.png"/>Ohm</td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">10.57</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The phase angle of the impedance<em><u>Z</u></em><em><sub>g</sub></em>gives an indication of whether the fault current has an inductive or capacitive character. The magnitude of the impedance is also related to the grounding impedance in the network. Table 10.9 provides a summary of the characteristic properties related to grounding.</p>
+<h5>Table 10.9 Determining the Type of Grounding</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="33%"><p> <strong>Netwerktype</strong> </p></td>
+<td valign="top" width="33%"><p align="center"> <strong><em>|<u>Z</u><sub>g</sub>| (Ω)</em></strong> </p></td>
+<td valign="top" width="33%"><p align="center"> <strong><em>Arg(<u>Z</u><sub>g</sub>) (degrees)</em></strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="100"><p>Impedantiegeaard</p></td>
+<td valign="top" width="100"><p align="center"> <em><u>Z</u><sub>0</sub></em>aardingssysteem</p></td>
+<td valign="top" width="100"><p align="center">90</p></td>
+</tr>
+<tr>
+<td valign="top" width="100"><p>Zwevend</p></td>
+<td valign="top" width="100"><p align="center"> <em>1/(2 π f ⋅ C)<sub>0</sub></em>network)</p></td>
+<td valign="top" width="100"><p align="center">–90</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>It turns out that the absolute value and the phase angle of the impedance<em><u>Z</u></em><em><sub>g</sub></em>in Table 10.9 depends on the way the network is grounded. In a grounded system, the calculated impedance<em><u>Z</u></em><em><sub>g</sub></em>is nearly equal to the homopolar impedance<em><u>Z</u></em><em><sub>0</sub></em>of the grounding system (grounding transformer or star-point grounded transformer). The angle of the calculated impedance is then approximately 90 degrees. In an ungrounded network, the calculated impedance<em><u>Z</u></em><em><sub>g</sub></em>approximately equal to the impedance of the total homopolar capacitance in the floating medium voltage network. The angle of the calculated impedance is then approximately –90 degrees.</p>
+<p>With the knowledge of the type of short circuit, the impedance from the measurement location to the short circuit location can be calculated. Since the resistance at the fault location is not always zero, only the reactance part of the impedance is considered. Table 10.10 provides a summary of the reactance calculations.<em>X<sub>1</sub></em>en<em>X<sub>0</sub></em>for the various fault types from the measured voltages<em>U<sub>1</sub></em>,<em>U<sub>2</sub></em>en<em>U<sub>0</sub></em>and measured currents<em>I<sub>1</sub></em>en<em>I<sub>2</sub></em>The calculations are based on the standard situations from figure 10.10 and table 10.3.</p>
+<h5>Table 10.10 Calculation of Reactance</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="33%"><p> <strong>Kortsluittype</strong> </p></td>
+<td valign="top" width="66%"><p> <strong>Reactance from measurement location to fault location</strong> </p></td>
+</tr>
+<tr>
+<td><p>Phase-to-ground</p></td>
+<td><p> <em>2X<sub>1</sub>+ X<sub>0</sub>= Im((U<sub>1</sub>+ U<sub>2</sub>+ U<sub>0</sub>) / I<sub>2</sub>)</em> </p></td>
+</tr>
+<tr>
+<td><p>Two phases B-C-ground</p></td>
+<td><p> <em>X<sub>1</sub>= Im((U<sub>1</sub>– U<sub>2</sub>) / (I<sub>1</sub>– I<sub>2</sub>))</em> </p></td>
+</tr>
+<tr>
+<td><p>Two phases A-B-ground</p></td>
+<td><p> <em>X<sub>1</sub>= Im((U<sub>1</sub>– a</em> <em>⋅</em> <em>U<sub>2</sub>) / (I<sub>1</sub>– a</em> <em>⋅</em> <em>I<sub>2</sub>))</em> </p></td>
+</tr>
+<tr>
+<td><p>Two phases A-C-ground</p></td>
+<td><p> <em>X<sub>1</sub>= Im((U<sub>1</sub>– a<sup>2</sup></em> <em>⋅</em> <em>U<sub>2</sub>) / (I<sub>1</sub>– a<sup>2</sup></em> <em>⋅</em> <em>I<sub>2</sub>))</em> </p></td>
+</tr>
+<tr>
+<td><p>Two phases B-C</p></td>
+<td><p> <em>X<sub>1</sub>= Im((U<sub>1</sub>– U<sub>2</sub>) / (I<sub>1</sub>– I<sub>2</sub>))</em> </p></td>
+</tr>
+<tr>
+<td><p>Two phases A-B</p></td>
+<td><p> <em>X<sub>1</sub>= Im((U<sub>1</sub>– a</em> <em>⋅</em> <em>U<sub>2</sub>) / (I<sub>1</sub>– a</em> <em>⋅</em> <em>I<sub>2</sub>))</em> </p></td>
+</tr>
+<tr>
+<td><p>Two phases A-C</p></td>
+<td><p> <em>X<sub>1</sub>= Im((U<sub>1</sub>– a<sup>2</sup></em> <em>⋅</em> <em>U<sub>2</sub>) / (I<sub>1</sub>– a<sup>2</sup></em> <em>⋅</em> <em>I<sub>2</sub>))</em> </p></td>
+</tr>
+<tr>
+<td><p>Three phases</p></td>
+<td><p> <em>X<sub>1</sub>= Im(U<sub>1</sub>/ I<sub>1</sub>)</em> </p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>In the second step, the network model is analyzed. Based on the measurement data before the short circuit, the loads are set.
+          Subsequently, short circuit calculations are made using the sequential short circuit current calculation. Short circuits are introduced at successive distances from the measurement location in the
+          MV string, and the impedance from the measurement location to the fault location is determined each time. The reactance of this impedance is compared with the value calculated from the measurements in the first step. The location where the calculated reactance best matches the reactance determined from the measurements is the most likely fault location.</p>
+<div class="row-ohm-center-dark">
+<h6>Rekenvoorbeeld</h6>
+<p>The method described above is illustrated using the recording from figure 10.30 of a short circuit in the network of figure 10.29. The measurement took place at the substation. The first step involves converting and analyzing the measured values. The currents and voltages from figure 10.30 are first converted into a signal that represents the instantaneous variation of the phase voltage and phase current amplitudes. Figure 10.34 shows the peak value of all signals. Figure 10.34 clearly shows that the short circuit begins at t = 990 ms. The amplitudes of the currents in phases A and C reach a high value, which remains fairly constant between t = 1400 ms and t = 2050 ms. At t = 2050 ms, the short circuit is disconnected. It can also be seen that the current in phase B changes relatively little. This is an indication of a short circuit in phases A and C. The amplitudes of the voltages in phases A and C decrease significantly but do not reach zero. This indicates that the short circuit is located further down the network.</p>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.34.png" width="712"/>
+<h5>Figure 10.34 Amplitudes of voltages and currents during the short circuit</h5>
+<img alt="pics_2.10" class="img-responsive-leon-15px center-block" src="./kortsluitstroomberekeningen_files/10.35.png" width="712"/>
+<h5>Figure 10.35 Amplitudes of component voltages and component currents during the short circuit</h5>
+<p>The voltages and currents of phases A, B, and C provide an initial indication of the type and location of the short circuit. The described algorithm in a calculation program does not operate in the three-phase system but uses the measured values transformed into the symmetrical component system. The transformation of the signals from Figure 10.34 produces the signals shown in Figure 10.35.</p>
+<p>Figure 10.35 shows that the currents in the normal and inverse component systems<em>I<sub>1</sub></em>en<em>I<sub>2</sub></em>) increase significantly due to the short circuit. The amplitude of both component currents is approximately equal. Between t = 1400 ms and t = 2050 ms, the peak value is about 4300 A and the effective value is 3050 A. The amplitude of the homopolar current<em>I<sub>0</sub></em>) cannot be accurately derived from the figure. The measurements indicate that<em>I<sub>0</sub>= 25</em>A. For the voltages, the effective values are:<em>U<sub>0</sub>= 2.9</em>kV,<em>U<sub>1</sub>= 3.6</em>kV and<em>U<sub>2</sub>= 2.2</em>kV.</p>
+<p>With this data, the type of short circuit is first determined using Table 10.8:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="120"><em>I<sub>1</sub>&gt; I<sub>1,pre</sub></em></td>
+<td>yes, so short circuit</td>
+</tr>
+<tr>
+<td><em>I<sub>0</sub>&gt; 0</em></td>
+<td>yes, so short circuit with ground contact</td>
+</tr>
+<tr>
+<td><em>I<sub>2</sub>&gt; 0</em></td>
+<td>yes, so short circuit with one or two phases</td>
+</tr>
+<tr>
+<td><em>I<sub>1</sub>– I<sub>1,pre</sub>&gt;&gt; I<sub>0</sub></em></td>
+<td>yes, so short circuit with two or three phases</td>
+</tr>
+<tr>
+<td><em>I<sub>2</sub>&gt;&gt; I<sub>0</sub></em></td>
+<td>yes, so short circuit with two phases</td>
+</tr>
+</tbody>
+</table><br/>
+<p>From this, it is concluded that it is a two-phase short circuit with ground contact. Using formula 10.57, the impedance is calculated.<em><u>Z</u><sub>g</sub></em>determined. For this calculation, both the amplitude and the phase angle of<em>U<sub>0</sub></em>en<em>I<sub>0</sub></em>needed. From the measurements, it appears that the phase angle for the homopolar voltage is 77 degrees and for the homopolar current is -34 degrees. From this, it is calculated:<em>|<u>Z</u><sub>g</sub>| = 116</em>Ω and phase angle of<em><u>Z</u><sub>g</sub></em>is: –69 degrees. Based on table 10.9, it is concluded that it concerns a short circuit in a floating network, because the phase angle is closest to the theoretical value of –90 degrees. The total homopolar capacitance of all the medium-voltage cables connected to the substation in the network (not shown in figure 10.29) is:<em>C<sub>0</sub>= 1/(2π⋅f⋅<u>Z</u><sub>g</sub>) = 2.7⋅10<sup>-5</sup>F</em>, which corresponds to a total length of 135 km of cables connected to the substation (at an average value of<em>C<sub>0</sub>= 0.2 μF</em>per km).</p>
+<p>Using table 10.10, the reactance from the measurement point at the substation to the fault location can be calculated. This is for the two-phase A-C ground fault:</p>
+<p> <em>X<sub>1</sub>= Im((U<sub>1</sub>–a<sup>2</sup>⋅U<sub>2</sub>) / (I<sub>1</sub>–a<sup>2</sup>⋅I<sub>2</sub>)) = 0.14</em> <em>Ohms</em>.</p>
+<p>where:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="120"><em>U<sub>1</sub>= 3624 V,</em></td>
+<td>with phase angle –170 degrees</td>
+</tr>
+<tr>
+<td><em>U<sub>2</sub>= 2233 V,</em></td>
+<td>with phase angle –28 degrees</td>
+</tr>
+<tr>
+<td><em>I<sub>1</sub>= 3053 A,</em></td>
+<td>with phase angle 133 degrees</td>
+</tr>
+<tr>
+<td><em>I<sub>2</sub>= 3073 A,</em></td>
+<td>with phase angle 73 degrees</td>
+</tr>
+<tr>
+<td><em>a</em>en<em>a<sup>2</sup>:</em></td>
+<td>the complex operators<em>a</em>en<em>a<sup>2</sup></em>(<a href="https://www.phasetophase.nl/boek/boek_2_7.html#_7.5">see paragraph 7.5</a>)</td>
+</tr>
+</tbody>
+</table><br/>
+<p>If, as in<a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.6.2">paragraph 10.6.2</a>assumed, the total reactance of the cable in this example is equal to<em>Z<sub>1</sub>= 0.238 Ω</em>, then the short circuit is located at 0.14/0.238⋅100% = 60% of the substation.</p>
+</div>
+</div>
+<div class="col-lg-2 hidden-md"> </div>
+</div>
+</div>
+</div>
+<div class="container-fluid-footer" id="includeFooter"><div class="container">
+<div class="row">
+<div class="text-justify col-xs-6 col-sm-3">
+<img alt="ptp_logo" src="./kortsluitstroomberekeningen_files/logo-s-360px-grijs.png" width="230"/>
+</div>
+<div class="col-xs-6 col-sm-9">
+<p> Phase to Phase is onderdeel van <a href="https://www.technolution.nl/">Technolution</a>. © 2009-2021 </p>
+</div>
+</div>
+</div></div></body></html>

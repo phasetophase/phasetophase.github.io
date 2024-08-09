@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+
+<!-- saved from url=(0046)https://www.phasetophase.nl/boek/boek_1_6.html -->
+<html class="wf-ffscalasansweb-n7-active wf-ffscalasansweb-n4-active wf-ffscalasansweb-i4-active wf-active" lang="en"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Phase to Phase – Netten voor distributie van elektriciteit</title>
+<!-- Bootstrap -->
+<link href="./beveiliging_files/bootstrap-2-boek.css" rel="stylesheet"/>
+<style type="text/css">
+	body,td,th {
+	font-family: ff-scala-sans-web, sans-serif;
+}
+body {
+	background-color: #F7F7F7;
+}
+    </style>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+<script src="./beveiliging_files/qke6lfb.js.download"></script>
+<style type="text/css">.tk-ff-scala-sans-web{font-family:"ff-scala-sans-web",sans-serif;}</style><style type="text/css">@font-face{font-family:tk-ff-scala-sans-web-n7;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-n4;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-i4;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style><script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script src="./beveiliging_files/jquery-1.11.3.min.js.download"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./beveiliging_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H8Q9E8BJ7Q');
+</script>
+<script>
+$(function(){
+  $("#includedHeader").load("/boek/header.html");
+  $("#includeFooter").load("/boek/footer.html"); 
+});
+</script><style type="text/css">@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style>
+</head>
+<body style="padding-top: 50px">
+<div id="includedHeader"> <nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="container">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button aria-expanded="false" class="navbar-toggle collapsed" data-target="#topFixedNavbar1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+<a class="navbar-brand" href="https://www.phasetophase.nl/">Phase to Phase</a></div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="topFixedNavbar1">
+<ul class="nav navbar-nav">
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li></li>
+</ul>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container -->
+</nav>
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<p></p>
+</div>
+</div>
+</div>
+<div class="container-fluid-boek">
+<div class="container">
+<div class="row-in-header">
+<div class="text-justify col-xs-6 col-sm-6">
+<img alt="Phase to Phase logo 360px" class="hidden-xs" src="./beveiliging_files/logo-s-360px-wit.png" width="366"/>
+<img alt="Phase to Phase logo 261px" class="visible-xs" src="./beveiliging_files/logo-s-360px-wit.png" width="261"/>
+</div>
+<div class="col-xs-6 hidden-xs col-sm-6">
+</div>
+</div>
+<div class="row-in-header">
+<div class="text-left col-xs-9 col-sm-9"> <p></p><h8>ICT voor elektriciteitsnetten</h8>
+</div>
+<div class="col-xs-3 col-sm-3">
+</div>
+</div>
+<div class="row-in-header-2">
+<div class="text-justify col-xs-6 col-sm-6"> 
+	</div>
+<div class="col-xs-6 hidden-xs col-sm-6">
+<h7> </h7>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row-intro">
+<h1><a href="https://www.phasetophase.nl/boek/index.html"> Netten voor distributie van elektriciteit</a></h1>
+</div></div></div>
+<div class="row-ohm-center-white"> <a name="top"></a>
+<div class="row-b">
+<a href="https://www.phasetophase.nl/boek/index.html"><button class="btn btn-default active" type="button">I – De opbouw van een net</button></a>
+<a href="https://www.phasetophase.nl/boek/boek_2_7.html"><button class="btn btn-default" type="button">II – Rekenen aan een net</button></a>
+<a href="https://www.phasetophase.nl/boek/boek_3_13.html"><button class="btn btn-default" type="button">III – Ontwerpen en bedrijfsvoeren</button></a>
+</div>
+<div class="row-b">
+<a href="https://www.phasetophase.nl/boek/index.html"><button class="btn btn-default1" type="button">Inhoud</button></a>
+<a href="https://www.phasetophase.nl/boek/boek_1_1.html">
+<button class="btn btn-default1" type="button">1 Inleiding</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_1_2.html">
+<button class="btn btn-default1" type="button">2 Netten</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_1_3.html">
+<button class="btn btn-default1" type="button">3 Belasting en opwekking</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_1_4.html">
+<button class="btn btn-default1" type="button">4 Netcomponenten</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_1_5.html">
+<button class="btn btn-default1" type="button">5 Aardingsconcepten en veiligheid</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_1_6.html">
+<button class="btn btn-default1 active" type="button">6 Beveiliging</button>
+</a>
+<div class="row">
+<div class="col-md-12 col-lg-10">
+<h3>Beveiliging</h3>
+<p>Chapter 6 covers the setup of security and the applied security components. The chapter delves into the security of a connection, a transformer, and the grid itself. It also briefly addresses some complications that can arise, for example, due to the presence of decentralized production units.</p>
+<div class="row">
+<div class="col-md-6">
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6"><strong>6  Security</strong></a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.1">6.1 Security Components</a></li>
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.1">6.1.1 Principle of Current Protection</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.1.2">6.1.2  Fuses</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.1.3">6.1.3  Protection Relays</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.1.4">6.1.4  Measurement Transformers</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.1.5">6.1.5  Maximum current-time relay</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.1.6">6.1.6  Power Direction Relay</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.1.7">6.1.7 Blocking and acceleration</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.1.8">6.1.8 Differential Protection</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.1.9">6.1.9 Distance Protection</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.1.10">6.1.10 Voltage Protections</a></li>
+</ul>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.2">6.2  Protecting Connections</a></li>
+</ul>
+<p></p>
+</div>
+<div class="col-md-6">
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.3">6.3 Transformer Protection</a></li>
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.3.1">6.3.1 Distribution Transformer</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.3.2">6.3.2 Power Transformer</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.3.3">6.3.3  Regulating Transformer</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.3.4">6.3.4 Grounding Transformer</a></li>
+</ul>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.4">6.4  Network Protection</a></li>
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.4.1">6.4.1 Medium Voltage Transmission Networks</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.4.2">6.4.2 Medium Voltage Distribution Networks</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.4.3">6.4.3  Feeders</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.4.4">6.4.4 Protection in Networks with Floating Neutral Point</a></li>
+</ul>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.5">6.5  Reliability of the Protection</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.6">6.6  Interruptible Load</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.7">6.7  Decentralized Generation</a></li>
+</ul>
+<p></p>
+</div>
+</div>
+<hr/>
+<div id="_6">
+<h1>Beveiliging</h1>
+</div>
+<p>In the event of a short circuit, very large currents occur, which cause significant forces and can damage cables and installations. Additionally, the temperature in cables, transformers, and busbar systems rises very quickly in a short period, causing damage. This damage does not always manifest immediately. Particularly in cables and transformers, incidental temperature increases accumulate in the insulation, which can fail at a later time. Therefore, in principle, every short circuit must be disconnected as quickly as possible. The disconnection must also be selective to inconvenience as few customers as possible. A short disconnection time for large short-circuit currents has the added advantage that the voltage dip, which occurs as a result of a large short-circuit current, is shorter in duration. This results in less disruption for the surrounding customers.</p>
+<p>To disconnect a short circuit and to limit the consequences of a short circuit, a protection system is installed. The protection has a threefold purpose:</p>
+<ul>
+<li>limiting material damage</li>
+<li>limiting inconvenience and nuisance</li>
+<li>ensuring personal safety.</li>
+</ul>
+<h6>Limiting material damage</h6>
+<p>A protection system limits the potential consequential damage to the infrastructure of an electrical grid in the event of a short circuit. The protection achieves this by sufficiently quickly isolating the disturbed sections or components from the undisturbed grid, thereby minimizing the damage caused by the flowing short-circuit current. The investment costs for the protection must be proportional to the damage that can be prevented and the likelihood of its occurrence.</p>
+<h6>Minimizing inconvenience and disruption</h6>
+<p>In the event of a short circuit, preferably only the faulty component should be disconnected. Since it is not economically feasible to protect all components individually, protections will be installed at strategic locations in the network that selectively disconnect a limited part of the network. The principle here is to minimize the number of users who are not directly affected by the fault but are still disconnected. A proper selection of protections, in terms of type and setting, and a proper choice of locations in the networks, is important for the effective operation of the protection system and is a crucial part of the design process of an electrical grid.</p>
+<h6>Ensuring personal safety</h6>
+<p>In the event of a short circuit, arcs and explosions can occur. Short-circuit currents can also lead to high touch voltages and step voltages. The grounding system reduces the dangerous voltages, but a quick disconnection provides the greatest contribution to personal safety.</p>
+<p>The three mentioned protection goals often conflict with each other, so compromises usually have to be made. For example, to limit material damage and ensure personal safety, disconnection must always occur as quickly as possible. However, minimizing inconvenience can be achieved by using sequentially placed protections with increasing time delays. To prevent protections from tripping unnecessarily, the time margins should not be set too narrowly, which means that in some cases, the short-circuit current can flow for a relatively long time. In all choices, however, it is paramount that the protection primarily ensures personal safety; material damage and inconvenience are subordinate to this.</p>
+<h6>Short circuit and overload</h6>
+<p>In principle, all components in the distribution system can be affected by a fault, leading to a short circuit. The most notorious are the short circuits in cable connections caused by excavation work or soil movement, or by spontaneous short circuits in connection joints. The current that then flows causes significant mechanical forces and substantial heat development in the other current-carrying components of the network. The magnitude of the short-circuit current depends on the short-circuit capacity of the power source, the distance and thus the impedance to the fault location, and the type of short circuit. More on this in chapter 10.</p>
+<p>Overloading can occur if the load is unexpectedly greater than originally anticipated. Thoughtless switching actions in a distribution network can also lead to overloading. The protection system can adequately safeguard the network against these undesirable situations.</p>
+<p>Usually, the protection system is only designed to disconnect short-circuit currents. In that case, one must be alert to the gray area between the maximum allowable current of the components in the network and the activation level of the protection. In power transformers, overloads are generally disconnected by a protection system, but this is usually not the case for cables and network transformers.</p>
+<h6>Selectiviteit</h6>
+<p>Selectivity is an important concept for electrical networks in which two or more protection devices are present between the power supply and the fault location. If a short circuit occurs in an electrical network, the section containing the fault must be disconnected as quickly as possible before touch voltages, step voltages, temperatures, or forces that can cause damage occur anywhere in the network. The disconnected section should be as small as possible, and disconnection should occur as close to the fault as possible. This is called selective disconnection. This ensures that the consequences of an overload or short-circuit current are limited to the smallest possible part of the network and that as few customers as possible are affected by an interruption. The type of protection used and the setting of the protection are closely related to the network structure and the desired selectivity.</p>
+<h6>Betrouwbaarheid</h6>
+<p>In the event of a fault, the nearest fuses must interrupt the short-circuit current or circuit breakers must open. A circuit breaker receives a trip command from the protection system for this purpose. However, a protection system can be defective or a circuit breaker can fail. For this reason, a backup protection system is often installed, which non-selectively disconnects the short circuit in case of a failure.</p>
+<p>The protection in electrical grids is tailored to their specific function. Grids at different voltage levels differ in structure and specific requirements are set for the reliability of energy supply. For instance, transmission grids usually have a meshed structure and have a single fault reserve without energy interruption, so that in the event of a short circuit, only the faulty component is quickly disconnected. This allows the transmission grid to continue functioning undisturbed. In a distribution grid, in the event of a fault, a preferably small section of the grid is disconnected, and after isolating the fault, the supply is restored. These differences are reflected in the choices for the types and settings of the protection. The following protection systems are applied:</p>
+<ul>
+<li>MV transmission networks:</li>
+<ul>
+<li>distantiebeveiliging</li>
+<li>differentiaalbeveiliging</li>
+<li>maximaalstroomtijdbeveiliging</li>
+<li>energierichtingsbeveiliging</li>
+</ul>
+</ul>
+<ul>
+<li>MV distribution networks:</li>
+<ul>
+<li>maximaalstroomtijdbeveiliging</li>
+<li>differentiaalbeveiliging</li>
+<li>smeltveiligheden</li>
+</ul>
+</ul>
+<ul>
+<li>LV distribution networks:</li>
+<ul>
+<li>smeltveiligheden</li>
+<li>circuit breakers.</li>
+</ul>
+</ul>
+<a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_6.1"></div>
+<br/>
+<h2>6.1 Protection Components</h2>
+<h3>6.1.1 Principle of Current Protection</h3>
+<p>The current can be in the normal operating range, the overload range, or the short-circuit range. Currents below the nominal current rating are in the normal operating range. Almost all faults in the power grid lead to an increase in current and can be caused by an overload or a short circuit. The boundary between the overload range and the short-circuit range is not always clearly defined.</p>
+<p>A current protection device measures the current and is capable of detecting a short circuit and clearing it if necessary. A short circuit can occur on a rail, in a cable, in a transformer, or in an electrical machine.</p>
+<p>The most commonly applied protection principle is the maximum current-time protection. This protection monitors the maximum allowable current in a cable, transformer, or electrical machine. If an excessive current, which exceeds the maximum allowable current of the object to be protected for a corresponding period, occurs, the protection will shut down. The excessive current can be caused by, among other things:</p>
+<ul>
+<li>Overbelasting</li>
+<li>Kortsluiting</li>
+<li>Inrush phenomenon (a large overload of very short duration).</li>
+</ul>
+<p>The most commonly used protection components are the overcurrent protection and the fuse. The overcurrent protection determines, based on the signals it receives from the current and voltage transformers, whether there is a short circuit. If that is the case, it gives (after a possible time delay) a trip command to the circuit breaker, which then interrupts the current. The fuse can be considered a combination of a protection device and a circuit breaker, as it interrupts a short-circuit current on its own based on its characteristics.</p>
+<a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_6.1.2"></div>
+<br/>
+<h3>6.1.2 Fuses</h3>
+<p>In the protection of electrical networks and installations or parts thereof, fuses are frequently used. Advantages include that a fuse is relatively inexpensive, has high availability, is very fast, and is current-limiting. Disadvantages are that the fuse element is defective after disconnection and thus not self-restoring, and it has a limited range of applications. There are significant differences in the technical construction and properties of fuses. These differences pertain to behavior in overload and short-circuit situations and the various application areas with their specific issues.</p>
+<p>Fuses are generally very suitable for disconnecting short-circuit currents. Additionally, a fuse must have the following properties:</p>
+<ul>
+<li>continuously conduct the nominal current without causing unacceptable heating of the surroundings</li>
+<li>withstand regular and short-term overloads resulting from the activation of equipment</li>
+<li>be able to handle the arc energy without damaging other components in the vicinity</li>
+<li>the short-circuit currents can be interrupted without externally damaging the fuse safety</li>
+<li>be sufficiently current-limiting during short circuits.</li>
+</ul>
+<p>A fuse always interrupts an excessive current because the conductive parts melt when carrying the excessive current. If the fuse carries a current that is just large enough to initiate the melting process, it may happen that the current is not interrupted or is interrupted only after a long time. This uncertain area is called the critical area of the fuse. There are different types of fuses on the market, which are distinguished by the size of the critical area (Wright, 2004). In order of decreasing critical area: Back-Up, General Purpose, and Full Range fuses.</p>
+<ul>
+<li>The Back-Up fuse must be able to interrupt all currents between a manufacturer-specified minimum interrupting current and the nominal interrupting current.</li>
+<li>The General Purpose fuse must be able to interrupt all currents between the current that causes the fuse to melt in one hour and the nominal interrupting current.</li>
+<li>The Full Range fuse must be able to interrupt all currents between the smallest current that causes the fuse to melt and the nominal interrupting current.</li>
+</ul>
+<p>For a General Purpose fuse, the minimum interrupting current is 1.5 times the nominal current, and for a Back Up fuse, the value is 2.5 to 3 times the nominal current. With a Full Range fuse, the critical area is very limited, and it blows both during overloads and short circuits. The Back Up and General Purpose fuses have a larger critical area and work especially well during short circuits. The MS fuses are Full Range cartridges. Figure 6.1 illustrates the characteristics of a series of fuses for use in MS networks.</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="464" src="./beveiliging_files/6.1.png" width="717"/>
+<h5>Figure 6.1 Characteristics of MS fuses</h5>
+<h6>Application in medium voltage networks</h6>
+<p>In medium voltage networks, fuses are most commonly used as short-circuit protection for distribution transformers and sometimes for protecting feeders in the 10 kV network. This is more economically attractive than using circuit breakers. Additionally, fuses require less space. When selecting the appropriate fuse, one must consider the inrush current that occurs when energizing an unloaded transformer. In practice, the value of the fuse is typically chosen to be 1.5 to 2.5 times the nominal value of the transformer current.</p>
+<p>For motors, the fuses are often heavily loaded by the inrush currents. An undesired disconnection during startup can be the result. This can be prevented by choosing a fuse with a melting current greater than the inrush current. Additionally, the factors of startup time and the number of switch-ons per unit of time are important.</p>
+<p>In a floating network, in the event of a ground fault, a ground fault current will flow, the magnitude of which is determined by the network's capacity. Together with the load current, the current through the fuse can then reach a value that lies between the minimum melting current and the minimum breaking current. Currents between these two values fall within the range where disconnection is uncertain if General Purpose and Back-up fuses are used. If this situation is likely to occur, then Full Range fuses must be applied, or another solution must be sought, such as a circuit breaker.</p>
+<p>Some types of fuses have a disconnection or indicator mechanism. After the fuse blows, a striker pin is ejected. The movement of this striker pin can be used for signaling or for disconnecting a three-phase load switch or circuit breaker. This ensures that in the uncertain area, where not all fuses will blow, a three-phase disconnection still occurs.</p>
+<p>In the area between the nominal and the minimum melting current value, the currents can be difficult to extinguish by a fuse. This results in significant heat development with the associated risk that too much heat will build up in the fuse. This creates the possibility of the fuse exploding or the risk of self-ignition of the installation in which the fuse is incorporated. This occasionally happens in practice.</p>
+<p>With the exception of the Full-range fuses, MS fuses are generally less suitable for overload protection and better suited for short-circuit protection.</p>
+<p>A problem with fuses is the heat development. At power levels higher than 630 kVA (36 A at 10 kV), the MS fuse links heat up too much. The heat increases quadratically with the current (I).<sup>2</sup>As a result, the holders of the installation in a substation, for example a Magnefix, can become thermally overloaded. Therefore, when the power of the connection exceeds 630 kVA, it is preferable to use a circuit breaker and protection relay. There is also the option to choose heavier MS fuse links. However, this creates problems with selectivity with the protections in the low-voltage branches. Therefore, for power levels greater than 630 kVA, protections with circuit breakers are chosen to maintain the intended selectivity.</p>
+<h6>Kapstroom</h6>
+<p>In a fuse, the short-circuit current can be interrupted within a very short time. The duration depends on the energy required to melt the fuse element during a short circuit. Due to the construction of the fuse element, the current is limited to a value lower than the expected peak value (prospective short-circuit current). After that, the current will quickly decrease to zero. The maximum value of the current that passes through is called the let-through current. The let-through current curve shows the relationship between the magnitude of the let-through current and the magnitude of the prospective short-circuit current through the fuse. The prospective short-circuit current is the value of the current that would flow in the event of a short circuit if no protective component were included in the circuit. Figure 6.2 illustrates this.</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="258" src="./beveiliging_files/6.2.png" width="412"/>
+<h5>Figure 6.2 Short-circuit current curve of a fuse</h5>
+<p>At time t<sub>0</sub>the short circuit occurs. If no protective component were installed, the full prospective short-circuit current would flow (dotted line). When a fuse is used, the following happens.</p>
+<ul>
+<li>From t<sub>0</sub>until t<sub>1</sub>the fuse element is rapidly heated due to the short-circuit current. At t<sub>1</sub>the strip melts.
+            Where previously there was conduction, an arc discharge occurs in the fuse, after which the current is interrupted (cut off). The amount
+            of energy (I<sup>2</sup>t) required to melt the strip is called I<sup>2</sup>t<sub>smelt</sub>called. This is the energy up to t<sub>1</sub>.</li>
+<li>At t<sub>1</sub>the current is not yet interrupted. The arc voltage of the arc discharge quickly pushes the current to zero, but there is still some current due to the arc discharge. As long as there is current, there is also energy (I<sup>2</sup>t) allowed. The
+            amount of allowed energy from t<sub>1</sub>to t<sub>2</sub>becomes I<sup>2</sup>t<sub>boog</sub>called. Only at t<sub>2</sub>the current is definitively interrupted. The total amount of energy from t<sub>0</sub>to t<sub>2</sub>is allowed to pass is I<sup>2</sup>t<sub>totaal</sub>called.<sup>2</sup>t<sub>totaal</sub>is therefore equal to the sum of I<sup>2</sup>t<sub>smelt</sub>and I<sup>2</sup>t<sub>boog</sub>.</li>
+</ul>
+<a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_6.1.3"></div>
+<br/>
+<h3>6.1.3 Protection Relays</h3>
+<p>The general term for a protection device that, based on a measurement, gives a trip command to a circuit breaker is a protection relay or, simply, a relay. A relay is used in situations where the protection needs to respond to variables other than just the current flowing for a certain duration or when a different interruption characteristic than that of a fuse is required. Depending on the variable that needs to be measured, various types of protection relays are available. A protection relay is composed of three basic elements.</p>
+<ul>
+<li>An element for measuring</li>
+<li>An element for comparing</li>
+<li>An element to provide a trip command.</li>
+</ul>
+<p>Figure 6.3 provides a schematic overview of the basic structure of a protection relay. The measuring element converts the primary measured quantity into a type of signal and a signal value, which can be compared in the comparison element of the protection circuit. In the comparison element, the measured values are compared with the set values.</p>
+<p>If one value, or a combination of set values, is exceeded for a time interval longer than a set duration, a shutdown command is issued by the decision element.</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="157" src="./beveiliging_files/6.3.png" width="671"/>
+<h5>Figure 6.3 Basic structure of a relay</h5>
+<p>There are various versions of a relay. Protective relays are classified into two main types, independent of their measuring function.</p>
+<ul>
+<li>Electromechanical relays (primary and secondary relays);</li>
+<li>Static relays (analog relays and microprocessor-controlled relays).</li>
+</ul>
+<h6>Electromechanical relays</h6>
+<p>Electromechanical relays are usually robustly constructed. They contain several components such as armatures, Ferraris disks, small synchronous motors, or moving coil relays that move under the influence of magnetic fields. Electromechanical relays are still the most common protective devices in networks. Due to rapid developments in electronics, static relays (see further on) are used for replacements. The relays are used in the primary and secondary circuits.</p>
+<h6>Primary protection relay</h6>
+<p>The primary protection relay is a relay that performs simple protection tasks, such as monitoring the maximum current/time, possibly combined with a thermal function. The relay is integrated into the primary circuit at the circuit breaker. The energy for the relay's operation is drawn directly from the network.</p>
+<h6>Secondary protection relay</h6>
+<p>A frequently used relay is the secondary protection relay. This relay is most often connected to measuring transformers (current and/or voltage transformers). These measuring transformers reduce high voltages and large currents to standard values, which can be used as input signals for various protection systems. The measuring transformers also provide a separation between the primary high-voltage installation and the secondary protection circuits operating at low voltage levels. The secondary relay requires auxiliary power for its operation.</p>
+<h6>Static relays</h6>
+<p>These relays have been used since 1960. The term 'static' implies that these relays have no moving parts that determine the relay characteristic. This task is entirely performed by electronics. The measured quantities are converted into a signal of such type and magnitude that they can be processed by the electronic part of the relay. Two types are distinguished here.</p>
+<h6>Static analog relay</h6>
+<p>In this relay, the quantities of current and/or voltage are converted into an analog signal and then (usually) rectified. The signal thus obtained is processed by an electronic circuit and then supplied to the comparison unit or detection circuit, after which it provides a shutdown command if necessary. This type of relay requires auxiliary power from the grid.</p>
+<h6>Microprocessorrelais</h6>
+<p>The microprocessor relay differs from other relays in that the input data, such as current and voltage, are converted into digital quantities. The processor then calculates whether there is an exceedance of the maximum or minimum threshold value, after which a shutdown command may follow if necessary. Due to the flexibility and high computational power of modern processors, of which several are incorporated into a relay, a large number of functions can be combined in a single relay.</p>
+<p>In practice, new electromechanical relays are no longer used. Instead, electronic relays have taken their place. In new construction or renovation projects, microprocessor-controlled protections are applied. Reliability, energy consumption, and operating speed are comparable to those of electronic relays, but the possibilities for additional applications and calculations, made possible by digitally available data, are greater. For example, protection characteristics can be adjusted, and this digital data can be read out after an event.</p>
+<a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_6.1.4"></div>
+<br/>
+<h3>6.1.4 Measurement Transformers</h3>
+<p>Protection relays receive their information from measurement transformers. These transformers convert the high voltages and large currents into values that the relays can process. They also provide isolation between the high-voltage network and the secondary installation.</p>
+<ul>
+<li>Current transformers convert the very large primary currents to a size that is suitable for the relay. The nominal value of the current is often 1 or 5 A. For a current transformer, the transformation ratio, nominal power, overcurrent factor, and error class are specified.</li>
+<li>Voltage transformers transform the primary voltage to a value suitable for the relay. A commonly used secondary voltage is 100 V. For a voltage transformer, the transformation ratio, nominal power, and error class are specified. The error class is specified for a voltage range of 5% to 120% of the nominal voltage.</li>
+</ul>
+<img alt="pics_6.4" class="img-responsive-leon-15px center-block" height="157" src="./beveiliging_files/6.4.png" width="671"/>
+<h5>Figure 6.4 Arrangement of measuring transformers at a relay</h5>
+<p>Measuring transformers must meet specific requirements, for example regarding the insulation level, the degree of saturation when measuring short-circuit currents, and the accuracy of the measurements. The accuracy requirements are generally high.</p>
+<h6>Stroomtransformator</h6>
+<p>Current transformers for protection can be identified by the designation 'P' (protection), for example, 5P20. This means that the accuracy is 5% at an overcurrent factor of 20. The overcurrent factor is the ratio of the primary short-circuit current to the primary nominal current of the current transformer. The accuracy is only achieved if the current transformer is loaded by the relay or another protection device with the nominal power for which it is designed.</p>
+<p>The load of a current transformer is formed by the protection device and the loss in the measuring leads. Typically, the nominal power of a current transformer is 15 to 20 VA. If the load is lower than nominal, the overcurrent factor increases. This is usually the case with static relays. Compared to electromechanical relays, these have a relatively low self-consumption. An example of the designation of a current transformer is 5P20, 30 VA, 2500/5A, which means:</p>
+<ul>
+<li>accuracy 5%</li>
+<li>P: the function of the transformer is protection (security)</li>
+<li>overcurrent factor: 20</li>
+<li>nominal power: 30 VA</li>
+<li>turns ratio: 2500 : 5.</li>
+</ul>
+<p>A current transformer with no load connected must be short-circuited to prevent damage. The secondary winding must not be open. If the secondary winding is open, there is no compensation for the flux in the transformer core, causing the core to become highly saturated, which can result in it burning out.</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="145" src="./beveiliging_files/6.5.png" width="223"/>
+<h5>Figure 6.5 Current Transformers</h5>
+<h6>Spanningstransformator</h6>
+<p>The operating principle of the voltage transformer is based on that of a regular power transformer with two windings. The high primary voltage is transformed into a secondary voltage of 100 V or 100/√3 V.</p>
+<p>The special feature of voltage transformers for protection functions is that they are required to exhibit an acceptable small transfer error even at very low voltages. This is necessary because, in the event of short circuits, the voltage in the network can drop to very low values. Voltage transformers for protection functions are designated with classes 3P and 6P. This means that the transfer error at 5% of the nominal voltage and at the highest voltage that can occur in the electrical network (up to<em>1.9 · U<sub>nom</sub></em>) must not exceed 3% and 6%, respectively.</p>
+<a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_6.1.5"></div>
+<br/>
+<h3>6.1.5 Maximum current-time relay</h3>
+<p>The most commonly used protection system is the maximum current-time protection (MST). This protects the electrical network against the consequences of excessively high current through the circuit. In this protection system, a distinction is made between:</p>
+<ul>
+<li>Independent MST (OMT relay): in the event of a continuous exceedance of a set current value, a shutdown command follows at a predetermined time.</li>
+<li>Dependent MST (AMT relay): in the event of a continuous exceedance of a set current value, a shutdown command follows; the duration after which a shutdown command follows depends on the extent to which the current exceeds the set value.</li>
+</ul>
+<p>This method of protection is simple, reliable, and inexpensive. The MST is part of the trio: current transformer – relay – circuit breaker. The current from the primary circuit is converted by the current transformer to the lower current level of the relay. Subsequently, the current is assessed by the relay. If the measured current is higher than a set value, the relay will command the circuit breaker to shut off.</p>
+<p>The MST can also be used as a backup protection for failing downstream circuit breakers and protections. No communication is required for its operation.</p>
+<p>Besides these advantages, there are also disadvantages. The MST is only applicable in radial networks, where the current flows in one direction from the substation to the ends of the network. Furthermore, due to the time grading required to achieve selectivity in radial networks, the disconnection times increase as the feeder is closer to the substation.</p>
+<h6>Independent maximum current-time relays (OMT)</h6>
+<p>The independent maximum current-time protection issues a trip command to a circuit breaker of the feeder when the input signal of the relay exceeds the set value (the measured value is greater than the set value) and the duration of the exceedance is longer than the time set on the protection relay.</p>
+<p>If the input signal drops below the set threshold before the set time has elapsed, the relay returns to its normal position and no trip command follows. However, the relay does indicate that it has been activated.</p>
+<p>The trip time is independent of the magnitude of the current. Most independent maximum current-time relays have the capability to set one or more current thresholds with corresponding trip times. Often, the relays also have a setting option for a current threshold value that leads to immediate tripping. The trip time is then equal to the response time of the relay (approximately 30 ms) and that of the circuit breaker (40 to 80 ms). The purpose of this is to limit damage in the event of large short-circuit currents.</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="228" src="./beveiliging_files/6.6.png" width="353"/>
+<h5>Figure 6.6 Tripping characteristic of an OMT relay</h5>
+<p>Figure 6.6 shows the characteristic of the independent maximum current time relay, where the set current value is 250 A and the trip time is 0.3 s.</p>
+<h6>Dependent maximum current time relay (AMT)</h6>
+<p>With this type of protection, the trip time depends on the current: the higher the current, the faster the disconnection. Fuses also have this characteristic. The major advantage of protection with an AMT relay is that the quick disconnection at high currents provides better protection for the installation against large short-circuit currents. Achieving selectivity between consecutively connected protection devices is more difficult than with an OMT relay. At low short-circuit currents, the load current (the pre-load) can affect the operation.</p>
+<p>The tripping characteristic makes this relay very suitable for protecting motors, transformers, and cables. Figure 6.7 illustrates the characteristic of a dependent maximum current-time relay, in which the set current value (I&gt;) is equal to 250 A.</p>
+<p>Both the OMT and AMT relays can also be equipped with a limit, indicated by I&gt;&gt;. This limit ensures that above a certain current value, the relay issues a trip command faster than it would based on the characteristic curve. Figure 6.8 illustrates this for a value of I&gt;&gt; equal to 1000 A and t&gt;&gt; equal to 0.3 s. In fact, this is a combination of a dependent and an independent relay.</p>
+<div class="row">
+<div class="col-md-6">
+<h5> <img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="309" src="./beveiliging_files/6.7.png" width="356"/>Figure 6.7 Tripping characteristic of an AMT relay</h5>
+</div>
+<div class="col-md-6">
+<h5> <img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="309" src="./beveiliging_files/6.8.png" width="361"/>Figure 6.8 Tripping characteristic of a restricted AMT relay</h5>
+</div>
+</div>
+<h6>Selectiviteit</h6>
+<p>If multiple protections are applied sequentially in a radial-operated network, the step time of the protections must increase from the end of the network towards the power source due to the desired selectivity. The setting times of two consecutive relays must be such that the relay closest to the fault gives the trip command first. If the circuit breaker activated by the relay fails, a preceding protection will activate the preceding circuit breaker slightly later in time. This second circuit breaker with protection then functions as a backup for the failing breaker. This applies not only to two consecutive relays at the same voltage level but also to two protections on either side of a transformer. For example, the relay on the primary side of a distribution transformer must be selective with the fuse on the secondary side.</p>
+<p>When staggering the time settings, the switching time of the circuit breaker, which is approximately 40 to 80 ms, must be taken into account. Considering various uncertainties in the protection circuit, such as variations in trip times, a margin of 0.3 to 0.5 seconds is maintained when staggering the time in circuits with electromechanical relays. A smaller margin could be maintained for static relays. Figure 6.9 illustrates the time staggering of two relays. Here, 'AMT relay 2' is placed closer to the power source than 'AMT relay', which is reflected in the fact that both the current and time settings of 'AMT relay 2' are greater than those of 'AMT relay'. Additionally, it can be seen that the time staggering is greatest for low current values. For selectivity, it is important that the margin for all trip times in the characteristic is met and that the characteristics do not intersect.</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="350" src="./beveiliging_files/6.9.png" width="711"/>
+<h5>Figure 6.9 Time coordination of two AMT relays</h5>
+<h6>Standardized characteristics</h6>
+<p>When setting up the protections, a wide range of options can be chosen from. For time coordination, a standard characteristic must first be selected. In the international standards, IEC 60255 defines several standard characteristics. These characteristics are listed in Table 6.1.</p>
+<h5>Table 6.1  Inverse protection characteristics according to IEC 60255</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="25%"><p> <strong>Normkarakteristiek</strong> </p></td>
+<td valign="top" width="25%"><p align="center">Standard inverse (SI)</p></td>
+<td valign="top" width="25%"><p align="center">Very inverse (VI)</p></td>
+<td valign="top" width="25%"><p align="center">Extremely inverse (EI)</p></td>
+</tr>
+<tr>
+<td height="100"><p>Functie</p></td>
+<td align="center"><img alt="" height="78" src="./beveiliging_files/formule-tabel-6.1a.png" width="123"/></td>
+<td align="center"><img alt="" height="74" src="./beveiliging_files/formule-tabel-6.1b.png" width="99"/></td>
+<td align="center"><img alt="" height="78" src="./beveiliging_files/formule-tabel-6.1c.png" width="107"/></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>Here, I<sub>k</sub>the occurring short-circuit current and I&gt; the set current value. The three standard characteristics are typified by the steepness of their slopes: standard inverse (least steep), very inverse (steeper), and extremely inverse (steepest). These characteristics are fixed properties of old electromechanical relays but can also be set in modern static relays. For the inverse characteristic, the pick-up point must first be set. This is the value of the current above which the timer starts running. After this, the disconnection time can be set if deviating from the standard characteristics. Figure 6.10 illustrates the three standard characteristics.</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="381" src="./beveiliging_files/6.10.png" width="713"/>
+<h5>Figure 6.10 Relay characteristics according to IEC 60255</h5>
+<p>In most cases, a relay with a standard inverse characteristic is sufficient. However, if adequate selectivity cannot be achieved, a very inverse or extremely inverse characteristic may be chosen. Very inverse relays are particularly suitable for situations where the short-circuit current decreases rapidly with increasing distance from the source. This occurs when there is a substantial increase in impedance with increasing distance.</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="252" src="./beveiliging_files/6.11.png" width="512"/>
+<h5>Figure 6.11 Electromechanical maximum current-time protections</h5>
+<a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_6.1.6"></div>
+<br/>
+<h3>6.1.6 Power Direction Relay</h3>
+<p>In addition to the standard MST, there is a type where the voltage is also measured. This allows the direction of the current to be determined. This is called a power direction (ER) protection. In the medium voltage network, it is no longer a given that the customer is a pure load. Due to decentralized generation (DCO), currents increasingly flow in directions other than the usual, from the source to the consumer. Also, in the case of parallel circuits, it is important to issue a trip command based on the direction of the current.</p>
+<p>In principle, the directional power protection consists of a combination of a maximum current-time relay and a directional relay. The MST can be independent or dependent. This relay determines whether the current exceeds the set value and determines the moment when a possible shutdown occurs. The directional relay determines the direction of the current based on the current and the voltage. If the current vector is in the forward direction, the directional relay passes the shutdown command from the MST. If the current is backward, the directional relay prevents the shutdown command.</p>
+<p>In figure 6.12, the voltage vectors are<em>V<sub>a</sub>, V<sub>b</sub></em>en<em>V<sub>c</sub></em>of the three phases are shown, as well as the current vector<em>I<sub>a</sub></em>of phase<em>a</em>There are many conceivable ways to measure currents and voltages. In a relay, the '90° Quadrature Connection' is the standard connection method. In this method, for phase protection<em>a</em>the phase current<em>I<sub>a</sub></em>and the associated voltage<em>V<sub>bc</sub></em>used. In this way, a sufficiently large voltage vector is available, even if the voltage drops in the<em>a</em>-phase drops to zero during a short circuit. Subsequently, the coupled voltage<em>V<sub>bc</sub></em>rotated by an angle that is the characteristic angle<em>RCA</em>(Relay Characteristic Angle). The measured and rotated voltage vector is referred to as<em>V'<sub>bc</sub></em>Figure 6.12 illustrates this for a<em>RCA</em>van<em>45°</em>. In this way, the maximum sensitivity of the relay is achieved if the current has an angle of<em>45°</em>(<em>= 90° – RCA)</em>lags behind the phase voltage.</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="390" src="./beveiliging_files/6.12.png" width="513"/>
+<h5>Figure 6.12 Characteristic angle of a relay</h5>
+<p>The maximum sensitivity of the relay is achieved when the measured current has the same angle as the voltage vector.<em>V'<sub>bc</sub></em>. This is the case in
+          figure 6.12 when the current vector<em>I<sub>a</sub></em>at an angle of<em>90° – RCA</em>, in this case 45°, lags behind the phase voltage<em>V<sub>a</sub></em>of phase<em>a</em>. The lowest sensitivity is achieved when the current vector<em>I<sub>a</sub></em>leads the phase voltage by 45°<em>V<sub>a</sub></em>of phase a lags by 135°. In that case, the current vector is perpendicular to the voltage vector<em>V'<sub>bc</sub></em>. The line that makes an angle of 90° with the voltage vector<em>V'<sub>bc</sub></em>is called the 'zero torque line'.</p>
+<p>In a forward-directed directional relay, disconnection occurs if the current vector is located in the gray area of figure 6.12, meaning when the current leads the voltage by a maximum of 45° or lags by a maximum of 135°. In modern relays, the characteristic angle RCA can be set, which also allows the zero torque line to be adjusted. Essentially, this amounts to a cos(φ) correction for the direction to be protected.</p>
+<p>Current and time grading only functions well if the current through a network section always flows in the same direction. If this is not the case, maximum current-time relays can still be applied by using directional relays. Maximum current-time directional relays are usually applied with parallel cables. A short circuit in one of the parallel cables is fed from the supply side as well as from the parallel cable. It is not possible to selectively protect this situation with non-directional MST protections.</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="437" src="./beveiliging_files/6.13.png" width="575"/>
+<h5>Figure 6.13  Application of directional relays</h5>
+<p>Figure 6.13 provides an example of the application of directional relays. A section of a network with two parallel circuits is fed from A. On the supply side of the two parallel circuits, non-directional OMT relays (B and C) are applied, which will issue a trip command after 1 second if the current exceeds 250 A. On the other side of the two parallel circuits, directional relays (D and E) are applied, which will issue a trip command after 0.1 seconds if the current exceeds 250 A. In the event of a short circuit in cable C-E, the short circuit will be fed through both parallel circuits, and the protections in A, B, C, and E will respond. The protection in E will issue a trip command after 0.1 seconds, after which the short circuit will no longer be fed through B. Consequently, protection B will not issue a trip command. The short circuit will still be fed through C. The protection in C will issue a trip command after 1 second. This situation is selectively protected, thanks to the directional relays.</p>
+<a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_6.1.7"></div>
+<br/>
+<h3>6.1.7 Blocking and Acceleration</h3>
+<p>Modern static relays are equipped with many logical inputs and outputs. Using a communication link that connects two relays on either side of a protected object, such as a cable connection, the protection actions (often disconnection) can be influenced.</p>
+<p>One of the applications is blocking the relay. A protection device that detects a short circuit outside its protected zone can send a blocking signal to the protection device on the other side of the object to be protected. Figure 6.14 illustrates that Protection 1 sends a blocking signal to Protection 2 if the short circuit is located in the reverse direction of Protection 1.</p>
+<div class="row">
+<div class="col-md-6"> <img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="108" src="./beveiliging_files/6.14.png" width="343"/>
+<h5>Figure 6.14 Blocking</h5>
+</div>
+<div class="col-md-6"> <img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="116" src="./beveiliging_files/6.15.png" width="344"/>
+<h5>Figure 6.15 Acceleration</h5>
+</div>
+</div>
+<p>Another application is accelerating the disconnection by another relay. If in figure 6.15 Protection 1 detects a short circuit in the forward direction, it will respond and issue a disconnection command. In a meshed network structure, this fault must also be disconnected by Protection 2. If Protection 1 sends an acceleration signal to Protection 2, the fault is quickly isolated. In distance protection, this scheme for shortening the disconnection times of a subsequent zone is also called carry-over switching.</p>
+<a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_6.1.8"></div>
+<br/>
+<h3>6.1.8 Differential Protection</h3>
+<p>The operation of differential protection is based on the fact that the sum of the currents flowing into an object in an undisturbed situation is always equal to zero. A short circuit in the object causes this sum of currents to no longer be equal to zero. In an object with one incoming current circuit and one outgoing current circuit, the current flowing in has a different value than the current flowing out. By comparing the currents at the input and the output, a short circuit can be detected. When both ends are located close to each other, this is easy to achieve, but when protecting a cable, communication must be ensured. Differential protection is applied to transformers, lines, cables, and rail systems.</p>
+<p>Figures 6.16 and 6.17 illustrate the principle of differential protection. The differential protection sums the currents from all measuring points. If the measurement error due to the current transformers is disregarded, the sum of the currents in a healthy situation is equal to zero. In a fault situation, the sum of the currents is no longer equal to zero, and a trip is initiated. A large measurement error due to the current transformers can have the same effect. Therefore, the current transformers at the different measuring points must have as similar properties as possible for current transfer. The advantage of differential protection is that the trip time in the protected zone is almost independent of the location and type of fault. The trip time is equal to the inherent time of the protection and the circuit breaker, approximately 40 to 80 ms.</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" src="./beveiliging_files/6.16.png"/>
+<h5>Figure 6.16
+          Currents in differential protection of a busbar; normal situation</h5>
+<p>Figure 6.16 shows the protection of a busbar system. The current values from all incoming and outgoing cable connections of a busbar, originating from the current transformers, are connected to the differential protection. In the differential protection, the vector sum of these values is determined. If the definition of the current direction is consistently followed (incoming positive and outgoing negative), the sum of the currents will be zero in a normal undisturbed situation. The protection will then not trip.</p>
+<p>In the event of a short circuit on the rail, a short-circuit current<em>I<sub>F</sub></em>flow. The vector sum of the currents through the cable connections is then no longer equal to zero, but equal to the short-circuit current. The differential protection will then issue a trip command without any time delay.</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" src="./beveiliging_files/6.17.png"/>
+<h5>Figure 6.17 Currents in differential protection of a busbar; short circuit on the busbar</h5>
+<p>If the object to be protected is a cable connection, communication between both sides must be ensured. This will nowadays be realized with a fiber optic connection. When protecting a transformer, the current transformers must be selected in such a way that they correct the transformation ratio. After all, when summing the currents from the primary and secondary circuits, they must be referenced to the same voltage level. The transformer’s connection method (star-delta) must also be taken into account.</p>
+<p>The differential protection secures a fixed delineated area, which is called the protected zone. In principle, this results in high selectivity for the differential protection. When setting up the protection, there is no need to consider other protections.</p>
+<p>Differential protection is also used to secure parallel cable connections as an alternative to protection with directional relays.</p>
+<p>By means of the 'dual slope' bias technique (see figure 6.18), the differential protection has been made less sensitive to through faults and measurement errors (such as saturation) of the current transformers. The sensitivity of the protection depends on a bias current. For small currents, the bias is small. As the current increases, the bias becomes larger. Figure 6.18 illustrates this.</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" src="./beveiliging_files/6.18.png"/>
+<h5>Figure 6.18  Bias characteristic of a differential protection</h5>
+<p>The sum of the measured currents is<em>I<sub>diff</sub></em>The protection issues a trip command if this value is greater than the corresponding value of the bias characteristic. The measurement of<em>n</em>currents is given by the absolute value of the vector sum of the currents (all directed towards the object to be protected):</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.6" src="./beveiliging_files/formule-6.1.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">6.1</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>The corresponding bias is given by the sum of the absolute values of the currents, divided by the number of measurements:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.6" src="./beveiliging_files/formule-6.2.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">6.2</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>The shutdown command is given if:</p>
+<p>Voor<em>I<sub>bias</sub>&lt; I<sub>s2</sub>:</em>  <img alt="" height="27" src="./beveiliging_files/formule-6.2-.png"/></p>
+<p>Voor<em>I<sub>bias</sub>≥ I<sub>s2</sub>:</em>  <img alt="" height="27" src="./beveiliging_files/formule-6.2--.png" width="264"/></p>
+<p>To be insensitive to the charging current of the circuit, the setting of<em>I<sub>s1</sub></em>at least equal to 2.5 times the static charging current of the circuit. Another possibility is that the differential protection itself filters out the charging current from the measured current value. The differential protection must then have an input for a voltage transformer. Additionally, the capacity of the circuit must be known. The manufacturer often provides a recommendation for the other three settings in the protection manual. Typical values for a longitudinal differential protection (for a connection) are:</p>
+<blockquote>
+<p> <em>I<sub>s2</sub>= 2 pu</em>(per unit; see chapter 7)<br/>
+<em>k<sub>1</sub>= 0.3</em> <br/>
+<em>k<sub>2</sub>= 1.5</em> </p>
+</blockquote>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="205" src="./beveiliging_files/6.19.png" width="317"/>
+<h5>Figure 6.19 Microprocessor-Controlled Differential Protection</h5>
+<a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_6.1.9"></div>
+<br/>
+<h3>6.1.9 Distance Protection</h3>
+<p>Distance protection is primarily used for protecting high-voltage lines and cable connections. Its operation is based on determining the impedance of the connection using the measured voltages and currents. The impedance from the measuring point to a point on the connection increases directly proportionally with the distance from the measuring point. A short circuit is detected due to the drastic reduction in impedance in the direction of the short circuit. If the measured impedance is much smaller than the normal impedance, a fault is present. The protection is activated when a preset operating current is exceeded or when a preset operating impedance is undershot. The impedance is calculated from the quotient of the measured voltage and the measured current. Therefore, the protection is inherently directional. The distance from the measuring point to the fault location is determined as follows:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.6" height="45" src="./beveiliging_files/formule-6.3.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">6.3</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>in which:</p>
+<blockquote>
+<p> <em>Z<sub>X</sub>= U<sub>gemeten</sub>/ I<sub>gemeten</sub></em> <br/>
+<em>Z<sub>kabel</sub> </em>: the impedance value of the cable or line, set on the protection device</p>
+</blockquote>
+<p>The disconnection by a distance protection device occurs in steps, called zones. The first zone, the fast zone, gives an immediate trip command if the measured impedance<em>Z<sub>X</sub></em>is less than the first set impedance, which is equal to 85 to 90% of the first section to be protected. This section is usually the length of the cable or line connection to be protected (see figure 6.20). A safety margin of 10 to 15% is maintained due to the possibility that the short circuit still has some impedance or due to inaccuracies of measuring transformers and available data on the impedance of the connection. For this reason, the value of<em>Z<sub>1</sub></em>usually corresponds to 85 to 90% of the total impedance of the first section to be protected. Faults between 85 to 90% and 100% of the section will be disconnected by the second stage with some time delay.</p>
+<p>The second stage is set to a value that again amounts to 85 to 90% of the impedance of the next section. In this way, the second stage serves as a backup for the first stage of the next protection. If a fault in the second connection is not disconnected by the corresponding protection, the preceding protection will issue the disconnection command with a time delay. Figure 6.20 illustrates this for three connections with impedances.<em>Z<sub>1</sub></em>,<em>Z<sub>2</sub></em>en<em>Z<sub>3</sub></em>, which are protected by three distance protections. Herein, the disconnection times<em>t<sub>1</sub></em>up to and including<em>t<sub>4</sub></em>the disconnection times from the first to the fourth stage.</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="411" src="./beveiliging_files/6.20.png" width="635"/>
+<h5>Figure 6.20 Selectivity of the distance protection</h5>
+<p>In medium voltage networks, the number of applied stages is often limited to 2. Thus, it is common to<em>Z<sub>2</sub></em>to be set at 115%, which is 100% of the circuit to be protected plus 15% of the downstream connection.</p>
+<p>There is a final stage, which is set in a distance protection system to disconnect high-resistance faults. The corresponding final time is a longer disconnection time than all other protections. The final stage essentially serves as an emergency brake.</p>
+<p>The distance protection responds to faults on both sides of the station. It is also possible to set a reverse step as a backup for faults in the preceding connections.</p>
+<p>The measurement and calculation of impedance by the protection system must be done accurately. The basis is the measurement of voltages and currents. There are many possibilities for measuring these quantities. The choice of method depends on the phase angle between current and voltage. In a static relay, the phase shifts are realized using software, but in electromechanical relays, the phase shifts are achieved through the connection options on the relay (see also the characteristic angle of a relay in figure 6.12). A commonly used method utilizes the voltage in the healthy phases and the current in the involved phase. The measurement methods for the four most common short circuits are explained below. The explanation uses vectors that describe voltages and currents. This means that both the magnitude (length) and the angle of the vectors are considered. When applying the formulas, complex calculations are used.</p>
+<h6>Driefasenkortsluiting</h6>
+<p>In the case of a three-phase short circuit, it does not matter if there is contact with the ground. The voltage at the short circuit point is zero volts. The distance protection sees the three phase voltages, the three line-to-line voltages, and the three phase currents at the measuring point.</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="168" src="./beveiliging_files/6.21.png" width="372"/>
+<h5>Figure 6.21 Three-phase short circuit, viewed from the distance protection</h5>
+<p>For the coupled voltage across phases<em>b</em>en<em>c</em>applies:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.6" src="./beveiliging_files/formule-6.4.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">6.4</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>From this follows for the measured impedance:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.6" src="./beveiliging_files/formule-6.5.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">6.5</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<h6><br/>
+</h6>
+<h6>Two-phase short circuit without ground contact</h6>
+<p>In the case of a two-phase short circuit, it does matter whether there is contact with the ground. In the event of a two-phase short circuit without ground contact, the coupled voltage across and the currents in the involved phases are considered. Below, the short circuit between phases<em>b</em>en<em>c</em>explained.</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="169" src="./beveiliging_files/6.22.png" width="372"/>
+<h5>Figure 6.22 Two-phase short circuit without ground contact, viewed from the distance protection</h5>
+<p>For the coupled voltage across phases<em>b</em>en<em>c</em>applies:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.6" src="./beveiliging_files/formule-6.6.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">6.6</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>From this follows for the measured impedance:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.6" src="./beveiliging_files/formule-6.7.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">6.7</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<h6>Short circuits with ground contact</h6>
+<p>In the event of a short circuit with ground contact, the phase voltage at the fault location is equal to zero volts. It is tempting to assume that the voltage drop from the measurement location to the fault location could simply be determined by the product of phase impedance and phase current. However, the current in the entire short-circuited circuit is also determined by the return impedance, which in turn depends on the number of ground electrodes, the grounding method, and the ground impedances. If these factors are not sufficiently taken into account, the impedance measurement will not be accurate.</p>
+<p>The voltage drop from the measurement point to the fault location is the sum of the voltage drops in the component networks from the measurement point to the fault location.
+For further information on symmetrical components and this ground fault, refer to Chapter 7 and Chapter 10, Tables 10.3 (types of short circuits) and 10.4 (component networks for types of short circuits) and the accompanying explanations. According to the method of symmetrical components, the voltage drop and the current in the short-circuited circuit are given by:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.6" src="./beveiliging_files/formule-6.8.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">6.8</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.6" src="./beveiliging_files/formule-6.9.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">6.9</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>The return current at the measuring point is given by:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.6" src="./beveiliging_files/formule-6.10.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">6.10</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>Herein are<em><u>I</u><sub>a</sub></em>,<em><u>I</u><sub>b</sub></em>en<em><u>I</u><sub>c</sub></em>the measured phase currents and<em><u>I</u><sub>1</sub></em>,<em><u>I</u><sub>2</sub> </em>en<em><u>I</u><sub>0</sub></em>the currents in the component networks. A relationship is sought between the voltage at the measuring point and the phase currents, as well as the ratio between the homopolar and normal impedance of the connection. Therefore, a complex factor<em><u>K</u></em>introduced, which represents the ratio between<em><u>Z</u><sub>L,0</sub></em>en<em><u>Z</u><sub>L,1</sub></em>records.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.6" src="./beveiliging_files/formule-6.11.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">6.11</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>Filling in the equations for<em><u>K</u></em>and for<u><em>I</em></u><em><sub>a</sub></em>in the voltage equation yields:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.6" src="./beveiliging_files/formule-6.12.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">6.12</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>Finally, substitute the equation for the return current<em><u>I</u><sub>n</sub></em>in this voltage equation yields:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.6" src="./beveiliging_files/formule-6.13.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">6.13</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>In security technology, the factor is also used<em><u>K</u><sub>N</sub></em>used:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.6" src="./beveiliging_files/formule-6.14.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">6.14</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>Since the homopolar impedance<em><u>Z</u><sub>L,0</sub></em>is equal to<em><u>Z</u><sub>L,1</sub>+ 3<u>Z</u><sub>E</sub></em>, simplifies the equation for
+          the factor<em><u>K</u><sub>N</sub></em>in:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.6" src="./beveiliging_files/formule-6.15.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">6.15</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>Herein is<em><u>Z</u><sub>E</sub></em>the ground or return impedance. A distance relay measures the correct impedance through a complex factor<em><u>K</u><sub>N</sub></em>of the return current<em><u>I</u><sub>n</sub></em>to add to the phase current<em><u>I</u><sub>a</sub></em>. This method is called 'Residual Compensation' (NPAG, 2002).</p>
+<h6>Two-phase short circuit with ground contact</h6>
+<p>In the case of a two-phase short circuit with ground contact, the voltage drop and the currents in the involved phases are considered. The return current is<em><u>K</u><sub>N</sub></em>-factor taken into account. Below, the short circuit between phases<em>b</em>en<em>c</em>and ground explained.</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="222" src="./beveiliging_files/6.23.png" width="372"/>
+<h5>Figure 6.23 Two-phase short circuit with ground contact, viewed from the distance protection</h5>
+<p>For the phase voltage over phase<em>b</em>applies:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.6" src="./beveiliging_files/formule-6.16.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">6.16</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>From this follows for the measured impedance:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.6" src="./beveiliging_files/formule-6.17.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">6.17</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<h6>Single-phase short circuit with ground contact</h6>
+<p>In the case of a single-phase short circuit with ground contact, the voltage drop and the current in the affected phase are considered. The return current is calculated with the<em><u>K</u><sub>N</sub></em>-factor taken into account. Below, the short circuit between phase<em>c</em>and earth is explained.</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="168" src="./beveiliging_files/6.24.png" width="372"/>
+<h5>Figure 6.24 Single-phase short circuit with ground contact, viewed from the distance protection</h5>
+<p>For the phase voltage over phase<em>c</em>applies:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.6" src="./beveiliging_files/formule-6.18.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">6.18</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>From this follows for the measured impedance:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.6" src="./beveiliging_files/formule-6.19.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">6.19</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<h6>Afschakelkarakteristieken</h6>
+<p>A tripping characteristic, also known as a relay characteristic, describes for each stage of the distance protection at which value of R and X the relay should issue a tripping command. Numerical relays measure the absolute fault impedance and determine based on the relay characteristic whether they should issue a tripping command. Traditional distance relays do this slightly differently: they compare the measured voltage with a calculated voltage, which is derived from the measured current and the impedance for the respective zone. The relay characteristics are constructed with circles and straight lines in an R/X plane. Thus, the following distinctions are made:</p>
+<ul>
+<li>cirkelkarakteristiek</li>
+<li>polygon characteristic.</li>
+</ul>
+<p>Many techniques are applied in protection technology. One of the simplest techniques does not distinguish the angle of the measured impedance. The characteristic in the R/X diagram is a circle with its center at the origin. The radius of the circle is the zone setting in Ohms. The relay is not directional and will issue a trip command for all impedances calculated from the measured voltages and currents that fall within the circle; thus, on both sides of the node where the relay is installed. This is usually insufficient and therefore undesirable, so a directional element, as described in the directional relay (section 6.1.6), is incorporated. In this way, the circle characteristic changes to a half-circle. Figure 6.25 illustrates this for a relay with three stages. Each stage is set with an impedance and a corresponding trip time. The gray area indicates the plane within which a trip command may be given. If the measured impedance is less than<em>Z<sub>1</sub></em>, then at the time<em>t<sub>1</sub></em>a trip command is given. If the value of the measured impedance lies between<em>Z<sub>1</sub></em>en<em>Z<sub>2</sub></em>, then at the time<em>t<sub>2</sub></em>a trip command is given.</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="297" src="./beveiliging_files/6.25.png" width="458"/>
+<h5>Figure 6.25 Circle characteristic of a distance protection relay</h5>
+<p>A special form of a circular relay characteristic is that of the Mho relay. The characteristic in the R/X plane is a circle where the circumference, not the center, passes through the origin. This incorporates a reasonable form of directional sensitivity. These relays have been widely used in the past.</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="373" src="./beveiliging_files/6.26.png" width="576"/>
+<h5>Figure 6.26 Mho characteristic of a distance protection relay</h5>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="350" src="./beveiliging_files/6.27.png" width="541"/>
+<h5>Figure 6.27 Polygon characteristic of a distance protection relay</h5>
+<p>Modern microprocessor relays can be set for circular and Mho characteristics, allowing them to simulate the operation of traditional relays. With these relays, it is also possible to set the characteristic according to a polygon. The polygon is described with straight lines that intersect in such a way that they enclose a bounded area. The advantage of this is that all settings can be made independently of each other, making the relay much more applicable for special cases.</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="282" src="./beveiliging_files/6.28.png" width="435"/>
+<h5>Figure 6.28 Electromechanical and microprocessor-controlled distance protection</h5>
+<a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_6.1.10"></div>
+<br/>
+<h3>6.1.10 Voltage Protections</h3>
+<p>There are three different types of voltage protection:</p>
+<ul>
+<li>overspanningsbeveiliging</li>
+<li>onderspanningsbeveiliging</li>
+<li>zero voltage protection.</li>
+</ul>
+<h6>Overspanningsbeveiliging</h6>
+<p>There is overvoltage when the voltage reaches a value that is far above the nominal voltage. If such an overvoltage cannot be interrupted, it can be dangerous for people and can cause damage to electrical equipment. Therefore, in some cases, voltage protection must be applied.</p>
+<h6>Onderspanningsbeveiliging</h6>
+<p>There is an undervoltage condition when the mains voltage is 35 to 70% below the nominal voltage. Devices and motors can malfunction if they continue to operate at too low a voltage. In the event of a short circuit in the network, the connected generators will feed the short circuit. The behavior of the generator depends on the distance from the generator to the short circuit location. The undervoltage protection safeguards the connected machines by shutting them down within a short time (approximately 0.2 seconds).</p>
+<h6>Nulspanningsbeveiliging</h6>
+<p>This protection is activated when the mains voltage drops 70% or more below the nominal voltage. The protection shuts off the mains voltage and does not automatically turn it back on. This is for the safety of individuals. If the power supply to an installation fails, all connected equipment comes to a halt. If the voltage were to return during automatic reactivation, all equipment in the installation would start up simultaneously. This often leads to an overload of the network and potentially damages the equipment. The unforeseen shutting down and restarting is dangerous because it can also result in physical injury to the operating personnel. The undervoltage protection prevents this uncontrolled startup.</p>
+<a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_6.2"></div>
+<br/>
+<h2>6.2 Securing connections</h2>
+<p>The Netcode (Netcode, 2009) outlines the requirements that the security of a customer's installation must meet. The Netcode describes the conditions for all connected parties and also provides additional requirements for:</p>
+<ul>
+<li>those connected to low-voltage networks</li>
+<li>those connected to high-voltage networks</li>
+<li>production units connected to low-voltage networks</li>
+<li>production units connected to high-voltage networks</li>
+<li>private networks connected to low-voltage networks</li>
+<li>private networks connected to high-voltage networks</li>
+<li>network operators among themselves.</li>
+</ul>
+<p>The boundary conditions for all connected parties are generally described with regard to selectivity (Netcode, 2009, paragraph 2.1):</p>
+<ul>
+<li>the protection of electrical installations and their components is selective with respect to the protection applied by the network operator in the connection of the electrical installation or in the supplying network</li>
+<li>When sizing the electrical installation, consideration is given to the protection applied by the network operator.</li>
+<li>The network operator informs the connected party and consults with them, as applicable, during the initial connection and any subsequent changes to the network regarding: the protection philosophy, the minimum and maximum value of the short-circuit power during normal operating conditions, the method of neutral point treatment, the insulation coordination, the network configuration, and the operation management.</li>
+</ul>
+<p>Additionally, there are supplementary conditions for connections to low and medium voltage networks. In the Grid Code, medium voltage networks are referred to as high voltage networks.</p>
+<h6>Connections to low voltage networks</h6>
+<p>If motors are installed in the network of the connected party, requirements are set for the zero-voltage protection. To prevent all machines from starting simultaneously when power is restored after a fault, it is required that zero-voltage protection is installed to ensure that no more than 10 kW of installed capacity is started simultaneously (Grid Code, 2009, paragraph 2.2).</p>
+<p>The protections of all production units must be selective with those of the grid operator. The protection of the generator and a power electronic converter with a capacity greater than 5 kVA must, in any case, be provided on three phases with (Grid Code, 2009, paragraph 2.4):</p>
+<ul>
+<li>an undervoltage protection with a response time of 2 seconds at 80% of the nominal voltage and 0.2 seconds at 70% of the nominal voltage (unless in the case of a generator, a calculation of the critical short-circuit time indicates that a faster disconnection is necessary)</li>
+<li>an overvoltage protection with a response time of 2 seconds at 106% of the nominal voltage</li>
+<li>for a generator, a maximum current-time protection; for a power electronic converter, an overload protection</li>
+<li>a frequency protection with a response time of 2 seconds at a deviation of 2 Hz; this protection may be single-phase</li>
+<li>a startup delay after shutdown: 2 minutes.</li>
+</ul>
+<p>The protection of a power electronic converter with a power rating of less than 5 kVA is at least equipped with:</p>
+<ul>
+<li>an undervoltage protection with a response speed of 0.1 seconds at 80% of the nominal voltage</li>
+<li>an overvoltage protection with a response speed of 0.1 seconds at 106% of the nominal voltage</li>
+<li>a frequency protection with a response speed of 2 seconds at a deviation of 2 Hz</li>
+<li>an overload protection.</li>
+</ul>
+<h6>Connected to high-voltage grids</h6>
+<p>The connected party must provide a grading plan regarding the protections, subject to the grid operator's assessment (Netcode, 2009, paragraph 2.3). 
+          For all connected production units, the protections must be selective relative to the protections in the grid operator's network. 
+          The producers are themselves responsible for adequate protections of the production units against faults that occur in the grid and extreme deviations in voltage and frequency.</p>
+<h6>Grid operators among themselves</h6>
+<p>When interconnecting grids, the grid operators, after mutual consultation, determine the security concepts to be applied (Grid Code, 2009, paragraph 2.8). The security concept of the transformer is determined by the operator of the transformer. The grid operators provide each other with the disconnection commands for disconnecting the circuit breakers on both sides of the transformer. The connections and accessories required for transmitting these commands are owned by the owner of the transformer. The settings of the protections, the type of protection, and the connection conditions are specified in the connection agreement.</p>
+<p>The connections are protected with fuses, circuit breakers, or with protection relays and power switches. This protection is located at the connection point before the transfer point (the meter). Connections can be small consumers with an electricity connection of 3x80 A or less, or large consumers with an electricity connection of more than 3x80 A. The choice of protection is based on the classification into the 7 connection categories of the Tariff Code (Tariff Code, 2009, Appendix A).</p>
+<h6>A.1: Small consumers up to and including 1 x 6A on a switched network.</h6>
+<p>The standard connection method for consumers up to 1 x 6A is on the low-voltage cable, auxiliary wire, or public lighting cable that are part of the network of the grid operator. The network is switched by the grid operator, for example, for public lighting. These installations are protected with a fuse or a circuit breaker in the connection box, which is located in the object to be connected.</p>
+<h6>A.2: Small consumers from 3 x 25A up to 60 kVA.</h6>
+<p>The standard connection method for consumers up to 60 kVA is on the low-voltage cable. These installations are protected with one or more fuses or a circuit breaker in the connection box, which is located in the object to be connected. The customer can choose from several configurations for the connection, such as:</p>
+<ul>
+<li>1x40 A and 3x25 A</li>
+<li>3x25 A - 3x50 A</li>
+<li>3x63 A - 3x80 A.</li>
+</ul>
+<p>As an example, the connection of a 3x80 A small consumer has been modeled. The connection is located behind 10 meters of connection cable of the type 4x16 VGVMvKas/Al. The applied fuse is 80 A.</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="457" src="./beveiliging_files/6.29.png" width="705"/>
+<h5>Figure 6.29 Connection for small consumer 3x80 A</h5>
+<p>The short-circuit current in the event of a short circuit directly after the meter box is 5 kA. According to the characteristic of the fuse, a short circuit at the 'LS connection' node is therefore disconnected very quickly (in less than 0.01 seconds).</p>
+<h6>A.3: Large consumers from 60 kVA up to 0.3 MVA.</h6>
+<p>The standard connection method for consumers from 60 kVA up to 0.3 MVA is at the nearest general low-voltage supply point in the network of the grid operator (medium-voltage/low-voltage substation). These installations are protected with fuses or a circuit breaker in the connection box, which is located in the object to be connected. The protection has a nominal value of 3x80 to 3x400 A.</p>
+<h6>A.4: Large consumers from 0.3 MVA up to 3 MVA with pure medium voltage connection.</h6>
+<p>The standard connection method for connections from 0.3 MVA up to 3 MVA is looping into the medium voltage network. The installation is located in a space belonging to the consumer. In this large consumer space, there are, among other things, two disconnectors and a circuit breaker. See also A.5.</p>
+<h6>A.5: Large consumers from 0.3 MVA up to 3 MVA with physical delivery of LV.</h6>
+<p>This connection is realized by offering a transformation step and measuring at low voltage. The installation is located in a space belonging to the consumer. In this large consumer space, there are, among other things, two disconnectors, a medium voltage protection, and a power transformer. The customer must design their installation to withstand the mechanical and thermal effects that occur due to an overcurrent. There are three standard connections, depending on the connection capacity:</p>
+<ul>
+<li>A.5a: up to and including 630 kVA: connection with an installation type KKT (two cable fields and a transformer field)</li>
+<li>A.5b: up to and including 1000 kVA: connection with an installation type KKB (two cable fields and a protected circuit breaker field)</li>
+<li>A.5: above 1000 kVA: connection with an installation type KKMV (two cable fields, a measurement field, and a circuit breaker field).</li>
+</ul>
+<p>The A.5a connection (up to and including 630 kVA) is protected with fuses on the medium voltage side, just like the distribution transformers that feed the low voltage network. On the low voltage side of the transformer, the customer must install protection against overload and short-circuit currents in their installation. The protection must be selective with the protection of the grid operator. If the LV protection consists of a low voltage circuit breaker, it is usually set with<em>I<sub>thermisch</sub></em>according to:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.6" src="./beveiliging_files/formule-6.20.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">6.20</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>Waarin<em>S<sub>nom, transformer</sub></em>the nominal power of the transformer. The value of<em>U<sub>LS</sub></em>is equal to the minimum coupled voltage
+          on the low voltage side, being 90% of the nominal voltage. The time is set to a few seconds. The value for<em>I<sub>is gelijk aan de minimale gekoppelde spanning aan de laagspanningszijde, zijnde 90% van de nominale spanning. De tijd is ingesteld op enkele seconden. De waarde voor I</sub></em>is set to<em>4 x I<sub>nom</sub></em>. The value of<em>t<sub>low voltage side, being 90% of the nominal voltage. The time is set to a few seconds. The value for I is set to 4 x I nom. The value of t</sub></em>is<em>0 s.</em> </p>
+<p>The A.5b connection (up to 1000 kVA) is protected with a protection relay and a circuit breaker on the medium voltage side. The maximum current-time protection is set according to:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.6" src="./beveiliging_files/formule-6.21.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">6.21</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>Herein is<em>factor<sub>MS</sub></em>equal to 1.5 and<em>S<sub>nom, transformer</sub></em>the nominal power of the transformer. The value of<em>U<sub>MS</sub></em>is
+          equal to the minimum coupled voltage on the medium voltage side, being 90% of the nominal voltage. The setting of the disconnection time<em>t<sub>&gt;</sub></em>can range between 0.3 and 0.9 seconds, depending on the customer's settings. The preference is for the shortest possible disconnection time to limit the effects of voltage dips in the string.</p>
+<p>The A.5 connection (above 1000 kVA) is protected with a protection relay and a circuit breaker at the transfer point. The customer's underlying network can have many configurations. There can be multiple transformers, motors, and generators. For this reason, the protection must be established in close consultation with the customer. The protection must safeguard the DSO's medium voltage network against the risks of a fault in the customer's installation. Additionally, the protection at the transfer point must be selective with the protections in the medium voltage network and with the protections in the customer's network.</p>
+<h6>A.6: Large consumers from 3 MVA up to and including 10 MVA</h6>
+<p>In the medium voltage transport network, rail systems with high power (more than 2 MVA) are usually fed with multiple cables. These are designed with a single fault reserve without energy interruption, so that the failure of one cable does not affect the energy supply. The most selective and fastest protection for a parallel cable can be achieved with a longitudinal differential protection. The backup protection is often a maximum current-time protection in the substation, control station, or switch station, which does not selectively disconnect the cable. The option with longitudinal differential protection as the main protection is preferred to secure a parallel cable. For this, communication between the stations is necessary. If communication cannot be established, a distance relay with energy direction protection is used.</p>
+<h6>A.7: Large consumers of more than 10 MVA</h6>
+<p>The realization of connections of this size is always customized and is not standardly prescribed in the Tariff Code. See A.6.</p>
+<a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_6.3"></div>
+<br/>
+<h2>6.3 Transformer Protection</h2>
+<p>Typically, medium voltage/low voltage (MV/LV) transformers up to a capacity of 630 kVA are protected on the primary side with fuses. Transformers with larger capacities are protected on the medium voltage side with an overcurrent relay in combination with a circuit breaker. On the low voltage side, transformers are protected with fuses or a circuit breaker.</p>
+<p>When applying fuses on the medium voltage side, attention must be paid to:</p>
+<ul>
+<li>nominal current of the transformer</li>
+<li>inrush current of the transformer</li>
+<li>selectivity of the fuse protection relative to the overcurrent time relays in the substation, control station, or switch station</li>
+<li>selectivity of the fuse protection relative to the protection on the low-voltage side of the transformer.</li>
+</ul>
+<a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_6.3.1"></div>
+<br/>
+<h3>6.3.1 Distribution Transformer</h3>
+<p>For the protection of a distribution transformer up to 630 kVA, fuse links are often used for financial reasons. The values for the medium-voltage (MV) and low-voltage (LV) fuse links are calculated using the formulas below:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.6" src="./beveiliging_files/formule-6.1.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">6.22</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.6" src="./beveiliging_files/formule-6.1.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">6.23</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>With:</p>
+<blockquote>
+<table border="0" width="100%">
+<tbody>
+<tr>
+<td width="40"><em>U<sub>MS</sub></em></td>
+<td>minimum coupled voltage on the MV side (0.9 x U<sub>nom,MS</sub>)</td>
+</tr>
+<tr>
+<td><em>U<sub>LS</sub></em></td>
+<td>minimum coupled voltage on the LV side (0.9 x U<sub>nom,LV</sub>)</td>
+</tr>
+<tr>
+<td><em>factor<sub>MS</sub></em></td>
+<td>1.5</td>
+</tr>
+<tr>
+<td><em>factor<sub>LS</sub></em></td>
+<td>1.1</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<p>The values for the fuses on the MV and LV sides, calculated using these formulas and rounded to standard values, are listed in Table 6.2.</p>
+<h5>Table 6.2 Preferred values of fuses for network transformers</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="113"><p align="center"> <strong>Transformer (kVA)</strong> </p></td>
+<td valign="top" width="113"><p align="center"> <strong>MV fuse (A)</strong> </p></td>
+<td valign="top" width="113"><p align="center"> <strong>LV fuse (A)</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="113"><p align="center">100</p></td>
+<td valign="top" width="113"><p align="center">10</p></td>
+<td valign="top" width="113"><p align="center">160</p></td>
+</tr>
+<tr>
+<td valign="top" width="113"><p align="center">160</p></td>
+<td valign="top" width="113"><p align="center">16</p></td>
+<td valign="top" width="113"><p align="center">250</p></td>
+</tr>
+<tr>
+<td valign="top" width="113"><p align="center">250</p></td>
+<td valign="top" width="113"><p align="center">20</p></td>
+<td valign="top" width="113"><p align="center">400</p></td>
+</tr>
+<tr>
+<td valign="top" width="113"><p align="center">315</p></td>
+<td valign="top" width="113"><p align="center">25</p></td>
+<td valign="top" width="113"><p align="center">500</p></td>
+</tr>
+<tr>
+<td valign="top" width="113"><p align="center">400</p></td>
+<td valign="top" width="113"><p align="center">31.5</p></td>
+<td valign="top" width="113"><p align="center">630</p></td>
+</tr>
+<tr>
+<td valign="top" width="113"><p align="center">630</p></td>
+<td valign="top" width="113"><p align="center">50</p></td>
+<td valign="top" width="113"><p align="center">910</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>On the low-voltage side of the transformer, fuses are preferably installed for the safety of personnel in the event of a short circuit. The use of LV fuses limits the short-circuit current (cut-off current), thereby reducing the dynamic forces that occur in the LV distribution system during high short-circuit currents. The short-circuit currents on the LV side are not seen in the cut-off region by the MV fuses, and thus, in an LV distribution system not protected by LV fuses, the maximum dynamic effect would occur. A disadvantage of this construction is that MV and LV fuses cannot always be selectively chosen to work together (see figure 6.30). As a result, incorrect conclusions may be drawn after a short circuit on the LV side if the MV protection has been activated and the LV fuse has not fully blown. An initial conclusion might be that there is an internal fault in the transformer, while the actual cause is lower down. It should be noted, however, that selectivity between the MV fuses and the outgoing fields of the LV distribution system can be achieved.</p>
+<p>The non-selectivity is accepted since it only occurs if the fault is within the isolated area of the substation. The likelihood of this happening is very small. Moreover, the potential consequences of non-selective disconnection are limited to the transformer and its connected components.</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="441" src="./beveiliging_files/6.30.png" width="682"/>
+<h5>Figure 6.30 A-selectivity in MV and LV fuses of a 400 kVA network transformer</h5>
+<p>In transformers with a nominal power of 1000 kVA or more, problems can arise due to heat development from the current through the fuses. Especially in enclosed spaces, this heat development can lead to a significant temperature increase of more than 65 degrees, which can damage insulation materials. This limits the use of fuses in an enclosed space.</p>
+<p>For the protection of network transformers larger than 630 kVA, a circuit breaker with a maximum current-time protection is used. The value for<em>I<sub>&gt;</sub></em>is calculated using formula 6.22 for the calculation of the MV fuse. Table 6.3 provides an overview of the settings for<em>I<sub>&gt;</sub></em>en<em>I<sub>The value for I &gt; is calculated using formula 6.22 for the calculation of the MV fuse. Table 6.3 provides an overview of the settings for I &gt; and I.</sub></em>.</p>
+<h5>Table 6.3 Settings for an MST transformer</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="113"><p align="center"> <strong>Transformer (kVA)</strong> </p></td>
+<td valign="top" width="113"><p align="center"> <strong>I<sub>&gt;</sub>(A), t<sub>&gt;</sub>=0.5 s</strong> </p></td>
+<td valign="top" width="113"><p align="center"> <strong>I<sub>&gt;&gt;</sub>(A), t<sub>&gt;&gt;</sub>=0 s</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="113"><p align="center">750</p></td>
+<td valign="top" width="113"><p align="center">65</p></td>
+<td valign="top" width="113"><p align="center">1500</p></td>
+</tr>
+<tr>
+<td valign="top" width="113"><p align="center">800</p></td>
+<td valign="top" width="113"><p align="center">70</p></td>
+<td valign="top" width="113"><p align="center">1500</p></td>
+</tr>
+<tr>
+<td valign="top" width="113"><p align="center">1000</p></td>
+<td valign="top" width="113"><p align="center">90</p></td>
+<td valign="top" width="113"><p align="center">1500</p></td>
+</tr>
+<tr>
+<td valign="top" width="113"><p align="center">1600</p></td>
+<td valign="top" width="113"><p align="center">140</p></td>
+<td valign="top" width="113"><p align="center">1500</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>For a transformer with a capacity greater than 630 kVA, selectivity can no longer be achieved on the medium voltage side using fuses in conjunction with the protection on the secondary side. For protection with a circuit breaker with maximum current-time protection, a setting is chosen for<em>I<sub>&gt;</sub>/t<sub>&gt;</sub></em>equal to<em>1.5 x I<sub>nom</sub>/0.5 s</em>and for<em>I<sub>For protection with a circuit breaker with maximum current-time protection, a setting is chosen for I &gt; /t &gt; equal to 1.5 x I nom /0.5 s and for I</sub>/t<sub>protection with a circuit breaker with maximum current-time protection, a setting is chosen for I &gt; /t &gt; equal to 1.5 x I nom /0.5 s and for I /t</sub></em>equal to<em>1500 A/0 s</em>.</p>
+<a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_6.3.2"></div>
+<br/>
+<h3>6.3.2 Power Transformer</h3>
+<p>Large adjustable HV/MV power supply transformers from 150, 110, and 50 kV to 25, 20, and 10 kV are typically equipped with their own transformer protections (Buchholz, temperature, and pressure), differential protection, and overcurrent time protection on both the HV and MV sides. The overcurrent time protection on the HV side serves as a backup for the differential protection and as a backup for the protection on the MV side.</p>
+<p>The differential protection compares the currents on the primary and secondary sides with each other. For a transformer with a fixed transformation ratio, the differential protection is set as sensitively as possible. For a variable transformer, a less sensitive setting is chosen to prevent unnecessary tripping in the extreme positions of the tap changer. The differential protection can be set to<em>I<sub>d&gt;</sub>= 0.3 x I<sub>nom</sub>; t<sub>d&gt;</sub>= 0 s</em>The overcurrent time protections of the power transformer can be set according to the following scheme. A time grading of 0.3 seconds is applied between the high-voltage (HV) and medium-voltage (MV) sides.</p>
+<p> <em>Hoogspanningszijde</em> <br/>First stage:<em>I<sub>&gt;</sub>= 1.4 x I<sub>nom</sub>; t<sub>&gt;</sub>= 3 s</em><br/>Second stage:<em>I<sub>High-voltage side
+
+First stage: I &gt; = 1.4 x I nom ; t &gt; = 3 s
+Second stage: I</sub>= 2.5 x I<sub>nom</sub>(maximum 4500 A); t<sub>High-voltage side
+
+First stage: I &gt;= 1.4 x I nom; t &gt;= 3 s
+
+Second stage: I = 2.5 x I nom (maximum 4500 A); t</sub>= 1.5 s</em> </p>
+<p> <em>Middenspanningszijde</em> <br/>First stage:<em>I<sub>&gt;</sub>= 1.25 x I<sub>nom</sub>; t<sub>&gt;</sub>= 2.7 s</em><br/>Second stage:<em>I<sub>2.5 x I nom (maximum 4500 A); t = 1.5 s Medium voltage side First stage: I &gt;= 1.25 x I nom; t &gt;= 2.7 s Second stage: I</sub>= 2.0 x I<sub>nom</sub>(maximum 4000 A); t<sub>= 1.5 s Medium voltage side First stage: I &gt;= 1.25 x I nom; t &gt;= 2.7 s Second stage: I = 2.0 x I nom (maximum 4000 A); t</sub>= 1.2 s</em> </p>
+<p>For the transformers, the protection on the primary side signals a shutdown to the circuit breaker on the primary, secondary, and possibly tertiary sides. However, the protection on the secondary and tertiary sides only signals a shutdown to the circuit breaker on their respective sides.</p>
+<p>When energizing an unloaded transformer, a large inrush current with a frequency equal to the second harmonic can flow for several seconds. Without additional measures, this current can lead to a shutdown by the differential protection. For this reason, a filter on the second harmonic is often applied in the static relay.</p>
+<p>Power transformers are usually oil-filled and equipped with Buchholz protection. This protection detects gas development in the oil, which occurs due to local heating. The operation is based on hinged air-filled floats that are pushed up in the oil and fall down if the buoyant force of the oil is lost due to gas bubbles. Often, there are two floats, one of which is very sensitive to small amounts of gas and triggers a Buchholz signal. The other float responds to significant gas development and issues a shutdown command.</p>
+<p>The pressure protection immediately shuts down the transformer if the pressure in the tap changer compartment becomes too high, for example, due to an internal short circuit.</p>
+<p>A high operating temperature in a transformer can significantly shorten the lifespan of the existing insulation. Therefore, both the winding temperature and the oil temperature are measured. For cast resin transformers, high temperatures quickly lead to defects, with a high risk of fire. Rapid detection of a temperature increase in the object is necessary to intervene quickly.</p>
+<a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_6.3.3"></div>
+<br/>
+<h3>6.3.3 Regulating Transformer</h3>
+<p>Regulating transformers are typically equipped with their own transformer protections (Buchholz and pressure), a differential protection, and an overcurrent time protection on the unregulated feeding side. The overcurrent time protection on the unregulated side serves as a backup for the differential protection.</p>
+<p>During a short circuit in a feeder field or regulated bus, the control of the adjustable transformer will attempt to compensate for the voltage drop by increasing the voltage. However, in this case, the control switch must be blocked to prevent regulation during an ongoing fault current. The conflict is avoided by delaying the execution (adjustment of the tap changer) by a few seconds.</p>
+<p>The differential protection can be set to<em>I<sub>d&gt;</sub>= 0.3 x I<sub>nom</sub>by delaying the execution (adjustment of the tap changer) by a few seconds. The differential protection can be set to I d&gt; = 0.3 x I nom<sub>d&gt;</sub>= 0 s</em>. The maximum current-time protection of the uncontrolled side can be set according to the following scheme.</p>
+<p>First stage:<em>I<sub>&gt;</sub>= 1.25 x I<sub>nom</sub>; t<sub>&gt;</sub>= 2.1 s</em><br/>Second stage:<em>I<sub>of the uncontrolled side can be set according to the following scheme. First stage: I &gt; = 1.25 x I nom ; t &gt; = 2.1 s Second stage: I</sub>= 2.0 x I<sub>nom</sub>(maximum 3600 A); t<sub>the following scheme. First stage: I &gt;= 1.25 x I nom; t &gt;= 2.1 s Second stage: I = 2.0 x I nom (maximum 3600 A); t</sub>= 0.9 s</em> </p>
+<a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_6.3.4"></div>
+<br/>
+<h3>6.3.4 Grounding Transformer</h3>
+<p>Many medium voltage (MV) distribution networks have a floating neutral point. The disadvantage of a floating network is that during a phase-to-ground fault, large capacitive currents can flow for an extended period. Additionally, the increased voltage on the healthy phases leads to higher voltage on cables and other components, which can cause breakdowns at weak points in the insulation at different locations (cross-country faults). Therefore, MV distribution networks can be grounded using grounding transformers or neutral grounding reactors on the secondary winding of the power transformer. This will cause a large fault current to flow during a phase-to-ground fault. It is now easier to selectively disconnect phase-to-ground faults.</p>
+<p>A phase-to-ground fault leads to a ground current through the grounding transformer. This is measured by the maximum current-time protection. If the fault current exceeds 50 A, the MST protection issues a disconnection command. The time delay applied here is relatively long. For example, it is set to 240 seconds to ensure that possible temporary asymmetric situations, which can occur during manual network switching and last for several minutes, are not perceived as phase-to-ground faults.</p>
+<a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_6.4"></div>
+<br/>
+<h2>6.4 Protection in the networks</h2>
+<p>In securing the network, personal safety is the top priority, followed by minimizing material damage as much as possible. During disconnection, there should be minimal disruption to the healthy parts of the network. For this reason, a lot of attention is given to the configuration of the protection and the selection of fuses.</p>
+<p>A distribution network can be considered as a chain, composed of various cables and components, each with differing nominal currents. The protection setting is determined by the lowest nominal current of the components in the section to be protected. The current through the section can be in the normal operating range, the overload range, or the short-circuit range. Currents smaller than<em>I<sub>nom</sub></em>are within the normal operating range. Currents in the range above can be caused by an overload or a short circuit. The boundary between the overload range and the short-circuit range is not always clearly defined. Distribution networks are primarily protected only against the effects of short-circuit currents. The protection must be fast enough to prevent thermal damage. To achieve this, large short-circuit currents must be quickly disconnected. As an additional benefit of the rapid disconnection, voltage dips in the healthy parts of the network last shorter, which limits the additional consequences of the disturbance.</p>
+<p>In the event of a short circuit, only the affected section should be disconnected. This is achieved by opening the nearest circuit breaker(s). This way, only the customers connected to this section are impacted. If this is not possible, for example due to a failure of the protection system or circuit breaker, then a higher-level protection in the network must act as a backup to disconnect the short circuit.</p>
+<p>When configuring the protections, the following points are considered:</p>
+<ul>
+<li>Ensuring personal safety by limiting arc flash phenomena, touch voltages, and step voltages.</li>
+<li>Preventing damage to components as a result of occurring short-circuit currents. The components are protected against the high thermal load. Protection against dynamic load is not possible. The installation must withstand the forces that arise from the prevailing dynamic short-circuit power.</li>
+<li>Limiting the outage of the number of connected customers. However, safety is more important than selectivity. In places where the protection of people and components is not compatible with selectivity, preference is given to the protection of people and components.</li>
+<li>Limiting the duration of voltage dips caused by large short-circuit currents. However, selectivity is more important than reducing voltage dips.</li>
+<li>When it comes to time settings, it refers to relay times (parameterization), excluding the times of the circuit breaker. This time is compensated with the time gradations (for example, 0.3 seconds). A time setting of 'zero' seconds means that the inherent time of the protection system (relay and circuit breaker) of approximately 40 to 80 ms must still be taken into account.</li>
+</ul>
+<a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_6.4.1"></div>
+<br/>
+<h3>6.4.1 MV transport networks</h3>
+<p>In the MV transport network, high-capacity stations are usually fed with multiple parallel cables. These networks are typically designed with a single fault reserve without energy interruption, so the failure of one cable does not affect the electricity supply. These networks occur in the following cases:</p>
+<ul>
+<li>from substation to switch station/control station</li>
+<li>from substation to large consumer (connection type A.6)</li>
+<li>from switch station/control station to large consumer (connection type A.6).</li>
+</ul>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="373" src="./beveiliging_files/6.31.png" width="576"/>
+<h5>Figure 6.31 Basic structure of a medium voltage transport network</h5>
+<p>In the Netherlands, it is customary for the operation of meshed transport networks to secure these networks with distance and differential protections. The best protection solution in medium voltage transport networks appears to be longitudinal differential protection. This provides the most selective protection and can be activated without time delay. As a backup protection, a maximum current-time protection is often used, which does not selectively disconnect the cable in the event of a short circuit. For the application of longitudinal differential protection, a communication link between both sides of the cable connection is required.</p>
+<p>As the first alternative to longitudinal differential protection, the protection can consist of distance protection on the feeding side and directional overcurrent protection on the other side. If no communication link is possible, this configuration is preferred. As a second alternative, it is possible to protect this situation with distance protection on both sides or with maximum current-time protection on the feeding side in combination with directional overcurrent protection on the other side. For the application of distance protection, the impedance of the cable must be large enough to set it selectively. A cable length of more than 1 km is usually sufficient.</p>
+<p>For these situations, the differential protection is set to:<em>I<sub>d&gt;</sub>= 0.5 x I<sub>nom</sub></em>The backup protection of the power supply of a substation is a maximum current-time protection, which, for example, is set according to:<em>I<sub>&gt;</sub>= 1.5 x I<sub>nom</sub></em>;<em>t<sub>&gt;</sub>=
+          2.1 s</em>If a large consumer of type A.6 is supplied, the backup protection is, for example, set according to:<em>I<sub>&gt;</sub>= 1.5 x I<sub>nom</sub></em>;<em>t<sub>&gt;</sub>= 1.5 s</em>, to be selective with the protection at the transfer point to the large consumer. The backup protection is also equipped with a setting for<em>I<sub>&gt; = 1.5 s, to be selective with the protection at the transfer point to the large consumer. The backup protection is also equipped with a setting for I</sub></em>for the purpose of phase-to-phase faults in a parallel cable and for<em>I<sub>0&gt;</sub></em>for the purpose of phase-to-ground faults in a parallel cable.</p>
+<a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_6.4.2"></div>
+<br/>
+<h3>6.4.2 MV distribution networks</h3>
+<p>The MV distribution networks are usually meshed but are operated radially by introducing a separation in each mesh (Network opening; Normal Open Point). The protection is adjusted accordingly. The feeders are typically protected with maximum current-time protections, preferably set with<em>I<sub>&gt;</sub>/ t<sub>&gt;</sub>, I<sub>The protection is adjusted accordingly. The feeders are typically protected with maximum current-time protections, preferably set with I &gt; / t &gt; , I</sub>/ t<sub>The protection is adjusted accordingly. The feeders are typically protected with maximum current-time protections, preferably set with I &gt; / t &gt; , I / t</sub>, I<sub>0&gt;</sub>/ t<sub>0&gt;</sub></em>en<em>I<sub>0&gt;&gt;</sub>/ t<sub>0&gt;&gt;</sub></em>When configuring the protections in the strings, the settings of the protections in the high-voltage network and the substation, as well as the settings of downstream strings and connections, must be taken into account.</p>
+<p>In a medium-voltage distribution network, it is common for cables with a smaller conductor cross-section to be used at a certain distance from the substation, as these cables only need to carry a smaller load current. This is called "tapering." For each tapering, a protection is applied that is tailored to the cable type behind it. Due to the protection, the tapered network section becomes a new string.</p>
+<p>When setting up the protections, selectivity must be taken into account. This can be achieved by staggering the settings. This means that when setting current values and disconnection times, the settings of the protections on the preceding feeding side and the subsequent side must be considered. In protection, we talk about current selectivity and time selectivity. In figure 6.32, String 1 is current selective with String 2 if the current setting of String 1 is higher than that of String 2. Furthermore, String 1 is time selective with String 2 if the time setting for String 1 is longer than that of String 2. For fuses, two patterns with a nominal current ratio greater than or equal to 1.6:1 relative to each other are absolutely selective.</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="395" src="./beveiliging_files/6.32.png" width="698"/>
+<h5>Figure 6.32 Basic structure of most medium voltage distribution networks</h5>
+<p>Figure 6.32 illustrates the basic structure of a distribution network. A cable is connected to one of the fields of the substation, which marks the beginning of a main feeder (Feeder 1), to which network stations and customer stations are connected. A second feeder (Feeder 2) can be connected to this main feeder at a network station. This feeder has its own protection. Sometimes a third feeder is connected to this second feeder, which is also equipped with its own protection. Most network stations have a distribution transformer, equipped with protection on both the primary and secondary sides. In the low-voltage circuit, all outgoing directions are protected, usually with fuses. In a customer station, a large consumer is directly connected at the medium voltage level. The supply cable for this large consumer connection is protected with a circuit breaker.</p>
+<p>A string is usually protected with an independent maximum current-time protection. The setpoint of the protection relay must be higher than the continuously permissible current.<em>I<sub>nom</sub> </em>the cable. For the setting of<em>I<sub>&gt;</sub></em>a string, a certain margin above the nominal current rating of the cable must be taken into account. This margin is originally related to the dropout value of an electromechanical relay. To prevent an unnecessary disconnection command due to a short-term current spike, the dropout value of the protection must be greater than the nominal current rating of the cable. The dropout value is 80% of the pickup value. This provides for<em>I<sub>&gt;</sub></em>a lower limit of 1.25. A new digital relay has a pickup/dropout ratio of 1. If the grid operator allows an overload of 20% and the measurement accuracy of a current transformer is 5%, this also corresponds to a factor of 1.25 (≈ 1.2 x 1.05). This accepts the risk that the cable may be thermally overloaded. The advantage of a wider margin, however, is that temporary overloads during switching actions less frequently lead to disconnections. The final choice for the setting depends on various factors, such as the age of the cable and the ability to monitor the cable load. For the first string, the setting is<em>I<sub>&gt;</sub></em>standard equal to 1.25 times the nominal current, but if the field is monitored with remote measurement, the setting is 1.5 times the nominal current. This consequently means that currents up to 25% greater than the nominal current will not be disconnected.</p>
+<p>The time setting is staggered from the power transformer to the last section. This means that the staggered time increases towards the power source, starting from the protection device that is furthest in the network. The settings of two consecutive protection devices must be such that the protection device closest to the fault issues a trip command to the corresponding circuit breaker. This breaker must disconnect the fault before the next protection device issues a trip command. The time setting for the first section must be below the setting of the power transformer and above the setting of the second and third sections. The last protection device has the shortest trip time. A good value for the setting of<em>t<sub>&gt;</sub></em>for the first section is, for example, 1.8 s.</p>
+<p>When coordinating the timing of maximum current-time protections, the switching time of the circuit breaker must be taken into account. The trip time of a circuit breaker ranges between 40 and 80 ms. Currently, in practice, a margin of 0.3 s is maintained for the timing coordination.</p>
+<p>Short circuits near the substation lead to large short-circuit currents. To limit material damage to the components and to reduce the significant voltage dip elsewhere in the network, these large short-circuit currents are quickly disconnected with a setting for<em>I<sub>To limit material damage to the components and to reduce the significant voltage dip elsewhere in the network, these large short-circuit currents are quickly disconnected with a setting for I</sub></em>en<em>t<sub>to prevent material damage to the components and to reduce the significant voltage dip elsewhere in the network, these large short-circuit currents are quickly disconnected with a setting for I and t</sub></em>The current settings for the strings are staggered among themselves. The time settings are staggered with upstream and downstream protections.</p>
+<p>For short circuits in the main line between the substation and the next protection, a third setting is sometimes required.<em>I<sub>Time settings are staggered with upstream and downstream protections. For short circuits in the main line between the substation and the next protection, a third setting is sometimes required.</sub></em>and a third setting is sometimes required.<em><sub>en downstream protections. Voor kortsluitingen in de hoofdlijn tussen het onderstation en de volgende bescherming is soms een derde instelling vereist.</sub></em>possible, with the time setting usually being 0 s. Older relays do not have this setting, and relatively simple digital systems often lack this setting option as well. In newer protection systems, this option is standard.</p>
+<p>In impedance-grounded medium voltage networks, relatively high currents occur during a phase-to-ground fault. The magnitude of this current depends on the impedance of the grounding point and the fault location. Depending on the type of cable and the length of the section, this current can be lower than the nominal current. The neutral points of the medium voltage networks are grounded in the substation with grounding transformers or neutral point reactors. The neutral points are monitored by an MST protection system that measures the current to ground. If the current exceeds, for example, 50 A, damage can occur to the neutral point due to overload if the phase-to-ground fault is not isolated in the section. Therefore, the first sections are protected with, for example, a<em>I<sub>0&gt;</sub></em>of 50 A and a time setting of<em>t<sub>0&gt;</sub></em>of 60 seconds. This long duration (1 minute) is chosen because during the change of network connections during single-pole switching, an asymmetrical current may flow.</p>
+<p>In addition to the<em>I<sub>0&gt;</sub></em>is for the first strand a<em>I<sub>0&gt;&gt;</sub></em>set with a value below the setting for<em>I<sub>0&gt;</sub></em>of the
+          supplying HV transformer (500 A / 2.7 s). The time setting is equal to the phase setting<em>t<sub>&gt;</sub></em>.</p>
+<p>In a substation, a maximum of 3 strings can be connected 'in series' due to selectivity. In new construction projects, it is preferred not to connect a third string anymore. The selectivity is determined by the protection settings from the HV side of the supply transformer to the protection settings of the MV connections of distribution transformers and A.5 connections.</p>
+<p>In a control station or switchgear station, only 3 strings can be connected in series if the feeding cables are protected with differential protections. If not, the maximum number of strings from a control station or switchgear station is limited to 2.</p>
+<p>Table 6.4 shows a possible scheme for the protection of an MV distribution network, from the supply transformer to the third string. Here, the values of<em>I<sub>Table 6.4 shows a possible scheme for the protection of an MV distribution network, from the supply transformer to the third string. Here, the values of I</sub></em>for the transformer are maximized at 4500 A, based on a voltage level of 10 kV. The protections for the connections are described in paragraph 6.2 and for the MV/LV transformers in paragraph 6.3.1.</p>
+<h5>Table 6.4  Settings for the protection from the power transformer</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="15%"><p> <strong>Locatie</strong> </p></td>
+<td valign="top" width="10%"><p align="center"> <strong>I<sub>&gt;</sub></strong> </p></td>
+<td valign="top" width="10%"><p align="center"> <strong>t<sub>&gt;</sub></strong> <strong>(s)</strong> </p></td>
+<td valign="top" width="15%"><p align="center"> <strong>I<sub>are described in paragraph 6.2 and for the MV/LV transformers in paragraph 6.3.1. Table 6.4 Settings for the protection from the power transformer Location I &gt; t &gt; (s) I</sub></strong> </p></td>
+<td valign="top" width="10%"><p align="center"> <strong>t<sub></sub></strong> <strong><em> </em>(s)</strong> </p></td>
+<td valign="top" width="10%"><p align="center"> <strong>I<sub>0&gt;</sub></strong> </p></td>
+<td valign="top" width="10%"><p align="center"> <strong>t<sub>0&gt;</sub></strong> <strong><em> </em>(s)</strong> </p></td>
+<td valign="top" width="10%"><p align="center"> <strong>I<sub>0&gt;&gt;</sub></strong> </p></td>
+<td valign="top" width="10%"><p align="center"> <strong>t<sub>0&gt;&gt;</sub></strong> <strong><em> </em>(s)</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="71"><p>Transformer HV side</p></td>
+<td valign="top" width="48"><p align="center">1.4 x I<sub>nom</sub> </p></td>
+<td valign="top" width="23"><p align="center">3.0</p></td>
+<td valign="top" width="57"><p align="center">2.5 x I<sub>nom</sub>, max 4500 A (at 10 kV)</p></td>
+<td valign="top" width="28"><p align="center">1.5</p></td>
+<td valign="top" width="35"><p align="center">700 A</p></td>
+<td valign="top" width="28"><p align="center">3.0</p></td>
+<td valign="top" width="25"></td>
+<td valign="top" width="25"></td>
+</tr>
+<tr>
+<td valign="top" width="71"><p>Transformer MV side</p></td>
+<td valign="top" width="48"><p align="center">1.25 x I<sub>nom</sub> </p></td>
+<td valign="top" width="23"><p align="center">2.7</p></td>
+<td valign="top" width="57"><p align="center">2.0 x I<sub>nom</sub>, max 4000 A (at 10 kV)</p></td>
+<td valign="top" width="28"><p align="center">1.2</p></td>
+<td valign="top" width="35"><p align="center">500 A</p></td>
+<td valign="top" width="28"><p align="center">2.7</p></td>
+<td valign="top" width="25"></td>
+<td valign="top" width="25"></td>
+</tr>
+<tr>
+<td valign="top" width="71"><p>First string</p></td>
+<td valign="top" width="48"><p align="center">1.25 or</p>
+<p align="center">1.5 x I<sub>nom</sub> </p></td>
+<td valign="top" width="23"><p align="center">1.8</p></td>
+<td valign="top" width="57"><p align="center">1900 A</p></td>
+<td valign="top" width="28"><p align="center">0.6</p></td>
+<td valign="top" width="35"><p align="center">50 A</p></td>
+<td valign="top" width="28"><p align="center">60</p></td>
+<td valign="top" width="25"><p align="center">300 A</p></td>
+<td valign="top" width="25"><p align="center">1.8</p></td>
+</tr>
+<tr>
+<td valign="top" width="71"><p>Second string</p></td>
+<td valign="top" width="48"><p align="center">1.25 x I<sub>nom</sub> </p></td>
+<td valign="top" width="23"><p align="center">1.5</p></td>
+<td valign="top" width="57"><p align="center">1700 A</p></td>
+<td valign="top" width="28"><p align="center">0.3</p></td>
+<td valign="top" width="35"><p align="center">250 A</p></td>
+<td valign="top" width="28"><p align="center">1.5</p></td>
+<td valign="top" width="25"></td>
+<td valign="top" width="25"></td>
+</tr>
+<tr>
+<td valign="top" width="71"><p>Third string</p></td>
+<td valign="top" width="48"><p align="center">1.25 x I<sub>nom</sub> </p></td>
+<td valign="top" width="23"><p align="center">1.2</p></td>
+<td valign="top" width="57"><p align="center">1500 A</p></td>
+<td valign="top" width="28"><p align="center">0.0</p></td>
+<td valign="top" width="35"><p align="center">200 A</p></td>
+<td valign="top" width="28"><p align="center">1.2</p></td>
+<td valign="top" width="25"></td>
+<td valign="top" width="25"></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>These settings have been entered for the protections of the example network in figure 6.32. The protections for the distribution transformer and a low-voltage string have also been entered in the network. Figure 6.33 graphically displays the settings of all protections. All currents in the graph are referenced to the 10 kV voltage level.</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="457" src="./beveiliging_files/6.33.png" width="705"/>
+<h5>Figure 6.33 Settings of the protections in a medium-voltage and low-voltage distribution network</h5>
+<p>In the case that the strings are fed from a control station or switching station, where the feeding cables are protected with differential protections, a maximum of 3 strings can be connected, and the protection settings scheme is as indicated in Table 6.5. In this table, n is the number of feeding parallel cables between the substation and the control or switching station. If the feeding cables are not protected with differential protections, the third string is omitted.</p>
+<h5>Table 6.5 Setting for the protection from a control or switching station</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="15%"><p> <strong>Locatie</strong> </p></td>
+<td valign="top" width="10%"><p align="center"> <strong>I<sub>&gt;</sub></strong> </p></td>
+<td valign="top" width="23"><p align="center"> <strong>t<sub>&gt;</sub></strong> <strong>(s)</strong> </p></td>
+<td valign="top" width="15%"><p align="center"> <strong>I<sub>Location I &gt; t &gt; (s) I</sub></strong> </p></td>
+<td valign="top" width="10%"><p align="center"> <strong>t<sub>Table 6.5 Setting for the protection from a control or switching station
+
+Location I &gt; t &gt; (s) I</sub></strong> <strong>(s)</strong> </p></td>
+<td valign="top" width="10%"><p align="center"> <strong>I<sub>0&gt;</sub></strong> </p></td>
+<td valign="top" width="10%"><p align="center"> <strong>t<sub>0&gt;</sub></strong> <strong>(s)</strong> </p></td>
+<td valign="top" width="10%"><p align="center"> <strong>I<sub>0&gt;&gt;</sub></strong> </p></td>
+<td valign="top" width="10%"><p align="center"> <strong>t<sub>0&gt;&gt;</sub></strong> <strong>(s)</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="62"><p>Transformer HV side</p></td>
+<td valign="top" width="48"><p align="center">1.4 x I<sub>nom</sub> </p></td>
+<td valign="top" width="23"><p align="center">3.0</p></td>
+<td valign="top" width="57"><p align="center">2.5 x I<sub>nom</sub>,<br/>max 4500 A<br/>(at 10 kV)</p></td>
+<td valign="top" width="23"><p align="center">1.5</p></td>
+<td valign="top" width="35"><p align="center">700 A</p></td>
+<td valign="top" width="23"><p align="center">3.0</p></td>
+<td valign="top" width="28"></td>
+<td valign="top" width="26"></td>
+</tr>
+<tr>
+<td valign="top" width="62"><p>Transformer MV side</p></td>
+<td valign="top" width="48"><p align="center">1.25 x I<sub>nom</sub> </p></td>
+<td valign="top" width="23"><p align="center">2.7</p></td>
+<td valign="top" width="57"><p align="center">2.0 x I<sub>nom</sub>,<br/>max 4500 A<br/>(at 10 kV)</p></td>
+<td valign="top" width="23"><p align="center">1.2</p></td>
+<td valign="top" width="35"><p align="center">500 A</p></td>
+<td valign="top" width="23"><p align="center">2.7</p></td>
+<td valign="top" width="28"></td>
+<td valign="top" width="26"></td>
+</tr>
+<tr>
+<td valign="top" width="62"><p>Parallel cable</p></td>
+<td valign="top" width="48"><p align="center">1.5 x I<sub>nom</sub> </p></td>
+<td valign="top" width="23"><p align="center">1.8</p></td>
+<td valign="top" width="57"><p align="center">3600 / n</p></td>
+<td valign="top" width="23"><p align="center">0.9</p></td>
+<td valign="top" width="35"><p align="center">400/n</p></td>
+<td valign="top" width="23"><p align="center">1.8</p></td>
+<td valign="top" width="28"></td>
+<td valign="top" width="26"></td>
+</tr>
+<tr>
+<td valign="top" width="62"><p>First strand</p></td>
+<td valign="top" width="48"><p align="center">1.25 or</p>
+<p align="center">1.5 x I<sub>nom</sub> </p></td>
+<td valign="top" width="23"><p align="center">1.5</p></td>
+<td valign="top" width="57"><p align="center">1900 A</p></td>
+<td valign="top" width="23"><p align="center">0.6</p></td>
+<td valign="top" width="35"><p align="center">50 A</p></td>
+<td valign="top" width="23"><p align="center">60</p></td>
+<td valign="top" width="28"><p align="center">300 A</p></td>
+<td valign="top" width="26"><p align="center">1.8</p></td>
+</tr>
+<tr>
+<td valign="top" width="62"><p>Second strand</p></td>
+<td valign="top" width="48"><p align="center">1.25 x I<sub>nom</sub> </p></td>
+<td valign="top" width="23"><p align="center">1.2</p></td>
+<td valign="top" width="57"><p align="center">1700 A</p></td>
+<td valign="top" width="23"><p align="center">0.3</p></td>
+<td valign="top" width="35"><p align="center">250 A</p></td>
+<td valign="top" width="23"><p align="center">1.5</p></td>
+<td valign="top" width="28"></td>
+<td valign="top" width="26"></td>
+</tr>
+<tr>
+<td valign="top" width="62"><p>Third strand</p></td>
+<td valign="top" width="48"><p align="center">1.25 x I<sub>nom</sub> </p></td>
+<td valign="top" width="23"><p align="center">1.2</p></td>
+<td valign="top" width="57"><p align="center">1500 A</p></td>
+<td valign="top" width="23"><p align="center">0.0</p></td>
+<td valign="top" width="35"><p align="center">200 A</p></td>
+<td valign="top" width="23"><p align="center">1.2</p></td>
+<td valign="top" width="28"></td>
+<td valign="top" width="26"></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="449" src="./beveiliging_files/6.34.png" width="693"/>
+<h5>Figure 6.34 Protection of MV strands</h5>
+<p>The tables provide an indication of a setting plan for protections in medium voltage networks. In practice, deviations from this plan often occur due to historical or operational philosophy reasons. Figure 6.34 illustrates the protection of a direction in the medium voltage distribution network using independent maximum current-time relays. The maximum current in normal operation is approximately 180 A. The nominal current of the cables in the 'first strand' is 310 A. The 'first strand' is fed from the substation via a choke coil, which is protected by an OMT relay (see paragraph 6.1.5) that issues a trip command at 1.8 s if the current exceeds 465 A. If the short-circuit current exceeds 1900 A, a trip command is issued at 0.6 s.</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="457" src="./beveiliging_files/6.35.png" width="705"/>
+<h5>Figure 6.35 Trip characteristics of the protection of MV strings</h5>
+<p>Two 'secondary strings' are connected to the first string with a nominal current of 120 A and 125 A, respectively. Both 'secondary strings' are protected by an OMT relay. The protection of String 2-1 issues a trip command at 1.5 s if the current exceeds 150 A. If the current exceeds 1700 A, the relay issues a trip command at 0.3 s. The relay protecting the second branch has a setting for<em>I<sub>&gt;</sub></em>of 156 A. Figure 6.35 shows the characteristics of the three mentioned protections.</p>
+<p>It is clearly visible that the characteristics of the protections for Branch 2-1 and Branch 2-2 are below the characteristic of the power supply. In the middle region of the characteristic, the margin is 0.3 s. This setting is selective. Since the protections for Branch 2-1 and Branch 2-2 are not in series (they are both 'second branches'), they do not need a margin relative to each other.</p>
+<p>Faults near the substation have the highest short-circuit current and are disconnected after 0.6 seconds using the settings from Table 6.4 and Table 6.5. These faults cause damage to components and a voltage dip for all customers connected to the substation installation during the 0.6 seconds. To mitigate these effects, a<em>I<sub>Table 6.5. These faults cause damage to components and a voltage dip for all customers connected to the substation installation during the 0.6 seconds. To mitigate these effects, a I</sub></em>set to immediately disconnect faults near the substation with large short-circuit currents. Should the margin to<em>I<sub>the substation installation during the 0.6 seconds. To mitigate these effects, a relay is set to immediately disconnect faults near the substation with large short-circuit currents. Should the margin to relay</sub></em>be too small, creating a risk that the setting also responds to faults in the second branches, then the setting of<em>I<sub>large short-circuit currents. If the margin to the relay is too small, creating a risk that the setting also responds to faults in the second branches, then the setting of I</sub></em>be omitted. In that case, selectivity is chosen instead of preventing large voltage dips.</p>
+<a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_6.4.3"></div>
+<br/>
+<h3>6.4.3 Outgoing Lines</h3>
+<p>The distribution network is laid out in rings as much as possible, so that in the event of a fault, after isolating the faulty section, it can be switched to restore the supply. In situations such as with a radial feeder, this is not possible and the disconnected connections must be powered via a generator. In a ring structure, the network is operated radially, but the shields of the cables are interconnected in the ring. This is not possible with a radial feeder. In a grounded distribution network, in the event of a phase-to-ground fault, the ground fault current can flow back to the grounded neutral point via the cable shields. In a ring structure, the return path is meshed, and the ground fault current can flow back through multiple paths. With a radial feeder, only one return path is available.</p>
+<p>In the event of a phase-to-ground fault, the voltage of the cable's shield increases relative to the ground. In the substations, the shields of the medium voltage (MV) cables can be connected to the grounding system of the low voltage (LV) network. If that is the case, a voltage increase on the shield of the MV cable results in an increased touch voltage for the users in the LV network. Because there is only one return path for the ground fault current in a radial feeder, the return impedance is higher, leading to a greater potential increase than in a phase-to-ground fault in the ring structure. The level of touch voltage and the associated disconnection time are specified in NEN 1041 and further described in chapter 5. In practice, it has been found that when using certain types of cables, such as 3*240 AL XLPE with 70 mm<sup>2</sup>ground screen, the touch voltage can become higher than allowed. This situation is depicted in figure 6.36.</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="449" src="./beveiliging_files/6.36.png" width="693"/>
+<h5>Figure 6.36 Ring-shaped network with meshed cable screens and a branch</h5>
+<p>In this example network, grounding of 0.2 Ω is applied at the substation and grounding of 2 Ω at each network station. If the phase-to-ground fault occurs in the ring at the location of 'Network Station B3', the potential rise on the cable screen is 270 V. For a phase-to-ground fault at the location of 'Network Station Branch', the potential rise is 416 V. According to the standard, the fault must be disconnected within 0.3 seconds at this voltage. Therefore, the branch is equipped with a circuit breaker and protection, of which<em>t<sub>0.3 seconds is the maximum disconnection time.</sub></em>is not set to<em>t<sub>&gt;</sub>,</em>but standard at 0.3 s. The a-selectivity that arises with any connections is accepted because safety takes precedence over selectivity.</p>
+<a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_6.4.4"></div>
+<br/>
+<h3>6.4.4 Protection in networks with a floating neutral point</h3>
+<p>Many medium-voltage networks have a floating neutral point. In these networks, a phase-to-ground fault does not need to be immediately disconnected because the fault current is not large. In floating networks, the fault current during a short circuit between a phase and ground is mainly determined by the total capacitance of all connected cables. During this short circuit, the voltage on the shorted phase is zero, and the voltage on the two healthy phases relative to ground is equal to the line-to-line voltage. This increased voltage can lead to a breakdown elsewhere in the network, especially in cables ('cross-country'). As a result, the phase-to-ground fault can evolve into a complex two-phase-to-ground fault. To prevent this undesirable situation of line-to-line voltage on the phases of the cables from persisting too long, a phase-to-ground fault is disconnected after some time. Additionally, the capacitive current can cause thermal overload of the cable shield. In that case, the design of the distribution network must include an impedance-grounded network, allowing the fault to be detected and disconnected. A phase-to-ground fault can be detected by measuring the system voltage or by measuring the three phase currents.</p>
+<p>Detection using the system voltage is carried out by measuring the three individual phase voltages and summing them vectorially. The primary windings of three voltage transformers have a common grounded neutral point. The secondary windings are connected in an open delta configuration. In normal operating conditions, the vector sum of the three phase voltages is zero. In the event of a phase-to-ground fault, the sum of the phase voltages is significant, making this configuration highly sensitive to phase-to-ground faults.</p>
+<p>The phase-to-ground fault can also be detected by measuring the three currents and summing them vectorially. This is done in a Holmgreen circuit, where the secondary windings of the three current transformers are connected in parallel and connected to the ground fault relay. In normal operating conditions, the vector sum of the currents is equal to zero. During a phase-to-ground fault, the current from the faulty phase leaks away through the ground, causing the sum of the currents to no longer be zero. This measurement only responds to short circuits with ground contact, allowing the setting to be chosen independently of the nominal current and kept relatively small. In practice, this sensitivity is not greater than 10 to 20% of the nominal current.</p>
+<a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_6.5"></div>
+<br/>
+<h2>6.5 Reliability of the protection</h2>
+<p>The availability of both the protection system and the circuit breaker is not 100%. This means there is a chance that they may not function or may trip incorrectly. By deploying multiple protection systems, the availability of protection for tripping can be increased. However, this also increases the likelihood of an incorrect trip. In the event of a short circuit, ideally, only the affected network section should be disconnected. This ensures that as few customers as possible are impacted. If this does not happen due to the failure of the protection system or circuit breaker, another protection system must trip.</p>
+<p>A good solution for the potential malfunction of a protection system can be found by constructing the protection system with a primary protection and a backup protection. The backup protection is preferably implemented using protections that are installed elsewhere for other primary objects. An alternative must also be considered for a failing circuit breaker. Additional equipment (such as a switch reserve protection) can be installed to address the failure of the circuit breaker. The likelihood that both the primary protection and the backup protection will fail simultaneously is very small. This is not taken into account in the current network design.</p>
+<p>The backup for the third section is provided by the protection of the second section. The backup for the second section is provided by the protection of the first section. In the first section of an MV distribution network, there are two MST protections that both control the same circuit breaker. There is often no backup from an upstream protection. Therefore, in that case, a switch reserve protection (SRB) is needed to still disconnect the fault if an outgoing circuit breaker fails. If an outgoing circuit breaker does not disconnect, the SRB protection issues a disconnection command to all circuit breakers connected to the bus.</p>
+<a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_6.6"></div>
+<br/>
+<h2>6.6 Disconnectable load</h2>
+<p>Voltage protection and frequency protection are essentially intended to protect the connected electrical equipment. The power grid that supplies this equipment will generally have no issue feeding an overloaded transformer or motor, even at a low voltage. If these abnormal operating conditions are allowed to persist, they will eventually result in a short circuit. The connected device will then be defective; large currents will flow through the distribution network, which can ultimately lead to overheating of cables, transformers, and switches, causing them to fail as well. The protection at the transfer point must safeguard against overloading the grid of the network operator. Thus, protection is implemented to prevent damage to electrical equipment, to limit damage at the fault location itself, and to prevent damage to other parts of the network.</p>
+<p>Undervoltage protection: when the network voltage drops, the current increases at constant power, which can lead to overloading. This is mainly caused by motors that enter an unfavorable operating range at a lower supply voltage. Initially, the motors will draw more and more current due to the reduced voltage in order to continue delivering the desired driving torque. Subsequently, they will overheat and burn out.</p>
+<p>Overvoltage protection: when the mains voltage increases, the current decreases while the power remains constant. In motors and transformers, the iron loss will increase. Excessive mains voltage can cause connected equipment to become too hot. Additionally, insulation defects may occur.</p>
+<p>Frequency protection: a frequency that is too low or too high causes transformers on the secondary side to no longer have the correct voltage. Additionally, an incorrect frequency disrupts the behavior of motors.</p>
+<a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_6.7"></div>
+<br/>
+<h2>6.7 Decentralized Generation</h2>
+<p>Generators in the medium voltage network contribute to the short-circuit current during a short circuit. For the proper functioning of the protection of the lines, generators must immediately disconnect in the event of a short circuit in the medium voltage network. Due to safety around the disturbed network section, decentralized generators are not allowed to reconnect to the de-energized network. The circuit breakers are equipped with additional protection for this purpose. Additionally, decentralized generators are not allowed to feed the network in island mode. The island-operated subnet and the main network are not synchronized. Synchronization equipment is needed to connect them. The Netcode (Netcode, 2009) describes the requirements that users with decentralized generation must meet.</p>
+<p>With the increase in the amount and concentration of decentralized generation, several security issues in the network can arise, such as 'unintentional islanding,' 'incorrect disconnection,' and 'blinding of protection' (Coster, 2007). In particular, blinding of protection and incorrect disconnection are seen as serious threats.</p>
+<h6>Unintentional islanding</h6>
+<p>The likelihood of unintentionally entering island mode is small. The decentralized generation units are not equipped with automatic frequency/power regulation. As a result, they cannot manage the imbalance between supply and demand, which is necessary in island mode. All production units will disconnect in the event of a significant frequency deviation using their frequency protections. Decentralized generation units are specifically equipped with current and voltage protections to prevent the island mode condition.</p>
+<p>The current and voltage protections of the decentralized generation units are set in such a way that they quickly disconnect the generation units in the event of an excessive short-circuit current contribution or a significant voltage dip. This disconnection of generation units can lead to large, sudden, and undesirable changes in power flows.</p>
+<h6>Incorrect disconnection</h6>
+<p>In the event of a short circuit in one of the outgoing feeders, all decentralized generators in the medium voltage (MV) network will contribute to the short-circuit current. If the short-circuit current contribution exceeds the trip setting of the maximum current-time protection of the feeders, the healthy feeder with the decentralized generator will be disconnected. The likelihood of this increases as the decentralized generator is located closer to the substation, control station, or switching station (see figure 6.37).</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="335" src="./beveiliging_files/6.37.png" width="517"/>
+<h5>Figure 6.37 The principle of incorrect disconnection</h5>
+<p>The solution to this problem is simple by using a maximum current-time protection with energy direction in the line with the decentralized generator. Moreover, if the generator is disconnected earlier by the undervoltage protection or frequency protection than by the current protection in the line, this problem will not occur.</p>
+<h6>Blinding of the protection</h6>
+<p>If a short circuit occurs in a section where decentralized generation is present, the generators will contribute to the short-circuit current, and the contribution from the feeding grid to the short-circuit current will decrease proportionally. Figure 6.38 provides an overview of the situation.</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="342" src="./beveiliging_files/6.38.png" width="529"/>
+<h5>Figure 6.38   Short circuit in a string with a generator</h5>
+<p>Due to the decrease in the contribution from the feeding grid to the short-circuit current, the protection at the beginning of the string measures a smaller short-circuit current than that at the fault location. As a result, it is possible that this protection does not activate. The short-circuit contribution from the feed decreases as the short-circuit capacity of the generator increases in relation to the short-circuit capacity of the feed. Additionally, the short-circuit contribution from the feed decreases as the generator is located closer to the feed. This is determined by the ratios of the impedances in the short-circuit current calculation (Coster, 2007). The calculations in Figures 6.39 and 6.40 were performed for a medium-voltage string, which is fed via a 50 MVA transformer. The string is 20 km long. The calculated short-circuit current is 1758 A.</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="449" src="./beveiliging_files/6.39.png" width="693"/>
+<h5>Figure 6.39 Short-circuit calculation in a string without a generator</h5>
+<p>If a 2 MVA generator is connected at a distance of 5 km from the power supply, the short-circuit contribution from the power supply decreases by 122 A to 1636 A.</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="449" src="./beveiliging_files/6.40.png" width="693"/>
+<h5>Figure 6.40 Short-circuit calculation in a line with a generator</h5>
+<p>The cause lies in the parallel connection of the impedances of the feeding section and the generator. This effect is strongest in relatively weak networks with a lot of decentralized generation. If the protection measures a short-circuit current that is smaller than the trip value, the short circuit will not be disconnected initially. If the short-circuit current contribution from the generator is greater than the trip value of the generator protection, it will disconnect first, after which the short-circuit current contribution from the feeding network will increase again and the protection will eventually trip. It is not a desirable situation for the protection of the line to depend on whether or not the decentralized generators disconnect. In this situation, the decentralized generators should be immediately disconnected by an undervoltage protection in the event of a short circuit in the network. In practice, however, the chance of blinding the protection in Dutch networks is very small (Coster, 2010).</p>
+<p>The settings for the protection of decentralized generating units depend on the unit size and the voltage level to which they are connected. Table 6.6 provides an overview of possible protection settings, derived from the System Code for generating units connected at low and medium voltage levels.</p>
+<h5>Table 6.6 Protection Settings for Generating Units</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="40%"><p> <strong>Opwekeenheid</strong> </p></td>
+<td valign="top" width="15%"><p> <strong>Undervoltage protection</strong> </p></td>
+<td valign="top" width="15%"><p> <strong>Overvoltage protection</strong> </p></td>
+<td valign="top" width="15%"><p> <strong>Maximum current-time protection</strong> </p></td>
+<td valign="top" width="15%"><p> <strong>Frequency protection</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="68"><p>LS: Generator or power electronic converter<br/>&lt; 5 kVA</p></td>
+<td valign="top" width="68"><p>U<sub>&lt;</sub>= 80%<br/>t<sub>Undervoltage</sub>= 0.1 s</p></td>
+<td valign="top" width="68"><p>U<sub>&gt;</sub>= 106%<br/>t<sub>U&gt;</sub>= 0.1 s</p></td>
+<td valign="top" width="68"><p>I<sub>&gt;</sub>= 1.25 x I<sub>nom</sub> <br/>t<sub>I &gt; = 1.25 x I nom t</sub>= 0.1 s</p></td>
+<td valign="top" width="4"><p>F<sub>&lt;&gt;</sub>= 2 Hz<br/>T<sub>F&lt;&gt;</sub>= 2 s</p></td>
+</tr>
+<tr>
+<td valign="top" width="68"><p>LS: Generator or power electronic converter<br/>&gt; 5 kVA</p></td>
+<td valign="top" width="68"><p>U<sub>&lt;</sub>= 80%<br/>t<sub>U &lt;</sub>= 2 s<br/>U<sub>F &lt;&gt; = 2 Hz T F&lt;&gt; = 2 s LS: Generator or power electronic converter &gt; 5 kVA U &lt; = 80% t U &lt; = 2 s U</sub>= 70%<br/>t<sub>U&lt;&lt;</sub>= 0.2 s</p></td>
+<td valign="top" width="68"><p>U<sub>&gt;</sub>= 106%<br/>t<sub>U&gt;</sub>= 2 s</p></td>
+<td valign="top" width="36"><p>I<sub>&gt;</sub>= 1.25 x I<sub>nom</sub> <br/>t<sub>I&gt;</sub>= 0.2 s</p></td>
+<td valign="top" width="36"><p>F<sub>U = 70% t U&lt;&lt; = 0.2 s U &gt; = 106% t U&gt; = 2 s I &gt; = 1.25 x I nom t I&gt; = 0.2 s F</sub>= 2 Hz<br/>T<sub>F&lt;&gt;</sub>= 2 s</p></td>
+</tr>
+<tr>
+<td valign="top" width="68"><p>MS: Generator or power electronic converter</p></td>
+<td valign="top" width="68"><p>U<sub>&lt;</sub>= 80%<br/>t<sub>U&lt;</sub>= 2 s<br/>U<sub>t I&gt; = 0.2 s F = 2 Hz T F&lt;&gt; = 2 s MS: Generator or power electronic converter U &lt; = 80% t U&lt; = 2 s U</sub>= 70%<br/>t<sub>U&lt;&lt;</sub>= 0.2 s</p></td>
+<td valign="top" width="68"><p>U<sub>&gt;</sub>= 106%<br/>t<sub>U&gt;</sub>= 2 s</p></td>
+<td valign="top" width="36"><p>I<sub>&gt;</sub>= 1.25 x I<sub>nom</sub> <br/>t<sub>I&gt;</sub>= 0.2 s<br/>I<sub>U = 70% t U&lt;&lt; = 0.2 s U &gt; = 106% t U&gt; = 2 s I &gt; = 1.25 x I nom t I&gt; = 0.2 s I</sub>= 1000 A<br/>t<sub>I&gt;&gt;</sub>= 0.0 s<br/>I<sub>0&gt;</sub>= 30 A<br/>t<sub>I0&gt;</sub>= 0.0 s</p></td>
+<td valign="top" width="36"><p>F<sub>= 1.25 x I nom t I&gt; = 0.2 s I = 1000 A t I&gt;&gt; = 0.0 s I 0&gt; = 30 A t I0&gt; = 0.0 s F</sub>= 2 Hz<br/>T<sub>F&lt;&gt;</sub>= 2 s</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>For generating units connected at medium voltage level, the System Code (System Code, 2009, Appendix 3) provides an overview of abnormal operating conditions in which disconnection from the grid is not allowed. This pertains to voltages between 80 and 105% of the nominal value and frequencies between 48 and 51 Hz.</p>
+<p>The areas a, b, c, and d are distinguished, for which the following applies:<br/>a) deliver nominal power for an unlimited time<br/>b) deliver nominal power for 15 minutes; then remain parallel to the grid for 5 minutes<br/>c) deliver 90% of the nominal power for 10 seconds; then remain parallel to the grid for 5 minutes<br/>d) remain parallel to the grid for 5 minutes</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="457" src="./beveiliging_files/6.41.png" width="705"/>
+<h5>Figure 6.41 Operating conditions where the generator must remain connected to the grid</h5>
+<h6>Blinding of the protection for overload</h6>
+<p>A third, more theoretical situation occurs in an MV feeder where decentralized generation supplies a large load that is further down the same feeder. If this load, for example due to agreements with the decentralized producer, only draws power during the generator's production, this current is not detected by the protection in the substation. As a result, it is possible for the network section between the producer and the consumer to become overloaded without being noticed.</p>
+<p>Figure 6.42 shows the situation where the connection between substations DCO and MV2 is overloaded by a current of 125% of the nominal value, while the protection in the substation sees a current of 89% of the nominal value and with a setting of<em>1.25 x I<sub>nom</sub></em>will not
+          disconnect.</p>
+<img alt="pics_1.6" class="img-responsive-leon-15px center-block" height="449" src="./beveiliging_files/6.42.png" width="693"/>
+<h5>Figure 6.42  Blinding of the protection for overload</h5>
+<a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_6.8"></div>
+<br/>
+<h2>6.8 Developments in the Field of Protections</h2>
+<p>The design of protection and the subsequent setting of protection relays is a time-consuming task where experience plays a significant role. For that reason, companies themselves establish guidelines for standard situations. However, it is inevitable that calculations must be made to arrive at the correct settings. In the past, this was often manual work, where each situation was individually calculated and assessed. Some companies have now developed their own software for this (Rombouts, 1998).</p>
+<p>Additionally, there is generally available software that can be used to test the settings of protections. This software performs short-circuit calculations for faults at nodes and in cables of the network. In this process, the impedance at the fault location can be varied. The software reports the behavior of the protections and tests the selectivity.</p>
+<p>Security functions are gradually becoming more integrated into substation automation. The goal is to eventually unify the system of separate functional security units into a single, simple, and transparent security system. This development is driven by the issues surrounding the maintenance and replacement of security and control equipment in a substation. After the security equipment reaches the end of its technical lifespan, it can sometimes be difficult to obtain replacement components. Comparable devices from alternative suppliers do not always communicate in the desired manner with the existing structure. Additionally, there is a need for new functionalities that are difficult to integrate into the existing substation automation.</p>
+<p>There is also an increasing need to measure more than has been customary in the medium-voltage networks and to control locally based on measurement data. By applying ICT technology and fiber optic communication, decision-making functions can be integrated into one system with an open communication protocol, while the actual measurement of current and voltage remains handled by simple measuring equipment in the substation fields. A modern system, which is already being applied on a modest scale in various places in the Netherlands, combines functions for protection, fault location, power quality, monitoring, and control. The goal of this system is to make protection and control in a substation simple and inexpensive (Riet, 2005). More on this subject can be found in paragraph 14.8 and in chapter 15 on intelligent networks.</p>
+</div>
+<div class="col-lg-2 hidden-md"> </div>
+</div>
+</div>
+</div>
+<div class="container-fluid-footer" id="includeFooter"><div class="container">
+<div class="row">
+<div class="text-justify col-xs-6 col-sm-3">
+<img alt="ptp_logo" src="./beveiliging_files/logo-s-360px-grijs.png" width="230"/>
+</div>
+<div class="col-xs-6 col-sm-9">
+<p> Phase to Phase is onderdeel van <a href="https://www.technolution.nl/">Technolution</a>. © 2009-2021 </p>
+</div>
+</div>
+</div></div></body></html>

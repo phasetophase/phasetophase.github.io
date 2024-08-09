@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+
+<!-- saved from url=(0047)https://www.phasetophase.nl/boek/boek_3_13.html -->
+<html class="wf-ffscalasansweb-n7-active wf-ffscalasansweb-n4-active wf-ffscalasansweb-i4-active wf-active" lang="en"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Phase to Phase – Netten voor distributie van elektriciteit</title>
+<!-- Bootstrap -->
+<link href="./ontwerpen van distributienetten_files/bootstrap-2-boek.css" rel="stylesheet"/>
+<style type="text/css">
+	body,td,th {
+	font-family: ff-scala-sans-web, sans-serif;
+}
+body {
+	background-color: #F7F7F7;
+}
+    </style>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+<script src="./ontwerpen van distributienetten_files/qke6lfb.js.download"></script>
+<style type="text/css">.tk-ff-scala-sans-web{font-family:"ff-scala-sans-web",sans-serif;}</style><style type="text/css">@font-face{font-family:tk-ff-scala-sans-web-n7;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-n4;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-i4;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style><script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script src="./ontwerpen van distributienetten_files/jquery-1.11.3.min.js.download"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./ontwerpen van distributienetten_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H8Q9E8BJ7Q');
+</script>
+<script>
+$(function(){
+  $("#includedHeader").load("/boek/header.html");
+  $("#includeFooter").load("/boek/footer.html"); 
+});
+</script><style type="text/css">@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style>
+</head>
+<body style="padding-top: 50px">
+<div id="includedHeader"> <nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="container">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button aria-expanded="false" class="navbar-toggle collapsed" data-target="#topFixedNavbar1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+<a class="navbar-brand" href="https://www.phasetophase.nl/">Phase to Phase</a></div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="topFixedNavbar1">
+<ul class="nav navbar-nav">
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li></li>
+</ul>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container -->
+</nav>
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<p></p>
+</div>
+</div>
+</div>
+<div class="container-fluid-boek">
+<div class="container">
+<div class="row-in-header">
+<div class="text-justify col-xs-6 col-sm-6">
+<img alt="Phase to Phase logo 360px" class="hidden-xs" src="./ontwerpen van distributienetten_files/logo-s-360px-wit.png" width="366"/>
+<img alt="Phase to Phase logo 261px" class="visible-xs" src="./ontwerpen van distributienetten_files/logo-s-360px-wit.png" width="261"/>
+</div>
+<div class="col-xs-6 hidden-xs col-sm-6">
+</div>
+</div>
+<div class="row-in-header">
+<div class="text-left col-xs-9 col-sm-9"> <p></p><h8>ICT voor elektriciteitsnetten</h8>
+</div>
+<div class="col-xs-3 col-sm-3">
+</div>
+</div>
+<div class="row-in-header-2">
+<div class="text-justify col-xs-6 col-sm-6"> 
+	</div>
+<div class="col-xs-6 hidden-xs col-sm-6">
+<h7> </h7>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row-intro">
+<h1><a href="https://www.phasetophase.nl/boek/index.html"> Netten voor distributie van elektriciteit</a></h1>
+</div></div></div>
+<div class="row-ohm-center-white">
+<a name="top"></a>
+<div class="row-b">
+<a href="https://www.phasetophase.nl/boek/index.html"><button class="btn btn-default" type="button">I – De opbouw van een net</button></a>
+<a href="https://www.phasetophase.nl/boek/boek_2_7.html"><button class="btn btn-default" type="button">II – Rekenen aan een net</button></a>
+<a href="https://www.phasetophase.nl/boek/boek_3_13.html"><button class="btn btn-default active" type="button">III – Ontwerpen en bedrijfsvoeren</button></a>
+</div>
+<div class="row-b">
+<a href="https://www.phasetophase.nl/boek/boek_3_13.html">
+<button class="btn btn-default1 active" type="button">13 Ontwerpen van distributienetten</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_3_14.html">
+<button class="btn btn-default1" type="button">14 Bedrijfsvoering van de MS- en LS-netten</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_3_15.html">
+<button class="btn btn-default1" type="button">15 Intelligente netten</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_3_16.html">
+<button class="btn btn-default1" type="button">16 Geografische visualisatie van distributienetten</button>
+</a>
+<div class="row">
+<div class="col-md-12 col-lg-10">
+<h3>Designing distribution networks</h3>
+<p>This section begins in Chapter 13 with an explanation of designing distribution networks. The starting point here is the low-voltage network. The maximum length of a low-voltage cable is primarily determined by the requirements regarding Power Quality and touch safety. This sets the maximum size of the service area of a substation. Subsequently, the design of a medium-voltage network is discussed.</p>
+<div class="row">
+<div class="col-md-6">
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_3_13.html#_7"><strong>13  Designing Distribution Networks</strong></a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_3_13.html#_13.1">13.1 MV/LV Substations</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_3_13.html#_13.2">13.2 Low-Voltage Network</a></li>
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_3_13.html#_13.2.1">13.2.1 LV Design for a Residential Area</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_3_13.html#_13.2.2">13.2.2 LV Design for a Large Consumer up to 300 kVA (type A.3)</a></li>
+</ul>
+</ul>
+</div>
+<div class="col-md-6">
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_3_13.html#_13.3">13.3 Medium-Voltage Network</a></li>
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_3_13.html#_13.3.1">13.3.1 Example Calculation for a MV Network</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_3_13.html#_13.3.2">13.3.2 Example Calculation for a Switching/Control Station</a></li>
+</ul>
+<li><a href="https://www.phasetophase.nl/boek/boek_3_13.html#_13.4">13.4 Loss Costs</a></li>
+</ul>
+</div>
+</div>
+<hr/>
+<h1>13 Design of Distribution Networks</h1>
+<p>The basis for designing electricity networks is the planned power exchange in a geographic area. At the highest voltage level (220 and 380 kV), the power exchange between neighboring countries is realized, and the local regions are supplied (50, 110, and 150 kV). At the distribution level, the power exchange is realized for regional consumption and decentralized production.</p>
+<p>In managing electricity grids, a distinction is made between long-term planning and design. The long-term planning includes a forecast of the energy consumption of existing connections and anticipated market developments. The existing electricity grid is assessed for potential bottlenecks that may arise at future production and consumption levels. This takes into account the replacement due to aging of installations and parts of the grid. A plan is made with a fundamentally limited amount of data of limited accuracy.</p>
+<p>When resolving bottlenecks, a new or modified grid is designed. A grid design typically involves expanding or reinforcing an electricity grid to connect new individual customers within the constraints of standards and practical guidelines. In the grid design, parameters that were still uncertain in the planning phase are reasonably better detailed and further developed. During planning, one must be able to handle a limited amount of inaccurate data, while in designing, one must have well-founded assumptions about the behavior of the connected users over a long period in the future (Carter-Brown, 2002).</p>
+<p>For all users connected to the distribution network, the main conditions regarding the quality of the delivered service are established in the Electricity Act and the Network Code, Measurement Code, and System Code described therein (see Chapter 11 on Power Quality). Additionally, each network operator applies its own specific guidelines for designing the distribution networks. When planning the distribution networks, more than just technical quality aspects are taken into account, the most important of which are:</p>
+<ul>
+<li>veiligheid</li>
+<li>betrouwbaarheid</li>
+<li>duurzaamheid</li>
+<li>Power Quality</li>
+<li>onderhoudbaarheid</li>
+<li>flexibiliteit</li>
+<li>transparency.</li>
+</ul>
+<h6>Veiligheid</h6>
+<p>To ensure personal safety, the safety criteria of the Grid Code, the safety criteria of international and national standards, and the company's own guidelines must be met. Additionally, the distribution network must be thermally and dynamically short-circuit proof in its primary design.</p>
+<h6>Betrouwbaarheid</h6>
+<p>Reliability is also regulated in the Network Code. It states that the outage frequency, the average outage duration, and the annual outage duration due to interruptions are recorded using a system developed and established by the network operators themselves. These quality aspects are monitored based on key figures. The network operators aim for an average annual outage duration that is lower than the national average. They try to achieve this by reducing the interruption frequency and duration through quality improvements.</p>
+<h6>Duurzaamheid</h6>
+<p>The regulator (Energy Chamber of the NMa) assesses the electricity supply for sustainability. The components used in the electricity grid must not cause more environmental impact than possible alternative components. Economic principles must be taken into account in this process. This means that sustainability should not come at the expense of a healthy economic operation. A low loss level is also part of the sustainability objective. The design must consider the application of new sustainable technologies for connected users. The grid should enable and facilitate these applications.</p>
+<h6>Power Quality</h6>
+<p>Power Quality aspects are regulated in the Grid Code. The first consideration is always the voltage quality. For the voltage level, the Grid Code allows slow voltage variations of plus or minus 10% relative to the nominal or contracted voltage. Company-specific guidelines usually fall within this range. For example, the extremes of the voltage may apply as follows:</p>
+<ul>
+<li>20 kV medium voltage level: U = 20.8 kV ± 7%</li>
+<li>10 kV medium voltage level: U = 10.4 kV ± 7%</li>
+<li>0.4 kV medium voltage level: U = 0.4 kV ± 7%</li>
+</ul>
+<p>The maximum voltage drop over a string and the maximum voltage variation due to the switching on of a load can also be established in a company-specific guideline.</p>
+<h6>Maintainability and flexibility</h6>
+<p>When performing maintenance work on the grid, the continuity of supply must be ensured according to the applicable rules with regard to reserves. Additionally, the grid must be designed with enough flexibility to allow maintenance work and the realization of new connections to be completed within a 'reasonable timeframe.' Due to sustainability-driven energy transitions, the demand for electricity is expected to become increasingly unpredictable in the future, requiring the grid operator to have the necessary flexibility. The trend is to build more modularly concerning the realization of new connections, allowing for quick anticipation of power increases or decreases.</p>
+<h6>Transparantie</h6>
+<p>Transparency of the grid is related to operations management. The distribution network must be designed in such a way that the structure is clear for good operational management. This will minimize the chances of operational errors and design errors during expansions and upgrades.</p>
+<a href="https://www.phasetophase.nl/boek/boek_3_13.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_13.1"></div>
+<br/>
+<h2>13.1 MS/LS Substations</h2>
+<p>The basis for designing distribution networks is the planned power exchange in a limited geographic area. The power exchange primarily occurs at low voltage levels. Consequently, the service area of a substation is determined by the maximum lengths of the low voltage (LV) lines. In urban areas, the maximum length is mainly limited by the maximum current load, while in rural areas, it is limited by voltage regulation. The number of LV lines to be connected within the service area of a substation is largely determined by the size and power density of the substation's service area. The service area and the amount of power to be exchanged determine the size of the medium voltage/low voltage (MV/LV) network transformer.</p>
+<p>The development of power exchange in the service area is the primary prerequisite for planning the distribution network. The first step involves looking at the long-term planning of the development of exchanged power. Each network operator has specific guidelines for designing low voltage (LV) networks. Traditionally, this assumes that consumers only use electricity and can be modeled as loads using the Velander and Rusck models.<a href="https://www.phasetophase.nl/boek/boek_1_3.html">chapter 3</a>Due to socially driven developments in the field of the energy transition, more electricity is being generated decentrally using micro-CHP and PV installations, while more electricity is being consumed through the use of heat pumps and electric vehicles. In particular, the growth of electric vehicles and space heating using heat pumps are factors that need to be closely monitored. Normal household loads have a low simultaneity factor and can be well managed with traditional load models. However, large loads such as heat pumps have a high simultaneity. The electrical power ranges from 2 to 5 kW. Additionally, the heat pump is often equipped with auxiliary heating with a power of approximately 6 kW, which can activate at low outdoor temperatures and after a prolonged power outage. These developments mean that the maximum cable lengths must be shorter than in traditional network designs.</p>
+<p>With a high power density, a substation will only be able to supply a limited geographical area. Detailed information about the spatial distribution of the total load is needed for this. In an early planning stage, it is difficult to obtain this data, but it is essential for designing a future-proof distribution network. To estimate the development of the load, one can start with the distribution by types of connections, such as households, offices, shops, and industry. A geographical base is fundamental to the planning work. The uniformity of the power must also be taken into account. Connections with small power requirements need a very different approach than connections with high power requirements. Depending on the anticipated exchanged power, the connection is linked to the low-voltage network cable, its own low-voltage cable, or a medium-voltage connection.<a href="https://www.phasetophase.nl/boek/boek_1_2.html#_2.4">see paragraph 2.4</a>The structure of the networks is a fixed choice for the network operator. The low-voltage (LV) networks are usually radial, and the medium-voltage (MV) networks are usually configured in a ring. As a result, the LV networks will not have fault tolerance, whereas the MV networks will.</p>
+<p>With the previous step, the locations of the substations in the geographical area are planned. The next step is to integrate the substations into the medium-voltage (MV) distribution network. Usually, the locations of the substations are chosen in such a way that minimal changes to the existing MV network are required. In the case of large-scale new construction, a new section of the MV network will also be designed along with the low-voltage (LV) network. Figure 13.1 provides an example of the geographical distribution of substations in the MV distribution network. The substations are depicted with circles, and the MV cables with colored lines. The underlying LV distribution networks are not shown. The service areas of the substations, approximated with polygons, are clearly visible. The size of the service areas is determined by the lengths of the LV feeders and the number of feeders departing from each substation.</p>
+<p> <img alt="pics_3.13" class="img-responsive-leon-15px center-block" height="400" src="./ontwerpen van distributienetten_files/13.1.png" width="712"/> </p>
+<h5>Figure 13.1 Geographic distribution of substations with their coverage areas</h5>
+<p>The number of substations is not or hardly dependent on the MV network, but is primarily determined by the LV network. In summary, the number of substations is determined by:</p>
+<ul>
+<li>size of the geographical supply area</li>
+<li>amount of power exchange</li>
+<li>uniformity of the power levels.</li>
+</ul>
+<p>When planning a new residential area, general rules of thumb are used for annual consumption and the maximum load per house. These values are derived from statistically determined parameters (see Velander's formula, as described in paragraph 3.5.3). For a house with an annual consumption of 4500 kWh, the parameters mentioned in that paragraph can be used to calculate a peak power of 2.6 kW. Depending on the number of houses, simultaneity decreases. For example, a simultaneity of 0.59 is assumed for 10 houses, 0.49 for 50 houses, and 0.46 for 100 houses. However, if heat pumps are installed on a large scale, this must be separately accounted for by adding the power with a high simultaneity to the load. The design must be adequate for a longer period, for example, 30 years, also taking into account annual growth. Additionally, a safety margin is desirable. As an example, the design power for a substation for 100 houses without electric heating is calculated below:</p>
+<blockquote><p><em>P<sub>max</sub></em>for one house:<em>2.6 kW</em> <br/>simultaneity for 100 houses:<em>0.46</em> <br/>
+<em>P<sub>max</sub></em>for 100 houses:<em>119 kW</em> <br/>multiplication factor after 30 years with 1% growth per year:<em>growth factor = 1.01<sup>30</sup>= 1.35</em> <br/>safety margin:<em>10%</em> <br/>
+<em>P<sub>max, 30 years</sub>= 119 kW</em><em>×</em><em>1.35</em><em>×</em><em>1.1 = 177 kW</em> <br/>
+<em>cos(</em><em>φ</em><em>) = 0.9</em> <br/>
+<em>S</em> <sub>max, 30 years</sub> <em>= 177 kW / 0.9 = 197 kVA</em> <br/>Next standard transformer:<em>S<sub>nom</sub>= 250 kVA</em></p></blockquote>
+<p>If the same homes are equipped with heat pumps without electric auxiliary heating, this power must be added. In this example, it is assumed that the power of the heat pumps does not increase. For instance, if the heat pumps have a power of 5 kW and there is a simultaneity factor of 0.9 for 100 homes, the power requirement is determined as follows:</p>
+<blockquote>
+<p> <em>P<sub>max</sub></em>for one home:<em>2.6 kW</em> <br/>simultaneity for 100 homes:<em>0.46</em> <br/>
+<em>P<sub>max</sub></em>for one heat pump:<em>5 kW</em> <br/>simultaneity for 100 heat pumps:<em>0.9</em> <br/>
+<em>P<sub>max</sub></em>for 100 homes:<em>119 + 450 kW</em> <br/>multiplication factor after 30 years with 1% growth per year:<em>growth factor = 1.01<sup>30</sup>= 1.35</em> <br/>safety margin:<em>10%</em> <br/>
+<em>P<sub>max</sub>= (119 kW × 1.35 + 450 kW) × 1.1 = 672 kW</em> <br/>
+<em>cos(φ) = 0.9</em> <br/>
+<em>S<sub>max, 30 years</sub>= 672 kW / 0.9 = 747 kVA</em> <br/>Next standard transformer:<em>S<sub>nom</sub>= 1000 kVA</em> </p>
+</blockquote>
+<p>Different types of networks impose different requirements on the design. Not every network is designed in a standard way, but rather depending on the situation for which it must be suitable. A connection in an apartment building imposes very different requirements than a connection in a neighborhood with detached houses. Networks in urban environments generally have much shorter cables than networks in rural environments. When selecting a type of cable, the technical requirements such as cable load capacity, voltage stability, short-circuit resistance, and touch safety are considered first. It may be that based on voltage and current load, a thin cable is suitable, but due to the short-circuit current and the chosen protection, a larger conductor cross-section is still chosen. Only after the technical requirements are met do considerations like economic optimization come into play.</p>
+<p>The design process goes from small to large power, so after the low-voltage network, the medium-voltage network is next. A medium-voltage network can be designed in various ways. An area can, for example, be supplied by:</p>
+<ul>
+<li>a limited number of HV/MV substations, each with a meshed or ring-shaped MV distribution network</li>
+<li>a limited number of HV/MV substations, each with a ring-shaped MV transmission network, in combination with a ring-shaped MV distribution network</li>
+<li>an HV/TS supply station, a radial TS network, and for each TS/MV supply station a meshed or ring-shaped MV distribution network</li>
+<li>an HV/TS supply station, a radial TS network, a ring-shaped MV transport network, and for each MV distribution station a radial MV distribution network.</li>
+</ul>
+<p>The design and supply method of the MV network is primarily determined by the density of the HV or TS supply stations. The MV network can be a purely distribution network, but in some cases, it will be necessary to use an MV transport connection. The design also depends on:</p>
+<ul>
+<li>the geographical load density and the local distribution</li>
+<li>the technical and economic requirements, such as network losses and reliability</li>
+<li>the policies and existing traditions within the company regarding the design and operation of networks.</li>
+</ul>
+<p>In<a href="https://www.phasetophase.nl/boek/boek_1_2.html#_2.5">paragraph 2.5</a>a number of standard connections are described (Tariff Code, 2009). For categories A.1 and A.2 (small consumers), the usual connection capacities are 3x25, 35, 63, or 80 A. For larger connection capacities, the categories are classified according to the exchanged power. Up to 300 kVA, the connection is made on the low-voltage side of the network transformer, and for higher capacities, through a cut in the medium-voltage network.</p>
+<a href="https://www.phasetophase.nl/boek/boek_3_13.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_13.2"></div>
+<br/>
+<h2>13.2 Low-voltage network</h2>
+<p>One of the most important topics in designing a low-voltage network is the choice of cable type and conductor cross-section. When sizing the cable type, attention is paid to the criteria, the requirements of which are included in Table 13.1. Each network operator sets these requirements themselves to ensure they fall within the constraints of the Network Code.</p>
+<h5>Table 13.1 Example of company-specific criteria for designing an LV network</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="50%"><p> <strong>Criterium</strong> </p></td>
+<td valign="top" width="50%"><p> <strong>Eis</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="170"><p>Stroombelastbaarheid</p></td>
+<td valign="top" width="170"><p>I<sub>max</sub>&lt; I<sub>optimaal</sub> </p></td>
+</tr>
+<tr>
+<td valign="top" width="170"><p>Spanningshuishouding</p></td>
+<td valign="top" width="170"><p>215 V &lt; U &lt; 245 V</p></td>
+</tr>
+<tr>
+<td valign="top" width="170"><p>Voltage drop LV line</p></td>
+<td valign="top" width="170"><p>DU &lt; 5% (=11.5 V)</p></td>
+</tr>
+<tr>
+<td valign="top" width="170"><p>Voltage stability single-phase load<br/>3.5 kVA</p></td>
+<td valign="top" width="170"><p>d &lt; 3% (=6.9 V)</p></td>
+</tr>
+<tr>
+<td valign="top" width="170"><p>Netveiligheid</p></td>
+<td valign="top" width="170"><p>Maximum fault time: 5 s</p></td>
+</tr>
+<tr>
+<td valign="top" width="170"><p>Kortsluitvastheid</p></td>
+<td valign="top" width="170"><p>I<sub>k</sub><sup>2</sup>t &lt; I<sub>k,1s</sub><sup>2</sup> </p></td>
+</tr>
+<tr>
+<td valign="top" width="170"><p>Touch safety (when providing grounding according to the TN system)</p></td>
+<td valign="top" width="170"><p>Maximum fault time<br/>according to curve C1 from IEC 60479</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The factors that influence the maximum current-carrying capacity of cables are discussed in<a href="https://www.phasetophase.nl/boek/boek_1_4.html">chapter 4</a>Attention should be paid to: thermal resistance of the ground, material of the soil and cable bed, soil drying, and soil temperature. Cable manufacturers specify the load capacity of cables for nominal conditions and provide correction factors for deviations in temperatures and laying conditions from the nominal values. The NEN 1010 standard also uses correction factors. Additionally, in relation to the lifespan of the cables, a factor for the optimal current is established, above which the operating current must not exceed. For some network operators, the optimal current is 70% of the nominal current for GPLK cables and 90% for XLPE cables. This percentage is independent of the optimal current load based on investments and loss costs.</p>
+<p>Regarding the voltage, according to table 13.1, there is both a minimum and maximum value that the voltage must fall between, as well as a maximum voltage drop over the LV line. The maximum voltage drop in the example of table 13.1 is equal to 11.5 V. By defining a maximum for the voltage drop, room is created for voltage variations in the MV network due to variations in load and decentralized generation.</p>
+<p>Due to the increase in large loads such as heat pumps, voltage quality is becoming an increasingly important factor for grid design in addition to current load. This requires consideration of both the maximum power consumption and the switching on and off of the load. It may also be the case that an LV line, based on the number of plots to be connected with respect to current load, is not yet fully utilized, but that the cable length becomes too great in terms of voltage quality due to the large size of the plots.</p>
+<p>A short circuit between phase and neutral and ground in a TN-earthed system, where grounding is provided, will lead to an increase in the potential of the protective conductor, as described in<a href="https://www.phasetophase.nl/boek/boek_1_5.html">chapter 5</a>Depending on the magnitude of this voltage, the short circuit must be quickly disconnected. The touch safety must apply to the supplying network, including the connection cable up to the transfer point. With the choice of cable type and fuse protection, the maximum length of the low-voltage line is determined.<a href="https://www.phasetophase.nl/boek/boek_1_5.html">chapter 5</a>It is described that the speed at which disconnection must occur is a function of the current through the human body.</p>
+<a href="https://www.phasetophase.nl/boek/boek_3_13.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_13.2.1"></div>
+<br/>
+<h3>13.2.1 LV Design for a Residential Area</h3>
+<p>Using a number of examples, the design process is explained below. The starting point is connecting homes with the following parameters:</p>
+<blockquote>
+<p>Number: 100<br/>Consumption:<em>V = 4500 kWh/year</em> <br/>Growth: 1% per year<br/>
+<em>α</em> <em>= 0.23</em> <em>×</em> <em>10<sup>-3</sup></em> <br/>
+<em>beta</em> <em>= 0.023</em> <br/>Simultaneity for 100 homes:<em>g = 0.46</em> <br/>cos(φ) =<em>1</em><br/>Plot width:<em>15 m</em> </p>
+</blockquote>
+<p>The main cable to be used is of the type: 4 x 150 mm<sup>2</sup>VVMvKsas/Alk:</p>
+<blockquote>
+<p> <em>I<sub>max</sub>= 240 A</em>at G=1 Km/W<br/>Conductor resistance:<em>R<sub>f</sub>= 0.206 Ω/km</em>(at 20°C)<br/>Conductor reactance:<em>X<sub>f</sub>= 0.079 Ω/km</em> <br/>Shield resistance:<em>R<sub>PE</sub>= 0.387 Ω/km</em>(at 20°C)<br/>
+<em><u>Z</u><sub>retour</sub></em> <em>=<u>Z</u><sub>f</sub>// R<sub>PE</sub>= 0.139 + j 0.033 Ω/km</em> <br/>Homopolar impedance:<em><u>Z</u></em><em><sub>f,0</sub></em><em>= 0.60 + j0.15</em><em>Ω/km</em> <br/>Short-circuit strength:<em>I<sub>k,1s</sub>= 8.5 kA</em> </p>
+</blockquote>
+<p>The connection cable to be used is on average 10 m long and is of the type: 4 x 16 VGVMvKas/Alk:</p>
+<blockquote>
+<p> <em>I<sub>max</sub>= 65 A</em>at G=1 Km/W<br/>Conductor resistance:<em>R<sub>f</sub>= 1.910 Ω/km</em>(at 20°C)<br/>Conductor reactance:<em>X<sub>f</sub>= 0.096 Ω/km</em> <br/>Homopolar impedance:<em><u>Z</u></em><em><sub>fa,0</sub></em><em>= 5.73 + j0.19 Ω/km</em> <br/>Short-circuit strength:<em>I<sub>k,1s</sub>= 1.3 kA</em> </p>
+</blockquote>
+<h6>Testing cable capacity</h6>
+<p>The maximum simultaneous power of 100 homes at the end of the 30-year planning period is:</p>
+<blockquote>
+<p> <em>P<sub>max,100</sub>= 100</em> <em>×</em> <em>2.58 kW</em> <em>×</em> <em>0.46</em> <em>×</em> <em>1.01<sup>30</sup>= 160 kW.</em> </p>
+</blockquote>
+<p>Distributed over 3 phases, the maximum current is:</p>
+<blockquote>
+<p> <em>I<sub>max,100</sub>= 160 kW / 3 / 230 V = 232 A.</em> </p>
+</blockquote>
+<p> <img alt="pics_3.13" class="img-responsive-leon-15px center-block" height="400" src="./ontwerpen van distributienetten_files/13.2.png" width="712"/> </p>
+<h5>Figure 13.2 Power supply for 100 homes with a single cable</h5>
+<p>In principle, the 150 mm<sup>2</sup>The Al cable with cos(φ) = 1 carries the current to supply all 100 homes. Figure 13.2 shows that the current load of the cable is 95% of the nominal current. The depicted voltages are the maximum and minimum values of the three phase voltages relative to the neutral. The difference between the minimum and maximum is caused by the stochastic load (see paragraph 3.5.1 for the model and paragraph 9.7.2 for the calculation). In this example, only the minimum voltage value is considered: 191 V at node A1, caused by the maximum value of the stochastic load.</p>
+<h6>Testing against voltage criterion</h6>
+<p>With an average plot width of 15 meters and if all houses are situated one after the other, all houses could, in principle, be connected via a 1500-meter long low-voltage cable. However, with regard to voltage management, this length is far too long according to figure 13.2. With a distributed load of 100 houses, this cable length results in a 17% voltage drop. Based on a maximum allowable voltage drop of 5%, the low-voltage cable can be a maximum of 825 meters long, allowing 55 houses to be connected. The maximum load current would then be 133 A (55%).</p>
+<p> <img alt="pics_3.13" class="img-responsive-leon-15px center-block" height="400" src="./ontwerpen van distributienetten_files/13.3.png" width="712"/> </p>
+<h5>Figure 13.3 Power supply for 55 houses with one cable</h5>
+<p>With a cable of this length, switching on a load should not result in an excessive voltage drop. Switching on a three-phase load of 11.5 kW results in a current of 3 x 16 A. The calculation of the voltage drop is described in Chapter 11 and is approximately equal to:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="318"><img alt="formules_2.7" src="./ontwerpen van distributienetten_files/formule-13.1.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">13.1</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>This value is lower than the value mentioned in the Grid Code. Turning on a single-phase load of 3.5 kW results in a current of 16 A, which approximately leads to a voltage dip of:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="318"><img alt="formules_2.7" src="./ontwerpen van distributienetten_files/formule-13.2.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">13.2</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>This value is also lower than the value required in the Grid Code, so this length meets the voltage stability requirements.</p>
+<h6>Testing for grid safety</h6>
+<p>When testing for the grid safety of the<em>l<sub>hk</sub>=</em><em>0.825</em><em>km</em>long LV line is checked to see if a short circuit is disconnected within 5 seconds. For the calculation of the short-circuit current, the impedances of the grid transformer and the grid supply are needed. The calculation of the transformer impedance is described in Chapter 8, and for a 630 kVA standard transformer, it is equal to:</p>
+<blockquote>
+<p><em>Z<sub>T,1</sub>= 0.002 + 0.010 Ω</em></p>
+</blockquote>
+<p>The homopolar transformer impedance is assumed to be equal to the normal transformer impedance:</p>
+<blockquote>
+<p><em>Z<sub>T,0</sub>= Z<sub>T,1</sub> </em></p>
+</blockquote>
+<p>The available power on the primary side of the transformer is assumed to be so large that the impedance of the power supply can be neglected. The three-phase short-circuit current at a cable length of 825 meters is then:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="318"><img alt="formules_2.7" src="./ontwerpen van distributienetten_files/formule-13.3.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">13.3</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<p>A standard gG 250 A fuse is suitable for the maximum current-carrying capacity of the applied 150 mm<sup>2</sup>Al-cable. In that case, the three-phase short-circuit current of a short circuit in the main cable is interrupted within 3 seconds, which meets the 5-second requirement. However, all three phases must be interrupted simultaneously. If the short circuit is located at the end of the last connection cable in the low-voltage string, the impedance of this<em>l<sub>ak</sub>= 0.010 km</em>the long connection cable is added to the total circuit impedance. The three-phase short-circuit current then becomes 1118 A. In that case, the short circuit is interrupted after approximately 1.2 seconds, ensuring the network meets the requirements for this short circuit.</p>
+<p>When calculating the phase-to-earth short-circuit current, it is preferable to use the complete model of the low-voltage (LV) cable with phase conductors, neutral conductor, and earth shield (chapter 8). A simpler alternative is the calculation as indicated in paragraph 10.3.6 concerning the short-circuit calculation in an LV network. In this latter method, the homopolar impedance of the cable<em><u>Z</u></em><em><sub>f,0</sub></em>necessary. A phase-to-earth short circuit in the main cable at the end of the LV line then leads to a short-circuit current of:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="318"><img alt="formules_2.7" src="./ontwerpen van distributienetten_files/formule-13.4.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">13.4</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<p>If a standard 250 A fuse is used, it disconnects in approximately 70 seconds, see figure 13.4. However, the requirement for network safety is that disconnection occurs within 5 seconds. There are also fast-acting (F) or ultra-fast-acting (FF) fuses. An ultra-fast-acting gFF 250 A fuse disconnects according to its specification (Figure 13.4) at a current of 750 A in 10 seconds, so with this fuse, the phase-to-earth short-circuit current at the end of the LV line is still disconnected too late. For a short circuit at the end of the last 10-meter long connection cable in the LV line, the short-circuit current is even smaller, so this calculation does not need to be performed.</p>
+<p> <img alt="pics_3.13" class="img-responsive-leon-15px center-block" height="400" src="./ontwerpen van distributienetten_files/13.4.png" width="712"/> </p>
+<h5>Figure 13.4 Tripping characteristics of a gG fuse and a gFF fuse</h5>
+<p>Since a super-fast fuse has already been applied, the length of the LV line must be further limited for network safety. At a length of<em>l<sub>hk</sub>= 0.675 km</em>(45 homes) is the phase-to-earth short-circuit current in the event of a short circuit at the end of the last<em>l<sub>ak</sub>= 0.010 km</em>long connection cable at the end of the LV line:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="318"><img alt="formules_2.7" src="./ontwerpen van distributienetten_files/formule-13.5.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">13.5</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<p>According to the specifications of the ultra-fast fuse, this short-circuit current is interrupted at 4.4 seconds. This ensures the network is safe. The phase-to-earth short-circuit current in the event of a short circuit at the end of the<em>l<sub>hk</sub>= 0.675 km</em>long main cable of the LV branch is:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="318"><img alt="formules_2.7" src="./ontwerpen van distributienetten_files/formule-13.6.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">13.6</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<p>This short-circuit current is interrupted according to the specifications of the ultra-fast fuse in 2.3 seconds.</p>
+<h6>Testing for short-circuit resistance</h6>
+<p>The heating of the cable during a short circuit is an adiabatic process, which means that the heating process is so brief that no heat is transferred to the surroundings. The heating process occurs only in and around the conductors. The short-circuit resistance is determined by the product of the square of the current and the duration of this current. The applied LV main cable has a specified<em>I<sub>k,1s</sub></em>of
+  8.5 kA for one second as a maximum value for<em>I<sub>k</sub><sup>2</sup>t</em>from:</p>
+<blockquote>
+<p><em>I<sub>k</sub><sup>2</sup>t = I<sub>k,1s</sub><sup>2</sup>× 1 = 8.5<sup>2</sup>× 1 = 72.3 MA<sup>2</sup>s</em></p>
+</blockquote>
+<p>The short-circuit strength can be examined for a three-phase short circuit and a phase-to-ground short circuit. In the case of a three-phase short circuit, the current strengths through the three phases are not entirely equal. This is caused by the asymmetry in the 675-meter-long low-voltage cable (see paragraph 8.2.8). As a result, the fuses disconnect the three phases one after the other: the phase with the highest current strength first and the phase with the lowest current strength last. Because the phase with the lowest current strength ultimately carries a phase-to-ground short-circuit current after the other two phases have been disconnected, which is smaller than the phase current in a three-phase short-circuit current, it can happen that the fuse of the last phase melts much later. Table 13.2 summarizes the results for the short-circuit and disconnection sequence, calculated with a network calculation program. For each sequence, the highest short-circuit current, the duration that it flows unchanged, and the contribution to the short-circuit load are shown.</p>
+<h5>Table 13.2 Results of a Three-Phase Short-Circuit Current Calculation</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="33%"><p align="center"> <strong>I (A)</strong> </p></td>
+<td valign="top" width="33%"><p align="center"> <strong>Dt (s)</strong> </p></td>
+<td valign="top" width="33%"><p align="center"> <strong>I<sup>2</sup>t (MA)<sup>2</sup>s)</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="115"><p align="center">1602</p></td>
+<td valign="top" width="115"><p align="center">0.097</p></td>
+<td valign="top" width="115"><p align="center">0.2489</p></td>
+</tr>
+<tr>
+<td valign="top" width="115"><p align="center">1403</p></td>
+<td valign="top" width="115"><p align="center">0.162</p></td>
+<td valign="top" width="115"><p align="center">0.3189</p></td>
+</tr>
+<tr>
+<td valign="top" width="115"><p align="center">919</p></td>
+<td valign="top" width="115"><p align="center">2,669</p></td>
+<td valign="top" width="115"><p align="center">2.2541</p></td>
+</tr>
+<tr>
+<td valign="top" width="115"></td>
+<td valign="top" width="115"><p align="center">-------------- +</p></td>
+<td valign="top" width="115"><p align="center">-------------- +</p></td>
+</tr>
+<tr>
+<td valign="top" width="115"></td>
+<td valign="top" width="115"><p align="center">2,928</p></td>
+<td valign="top" width="115"><p align="center">2,928.0</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>These results show that the short-circuit current in the first and second disconnected phases is interrupted so quickly that they contribute relatively little to the short-circuit load. However, the smaller remaining phase-to-ground short-circuit current in the last disconnected phase lasts much longer, thereby contributing more to the short-circuit load. Ultimately, the total short-circuit load is 2,928 MA.<sup>2</sup>is well below the maximum value of 72.3 MA<sup>2</sup>seconds.</p>
+<p>In the case of a phase-to-ground short circuit at the end of the low-voltage line, the value of 919 A from table 13.2 is not used, because this is the current value of the last phase to be switched off and thus the lowest value for a phase-to-ground short circuit. The value, as calculated in equation 13.6, is closer to the maximum value for a phase-to-ground short circuit. With a short-circuit current of<em>I<sub>k</sub>= 0.946 kA</em>for 2.3 seconds, the short-circuit load of the cable is well below the maximum value of 72.3 MA<sup>2</sup>s:</p>
+<blockquote>
+<p><em>I<sub>k</sub><sup>2</sup>t = 0.946<sup>2</sup>× 2.3 = 2.1 MA<sup>2</sup>s</em></p>
+</blockquote>
+<p>With this value, the low-voltage main cable with the gFF 250 A fuse is short-circuit proof for a phase-to-ground short-circuit current. In the event of a phase-to-ground short circuit at the end of the last connection cable, the short-circuit load of the cable (I<sub>k</sub>from equation 13.5):</p>
+<blockquote>
+<p><em>I<sub>k</sub><sup>2</sup>t = 0.840<sup>2</sup>× 4.4 = 3.1 MA<sup>2</sup>s</em></p>
+</blockquote>
+<p>The connection cable has a specified<em>I<sub>k,1s</sub></em>of 1.3 kA, which results in a maximum value for<em>I<sub>k</sub><sup>2</sup>t</em>of 1.7 MA<sup>2</sup>, which means the connection cable is not short-circuit proof. The connection cable can only be made short-circuit proof by disconnecting even faster or by reducing the short-circuit current.</p>
+<h6>Testing for touch safety</h6>
+<p>If a grounding provision is offered via the TN system, touch safety must also be tested. In the example of figure 13.5, the impedance of the symmetrically assumed cable model (paragraph 10.3.6) is no longer considered, but rather the complete model of the low-voltage cable with phase conductors, neutral conductor, and earth shield (chapter 8), resulting in a slightly higher short-circuit current than in previous examples. The deviation is caused by the fact that the value of the homopolar impedance was estimated and not calculated. In the case of a phase-to-earth short circuit at the end of the last connection cable on the low-voltage string with length<em>l<sub>hk</sub>=0.675 km</em>According to figure 13.5, the fault voltage is 85.4 V. Taking into account a footwear resistance of 1000 Ω and the 5% body resistance curve, the calculated touch voltage is 37.3 V. The current through the human body is then 48 mA, which according to the C1 current-time hazard curve must be disconnected within 1.2 seconds. However, the short-circuit current of 860 A is disconnected in 4.1 seconds, so with this approach, the network does not meet the touch safety requirement. In most cases where a grounding system according to the TN system is provided, it turns out that not the current load and voltage stability are the limiting factors for the length of the low-voltage cable, but the touch safety.</p>
+<p> <img alt="pics_3.13" class="img-responsive-leon-15px center-block" height="400" src="./ontwerpen van distributienetten_files/13.5.png" width="712"/> </p>
+<h5>Figure 13.5 Touch Safety in a Low-Voltage Line of 675 m</h5>
+<p>Based on touch safety, it can be calculated that the maximum length of the low-voltage line is 525 m. In that case, the current during a phase-to-ground short circuit at the end of the last connection cable, according to figure 13.6, is 1069 A. The touch voltage is then 37.1 V, which is disconnected within 1.08 seconds. This ensures that the network is touch-safe. Additionally, due to this faster disconnection, the connection cable is now short-circuit proof.</p>
+<p> <img alt="pics_3.13" class="img-responsive-leon-15px center-block" height="400" src="./ontwerpen van distributienetten_files/13.6.png" width="712"/> </p>
+<h5>Figure 13.6 Touch safety for an LV line of 525 m</h5>
+<p>In practice, a certain amount of 'hidden ground' is present in the network. At each connection, there will be a more or less good connection of the PE with the local ground. This hidden ground has a favorable effect on the fault voltage and thereby on the touch voltage. As a result, the network is safer in practice than calculated in the worst-case scenario. If this hidden ground can be relied upon, it can be taken into account in the calculation, and the LV lines can generally be chosen to be longer. If a hidden ground of 100 W is applied at each house, the touch voltage drops to 31.0 V, and touch safety improves, as shown in figure 13.7, because the margin between maximum and actual disconnection time increases.</p>
+<p> <img alt="pics_3.13" class="img-responsive-leon-15px center-block" height="400" src="./ontwerpen van distributienetten_files/13.7.png" width="712"/> </p>
+<h5>Figure 13.7 Touch safety for an LV line of 525 m and 100 W hidden ground per house</h5>
+<p>Moreover, it is possible to connect the neutral and PE of neighboring LV lines, thereby achieving better reliability of the grounding network.</p>
+<p>A new guideline is being drafted which states that a short circuit does not need to be disconnected in terms of touch safety if the fault voltage on the installation remains below 66 V. However, it must be disconnected within 5 seconds for network safety. This guideline assumes a certain amount of hidden grounding in the distribution network and potential equalization in and around the residence of the connected party. By applying this guideline, a network will more easily meet the touch safety requirement than when the C1 curve is applied.</p>
+<a href="https://www.phasetophase.nl/boek/boek_3_13.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_13.2.2"></div>
+<br/>
+<h3>13.2.2 LV design for a large consumer up to 300 kVA (type A.3)</h3>
+<p>On industrial sites, cables of the 150 mm type are often used.<sup>2</sup>Already applied. The transformers used in the substation have capacities of 630 or 1000 kVA. The maximum length of the main cables depends on the type of grounding system. If grounding is provided via the TN system, the network operator may choose to maintain a maximum length of, for example, 350 meters. In that case, the substations must be situated at a maximum distance of 700 meters from each other. According to the Network Code, large consumers up to 300 kVA (type A.3) must be connected to the substation. An additional requirement could be that the network at the endpoint must at least be suitable for a 3x80 A connection (55 kVA).</p>
+<p>When determining the load of the connected users, the Velander method is not used because industrial areas often involve a small number of connections with high power and diverse behavior. The simultaneity factor and the cos(φ) value at the connection point must be determined separately for large consumers.</p>
+<p>Figure 13.8 shows that an industrial large consumer with a maximum power of 200 kVA and a cos(φ) of 0.9 can be supplied through a connection of 300 meters in length, consisting of two parallel 150 mm<sup>2</sup>Al cables.</p>
+<p> <img alt="pics_3.13" class="img-responsive-leon-15px center-block" height="400" src="./ontwerpen van distributienetten_files/13.8.png" width="712"/> </p>
+<h5>Figure 13.8 Connection of an industrial consumer of 200 kVA, cos(φ) = 0.9</h5>
+<p>The connection complies if all the requirements of the Netcode and the grid operator (see Table 13.1) are met. The calculations for this are carried out in the same manner as in the example in paragraph 13.2.1. The maximum current through the cable connection is 61% of the nominal current. The lowest voltage of the three phases is 219 V, and the voltage drop over the cable connection is 4.6%. The voltage stability when switching on a single-phase load of 3.5 kVA is well within the set limit at 0.35%. A phase-to-ground short circuit is interrupted in 0.4 seconds when using a 250 A gG fuse, meeting the grid safety requirement (maximum 5 seconds). The short-circuit load is 2% of the maximum value, thus also meeting the short-circuit strength requirement. In terms of touch safety, the grid also amply meets the requirement: in the event of a phase-to-ground short circuit, the short-circuit current is 3990 A, the fault voltage is 80 V, and the touch voltage is 35.4 V. According to the C1 curve, disconnection must occur within a maximum of 1.4 seconds. Since disconnection occurs in 0.4 seconds, this is acceptable.</p>
+<p>For a connected user with the maximum power for category A.3 (300 kVA on the low-voltage rail of the transformer, see paragraph 2.4), the length of the connection cable, considering the voltage requirement, is a maximum of 200 meters. With a power of 300 kVA and a power factor (cos(φ)) of 0.9, the voltage drop over the cable connection is 4.6%. Given the shorter length and faster disconnection, the other requirements regarding voltage stability, network safety, short-circuit resistance, and touch safety are also met.</p>
+<p> <img alt="pics_3.13" class="img-responsive-leon-15px center-block" height="400" src="./ontwerpen van distributienetten_files/13.9.png" width="712"/> </p>
+<h5>Figure 13.9 Connection of an industrial consumer of 300 kVA, cos(φ) = 0.9</h5>
+<a href="https://www.phasetophase.nl/boek/boek_3_13.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_13.3"></div>
+<br/>
+<h2>13.3 Medium Voltage Network</h2>
+<p>The decision regarding an investment in the medium voltage network is made because the desired capacity of the network is insufficient, the supply reliability in case of maintenance or failures is deemed inadequate, or the voltage quality is compromised. Expansions in the low voltage network are also reasons for investments. To determine the load on the network, the current and future conditions are considered. If the customer demand is concrete or if the growth of the load is sufficiently substantiated, a capacity shortage can be demonstrated using the network model. Regarding supply reliability, it must be possible to restore supply in the event of a failure. This restoration must be possible with a limited number of switching operations or at the low voltage level using an emergency power supply (generator truck). If that is not possible, the network must be adjusted. The voltage quality is regulated in the Grid Code and in company-specific practice rules. The voltage drop over a medium voltage line must meet these requirements in both normal operating conditions and in a switched condition. If the requirements cannot be met, then an investment must be made.</p>
+<p>The load forecast is the basis for adjustments in the medium voltage distribution network. The design of a medium voltage network is highly dependent on the low voltage network, as an expansion of connections at the low voltage level is usually the cause of expansion at the medium voltage level. The distribution and geographical spread of the substations largely determine the spatial structure of the medium voltage network. New substations are integrated by looping them into an existing medium voltage connection or by connecting them to a new medium voltage feeder at the substation. The following points are considered in a medium voltage network design:</p>
+<ul>
+<li>substation, control stations, switching stations</li>
+<li>netontwerp</li>
+<li>middenspanningsaansluitingen</li>
+<li>netstations</li>
+<li>protection.</li>
+</ul>
+<p>A substation is fed by an HV or EHV network. One or more transformers are installed in the substation. The transformers are connected in parallel but are usually not operated in parallel to prevent the short-circuit power from becoming too large. The transformers are equipped with voltage regulation, possibly with current compensation. The voltage regulation ensures that the voltage on the MV side of the transformer remains within a set bandwidth. If decentralized generation is present in the MV network, little or no current compensation is applied. The MV side of the transformer is usually connected in a delta configuration, but a star configuration is also possible. In a star configuration, the MV neutral point can be grounded through an impedance. In a delta configuration, the network is floating or grounded using a neutral point transformer. The choice is determined based on historical reasons (existing network parts are designed this way) or based on the protection philosophy of the MV network. The size of the short-circuit current is a determining factor here. In the MV network, in addition to substations, there are also control stations and switching stations. A control station contains a regulating transformer to maintain the voltage level over a long distance. A switching station is fed from the substation via an MV transport connection and, in turn, feeds several MV branches.</p>
+<p>Regarding the structure of the MV network design, three types of networks are theoretically possible: the radial network, the ring network, and the meshed network (see chapter 2 on network structures). A meshed network at the MV level is less desirable due to complex protection and the potential for unwanted power transfer from the HV level. Usually, the ring network structure is chosen, with the following principles:</p>
+<ul>
+<li>lay out the network as simply as possible</li>
+<li>create as many pure rings as possible and avoid connections that do not add direct value to the network</li>
+<li>the creation of sub-rings between two main rings is allowed if this sub-ring is provided with its own protection</li>
+<li>The creation of spurs is allowed.</li>
+</ul>
+<p>The exchanged power determines how the connections are realized. Small consumers are connected to the LV main cable or directly to the LV busbar of the substation. The substation itself is looped into the MV string. This creates a so-called KKT configuration (MV switchgear with two cable disconnectors and a transformer field). Large consumers with a connection capacity of 0.3 to 4 MVA are also looped into the existing MV string (types A.4 and A.5, see paragraph 2.4). Consumers with a connection capacity of 3 MVA up to and including 10 MVA are connected to the substation with their own supply cable (type A.6).</p>
+<p>The protection is set up in such a way that selective disconnection occurs in the medium-voltage string, the sub-rings, and the branches. It is customary to maintain a time delay in the successive protection stages of, for example, 0.3 seconds (see chapter 6 on protections). The network is operated radially in this context.</p>
+<p>The cable types must be chosen such that the voltage requirements are met and the current does not exceed the optimal load of the cable. For some network operators, the optimal current for GPLK cables is 70% and for XLPE cables is 90% of the nominal load, given the soil properties (including thermal resistance and temperature). When calculating the cable capacity, it is also taken into account that the cable must be able to handle the load of the entire ring during switching actions in the event of recovery after a short circuit.</p>
+<p>Just like in the low-voltage networks, the maximum current-carrying capacity of cables is influenced by the thermal resistance of the ground, the material of the soil and cable bed, soil drying, and soil temperature (see chapter 4 on network components). Neighboring circuits also affect the maximum current-carrying capacity. For medium-voltage cables, environmental factors that influence the maximum current-carrying capacity are considered more precisely than for low-voltage cables. Deviations in current-carrying capacity from the values specified by the manufacturer can be analyzed using a computer program for calculating cable capacity (Phase, 2006) or, for simpler cases, approximated using correction factors (Phase, 2008-2). Table 13.3 provides some correction factors for medium-voltage cables relative to the baseline situation: 1 circuit, thermal ground resistance G = 1 Km/W, soil temperature 20 °C, laying depth 1 m. The correction factor for underground cables is composed of multiple factors:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="318"><em>f = f<sub>C</sub>× f<sub>G</sub>× f<sub>T</sub>× f<sub>L</sub></em></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">13.7</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<p>Included are:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="50"><em>f<sub>C</sub></em>:</td>
+<td>correction factor for multiple parallel circuits</td>
+</tr>
+<tr>
+<td><em>f<sub>G</sub></em>:</td>
+<td>correction factor for deviating thermal ground resistance</td>
+</tr>
+<tr>
+<td><em>f<sub>T</sub></em>:</td>
+<td>correction factor for deviating ground temperature</td>
+</tr>
+<tr>
+<td><em>f<sub>L</sub></em>:</td>
+<td>correction factor for deviating laying depth</td>
+</tr>
+</tbody>
+</table>
+<br/>
+<h5>Table 13.3 Correction Factors for Cable Load Capacity</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td colspan="2" valign="top" width="25%"><p> <strong>Circuits</strong> </p></td>
+<td colspan="2" valign="top" width="25%"><p> <strong>G</strong> </p></td>
+<td colspan="2" valign="top" width="25%"><p> <strong>Temperatuur</strong> </p></td>
+<td colspan="2" valign="top" width="25%"><p> <strong>Liggingsdiepte</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="12%"><p>aantal</p></td>
+<td valign="top" width="12%"><p> <em>f<sub>C</sub></em> </p></td>
+<td valign="top" width="12%"><p>Km/W</p></td>
+<td valign="top" width="12%"><p> <em>f<sub>G</sub></em> </p></td>
+<td valign="top" width="12%"><p>°C</p></td>
+<td valign="top" width="12%"><p> <em>f<sub>T</sub></em> </p></td>
+<td valign="top" width="12%"><p>m</p></td>
+<td valign="top" width="12%"><p> <em>f<sub>L</sub></em> </p></td>
+</tr>
+<tr>
+<td valign="top" width="36"><p>1</p></td>
+<td valign="top" width="43"><p>1.00</p></td>
+<td valign="top" width="38"><p>0.50</p></td>
+<td valign="top" width="42"><p>1.25</p></td>
+<td valign="top" width="36"><p>10</p></td>
+<td valign="top" width="36"><p>1.07</p></td>
+<td valign="top" width="36"><p>0.8</p></td>
+<td valign="top" width="36"><p>1.02</p></td>
+</tr>
+<tr>
+<td valign="top" width="36"><p>2</p></td>
+<td valign="top" width="43"><p>0.83</p></td>
+<td valign="top" width="38"><p>0.75</p></td>
+<td valign="top" width="42"><p>1.10</p></td>
+<td valign="top" width="36"><p>15</p></td>
+<td valign="top" width="36"><p>1.04</p></td>
+<td valign="top" width="36"><p>1.0</p></td>
+<td valign="top" width="36"><p>1.00</p></td>
+</tr>
+<tr>
+<td valign="top" width="36"><p>3</p></td>
+<td valign="top" width="43"><p>0.73</p></td>
+<td valign="top" width="38"><p>1.00</p></td>
+<td valign="top" width="42"><p>1.00</p></td>
+<td valign="top" width="36"><p>20</p></td>
+<td valign="top" width="36"><p>1.00</p></td>
+<td valign="top" width="36"><p>1.2</p></td>
+<td valign="top" width="36"><p>0.98</p></td>
+</tr>
+<tr>
+<td valign="top" width="36"><p>4</p></td>
+<td valign="top" width="43"><p>0.66</p></td>
+<td valign="top" width="38"><p>1.50</p></td>
+<td valign="top" width="42"><p>0.85</p></td>
+<td valign="top" width="36"><p>25</p></td>
+<td valign="top" width="36"><p>0.96</p></td>
+<td valign="top" width="36"></td>
+<td valign="top" width="36"></td>
+</tr>
+<tr>
+<td valign="top" width="36"><p>5</p></td>
+<td valign="top" width="43"><p>0.62</p></td>
+<td valign="top" width="38"><p>2.00</p></td>
+<td valign="top" width="42"><p>0.75</p></td>
+<td valign="top" width="36"></td>
+<td valign="top" width="36"></td>
+<td valign="top" width="36"></td>
+<td valign="top" width="36"></td>
+</tr>
+<tr>
+<td valign="top" width="36"></td>
+<td valign="top" width="43"></td>
+<td valign="top" width="38"><p>2.50</p></td>
+<td valign="top" width="42"><p>0.67</p></td>
+<td valign="top" width="36"></td>
+<td valign="top" width="36"></td>
+<td valign="top" width="36"></td>
+<td valign="top" width="36"></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<h5>Table 13.4 Example of company-specific criteria for designing an MS network</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="36%"><p> <strong>Criterium</strong> </p></td>
+<td valign="top" width="64%"><p> <strong>Eis</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="165"><p>Stroombelastbaarheid</p></td>
+<td valign="top" width="175"><p>I<sub>max</sub>&lt; I<sub>optimaal</sub> </p></td>
+</tr>
+<tr>
+<td valign="top" width="165"><p>Spanningshuishouding</p></td>
+<td valign="top" width="175"><p>Voltage drop &lt; 7%:</p>
+<p>• 10 kV network: 10.15 kV &lt; U &lt; 10.85 kV</p>
+<p>• 20 kV network: 20.30 kV &lt; U &lt; 21.70 kV</p></td>
+</tr>
+<tr>
+<td valign="top" width="165"><p>Voltage drop MV line</p></td>
+<td valign="top" width="175"><p>Normal operating condition: DU &lt; 5%</p>
+<p>Switched operating condition: DU &lt; 7%</p></td>
+</tr>
+<tr>
+<td valign="top" width="165"><p>Spanningsvastheid</p></td>
+<td valign="top" width="175"><p>d &lt; 3%</p></td>
+</tr>
+<tr>
+<td valign="top" width="165"><p>Netveiligheid</p></td>
+<td valign="top" width="175"><p>Maximum fault time: 5 s</p></td>
+</tr>
+<tr>
+<td valign="top" width="165"><p>Kortsluitvastheid</p></td>
+<td valign="top" width="175"><p>I<sub>k</sub><sup>2</sup>t &lt; I<sub>k,1s</sub><sup>2</sup> </p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>In the medium voltage (MV) network, when determining the cable type, criteria set by the network operator are taken into account to ensure they comply with the requirements of the Network Code. Table 13.4 provides an example of company-specific criteria for designing an MV network.</p>
+<p>The maximum length of an MV feeder is determined by the cable load, voltage requirements, and network safety. Because the available short-circuit power from the TS network or HS network can be significant, careful attention must be paid to the short-circuit strength of the chosen cable in relation to the maximum disconnection time by the protection in the MV feeder. In many cases, this will require selecting a heavier cable than what is needed based on voltage requirements and expected cable load. If necessary, reactors are applied at the beginning of the MV feeders to limit the maximum short-circuit current. The reliability is also largely determined by the network design. This includes the number of affected customers if a protection device is triggered and the switchability for recovery actions. If only the maximum voltage drop over an MV feeder of 7% is considered, the maximum length for each type of cable can be determined as a function of the cable load. Figure 13.10 shows the maximum length of a 3 x 240 mm<sup>2</sup>All cable for a load with a cos(φ) of 0.9.</p>
+<p>In the design of the medium voltage (MV) network, consideration is given not only to the power consumed by the connected users but also to the existing and projected decentralized generated power. The voltage in MV networks is influenced by decentralized generation. As a result, there is not only a voltage drop caused by consumers but also a voltage rise caused by producers. A load flow calculation for situations of minimal and maximal load and minimal and maximal generation provides insight into extreme situations. For security reasons, an MV ring is usually operated open rather than closed. The optimal location of the network opening is chosen with an eye on minimizing network losses. Decentralized generation also leads to an increase in short-circuit power. Additionally, decentralized generation affects the operation of the protection system, as described in section 6.7.</p>
+<p> <img alt="pics_3.13" class="img-responsive-leon-15px center-block" height="400" src="./ontwerpen van distributienetten_files/13.10.png" width="712"/> </p>
+<h5>Figure 13.10 Maximum length of a 3 x 240 mm<sup>2</sup>All MS cable as a function of the load</h5>
+<a href="https://www.phasetophase.nl/boek/boek_3_13.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_13.3.1"></div>
+<br/>
+<h3>13.3.1 Example Calculation for an MV Network</h3>
+<p>As an example, a design of an MV network is tested against the criteria of Table 13.4. The network is depicted in Figure 13.11 and consists of two MV branches, each with 6 sections of 1000 meters. Each section contains a substation with a load of 300 kW at a power factor (cos(φ)) of 0.9. At the beginning of each MV branch, there is a reactor to limit short-circuit currents. The MV network is fed by a 150/10 kV substation with two 66 MVA transformers, one of which is in operation. The secondary sides of the transformers are connected in a delta configuration, and the MV network is grounded using a neutral grounding transformer. An equivalent connection from the node 'OS MV-rail' to the equivalent node 'K_eq' represents the homopolar capacity of the other MV branches connected to the substation. The equivalent value is:<em>C<sub>0</sub>= 70</em><em>m</em><em>F</em>.</p>
+<p> <img alt="pics_3.13" class="img-responsive-leon-15px center-block" height="400" src="./ontwerpen van distributienetten_files/13.11.png" width="712"/> </p>
+<h5>Figure 13.11 Example of an MV network</h5>
+<p>The data of the MV network are summarized below.</p>
+<p><em>Substation:</em></p>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="33%"><p> <strong>Netvoeding</strong> </p></td>
+<td valign="top" width="33%"><p> <strong>Voedingstransformatoren</strong> </p></td>
+<td valign="top" width="33%"><p> <strong>Nulpunttransformator</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="113"><p>U<sub>nom</sub>= 150 kV</p>
+<p>S<sub>k</sub>"<sub>max</sub>= 3000 MVA</p></td>
+<td valign="top" width="113"><p>U<sub>nom</sub>= 150/10 kV</p>
+<p>S<sub>nom</sub>= 66 MVA</p>
+<p>Configuration: YNd5</p>
+<p>u<sub>k</sub>= 20%</p>
+<p>P<sub>k</sub>= 230 kW</p>
+<p>R<sub>0</sub>= 6 Ω</p>
+<p>Z<sub>0</sub>= 127 Ω</p>
+<p>Step size: 2.5 kV</p></td>
+<td valign="top" width="113"><p>R<sub>0</sub>= 0 Ω</p>
+<p>Z<sub>0</sub>= 7 Ω</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p><em>MS network:</em></p>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="33&amp;"><p> <strong>Smoorspoelen</strong> </p></td>
+<td valign="top" width="33%"><p> <strong>MS cable 3 x 150 mm<sup>2</sup>Al</strong> </p></td>
+<td valign="top" width="33%"><p> <strong>MS cable 3 x 95 mm<sup>2</sup>Al</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="113"><p>S<sub>nom</sub>= 5.8 MVA</p>
+<p>I<sub>nom</sub>= 335 A</p>
+<p>u<sub>k</sub>= 1.74%</p>
+<p>P<sub>k</sub>= 2.69 kW</p>
+<p>R = 0.008 Ω</p>
+<p>X = 0.3 Ω</p>
+<p>R<sub>0</sub>= 0.008 Ω</p>
+<p>X<sub>0</sub>= 0.3 Ω</p></td>
+<td valign="top" width="113"><p>Length = 1000 m</p>
+<p>Inom = 280 A</p>
+<p>R = 0.208 Ω</p>
+<p>X = 0.093 Ω</p>
+<p>C = 0.37 μF</p>
+<p>R0 = 0.96 Ω</p>
+<p>X0 = 0.11 Ω</p>
+<p>C0 = 0.37 μF</p>
+<p>I<sub>k,1s</sub>= 14.1 kA</p></td>
+<td valign="top" width="113"><p>Length = 1000 m</p>
+<p>Inom = 215 A</p>
+<p>R = 0.322 Ω</p>
+<p>X = 0.102 Ω</p>
+<p>C = 0.32 μF</p>
+<p>R0 = 1.07 Ω</p>
+<p>X0 = 0.11 Ω</p>
+<p>C0 = 0.32 μF</p>
+<p>I<sub>k,1s</sub>= 8.9 kA</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p><em>Six substations per MV string:</em></p>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="50%"><p> <strong>Transformator</strong> </p></td>
+<td valign="top" width="50%"><p> <strong>Belasting</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="170"><p>Unom = 10.5/0.42 kV</p>
+<p>Snom = 0.4 MVA</p>
+<p>Configuration: Dyn5</p>
+<p>uk = 4%</p>
+<p>Pk = 3.1 kW</p>
+<p>Step size: 0.25 kV</p></td>
+<td valign="top" width="170"><p>P = 0.3 MW</p>
+<p>S = 0.33 MVA</p>
+<p>I = 19,245 A</p>
+<p>cos(φ) = 0.9</p>
+<p>Constant current behavior</p></td>
+</tr>
+</tbody>
+</table>
+<h6>Testing for current load capacity</h6>
+<p>The load of 6 substations per MV string is:<em>I<sub>streng</sub>= 6 x 19,245 A = 115.5 A</em>This value amounts to 46% of the optimal current of the 3 x 150 mm<sup>2</sup>All cable (252 A with a reduction factor of 0.9) and 60% of the 3 x 95 mm<sup>2</sup>Al cable (193 A with a reduction factor of 0.9), so that both types comply. In the event of a fault in the first section of either of the MS strings, if the total load of both MS strings must be supplied by one MS string after a switching action, the load will be 231 A. Therefore, the first cables of each MS string must be of the type 3 x 150 mm.<sup>2</sup>All right. In the section further down the MS string, where the current is less than the optimal value of the 3 x 95 mm<sup>2</sup>If the cable is (193 A), this cable may be used. This is the case from the third section, after Substation 12 and Substation 22.</p>
+<h6>Testing voltage management</h6>
+<p>The type of cable in the first two sections of each MV string is 3 x 150 mm².<sup>2</sup>Aluminum cables in the third through the sixth section are of the type 3 x 95 mm².<sup>2</sup>Al. The voltage in the MV network must be between 10.15 kV and 10.85 kV. The difference between the maximum and minimum values is 7%. With a voltage regulation setting between 10.4 and 10.6 kV, the tap position of the supply transformer is automatically adjusted so that the voltage on the MV busbar in the substation is 10.47 kV. Figure 13.12 shows the voltages at other points of the MV string. Additionally, the voltages of the second string are shown in the reverse direction: from the network opening back to the first node of the string. Under maximum load, the lowest voltage is 10.26 kV at Network Station 16 and Network Station 26. In this condition, the network meets the voltage requirement.</p>
+<p> <img alt="pics_3.13" class="img-responsive-leon-15px center-block" height="396" src="./ontwerpen van distributienetten_files/13.12.png" width="705"/> </p>
+<h5>Figure 13.12 Voltages in two MV strings, normal operating condition</h5>
+<h6>Testing for voltage drop in MV string</h6>
+<p>In the normal operating condition, the voltage drop across the MV string may be a maximum of 5%. In the switched operating condition, it is 7%. According to figure 13.12, the voltage drop in the normal operating condition from the MV busbar in the substation to Network Station MV 16 is:<em>D</em> <em>U = (10.47 - 10.26) / 10 x 100% = 2.1%</em>. This means the network amply meets the requirement.</p>
+<p>If the network is switched in the event of a fault in the first section of MV string 2, between Reactor 2 and Network Station 21, by closing the network opening at Network Station 16, all network stations of MV string 2 will be fed via MV string 1. Figure 13.13 shows the voltages of the network stations. The lowest voltage is 9.64 kV at Network Station 21. The voltage drop from the MV rail in the substation is:<em>D</em> <em>U = (10.47 - 9.64) / 10 x 100% = 8.3%</em>. This is too much.</p>
+<p> <img alt="pics_3.13" class="img-responsive-leon-15px center-block" height="396" src="./ontwerpen van distributienetten_files/13.13.png" width="705"/> </p>
+<h5>Figure 13.13 Voltages in two MV branches, switched operating condition</h5>
+<p> <img alt="pics_3.13" class="img-responsive-leon-15px center-block" height="396" src="./ontwerpen van distributienetten_files/13.14.png" width="705"/> </p>
+<h5>Figure 13.14 Voltages in two MV branches with larger conductor cross-sections, switched operating condition</h5>
+<p>To meet the requirements set out in Table 13.4, some cables with a larger conductor cross-section must be used. In the improved design, the type of cable in the first through fifth sections of each MV branch is 3 x 150 mm².<sup>2</sup>Al. Cables in the sixth section and in the section between MS 16 and MS 26 are of the type 3 x 95 mm².<sup>2</sup>In the switched operating condition, the lowest voltage is 9.77 kV at Substation 21. The voltage drop from the MV busbar in the substation is: ΔU = (10.47 - 9.77) / 10 x 100% = 7.0%, so the network in this configuration meets the requirement for the maximum voltage drop. The voltage level can be adjusted by changing the tap position of the power transformer.</p>
+<h6>Testing for voltage stability</h6>
+<p>By connecting a load of 1 MW and a power factor (cos(φ)) of 0.9 at node MS 16 at the end of the MS line, according to figure 13.15, the voltage in the improved design drops from 10.29 kV to 10.10 kV in the non-switched situation. The voltage change is 1.9%, which is less than the specified maximum of 3%, so the network complies.</p>
+<p> <img alt="pics_3.13" class="img-responsive-leon-15px center-block" height="396" src="./ontwerpen van distributienetten_files/13.15.png" width="705"/> </p>
+<h5>Figure 13.15 Voltages in an MV feeder with larger conductor cross-sections, normal operating condition, and switched-on load</h5>
+<h6>Testing for network safety</h6>
+<p>The strings are protected in the substation with an independent maximum current-time protection with a setting for I<sub>&gt;</sub>The strings are protected in the substation with an independent maximum current-time protection with a setting for I &gt;<sub>&gt;</sub>of 250 A/1.6 s and for I<sub>&gt;&gt;</sub>/t<sub>The strings are protected in the substation with an independent maximum current-time protection with a setting for I &gt; &gt; of 250 A/1.6 s and for I &gt;&gt; /t</sub>of 2000 A/0.3 s. The results for three types of short circuits are summarized in table 13.5 for short circuits at node MS 16.</p>
+<h5>Table 13.5 Network Safety Results for Short Circuits at Node MS 16</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="33%"><p> <strong>Kortsluiting</strong> </p></td>
+<td valign="top" width="33%"><p align="center"> <strong>I<sub>k</sub>" (kA)</strong> </p></td>
+<td valign="top" width="33%"><p align="center"> <strong>Disconnection time (s)</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="113"><p>Phase-to-earth</p></td>
+<td valign="top" width="113"><p align="center">1.23</p></td>
+<td valign="top" width="113"><p align="center">1.6</p></td>
+</tr>
+<tr>
+<td valign="top" width="113"><p>Phase-to-phase</p></td>
+<td valign="top" width="113"><p align="center">2.85</p></td>
+<td valign="top" width="113"><p align="center">0.3</p></td>
+</tr>
+<tr>
+<td valign="top" width="113"><p>Three phases</p></td>
+<td valign="top" width="113"><p align="center">3.29</p></td>
+<td valign="top" width="113"><p align="center">0.3</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>If the network were to be switched due to a fault in the first section between Reactor 2 and node MS 21, the results are summarized in Table 13.6.</p>
+<h5>Table 13.6 Network safety results for short circuits at node MS 21 in switched situation</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="33%"><p> <strong>Kortsluiting</strong> </p></td>
+<td valign="top" width="33%"><p align="center"> <strong>I<sub>k</sub>" (kA)</strong> </p></td>
+<td valign="top" width="33%"><p align="center"> <strong>Disconnection time (s)</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="113"><p>Phase-to-earth</p></td>
+<td valign="top" width="113"><p align="center">0.77</p></td>
+<td valign="top" width="113"><p align="center">1.6</p></td>
+</tr>
+<tr>
+<td valign="top" width="113"><p>Phase-to-phase</p></td>
+<td valign="top" width="113"><p align="center">1.53</p></td>
+<td valign="top" width="113"><p align="center">1.6</p></td>
+</tr>
+<tr>
+<td valign="top" width="113"><p>Three phases</p></td>
+<td valign="top" width="113"><p align="center">1.77</p></td>
+<td valign="top" width="113"><p align="center">1.6</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>In all cases, disconnection occurs within the maximum fault time of 5 seconds, making the design network-safe.</p>
+<h6>Testing for short-circuit resistance</h6>
+<p>Due to the application of an independent maximum current-time protection, within the parameters of I<sub>the maximum fault time of 5 seconds, making the design network-safe. Testing for short-circuit resistance Due to the application of an independent maximum current-time protection, within the parameters of I</sub>/t<sub>maximum fouttijd van 5 seconden, waardoor het ontwerp netwerkveilig is. Testen op kortsluitvastheid Door de toepassing van een onafhankelijke maximale stroom-tijd bescherming, binnen de parameters van I/t</sub>the
+  disconnection time is independent of the magnitude of the short-circuit current. Therefore, the short-circuit load on the cables is greatest during a three-phase short circuit
+  in the medium-voltage cable close to the choke coil. If the short circuit occurs at 1% of the distance from the choke coil (10 m), the short-circuit current
+  is 9.5 kA. The short circuit is disconnected in 0.3 seconds. The short-circuit load for this section of the cable is then:</p>
+<blockquote>
+<p><em>I<sub>k</sub><sup>2</sup>t = 9.5<sup>2</sup>× 0.3 = 27 MA<sup>2</sup>s</em></p>
+</blockquote>
+<p>This value is much smaller (14%) than the maximum value (198.8 MA²s).<sup>2</sup>s) of the short-circuit strength that corresponds to<em>I<sub>k,1s</sub></em>,
+  which means the network meets the short-circuit strength requirement.</p>
+<a href="https://www.phasetophase.nl/boek/boek_3_13.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_13.3.2"></div>
+<br/>
+<h3>13.3.2 Example Calculation for a Switch/Control Station</h3>
+<p>For the transport of power greater than 5 MVA to a load concentration more than 5 km from a high voltage/medium voltage (HV/MV) station, additional reliability is invested in. To achieve this, several MV cables are laid in parallel from the substation to a switch/control station. The number of cables, along with the applied protection, ensures that in the event of a fault in one of the parallel cables, it is selectively disconnected while the remaining cables continue to supply power uninterrupted. From the switch/control station, the surrounding area is fed via various outgoing MV lines. This solution is applied for power up to 20 MVA.</p>
+<p>It happens that an MV transport connection is so long that the voltage at the switch station becomes too low. Figure 13.16 shows an example of a switch station that is fed by 5 parallel 3 x 240 mm cables.<sup>2</sup>Aluminum cables, each 10 km in length. The voltage at the switch station is 9.96 kV, which is lower than the minimum value mentioned in Table 13.4. Additionally, medium-voltage (MV) strings are connected at the switch station, where the voltage drop is allowed to be a maximum of 5%, so the voltage can drop to 9.46 kV. Strengthening the transport connection only helps partially. Increasing the number of parallel cables from 5 to 8 raises the voltage to 10.23 kV. However, this value is still not high enough to ensure sufficient voltage at the end of the MV strings.</p>
+<p> <img alt="pics_3.13" class="img-responsive-leon-15px center-block" height="243" src="./ontwerpen van distributienetten_files/13.16.png" width="712"/> </p>
+<h5>Figure 13.16 MV transport connection with switchgear station</h5>
+<p>A good alternative is to replace the switchgear station with a control station by installing a voltage-regulated booster transformer. Figure 13.17 shows the configuration with a 20 MVA regulating transformer. Due to the construction of the booster transformer, the relative short-circuit voltage is<sub>k</sub>only 0.6%. The transformer is equipped with a tap changer with 19 steps of 150 V each, allowing the transformation ratio to be adjusted between 9.250 and 11.950 kV at a nominal voltage of 10.6 kV.</p>
+<p> <img alt="pics_3.13" class="img-responsive-leon-15px center-block" height="400" src="./ontwerpen van distributienetten_files/13.17.png" width="712"/> </p>
+<h5>Figure 13.17 Medium-voltage transport connection with control station</h5>
+<p>The voltage regulation of the regulating transformer is set to a secondary voltage between 10.5 and 10.8 kV. This results in a transformation ratio of 10.60/11.35 kV at step position 5. The voltage on the regulated rail of the control station is 10.62 kV in the example, but according to the voltage regulation bandwidth, it can also be 10.5 kV. Therefore, according to Table 13.4, the voltage drop over the medium-voltage lines may be 3.5%. Whether the designer accepts this depends, among other things, on the lengths of the medium-voltage lines in relation to the power consumed. Figure 13.18 shows an example of a 23 MVA regulating transformer, where the three incoming and outgoing phases are visible.</p>
+<p> <img alt="pics_3.13" class="img-responsive-leon-15px center-block" height="148" src="./ontwerpen van distributienetten_files/13.18.jpg" width="263"/> </p>
+<h5>Figure 13.18 Regulating Transformer 23 MVA</h5>
+<a href="https://www.phasetophase.nl/boek/boek_3_13.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_13.4"></div>
+<br/>
+<h2>13.4 Loss Costs</h2>
+<p>The choices in network design are determined not only by technical requirements but also by investment costs and operational costs. The operational costs consist of management costs, maintenance costs, failure costs, and loss costs. The loss costs constitute an important part of the operational costs. These include no-load losses in transformers and resistance losses in transformers and cables.</p>
+<p>The no-load losses are caused by the magnetization of the transformers and are not dependent on the network load. It is common practice to assume the no-load loss to be constant, allowing the annual costs to be calculated in a straightforward manner:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="318"><img alt="formules_2.7" src="./ontwerpen van distributienetten_files/formule-13.8.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">13.8</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<p>with:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="50"><em>P<sub>nullast</sub></em></td>
+<td>nominal no-load loss (kW)</td>
+</tr>
+<tr>
+<td><em>T<sub>i</sub></em></td>
+<td>annual operating hours of the transformer (h)</td>
+</tr>
+<tr>
+<td><em>p</em></td>
+<td>kWh price (EUR)</td>
+</tr>
+<tr>
+<td><em>q</em></td>
+<td>kW costs (EUR)</td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>The resistance losses in transformers are caused by power transmission and the resistance of the windings. The resistance loss is therefore dependent on the instantaneous current through the transformer. The resistance loss in a transformer at nominal current is referred to as the short-circuit loss.<em>P<sub>k</sub></em>If a fairly constant load is assumed, the annual costs associated with the resistance loss can be approximated as follows:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="318"><img alt="formules_2.7" src="./ontwerpen van distributienetten_files/formule-13.9.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">13.9</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<p>with:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="50"><em>P<sub>k</sub></em></td>
+<td>nominal resistance loss (kW)</td>
+</tr>
+<tr>
+<td><em>T<sub>v</sub></em></td>
+<td>operating time of the annual maximum loss (h)</td>
+</tr>
+<tr>
+<td valign="top"><em>alpha</em></td>
+<td>loading factor of the transformer (quotient of maximum apparent power/nominal apparent power)</td>
+</tr>
+<tr>
+<td><em>p</em></td>
+<td>kWh price (EUR)</td>
+</tr>
+<tr>
+<td><em>q</em></td>
+<td>kW price (EUR)</td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>The operating time of the maximum loss must be calculated for each component and is difficult to determine. Because energy losses in an electrical grid are quadratically dependent on the grid load, the loss profile for a component as a function of time will have a more erratic pattern than the current load profile for that same component. The operating time of the maximum loss can be calculated from the operating time of the maximum load. Figure 13.19 provides an example of two load profiles that, over an entire year (8760 hours), have the same energy content. The area under the profiles is a measure of the energy content. For the left load profile, the operating time of the maximum load<em>T<sub>b</sub></em>and the current outside of that period for the rest of the year is zero. For the right load profile, the operating time<em>T<sub>b</sub></em>of the maximum load is much smaller than that of the left load profile. During the rest of the year, the load is not zero.</p>
+<p> <img alt="pics_3.13" class="img-responsive-leon-15px center-block" height="536" src="./ontwerpen van distributienetten_files/13.19.png" width="954"/> </p>
+<h5>Figure 13.19 Two load profiles with the same energy content</h5>
+<p>In the left load profile of figure 13.19, the operating time of the maximum energy loss is greater compared to the operating time of the maximum load.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="318"><img alt="formules_2.7" src="./ontwerpen van distributienetten_files/formule-13.10.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">13.10</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<p>In the right load profile of figure 13.19, the operating time of the maximum energy loss is minimal:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="318"><img alt="formules_2.7" src="./ontwerpen van distributienetten_files/formule-13.11.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">13.11</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<p>with:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="50"><em>T<sub>v</sub></em></td>
+<td>operating time of the maximum loss (h)</td>
+</tr>
+<tr>
+<td><em>T<sub>b</sub></em></td>
+<td>operating time of the maximum load (h)</td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>In reality, there are no rectangular load profiles as shown in figure 13.19. For the general case, the calculation of the operating time of the maximum energy loss can be approximated using formula 13.12 (EnergieNed, 1996).</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="318"><img alt="formules_2.7" src="./ontwerpen van distributienetten_files/formule-13.12.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">13.12</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<p>The factor<em>C</em>is a measure of the irregularity of the load profile. In practice, a value is often used for LV networks<em>C = 0.2</em>.</p>
+<p>The losses in the cable connections can be calculated from the current and the resistance of the respective cable. Here too, the varying cable load must be taken into account. The annual loss costs can be approximated as follows:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="318"><img alt="formules_2.7" src="./ontwerpen van distributienetten_files/formule-13.13.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">13.13</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<p>with:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="50"><em>I<sub>nom</sub> </em></td>
+<td>nominal current of the cable (A)</td>
+</tr>
+<tr>
+<td><em>R</em></td>
+<td>conductor resistance of the cable (Ω)</td>
+</tr>
+<tr>
+<td><em>T<sub>v</sub></em></td>
+<td>operating time of the annual maximum loss (h)</td>
+</tr>
+<tr>
+<td><em>p</em></td>
+<td>kWh price (EUR)</td>
+</tr>
+<tr>
+<td><em>q</em></td>
+<td>kW price (EUR)</td>
+</tr>
+</tbody>
+</table><br/>
+<p>It is customary to regularly calculate all medium-voltage (MV) and low-voltage (LV) networks based on the evolving understanding of load development in the network and the economic situation. Using the load forecast, energy loss can be capitalized over the entire design period. The annual growth of the load is processed using the growth percentage at the transformer in the resistance loss and in the cables in the loss. The annual future costs can be discounted to net present value using an estimated interest rate. These can be summed over a certain period, providing a clear picture of the total future costs of a part of the network design after adding the other operational costs and investment costs.</p>
+<p>The annual costs of transformers differ from those of cables due to the presence of no-load loss in transformers. The annual costs of a transformer consist of fixed and variable costs:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="318"><img alt="formules_2.7" src="./ontwerpen van distributienetten_files/formule-13.14.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">13.14</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<p>The fixed costs are the annual capital costs (based on annuities) and the annual costs of the no-load loss:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="318"><img alt="formules_2.7" src="./ontwerpen van distributienetten_files/formule-13.15.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">13.15</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<p>The variable costs are the annual resistance loss costs, expressed in the load factor and the nominal resistance loss costs. From equation 13.9 follows:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="318"><img alt="formules_2.7" src="./ontwerpen van distributienetten_files/formule-13.16.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">13.16</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<p>With an annual load growth<em>a</em>are the variable costs in year<em>i</em>:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="318"><img alt="formules_2.7" src="./ontwerpen van distributienetten_files/formule-13.17.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">13.17</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<p>with:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="50"><em>a</em></td>
+<td>annual growth (increase) of the load (%)</td>
+</tr>
+<tr>
+<td><em>i</em></td>
+<td>the year under consideration from the base year</td>
+</tr>
+</tbody>
+</table><br/>
+<p>The present value of the annual fixed costs over a period of<em>n</em>years, at an annual real interest rate<em>r</em>is:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="318"><img alt="formules_2.7" src="./ontwerpen van distributienetten_files/formule-13.18.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">13.18</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<p>with:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="50"><em>r</em></td>
+<td>annual real interest rate (%)</td>
+</tr>
+<tr>
+<td><em>n</em></td>
+<td>the year to be considered from the base year</td>
+</tr>
+</tbody>
+</table><br/>
+<p>The present value of the annual variable costs over a period of<em>n</em>years, at an annual real interest rate<em>r</em>is:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="318"><img alt="formules_2.7" src="./ontwerpen van distributienetten_files/formule-13.19.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">13.19</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<p>with:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="50"><em>B<sub>var,i</sub></em></td>
+<td>determined variable costs for year<em>i</em></td>
+</tr>
+</tbody>
+</table><br/>
+<p>With a constant annual increase in the tax by a percentage<em>a</em>formula 13.19 becomes:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="318"><img alt="formules_2.7" src="./ontwerpen van distributienetten_files/formule-13.20.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">13.20</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<p>The same applies to cables, with the understanding that there is no no-load loss.</p>
+</div>
+<div class="col-lg-2 hidden-md"> </div>
+</div>
+</div></div>
+<div class="container-fluid-footer" id="includeFooter"><div class="container">
+<div class="row">
+<div class="text-justify col-xs-6 col-sm-3">
+<img alt="ptp_logo" src="./ontwerpen van distributienetten_files/logo-s-360px-grijs.png" width="230"/>
+</div>
+<div class="col-xs-6 col-sm-9">
+<p> Phase to Phase is onderdeel van <a href="https://www.technolution.nl/">Technolution</a>. © 2009-2021 </p>
+</div>
+</div>
+</div></div></body></html>

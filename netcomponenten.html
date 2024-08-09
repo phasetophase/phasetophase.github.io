@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://www.phasetophase.nl/boek/boek_1_4.html -->
+<html lang="en" class="wf-ffscalasansweb-n7-active wf-ffscalasansweb-n4-active wf-ffscalasansweb-i4-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Phase to Phase – Netten voor distributie van elektriciteit</title>
+    <!-- Bootstrap -->	
+<link href="./netcomponenten_files/bootstrap-2-boek.css" rel="stylesheet">
+<style type="text/css">
+	body,td,th {
+	font-family: ff-scala-sans-web, sans-serif;
+}
+body {
+	background-color: #F7F7F7;
+}
+    </style>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+<script src="./netcomponenten_files/qke6lfb.js.download"></script>
+<style type="text/css">.tk-ff-scala-sans-web{font-family:"ff-scala-sans-web",sans-serif;}</style><style type="text/css">@font-face{font-family:tk-ff-scala-sans-web-n7;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-n4;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-i4;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style><script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script src="./netcomponenten_files/jquery-1.11.3.min.js.download"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./netcomponenten_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H8Q9E8BJ7Q');
+</script>
+<script>
+$(function(){
+  $("#includedHeader").load("/boek/header.html");
+  $("#includeFooter").load("/boek/footer.html"); 
+});
+</script><style type="text/css">@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style>	  
+</head>
+<body style="padding-top: 50px">
+
+<div id="includedHeader"> <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topFixedNavbar1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="https://www.phasetophase.nl/">Phase to Phase</a></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="topFixedNavbar1">
+      <ul class="nav navbar-nav">
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+	<p></p>
+	
+    </div>
+    </div>
+  </div>
+
+<div class="container-fluid-boek">
+  <div class="container">
+
+<div class="row-in-header">
+	<div class="text-justify col-xs-6 col-sm-6">
+    <img class="hidden-xs" src="./netcomponenten_files/logo-s-360px-wit.png" alt="Phase to Phase logo 360px" width="366">
+	<img class="visible-xs" src="./netcomponenten_files/logo-s-360px-wit.png" alt="Phase to Phase logo 261px" width="261"> 
+	</div>
+		<div class="col-xs-6 hidden-xs col-sm-6">
+	</div>
+</div>
+
+<div class="row-in-header">
+	<div class="text-left col-xs-9 col-sm-9">        <p></p><h8>ICT voor elektriciteitsnetten</h8>
+</div>
+	<div class="col-xs-3 col-sm-3">
+	</div>
+</div>
+
+<div class="row-in-header-2">
+	<div class="text-justify col-xs-6 col-sm-6">&nbsp;
+	</div>
+	<div class="col-xs-6 hidden-xs col-sm-6">
+	  <h7>&nbsp;</h7>
+	</div>
+</div>
+
+</div>
+</div>
+
+<div class="container">
+
+<div class="row-intro">
+<h1><a href="https://www.phasetophase.nl/boek/index.html"> Netten voor distributie van elektriciteit</a></h1>
+</div></div></div>
+
+  <div class="row-ohm-center-white"> <a name="top"></a>
+    <div class="row-b">
+		  <a href="https://www.phasetophase.nl/boek/index.html"><button type="button" class="btn btn-default active">I – De opbouw van een net</button></a>
+		  <a href="https://www.phasetophase.nl/boek/boek_2_7.html"><button type="button" class="btn  btn-default">II – Rekenen aan een net</button></a>
+		  <a href="https://www.phasetophase.nl/boek/boek_3_13.html"><button type="button" class="btn  btn-default">III – Ontwerpen en bedrijfsvoeren</button></a>
+	</div>
+    <div class="row-b">
+<a href="https://www.phasetophase.nl/boek/index.html"><button type="button" class="btn btn-default1">Inhoud</button></a>
+     <a href="https://www.phasetophase.nl/boek/boek_1_1.html">
+      <button type="button" class="btn btn-default1">1 Inleiding</button>
+      </a> <a href="https://www.phasetophase.nl/boek/boek_1_2.html">
+      <button type="button" class="btn btn-default1">2 Netten</button>
+      </a> <a href="https://www.phasetophase.nl/boek/boek_1_3.html">
+      <button type="button" class="btn btn-default1">3 Belasting en opwekking</button>
+      </a> <a href="https://www.phasetophase.nl/boek/boek_1_4.html">
+      <button type="button" class="btn btn-default1 active">4 Netcomponenten</button>
+      </a> <a href="https://www.phasetophase.nl/boek/boek_1_5.html">
+      <button type="button" class="btn btn-default1">5 Aardingsconcepten en veiligheid</button>
+      </a> <a href="https://www.phasetophase.nl/boek/boek_1_6.html">
+      <button type="button" class="btn btn-default1">6 Beveiliging</button>
+		</a>
+    <div class="row">
+      <div class="col-md-12 col-lg-10">
+        <h3>Netcomponenten</h3>
+        <p>In hoofdstuk 4 worden de meest gebruikte componenten in de MS- en LS-netten beschreven. Hieronder vallen onder andere kabels, moffen, transformatoren, smoorspoelen, vermogenschakelaars, schakelinstallaties en smeltveiligheden. </p>
+        <div class="row">
+          <div class="col-lg-6">
+            <ul style="list-style-type:none">
+              <li><a href="https://www.phasetophase.nl/boek/boek_1_4.html#_4"><strong>4&nbsp;&nbsp;&nbsp;&nbsp;Netcomponenten</strong></a></li>
+              <li><a href="https://www.phasetophase.nl/boek/boek_1_4.html#_4.1">4.1 Kabels</a></li>
+              <ul style="list-style-type:none">
+                <li><a href="https://www.phasetophase.nl/boek/boek_1_4.html#_4.1.1">4.1.1&nbsp;&nbsp;Constructie MS-kabels</a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_1_4.html#_4.1.2">4.1.2&nbsp;&nbsp;Constructie LS-kabels</a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_1_4.html#_4.1.3">4.1.3&nbsp;&nbsp;Verbinden van de afschermingen van enkeladerige MS-kabels</a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_1_4.html#_4.1.4">4.1.4&nbsp;&nbsp;Impedanties van kabels</a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_1_4.html#_4.1.5">4.1.5&nbsp;&nbsp;Stroombelastbaarheid</a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_1_4.html#_4.1.6">4.1.6&nbsp;&nbsp;Belastbaarheid bij kortsluitstromen</a></li>
+                <br>
+              </ul>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <ul style="list-style-type:none">
+              <li><a href="https://www.phasetophase.nl/boek/boek_1_4.html#_4.2">4.2&nbsp;&nbsp;Moffen</a></li>
+              <li><a href="https://www.phasetophase.nl/boek/boek_1_4.html#_4.3">4.3&nbsp;&nbsp;Transformatoren</a></li>
+              <li><a href="https://www.phasetophase.nl/boek/boek_1_4.html#_4.4">4.4&nbsp;&nbsp;Smoorspoelen</a></li>
+              <li><a href="https://www.phasetophase.nl/boek/boek_1_4.html#_4.5">4.5&nbsp;&nbsp;Vermogenschakelaars</a></li>
+              <li><a href="https://www.phasetophase.nl/boek/boek_1_4.html#_4.6">4.6&nbsp;&nbsp;Schakelinstallaties</a></li>
+              <li><a href="https://www.phasetophase.nl/boek/boek_1_4.html#_4.7">4.7&nbsp;&nbsp;Smeltveiligheden</a></li>
+              <li><a href="https://www.phasetophase.nl/boek/boek_1_4.html#_4.8">4.8&nbsp;&nbsp;I<sub>s</sub>-begrenzers</a></li>
+              <li><a href="https://www.phasetophase.nl/boek/boek_1_4.html#_4.9">4.9&nbsp;&nbsp;Toepassing van vermogenselektronica</a></li>
+            </ul>
+          </div>
+        </div>
+		
+        <hr>
+		<h1> 4 Netcomponenten </h1>
+        <p> De belangrijkste componenten in MS- en LS-netten zijn kabels, transformatoren en schakelinstallaties. Bovengrondse lijnen komen in Nederland op deze
+          spanningsniveaus bijna niet voor en worden daarom niet behandeld. Dit hoofdstuk geeft een overzicht van deze meest gebruikte componenten. De modellering en
+          het gedrag in loadflow- en kortsluitberekeningen komt in latere hoofdstukken aan de orde. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_1_4.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_4.1"></div>
+        <br>
+        <h2>4.1 Kabels</h2>
+        <p> Kabels zijn in vele typen en uitvoeringsvormen verkrijgbaar. Alle kabels bestaan uit 1, 3 of 4 aders (geleiders met isolatie), een afscherming en een
+          buitenmantel. Afhankelijk van het spanningsniveau en de toepassing zijn er grote verschillen in de constructie van de kabel. Dit hoofdstuk behandelt de
+          meest toegepaste kabels voor LS- distributienetten en voor MS-transport- en -distributienetten. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_1_4.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_4.1.1"></div>
+        <br>
+        <h3>4.1.1 Constructie MS-kabels</h3>
+        <p> In de MS-netten worden meestal kabels met drie aders toegepast. Een ader bestaat uit een geleider van koper of aluminium, die wordt omgeven door
+          geleiderscherm, isolatie en aderscherm. </p>
+        <p> <img src="./netcomponenten_files/4.1.png" width="450" height="428" alt="pics_1.4" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 4.1 Het samenslaan van een koperen geleider </h5>
+        <p> De geleider kan zijn opgebouwd uit meerdere draden van kleine doorsnede, die compact zijn ‘geslagen’ tot een dikke geleider van de gewenste
+          geleiderdoorsnede. Indien de geleider van aluminium is, wordt deze ook wel ‘massief’ uitgevoerd met een enkele geleider van de gewenste geleiderdoorsnede.
+          Vanwege de buigzaamheid worden massieve geleiders in drieaderige kabels tot een geleiderdoorsnede 240 mm<sup>2</sup> toegepast. Bij enkeladerige kabels
+          worden massieve geleiders tot een geleiderdoorsnede 800 mm<sup>2</sup> toegepast. Bij grotere geleiderdoorsneden worden geslagen geleiders toegepast. </p>
+        <div class="row">
+          <div class="col-md-6"> <img width="350	" height="624" src="./netcomponenten_files/4.2a.jpg" alt="pics_1.4" class="img-responsive-leon-15px center-block"> </div>
+          <div class="col-md-6"> <img width="350" height="747" src="./netcomponenten_files/4.2b.jpg" alt="pics_1.4" class="img-responsive-leon-15px center-block"> </div>
+        </div>
+        <p></p>
+        <h5> Figuur 4.2 Voorbeeld van een GPLK kabel (links) en een XLPE kabel (rechts) </h5>
+        <p> Het geleiderscherm en het aderscherm worden bij kabels voor MS-niveau en hoger toegepast om het elektrische veld in de isolatie homogeen te verdelen. Er
+          kunnen namelijk oneffenheden voorkomen op de geleider of de afscherming, waardoor het elektrische veld lokaal vrij groot kan worden. Dit kan kleine
+          ontladingen veroorzaken, waardoor de kabel snel veroudert. Om die oneffenheden op te heffen wordt een scherm, bestaande uit een halfgeleidende laag, om de
+          geleider en om de isolatie aangebracht, zodat het veld zich in de isolatie homogeen zal verdelen. De aldus geïsoleerde geleiders worden aders genoemd en
+          deze worden samengeslagen tot drie compact gebundelde aders. </p>
+        <p> De samengeslagen aders zijn afgeschermd met een scherm dat in staat is om langdurig kleine vereffeningstromen en kortstondig een kortsluitstroom te voeren. </p>
+        <p> De meest gebruikte typen hebben een massa-geïmpregneerde papierisolatie of een kunststofisolatie. Een voorbeeld van een massa-geïmpregneerde kabel is het
+          type GPLK (Gepantserde Papier-Lood Kabel) voor geleiderdoorsneden tot 300 mm<sup>2</sup>. Deze kabels worden niet meer gebruikt bij aanpassingen in het
+          MS-net. De productie ervan is gestopt in 2005. Tegenwoordig worden kabels met kunststof isolatie van XLPE (Cross-Linked Poly-Etylene, vernet polyetheen)
+          gebruikt. De belangrijkste kenmerken van beide typen zijn (de nummering verwijst naar figuur 4.2): </p>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="177" valign="top"><p> <strong>GPLK</strong> </p></td>
+              <td width="163" valign="top"><p> <strong>XLPE</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="177" valign="top"><p> 1. koperen of aluminium geleiders </p>
+                <p> 2. aderisolatie (massa-geïmpregneerd) </p>
+                <p> 3. gordelisolatie (massa-geïmpregneerd) </p>
+                <p> 4. afscherming van lood (geëxtrudeerd) </p>
+                <p> 5. tussenlaag van gebitumeerd papier </p>
+                <p> 6. tussenlaag van kunststofgaren of jute </p>
+                <p> 7. wapening van verzinkt staalband </p>
+                <p> 8. buitenmantel van kunststofgaren of jute en bitumen of PVC of PE </p></td>
+              <td width="163" valign="top"><p> 1. koperen of aluminium geleiders, geslagen of massief </p>
+                <p> 2. aderscherm (halfgeleidende laag) </p>
+                <p> 3. cross-linked polyethyleen isolatie </p>
+                <p> 4. aderscherm (halfgeleidende laag) </p>
+                <p> 5. afscherming van koperdraden </p>
+                <p> 6. zwelband tegen indringing van vocht </p>
+                <p> 7. polyethyleen of PVC buitenmantel </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> De GPLK kabels zijn in het verleden veel toegepast en zijn nog alom tegenwoordig in de MS-transport- en distributienetten. De aders in GPLK-kabels hebben
+          een isolatie die is opgebouwd uit papierlagen die geïmpregneerd zijn met een mengsel van olie, hars en was (de massa). Bij hoge temperaturen wordt dit
+          mengsel vloeibaar, waardoor de geleidertemperatuur gelimiteerd is op 50 °C om beschadiging en versnelde veroudering van de isolatie te voorkomen. De aders
+          van GPLK-kabels zijn omsloten door een loodmantel. De kabels zijn versterkt (gewapend) met verzinkt staalband en tenslotte voorzien van een buitenmantel. </p>
+        <p> De isolatie van de aders van kunststof MS-kabels bestaat uit vaste XLPE met een halfgeleidende laag aan geleider- en afschermingzijde. De halfgeleidende
+          laag zorgt voor veldsturing om een homogeen elektrisch veld te verkrijgen. Kunststof kabels hebben een koperdraadscherm voor het voeren van kleine
+          vereffeningstromen en kortstondige kortsluitstromen en het fungeert tevens als wapening. Kabels met XLPE-isolatie mogen tot een geleidertemperatuur van 90
+          °C belast worden, waardoor deze kabel redelijk goed bestand is tegen zware belastingen. Ondergronds gelegde XLPE-kabels worden echter meestal niet
+          langdurig op hun maximum geleidertemperatuur belast, omdat dan de buitenmanteltemperatuur te hoog zou worden, waardoor uitdroging van de bodem optreedt.
+          Dit wordt in paragraaf 4.1.5 over de stroombelastbaarheid behandeld. Bovengronds gemonteerde kabels hebben het probleem van gronduitdroging niet en kunnen
+          tot hun maximum temperatuur belast worden. Door de materiaaleigenschappen van de kunststof isolatie is deze kabel minder goed bestand tegen transiënte
+          overspanningen dan de papiergeïsoleerde kabel. </p>
+        <p> Kabels worden beschreven met een typeaanduiding die is opgebouwd uit een aantal codes, die in een vaste volgorde achter elkaar worden geplaatst. De opbouw
+          van de aanduiding is weergegeven in tabel 4.1. </p>
+        <h5> Tabel 4.1 Codering typeaanduiding kabels </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="30%" valign="top"><p> <strong>Onderdeel</strong> </p></td>
+              <td width="10%" valign="top"><p> <strong>Code</strong> </p></td>
+              <td width="50%" valign="top"><p> <strong>Betekenis</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="113" valign="top"><p> Niet-metalen omhulsel </p></td>
+              <td width="35" valign="top"><p> E </p>
+                <p> V </p></td>
+              <td width="191" valign="top"><p> PE-mantel </p>
+                <p> PVC-mantel </p></td>
+            </tr>
+            <tr>
+              <td width="113" valign="top"><p> Mechanische bescherming </p></td>
+              <td width="35" valign="top"><p> G </p>
+                <p> O </p></td>
+              <td width="191" valign="top"><p> armering </p>
+                <p> omvlochten </p></td>
+            </tr>
+            <tr>
+              <td width="113" valign="top"><p> Isolatiemateriaal </p></td>
+              <td width="35" valign="top"><p> E </p>
+                <p> P </p>
+                <p> V </p>
+                <p> Y </p></td>
+              <td width="191" valign="top"><p> PE-isolatie </p>
+                <p> papier-isolatie </p>
+                <p> PVC-isolatie </p>
+                <p> XLPE-isolatie (vernet polyetheen) </p></td>
+            </tr>
+            <tr>
+              <td width="113" valign="top"><p> Mantel </p></td>
+              <td width="35" valign="top"><p> LK </p>
+                <p> MvK </p>
+                <p> MeK </p></td>
+              <td width="191" valign="top"><p> loodmantel </p>
+                <p> PVC-mantel </p>
+                <p> PE-mantel </p></td>
+            </tr>
+            <tr>
+              <td width="113" valign="top"><p> Bijzonderheden </p></td>
+              <td width="35" valign="top"><p> rv </p>
+                <p> h </p>
+                <p> as </p>
+                <p> sas </p>
+                <p> lwd </p>
+                <p> dlwd </p>
+                <p> lqwd </p>
+                <p> mb </p>
+                <p> zh </p></td>
+              <td width="191" valign="top"><p> radiaal veld </p>
+                <p> hulpaders </p>
+                <p> aardscherm </p>
+                <p> S-vormig aardscherm </p>
+                <p> langswaterdicht </p>
+                <p> dwars- en langswaterdicht </p>
+                <p> langs- en quasi-dwarswaterdicht </p>
+                <p> moeilijk brandbare mantel </p>
+                <p> zonder halogeen </p></td>
+            </tr>
+            <tr>
+              <td width="113" valign="top"><p> Toegekende spanning </p></td>
+              <td width="35" valign="top"><p> … </p></td>
+              <td width="191" valign="top"><p> fasespanning en/of gekoppelde spanning (kV) </p></td>
+            </tr>
+            <tr>
+              <td width="113" valign="top"><p> Aantal aders, geleider-doorsnede, aardscherm </p></td>
+              <td width="35" valign="top"><p> … </p></td>
+              <td width="191" valign="top"><p> doorsneden in mm<sup>2</sup> </p></td>
+            </tr>
+            <tr>
+              <td width="113" valign="top"><p> Bijzonderheden </p>
+                <p> van de geleider </p></td>
+              <td width="35" valign="top"><p> Al </p>
+                <p> Cu </p>
+                <p> rm </p>
+                <p> rs </p>
+                <p> svs </p></td>
+              <td width="191" valign="top"><p> aluminium </p>
+                <p> koper </p>
+                <p> ronde massieve geleiders </p>
+                <p> ronde geslagen geleiders </p>
+                <p> sectorvormige geslagen geleiders </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Voor geleiderdoorsneden tot 300 mm<sup>2</sup> worden in het algemeen drieaderige kabels toegepast. Voor de grotere geleiderdoorsneden worden meestal drie
+          enkeladerige kabels per circuit toegepast. Met name worden enkeladerige kabels toegepast in MS-transportnetten en om zware industriële belastingen en grote
+          decentrale opwekeenheden aan te sluiten. Gebruikelijke geleiderdoorsneden zijn: </p>
+        <ul>
+          <li> MS-distributie: 16 tot 240 mm<sup>2</sup> </li>
+          <li> MS-transport: 240 tot 630 mm<sup>2</sup> </li>
+        </ul>
+        <h5> Tabel 4.2 Voorbeelden van driefasige kunststofkabels </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="170" valign="top"><p> <strong>Distributiekabel 3 aderig</strong> </p></td>
+              <td width="174" valign="top"><p> <strong>Transportkabel 1 aderig</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="170" valign="top"><p> <u>10 kV:</u> </p>
+                <p> YMeKrvaslqwd 6/10kV 3x240 Alrm as70 </p>
+                <p> YMeKrvaslqwd 6/10kV 3x150 Alrm as70 </p>
+                <p> YMeKrvaslqwd 6/10kV 3x95 Alrm as70 </p>
+                <p> <u>20 kV:</u> </p>
+                <p> YMeKrvaslqwd 12/20kV 3x240 Alrm as70 </p></td>
+              <td width="174" valign="top"><p> <u>10 kV:</u> </p>
+                <p> YMeKrvaslqwd 6/10kV 1x630 Alrm as70 </p>
+                <p> YMeKrvaslqwd 6/10kV 1x400 Alrm as70 </p>
+                <p> <u>20 kV:</u> </p>
+                <p> YMeKrvaslqwd 12/20kV 1x630 Alrm as70 </p>
+                <p> YMeKrvaslqwd 12/20kV 1x400 Alrm as70 </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Enkele veelgebruikte typen kunststofkabels zijn in tabel 4.2 genoemd. Deze kabels hebben ronde massieve aluminium geleiders en XLPE-isolatie voor een
+          gekoppelde spanning van 10 kV (6 kV fasespanning) of voor 20 kV (12 kV fasespanning). De kabels zijn langs- en quasi-waterdicht, hebben een radiaal
+          elektrisch veld in de isolatie en hebben een aardscherm met een doorsnede van 70 mm<sup>2</sup>. De kabel is omgeven met een PE-mantel. De
+          distributiekabels met geleideredoorsnedes tot 240 mm<sup>2</sup> in deze tabel zijn drieaderig en de transportkabels met geleiderdoorsnedes vanaf 400 mm<sup>2</sup> enkeladerig. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_1_4.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_4.1.2"></div>
+        <br>
+        <h3>4.1.2 Constructie LS-kabels</h3>
+        <p> De meeste LS-kabels zijn uitgevoerd met 4 aders: drie voor de fasen en één voor de nul. Ongeveer 40% van alle LS-kabels in Nederland zijn van het GPLK-type
+          met koperen geleiders. De overige 60% bestaat uit kunststof kabels met koperen of aluminium geleiders en kunststof isolatie. De meest gebruikte
+          kunststofkabels zijn van het type Aluminium Kunststof Distributie- en Aansluitkabel (ALKUDIA). </p>
+        <p> De isolatie van de aders van kunststof LS-kabels bestaat uit vaste PVC of XLPE. Vanwege de lage veldsterkte is geen halfgeleidende laag nodig voor de
+          veldsturing. Kunststof kabels hebben een koperdraadscherm voor het voeren van vereffeningstromen en voor het voeren van kortstondige kortsluitstromen.
+          Kabels met PVC-isolatie mogen tot een geleidertemperatuur van 65 °C belast worden. Kabels met XLPE-isolatie mogen tot een geleidertemperatuur van 90 °C
+          belast worden. </p>
+        <p> In veel gevallen hebben de kabels een scherm van koperdraden die meanderend over de samengeslagen aders zijn aangebracht: een zogenaamd S-vormig aardscherm
+          (zie figuur 4.3). Het voordeel van het meanderen is dat de aftak- en aansluitmoffen kunnen worden aangebracht zonder het scherm te onderbreken. </p>
+        <div class="row">
+          <div class="col-md-6"> <img width="350" height="345" src="./netcomponenten_files/4.3a.png" alt="pics_1.4" class="img-responsive-leon-15px center-block"> </div>
+          <div class="col-md-6"> <img width="89" height="355" src="./netcomponenten_files/43b.jpg" alt="pics_1.4" class="img-responsive-leon-15px center-block"> </div>
+        </div>
+        <h5> Figuur 4.3 Voorbeeld van een vieraderige kunststof LS-kabel </h5>
+        <p> Gebruikelijke geleiderdoorsneden zijn: </p>
+        <ul>
+          <li> huisaansluitkabel: 6 tot 16 mm<sup>2</sup> </li>
+          <li> LS-hoofdkabel: 16 tot 240 mm<sup>2</sup> </li>
+        </ul>
+        <p> Laagspanningskabels zijn verkrijgbaar met hulpaders en worden dan ook wel combikabels genoemd. Hulpaders hebben geleiders van 2,5 of 6 mm<sup>2</sup> doorsnede en zijn tussen de hoofdaders aangebracht. Figuur 4.3 geeft een voorbeeld van een laagspanningskabel met aluminium sectorvormige geleiders en met
+          hulpaders. De hulpaders zijn zichtbaar als dunne koperen geleiders tussen de dikke aluminium hoofdaders. In praktijk voeden de hulpaders meestal de
+          openbare verlichting. </p>
+        <p> De ader voor de nul is nodig voor het voeren van de retourstroom vanwege de asymmetrie in de driefasige belasting. De norm NEN 1010 voorziet in de
+          mogelijkheid in laagspanningskabels een kleinere nulgeleider toe te passen, waarvan de doorsnede de helft bedraagt van de doorsnede van een fasegeleider.
+          Deze zogenaamde halve nul wordt tegenwoordig niet meer toegepast maar komt sporadisch in oude LS-netten nog voor (bijvoorbeeld 3x35/25). Bij een éénfasige
+          belasting is de stroom door de nul altijd net zo groot als de stroom door de fase. Daarom dienen aan de nulgeleider dezelfde eisen te worden gesteld als
+          aan de fasegeleider. In een driefasen 50-Hz net dat symmetrisch wordt belast en waar geen hogere harmonische stromen vloeien, is de stroom door de nul ook
+          echt nul. In situaties waarin de fasen asymmetrisch worden belast is de som van de fasestromen niet nul en loopt er een stroom door de nulgeleider. Bij de
+          aanwezigheid van derde orde harmonische stromen in de fasen ontstaat eveneens een stroom door de nulgeleider, want de derde orde harmonische stromen
+          compenseren elkaar niet. Dit wordt nader uitgelegd in hoofdstuk 11 over Power Quality. De derde orde harmonische stroom door de nulgeleider kan in sommige
+          gevallen even groot worden als de stroom door de fasegeleiders. Een ader voor de nul met kleinere geleiderdoorsnede zal dan niet volstaan. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_1_4.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_4.1.3"></div>
+        <br>
+        <h3>4.1.3 Verbinden van de afschermingen van enkeladerige MS-kabels </h3>
+        <p> De afschermingen van enkeladerige kabels kunnen op diverse manieren met elkaar worden verbonden. Zo kunnen aan één kant van het circuit de afschermingen
+          worden verbonden, maar ook aan beide kanten. De stromen door de aders veroorzaken door inductie een spanning in elk van de afschermingen van de drie
+          kabels. Indien deze afschermingen aan beide kabeleinden met elkaar zijn verbonden, kunnen door deze spanningen in de afschermingen vereffeningstromen gaan
+          lopen. De grootte van de stromen is afhankelijk van de wijze waarop de afschermingen met elkaar zijn verbonden. Onderstaande configuraties zijn mogelijk: </p>
+        <table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td width="33%" valign="top"><p align="center"> Eenzijdig </p></td>
+              <td width="33%" valign="top"><p align="center"> Tweezijdig </p></td>
+              <td width="33%" valign="top"><p align="center"> Cross-bonding </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <p> <img width="714" height="332" src="./netcomponenten_files/4.4.jpg" alt="pics_1.4" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 4.4 Configuraties voor het verbinden van afschermingen van MS-kabels </h5>
+        <h6> Eenzijdig: </h6>
+        <p> Bij het verbinden van de afschermingen aan één zijde zullen geen vereffeningstromen lopen, omdat er geen gesloten circuit is tussen de afschermingen. Het
+          nadeel is dat er aan de andere kant van de kabel grote potentiaalverschillen kunnen ontstaan tussen de afschermingen. </p>
+        <h6> Tweezijdig: </h6>
+        <p> Een potentiaalverschil wordt vermeden door de afschermingen aan beide kanten met elkaar te verbinden. Er ontstaat dan een gesloten circuit tussen de
+          afschermingen waardoor vereffeningstromen gaan vloeien. De hierbij optredende verliezen zijn (door de inductie) voor de drie kabels van een circuit niet
+          gelijk. Indien de kabels in een plat vlak zijn gelegd, zullen de grootste verliezen optreden in één van de buitenste kabels. </p>
+        <h6> Kruislings (cross-bonding): </h6>
+        <p> Om de vereffeningstromen bij tweezijdige verbinding op te heffen kan ervoor gekozen worden om het circuit in drie gelijke stukken op te delen. Na elk deel
+          worden de afschermingen kruislinks met elkaar verbonden. Dit leidt ertoe dat de potentialen aan het begin en aan het eind van het circuit gelijk zijn en er
+          dus geen vereffeningstromen vloeien. </p>
+        <p> Kabels worden geleverd met een bepaalde (soms de maximale productie-)lengte. Een langere verbinding kan dus alleen met meerdere lengtes worden gemaakt. Als
+          bij de bestelling, in overleg met de fabrikant, de juiste lengtes worden geleverd leidt ‘cross bonding’ tot minimale vereffeningstromen. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_1_4.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_4.1.4"></div>
+        <br>
+        <h3>4.1.4 Impedanties van kabels </h3>
+        <p> De impedantie van een kabel bestaat uit de weerstand en de reactantie. De weerstand wordt voornamelijk bepaald door de diameter en het materiaal van de
+          geleider. De weerstand is bovendien afhankelijk van de geleidertemperatuur. De reactantie wordt berekend vanuit de zelfinductie, die afhangt van de
+          geleiderdiameter, de diameter van de afscherming en de ligging van de aders van de drie fasen ten opzichte van elkaar. Hoofdstuk 8 over modellen behandelt
+          de berekening van de weerstand en de reactantie. </p>
+        <p> De R/X-verhouding (de verhouding van de weerstand tot de reactantie) heeft invloed op het gedrag van het net ten aanzien van de loadflow en bij
+          kortsluitingen. Vanwege de compacte opbouw van de kabels is de zelfinductie laag, vergeleken met bovengrondse verbindingen. Hierdoor is de R/X-verhouding
+          van kabels groter dan van bovengrondse verbindingen. Omdat MS-kabels een dikkere isolatie hebben dan LS-kabels, is de reactantie van MS-kabels groter dan
+          van LS-kabels van dezelfde geleiderdoorsnede. Tabel 4.3 geeft een voorbeeld voor enkele drieaderige LS- en MS-kabels. </p>
+        <h5> Tabel 4.3 Impedanties van LS- en MS-kabels </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="68" valign="top"><p> <strong>Type</strong> </p></td>
+              <td width="68" valign="top"><p align="center"> <strong>Spanning</strong> </p></td>
+              <td width="68" valign="top"><p align="center"> <strong>R (Ω/km)</strong> </p></td>
+              <td width="68" valign="top"><p align="center"> <strong>X (Ω/km)</strong> </p></td>
+              <td width="68" valign="top"><p align="center"> <strong>R/X</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="68" valign="top"><p> 50 Al </p></td>
+              <td width="68" valign="top"><p align="center"> LS </p></td>
+              <td width="68" valign="top"><p align="center"> 0,64 </p></td>
+              <td width="68" valign="top"><p align="center"> 0,085 </p></td>
+              <td width="68" valign="top"><p align="center"> 7,5 </p></td>
+            </tr>
+            <tr>
+              <td width="68" valign="top"><p> 150 Al </p></td>
+              <td width="68" valign="top"><p align="center"> LS </p></td>
+              <td width="68" valign="top"><p align="center"> 0,21 </p></td>
+              <td width="68" valign="top"><p align="center"> 0,079 </p></td>
+              <td width="68" valign="top"><p align="center"> 2,6 </p></td>
+            </tr>
+            <tr>
+              <td width="68" valign="top"><p> 50 Cu </p></td>
+              <td width="68" valign="top"><p align="center"> LS </p></td>
+              <td width="68" valign="top"><p align="center"> 0,39 </p></td>
+              <td width="68" valign="top"><p align="center"> 0,085 </p></td>
+              <td width="68" valign="top"><p align="center"> 4,6 </p></td>
+            </tr>
+            <tr>
+              <td width="68" valign="top"><p> 150 Cu </p></td>
+              <td width="68" valign="top"><p align="center"> LS </p></td>
+              <td width="68" valign="top"><p align="center"> 0,13 </p></td>
+              <td width="68" valign="top"><p align="center"> 0,063 </p></td>
+              <td width="68" valign="top"><p align="center"> 2,0 </p></td>
+            </tr>
+            <tr>
+              <td width="68" valign="top"><p> 50 Al </p></td>
+              <td width="68" valign="top"><p align="center"> MS </p></td>
+              <td width="68" valign="top"><p align="center"> 0,64 </p></td>
+              <td width="68" valign="top"><p align="center"> 0,105 </p></td>
+              <td width="68" valign="top"><p align="center"> 6,1 </p></td>
+            </tr>
+            <tr>
+              <td width="68" valign="top"><p> 150 Al </p></td>
+              <td width="68" valign="top"><p align="center"> MS </p></td>
+              <td width="68" valign="top"><p align="center"> 0,21 </p></td>
+              <td width="68" valign="top"><p align="center"> 0,093 </p></td>
+              <td width="68" valign="top"><p align="center"> 2,2 </p></td>
+            </tr>
+            <tr>
+              <td width="68" valign="top"><p> 50 Cu </p></td>
+              <td width="68" valign="top"><p align="center"> MS </p></td>
+              <td width="68" valign="top"><p align="center"> 0,39 </p></td>
+              <td width="68" valign="top"><p align="center"> 0,125 </p></td>
+              <td width="68" valign="top"><p align="center"> 3,1 </p></td>
+            </tr>
+            <tr>
+              <td width="68" valign="top"><p> 150 Cu </p></td>
+              <td width="68" valign="top"><p align="center"> MS </p></td>
+              <td width="68" valign="top"><p align="center"> 0,13 </p></td>
+              <td width="68" valign="top"><p align="center"> 0,105 </p></td>
+              <td width="68" valign="top"><p align="center"> 1,2 </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <a href="https://www.phasetophase.nl/boek/boek_1_4.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_4.1.5"></div>
+        <br>
+        <h3>4.1.5 Stroombelastbaarheid</h3>
+        <p> De maximale stroombelastbaarheid van een kabel wordt berekend met de internationaal erkende norm IEC 60287. De berekende waarde is de maximale stroom die
+          continu door de kabel mag lopen zonder dat deze beschadigt. De norm beschrijft de berekening van de verliezen in de kabel en de thermische weerstanden van
+          de kabel en de omgeving. De methode gaat uit van warmteproductie in de kabel en de mogelijkheid dat deze warmte wordt afgevoerd naar de omgeving. De
+          methode is in principe gelijk voor LS- en MS-kabels. De norm NEN 1010 is van IEC 60287 afgeleid en beschrijft de stroombelastbaarheid specifiek voor
+          LS-kabels. </p>
+        <p> Bij het projecteren van een kabelverbinding krijgt de elektrotechnicus te maken met een aantal randvoorwaarden en omgevingscondities. Van de grond waar de
+          kabel in gelegd wordt, moet hij onder andere weten hoe hoog de bodemtemperatuur is, of er gevaar van uitdrogen van de bodem bestaat, hoe hoog het
+          grondwaterpeil staat en hoe groot de thermische weerstand van de bodem om de in bedrijf zijnde kabel zal zijn. Onderstaande aandachtspunten zijn van
+          invloed op de kabelbelastbaarheid: </p>
+        <ul>
+          <li> thermische weerstand van de grond </li>
+          <li> neerslag </li>
+          <li> grondwaterstand </li>
+          <li> bodemmateriaal </li>
+          <li> materiaal van de kabelbedding </li>
+          <li> uitdroging </li>
+          <li> bodemtemperatuur </li>
+        </ul>
+        <h6> De thermische weerstand </h6>
+        <p> De thermische weerstand is een maat voor het vermogen van de omgeving om de geproduceerde warmte af te voeren. Hoe lager de thermische weerstand van de
+          grond, des te beter voert de grond de in de kabel geproduceerde warmte af. Van alle parameters die nodig zijn om de maximaal toelaatbare continu stroom van
+          een ondergrondse kabel te berekenen is de parameter ρ<sub>T</sub>, de thermische weerstand in K·m/W, van de bodem de moeilijkste om correct te bepalen. De
+          ρ<sub>T</sub>-waarde die toegepast moet worden, is de stabiele waarde die optreedt na een langdurige periode van bedrijf van de kabel(s), waarbij de
+          maximaal toelaatbare continue stroom door de kabel loopt. Deze waarde kan echter niet vooraf gemeten worden. Wel kan de ρ<sub>T</sub>-waarde van de
+          ‘maagdelijke’ grond vóór installatie van de kabel(s) door specialisten gemeten worden. Daarnaast zijn het jaarlijks verloop van de vochtigheid, het
+          grondwaterpeil en de temperatuur op de vereiste diepte belangrijk. De metingen moeten bijvoorkeur uitgevoerd worden na de zomer (op het noordelijk halfrond
+          rond het midden van november), omdat dit de meest conservatieve waarde voor ρ<sub>T</sub> zal opleveren. Als de ‘maagdelijke’ grond, waar de kabel in wordt
+          gelegd, geen zand is, maar bijvoorbeeld bestaat uit klei of veen, dan zijn de temperatuur, de vochtigheid en het grondwaterpeil relevant. De kabels dienen
+          bij voorkeur in verdicht zand liggen. De actuele ρ<sub>T</sub>-waarde van het verdichte zand kan echter drastisch afwijken van de eerder geschatte waarde
+          omdat de hoeveelheid vocht in het zand door seizoensinvloeden of door andere externe factoren kan variëren. Zo kan de vochtigheid bijvoorbeeld veranderen
+          indien neerslag niet meer kan binnendringen in de kabelsleuf of indien de grondwaterstand wijzigt. Ook vegetatie kan in open veld de vochtigheid van de
+          bodem beïnvloeden. </p>
+        <h6> Neerslagverschillen </h6>
+        <p> Ervan uitgaande dat de kabels liggen in een omgeving waarin de neerslag volledig kan penetreren in de kabelsleuf, heeft de IEC 60287-3-1 de volgende
+          definities gegeven voor de relatie tussen vochtigheid en thermische weerstand. De waarden in tabel 4.4 mogen alleen gebruikt worden indien er verder geen
+          gegevens over de lokale omstandigheden bekend zijn. </p>
+        <p> De norm IEC 60287 definieert de vochtigheid uitsluitend door de hoeveelheid neerslag. Aangenomen wordt dat de neerslag ongehinderd door de toplaag kan
+          wegzakken. Beïnvloeding van de vochtigheid door mogelijk aanwezig grondwater wordt terecht niet door de norm genoemd behalve dan in de gegevens voor
+          Nederland: ‘sub-soil water level near to cables’. </p>
+        <h5> Tabel 4.4 Relatie tussen thermische weerstand en vochtigheid </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="113" valign="top"><p> <strong>Thermische weerstand</strong> </p>
+                <p> <strong>K·m/W</strong> </p></td>
+              <td width="113" valign="top"><p> <strong>Bodemconditie</strong> </p></td>
+              <td width="113" valign="top"><p> <strong>Weersconditie</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="113" valign="top"><p> 0,7 </p></td>
+              <td width="113" valign="top"><p> Zeer vochtig </p></td>
+              <td width="113" valign="top"><p> Continu vochtig </p></td>
+            </tr>
+            <tr>
+              <td width="113" valign="top"><p> 1,0 </p></td>
+              <td width="113" valign="top"><p> Vochtig </p></td>
+              <td width="113" valign="top"><p> Regelmatige regen </p></td>
+            </tr>
+            <tr>
+              <td width="113" valign="top"><p> 2,0 </p></td>
+              <td width="113" valign="top"><p> Droog </p></td>
+              <td width="113" valign="top"><p> Zelden regen </p></td>
+            </tr>
+            <tr>
+              <td width="113" valign="top"><p> 3,0 </p></td>
+              <td width="113" valign="top"><p> Zeer droog </p></td>
+              <td width="113" valign="top"><p> Weinig of geen regen </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <h6> Grondwater </h6>
+        <p> Wereldwijd gezien is het een grote uitzondering dat de diepte waarop het grondwaterpeil ligt van invloed is op de vochtigheid van het zand in de
+          kabelsleuf. Dit komt omdat het maaiveld meestal veel hoger ligt dan het zeewaterniveau of hoger dan het niveau van bijvoorbeeld een rivier/kanaal of een
+          (groot) meer in de omgeving. In de Sahara ligt het grondwater vaak dieper dan 25 m. In Nederland bestaan er zelfs plekken waar het grondwaterpeil nog veel
+          dieper ligt. In de buurt van Hoog-Soeren op de Veluwe bijvoorbeeld is ooit een peil van meer dan 71 m gemeten en in Limburg is het eens op een diepte van
+          200 m onder het maaiveld gemeten. Er bestaan regionale Nederlandse kaarten waarop het grondwaterpeil op wordt aangegeven. </p>
+        <p> In permanent natte gebieden, dus daar waar het grondwaterpeil bijna permanent vlak onder het maaiveld ligt, is de invloed van neerslag groot. Indien het
+          grondwaterpeil dieper ligt, kan het peil seizoensafhankelijk variëren. Bemaling van het gebied kan het grondwaterpeil permanent verlagen. Verstandig is om
+          plaatselijk of in het kabeltracé metingen te doen en na te gaan of er plannen bestaan om het grondwaterpeil te veranderen. Voor kabels die op een
+          installatiediepte blijvend onder het grond­water­peil liggen, in een goed gecompacteerde en met zand gevulde kabelsleuf, geldt: ρ<sub>T</sub> ≈ 0.5 K·m/W. </p>
+        <h6> De lokale grond </h6>
+        <p> Een grove indeling van de bewerkbare grond is: </p>
+        <ul>
+          <li> Niet organisch materiaal: </li>
+          <li> Klei (leem = silt = löss = Limburgse klei) </li>
+          <li> Zand </li>
+          <li> Organisch materiaal: </li>
+          <li> Veen (laag en hoog) </li>
+        </ul>
+        <p> Materiaal dat na verwarming en verdampen van het aanwezige vocht uitdroogt en een onomkeerbare verandering van de permeabiliteit heeft, is niet acceptabel
+          als ‘bedding’ materiaal. Klei/leem en veen zijn daarom niet geschikt om gebruikt te worden in kabelsleuven. Klei wordt namelijk ‘gebakken’ en vormt dan een
+          voor water ondoordringbare schil om de kabel (ρ<sub>T</sub> ≈ 7 K·m/W). Plantenresten (veen) hebben de zelfde eigenschap (ρ<sub>T</sub> ≈ 4 K·m/W). </p>
+        <h6> Het ‘bedding’ materiaal </h6>
+        <p> Een bedding voor een kabel van samengestelde materiaalmengsels heeft thermische eigenschappen die goed bekend kunnen zijn. Dit is noodzakelijk bij
+          thermisch zwaar belaste kabeltracés. Het enige juiste ‘bedding’ materiaal (backfill) voor de kabels is schoon kwarts zand. Dit zand is van alle
+          bodemmineralen de beste warmtegeleider. De thermische weerstand is ondermeer afhankelijk van de samenstelling, korrelgrootte, compactheid, temperatuur en
+          vochtpercentage. In laboratoriumproeven (Heinhold, 1999) zijn metingen uitgevoerd aan bodemsoorten. De metingen aan uitgedroogde grond resulteerde in
+          thermische weerstanden tussen 1 en 4 Km/W. De verhouding tussen de hoeveelheid grote en kleine korrels geeft de diversiteit in korrelgrootte aan. Zand met
+          een grote diversiteit in korrelgrootte heeft de kleinste thermische weerstand. Bij zand met een kleine diversiteit zijn waardes boven de 3 Km/W gemeten.
+          Figuur 4.5 geeft in curven de thermische weerstand van zandmengsels met grote en kleine diversiteit van korrelgrootte als functie van het volumepercentage
+          vocht. Ook is de thermische weerstand van leemhoudend zand weergegeven. </p>
+        <p> <img width="709" height="415" src="./netcomponenten_files/4.5.png" alt="pics_1.4" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 4.5 Thermische weerstand van diverse zandmengsels </h5>
+        <p> Figuur 4.5 geeft tevens met gestreepte lijnen de niveaus weer van de relatie tussen vocht en thermische weerstand volgens tabel 4.4. Hiermee is te zien dat
+          voor een vochtig gebied met regelmatig regen volgens IEC 60287-3-1 met een thermische weerstand van 1 Km/W gerekend mag worden, terwijl dit volgens de
+          curven van figuur 4.5 toch duidelijk genuanceerder ligt. Bij zand met een kleine korreldiversiteit mag gerekend worden op waarden tussen 0,5 en 1,2 Km/W,
+          maar bij zand met een grote korreldiversiteit op waarden tussen 1,0 en 3,8 Km/W. Hierom is het goed voor te stellen dat men, rekening houdend met de
+          maximale buitenmanteltemperatuur en de uitdroging die dit als gevolg kan hebben, bij gebrek aan gegevens liever uitgaat van een waarde voor de thermische
+          weerstand van uitgedroogd zand van 2,5 Km/W. </p>
+        <p> De vochtigheid van zand hangt af van de hoeveelheid regen en van de hoeveelheid grondwater, die tot het kabelbed kunnen doordringen. Tabel 4.5 geeft een
+          overzicht van de thermische weerstand van zand, klei en veen voor diverse vochtigheden. De tabel is afgeleid uit diverse tabellen van thermische
+          geleidbaarheid van materialen (Engineering, 2011), (De Vries, 1963). Er is geen eenduidigheid in de internationaal gehanteerde waarden, zodat de waarden in
+          de tabel indicatief zijn. Voor alle duidelijkheid: aarde, klei en veen zijn alleen in de tabel opgenomen ter vergelijking. </p>
+        <h5> Tabel 4.5 Eigenschappen van bodemmateriaal </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="71" valign="top"><p> <strong>Materiaal</strong> </p></td>
+              <td width="106" valign="top"><p> <strong>Conditie</strong> </p></td>
+              <td width="64" valign="top"><p align="center"> <strong>Minimale </strong> <strong>ρ<sub>T</sub> (K</strong> <strong>·m/W)</strong> </p></td>
+              <td width="99" valign="top"><p align="center"> <strong>Maximale ρ<sub>T</sub>·m/W)</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="71" valign="top"><p> Zand </p></td>
+              <td width="106" valign="top"><p> Verzadigd met water </p></td>
+              <td width="64" valign="top"><p align="center"> 0,25 </p></td>
+              <td width="99" valign="top"><p align="center"> 0,50 </p></td>
+            </tr>
+            <tr>
+              <td width="71" valign="top"><p> Zand </p></td>
+              <td width="106" valign="top"><p> Vochtig </p></td>
+              <td width="64" valign="top"><p align="center"> 0,50 </p></td>
+              <td width="99" valign="top"><p align="center"> 1,00 </p></td>
+            </tr>
+            <tr>
+              <td width="71" valign="top"><p> Zand </p></td>
+              <td width="106" valign="top"><p> Droog </p></td>
+              <td width="64" valign="top"><p align="center"> 1,00 </p></td>
+              <td width="99" valign="top"><p align="center"> 3,00 </p></td>
+            </tr>
+            <tr>
+              <td width="71" valign="top"><p> Zand </p></td>
+              <td width="106" valign="top"><p> Zeer droog </p></td>
+              <td width="64" valign="top"><p align="center"> 3,00 </p></td>
+              <td width="99" valign="top"><p align="center"> 6,67 </p></td>
+            </tr>
+            <tr>
+              <td width="71" valign="top"><p> <em>Aarde</em> </p></td>
+              <td width="106" valign="top"><p> <em>Droog</em> </p></td>
+              <td width="64" valign="top"><p align="center"> <em>0,67</em> </p></td>
+              <td width="99" valign="top">&nbsp;</td>
+            </tr>
+            <tr>
+              <td width="71" valign="top"><p> <em>Klei</em> </p></td>
+              <td width="106" valign="top"><p> <em>Verzadigd met water</em> </p></td>
+              <td width="64" valign="top"><p align="center"> <em>0,40</em> </p></td>
+              <td width="99" valign="top"><p align="center"> <em>1,67</em> </p></td>
+            </tr>
+            <tr>
+              <td width="71" valign="top"><p> <em>Klei</em> </p></td>
+              <td width="106" valign="top"><p> <em>Vochtig</em> </p></td>
+              <td width="64" valign="top"><p align="center"> <em>0,56</em> </p></td>
+              <td width="99" valign="top"><p align="center"> <em>6,67</em> </p></td>
+            </tr>
+            <tr>
+              <td width="71" valign="top"><p> <em>Veen</em> </p></td>
+              <td width="106" valign="top"><p> <em>Verzadigd - vochtig</em> </p></td>
+              <td width="64" valign="top"><p align="center"> <em>0,25</em> </p></td>
+              <td width="99" valign="top"><p align="center"> <em>4,00</em> </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Omdat een bedding van zand ‘poreus’ blijft kan mogelijk verdampend vocht worden vervangen door neerslag en als het grondwaterpeil hoog genoeg is door
+          grondwater. Vocht kan ook zijdelings uit de bestaande lokale bodem in de kabelsleuf binnendringen, mits de kabelsleuf geen gesloten zijwanden heeft. </p>
+        <p> De meeste industrieterreinen zijn geëgaliseerd met zand of zijn met zand opgespoten terreinen. Het geheel terugvullen van de kabelsleuf met schoon zand is
+          dan geen probleem. Kabels, geïnstalleerd buiten industrieterreinen, liggen meestal in andere grondsoorten zoals in veen of in klei. Het is ver­standig om
+          altijd zand te gebruiken als bedding omdat zand de kleinste thermische weerstand heeft. </p>
+        <div class="row">
+          <div class="col-md-6"> <img width="400		" height="345" src="./netcomponenten_files/4.6.jpg" alt="rivierzand" class="img-responsive-leon-15px center-block">
+            <h5> Figuur 4.6 Rivierzand </h5>
+          </div>
+          <div class="col-md-6"> <img width="400	" height="2560" src="./netcomponenten_files/4.7.jpg" alt="pics_1.4" class="img-responsive-leon-15px center-block">
+            <h5> Figuur 4.7 Het leggen van een 10 kV-kabel </h5>
+          </div>
+        </div>
+        <p> Het zand kan een hoeveelheid water opnemen, terwijl het volume van het zand niet verandert. Het water moet de alleen ruimten tussen de zandkorrels
+          opvullen. Als bijvoorbeeld 100 liter water door 1 m<sup>3</sup> zand opgenomen is, bevat dit 10 vol % vocht. Het maximum vol % vocht dat door zand met een
+          droge dichtheid van ongeveer 1700 kg/m<sup>3</sup> kan worden opgenomen is ongeveer 15%. </p>
+        <p> Bij een gegeven volumepercentage water heeft zand met een hoge dichtheid een lagere thermische weerstand dan zand met een lagere dichtheid. Daarom is naast
+          de korrelgrootte van het zand ook het compacteren na het storten van het natte zand belangrijk. Bij gecompacteerd zand kan met een lager volumepercentage
+          vocht worden volstaan om dezelfde thermische weerstand te bereiken dan bij niet gecompacteerd zand. Het inspoelen van het zand met water is overigens geen
+          compacteer­methode, want waar water zit kunnen geen zandkorrels zijn en als het water na verloop van tijd wegzakt blijven er met lucht gevulde ruimtes over
+          tussen de zandkorrels. </p>
+        <p> Door het uitgraven van de kabelsleuf wordt de bodem verstoord. Het beddingmateriaal in de gehele kabelsleuf kan meestal niet zo goed worden gecompacteerd
+          (verdicht) dat de oorspronkelijk gunstige eigenschappen van de ongestoorde bodem worden geëvenaard. Het kan zelfs zo zijn dat de kabelsleuf met
+          beddingmateriaal een grotere thermische weerstand heeft dan de oorspronkelijke bodem. Toch wordt hiervoor gekozen om de kans op uitdroging van het
+          oorspronkelijke bodemmateriaal te verkleinen en de nieuwe omgevingscondities hierdoor bekend zijn. Meer specifieke informatie is te vinden in de literatuur
+          (Heinhold, 1999). </p>
+        <h6> Uitdroging </h6>
+        <p> Als van een continu vol belaste kabel op een diepte van 0,7 m en bij een grond temperatuur van 20 °C de temperatuur aan de omtrek van de buitenmantel
+          ongeveer 35 °C is, begint het verdampingsproces van het vocht in het zand direct rondom de kabel (VDE 0298 Teil 2). Toen nog alleen papierisolatie werd
+          gebruikt, waren problemen door uitdroging niet aan de orde omdat de adertemperatuur bij papierkabel begrensd was tot 50 °C en de mantel temperatuur lager
+          was dan 35 °C. Zand en ook klei konden daardoor bijna niet uitdrogen. Met de komst van XLPE geïsoleerde kabel kan bij een maximale geleidertemperatuur van
+          90°C de mantel temperatuur oplopen naar ongeveer 75 °C, waardoor goed gelet moet worden op het gevaar van uitdroging van de grond. </p>
+        <p> Het risico van uitdroging bestaat als het aan de omtrek van de kabelmantel verdampte vocht niet ‘vervangen’ wordt door ander vocht. Deze situatie kan
+          optreden als: </p>
+        <ul>
+          <li> het binnendringen van neerslag in de kabelsleuf en in directe omgeving bemoeilijkt of onmogelijk is (door bestrating, vloeistofdichte toplaag en
+            zijwanden) of </li>
+          <li> doordat er (veel) minder neerslag is dan oorspronkelijk verwacht was of </li>
+          <li> doordat het grondwaterpeil is gezakt. </li>
+        </ul>
+        <h6> <em>Onder bestrating</em> </h6>
+        <p> Een kruising van een kabelsleuf met een weg, kan onder de weg uitdroging van het zand om de kabels tot gevolg hebben. Onder elke (gedeeltelijke)
+          waterdichte afdekking van de sleuf met meer dan één meter lengte bestaat dit gevaar. Ook doet zich de situatie voor dat vóór installatie van de kabels
+          onder een toplaag van asfalt of beton de bodem­tempera­tuur in de zomer 5 °C of meer hoger kan zijn dan de temperatuur van de grond in het open veld (op de
+          zelfde diepte gemeten). Dit komt door de opwarming van het asfalt of het beton door de zonnewarmte. </p>
+        <h6> <em>Onder een vloeistofdichte toplaag</em> </h6>
+        <p> In industriële installaties liggen de met zand en back-fill gevulde kabelsleuven vaak tussen de beton­fundaties voor de apparaten of tussen (dure)
+          zijdelingse betonnen wanden. Over de kabelsleuf moet dan meestal een vloeistofdichte en of een berijdbare toplaag worden aangebracht. Deze toplaag moet,
+          indien het zand en de back-fill na enige tijd, ondanks het compacteren, toch nog iets inklinken, mee kunnen zakken om te voorkomen dat er een warmte
+          isolerend luchtlaag(je) ρ<sub>T</sub> ≈ 40 K·m/W, ontstaat tussen de back-fill en de aangebrachte toplaag. </p>
+        <p> Met het risico van bodemuitdroging rekening kan rekening worden gehouden door bij het ontwerp met een voldoend hoog gekozen waarde voor de specifieke
+          thermische grondweerstand te rekenen of te rekenen met een maximum buitenmanteltemperatuur van de kabel. Het compleet uitdrogen van een operationele
+          kabelsleuf kan enige tijd duren en kondigt zich pas aan als het te laat is. Een juiste inschatting van de waarde van ρ<sub>T</sub> met de minimum
+          hoeveelheid vocht na een langdurig operationeel bedrijf is dus essentieel. Omdat ook hier geldt dat een keten is zo sterk is als de zwakste schakel, is de
+          slechtste waarde van ρ<sub>T</sub> in het tracé doorslaggevend voor het hele kabel circuit. </p>
+        <h6> Bodemtemperatuur </h6>
+        <p> De bodemtemperatuur heeft grote invloed op de kabelbelastbaarheid. De temperatuur wordt beïnvloed door allerlei in de grond aanwezige warmteproducerende
+          bronnen, zoals parallelle circuits en warmteleidingen. Ook seizoensinvloeden zoals zomer- en wintercondities mogen niet verwaarloosd worden. De
+          seizoensinvloed kan tot 10 graden verschil in bodemtemperatuur veroorzaken. </p>
+        <h6> Berekening van de stroombelastbaarheid </h6>
+        <p> De maximale belasting van de kabels wordt enerzijds begrensd door de maximale temperatuur die de isolatie toestaat en anderzijds door het uitdrogen van de
+          grond rond de kabel. In Nederland kan de grond uitdrogen bij een geleidertemperatuur van 50 °C en hoger. Voor GPLK kabels beperkt het isolatiemateriaal de
+          geleidertemperatuur tot 50 °C. De buitenmantel heeft dan een lagere temperatuur, waardoor bij deze kabels het risico op gronduitdroging niet groot is. Deze
+          kabels kunnen zodoende nominaal worden belast. Vanwege de negatieve invloed op de levensduur wordt een tijdelijke overbelasting van deze kabels vermeden.
+          XLPE-kabels staan hogere temperaturen van de isolatie toe dan GPLK-kabels. De maximaal toelaatbare geleidertemperatuur van deze kabel is 90 °C. Deze hoge
+          temperatuur brengt een groot risico op uitdroging van de grond met zich mee. Uitdroging van de grond is een niet-omkeerbaar proces, waarbij de thermische
+          eigenschap van de wijzigt. De thermische grondweerstand neemt toe met als gevolg dat de kabel blijvend zijn warmte minder goed afstaat. De
+          geleidertemperatuur wordt dus beperkt door eisen te stellen aan de maximale buitenmanteltemperatuur, zodat de grond niet uitdroogt. De XLPE-kabels hebben
+          zodoende een marge in de belastbaarheid. Door de traagheid van het opwarmingsproces is in specifieke omstandigheden een tijdelijke overbelasting
+          toegestaan. Als voorbeeld wordt de belastbaarheid van een drie-aderige XLPE-kabel met 95 mm<sup>2</sup> koperen geleiders gegeven. De kabel is begraven op
+          1 m diepte in grond met een thermische weerstand van 1 Km/W en een omgevingstemperatuur van 15 °C. Bij deze omstandigheden kan deze kabel, uitgaande van
+          een geleidertemperatuur van 90 °C maximaal een continue stroom voeren van 305 A. De temperatuur van de buitenmantel wordt dan 61 °C. Bij deze temperatuur
+          zal de grond rondom de kabel uitdrogen. Om dit te voorkomen kan ervoor gekozen worden de temperatuur van de buitenmantel te begrenzen op 45 °C. In dat
+          geval is de maximaal toegestane continue stroom 255 A. Uitgaande van deze stroomwaarde heeft de kabel een marge voor tijdelijke belastingen van 50 A.
+          Indien een tijdelijke overbelasting wordt toegestaan, mag de belasting van deze kabel volgens de norm IEC 60853 in deze omstandigheden zelfs gedurende twee
+          uren van 255 A naar 348 A worden verhoogd of gedurende vijf uren van 255 A naar 339 A. </p>
+        <p> Met de in deze paragraaf beschreven omgevingsfactoren kan de belastbaarheid van een kabel met behulp van de internationaal erkende norm IEC 60287 exact
+          uitgerekend worden (Phase, 2006). Het is echter niet altijd eenvoudig om aan de benodigde parameters te komen. Kabelfabrikanten specificeren de
+          belastbaarheid van kabels voor nominale omstandigheden en zij geven correctiefactoren voor afwijkingen van temperaturen en liggingomstandigheden van de
+          nominale waarden. Ook de norm NEN 1010 maakt gebruik van correctiefactoren. </p>
+        <p> Netontwerpers hanteren vaak bedrijfseigen richtlijnen die veelal afgeleid zijn van methodes die werken met correctiefactoren om de nominale stroom voor
+          iedere gewenste situatie te berekenen. Daarboven wordt in verband met de levensduur van de kabels een ‘optimale’ stroom vastgesteld. De bedrijfsstroom mag
+          hier niet boven uitkomen. De optimale stroom is afgeleid uit de statistieken met betrekking tot de levensduur van de kabel en de te verwachten kosten. De
+          optimale stroom bedraagt voor GPLK kabels 70% en voor XLPE kabels 90% van de nominale stroom. </p>
+        <h6> Wisselende belasting </h6>
+        <p> De berekeningen en richtlijnen gaan er normaal gesproken van uit dat er een stationaire stroom door de kabel vloeit. In werkelijkheid verandert de
+          belasting over de dag. In het geval van een dagelijks wisselende belasting zal de maximale temperatuur van de kabel meestal lager zijn dan de temperatuur
+          die hoort bij een stationair vloeiende stroom ter grootte van het maximum van de dagcyclus. Met die wetenschap is het mogelijk om de kabel tijdelijk meer
+          dan nominaal te belasten. De berekeningsmethode hiervoor is te vinden in de norm IEC 60853. Het betreft hier de berekening van de dynamische
+          kabelbelastbaarheid van de kabel. </p>
+        <p> Een sterk wisselende belasting is slecht voor de levensduur van GPLK-kabels. De aders van GPLK-kabels zijn omsloten door een loodmantel. Door sterke
+          verwarming van de kabel zal de het impregneermiddel (de massa) vloeibaar worden en uitzetten waardoor de druk binnen de kabel toeneemt en alle holtes
+          gevuld worden. Hierbij zal de loodmantel zich zetten in het pantser. Ook kan het impregneermiddel zich verplaatsen (migreren) door de kabel en eventueel
+          zelfs door de moffen. Bij het afkoelen van de kabel zal de druk afnemen maar de eenmaal uitgezette loodmantel zal niet elastisch krimpen. Hierdoor zal het
+          impregneermiddel terug migreren maar kunnen ook nieuwe holtes ontstaan. Dit effect in sterk wisselend belaste GPLK-kabels wordt het pomp- en zuigeffect
+          genoemd. Dit effect vergroot de kans op storingen in moffen en eindsluitingen en veroorzaakt veroudering van de kabel zelf. In lokale holtes ontstaan
+          hierdoor deelontladingen, die het impregneermiddel ontleden en verkoling van de papierisolatie veroorzaken. Uiteindelijk zal er een kortsluiting optreden.
+          Vanwege dit effect en om reden van milieuaspecten worden bij vervanging en nieuwbouw alleen kunststof kabels toegepast. </p>
+        <p> Samenvattend zijn de voordelen van XLPE-kabel ten opzichte van de GPLK-kabel: </p>
+        <ul>
+          <li> hogere belastbaarheid, zowel continue als tijdelijk toegenomen belasting (kortstondige overbelasting is toegestaan) </li>
+          <li> beter bestand tegen sterk wisselende belasting (dit maakt de kabel bij uitstek geschikt voor het aansluiten van fluctuerende bronnen zoals decentrale
+            opwekking) </li>
+          <li> doordat de kunststof kabels geen pomp- en zuigeffect vertonen zijn zij betrouwbaarder. </li>
+        </ul>
+        <p> Tabel 4.6 geeft een overzicht van de maximale stroombelastbaarheid van enkele veelgebruikte kunststof MS-kabels. De waarden zijn berekend aan de hand van
+          IEC 60287, waarbij de liggingsomstandigheid is gespecificeerd in NPR 3626: </p>
+        <ul>
+          <li> Bodemtemperatuur: θ<sub>omg</sub> = 15°C </li>
+          <li> Geleidertempetratuur: θ<sub>geleider</sub> = 90°C </li>
+          <li> Liggingsdiepte: L = 1 m </li>
+          <li> Thermische weerstand van de grond: ρ<sub>T</sub> = 0,75 Km/W </li>
+          <li> Geen beïnvloeding door andere warmtebronnen; 1 circuit </li>
+          <li> Gedeeltelijke uitdroging van de grond: kritische isotherm 30°C; thermische weerstand van de uitgedroogde grond: ρ<sub>T</sub> = 2,5 Km/W </li>
+        </ul>
+        <h5> Tabel 4.6 Stroombelastbaarheid van enkele veelgebruikte drieaderige kabels </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="33%" valign="top"><p> <strong>Geleiderdoorsnede (mm<sup>2</sup>)</strong> </p></td>
+              <td width="33%" valign="top"><p align="center"> <strong>Aluminium geleider</strong> </p></td>
+              <td width="33%" valign="top"><p align="center"> <strong>Koperen geleider</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="33%" valign="top"><p> 3 x 50 </p></td>
+              <td width="33%" valign="top"><p align="center"> – </p></td>
+              <td width="33%" valign="top"><p align="center"> 185 A </p></td>
+            </tr>
+            <tr>
+              <td width="33%" valign="top"><p> 3 x 95 </p></td>
+              <td width="33%" valign="top"><p align="center"> 210 A </p></td>
+              <td width="33%" valign="top"><p align="center"> 265 A </p></td>
+            </tr>
+            <tr>
+              <td width="33%" valign="top"><p> 3 x 150 </p></td>
+              <td width="33%" valign="top"><p align="center"> 265 A </p></td>
+              <td width="33%" valign="top"><p align="center"> 335 A </p></td>
+            </tr>
+            <tr>
+              <td width="33%" valign="top"><p> 3 x 240 </p></td>
+              <td width="33%" valign="top"><p align="center"> 345 A </p></td>
+              <td width="33%" valign="top"><p align="center"> 430 A </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <a href="https://www.phasetophase.nl/boek/boek_1_4.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_4.1.6"></div>
+        <br>
+        <h3>4.1.6 Belastbaarheid bij kortsluitstromen</h3>
+        <p> Alle kabels moeten een kortsluitstroom kunnen voeren totdat deze door de beveiliging wordt afgeschakeld. De tijdsduur dat een kortsluitstroom mag vloeien
+          wordt bepaald door de kabeleigenschappen en is gespecificeerd door de fabrikant. Indien dit gegeven niet bekend is, geeft de norm NEN 1010 een methode om
+          de kortsluitbelastbaarheid te berekenen. Hierbij wordt ervan uitgegaan dat de kortsluitstroom in ieder geval binnen 5 s wordt afgeschakeld. Binnen deze
+          tijd is het opwarmen van de kabel een adiabatisch proces. Dit betekent dat de opwarming van de kabel gedurende een zo korte tijd plaatsvindt, dat geen
+          warmteuitwisseling plaatsvindt met de omgeving. </p>
+        <p> Voor kortsluitingen gedurende een kortere tijd dan 5 s kan de maximale tijdsduur <em>t</em>, waarin bij een gegeven kortsluitstroom de temperatuur van de geleiders
+          zal stijgen van de hoogst toelaatbare bedrijfstemperatuur tot de hoogst toelaatbare temperatuur bij kortsluiting, bij benadering met de volgende formule
+          worden berekend: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./netcomponenten_files/formule-4.1.png" width="" height="" alt="formules_1.4"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 4.1 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> waarin:
+        </p><blockquote>
+          <p> <em>t</em> tijdsduur van de kortsluitstroom (s) <br>
+            <em>S</em> nominale kerndoorsnede (mm<sup>2</sup>) <br>
+            <em>I<sub>k</sub></em> effectieve kortsluitstroom (A) <br>
+            <em>k</em> een factor waarbij rekening is gehouden met de kabeleigenschappen </p>
+        </blockquote>
+        <p> De factor <em>k</em> houdt rekening met de soortelijke weerstand, de temperatuurcoëfficiënt, de soortelijke warmte van het geleidermateriaal, de hoogst toelaatbare bedrijfstemperatuur (de begintemperatuur, <em>θ<sub>i </sub>)</em> en de hoogst toelaatbare temperatuur bij kortsluiting (de eindtemperatuur, <em>θ<sub>f </sub>)</em>. Voor de gangbare isolatiematerialen en geleidermaterialen wordt de waarde van <em>k</em> gegeven in tabel 4.7. De berekeningsmethode wordt nader toegelicht in hoofdstuk 10, bij de berekening van de kortsluitvastheid. </p>
+        <h5> Tabel 4.7 Waarden voor k voor diverse geleiders en isolatie </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90" rowspan="2" valign="top"><p> <strong>Geleiderisolatie</strong> </p></td>
+              <td width="98" colspan="2" valign="top"><p align="center"> <strong>PVC 70°C</strong> </p></td>
+              <td width="98" colspan="2" valign="top"><p align="center"> <strong>PVC 90°C</strong> </p></td>
+              <td width="54" rowspan="2" valign="top"><p align="center"> <strong>EPR/XLPE</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="49" valign="top"><p align="center"> ≤ 300 mm<sup>2</sup> </p></td>
+              <td width="49" valign="top"><p align="center"> &gt; 300 mm<sup>2</sup> </p></td>
+              <td width="49" valign="top"><p align="center"> ≤ 300 mm<sup>2</sup> </p></td>
+              <td width="49" valign="top"><p align="center"> &gt; 300 mm<sup>2</sup> </p></td>
+            </tr>
+            <tr>
+              <td width="90" valign="top"><p> q<sub>i</sub> </p></td>
+              <td width="49" valign="top"><p align="center"> 70 </p></td>
+              <td width="49" valign="top"><p align="center"> 70 </p></td>
+              <td width="49" valign="top"><p align="center"> 90 </p></td>
+              <td width="49" valign="top"><p align="center"> 90 </p></td>
+              <td width="54" valign="top"><p align="center"> 90 </p></td>
+            </tr>
+            <tr>
+              <td width="90" valign="top"><p> q<sub>f</sub> </p></td>
+              <td width="49" valign="top"><p align="center"> 160 </p></td>
+              <td width="49" valign="top"><p align="center"> 140 </p></td>
+              <td width="49" valign="top"><p align="center"> 160 </p></td>
+              <td width="49" valign="top"><p align="center"> 140 </p></td>
+              <td width="54" valign="top"><p align="center"> 250 </p></td>
+            </tr>
+            <tr>
+              <td width="90" valign="top"><p> Geleidermateriaal </p></td>
+              <td width="250" colspan="5" valign="top"><p align="center"> waarden van <em>k</em> </p></td>
+            </tr>
+            <tr>
+              <td width="90" valign="top"><p> Koper </p></td>
+              <td width="49" valign="top"><p align="center"> 115 </p></td>
+              <td width="49" valign="top"><p align="center"> 103 </p></td>
+              <td width="49" valign="top"><p align="center"> 100 </p></td>
+              <td width="49" valign="top"><p align="center"> 86 </p></td>
+              <td width="54" valign="top"><p align="center"> 143 </p></td>
+            </tr>
+            <tr>
+              <td width="90" valign="top"><p> Aluminium </p></td>
+              <td width="49" valign="top"><p align="center"> 76 </p></td>
+              <td width="49" valign="top"><p align="center"> 68 </p></td>
+              <td width="49" valign="top"><p align="center"> 66 </p></td>
+              <td width="49" valign="top"><p align="center"> 57 </p></td>
+              <td width="54" valign="top"><p align="center"> 93 </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Hieruit wordt de waarde van <em>I<sub>k,1s</sub></em> berekend: de maximale waarde van de kortsluitstroom, die gedurende 1 seconde door de kabel mag vloeien zonder
+          dat deze beschadigt. </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./netcomponenten_files/formule-4.2.png" alt="formules_1.4"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 4.2 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> De kortsluitstroom, die gedurende een willekeurige tijd <em>t</em> door de kabel mag vloeien wordt dan als volgt uit <em>I<sub>k,1s</sub></em> berekend: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./netcomponenten_files/formule-4.3.png" alt="formules_1.4"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 4.3 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <br>
+        <a href="https://www.phasetophase.nl/boek/boek_1_4.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_4.2"></div>
+        <br>
+        <h2>4.2 Moffen</h2>
+        <p> Kabels worden geproduceerd in beperkte lengtes. Bij toepassing in een circuit worden meerdere lengten door middel van moffen aan elkaar gelast. Ook bij een
+          reparatie worden de kabels met moffen weer met elkaar verbonden. Aan het begin en aan het einde van het circuit worden de kabels met behulp van
+          eindsluitingen op de andere componenten aangesloten. In het verleden zijn in MS-netten voor GPLK-kabels massamoffen en oliemoffen toegepast. Tegenwoordig
+          worden moffen (en eindsluitingen) voornamelijk in kunststofuitvoeringen toegepast. </p>
+        <p> Moffen hebben grote invloed op de betrouwbaarheid. In de praktijk is gebleken dat kabelstoringen meestal in de moffen optreden. De moffen blijven zwakke
+          schakels in de elektriciteitsnetten, hoe goed zij ook gemaakt zijn. Figuur 4.8 toont een MS-verbindingsmof voor XLPE-kabels. In het algemeen is een mof
+          opgebouwd uit een verbinding voor de geleider (1). Voorheen werden persverbinders gebruikt, maar tegenwoordig worden schroefverbinders gebruikt. Om de
+          geleider wordt een isolatielichaam van siliconenrubber aangebracht (2). Op het contactvlak met de geleider is een halfgeleidende laag aangebracht (3) voor
+          de veldsturing. Ook op het contactvlak met het isolatiescherm van de kabel is een halfgeleidende laag aangebracht (4) voor de veldsturing. De afscherming
+          van de kabel wordt aan beide uiteinden met de afscherming van de mof verbonden (5), zodat de afscherming doorloopt. Het geheel wordt omgeven door een
+          beschermende laag (6) die verhindert dat vuil en vocht binnendringen. </p>
+        <p> <img width="714" height="600" src="./netcomponenten_files/4.8.jpg" alt="pics_1.4" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 4.8 Middenspanningsmof voor enkeladerige kabel </h5>
+        <p> <img width="714" height="235" src="./netcomponenten_files/4.9.png" alt="pics_1.4" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 4.9 Middenspanningsmof voor drieaderige kabel </h5>
+        <p> Figuur 4.9 toont een vergelijkbare constructie voor een drieaderige kabel. Hierin wordt elke ader individueel afgeschermd, waarna de drie aders gezamenlijk
+          worden omsloten door een beschermende laag. </p>
+        <p> Figuur 4.10 toont een veelgebruikte mof om papiergeïsoleerde (GPLK) en kunststofgeïsoleerde (XLPE) kabels te verbinden. De aders bevinden zich in een
+          kunststof omhulsel, dat gevuld wordt met een isolatiemedium van vloeibare siliconen. De mof wordt omsloten door een buitenmof, die voor vochtafscherming
+          gevuld wordt met een harsverbinding. </p>
+        <p> <img width="714" height="864" src="./netcomponenten_files/4.10.jpg" alt="Overgangsmof" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 4.10 Overgangsmof voor drieaderige GPLK- naar XLPE-kabel </h5>
+        <p> Voor het herstellen van een defect worden speciale herstelmoffen gebruikt, die een extra lange geleiderverbinding hebben. Normaal gesproken zal een defect
+          stuk van de kabel worden uitgenomen, waarna dit vervangen wordt door een nieuw kabelstuk dat met twee moffen aan de bestaande kabel wordt gemonteerd. Van
+          de herstelmof is de totale lengte groter dan die van een gewone verbindingsmof, waardoor deze in de meeste gevallen het defecte kabelstuk in één keer kan
+          vervangen. </p>
+        <p> <img width="" height="" src="./netcomponenten_files/4.11.png" alt="pics_1.4" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 4.11 LS-aftakmof </h5>
+        <p> In het LS-net wordt elke aansluiting op de hoofdkabel met behulp van aftakmoffen gerealiseerd. Moderne LS-aftakmoffen kunnen onder spanning worden
+          aangebracht zonder de aders te onderbreken. Figuur 4.11 toont de verbindingen binnen een aftakmof. Een klem wordt om de vier geleiders aangebracht. Door
+          het aandraaien van de bouten komt de knelverbinding met de geleider tot stand. De mof wordt omgeven door een omhulling. Deze wordt gevuld met een
+          stabiliserende en isolerende substantie. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_1_4.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_4.3"></div>
+        <br>
+        <h2>4.3 Transformatoren</h2>
+        <p> Transformatoren verbinden de netten van verschillende spanningsniveaus met elkaar. In sommige gevallen verbinden transformatoren netten van gelijk
+          spanningsniveau, bijvoorbeeld in uitgestrekte netten, waar zogenaamde boostertransformatoren het optredende spanningsverlies in het circuit compenseren. In
+          distributienetten zijn de belangrijkste transformatoren: </p>
+        <ul>
+          <li> voedingstransformatoren, meestal tussen HS- en MS-niveau </li>
+          <li> distributietransformatoren tussen MS- en LS-niveau </li>
+        </ul>
+        <p> Voedingstransformatoren bestaan in zeer veel uitvoeringsvormen. De belangrijkste kenmerken van een transformator zijn: </p>
+        <ul>
+          <li> nominale spanning: elke transformator heeft een primaire en een secundaire wikkeling en soms ook een tertiaire wikkeling; voor elke wikkeling is de
+            nominale spanning gegeven in V </li>
+          <li> nominaal vermogen: het schijnbare vermogen dat de transformator kan transporteren, gegeven in VA </li>
+          <li> relatieve kortsluitspanning: de spanning die over de primaire wikkeling staat indien de secundaire wikkeling is kortgesloten, gegeven in procenten van de
+            nominale spanning </li>
+          <li> schakeling: de drie fasewikkelingen kunnen op diverse manieren met elkaar worden geschakeld; gebruikelijk is een driehoekschakeling of een
+            sterschakeling, al dan niet met uitgevoerd sterpunt. </li>
+        </ul>
+        <p> De schakeling van de transformatorwikkelingen wordt bepaald door het aangesloten net. Dit kan een zwevend of een impedantie-geaard net zijn. Bij een
+          HS/MS-voedingstransformator is de primaire wikkeling meestal in ster geschakeld en is de secundaire wikkeling in driehoek geschakeld. Deze schakeling wordt
+          aangeduid met de lettercombinatie Yd. Voor de driehoekschakeling wordt gekozen omdat het MS-net meestal een zwevend net is. Hier is geen nulgeleider
+          aanwezig. </p>
+        <p> Voor de omzetting van middenspanning naar laagspanning worden distributietransformatoren gebruikt. Dit zijn meestal normtransformatoren, zo genoemd omdat
+          de typen in genormeerde reeksen geproduceerd worden. Normtransformatoren hebben een primaire wikkeling met aftakkingen op 11250, 11000, 10750, 10500 en
+          10250 Volt (NEN 2761 tot en met 2765, zie ook NEN-EN 50464 en NEN-EN 50541). De laagspanningswikkeling van de normtransformator heeft een nominale spanning
+          van 420 Volt. </p>
+        <p> Bij een MS/LS-distributietransformator is de primaire wikkeling in driehoek geschakeld en is de laagspanningswikkeling in ster geschakeld. Aan
+          laagspanningszijde is het sterpunt uitgevoerd (zie figuur 4.13). Deze schakeling wordt aangeduid met de lettercombinatie Dyn. Het sterpunt wordt
+          aangesloten op de nulgeleider van het laagspanningssysteem, het kabelscherm of de loodmantel en is in het netstation geaard. De belangrijkste technische
+          gegevens van de normtransformatoren zijn in tabel 4.8 vermeld (EnergieNed, 1996). Het kortsluitverlies is gelijk aan het I<sup>2</sup>R-verlies als gevolg
+          van de stroom door de transformator. Het kortsluitverlies is gegeven bij het nominale getransporteerde vermogen. Het nullastverlies ontstaat door het
+          magnetiseren van de transformator. Het nullastverlies is onafhankelijk van het getransporteerde vermogen. </p>
+        <h5> Tabel 4.8 Technische gegevens van normtransformatoren </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="25%" valign="top"><p align="center"> <strong>Nominaal vermogen (kVA)</strong> </p></td>
+              <td width="25%" valign="top"><p align="center"> <strong>Relatieve kortsluit-<br>
+                  spanning (%)</strong> </p></td>
+              <td width="25%" valign="top"><p align="center"> <strong>Kortsluitverlies (kW)</strong> </p></td>
+              <td width="25%" valign="top"><p align="center"> <strong>Nullastverlies (kW)</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="25%" valign="top"><p align="center"> 50 </p></td>
+              <td width="85" valign="top"><p align="center"> 4 </p></td>
+              <td width="85" valign="top"><p align="center"> 0,8 </p></td>
+              <td width="85" valign="top"><p align="center"> 0,1 </p></td>
+            </tr>
+            <tr>
+              <td width="85" valign="top"><p align="center"> 100 </p></td>
+              <td width="85" valign="top"><p align="center"> 4 </p></td>
+              <td width="85" valign="top"><p align="center"> 1,4 </p></td>
+              <td width="85" valign="top"><p align="center"> 0,2 </p></td>
+            </tr>
+            <tr>
+              <td width="85" valign="top"><p align="center"> 160 </p></td>
+              <td width="85" valign="top"><p align="center"> 4 </p></td>
+              <td width="85" valign="top"><p align="center"> 1,9 </p></td>
+              <td width="85" valign="top"><p align="center"> 0,3 </p></td>
+            </tr>
+            <tr>
+              <td width="85" valign="top"><p align="center"> 250 </p></td>
+              <td width="85" valign="top"><p align="center"> 4 </p></td>
+              <td width="85" valign="top"><p align="center"> 2,6 </p></td>
+              <td width="85" valign="top"><p align="center"> 0,4 </p></td>
+            </tr>
+            <tr>
+              <td width="85" valign="top"><p align="center"> 400 </p></td>
+              <td width="85" valign="top"><p align="center"> 4 </p></td>
+              <td width="85" valign="top"><p align="center"> 3,8 </p></td>
+              <td width="85" valign="top"><p align="center"> 0,5 </p></td>
+            </tr>
+            <tr>
+              <td width="85" valign="top"><p align="center"> 630 </p></td>
+              <td width="85" valign="top"><p align="center"> 4 </p></td>
+              <td width="85" valign="top"><p align="center"> 5,2 </p></td>
+              <td width="85" valign="top"><p align="center"> 0,8 </p></td>
+            </tr>
+            <tr>
+              <td width="85" valign="top"><p align="center"> 1000 </p></td>
+              <td width="85" valign="top"><p align="center"> 6 </p></td>
+              <td width="85" valign="top"><p align="center"> 8,8 </p></td>
+              <td width="85" valign="top"><p align="center"> 1,0 </p></td>
+            </tr>
+            <tr>
+              <td width="85" valign="top"><p align="center"> 1600 </p></td>
+              <td width="85" valign="top"><p align="center"> 6 </p></td>
+              <td width="85" valign="top"><p align="center"> 12,9 </p></td>
+              <td width="85" valign="top"><p align="center"> 1,4 </p></td>
+            </tr>
+            <tr>
+              <td width="85" valign="top"><p align="center"> 2000 </p></td>
+              <td width="85" valign="top"><p align="center"> 6 </p></td>
+              <td width="85" valign="top"><p align="center"> 16,1 </p></td>
+              <td width="85" valign="top"><p align="center"> 1,8 </p></td>
+            </tr>
+            <tr>
+              <td width="85" valign="top"><p align="center"> 2500 </p></td>
+              <td width="85" valign="top"><p align="center"> 6 </p></td>
+              <td width="85" valign="top"><p align="center"> 20,2 </p></td>
+              <td width="85" valign="top"><p align="center"> 2,1 </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <p> <br>
+          <strong>Oliegevulde transformatoren</strong> </p>
+        <p> De meeste transformatoren zijn uitgevoerd als oliegevulde transformatoren. Het isolatiemedium van oliegevulde transformatoren bestaat uit papierisolatie
+          die is gewikkeld om de geleiders van de wikkelingen en de olie, waarin de kern en de wikkelingen gedompeld zijn. De koeling wordt verkregen doordat de olie
+          op natuurlijke wijze in de transformator circuleert tussen de wikkelingen en de transformatorbak. Figuur 4.13 geeft een mooi beeld van een opengewerkte
+          oliegevulde distributietransformator. In het binnenste is het juk met de drie MS-wikkelingen zichtbaar. De LS-wikkelingen bevinden zich daaronder. De drie
+          MS-aansluitklemmen zijn goed zichtbaar aan de bovenzijde. De vier LS-aansluitklemmen (drie fasen en sterpunt) bevinden zich erachter. </p>
+        <p> <img width="627" height="419" src="./netcomponenten_files/4.12.jpg" alt="Normtransformatoren" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 4.12 Oliegevulde distributietransformatoren </h5>
+        <p> De maximaal toelaatbare temperatuur van de papierisolatie is gesteld op 140 °C. Voor de belastbaarheid van de transformator is dit een beperkende factor.
+          Het bereiken van de maximale temperatuur wordt evenals bij kabels beïnvloed door de omgevingstemperatuur en door de temperatuurstijging van de geleiders. </p>
+        <div class="row">
+          <div class="col-md-6"> <img width="400	" height="2048" src="./netcomponenten_files/4.13a.jpg" alt="pics_1.4" class="img-responsive-leon-15px center-block"> </div>
+          <div class="col-md-6"> <img width="400" height="261" src="./netcomponenten_files/4.13b.png" alt="Distributietransformator" class="img-responsive-leon-15px center-block"> </div>
+        </div>
+        <h5> Figuur 4.13 Opengewerkte distributietransformator en zijn schakelschema </h5>
+        <p> Op specifieke plaatsen tussen de windingen in de transformator kunnen hot spots optreden. Dit zijn plekken die warmer zijn dan gemiddeld. Een hot spot
+          temperatuur boven 98 °C heeft een grote nadelige invloed op de levensduur van het isolatiemedium van de transformator en daarmee op zijn levensduur. Boven
+          de 140 °C wordt de papierisolatie onherstelbaar aangetast. In de winter is door de lage omgevingstemperatuur de transformator iets hoger belastbaar dan in
+          de zomer. </p>
+        <p> Oliegevulde transformatoren worden als voedingstransformatoren en als distributietransformatoren toegepast. Distributietransformatoren worden in het
+          algemeen minder zwaar belast dan voedingstransformatoren omdat bij het plaatsen rekening wordt gehouden met een groei van de belasting gedurende hun
+          verwachte plaatsingsduur. Het blijkt niet voldoende om alleen de gemiddelde temperatuur van de olie te monitoren. Werkelijk optredende hot spot
+          temperaturen zijn van vele omstandigheden afhankelijk, zoals constructie, buitentemperatuur en bedrijfsvoering. De toelaatbare belasting van de oliegevulde
+          transformator wordt met name bepaald door: </p>
+        <ul>
+          <li> periodieke overbelasting als gevolg van het dagelijks variërende belastingspatroon of </li>
+          <li> tijdelijke overbelasting in geval van storingssituaties. </li>
+        </ul>
+        <p> Er is gepubliceerd over methodes om in praktijk met deze materie om te gaan (Nuon, 2005) en IEC heeft normen gepubliceerd voor de berekening van de maximaal toegestane overbelasting (IEC 60076-2 en IEC 60076-7). </p>
+        <p> <strong>Droge transformatoren</strong> </p>
+        <p> In verband met milieueisen of veiligheid mogen soms geen oliegevulde transformatoren worden toegepast. In die gevallen worden gietharstransformatoren
+          gebruikt. </p>
+        <p> Deze transformatoren zijn duurder en moeten in geconditioneerde ruimtes (met betrekking tot vocht en stof) staan. Droge transformatoren warmen sneller op
+          dan oliegevulde transformatoren en kunnen zodoende minder lang overbelast worden. </p>
+        <p> De maximaal toegestane temperatuur van droge transformatoren wordt bepaald door de isolatie. De transformatoren zijn ingedeeld in isolatieklassen, die elk
+          een specifieke maximale hot spot temperatuur voorschrijven. Voor deze transformatoren bestaan normen die voorschrijven hoe met overbelasting moet worden
+          omgegaan (IEC 60076-12). </p>
+        <p> <img width="400" height="400" src="./netcomponenten_files/4.14.png" alt="pics_1.4" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 4.14 Inwendige van een gietharstransformator van 1000 kVA en 12 kV </h5>
+        <p> <strong>Transformatorregeling</strong> </p>
+        <p> De wikkelingen van transformatoren kunnen worden uitgevoerd met aftakkingen waardoor andere overzetverhoudingen kunnen worden gekozen. Bij de meeste MS/LS
+          distributietransformatoren zijn deze aftakkingen aan de primaire zijde aangesloten. Op deze aftakkingen zijn de contacten van een instelbare
+          trappenschakelaar aangesloten. Deze schakelaar kan veelal alleen geschakeld worden als de transformator buiten bedrijf is. Deze transformatoren zijn
+          uitgevoerd met vijf instelbare trappen. De keuze voor de juiste trapstand hangt af van de gemiddelde spanning aan MS-zijde en de gewenste spanning in het
+          LS-net. </p>
+        <p> Daarnaast bestaan er regelbare transformatoren waarbij de trappenschakelaar tijdens bedrijf kan worden versteld. De trappenschakelaar zal zich hierbij
+          veelal aan de primaire zijde van de transformator bevinden. Dit omdat aan de primaire zijde de stroomwaarden kleiner zijn dan aan de secundaire zijde en
+          daardoor de schakelaar minder robuust hoeft te worden uitgevoerd. De volgende uitvoeringsvormen bestaan: </p>
+        <ul>
+          <li> HS/MS transformatoren </li>
+          <ul>
+            <li> regelingen zonder stroomcompensatie </li>
+            <li> regelingen met stroomcompensatie </li>
+          </ul>
+          <li> MS-regeltransformatoren (booster) </li>
+          <li> MS/LS geregelde transformatoren </li>
+          <li> LS-regeltransformatoren </li>
+        </ul>
+        <div class="row">
+          <div class="col-md-6"> <img width="" height="283" src="./netcomponenten_files/4.15.png" alt="pics_1.4" class="img-responsive-leon-15px center-block">
+            <h5> Figuur 4.15 Principe van een trappenschakelaar </h5>
+          </div>
+          <div class="col-md-6"> <img width="400" height="283" src="./netcomponenten_files/4.16.png" alt="pics_1.4" class="img-responsive-leon-15px center-block"> </div>
+          <h5> Figuur 4.16 Trappenschakelaar van een oliegevulde transformator </h5>
+        </div>
+        <h6> <em>HS/MS transformatoren</em> </h6>
+        <p> In de HS/MS onderstations staan regelbare transformatoren opgesteld. Deze voedingstransformatoren hebben een trappenschakelaar die in bedrijf geschakeld
+          wordt met behulp van een OLTC (On Load Tap Changer). Een keuzeschakelaar stelt de overzetverhouding voor twee naast elkaar gelegen aftakkingen in, waarna
+          een twee standenschakelaar de overgang naar de volgende aftakking realiseert. De twee standenschakelaar realiseert de omschakeling via twee weerstanden
+          voor de demping. In figuur 4.15 is de trappenschakelaar in stand 3. Door schakelaar 2 of 4 te sluiten wordt een hogere dan wel lagere overzetverhouding
+          gekozen. De omschakeling wordt pas een feit door de twee standenschakelaar van stand B naar stand A te verplaatsen. De trappenschakelaar bevindt zich
+          meestal aan de primaire zijde omdat daar de stromen kleiner zijn en een lichtere schakelaarconstructie gekozen kan worden. </p>
+        <p> De besturing van deze trappenschakelaar gebeurt automatisch op basis van de aan secundaire zijde gemeten spanning. Op deze wijze blijft de spanning op de
+          MS-rail binnen een marge redelijk constant. Figuur 4.16 illustreert de uitvoering van een trappenschakelaar. Duidelijk zichtbaar is dat de contacten van de
+          trappenschakelaar zich naast de wikkelingen in dezelfde oliegevulde transformatorbak bevinden. </p>
+        <h6> <em>MS-regeltransformatoren</em> </h6>
+        <p> In uitgestrekte MS-netten kunnen regeltransformatoren worden toegepast. Deze staan opgesteld in de regelstations. Met behulp van deze transformator kan,
+          onafhankelijk van de regeling in het onderstation, de waarde van de spanning in het achterliggende MS-net worden verbeterd. Deze regeltransformatoren zijn
+          vaak autotransformatoren of boostertransformatoren. </p>
+        <h6> <em>MS/LS geregelde transformatoren</em> </h6>
+        <p> Indien bijzondere eisen worden gesteld aan de kwaliteit van de spanning bij aan-geslotenen in een LS-net, dan kan het wenselijk zijn een geregelde MS/LS
+          distributietransformator toe te passen. Grote spanningsafwijkingen kunnen veroorzaakt worden door een sterk wisselende MS-voedingsspanning en door sterke
+          belastingsveranderingen in het LS-net. Een duidelijk praktijkprobleem treedt op bij decentrale opwekkers in de glastuinbouw (zie figuren 3.6 en 3.7). In
+          deze gevallen kan een geregelde MS/LS distributietransformator worden ingezet om de spanning aan laagspanningszijde te regelen. Dit is een relatief nieuw
+          ontwerp, waarbij niet met behulp van een trappenschakelaar maar met behulp van vermogenselektronica (IGBT’s) geschakeld wordt tussen de aftakkingen van de
+          primaire wikkeling. Hiermee is het mogelijk om ook tussen twee trapstanden een variabele spanning te kiezen, waarmee over het gehele bereik een traploze
+          regeling is gerealiseerd. Hiermee kan een stabiele secundaire spanning worden gerealiseerd (Imtech Vonk, 2010). </p>
+        <img width="500" height="" src="./netcomponenten_files/4.17.png" alt="Smoorspoel BCV Technologies" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 4.17 Schakelschema van een elektronisch geregelde MS/LS transformator </h5>
+        <p> Figuur 4.17 illustreert de werking met behulp van de elektronische schakelaars. Indien alleen schakelaar 1 gesloten is, staat de primaire spanning over de
+          volledige primaire wikkeling. Indien schakelaar 1 geopend wordt en schakelaar 2 gesloten, wordt één deel van de primaire wikkeling stroomloos. Als gevolg
+          stijgt de secundaire spanning. De secundaire spanning kan verder worden opgeregeld door te schakelen met schakelaars 2 en 3 en met schakelaars 3 en 4.
+          Doordat de elektronische schakelaars zeer snel (ongeveer 10 kHz) schakelen, regelt de transformator de schakeling van de primaire wikkelingen bij
+          benadering traploos. </p>
+        <h6> <em>LS-regeltransformatoren</em> </h6>
+        <p> In uitgestrekte LS-netten is soms behoefte aan het verbeteren van de kwaliteit van de spanning. Hierbij worden, vergelijkbaar met de regeltransformatoren
+          op MS-niveau, autotransformatoren ingezet met een redelijk fijne spanningsregeling. Meestal zijn deze transformatoren gecombineerd met een
+          nulpunttransformator waarmee de asymmetrie, door ongelijk verdeelde belasting over de fasen, wordt verbeterd. De nulpunttransformator wordt nader
+          toegelicht in paragraaf 8.4. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_1_4.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_4.4"></div>
+        <br>
+        <h2>4.4 Smoorspoelen </h2>
+        <p> Smoorspoelen worden met name toegepast om de kortsluitstromen te beperken. In sommige gevallen is het kortsluitvermogen te groot voor de standaard
+          installaties in het MS-net. Dit is met name het geval bij onderstations die direct vanuit het hoogspanningsnet gevoed worden. Kortsluitingen dicht bij het
+          onderstation worden via de HS/MS-transformator gevoed vanuit het hoogspanningsnet en kunnen te grote stromen veroorzaken. In die gevallen wordt de
+          kortsluitstroom beperkt door het plaatsen van smoorspoelen in de MS-streng. Vaak worden deze smoorspoelen in het onderstation aan het begin de streng
+          geplaatst. Door tussenschakeling van de smoorspoel neemt de totale impedantie toe, waardoor de kortsluitstroom afneemt. </p>
+        <p> Smoorspoelen worden niet toegepast bij TS/MS-onderstations. De reden is dat de TS/MS-transformator gevoed wordt door een HS/TS-transformator, hogerop in
+          het net. De serieschakeling van deze twee transformatoren maakt dat de maximale waarde van de kortsluitstroom, in vergelijking met de waarden die bij
+          HS/MS-onderstations bereikt kunnen worden, de grenswaarde van de installatie niet overschrijdt. </p>
+        <p> Een driefasensmoorspoel bestaat uit drie luchtspoelen, voor elke fase een, die boven elkaar gestapeld worden, zoals afgebeeld in figuur 4.18. De
+          individuele spoelen zijn op zodanige afstand van elkaar gemonteerd, dat de onderlinge inductieve koppeling verwaarloosbaar klein is. </p>
+        <p> <img width="390" height="554" src="./netcomponenten_files/4.18.jpg" alt="Smoorspoel BCV Technologies" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 4.18 Kortsluitstroom beperkende smoorspoelen, drie fasen gestapeld </h5>
+        <p> Luchtspoelen hebben het voordeel dat zij niet in verzadiging geraken bij het voeren van een kortsluitstroom. Bovendien hebben zij lage weerstandverliezen,
+          die vaak verwaarloosd worden. De impedantie, waardoor de kortsluitstroom wordt beperkt, is bijna uitsluitend reactief. Het berekenen van de kortsluitstroom
+          is beschreven in hoofdstuk 10. Een voorbeeld van de specificaties van een smoorspoel is: </p>
+        <ul>
+          <li> <em>U<sub>nom</sub> : 10 kV</em> </li>
+          <li> <em>S<sub>nom</sub> : 5,8 MVA (I<sub>nom</sub> = 335 A)</em> </li>
+          <li> <em>u<sub>k</sub> : 1,74 %</em> </li>
+          <li> <em>P<sub>k</sub> : 2,69 kW</em> </li>
+          <li> <em>R : 0,008 </em> <em>Ω</em> </li>
+          <li> <em>X : 0,3 </em> <em>Ω</em> </li>
+          <li> <em>I<sub>k,2sec</sub> : 14 kA</em> </li>
+        </ul>
+        <a href="https://www.phasetophase.nl/boek/boek_1_4.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_4.5"></div>
+        <br>
+        <h2>4.5 Vermogenschakelaars</h2>
+        <p> Een vermogenschakelaar heeft als taak het inschakelen, voeren en uitschakelen van een normale bedrijfstroom en het afschakelen van overbelastingen en
+          kortsluitstromen. Een vermogenschakelaar moet zodanig gekozen worden dat hij in staat is de grootst mogelijke kortsluitstroom af te schakelen. De
+          kortsluitstroom moet dan ook worden berekend voor elke locatie waar een vermogenschakelaar wordt opgesteld. De wijze waarop deze berekend wordt, is
+          beschreven in hoofdstuk 10. De vermogenschakelaar is een van de belangrijkste beveiligende componenten in het elektriciteitsnet. De belangrijkste
+          gespecificeerde kenmerken zijn de nominale spanning en de uitschakelstroom (de grootte van de maximaal af te schakelen stroom), in kA, of het
+          schakelvermogen (het maximaal af te schakelen vermogen), in MVA. </p>
+        <p> Alle vermogenschakelaars hebben dezelfde basiskenmerken maar verschillen onderling sterk voor de diverse spanningsniveaus, maximale afschakelstroom en
+          type. De vermogenschakelaar wordt aangestuurd door de beveiliging (beschreven in hoofdstuk 6). De beveiliging geeft bij het overschrijden van de ingestelde
+          stroom, spanning of een combinatie daarvan, een afschakelcommando (trip) naar de vermogenschakelaar. Hierop opent de vermogenschakelaar, aangedreven door
+          een mechanisme, zijn contacten. </p>
+        <div class="row">
+          <div class="col-sm-6"> <img width="350" height="363" src="./netcomponenten_files/4.19.png" alt="pics_1.4" class="img-responsive-leon-15px center-block">
+            <h5> Figuur 4.19 Vacuüm MS vermogenschakelaar</h5>
+          </div>
+          <div class="col-sm-6"> <img width="350" height="914" src="./netcomponenten_files/4.20.png" alt="pics_1.4" class="img-responsive-leon-15px center-block">
+            <h5> Figuur 4.20 Vacuüm MS vermogenschakelaar </h5>
+          </div>
+        </div>
+        <p> Dit mechanisme kan een veermechanisme zijn, een mechanisme dat wordt aangedreven door gecomprimeerde lucht of een mechanisme dat is gebaseerd op
+          elektromagnetische krachten (EM-aandrijving). Bij het openen van de contacten ontstaat een lichtboog, die zo snel mogelijk gedoofd moet worden. De
+          lichtboog wordt onderbroken in een bluskamer. De bluskamer kan gevuld zijn met olie, SF<sub>6</sub> of vacuüm. In oliearme schakelaars wordt de lichtboog
+          gedoofd door er een straal ongeïoniseerde verse olie langs te blazen. In SF<sub>6</sub> schakelaars wordt de lichtboog gedoofd door de diëlektrische
+          eigenschappen van het gas. In vacuümschakelaars is weinig tot geen medium aanwezig dat kan ioniseren, zodat er een minimale lichtboog ontstaat. Het
+          isolatiemedium of het vacuüm in de bluskamer dienen ervoor te zorgen dat de lichtboog dooft als de stroom de eerstvolgende nuldoorgang bereikt.
+          Vacuümschakelaars worden veelvuldig gebruikt in modern MS-schakelmaterieel tot 36 kV. Dit schakelmaterieel is geschikt voor uitschakelstromen tot 50 kA. </p>
+        <p> De oliearme vermogenschakelaar is zodanig ontworpen dat hij de hitte van de lichtboog tijdens het onderbreken van de kortsluitstroom kan weerstaan. Tijdens
+          het afschakelen ontstaan inbrandplekken op de contacten, zodat de vermogenschakelaar na een gespecificeerd aantal schakelhandelingen moet worden
+          gereviseerd. Bij vacuüm vermogenschakelaars wordt inbranden van de contacten voorkomen door de kortsluitstroom door middel van een magneetveld over het
+          gehele oppervlak van de contacten te verdelen (het principe van ‘diffuse ontlading’) of door een snelle rotatie over het oppervlak. Hiermee wordt bereikt
+          dat de contacten in een vacuüm vermogenschakelaar geen enkel onderhoud behoeven. Figuur 4.19 geeft een voorbeeld van een vacuüm vermogenschakelaar en
+          figuur 4.20 toont de uitvoeringsvorm van een uitrijdbare vacuüm vermogenschakelaar. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_1_4.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_4.6"></div>
+        <br>
+        <h2>4.6 Schakelinstallaties </h2>
+        <p> Schakelinstallaties worden in onder-, regel-, schakel- en netstations gebruikt voor het veranderen van de netwerkconfiguratie en voor het afschakelen van
+          kortsluitingen. In onderstations en schakelstations verdeelt de schakelinstallatie de voeding van de MS-strengen. In geval van een storing kunnen eventueel
+          aanwezige reservecomponenten ingeschakeld worden. Ook worden op strategische stations in het netwerk vermogenschakelaars met beveiligingen ingezet om
+          eventueel optredende kortsluitstromen selectief af te schakelen. Van alle netstations in een MS-ring wordt er één gekozen waarvan een schakelaar of
+          lastscheider normaal geopend is, waarmee een gewenste netopening wordt gecreëerd. De meeste netstations zijn uitgerust met handmatig te bedienen
+          lastscheiders in de kabelaansluitingen. Met een lastscheider kan alleen de nominale belastingstroom worden afgeschakeld. Voor het afschakelen van een
+          kortsluitstroom of het inschakelen van een belastingstroom is een vermogenschakelaar vereist. De MS/LS transformator in de netstations is aan de MS-zijde
+          beschermd door een vermogenschakelaar of door zekeringen. Aan de LS-zijde worden meestal zekeringen gebruikt om de installatie te beschermen tegen
+          kortsluitstromen. </p>
+        <br>
+        <p> Schakelinstallaties kunnen uitgevoerd zijn als: </p>
+        <ul>
+          <li> open installaties: afzonderlijke componenten in de openlucht, onderling verbonden met niet geïsoleerde geleiders </li>
+          <li> gesloten installaties: componenten samengeschakeld in metalen omhulling, gevuld met een gasvormig, vloeibaar of vaste stof isolerend medium </li>
+          <li> semi-open installaties: afzonderlijke omsloten componenten, onderling verbonden in een open installatie </li>
+          <li> omsloten installaties: componenten in een volledig gesloten kunststoffen of metalen omhulsel, door de fabriek als een geheel geleverd. </li>
+        </ul>
+        <br>
+        <p> In de MS-schakelsystemen wordt gebruik gemaakt van gesloten en omsloten installaties. In de huidig verkrijgbare MS-schakelinstallaties wordt vacuüm- of SF <sub>6</sub>-technologie toegepast. De schakelinstallaties worden geleverd als kant-en-klare installaties, afgestemd op hun functie: </p>
+        <ul>
+          <li> hoofdverdeelinstallatie, </li>
+          <li> onderverdeelinstallatie en </li>
+          <li> ringkabelinstallatie. </li>
+        </ul>
+        <p> Deze installaties worden op de volgende pagina’s kort beschreven. Daarbij is gebruik gemaakt van informatie van Eaton Holec. </p>
+        <p> <img width="741" height="317" src="./netcomponenten_files/4.21.png" alt="pics_1.4" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 4.21 Toepassing van typen schakelinstallaties </h5>
+        <h5> Tabel 4.9 Overzicht van de componenten in de schakelinstallaties en hun toepassingen </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="20%" valign="top"><p> <strong>Component</strong> </p></td>
+              <td width="40%" valign="top"><p> <strong>Functie</strong> </p></td>
+              <td width="40%" valign="top"><p> <strong>Toepassing</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="95" valign="top"><p> <em>vermogenschakelaars</em> </p></td>
+              <td width="135" valign="top"><ul>
+                  <li> afschakelen van kortsluitstromen </li>
+                </ul></td>
+              <td width="111" valign="top"><p> in onder-, regel- en schakelstations en in beveiligde velden van netstations (&gt;35A) </p></td>
+            </tr>
+            <tr>
+              <td width="95" valign="top"><p> <em>lastscheiders</em> </p></td>
+              <td width="135" valign="top"><ul>
+                  <li> tot stand brengen van een zichtbare onderbreking </li>
+                  <li> afschakelen van nominale stromen </li>
+                  <li> bestand tegen doorgaande kortsluitstromen </li>
+                  <li> bestand tegen het inschakelen van een kortsluitstroom </li>
+                </ul></td>
+              <td width="111" valign="top"><p> in netstations </p></td>
+            </tr>
+            <tr>
+              <td width="95" valign="top"><p> <em>scheiders</em> </p></td>
+              <td width="135" valign="top"><ul>
+                  <li> tot stand brengen van een zichtbare onderbreking </li>
+                  <li> afschakelen van onbelaste circuits </li>
+                  <li> bestand tegen doorgaande kortsluitstromen </li>
+                </ul></td>
+              <td width="111" valign="top"><p> in onder-, regel-, schakel- en netstations </p></td>
+            </tr>
+            <tr>
+              <td width="95" valign="top"><p> <em>aarders</em> </p></td>
+              <td width="135" valign="top"><ul>
+                  <li> aarden van systeemonderdelen zodat veilig gewerkt kan worden </li>
+                </ul></td>
+              <td width="111" valign="top"><p> in onder-, regel-, schakel- en netstations </p></td>
+            </tr>
+            <tr>
+              <td width="95" valign="top"><p> <em>smeltveiligheden</em> </p></td>
+              <td width="135" valign="top"><ul>
+                  <li> onderbreken van kortsluitstromen </li>
+                </ul></td>
+              <td width="111" valign="top"><p> in transformator- en kabelvelden van netstations </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="row">
+          <div class="col-sm-6"> <img width="259" height="250" src="./netcomponenten_files/4.22a.png" alt="pics_1.4" class="img-responsive-leon-15px center-block"> </div>
+          <div class="col-sm-6"> <img width="293" height="250" src="./netcomponenten_files/4.22b.png" alt="pics_1.4" class="img-responsive-leon-15px center-block"> </div>
+        </div>
+        <h5> Figuur 4.22 MMS en Unitole </h5>
+        <p> <strong>Hoofdverdeelinstallatie</strong> </p>
+        <p> De hoofdverdeelinstallaties worden in de onder-, regel- en schakelstations toegepast. Het dubbelrailsysteem wordt gevoed door een of meer
+          HS/MS-voedings-transformatoren. Alle velden voor de afgaande richtingen van het MS-transportnet of het MS-distributienet worden hierop aangesloten. Een
+          voorbeeld is MMS, een metaalomsloten, luchtgeïsoleerd schakelsysteem met geïntegreerde vacuümonderbrekers. Dit is gebouwd rond een dubbelrailsysteem en is
+          geschikt voor spanningen tot 24 kV. De installatie is modulair opgebouwd voor vermogenschakelaarvelden en raildwarskoppelvelden. De installatie kan
+          voorzien worden van stationsautomatisering. Een ander voorbeeld is Unitole voor enkelrailtoepassingen. Dit systeem is voorzien van uitrijdbare
+          vacuümvermogenschakelaars en/of contactors. </p>
+        <p> <strong>Onderverdeelinstallatie</strong> </p>
+        <p> De onderverdeelinstallaties worden gebruikt in regel- en schakelstations. Deze installaties worden ook buiten de distributienetten toegepast bij
+          infrastructuurprojecten, bij de industrie en in bedrijfsgebouwen. Ook bij de decentrale opwekking, zoals windparken en grote WKK-installaties worden deze
+          schakelinstallaties gebruikt. Het systeem is meestal voorzien van een langssectioneerbaar enkelrailsysteem. Een voorbeeld is SVS, een metaalomsloten,
+          epoxyharsgeïsoleerd schakelsysteem met vast ingebouwde vacuümvermogenschakelaars. Het systeem is geschikt voor spanningen tot 24 kV. </p>
+        <p> <strong>Ringkabelinstallaties</strong> </p>
+        <p> De ringkabelinstallaties worden ook wel RMU (Ring Main Unit) genoemd. De meest voorkomende uitvoering bestaat uit twee of meer kabelvelden met lastscheiders en een met smeltveiligheid of vermogenschakelaar beveiligde aftakking. Deze uitvoering wordt het meest toegepast in compacte transformatorstations en schakelbare knooppunten in MS-distributienetten. In geval van twee kabelvelden en een beveiligd transformatorveld spreekt men van een KKT-installatie (Kabel-Kabel-Transformator). </p>
+        <p> <img width="331" height="325" src="./netcomponenten_files/4.23.png" alt="pics_1.4" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 4.23 SVS </h5>
+        <p> Deze installaties zijn altijd enkelvoudig opgebouwd zonder reserve componenten en worden voornamelijk toegepast in netstations. Een voorbeeld is Xiria,
+          geschikt voor spanningen tot 24 kV. De vacuümvermogenschakelaars, hoofdrails en lastscheiders zijn ondergebracht in een geheel gesloten metalen omhulling.
+          Het systeem is geschikt voor stationsautomatisering (afstandbediening en stroom- en spanningsmeetfuncties). Het systeem is uitgerust met lastscheiders en
+          vermogenschakelaars voor 12kV/20kA en 24kV/16kA. De nominale stroom van de lastscheider bedraagt 630 A. De nominale stroom van de vermogenschakelaar
+          bedraagt 200 of 500 A. </p>
+        <p> Een ander voorbeeld is de zeer veel gebruikte Magnefix. Dit zijn ringkabelinstallaties voor toepassing in 10 kV tot 15 kV distributienetten. Door de
+          compacte constructie kan het systeem in zeer kleine ruimtes in netstations, (hoge) gebouwen en voor het aansluiten van windturbines worden toegepast. Het
+          systeem is volledig epoxyharsgeïsoleerd, uitgerust met lastscheiders en smeltveiligheden of vermogenschakelaars voor 12kV/14,4 kA-netten en voor
+          15kV/20kA-netten. De nominale belastingstroom van de lastscheiders bedraagt 400 of 450 A en van de vermogenschakelaars bedraagt deze 400 A. Standaard
+          worden de lastscheiders handmatig bediend met behulp van éénfasige schakelkappen. </p>
+        <div class="row">
+          <div class="col-sm-6"> <img width="213" height="325" src="./netcomponenten_files/4.24a.png" alt="pics_1.4" class="img-responsive-leon-15px center-block"> </div>
+          <div class="col-sm-6"> <img width="228" height="325" src="./netcomponenten_files/4.24b.png" alt="pics_1.4" class="img-responsive-leon-15px center-block"> </div>
+        </div>
+        <h5> Figuur 4.24 Magnefix en Xiria </h5>
+        <p> Het personeel kan deze schakelkappen met een bedieningshandel verwijderen en terugplaatsen. De distributietransformator wordt beveiligd met
+          smeltveiligheden. Het is ook mogelijk deze te beveiligen met een vermogenschakelaar en een elektronisch beveiligingsrelais. Voor de detectie van
+          kortsluitstromen kan het Magnefix-systeem worden uitgerust met magnetische indicators met handmatige reset of met elektronische indicators met automatische
+          reset. Ook kunnen sensoren met indicatie op afstand via GSM-communicatie worden gebruikt. </p>
+        <p> Vanaf de transformator wordt een LS-verdeelinrichting gevoed, waarop de LS-strengen zijn aangesloten. Figuur 4.26 toont 5 gemonteerde velden in een Alfen
+          compactstation, waarvan op de linker drie velden een kabel is aangesloten. De voeding vanaf de trafo komt binnen op het rek links. Geheel rechts, achter de
+          grijze afdekplaat, kan een zesde worden gemonteerd. Elke kabel en de voeding vanuit de transformator is op de LS-verdeelinrichting beveiligd met
+          smeltveiligheden, die eenvoudig uitgewisseld kunnen worden en tevens als schakelelement fungeren. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_1_4.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_4.7"></div>
+        <br>
+        <h2>4.7 Smeltveiligheden</h2>
+        <p> Zowel in de middenspanning als in de laagspanning worden smeltveiligheden toegepast. Een smeltveiligheid is in feite een bewust aangebrachte zwakke schakel
+          in het netwerk, die bij een overbelasting of bij een kortsluiting als eerste kapot gaat en daarmee de stroom onderbreekt. Het werkingsprincipe berust op
+          het smelten van een dunne smeltgeleider bij een stroom die groter is dan de nominale stroomwaarde. </p>
+        <div class="row">
+          <div class="col-sm-6"> <img width="300" height="238" src="./netcomponenten_files/4.25.png" alt="pics_1.4" class="img-responsive-leon-15px center-block">
+            <h5> Figuur 4.25 Netstation met Magnefix </h5>
+          </div>
+          <div class="col-sm-6"> <img width="224" height="350" src="./netcomponenten_files/4.26.jpg" alt="LS-rek kunststof stroken" class="img-responsive-leon-15px center-block">
+            <h5> Figuur 4.26 LS-verdeelinrichting </h5>
+          </div>
+        </div>
+        <p> De constructie van de smeltgeleider bepaalt of er een trage of snelle onderbreking plaatsvindt. De smelttijd is afhankelijk van de dikte van de draad en
+          van de ontwikkelde warmte in de draad. De smelttijd is evenredig met het kwadraat van de stroomsterkte. Door de grootte van de kortsluitstroom kan het
+          voorkomen dat de smeltveiligheid de kortsluitstroom onderbreekt nog voordat deze zijn maximale waarde bereikt. De grootte van deze stroom wordt aangeduid
+          als de kapstroom. De smelttijden van een smeltpatroon als functie van de stroomsterkte worden door de fabrikant weergegeven in de kenmerkende
+          stroom/tijdkarakteristiek. De werking van de smeltveiligheid wordt nader toegelicht in hoofdstuk 6. </p>
+        <p> Er zijn diverse typen smeltpatronen, afhankelijk van hun toepassing. De type-aanduiding bestaat uit een lettercodering. De eerste letter staat voor het
+          onderbrekingsgebied van de smeltpatronen: </p>
+        <ul>
+          <li> g: onderbreken in het gehele bereik </li>
+          <li> a: onderbreken in een gedeelte van het bereik </li>
+        </ul>
+        <p> De tweede letter staat voor de gebruikscategorie: </p>
+        <ul>
+          <li> G: algemene toepassing </li>
+          <li> M: motorbeveiliging (vroeger back-up beveiliging) </li>
+          <li> R: halfgeleiderbeveiliging </li>
+          <li> Tr: transformatorbeveiliging </li>
+          <li> F: snel onderbreken, algemene toepassing </li>
+          <li> FF: supersnel onderbreken, algemene toepassing </li>
+        </ul>
+        <p> Enkele voorbeelden van bekende toepassingen zijn: </p>
+        <ul>
+          <li> gG: onderbreken in het gehele bereik, algemene toepassing: leidingbeveiliging </li>
+          <li> aM: onderbreken in een gedeelte van het bereik: motorbeveiliging </li>
+          <li> gTr: onderbreken in het gehele bereik: transformatorbeveiliging </li>
+          <li> gF: onderbreken in het gehele bereik, snel onderbreken: beveiliging van lange leidingen </li>
+        </ul>
+        <p> De smeltgeleider heeft een bepaalde weerstand, waardoor de smeltveiligheid warmte produceert. De geproduceerde warmte van alle smeltveiligheden gezamenlijk
+          kan leiden tot een aanzienlijke temperatuurstijging in een netstation. Om die reden zijn verliesarme typen ontwikkeld. </p>
+        <p> De smeltveiligheid omvat alle onderdelen die samen de gehele beveiliging vormen en één van de onderdelen is de smeltpatroon. Een smeltpatroon is in diverse
+          uitvoeringsvormen verkrijgbaar. Een veel toegepast type is de mespatroon, die bestaat uit een keramisch lichaam, metalen sluitplaten, contactmessen en een
+          melder. </p>
+        <p> <img width="367" height="225" src="./netcomponenten_files/4.27.png" alt="pics_1.4" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 4.27 Een serie gG mespatronen voor laagspanning </h5>
+        <a href="https://www.phasetophase.nl/boek/boek_1_4.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_4.8"></div>
+        <br>
+        <h2>4.8 I<sub>s</sub>-begrenzers</h2>
+        <p> Net als de smeltveiligheid onderbreekt een I<sub>s</sub>-begrenzer de kortsluitstroom voordat deze zijn verwachte maximale waarde bereikt. In dit geval is
+          er dus ook sprake van een kortsluitstroombegrenzing. Een I<sub>s</sub>-begrenzer bestaat uit een smeltveiligheid parallel aan een primair circuit. Het
+          primaire circuit heeft een grote nominale stroomsterkte en heeft een klein afschakelvermogen. De smeltveiligheid heeft een groot afschakelvermogen. Een
+          snelle onderbreking wordt gewaarborgd doordat de I<sub>s</sub>-begrenzer reageert op een sterke stijging van de stroom (grote di/dt). Een ingebouwd
+          meetcircuit bepaalt de stroomwaarde en de di/dt-waarde. Het primaire circuit van de I<sub>s</sub>-begrenzer is uitgerust met een springstoflading. Wanneer
+          de vooraf ingestelde grenswaarden van de stroom en de di/dt worden overschreden zal de springstoflading het primaire circuit onderbreken. Daarna zal de
+          smeltveiligheid de kortsluitstroom begrenzen en binnen 0,5 ms onderbreken bij de eerstvolgende nuldoorgang van de spanning. </p>
+        <p> <img width="367" height="265" src="./netcomponenten_files/4.28.png" alt="pics_1.4" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 4.28 I<sub>s</sub>-begrenzer met springstoflading </h5>
+        <p> De I<sub>s</sub>-begrenzers worden toegepast in situaties waarin het kortsluitvermogen zodanig hoog is geworden dat de componenten niet meer kortsluitvast
+          zijn. Voorbeelden zijn: </p>
+        <ul>
+          <li> parallelschakeling van transformatoren: de rails aan secundaire zijden zijn verbonden met een I<sub>s</sub>-begrenzer; bij een kortsluiting in een streng
+            zal de I<sub>s</sub>-begrenzer afschakelen, waardoor de kortsluiting nog maar door één transformator wordt gevoed</li>
+          <li> parallelschakeling van een smoorspoel en een I<sub>s</sub>-begrenzer: bij normaal bedrijf worden de verliezen en de spanningsval over de smoorspoel
+            voorkomen; nadat de I<sub>s</sub>-begrenzer heeft afgeschakeld wordt de kortsluitstroom begrensd door de smoorspoel </li>
+          <li> als beveiliging van zelfopwekkers. </li>
+        </ul>
+        <a href="https://www.phasetophase.nl/boek/boek_1_4.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_4.9"></div>
+        <br>
+        <h2>4.9 Toepassing van vermogenselektronica</h2>
+        <p> Vermogenselektronica wordt al veel toegepast in de HS-netten en in regelbare aandrijvingen op LS-niveau. In HS-netten vindt toepassing plaats in de HVDC
+          (High Voltage DC) en in FACTS. Dit laatste is de afkorting voor ‘Flexible AC Transmission System’ en is de verzamelnaam voor vermogenselektronische
+          apparaten die de bestuurbaarheid en de transmissiecapaciteit van elektriciteitsnetwerken vergroten. Voorbeelden van toepassingen in hoogspanningsnetwerken
+          zijn: </p>
+        <ul>
+          <li> seriecompensatie: static synchronous series compensator (SSSC) en </li>
+          <li> parallelcompensatie: static synchronous compensator (STATCOM) en static var compensator (SVC). </li>
+        </ul>
+        <p> Bij seriecompensatie is het apparaat in serie in een doorgaande verbinding geplaatst. Het apparaat is een variabele spanningsbron. In lange
+          transmissielijnen is de inductie groot. Het apparaat brengt een spanning aan met een zodanige grootte en hoek, dat een compenserende seriecondensator wordt
+          benaderd. Als gevolg vermindert de grootte van de reactantie van de verbinding. </p>
+        <p> Bij parallelcompensatie werkt het apparaat als een variabele stroombron. De apparaten kunnen reactief vermogen opnemen (inductief) en afgeven (capacitief).
+          De capacitieve compensator wordt gebruikt om de arbeidsfactor te verbeteren. Door parallel aan een inductieve belasting extra blindvermogen op te wekken,
+          verbetert de cos(φ) van het geheel. Een SVC is een thyristorgeschakelde shuntspoel of shuntcondensator. De regeling van de thyristoren bepaalt de grootte
+          van de reactantie. Standaardsystemen voor SVC’s zijn verkrijgbaar in vermogens van 25, 35 en 50 Mvar bij spanningen tot 36 kV. </p>
+        <p> Een STATCOM is een elektronisch equivalent van een roterende synchrone compensator. De uitwisseling van reactief vermogen tussen het apparaat en het
+          wisselspanningsnet wordt geregeld door de spanning van de STATCOM te variëren. </p>
+        <p> Oorspronkelijk werd deze apparatuur uitsluitend gebruikt in hoogspanningssystemen. Met de introductie van een nieuwe generatie van vermogenselektronische
+          componenten, zoals IGBT’s, GTO’s en IGCT’s, werden onder andere Voltage Source Converters (VSC) geïmplementeerd in de elektrische netwerken. De hierbij
+          gebruikte techniek maakt gebruik van pulsbreedtemodulatie. </p>
+        <p> Veelgebruikt zijn de converters die ingezet worden als motor drives. Nieuwer is de toepassing van back-to-back converters, die eigenlijk bestaan uit twee
+          STATCOM’s die aan de gelijkspanningszijde met elkaar verbonden zijn. Met deze converter kunnen actief vermogen en blindvermogen afzonderlijk van elkaar
+          geregeld worden. Een voorstel voor toepassing van back-to-back converters in het intelligente knooppunt is in diverse onderzoeken besproken (Provoost,
+          2009)(De Graaff, 2010). Deze toepassing wordt in het hoofdstuk over Intelligente Netten kort toegelicht. </p>
+        <p> Langzamerhand vinden deze technieken hun toepassingen ook in de distributienetwerken, met als doel de kwaliteit van de spanning te verbeteren en
+          koppelingen van netten met gecontroleerde uitwisseling van vermogen mogelijk te maken. Als toepassingen voor distributiesystemen worden concreet genoemd
+          (Cigré, 2005): </p>
+        <ul>
+          <li> solid state switchgear equipment: vermogenselektronische schakelaar die kortsluitstromen beperkt en daarmee spanningsdips in ongestoorde netdelen
+            beperkt; kortsluitingen kunnen snel worden afgeschakeld en elektriciteitsvoorziening kan snel worden hersteld; </li>
+          <li> parallelcompensatie met behulp van SVC en STATCOM: met name interessant voor bovengrondse distributienetten; </li>
+          <li> dynamic voltage restorer: apparaat om snelle en langzame spanningsveranderingen te compenseren via een in serie met de betreffende verbinding geschakelde
+            transformator; </li>
+          <li> solid state on-load tap changer: deze techniek is toegepast in regelbare MS/LS transformatoren, waarbij met behulp van thyristoren of IGBT’s de juiste
+            aftakkingen van de primaire wikkeling van een transformator gekozen worden. </li>
+        </ul>
+        <p></p>
+        </div>
+        <div class="col-lg-2 hidden-md">&nbsp;</div>
+      </div>
+	</div>
+   </div>
+    
+  
+<div id="includeFooter" class="container-fluid-footer"><div class="container">
+  <div class="row">
+    <div class="text-justify col-xs-6 col-sm-3">
+      <img src="./netcomponenten_files/logo-s-360px-grijs.png" alt="ptp_logo" width="230">
+    </div>
+    <div class="col-xs-6 col-sm-9">
+        <p> Phase to Phase is onderdeel van <a href="https://www.technolution.nl/">Technolution</a>. © 2009-2021 </p>
+    </div>
+  </div>
+</div></div></body></html>

@@ -1,0 +1,2458 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://www.phasetophase.nl/boek/boek_2_10.html -->
+<html lang="en" class="wf-ffscalasansweb-n7-active wf-ffscalasansweb-n4-active wf-ffscalasansweb-i4-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Phase to Phase – Netten voor distributie van elektriciteit</title>
+    <!-- Bootstrap -->	
+<link href="./kortsluitstroomberekeningen_files/bootstrap-2-boek.css" rel="stylesheet">
+<style type="text/css">
+	body,td,th {
+	font-family: ff-scala-sans-web, sans-serif;
+}
+body {
+	background-color: #F7F7F7;
+}
+    </style>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+<script src="./kortsluitstroomberekeningen_files/qke6lfb.js.download"></script>
+<style type="text/css">.tk-ff-scala-sans-web{font-family:"ff-scala-sans-web",sans-serif;}</style><style type="text/css">@font-face{font-family:tk-ff-scala-sans-web-n7;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-n4;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-i4;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style><script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script src="./kortsluitstroomberekeningen_files/jquery-1.11.3.min.js.download"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./kortsluitstroomberekeningen_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H8Q9E8BJ7Q');
+</script>
+<script>
+$(function(){
+  $("#includedHeader").load("/boek/header.html");
+  $("#includeFooter").load("/boek/footer.html"); 
+});
+</script><style type="text/css">@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style>	  
+</head><body style="padding-top: 50px">
+
+<div id="includedHeader"> <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topFixedNavbar1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="https://www.phasetophase.nl/">Phase to Phase</a></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="topFixedNavbar1">
+      <ul class="nav navbar-nav">
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+	<p></p>
+	
+    </div>
+    </div>
+  </div>
+
+<div class="container-fluid-boek">
+  <div class="container">
+
+<div class="row-in-header">
+	<div class="text-justify col-xs-6 col-sm-6">
+    <img class="hidden-xs" src="./kortsluitstroomberekeningen_files/logo-s-360px-wit.png" alt="Phase to Phase logo 360px" width="366">
+	<img class="visible-xs" src="./kortsluitstroomberekeningen_files/logo-s-360px-wit.png" alt="Phase to Phase logo 261px" width="261"> 
+	</div>
+		<div class="col-xs-6 hidden-xs col-sm-6">
+	</div>
+</div>
+
+<div class="row-in-header">
+	<div class="text-left col-xs-9 col-sm-9">        <p></p><h8>ICT voor elektriciteitsnetten</h8>
+</div>
+	<div class="col-xs-3 col-sm-3">
+	</div>
+</div>
+
+<div class="row-in-header-2">
+	<div class="text-justify col-xs-6 col-sm-6">&nbsp;
+	</div>
+	<div class="col-xs-6 hidden-xs col-sm-6">
+	  <h7>&nbsp;</h7>
+	</div>
+</div>
+
+</div>
+</div>
+
+<div class="container">
+
+<div class="row-intro">
+<h1><a href="https://www.phasetophase.nl/boek/index.html"> Netten voor distributie van elektriciteit</a></h1>
+</div></div></div>
+
+  <div class="row-ohm-center-white"> <a name="top"></a>
+    <div class="row-b">
+		  <a href="https://www.phasetophase.nl/boek/index.html"><button type="button" class="btn btn-default">I – De opbouw van een net</button></a>
+		  <a href="https://www.phasetophase.nl/boek/boek_2_7.html"><button type="button" class="btn  btn-default active">II – Rekenen aan een net</button></a>
+		  <a href="https://www.phasetophase.nl/boek/boek_3_13.html"><button type="button" class="btn  btn-default">III – Ontwerpen en bedrijfsvoeren</button></a>
+	</div>
+    <div class="row-b">
+<a href="https://www.phasetophase.nl/boek/boek_2_7.html">
+      <button type="button" class="btn btn-default1">7 Rekentechnische basis</button>
+      </a> <a href="https://www.phasetophase.nl/boek/boek_2_8.html">
+      <button type="button" class="btn btn-default1">8 Modellen</button>
+      </a> <a href="https://www.phasetophase.nl/boek/boek_2_9.html">
+      <button type="button" class="btn btn-default1">9 Loadflowberekeningen</button>
+      </a> <a href="https://www.phasetophase.nl/boek/boek_2_10.html">
+      <button type="button" class="btn btn-default1 active">10 Kortsluitstroomberekeningen</button>
+      </a> <a href="https://www.phasetophase.nl/boek/boek_2_11.html">
+      <button type="button" class="btn btn-default1">11 Power Quality</button>
+      </a> <a href="https://www.phasetophase.nl/boek/boek_2_12.html">
+      <button type="button" class="btn btn-default1">12 Betrouwbaarheid</button>
+      </a>
+    <div class="row">
+      <div class="col-md-12 col-lg-10">
+        <h3>Kortsluitstroomberekeningen</h3>
+        <p>In hoofdstuk 10 wordt de berekening van de stromen in geval van een kortsluiting ergens in het net toegelicht. Voor diverse soorten kortsluiting wordt uitvoerig beschreven hoe aan de hand van de internationaal erkende norm IEC 60909 de stroom op de kortsluitplaats en de bijdrage aan de kortsluitstroom vanuit overige delen van het net kan worden berekend. Ook wordt de methode van sequentiële storingsanalyse toegelicht, waarmee meer informatie over stromen en spanningen tijdens een kortsluiting kan worden verkregen. </p>
+        <div class="row">
+          <div class="col-md-6">
+            <ul style="list-style-type:none">
+				<li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10"><strong>10&nbsp;&nbsp;Kortsluitstroomberekeningen</strong></a></li>
+              <li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.1">10.1&nbsp;&nbsp;Verloop van de kortsluitstroom</a></li>
+              <li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.2">10.2&nbsp;&nbsp;Karakteristieke begrippen en grootheden</a></li>
+              <li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.2">10.3&nbsp;&nbsp;Kortsluitstroomberekening volgens IEC 60909</a></li>
+              <ul style="list-style-type:none">
+                <li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.3.1">10.3.1&nbsp;&nbsp;Berekening</a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.3.2">10.3.2&nbsp;&nbsp;Driefasen- en tweefasenfout zonder aardcontact in een MS-net</a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.3.3">10.3.3&nbsp;&nbsp;Fase-aardfout in een zwevend MS-net</a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.3.4">10.3.4&nbsp;&nbsp;Fase-aardfout in een blusspoel-geaard net</a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.3.5">10.3.5&nbsp;&nbsp;Fase-aardfout in een impedantiegeaard MS-net</a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.3.6">10.3.6&nbsp;&nbsp;Berekening van de kortsluitstroom in een LS-net</a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.3.7">10.3.7&nbsp;&nbsp;Aardingsconcept</a></li>
+              </ul>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul style="list-style-type:none">
+              <li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.4">10.4&nbsp;&nbsp;Berekening van de kortsluitvastheid</a></li>
+              <ul style="list-style-type:none">
+                <li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.4.1">10.4.1&nbsp;&nbsp;Kortsluitvastheid van kabels</a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.4.2">10.4.2&nbsp;&nbsp;Kortsluitvastheid van transformatoren</a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.4.3">10.4.3&nbsp;&nbsp;Kortsluitvastheid van MS-schakelinstallaties</a></li>
+              </ul>
+              <li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.5">10.5&nbsp;&nbsp;Maatregelen ter beperking van de kortsluitstroom</a></li>
+              <li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.6">10.6&nbsp;&nbsp;Sequentiële kortsluitstroomberekening</a></li>
+              <ul style="list-style-type:none">
+                <li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.6.1">10.6.1&nbsp;&nbsp;Methode</a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.6.2">10.6.2&nbsp;&nbsp;Voorbeeld aan de hand van een registratie van een kortsluiting</a></li>
+              </ul>
+              <li><a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.7">10.7&nbsp;&nbsp;Foutplaatslokalisatie</a></li>
+            </ul>
+          </div>
+        </div>
+		
+        <hr>
+		  <h1>10 Kortsluitstroomberekeningen</h1>
+        <p> Elektrische installaties moeten zodanig worden ontworpen en gebouwd dat bij het optreden van kortsluitingen geen gevaar ontstaat voor personen en dat de
+          installatie niet beschadigd raakt. Bij de grote stromen, die tijdens kortsluitingen vloeien, treden grote elektromagnetische krachten tussen de
+          stroomvoerende delen op. Daarnaast worden de stroomvoerende delen snel warm. De gevolgen van een kortsluiting kunnen worden beperkt met een doelmatige
+          beveiliging, die in staat is de grootst optredende kortsluitstroom te onderbreken. Kortsluitberekeningen spelen een grote rol bij het ontwerpen van het
+          elektriciteitsnet. Met de kortsluitstroomberekeningen wordt onderzocht of de netcomponenten bij het optreden van een kortsluiting kortsluitvast zijn. De
+          kortsluitstroomberekening richt zich op het vaststellen van het stroomgedrag in het elektriciteitsnet en op de fysieke eigenschappen van de netcomponent.
+          Het doel van de berekeningen is drieledig: </p>
+        <ul>
+          <li>vaststellen thermische effecten op netcomponenten door de kortsluitstroom </li>
+          <li>vaststellen mechanische krachtenwerking op netcomponenten door de kortsluitstroom </li>
+        
+          <li> coördinatie en instellingen van beveiligingen. </li>
+        </ul>
+        <p> Een kortsluiting gaat in de regel gepaard met een relatief grote stroom. Hierbij geldt dat het kwadraat van de stroomwaarde evenredig is met: </p>
+        <ul>
+          <li>verwarming van de netcomponenten die zich in de stroombaan bevinden: een thermisch effect </li>
+          <li>elektromagnetische krachtwerking tussen stroomvoerende geleiders: een dynamisch effect. </li>
+        </ul>
+        <p> De uitwerking van beide effecten moet worden onderzocht voor alle netcomponenten waar de als gevolg van de kortsluiting verhoogde stroom doorheen loopt. In
+          distributienetten blijkt dat het thermische effect de meeste aandacht verdient. Maar ook het dynamische effect moet worden berekend, vanwege de soms zeer
+          grote krachten die in de installaties kunnen optreden. Om die reden worden componenten getest om de schade voor personen en de omgeving bij het doorlaten
+          van een kortsluitstroom zoveel mogelijk te beperken. </p>
+        <p> Als voorbeeld voor de uitwerking van de krachten die vrijkomen bij een kortsluiting, toont figuur 10.1 het resultaat van een kortsluiting in een 10
+          kV-kabel, die op 60 cm diepte begraven is. De kortsluitstroom bedroeg ongeveer 8 kA. De kracht van de explosie was zo groot, dat de grond naast de put
+          omhoog is gekomen en deze de stoeptegels heeft opgelicht.  </p>
+        <img src="./kortsluitstroomberekeningen_files/10.1.png" width="712" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 10.1 Schade door een kortsluiting in een 10 kV-kabel </h5>
+        <p> Voor de berekening van de kortsluitvastheid is het van belang de maximale waarde van de kortsluitstroom te kennen. Voor de coördinatie van de
+          beveiligingen en de selectiviteit is tevens de minimale kortsluitstroom van belang. Bij een goede selectiviteit worden de gevolgen van de storingen
+          beperkt. </p>
+        <p> Het is mogelijk met behulp van een dynamische simulatie een redelijk nauwkeurig beeld te berekenen van het verloop van de stroom op de foutplaats als
+          functie van de tijd, vanaf het begin van de kortsluiting tot het moment dat deze is opgeheven. In de meeste praktische gevallen is een dergelijke
+          uitgebreide berekening echter niet nodig. Van belang zijn slechts enkele kenmerkende waarden van het stroomverloop. Deze kunnen met voldoende
+          nauwkeurigheid worden bepaald met eenvoudiger methoden, waarvan er in dit hoofdstuk twee worden behandeld: </p>
+        <ul>
+          <li>De eerste methode is de kortsluitstroomberekening volgens de internationaal erkende norm IEC 60909. Deze methode is conservatief, maar geeft
+            resultaten die voldoende nauwkeurig zijn. De methode is ontworpen als handberekening en is daarom eenvoudig. De methode kan op alle distributienetten
+            worden toegepast. De methode is met name populair bij het ontwerpen van industriële netten, omdat de berekeningen aan de norm getoetst kunnen worden.
+            Deze methode wordt behandeld in <a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.3">paragraaf 10.3</a>. </li>
+          <li>De tweede methode is gebaseerd op de werkelijke belastingssituatie en berekent de complete toestand van het net. Hierbij wordt de kortsluiting
+            aangebracht in het actieve net in de situatie voor de fout. Omdat het bij deze methode mogelijk is na het berekenen van een enkele storing een tweede
+            storing aan te brengen en te berekenen, wordt deze methode ook wel sequentiële storingsanalyse genoemd. Bij deze methode zijn na de berekening alle
+            stromen en spanningen tijdens de storing bekend. De methode wordt behandeld in <a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.6">paragraaf 10.6</a>. </li>
+        </ul>
+        <a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.1"></div>
+        <br>
+<h2> 10.1 Verloop van de kortsluitstroom </h2>
+        <p> Om een goed beeld te krijgen van het gedrag van een kortsluitstroom, geeft figuur 10.2 het verloop weer van de stroom tijdens een driefasenkortsluiting. In
+          dit voorbeeld bevindt de kortsluiting zich elektrisch gezien ver van een generator. Het valt op dat de stroom bij een kleine waarde begint en vervolgens
+          een waarde bereikt van bijna twee maal de amplitude van de kortsluitstroom. Deze hoogste stroomwaarde treedt op binnen de eerste periode van de
+          kortsluitstroom en wordt de piek-waarde <em>i<sub>p</sub> </em>genoemd. De maximale waarde die <em>i<sub>p</sub></em> kan aannemen kan worden bereikt als de kortsluiting
+          begint op het moment van de spanningsnuldoorgang in de betrokken fase. In een driefasesysteem kan dit maar bij één fase tegelijk plaatsvinden en
+          daarom kan dit maximum alleen in die betreffende fase optreden. De hoogste topwaarde van de kortsluitstroom wordt ook wel de stootkortsluitstroom genoemd. </p>
+        <img src="./kortsluitstroomberekeningen_files/10.2.jpg" width="712" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 10.2 Kortsluiting ver van generatoren </h5>
+        <p> De effectieve waarde van de kortsluitstroom direct na het begin van de kortsluiting is de beginkortsluitstroom <em>I<sub>k</sub>"</em>. De beginkortsluitstroom is
+          de basis voor alle andere grootheden die een rol spelen bij de berekening van de kortsluitbelasting. In het voorbeeld van figuur 10.2 is de top-topwaarde
+          van de kortsluitstroom, bepaald door de onderlinge afstand van de lijnen die de positieve toppen en de negatieve toppen van de sinusvormige wisselstroom
+          met elkaar verbinden, constant. De afstand van de omhullende lijnen ten opzichte van elkaar is gelijk aan <em>2√2 ⋅ I<sub>k</sub>"</em>. </p>
+        <p> Er is sprake van een exponentieel uitdempende gelijkstroomcomponent, die in figuur 10.2 is aangegeven met de middelste gestreepte lijn. De waarde ervan is
+          gelijk aan de gemiddelde waarde van de kortsluitstroom. De gelijkstroomcomponent zorgt voor een hoge eerste piek in de kortsluitstroom. De hoogte ervan
+          hangt af van de locatie van de kortsluiting in het net. Figuur 10.3 geeft het verloop weer van de stroom tijdens een driefasenkortsluiting die elektrisch
+          gezien dicht bij een generator plaatsvindt. Bij het vergelijken van deze figuur met figuur 10.2 valt op dat het wisselstroomdeel tussen de omhullende
+          lijnen in figuur 10.2 een constante amplitude heeft maar in figuur 10.3 een afnemende amplitude. Dit verschil wordt veroorzaakt doordat een generator, die
+          zich dicht bij de kortsluiting bevindt, een relatief grote invloed op de kortsluitstroom heeft. De impedantie van de generator neemt bij het genereren van
+          zijn bijdrage aan de kortsluitstroom in de tijd toe, waardoor als gevolg hiervan de kortsluitstroombijdrage van deze generator afneemt. </p>
+        <img src="./kortsluitstroomberekeningen_files/10.3.jpg" width="712" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 10.3 Kortsluiting dichtbij generatoren </h5>
+        <p> Na verloop van tijd zal het overgangsverschijnsel in de kortsluitstroom zijn weggedempt en vloeit de stationaire kortsluitstroom <em>I<sub>k</sub></em>. Bij een
+          kortsluiting ver van de generatoren neemt de effectieve waarde van de kortsluitstroom niet of nauwelijks af, zodat de stationaire kortsluitstroom gelijk
+          verondersteld wordt aan de beginkortsluitstroom: <em>I<sub>k</sub> = I<sub>k</sub>"</em>. </p>
+        <p> De norm IEC 60909 hanteert de begrippen 'ver van generator' en 'dichtbij generator' als twee uitersten. In het eerste geval wordt de bijdrage van synchrone
+          generatoren aan de kortsluitstroom in rekening gebracht en in het tweede geval niet. Volgens IEC 60909 geldt voor een kortsluiting 'ver van generator': </p>
+          <ul>
+          <li>een kortsluiting waaraan alle synchrone machines niet meer dan tweemaal de nominale machinestroom bijdragen aan de beginkortsluitstroom <em>I<sub>k</sub>"</em> </li>
+        <li>en waaraan asynchrone motoren niet meer dan 5% bijdragen aan de beginkortsluitstroom <em>I<sub>k</sub>"</em> zonder motoren. </li>
+        </ul>
+        <p> In dit geval van een kortsluiting 'ver van generator' bestaat de kortsluitstroom uit de som van de volgende twee componenten: </p>
+                <ul>
+        <li> een symmetrische wisselstroomcomponent met constante amplitude gedurende de kortsluiting </li>
+          <li> een gelijkstroomcomponent <em>i<sub>dc</sub> </em>, die in de tijd afneemt naar nul. </li>
+        </ul>
+        <p> De norm IEC 60909 definieert een kortsluiting 'dichtbij generator' als volgt: </p>
+                <ul>
+        <li> een kortsluiting waaraan tenminste één synchrone machine bijdraagt aan de beginkortsluitstroom <em>I<sub>k</sub>"</em> en waarvan de
+          kortsluitstroombijdrage meer dan tweemaal de nominale stroomwaarde van die machine bedraagt </li>
+        <li> of een kortsluiting waaraan asynchrone motoren met meer dan 5% bijdragen aan de beginkortsluitstroom <em>I<sub>k</sub>"</em> vergeleken met de situatie
+        zonder motoren. </li></ul>
+        <p> In het geval van een kortsluiting 'dichtbij generator' bestaat de kortsluitstroom uit de som van de volgende twee componenten: </p>
+        <ul>
+        <li>  een symmetrische wisselstroomcomponent met afnemende amplitude gedurende de kortsluiting </li>
+          <li> een gelijkstroomcomponent i<sub>dc</sub>, die in de tijd afneemt naar nul. </li>
+        </ul>
+        <p> In distributienetten zijn vooralsnog de meeste kortsluitingen van het type 'ver van generator'. Is er in het net sprake van grote motoren en decentrale
+          opwekking, dan moet gerekend worden met de methode voor een kortsluiting 'dichtbij generator'. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.2"></div>
+        <br>
+<h2>10.2 Karakteristieke begrippen en grootheden </h2>
+        <h6> De beginkortsluitstroom <em>I<sub>k</sub>"</em> </h6>
+        <p> Bij elke kortsluiting is er sprake van een symmetrisch wisselstroomdeel. De effectieve waarde daarvan bij het begin van de kortsluiting wordt de
+          beginkortsluitstroom of sub-transiënte kortsluitstroom <em>I<sub>k</sub>"</em> genoemd. Deze grootheid is de basis voor alle andere grootheden die een rol
+          spelen in de berekening van de kortsluitbelasting. Met behulp van de nominale gekoppelde spanning <em>U<sub>nom</sub></em> wordt het schijnbare
+          beginkortsluitvermogen <em>S<sub>k</sub>"</em> berekend: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.1.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.1 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Het kortsluitvermogen is een fictieve grootheid die vaak in plaats van <em>I<sub>k</sub>"</em> wordt gebruikt. In de meeste gevallen is alleen de maximale waarde
+          van <em>I<sub>k</sub>"</em> van belang. Voor beveiligingsvraagstukken moet ook de minimale waarde bekend zijn. </p>
+        <h6> Gelijkstroomcomponent i<sub>dc</sub> </h6>
+        <p> De gelijkstroomcomponent (DC-component) is de gemiddelde waarde van de kortsluitstroom. Deze neemt in de tijd af, van een initiële waarde, bepaald aan
+          het begin van de kortsluiting, naar nul. De maximale gelijkstroomcomponent wordt berekend met formule 10.2, waarin de frequentie en de R/X verhouding in de
+          kortsluitbaan zijn opgenomen. </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.2.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.2 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <h6> De stootkortsluitstroom i<sub>p</sub> </h6>
+        <p> De stootkortsluitstroom of de piekstroom <em>i<sub>p</sub></em> vertegenwoordigt de hoogste topwaarde van de kortsluitstroom, met inbegrip van een eventueel
+          gelijkstroomdeel. Deze grootheid wordt gebruikt bij het bepalen van de dynamische kortsluitbelasting. De maximale stroombelasting van een schakel- en
+          verdeelinrichting is door de fabrikant gespecificeerd. De in de installatie mogelijk optredende stootkortsluitstroom moet onder de door de fabrikant
+          opgegeven waarde liggen. De relatie tussen de stootkortsluitstroom <em>i<sub>p</sub></em> en de beginkortsluitstroom <em>I<sub>k</sub>"</em> luidt: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.3.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.3 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <h6> De stootfactor κ </h6>
+        <p> De stootfactor <em>κ</em> in uitdrukking 10.3 is afhankelijk van de R/X verhouding in de kortsluitbaan en kan berekend worden met formule 10.4. Figuur 10.4
+          geeft de relatie <em>κ = f(R/X)</em> grafisch weer. </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.4.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.4 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <img src="./kortsluitstroomberekeningen_files/10.4.png" width="711" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 10.4 Stootfactor als functie van R/X </h5>
+        <p> Als alleen de beginkortsluitstroom <em>I<sub>k</sub>"</em> bekend is en niet de R/X verhouding, kan voor de stootfactor de waarde 1,8 worden genomen. Dit is
+          conservatief omdat een hoge R/X verhouding alleen geldt voor kortsluitingen in de nabijheid van voedingen. In de regel is de stootfactor in
+          MS-distributienetten lager. </p>
+        <p> Meestal wordt <em>i<sub>p</sub></em> berekend met behulp van de driefasenkortsluitstroom <em>I<sub>k</sub>"<sub>3</sub></em>. Bij asymmetrische kortsluitingen kan dezelfde
+          waarde voor <em>κ</em> worden gebruikt. De resultaten zijn dan aan de veilige kant. </p>
+        <p> De verhouding R/X volgt in het meest eenvoudige geval van een radiaal bedreven net rechtstreeks uit de som van de afzonderlijke R en X waarden. Is het
+          netwerk vermaasd, dan geeft IEC 60909 drie methoden om de stootkortsluitstroom te berekenen. In methode b van de betreffende IEC norm wordt een factor <em>κ<sub>(b)</sub></em>gevonden uit de verhouding R/X van de kortsluitimpedantie op de foutplaats. De waarde van <em>i<sub>p</sub></em> volgt dan uit
+          formule 10.5. Hierin stelt de factor 1,15 een correctie voor op verschillende R/X verhoudingen in het netwerk. </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.5.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.5 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <h6> De uitschakelwisselstroom I<sub>b</sub> </h6>
+        <p> Vanaf het moment van kortsluiting tot aan het begin van afschakeling (eerste schakelaarpool) zal de waarde van de kortsluitstroom afnemen. De effectieve
+          waarde op het moment van afschakeling wordt de uitschakelwisselstroom <em>I<sub>b</sub></em> genoemd. De norm IEC 60909 beschrijft de methode om de
+          uitschakelwisselstroom te berekenen voor uitschakeling op 20, 50, 100 en 250 ms na het begin van de kortsluiting. </p>
+        <h6> De stationaire kortsluitstroom <em>I<sub>k</sub></em> </h6>
+        <p> Na verloop van tijd zal het overgangsverschijnsel in de kortsluitstroom zijn weggedempt en resteert de stationaire kortsluitstroom <em>I<sub>k</sub></em>. Hierbij
+          wordt er van uitgegaan dat motoren niet meer bijdragen en dat de rotoren van de generatoren in verzadiging zijn, waardoor zij minder bijdragen dan in het
+          begin van de kortsluiting. </p>
+        <h6> De thermische korte-duurstroom i<sub>th</sub> </h6>
+        <p> Deze grootheid wordt berekend om de thermische kortsluitvastheid van netcomponenten te kunnen bepalen. </p>
+        <p> Een kortsluitstroom heeft in de regel een afnemend gelijkstroom- en wisselstroomdeel en neemt daardoor in sterkte af. Om het thermische effect van de
+          kortsluitstroom eenvoudig te kunnen bepalen, wordt uitgegaan van de thermische korte-duurstroom <em>i<sub>th</sub></em>. Dit is een constante effectieve waarde die
+          dezelfde thermische uitwerking en dezelfde tijdsduur heeft als de werkelijke kortsluitstroom. </p>
+        <p> Het verband tussen de thermische korte-duurstroom <em>i<sub>th</sub></em> en de beginkortsluitstroom <em>I<sub>k</sub>"</em> is weergegeven in formule 10.6. </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.6.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.6 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> met: </p>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td width="60" valign="top"><em>m</em></td>
+              <td>correctiefactor voor de gelijkstroomcomponent, die afhankelijk is van de uitschakeltijd en de stootfactor <em>κ</em> </td>
+            </tr>
+            <tr>
+              <td width="60" valign="top"><em>n</em></td>
+              <td>correctiefactor voor de afnemende wisselstroomcomponent, die afhankelijk is van uitschakeltijd en de verhouding <em>I<sub>k</sub>"/ I<sub>k</sub></em>.</td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> De factoren <em>m</em> en <em>n</em> vertegenwoordigen de thermische werking van het gelijkstroomdeel, respectievelijk het wisselstroomdeel van de
+          kortsluitstroom. Deze zijn beschreven in de norm IEC 60909. Figuur 10.5 toont de factor <em>m</em> als een functie van de kortsluittijd <em>T<sub>k</sub></em>. voor diverse waarden van de stootfactor κ, variërend van 1,1 tot 1,95. In figuur 10.5 is goed zichtbaar dat de factor <em>m</em> voor netten met een kleine stootfactor snel klein wordt bij toenemende kortsluitduur. </p>
+        <img src="./kortsluitstroomberekeningen_files/10.5.png" width="712" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 10.5 Factor m als functie van T<sub>k</sub> voor diverse stootfactoren k </h5>
+        <p> Figuur 10.6 toont de factor <em>n</em> als een functie van de kortsluittijd <em>T<sub>k</sub></em>. voor diverse waarden van de verhouding van de
+          beginkortsluitstroom <em>I<sub>k</sub>"</em> en de stationaire kortsluitstroom <em>I<sub>k</sub></em>, variërend van 1,25 tot 10. Indien <em>I<sub>k</sub></em> gelijk is aan <em>I<sub>k</sub>",</em> mag volgens IEC 60909 worden aangenomen dat de factor <em>n</em> gelijk is aan 1. In de
+          figuur is goed zichtbaar dat de factor <em>n</em> voor netten met een kleine verhouding van <em>I<sub>k</sub>"</em> en <em>I<sub>k</sub></em> langzaam
+          klein wordt bij toenemende kortsluitduur.  </p>
+        <img src="./kortsluitstroomberekeningen_files/10.6.png" width="712" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 10.6 Factor n als functie van T<sub>k</sub> voor diverse quotiënten I<sub>k</sub>"/I<sub>k</sub> </h5>
+        <p> In distributienetten, waar wordt aangenomen dat weinig machines aangesloten zijn, mag volgens de norm een waarde van <em>n = 1</em> worden gebruikt. Ook vermeldt de
+          norm dat voor kortsluitingen ver van de generator, waarbij de duur van de kortsluiting gemiddeld 0,5 s of meer bedraagt, het is toegestaan uit te gaan van
+          <em>m+n = 1</em>, zodat <em>i<sub>th</sub></em> gelijk is aan <em>I<sub>k</sub>"</em>. </p>
+        <p> Samenvattend zijn in de ontwerpfase van een distributienet twee aspecten van groot belang: </p>
+        <ul>
+          <li>
+            Dynamische kortsluitvastheid, gebaseerd op de stootkortsluitstroom <em>i<sub>p</sub></em> </li>
+        <li> Thermische kortsluitvastheid, gebaseerd op de driefasenkortsluitstroom <em>I<sub>k</sub>"</em> en de afnemende gelijkstroom- en wisselstroomcomponenten. </li>
+        </ul>
+        <a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.3"></div>
+        <br>
+<h2>10.3 Kortsluitstroomberekening volgens IEC 60909 </h2>
+        <p> De kortsluitstroomberekening volgens IEC 60909 is in beginsel gedefinieerd als een methode die met de hand moet kunnen worden uitgevoerd. Bovendien heeft
+          men ernaar gestreefd de methode zodanig in te richten dat er zo weinig mogelijk punten voor discussie zijn. De berekeningsresultaten kunnen eenvoudig door
+          derden worden beoordeeld en gereproduceerd. Omdat met name in de industrie veel ontwerpers moeten refereren aan een internationaal erkende standaard, heeft
+          de methode volgens IEC 60909 vaak de voorkeur. Om die reden zijn op verantwoorde wijze aannames en verwaarlozingen ingebouwd die deels met
+          correctiefactoren worden goedgemaakt. </p>
+        <p> De methode volgens IEC 60909 is een worst-case benadering waarmee de hoogste waarde van de kortsluitstroom wordt bepaald. Hierbij wordt uitgegaan van een
+          aantal verwaarlozingen en uitgangspunten bij het opstellen van het netmodel voor de berekening: </p>
+        <ul>
+          <li>verwaarlozing bedrijfscapaciteiten in de verbindingen </li>
+          <li>verwaarlozing van alle netbelastingen met uitzondering van motoren </li>
+          <li>alle voedingsbronnen worden vervangen door een kortsluitimpedantie </li>
+          <li>op de foutplaats wordt een equivalente spanningsbron aangebracht </li>
+          <li>correctiefactoren worden aangebracht op de equivalente spanningsbron en op impedanties. </li>
+        </ul>
+        <p> De voornoemde uitgangspunten en verwaarlozingen leiden tot een passief model van het net zonder voedingsbronnen. Alle netvoedingen, synchrone en asynchrone
+          machines zijn vervangen door hun interne impedanties. In dit passieve net wordt op de kortsluitplaats een equivalente spanningsbron geplaatst, zoals
+          aangegeven in figuur 10.7 en figuur 10.8. De hoogte van de spanning is: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.7.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.7 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> De correctiefactor <em>c</em> is geïntroduceerd vanwege een aantal verwaarlozingen en aannames en om afwijkingen van de ideale situatie te ondervangen, zoals: </p>
+        <ul>
+          <li> spanningsvariatie in tijd en plaats </li>
+          <li>van hoofdinstelling afwijkende trapstand van transformatoren </li>
+        
+          <li> verwaarlozing belastingen </li>
+          <li> verwaarlozing van lijn- en kabelcapaciteiten </li>
+          <li>het sub-transiënte gedrag van generatoren en motoren. </li>
+        </ul>
+        <h6> Spanningsfactor c </h6>
+        <p> De spanningsfactor <em>c</em> is afhankelijk van het spanningsniveau en van de keuze of de minimale kortsluitstroom <em>I<sub>k,min</sub></em> (factor <em>c<sub>min</sub></em>) of de
+          maximale kortsluitstroom <em>I<sub>k,max</sub></em> (factor <em>c<sub>max</sub></em>) moet worden berekend. In tabel 10.1 zijn de waarden voor de corresponderende c-factor
+          aangegeven. </p>
+        <h5> Tabel 10.1 Waarden voor de c-factor </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="85" valign="top"><p> <strong>Spanningsniveau</strong> </p></td>
+              <td width="135" valign="top"><p> <strong>Spanning</strong> </p></td>
+              <td width="66" valign="top"><p> <strong>c<sub>max</sub></strong> </p></td>
+              <td width="54" valign="top"><p> <strong>c<sub>min</sub></strong> </p></td>
+            </tr>
+            <tr>
+              <td width="85" rowspan="2" valign="top"><p> LS </p></td>
+              <td width="135" valign="top"><p> Spanningstolerantie +6% </p></td>
+              <td width="66" valign="top"><p> 1,05 </p></td>
+              <td width="54" valign="top"><p> 0,95 </p></td>
+            </tr>
+            <tr>
+              <td width="135" valign="top"><p> Spanningstolerantie +10% </p></td>
+              <td width="66" valign="top"><p> 1,10 </p></td>
+              <td width="54" valign="top"><p> 0,95 </p></td>
+            </tr>
+            <tr>
+              <td width="85" valign="top"><p> MS </p></td>
+              <td width="135" valign="top"><p> 1 kV &lt; U<sub>nom</sub> ≤ 35 kV </p></td>
+              <td width="66" valign="top"><p> 1,10 </p></td>
+              <td width="54" valign="top"><p> 1,00 </p></td>
+            </tr>
+            <tr>
+              <td width="85" valign="top"><p> HS </p></td>
+              <td width="135" valign="top"><p> U<sub>nom</sub> &gt; 35 kV </p></td>
+              <td width="66" valign="top"><p> 1,10 </p></td>
+              <td width="54" valign="top"><p> 1,00 </p></td>
+            </tr>
+          </tbody>
+        </table><br>
+        <p> De stromen in het passieve netwerk, die als gevolg van het aanbrengen van de spanningsbron ontstaan, zijn gelijk aan de foutstromen in het netwerk terwijl
+          de totale stroom die door de spanningsbron wordt geleverd gelijk is aan de kortsluitstroom op de foutplaats. </p>
+        <p> In figuur 10.7 is een eenvoudig netwerk weergegeven dat bestaat uit drie knooppunten. Knooppunt K1 is verbonden met de netvoeding en knooppunt K3 bevat een
+          belasting, een generator en een motor. Op knooppunt K2 wordt een symmetrische kortsluiting verondersteld.  </p>
+        <img src="./kortsluitstroomberekeningen_files/10.7.png" width="712" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5>Figuur 10.7 Netwerk met kortsluiting op knooppunt K2 </h5>
+        <p> Volgens IEC 60909 kan voor de berekening van de kortsluitstroom het netwerk worden vervangen door het vervangingsschema, zoals weergegeven in figuur 10.8.
+          De netvoeding is vervangen door de kortsluitimpedantie. De spanningsbron van de netvoeding wordt hierbij kortgesloten. De transformator en de kabel zijn
+          vervangen door hun impedanties. De roterende machines zijn vervangen door hun kortsluitimpedanties. Belastingen en shunts worden buiten beschouwing
+          gelaten. Capaciteiten van verbindingen van het normale en inverse systeem worden ook buiten beschouwing gelaten. </p>
+        <p> Op de foutplaats K2 wordt nu een spanningsbron aangebracht met een waarde volgens vergelijking 10.7. Deze waarde representeert de spanning op dit knooppunt
+          in de ongestoorde situatie. Door het netwerk van figuur 10.8 te vereenvoudigen kan de kortsluitstroom worden berekend. </p>
+        <img src="./kortsluitstroomberekeningen_files/10.8.png" width="712" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 10.8 Vervangingsschema volgens IEC 60909 voor berekening van de kortsluiting op knooppunt K2 </h5>
+        <p> Omdat de fout een driefasensymmetrische kortsluiting betreft, is voor de berekening alleen het netwerk van de normale component van belang. Hierom volstaat
+          het alleen de normale impedanties <em><u>Z</u></em><em><sub>1</sub></em> vast te stellen. Voor de berekening van andere typen kortsluitingen, zoals tussen
+          twee fasen en tussen fase en aarde, moeten ook de homopolaire impedantie <em><u>Z</u><sub>0</sub></em> en de inverse impedantie <em><u>Z</u><sub>2</sub></em> worden vastgesteld. In het homopolaire netwerk behoeft het vervangingsschema van de transformator bijzondere aandacht, zoals
+          behandeld in <a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8.3.6">paragraaf 8.3.6</a>. </p>
+        <p> Door het vervangingsschema van figuur 10.8 te vereenvoudigen tot een enkele impedantie <em><u>Z</u><sub>1</sub></em>, kan de
+          driefasenkortsluitstroom <em>I<sub>k</sub>"</em> eenvoudig bepaald worden uit de serie- en parallelschakeling van de afzonderlijke impedanties: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.8.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.8 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Alle takken (transformatoren, kabels, smoorspoelen) en actieve elementen (netvoeding, generatoren, motoren) zijn vervangen door kortsluitimpedanties <em>R+jX</em>.
+          De impedanties zijn beschreven in <a href="https://www.phasetophase.nl/boek/boek_2_8.html">hoofdstuk 8</a> (Modellen). Tabel 10.2 geeft een samenvatting van de wijze waarop de impedanties van de belangrijkste
+          netcomponenten vanuit algemeen bekende gegevens kunnen worden berekend. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.3.1"></div>
+        <br>
+<h3> 10.3.1 Berekening </h3>
+        <p> De berekening van de maximum en minimum kortsluitstroom is gebaseerd op een aantal vereenvoudigingen: </p>
+        <ul>
+          <li>tijdens de kortsluiting verandert het type van de kortsluiting niet; dat wil zeggen dat een fase-aardfout niet wijzigt in een tweefasenfout of een
+            driefasenfout </li>
+          <li>tijdens de kortsluiting verandert de topologie van het netwerk niet </li>
+          <li>de impedanties van de transformatoren hebben betrekking tot de nominale overzetverhouding; eventuele afwijkingen worden met de factor <em>K<sub>T</sub></em> (<a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8.3.7">paragraaf 8.3.7</a>) in rekening gebracht </li>
+          <li>er wordt geen rekening gehouden met boogweerstand </li>
+          <li>alle capaciteiten van lijnen en kabels en overige shuntadmittanties en niet-roterende belastingen worden verwaarloosd </li>
+          <li>capaciteiten en dwarsadmittanties in het homopolaire systeem worden niet verwaarloosd. </li>
+        </ul>
+        <p> Met deze vereenvoudigingen kan de kortsluitstroom met voldoende nauwkeurigheid berekend worden. De methode is vastgelegd in de norm IEC 60909 en is
+          wereldwijd geaccepteerd.  </p>
+        <h5> Tabel 10.2 Samenvatting kortsluitimpedanties </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td valign="top"><p> <strong>Component</strong> </p></td>
+              <td valign="top"><p> <strong>Weerstand en reactantie</strong> </p></td>
+              <td valign="top"><p> <strong>Complexe impedantie en correctiefactor</strong> </p></td>
+            </tr>
+            <tr>
+              <td><p> Netvoeding </p></td>
+              <td><img src="./kortsluitstroomberekeningen_files/tabel-10.2-a1.png" alt="formules_2.10"></td>
+              <td><img src="./kortsluitstroomberekeningen_files/tabel-10.2-a2.png" alt="formules_2.10"></td>
+            </tr>
+            <tr>
+              <td><p> Kabels en lijnen </p></td>
+              <td><img src="./kortsluitstroomberekeningen_files/tabel-10.2-b1.png" alt="formules_2.10"></td>
+              <td><img src="./kortsluitstroomberekeningen_files/tabel-10.2-b2.png" alt="formules_2.10"></td>
+            </tr>
+            <tr>
+              <td><p> Transformatoren </p></td>
+              <td><img src="./kortsluitstroomberekeningen_files/tabel-10.2-c1.png" alt="formules_2.10"></td>
+              <td><img src="./kortsluitstroomberekeningen_files/tabel-10.2-c2.png" alt="formules_2.10"></td>
+            </tr>
+            <tr>
+              <td><p> Smoorspoelen </p></td>
+              <td><img src="./kortsluitstroomberekeningen_files/tabel-10.2-d1.png" alt="formules_2.10"></td>
+              <td><img src="./kortsluitstroomberekeningen_files/tabel-10.2-d2.png" alt="formules_2.10"></td>
+            </tr>
+            <tr>
+              <td><p> Synchrone generatoren en motoren </p></td>
+              <td><img src="./kortsluitstroomberekeningen_files/tabel-10.2-e1.png" alt="formules_2.10"></td>
+              <td><img src="./kortsluitstroomberekeningen_files/tabel-10.2-e2.png" alt="formules_2.10"></td>
+            </tr>
+            <tr>
+              <td><p> Asynchrone motoren </p></td>
+              <td><img src="./kortsluitstroomberekeningen_files/tabel-10.2-f1.png" alt="formules_2.10"></td>
+              <td><img src="./kortsluitstroomberekeningen_files/tabel-10.2-f2.png" alt="formules_2.10"></td>
+            </tr>
+          </tbody>
+        </table><br>
+        <h6> Berekening van de maximale kortsluitstroom I<sub>k,max</sub> </h6>
+        <p> De maximale kortsluitstroom wordt berekend om de kortsluitvastheid van de netcomponenten te onderzoeken. Bij de berekening van maximale kortsluitstromen in
+          een netwerk wordt een factor <em>c<sub>max</sub></em> gebruikt. Bij deze berekening wordt uitgegaan van: </p>
+<ul>
+          <li>weerstand van de geleiders bij een temperatuur van 20 ˚C </li>
+          <li> maximale inzet van generatoren </li>
+          <li>maximale inzet van transformatoren en koppelverbindingen </li>
+        
+          <li> maximaal kortsluitvermogen van de netvoeding </li>
+          <li>maximale inzet van asynchrone machines (generatoren en motoren). </li>
+        </ul>
+        <h6> Berekening van de minimale kortsluitstroom I<sub>k,min</sub> </h6>
+        <p> Deze berekening wordt toegepast om de juiste werking van beveiligingstoestellen in het net te onderzoeken, met name voor het al dan niet aanspreken van de
+          beveiliging en het vaststellen van selectiviteit tussen opeenvolgende beveiligingstoestellen. Bij de berekening van minimale kortsluitstromen in een
+          netwerk wordt een factor <em>c<sub>min</sub></em> gebruikt. Voor de berekening wordt uitgegaan van: </p>
+<ul>
+          <li>weerstand van de geleiders bij de geleider eindtemperatuur </li>
+          <li> minimale inzet van generatoren </li>
+          <li>minimale inzet van transformatoren en koppelverbindingen </li>
+        
+          <li> minimaal kortsluitvermogen van netvoeding </li>
+          <li>geen invloed van asynchrone machines (generatoren en motoren) en synchrone motoren. </li>
+        </ul>
+        <p> Het beveiligingssysteem moet ontworpen zijn voor het afschakelen van kortsluitstromen en aardfoutstromen. Het is belangrijk alert te zijn op het grijze
+          gebied tussen de maximaal toelaatbare stroom van de beveiligde objecten en het aanspreekniveau van de beveiliging, met name in verband met de
+          aanloopstromen van grote motoren. </p>
+        <p> In elk elektriciteitsnet kunnen op verschillende manieren kortsluitingen optreden. Hierbij wordt onderscheid gemaakt in: kortsluiting tussen 3 fasen,
+          kortsluitingen tussen 2 fasen, al dan niet met aardcontact en kortsluitingen tussen een fase en aarde. Bij het berekenen wordt gebruik gemaakt van de
+          methode van symmetrische componenten (<a href="https://www.phasetophase.nl/boek/boek_2_7.html">hoofdstuk 7</a>). Met deze methode kan de kortsluitstroom voor de situaties uit figuur 10.9 met behulp van eenvoudige
+          formules worden berekend. Voor het bepalen van de impedanties van de componenten in het netwerk wordt gebruik gemaakt van de modellen, zoals beschreven in <a href="https://www.phasetophase.nl/boek/boek_2_8.html">hoofdstuk 8</a>. </p>
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="./kortsluitstroomberekeningen_files/10.9a.png" width="334" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+            <h5>a) kortsluiting in drie fasen</h5>
+          </div>
+          <div class="col-lg-6">
+            <img src="./kortsluitstroomberekeningen_files/10.9b.png" width="333" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+            <h5>b) kortsluiting in twee fasen</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="./kortsluitstroomberekeningen_files/10.9c.png" width="334" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+            <h5>c) kortsluiting in twee fasen met aardcontact</h5>
+          </div>
+          <div class="col-lg-6">
+            <img src="./kortsluitstroomberekeningen_files/10.9d.png" width="333" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+            <h5>d) kortsluiting in één fase met aardcontact</h5>
+          </div>
+        </div>
+<h5> Figuur 10.9 Kortsluittypen </h5>
+        <p> De basis voor de kortsluitstroomberekeningen wordt gelegd door de samenschakelingen van de symmetrische componentnetwerken (Happoldt, 1978). Voor elke
+          symmetrische component wordt een model gemaakt van het netwerk, waarna het type kortsluiting bepaalt op welke manier de normale, inverse en homopolaire
+          componentnetwerken met elkaar worden verbonden. De fasestromen en fasespanningen kunnen na de terugtransformatie (<a href="https://www.phasetophase.nl/boek/boek_2_7.html">zie hoofdstuk 7</a>) uit de componentstromen
+          en componentspanningen worden berekend. De schakelingen voor de vier kortsluittypen zijn samengevat in figuur 10.10. Hierin zijn <em><u>Z</u><sub>k,1</sub></em>,  <em><u>Z</u><sub>k,2</sub></em> en <em><u>Z</u><sub>k,0</sub></em> de kortsluitimpedantie van respectievelijk het normale, inverse en homopolaire netwerk op de foutplaats en
+          is <em><u>Z</u><sub>f</sub></em> de impedantie van de kortsluiting. De spanningsbron in de componentnetwerken is de nominale fasespanning. </p>
+        <p> Bij kortsluitberekeningen volgens IEC 60909 is de impedantie van de kortsluiting <em><u>Z</u><sub>f</sub></em> altijd nul Ohm en worden niet de component-stromen <em>I<sub>1</sub></em>, <em>I<sub>2</sub></em> en <em>I<sub>0</sub></em> berekend, maar de kortsluitstroom <em>I<sub>k</sub></em> op de foutplaats, waardoor de waarde van de spanningsbron de
+          nominale gekoppelde spanning is, vermenigvuldigd met de <em>c</em>-factor. </p>
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="./kortsluitstroomberekeningen_files/10.10a.png" width="290" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+            <h5>a) kortsluiting in drie fasen</h5>
+          </div>
+          <div class="col-lg-6">
+            <img src="./kortsluitstroomberekeningen_files/10.10b.png" width="291" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+            <h5>b) kortsluiting in twee fasen</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="./kortsluitstroomberekeningen_files/10.10c.png" width="370" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+            <h5>c) kortsluiting in twee fasen met aardcontact</h5>
+          </div>
+          <div class="col-lg-6">
+            <img src="./kortsluitstroomberekeningen_files/10.10d.png" width="300" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+            <h5>d) kortsluiting in één fase met aardcontact</h5>
+          </div>
+        </div>
+        <h5> Figuur 10.10 Componentnetwerken voor de kortsluittypen </h5>
+        <p> Voor symmetrische kortsluitingen blijkt alleen de normale impedantie (<em><u>Z</u><sub>1</sub></em>) van belang. Voor asymmetrische kortsluitingen moet ook de
+          inverse impedantie (<em><u>Z</u><sub>2</sub></em>) worden bepaald. Deze wordt in de meeste gevallen (ver van generator) gelijk verondersteld aan de normale
+          impedantie (<em><u>Z</u><sub>1</sub></em> = <em><u>Z</u><sub>2</sub></em>). Indien de kortsluiting tussen een of twee fasen en aarde plaatsvindt, moet ook de homopolaire
+          impedantie (<em><u>Z</u><sub>0</sub></em>) worden bepaald. </p>
+        <p> Uit de symmetrische componentschakelingen van figuur 10.10 zijn de formules voor de kortsluitstroomberekeningen van IEC 60909 afgeleid. Hierin wordt niet
+          met componentstromen en met de fasespanning gewerkt, maar met de gekoppelde spanning en de fasestromen. Tabel 10.3 geeft een overzicht van de berekening
+          van de kortsluitstromen volgens IEC 60909. Hierin is <em>U<sub>nom</sub></em> de nominale gekoppelde spanning op de foutplaats en is <em><u>Z</u><sub>k,1</sub></em> de
+          kortsluitimpedantie op de foutplaats in het normale systeem, <em><u>Z</u><sub>k,2</sub></em> de kortsluitimpedantie op de foutplaats in het inverse systeem en <em><u>Z</u><sub>k,0</sub></em> de kortsluitimpedantie op de foutplaats in het homopolaire systeem. Voor een tweefasenkortsluiting met aardcontact worden de complexe
+          operators <em>a</em> en <em>a<sup>2</sup></em> (zie <a href="https://www.phasetophase.nl/boek/boek_2_7.html#_7.5">paragraaf 7.5</a>) gebruikt. </p>
+        <h5> Tabel 10.3 Berekening van de beginkortsluitstroom op een foutplaats </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="33%" valign="top"><p> <strong>Type kortsluiting</strong> </p></td>
+              <td width="66%" valign="top"><p> <strong>Kortsluitstroom </strong> </p></td>
+            </tr>
+            <tr>
+              <td width="85"><p> Drie fasen </p></td>
+              <td width="255" valign="top"><img src="./kortsluitstroomberekeningen_files/tabel-10.3-a.png" alt=""></td>
+            </tr>
+            <tr>
+              <td width="85"><p> Twee fasen zonder aardcontact </p></td>
+              <td width="255" valign="top"><img src="./kortsluitstroomberekeningen_files/tabel-10.3-b.png" alt=""></td>
+            </tr>
+            <tr>
+              <td width="85"><p> Twee fasen (b en c) met aardcontact </p></td>
+              <td width="255" valign="top"><img src="./kortsluitstroomberekeningen_files/tabel-10.3-c.png" alt=""></td>
+            </tr>
+            <tr>
+              <td width="85"><p> Een fase met aardcontact </p></td>
+              <td width="255" valign="top"><img src="./kortsluitstroomberekeningen_files/tabel-10.3-d.png" alt=""></td>
+            </tr>
+          </tbody>
+        </table><br>
+        <p> De driefasenkortsluiting levert in bijna alle gevallen de grootste kortsluitstroom. In een enkel geval levert de fase-aardkortsluiting de grootste
+          kortsluitstroom. De grootte hangt af van de manier van aarden in het MS- en het LS-net. Veel MS-netten zijn zwevend, waardoor de fase-aardkortsluitstroom
+          vooral bepaald wordt door de capaciteit naar aarde van alle gekoppelde kabels in het MS-net (zie <a href="https://www.phasetophase.nl/boek/boek_1_5.html">hoofdstuk 5</a>). Indien de homopolaire impedantie <em>Z<sub>0</sub></em> op de kortsluitplaats kleiner is dan <em>Z<sub>1</sub></em> en <em>Z<sub>2</sub></em>, zal de fase-aardkortsluitstroom groter zijn dan de
+          driefasenkortsluitstroom. Deze situatie kan optreden bij een kortsluiting aan de LS-klemmen van een distributietransformator. De tweefasenkortsluiting is
+          minder van belang in de ontwerpfase en wordt dan ook niet zo vaak uitgevoerd. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.3.2"></div>
+        <br>
+<h3> 10.3.2 Driefasen- en tweefasenfout zonder aardcontact in een MS-net</h3>
+        <p> Het net van figuur 10.7 wordt hieronder herhaald in figuur 10.11. In het net van figuur 10.11 worden hieronder aan de hand van een voorbeeld de
+          berekeningen van de maximale kortsluitstroom toegelicht voor een kortsluiting op het MS-knooppunt K2. Het MS-deel is niet geaard. De gegevens van het
+          netwerk en de componenten zijn in tabel 10.4 samengevat. </p>
+        <img src="./kortsluitstroomberekeningen_files/10.11.png" width="697" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 10.11 Netwerk met kortsluiting op knooppunt K2 </h5>
+        <h5> Tabel 10.4 Invoergegevens voor het rekenvoorbeeld </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="33%" valign="top"><p> <strong>Knooppunten:</strong> </p>
+                <table width="100%" border="0">
+                  <tbody>
+                    <tr>
+                      <td width="50%">K1: U<sub>k1,nom</sub> =</td>
+                      <td width="50%">150 kV</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">K2: U<sub>k2,nom</sub> =</td>
+                      <td width="50%">10 kV</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">K3: U<sub>k3,nom</sub> =</td>
+                      <td width="50%">10 kV</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>  
+              <td width="33%" valign="top"><p> <strong>Netvoeding:</strong> </p>
+                <table width="100%" border="0">
+                  <tbody>
+                    <tr>
+                      <td width="50%">U<sub>nom</sub> =</td>
+                      <td width="50%">150 kV</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">I<sub>k,max</sub>" =</td>
+                      <td width="50%">40 kA</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">S<sub>k,max</sub>" =</td>
+                      <td width="50%">10392 MVA</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">R/X =</td>
+                      <td width="50%">0</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">Z0/Z1 =</td>
+                      <td width="50%">1</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>  
+              <td width="33%" valign="top"><p> <strong>Transformator:</strong> </p>
+                <table width="100%" border="0">
+                  <tbody>
+                    <tr>
+                      <td width="50%">U<sub>nom,primair</sub> =</td>
+                      <td width="50%">150 kV</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">U<sub>nom,secundair</sub> =</td>
+                      <td width="50%">10,5 kV</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">S<sub>nom</sub> =</td>
+                      <td width="50%">50 MVA</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">u<sub>k</sub> =</td>
+                      <td width="50%">20 %</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">P<sub>k</sub> =</td>
+                      <td width="50%">20 kW</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">Schakeling:</td>
+                      <td width="50%">Ynd5</td>
+                    </tr>
+                  </tbody>
+                </table>
+			</td>
+            </tr><tr>
+              <td width="115" valign="top"><p> <strong>Kabel:</strong> </p>
+                <table width="100%" border="0">
+                  <tbody>
+                    <tr>
+                      <td width="50%" valign="top">Type:</td>
+                      <td width="50%">3x150 Cu <br>XLPE 6/10</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">Lengte:</td>
+                      <td width="50%">5 km</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">R<sub>K</sub>(20°C) =</td>
+                      <td width="50%">0,621 Ω</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">X<sub>K</sub> =</td>
+                      <td width="50%">0,475 Ω</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">C<sub>K</sub> =</td>
+                      <td width="50%">1,8 μF</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">R<sub>K,0</sub> =</td>
+                      <td width="50%">0,8 Ω</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">X<sub>K,0</sub> =</td>
+                      <td width="50%">0,5 Ω</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">C<sub>K,0</sub> =</td>
+                      <td width="50%">1,8 μF</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </td>
+              <td width="115" valign="top"><p> <strong>Motor:</strong> </p>
+                <table width="100%" border="0">
+                  <tbody>
+                    <tr>
+                      <td width="50%">U<sub>nom</sub> =</td>
+                      <td width="50%">10 kV</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">P<sub>nom</sub> =</td>
+                      <td width="50%">2 MW</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">η =</td>
+                      <td width="50%">95%</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">cos(φ)<sub>nom</sub> =</td>
+                      <td width="50%">0,85</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">I<sub>a</sub>/I<sub>nom</sub> =</td>
+                      <td width="50%">5</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">(R/X)<sub>aanloop</sub> =</td>
+                      <td width="50%">0,1</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </td>
+              <td width="115" valign="top"><p> <strong>Generator:</strong> </p>
+
+                <table width="100%" border="0">
+                  <tbody>
+                    <tr>
+                      <td width="50%">U<sub>nom</sub> =</td>
+                      <td width="50%">10 kV</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">S<sub>nom</sub> =</td>
+                      <td width="50%">2 MVA</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">cos(φ)<sub>nom</sub> =</td>
+                      <td width="50%">0,85</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">x<sub>d</sub>" =</td>
+                      <td width="50%">0,2 pu</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">r<sub>g</sub> =</td>
+                      <td width="50%">0,1 pu</td>
+                    </tr>
+                  </tbody>
+                </table>
+			</td>
+            </tr>
+            <tr>
+              <td width="115" valign="top"><p> <strong>Belasting:</strong> </p>
+                <table width="100%" border="0">
+                  <tbody>
+                    <tr>
+                      <td width="50%">P =</td>
+                      <td width="50%">2,0 MW</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">Q =</td>
+                      <td width="50%">1,5 Mvar</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </td>
+              <td width="115" valign="top">&nbsp;</td>
+              <td width="115" valign="top">&nbsp;</td>
+            </tr>
+            
+          </tbody>
+        </table><br>
+        <p> Het vervangingsschema van figuur 10.8 wordt hieronder herhaald in figuur 10.12. </p>
+
+        <img src="./kortsluitstroomberekeningen_files/10.12.png" width="768" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 10.12 Vervangingsschema volgens IEC 60909 voor berekening van de kortsluiting op knooppunt K2 </h5>
+        <p> Voor de berekening van de driefasenkortsluitstroom in het vervangingsschema van figuur 10.12 worden eerst de interne impedanties van alle componenten
+          berekend. Hierbij worden alle impedanties betrokken op het spanningsniveau van de kortsluitplaats. Voor de netvoeding geldt aan HS-zijde: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.9.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.9 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Omdat de kortsluiting zich op het MS-knooppunt K2 bevindt, moet de impedantie van de HS-netvoeding worden omgerekend naar een equivalente impedantie op
+          MS-niveau. Dit gebeurt met behulp van de overzetverhouding van de transformator. Voor de netvoeding geldt dan, gecorrigeerd voor de overzetverhouding van
+          de transformator: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.10.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.10 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Voor de transformator geldt: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.11.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.11 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Voor de kabel geldt: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.12.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.12 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Voor de generator geldt: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.13.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.13 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Voor de motor geldt: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.14.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.14 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> In het vervangingsschema van figuur 10.12 is de impedantie links van knooppunt K2 en dus links van de spanningsbron gelijk aan de serieschakeling van de
+          impedanties van de netvoeding en de transformator: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.15.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.15 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> In het vervangingsschema van figuur 10.12 is de impedantie rechts van de spanningsbron gelijk aan de serieschakeling van de kabelimpedantie en de
+          parallelschakeling van de generator- en motorimpedantie. De impedantie van de belasting wordt verwaarloosd: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.16.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.16 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> De totale impedantie op de foutplaats is dan gelijk aan de parallelschakeling van de impedanties links en rechts van de spanningsbron: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.17.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.17 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Nu kan de driefasenkortsluitstroom op foutplaats K2 worden berekend: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.18.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.18 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> De bijdrage vanuit de voedende kant, links van de spanningsbron in figuur 10.12 is gelijk aan: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.19.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.19 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Dit is de kortsluitstroom die door de netvoeding en de transformator wordt geleverd. </p>
+        <p> De bijdrage vanuit de motor en de generator, rechts van de spanningsbron in figuur 10.12 is gelijk aan: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.20.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.20 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Ook voor een tweefasenkortsluiting zonder aardcontact op de foutplaats K2 is de kortsluitstroom nu te bepalen, indien hierbij conform IEC 60909 de inverse
+          impedantie gelijk gesteld wordt aan de normale impedantie (<em><u>Z</u><sub>k,2</sub> = <u>Z</u><sub>k,1</sub></em>). De tweefasenkortsluitstroom op de foutplaats
+          is dan volgens tabel 10.3: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.21.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.21 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <img src="./kortsluitstroomberekeningen_files/10.13.png" width="712" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 10.13 Vervangingsschema volgens IEC 60909 voor berekening van de kortsluiting op knooppunt K3 </h5>
+        <p> Op identieke wijze kan ook eenvoudig de kortsluitstroom in knooppunt K3 worden bepaald. Om dit te kunnen doen, moet de equivalente spanningsbron in figuur
+          10.12 verplaatst worden van knooppunt K2 naar knooppunt K3. Ten aanzien van de impedanties blijft het schema onveranderd, zoals afgebeeld in figuur 10.13. </p>
+        <p> De impedantie links van knooppunt K3 in figuur 10.13 is gelijk aan de serieschakeling van de impedanties van de netvoeding, de transformator en de kabel: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.22.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.22 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> In het schema van figuur 10.13 is de impedantie rechts van de spanningsbron op knooppunt K3 gelijk aan de parallelschakeling van de generator- en
+          motorimpedantie. De impedantie van de belasting wordt weer verwaarloosd: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.23.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.23 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> De totale impedantie op de foutplaats K3 is dan gelijk aan de parallelschakeling van de impedanties links en rechts van de spanningsbron: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.24.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.24 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Hiermee kan nu de driefasenkortsluitstroom op foutplaats K3 worden berekend: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.25.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.25 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Het kortsluitvermogen op foutplaats K3 wordt berekend met de nominale spanning: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.26.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.26 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> De R/X-verhouding op foutplaats K3 wordt afgeleid van de impedantie op de foutplaats (vergelijking 10.24) en is gelijk aan: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.27.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.27 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Met de R/X-verhouding en de driefasenkortsluitstroom kan de stootkortsluitstroom worden berekend met behulp van de formules 10.3 en 10.4: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.28.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.28 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.3.3"></div>
+        <br>
+<h3> 10.3.3 Fase-aardfout in een zwevend MS-net </h3>
+        <p> Het netwerk van figuur 10.11 is volgens de gegevens in tabel 10.4 een MS-net. De HS/MS-transformator heeft een ster-driehoekschakeling en daarmee is het
+          netwerk een zwevend MS-net. In een zwevend net wordt de fase-aardkortsluitstroom voor het grootste gedeelte bepaald door de capaciteit naar aarde van alle
+          kabels. Voor het berekenen van de fase-aardkortsluitstroom moet de homopolaire impedantie <em><u>Z</u><sub>0</sub></em> van het net op de
+          kortsluitplaats worden bepaald. De te gebruiken gegevens zijn te vinden in figuur 10.9.d en in figuur 10.10.d. In het schema van het net in het homopolaire
+          stelsel wijken de vervangingsschema's van de transformatoren en roterende machines af van het schema in het normale stelsel. De afwijkingen leiden in het
+          voorbeeld tot het circuit van figuur 10.14. Hierin valt op dat de transformator, door de driehoekschakeling aan de secundaire zijde, geen verbinding vormt
+          met de hoogspanningszijde (zie ook <a href="https://www.phasetophase.nl/boek/boek_2_8.html">hoofdstuk 8</a>). Bovendien hebben de motor en de generator geen homopolaire impedantie omdat ervan wordt uitgegaan dat de
+          wikkelingen in driehoek zijn geschakeld. De kabel wordt voorgesteld met een Pi-equivalent voor de homopolaire capaciteit (twee maal <em>jX<sub>k0,dwars</sub>/2</em>) en de homopolaire langsimpedantie (<em>R<sub>k,0</sub>+jX<sub>k,0</sub></em>). </p>
+        <img src="./kortsluitstroomberekeningen_files/10.14.png" width="671" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5>Figuur 10.14 Homopolair netwerk volgens IEC 60909 voor berekening van de kortsluiting op knooppunt K2 </h5>
+        <p> Omdat <em><u>Z</u><sub>k,0</sub></em> veel kleiner is dan <em><u>Z</u><sub>k0,dwars</sub></em>, kan het homopolaire Pi-equivalent van de kabel worden vereenvoudigd tot een
+          enkele dwarsimpedantie <em><u>Z</u><sub>k0,dwars</sub></em>. De waarde hiervan wordt berekend uit de homopolaire capaciteit: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.29.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.29 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Dit is de enige homopolaire impedantie op foutplaats K2, zodat deze waarde kan worden ingevuld in de formule voor de fase-aardkortsluitstroom uit tabel
+          10.3 (<em><u>Z</u><sub>k,1</sub> = <u>Z</u><sub>k,2</sub></em>): </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.30.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.30 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Het net van figuur 10.7 heeft maar een klein MS-gedeelte. De meeste MS-netten worden gevoed via een voedingsstation, waarop zo'n 20 strengen zijn
+          aangesloten die elk gemakkelijk een lengte van 10 km kunnen hebben. Figuur 10.15 toont een net, waarbij de 20 strengen zijn gerepresenteerd door een
+          equivalente verbinding. </p>
+        <img src="./kortsluitstroomberekeningen_files/10.15.png" width="697" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 10.15 MS-net met een equivalente verbinding voor 200 km kabel </h5>
+        <p> Volgens <a href="https://www.phasetophase.nl/boek/boek_1_5.html">hoofdstuk 5</a> hebben alle aangesloten strengen een gezamenlijke grote homopolaire capaciteit naar aarde, die ervoor zorgt dat de
+          fase-aardkortsluitstroom een aanzienlijke grootte kan bereiken. Figuur 10.16 illustreert dit aan de hand van de paden voor de kortsluitstromen. </p>
+        <img src="./kortsluitstroomberekeningen_files/10.16.png" width="613" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 10.16 Fase-aardsluiting in een zwevend MS-net </h5>
+        <p> De gezamenlijke homopolaire capaciteit <em>C<sub>K,0</sub></em> van 200 km kabel van het type 3x150 Cu XLPE 6/10 is 72 μF. Deze capaciteit is opgenomen in de extra
+          equivalente verbinding in figuur 10.15. De fase-aardkortsluitstroom <em>I<sub>k1</sub></em> is afgebeeld in figuur 10.16 en bestaat uit de twee stromen <em>I<sub>k1a</sub></em> en <em>I<sub>k1b</sub></em> door de twee capaciteiten van de fasen <em>a</em> en <em>b</em>. De spanning over elk van deze capaciteiten is tijdens de
+          kortsluiting gelijk aan de gekoppelde spanning. De laadstroom die door elke fase door de aanwezige capaciteit loopt, bedraagt: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.31.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.31 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Hierdoor is de stroom door de equivalente condensatoren ook gelijk aan 0,238 kA. Deze stromen vloeien door de fasen <em>a</em> en <em>b</em> naar de
+          transformator en de vectoriële som van deze twee stromen (I<sub>k1c</sub>) vloeit door de fase <em>c</em> naar de kortsluitplaats. Door de waarde van
+          <em>X<sub>C,0</sub></em> in te vullen in vergelijking 10.29 kan de kortsluitstroom worden berekend, want <em>I<sub>k1</sub> = I<sub>k1c</sub></em><sub> </sub>: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.32.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.32 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Wordt deze waarde ingevuld in de formule voor de fase-aardkortsluitstroom uit tabel 10.3 (<u><em>Z</em></u><em><sub>k,1</sub> = <u>Z</u><sub>k,2</sub> </em>en<em> <u>Z</u> <sub>k,0</sub> = <u>Z</u><sub>K0,dwars</sub></em>), dan volgt: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.33.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.33 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Deze vrij grote fase-aardkortsluitstroom in het zwevende net is in de orde grootte van de maximale stroombelasting van de toegepaste kabel en zal,
+          afhankelijk van de toegepaste beveiliging, worden afgeschakeld. Indien de hoogte van de fase-aardkortsluitstroom niet leidt tot ontoelaatbare opwarming van
+          de geleider of het aardscherm van de kabels, dan hoeft de kortsluiting niet onmiddellijk afgeschakeld te worden. Er is dan sprake van een 'staande
+          aardfout'. De energielevering hoeft nu niet te worden onderbroken. In alle rust kan de aardsluiting worden gelokaliseerd. Het is altijd wel wenselijk een
+          aardsluiting te detecteren vanwege de kans op een tweede aardfout in de gezonde fasen. De op het LS-net aangesloten klanten merken in de fase-nulspanningen
+          niets van de kortsluiting in het MS-net. Er kan eventueel een stijging van de potentiaal van de nul en de PE optreden (zie <a href="https://www.phasetophase.nl/boek/boek_1_5.html#_5.7.3">paragraaf 5.7.3</a>). </p>
+        <a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.3.4"></div>
+        <br>
+<h3> 10.3.4 Fase-aardfout in een blusspoel-geaard net </h3>
+        <p> In een zwevend MS-distributienet wordt de fase-aardkortsluitstroom veroorzaakt door de homopolaire capaciteit van alle kabels achter de
+          voedingstransformator. Deze kortsluitstroom kan bij een groot net aanzienlijk worden. Door inzet van een blusspoel kan de grootte van deze kortsluitstroom
+          beperkt worden. De werking berust op het principe van parallelresonantie tussen de totale homopolaire kabelcapaciteit en de homopolaire inductie van de
+          blusspoel, waardoor de impedantie van het homopolaire componentnetwerk oneindig groot wordt.  </p>
+        <p> Figuur 10.17 toont een netwerk waar de blusspoel is aangebracht als een nulpunttransformator met een homopolaire impedantie naar aarde. De homopolaire
+          reactantie is gelijk aan de som van de homopolaire transformatorimpedantie plus drie maal de aardingsimpedantie. De blusspoel kan ook worden gerealiseerd
+          met een ster-driehoektransformator, waarvan het sterpunt met een impedantie is geaard. </p>
+        <img src="./kortsluitstroomberekeningen_files/10.17.png" width="712" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 10.17 MS-net met blusspoel </h5>
+        <p> Voor de berekening van de fase-aardkortsluitstroom wordt het vervangingsschema van figuur 10.10.d voor de kortsluiting in één fase met
+          aardcontact toegepast, waarbij de drie componentnetwerken (normaal, invers, homopolair) in serie worden geschakeld. Het homopolaire netwerk is afgebeeld in
+          figuur 10.18. Om parallelresonantie te verkrijgen moet in het homopolaire deelnetwerk de totale impedantie van knooppuntje K3 naar de referentie oneindig
+          groot zijn. Dit kan bereikt worden door de waarde van X<sub>BS,0</sub> van de blusspoel juist te kiezen. Dit heeft tevens tot gevolg dat bij een configuratiewijziging
+          van het net de capaciteit verandert en dus ook de resonantiefrequentie. Om alsnog weer resonantie te kunnen verkrijgen, zou theoretisch de waarde van de
+          blusspoel aangepast moeten worden. </p>
+        <img src="./kortsluitstroomberekeningen_files/10.18.png" width="718" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 10.18 Homopolair netwerk volgens IEC 60909 bij toepassing van een blusspoel </h5>
+        <p> De waarde van <em><u>Z</u><sub>K,0,dwars</sub></em> is berekend in vergelijking 10.29: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-pag-447a.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left">  </p></td>
+              <td width="6%"><p align="center">  </p></td>
+              <td width="2%"><p align="right">  </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> De waarde van <em><u>Z</u><sub>C</sub></em> voor de equivalente verbinding, die 200 km kabel representeert, is berekend in vergelijking 10.32: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-pag-447b.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left">  </p></td>
+              <td width="6%"><p align="center">  </p></td>
+              <td width="2%"><p align="right">  </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> De totale homopolaire impedantie, veroorzaakt door de homopolaire capaciteiten van de kabels, is dan gelijk aan de parallelschakeling van deze twee
+          impedanties: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-pag-447c.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left">  </p></td>
+              <td width="6%"><p align="center">  </p></td>
+              <td width="2%"><p align="right">  </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <img src="./kortsluitstroomberekeningen_files/10.19.png" width="712" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 10.19 Componentstromen bij fase-aardkortsluiting in een blusspoel geaard net </h5>
+        <p> Voor parallelresonantie moet de homopolaire reactantie van de blusspoel gelijk zijn aan de negatieve homopolaire reactantie van de homopolaire
+          capaciteiten: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.34.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.34 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> De parallelschakeling van de blusspoel met de kabels levert een waarde van <em><u>Z</u><sub>k,0</sub></em> die oneindig is. Deze waarde kan worden ingevuld in de
+          formule voor de fase-aardkortsluitstroom uit tabel 10.3, waarbij als resultaat de grootte van <em>I<sub>k1</sub>"</em> nul is. Figuur 10.19 toont het resultaat van
+          de kortsluitstroomberekening voor deze foutsituatie. Hierbij worden alle stromen rond het kortsluitpunt in het met de blusspoel geaarde net getoond. Op de
+          plaats van de kortsluiting is de kortsluitstroom nul. Er loopt echter wel een homopolaire stroom van de kabels (138 plus 3 A) naar de blusspoel. Dit is het
+          gevolg van de parallelresonantie in het homopolaire circuit. Er loopt bovendien een stroom in het normale circuit van de voedingstransformator (138 A) naar
+          de equivalente kabel en naar de kabel die naar knooppunt K3 loopt. De stroom naar de equivalente kabel (138 A) is de capacitieve laadstroom van alle
+          kabelcapaciteiten (totaal 72 μF, gelijk aan de homopolaire capaciteit) in het normale circuit. De stroom naar de kabel die naar K3 loopt (164 A) is de
+          normale inductieve loadflowstroom naar de belastingen en de generator, die op knooppunt K3 zijn aangesloten. Deze stromen vloeien in het normale circuit en
+          worden niet door de kortsluiting beïnvloed. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.3.5"></div>
+        <br>
+<h3> 10.3.5 Fase-aardfout in een impedantiegeaard MS-net </h3>
+        <p> Soms is het gewenst dat fase-aardfouten in  zwevende MS-distributienetten niet blijven staan maar direct worden afgeschakeld. Het netwerk van figuur 10.7
+          kan op twee manieren geaard worden. In sommige 50/10 kV onderstations komt het voor dat transformatoren van het type Dyn zijn toegepast. In die gevallen
+          kan het sterpunt van de 10 kV-zijde star of via een impedantie geaard worden, waardoor de fase-aardkortsluitstroom in het MS-net groot kan worden. Waarden
+          van 8 kA kunnen dan bereikt worden. Een andere manier van aarden, die veelvuldig wordt toegepast, maakt gebruik van een nulpunts- of aardingstransformator
+          (<a href="https://www.phasetophase.nl/boek/boek_2_8.html">zie hoofdstuk 8</a>). Figuur 10.20 geeft een voorbeeld van een aardingstransformator, die is opgesteld in het onderstation. </p>
+        <img src="./kortsluitstroomberekeningen_files/10.20.png" width="712" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 10.20 MS-net met aardingstransformator </h5>
+        <p> De fase-aardkortsluitstroom wordt nu voor het grootste gedeelte bepaald door de impedantie van de aardingstransformator en daarbij de capaciteit naar aarde
+          van alle kabels. Voor het berekenen van de fase-aardkortsluitstroom moet het homopolaire circuit van figuur 10.21 worden gebruikt. Hierin is de
+          aardingstransformator gemodelleerd als een homopolaire impedantie op knooppunt K2. De homopolaire impedantie van de aardingstransformator is 7 Ω (reactief). De homopolaire impedantie van de equivalente kabel wordt voorgesteld door een enkele homopolaire impedantie op knooppunt K2. De homopolaire
+          impedantie van de kabel wordt voorgesteld met een Pi-equivalent voor de homopolaire capaciteit (twee maal <em>j2X<sub>k0,dwars</sub></em>) en de homopolaire
+          langsimpedantie (<em>R<sub>k,0</sub>+jX<sub>k,0</sub></em>). De homopolaire langsimpedantie van de kabel wordt in deze berekening weer verwaarloosd. </p>
+        <img src="./kortsluitstroomberekeningen_files/10.21.png" width="712" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 10.21 Homopolair netwerk volgens IEC 60909 bij toepassing van een aardingstransformator </h5>
+        <p> De waarde van <em><u>Z</u><sub>K,0,dwars</sub></em> is berekend in vergelijking 10.29: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.35a.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"></p></td>
+              <td width="6%"><p align="center"></p></td>
+              <td width="2%"><p align="right"></p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> De waarde van <em><u>Z</u><sub>C</sub></em> voor de equivalente verbinding, die 200 km kabel representeert, is berekend in vergelijking 10.32: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="center"><img src="./kortsluitstroomberekeningen_files/formule-10.35b.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"></p></td>
+              <td width="6%"><p align="center"></p></td>
+              <td width="2%"><p align="right"></p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> De homopolaire impedantie van de aardingstransformator is gegeven en bedraagt: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="center"><img src="./kortsluitstroomberekeningen_files/formule-10.35.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.35 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> De totale homopolaire impedantie op de foutplaats is dan gelijk aan de parallelschakeling van de drie voornoemde homopolaire impedanties: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.36.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.36 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Deze waarde kan worden ingevuld in de formule voor de fase-aardkortsluitstroom uit tabel 10.3 (<em><u>Z</u><sub>k,1</sub> = <u>Z</u><sub>k,2</sub></em>): </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.37.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.37 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.3.6"></div>
+        <br>
+<h3> 10.3.6 Berekening van de kortsluitstroom in een LS-net </h3>
+        <p> Voor een correcte berekening van de kortsluitstroom in een LS-net moet in beginsel ook het bovenliggende MS-net worden gemodelleerd en in de berekening
+          worden opgenomen. Voor de meeste toepassingen kan echter worden volstaan met de berekening vanaf de MS-zijde van de distributietransformator. In dat geval
+          moet het kortsluitvermogen van het MS-voedingspunt bekend zijn. In deze paragraaf wordt de berekening van de kortsluitstromen toegelicht voor een een
+          LS-net, dat gevoed wordt door een distributietransformator op knooppunt K3. </p>
+        <img src="./kortsluitstroomberekeningen_files/10.22.png" width="712" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 10.22 Netwerk met distributietransformator </h5>
+        <p> In paragraaf 10.3.2 is in vergelijking 10.26 het kortsluitvermogen op knooppunt K3 berekend. De R/X-verhouding op dit knooppunt is berekend met formule
+          10.27. Hiermee kan het bovenliggende voedende HS- en MS-net worden vervangen door een equivalente netvoeding op knooppunt K3. Aldus ontstaat het
+          vereenvoudigde netwerk van figuur 10.23: </p>
+        <img src="./kortsluitstroomberekeningen_files/10.23.png" width="500" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 10.23 LS-netwerk met distributietransformator </h5>
+        <p> In het rekenvoorbeeld wordt ervan uitgegaan dat het MS-gedeelte niet is geaard en dat het LS-gedeelte via het transformatorsterpunt is geaard met een
+          weerstand van 2Ω. De gegevens van het netwerk en de componenten zijn in tabel 10.5 samengevat. </p>
+        <h5> Tabel 10.5 Invoergegevens voor het rekenvoorbeeld </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="50%" valign="top"><p> <strong>Knooppunten:</strong> </p>
+                <table width="100%" border="0">
+                  <tbody>
+                    <tr>
+                      <td width="50%">K3: U<sub> k3,nom</sub> =</td>
+                      <td width="50%">10 kV</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">K4: U<sub> k4,nom</sub> =</td>
+                      <td width="50%">0,4 kV</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">K5: U<sub> k5,nom</sub> =</td>
+                      <td width="50%">0,4 kV</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </td>
+              <td width="50%" valign="top"><p> <strong>Netvoeding:</strong> </p>
+				<table width="100%" border="0">
+                  <tbody>
+                    <tr>
+                      <td width="50%" valign="top">U<sub>nom</sub> =</td>
+                      <td width="50%">10 kV</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">I<sub>k,max</sub>" =</td>
+                      <td width="50%">7,084 kA</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">S<sub>k,max</sub>" =</td>
+                      <td width="50%">122,7 MVA</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">R/X = </td>
+                      <td width="50%">0,6</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">Z0/Z1 =</td>
+                      <td width="50%">1</td>
+                    </tr>
+                  </tbody>
+                </table>
+     </td>
+            </tr>
+            <tr>
+              <td width="140" valign="top"><p> <strong>Transformator:</strong> </p>
+				<table width="100%" border="0">
+                  <tbody>
+                    <tr>
+                      <td width="50%" valign="top">U<sub>nom,primair</sub> =</td>
+                      <td width="50%">10,25 kV</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">U<sub>nom,secundair</sub> =</td>
+                      <td width="50%">0,4 kV</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">S<sub>nom</sub> =</td>
+                      <td width="50%">0,25 MVA</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">Ru<sub>k</sub> =</td>
+                      <td width="50%">4 %</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">P<sub>k</sub> =</td>
+                      <td width="50%">2,8 kW</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">R<sub>T,0</sub> =</td>
+                      <td width="50%">0,0072 Ω</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">X<sub>T,0</sub> =</td>
+                      <td width="50%">0,0235 Ω</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">Schakeling:</td>
+                      <td width="50%">Dyn5</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">Z0/Z1 =</td>
+                      <td width="50%">2 Ω</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </td>
+              <td width="135" valign="top"><p> <strong>Kabel:</strong> </p>
+				<table width="100%" border="0">
+                  <tbody>
+                    <tr>
+                      <td width="50%" valign="top">Type:</td>
+                      <td width="50%">4x150 VVMvKsas/Alk</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">Lengte:</td>
+                      <td width="50%">100 m</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">R<sub>k</sub>(20°C) =</td>
+                      <td width="50%">0,0206 Ω</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">X<sub>k</sub> =</td>
+                      <td width="50%">0,0079 Ω</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">R<sub>k,0</sub> =</td>
+                      <td width="50%">0,060 Ω</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">X<sub>k,0</sub> =</td>
+                      <td width="50%">0,015 Ω</td>
+                    </tr>
+                    <tr>
+                      <td width="50%">C<sub>k,0</sub> =</td>
+                      <td width="50%">0,043 μF</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </td>
+            </tr>
+          </tbody>
+        </table><br>
+        <p> Voor een kortsluitstroomberekening volgens de IEC 60909 berekening wordt het net schematisch voorgesteld met het netwerk van figuur 10.24 voor de normale
+          component en het netwerk van figuur 10.25 voor de homopolaire component. </p>
+        <img src="./kortsluitstroomberekeningen_files/10.24.png" width="712" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 10.24 Netwerk voor de normale component voor berekening van de kortsluiting op knooppunt K5 </h5>
+        <img src="./kortsluitstroomberekeningen_files/10.25.png" width="612" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 10.25 Netwerk voor de homopolaire component voor berekening van de kortsluiting op knooppunt K5 </h5>
+        <p> Voor de berekening van de driefasenkortsluitstroom op knooppunt K5 is het laagspanningsnetwerk in figuur 10.24 weergegeven. Nu worden eerst de interne
+          impedanties van alle componenten berekend. Hierbij worden alle impedanties betrokken op het spanningsniveau van de kortsluitplaats. Voor de impedantie van
+          de netvoeding geldt, gecorrigeerd voor de overzetverhouding van de transformator: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.38.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.38 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Voor de transformator geldt: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.39.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.39 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Voor de kabel geldt: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="center"><img src="./kortsluitstroomberekeningen_files/formule-10.40.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.40 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> In het schema van figuur 10.24 is voor foutplaats K5 de impedantie, links van de spanningsbron, gelijk aan de serieschakeling van de impedanties van de
+          netvoeding, de transformator en de kabel: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.41.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.41 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Nu kan de driefasenkortsluitstroom op de foutplaats K5 worden berekend: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.42.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.42 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> De R/X-verhouding op de foutplaats K5 wordt afgeleid van de impedantie <em>Z<sub>k,1</sub></em> op de foutplaats (vergelijking 10.41). Uit <em>Z<sub>k,1</sub> = R<sub>k,1</sub> + jX<sub>k,1</sub></em> volgt dan: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.43.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.43 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Met de R/X-verhouding en de driefasenkortsluitstroom kan de stootkortsluitstroom op knooppunt K5 worden berekend volgens formules 10.3 en 10.4: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.44.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.44 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Het netwerk van figuur 10.23 heeft een geaard LS-net. De fase-aardkortsluitstroom wordt bepaald door de distributietransformator, de
+          aardverspreidingsweerstand en de kabel. Navolgend wordt er van uitgegaan dat <em><u>Z</u><sub>k,1</sub> = <u>Z</u><sub>k,2</sub></em>. Voor het berekenen van de
+          fase-aardkortsluitstroom moet het homopolaire circuit van het netwerk worden bepaald. Deze is weergegeven in figuur 10.25. Bij het vergelijken van figuur
+          10.25 met figuur 10.24 valt het op dat in het homopolaire circuit de transformator, door de driehoekschakeling aan de primaire zijde, geen verbinding vormt
+          met knooppunt K3 aan de middenspanningszijde (zie ook <a href="https://www.phasetophase.nl/boek/boek_2_8.html">hoofdstuk 8</a>). De kabel wordt in beginsel voorgesteld met een Pi-equivalent voor de homopolaire
+          capaciteit (twee maal <em>jX<sub>k0,dwars</sub>/2</em>) en de homopolaire langsimpedantie (<em>R<sub>k,0</sub>+jX<sub>k,0</sub></em>), zoals afgebeeld in figuur 10.14.
+          Omdat in een laagohmig geaard LS-net de kabelcapaciteit praktisch geen rol speelt, wordt deze verwaarloosd, zodat de kabel in het homopolaire circuit wordt
+          voorgesteld met alleen zijn homopolaire langsimpedantie.  </p>
+        <p> De homopolaire impedantie van de aardverspreidingsweerstand is een factor 3 groter dan de aardverspreidingsweerstand (zie <a href="https://www.phasetophase.nl/boek/boek_2_7.html">hoofdstuk 7</a>): </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.45.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.45 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Voor een kortsluiting op knooppunt K5 is de impedantie in het homopolaire circuit gelijk aan de serieschakeling van de homopolaire impedantie van de
+          aardverspreidingsweerstand, de homopolaire transformatorimpedantie en de homopolaire kabelimpedantie: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.46.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.46 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Deze waarde kan worden ingevuld in de formule voor de fase-aardkortsluitstroom uit tabel 10.3: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.47.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.47 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.3.7"></div>
+        <br>
+<h3> 10.3.7 Aardingsconcept</h3>
+        <p> Zoals uit de voorgaande rekenvoorbeelden blijkt, is het effect van aardfouten afhankelijk van het gekozen aardingsconcept. Voor de drie meest toegepaste
+          aardingsconcepten geldt: </p>
+        <ul>
+          <li> Sterpunt LS-zijde star geaard </li>
+          <ul>
+          <li> elke aardfout leidt tot een kortsluitstroom </li>
+          <li> de gestoorde fase wordt door de (smelt)veiligheid afgeschakeld </li>
+        </ul>
+          <li> Zwevend MS-net </li>
+          <ul>
+          <li> elke aardfout leidt tot een capacitieve aardfoutstroom </li>
+          <li> er treedt een verhoogde spanning op voor niet gestoorde fasen </li>
+          <li> bij een geringe foutstroom is geen directe afschakeling vereist. </li>
+        </ul>
+          <li> Impedantie geaard MS-net </li>
+          <ul>
+          <li> elke aardfout leidt tot een kortsluitstroom </li>
+          <li> de spanningsverhoging op de niet gestoorde fasen is beperkt </li>
+          <li> afschakeling is gewenst met behulp van een aardfoutbeveiliging. </li></ul>
+        </ul>
+        <a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.4"></div>
+        <br>
+<h2> 10.4 Berekening van de kortsluitvastheid </h2>
+        <p> Bij kortsluitingen oefent de kortsluitstroom een thermische en een mechanische belasting uit op de component. De component moet tegen beide belastingen
+          bestand zijn. In deze paragraaf wordt nader ingegaan op de kortsluitvastheid. Het kortsluitvermogen van componenten wordt door de fabrikanten opgegeven. De
+          waarde wordt vaak als maximale kortsluitstroom in kA gespecificeerd maar wordt dan toch veelal kortsluitvermogen genoemd. De maximale tijd dat een
+          kortsluitstroom aanwezig is, wordt bepaald door de instellingen van de beveiliging in het voedende net. Deze wordt door netbeheerder bepaald. Vanuit dit
+          gegeven kunnen de installaties van de aangeslotenen worden gedimensioneerd. </p>
+        <p> Uitgangspunt van de kortsluitvastheid is de nominale korte-duurstroom. Dit is de effectieve waarde van de grootste korte-duurstroom (door de fabrikant
+          gespecificeerd) die de stroomketen zonder schade gedurende een gegeven tijd kan voeren. Tenzij de fabrikant anders aangeeft, bedraagt de toegestane
+          tijdsduur van de kortsluitstroom 1 s. De gespecificeerde <em>I<sub>k,1s</sub></em> is dus de maximale grootte van de kortsluitstroom die gedurende 1 seconde mag
+          vloeien zonder dat de betreffende component beschadigt. Het is ook mogelijk dat <em>I<sub>k,2s</sub></em> gespecificeerd is: de maximale grootte van de
+          kortsluitstroom die gedurende 2 seconden mag vloeien. </p>
+        <p> Maatgevend voor de kortsluitbelasting zijn de beginkortsluitstroom <em>I<sub>k</sub>"</em> of, als deze niet bekend is, de afschakelstroom <em>I<sub>A</sub></em> van de
+          voorliggende vermogenschakelaar en de afschakeltijd <em>t<sub>K</sub></em> van de kortsluiting. Hieruit wordt de effectieve waarde van de thermische kortsluitstroom
+          <em>i<sub>th</sub></em> berekend (formule 10.6). Van alle componenten (kabels, transformatoren, smoorspoelen en schakelinstallaties) waarvoor een
+          kortsluitberekening is uitgevoerd, is het gewenst om de maximale toelaatbare kortsluittijd <em>t<sub>max</sub> </em>te berekenen aan de hand van de door de
+          leveranciers gespecificeerde korte-duurstroom <em>I<sub>k,1s</sub></em> of <em>I<sub>k,2s</sub></em>. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.4.1"></div>
+        <br>
+<h3> 10.4.1 Kortsluitvastheid van kabels </h3>
+        <p> Het verwarmen van de kabel tijdens een kortsluiting is een adiabatisch proces. Dat wil zeggen dat de verwarming van de geleider gedurende een zo korte tijd
+          plaatsvindt, dat in dat tijdsbestek geen warmte-uitwisseling met de omgeving plaatsvindt. Alle warmte wordt dan in de geleider opgeslagen. Daarbij mag de
+          geleider niet warmer worden dan een gespecificeerde waarde. Voor de meeste XLPE-kabels is dat 250 °C. Ook van belang is de initiële waarde van de
+          temperatuur, voor aanvang van de kortsluiting. Hierbij is het gebruikelijk uit te gaan van de continu maximale temperatuur, die bij XLPE-kabels 90 °C
+          is. </p>
+        <p> Van een specifieke kabel wordt de toelaatbare kortsluitstroom <em>I<sub>k</sub></em> als functie van de tijdsduur van deze niet veranderende stroom als volgt
+          berekend (Heinhold, 1999): </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="center"><img src="./kortsluitstroomberekeningen_files/formule-10.48.png" alt="formules_2.10"> [kA]</td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.48 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> met: </p>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td width="60" valign="top"><em>K</em></td>
+              <td>constante (0,095 voor aluminium en 0,143 voor koperen geleider) voor opwarming van 90 °C naar 250 °C</td>
+            </tr>
+            <tr>
+              <td width="60" valign="top"><em>t</em></td>
+              <td>tijd dat de kortsluitstroom loopt (s)</td>
+            </tr>
+            <tr>
+              <td width="60" valign="top"><em>A</em></td>
+              <td>geleiderdoorsnede (mm<sup>2</sup>)</td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> De constante <em>K</em> wordt berekend uit de materiaaleigenschappen en de begin- en eindtemperaturen: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.49.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.49 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> met: </p>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td width="60" valign="top"><em>k<sub>1</sub></em></td>
+              <td>constante: 148 voor aluminium en 226 voor koperen geleider</td>
+            </tr>
+            <tr>
+              <td width="60" valign="top"><em>k<sub>2</sub></em></td>
+              <td>temperatuurfactor, afhankelijk van materiaaleigenschappen en de begin- en eindtemperaturen</td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> De variabele <em>k<sub>2</sub></em> wordt berekend uit een materiaalafhankelijke temperatuurcoëfficiënt en de begin- en eindtemperaturen: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.50.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.50 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> met: </p>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td width="60" valign="top"><em>θ</em></td>
+              <td>constante (228 voor aluminium en 234,5 voor koperen geleider)</td>
+            </tr>
+            <tr>
+              <td width="60" valign="top"><em>θ<sub>final</sub></em></td>
+              <td>maximaal toelaatbare kortsluittemperatuur (250 °C voor XLPE-kabel)</td>
+            </tr>
+            <tr>
+              <td width="60" valign="top"><em>θ<sub>initial</sub></em></td>
+              <td>geleidertemperatuur voor aanvang van de kortsluiting (90 °C voor XLPE-kabel)</td>
+            </tr>
+		  </tbody>
+		</table><br>
+		<p> Figuur 10.26 toont de toelaatbare kortsluitstroom, zoals berekend met formule 10.48 voor een kabel met koperen geleider en een kabel met aluminium
+		  geleider, beide met een geleiderdoorsnede van 95 mm<sup>2</sup> en een initiële temperatuur van 90&nbsp;°C en een eindtemperatuur van 250 °C. </p>
+		<img src="./kortsluitstroomberekeningen_files/10.26.png" width="712" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 10.26 Toelaatbare kortsluitstroom voor kabels met 95 mm<sup>2</sup> geleiderdoorsnede als functie van de tijd </h5>
+        <p> Voor kabels is het gebruikelijk te werken met de toelaatbare kortsluitstroom die gedurende één seconde mag vloeien: <em>I<sub>k,1s</sub></em>. Tabel 10.6
+          geeft de waarde van <em>I<sub>k,1s</sub></em> voor enkele gangbare kunststof kabels. Hierbij is uitgegaan van een temperatuurverhoging van de geleider van 90
+          °C naar 250 °C. Voor het scherm gelden andere waarden. De waarden voor het scherm zijn belangrijk bij fase-aardfouten. Het kan namelijk zijn dat
+          niet de geleider maar het scherm de beperkende factor is voor de kortsluitvastheid. Bij de waarden in tabel 10.6 is voor het scherm uitgegaan van een
+          temperatuurverhoging van 50 °C naar 250 °C.  </p>
+        <h5> Tabel 10.6 Toelaatbare kortsluitstroom gedurende 1 seconde voor gangbare kunststof kabels </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="20%" valign="top"><p> <strong>Materiaal</strong> </p></td>
+              <td width="40%" colspan="2" valign="top"><p align="center"> <strong>Geleider</strong> </p></td>
+              <td width="40%" colspan="2" valign="top"><p align="center"> <strong>Cu-scherm</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="20%" valign="top">&nbsp;</td>
+              <td width="20%" valign="top"><p align="center"> <strong>Doorsnede (mm<sup>2</sup>)</strong> </p></td>
+              <td width="20%" valign="top"><p align="center"> <strong>I<sub>k,1s</sub> (kA)</strong> </p></td>
+              <td width="20%" valign="top"><p align="center"> <strong>Doorsnede (mm<sup>2</sup>)</strong> </p></td>
+              <td width="20%" valign="top"><p align="center"> <strong>I<sub>k,1s</sub> (kA)</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="68" rowspan="4"><p> Al </p></td>
+              <td width="68" valign="top"><p align="center"> 50 </p></td>
+              <td width="68" valign="top"><p align="center"> 4,8 </p></td>
+              <td width="68" valign="top"><p align="center"> 25 </p></td>
+              <td width="68" valign="top"><p align="center"> 4,1 </p></td>
+            </tr>
+            <tr>
+              <td width="68" valign="top"><p align="center"> 95 </p></td>
+              <td width="68" valign="top"><p align="center"> 9,0 </p></td>
+              <td width="68" valign="top"><p align="center"> 25 </p></td>
+              <td width="68" valign="top"><p align="center"> 4,1 </p></td>
+            </tr>
+            <tr>
+              <td width="68" valign="top"><p align="center"> 150 </p></td>
+              <td width="68" valign="top"><p align="center"> 14,1 </p></td>
+              <td width="68" valign="top"><p align="center"> 25 </p></td>
+              <td width="68" valign="top"><p align="center"> 4,1 </p></td>
+            </tr>
+            <tr>
+              <td width="68" valign="top"><p align="center"> 240 </p></td>
+              <td width="68" valign="top"><p align="center"> 22,6 </p></td>
+              <td width="68" valign="top"><p align="center"> 50 </p></td>
+              <td width="68" valign="top"><p align="center"> 8,2 </p></td>
+            </tr>
+            <tr>
+              <td width="68" rowspan="4"><p> Cu </p></td>
+              <td width="68" valign="top"><p align="center"> 50 </p></td>
+              <td width="68" valign="top"><p align="center"> 7,1 </p></td>
+              <td width="68" valign="top"><p align="center"> 25 </p></td>
+              <td width="68" valign="top"><p align="center"> 4,1 </p></td>
+            </tr>
+            <tr>
+              <td width="68" valign="top"><p align="center"> 95 </p></td>
+              <td width="68" valign="top"><p align="center"> 13,5 </p></td>
+              <td width="68" valign="top"><p align="center"> 25 </p></td>
+              <td width="68" valign="top"><p align="center"> 4,1 </p></td>
+            </tr>
+            <tr>
+              <td width="68" valign="top"><p align="center"> 150 </p></td>
+              <td width="68" valign="top"><p align="center"> 21,4 </p></td>
+              <td width="68" valign="top"><p align="center"> 25 </p></td>
+              <td width="68" valign="top"><p align="center"> 4,1 </p></td>
+            </tr>
+            <tr>
+              <td width="68" valign="top"><p align="center"> 240 </p></td>
+              <td width="68" valign="top"><p align="center"> 34,2 </p></td>
+              <td width="68" valign="top"><p align="center"> 50 </p></td>
+              <td width="68" valign="top"><p align="center"> 8,2 </p></td>
+            </tr>
+          </tbody>
+        </table><br>
+        <p> De maximale tijd dat een berekende kortsluitstroom door een kabel mag vloeien is dan (Heinhold, 1999): </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.51.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.51 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> met: </p>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td width="60" valign="top"><em>t<sub>max</sub></em></td>
+              <td>maximaal toelaatbare kortsluittijd (s)</td>
+            </tr>
+            <tr>
+              <td width="60" valign="top"><em>I<sub>k,1s</sub></em></td>
+              <td>toelaatbare kortsluitstroom gedurende 1 seconde (kA) </td>
+            </tr>
+            <tr>
+              <td width="60" valign="top"><em>i<sub>th</sub></em></td>
+              <td>effectieve waarde van de kortsluitstroom in de tak (kA) </td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.4.2"></div>
+        <br>
+<h3> 10.4.2 Kortsluitvastheid van transformatoren </h3>
+        <p> De thermische kortsluitvastheid van een transformator wordt bepaald door de stationaire kortsluitstroom en de maximaal toelaatbare thermische belasting van
+          het isolatiemateriaal. De tijdsduur van de stationaire kortsluitstroom wordt gesteld op 2 s, tenzij de netontwerper een andere waarde kiest. </p>
+        <p> De temperatuurverhoging van de wikkelingen kan met onderstaande formule worden berekend (NEN-EN-IEC 60076-5): </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.52.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.52 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> met: </p>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td width="60" valign="top"><em>T<sub>0</sub></em></td>
+              <td>begintemperatuur (°C)</td>
+            </tr>
+            <tr>
+              <td width="60" valign="top"><em>T<sub>1</sub></em></td>
+              <td>eindtemperatuur (°C) </td>
+            </tr>
+            <tr>
+              <td width="60" valign="top"><em>J<sub>k</sub></em></td>
+              <td>stroomdichtheid in de wikkelingen (A/mm<sup>2</sup>) </td>
+            </tr>
+            <tr>
+              <td width="60" valign="top"><em>t<sub>k</sub></em></td>
+              <td>tijdsduur van de kortsluiting (s) </td>
+            </tr>
+            <tr>
+              <td width="60" valign="top"><em>G</em></td>
+              <td>materiaalconstante (A<sup>2</sup>s/mm<sup>4</sup>); Cu: <em>G = 101000</em>; Al: <em>G = 45400</em></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> De maximaal toegestane temperatuur is door de fabrikant gespecificeerd. Deze hangt af van het transformatortype (oliegevuld of droog) en de
+          temperatuurklasse van de isolatie. De maximale tijd dat een berekende kortsluitstroom door een kabel mag vloeien is dan: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.53.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.53 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> met: </p>
+        
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td width="60" valign="top"><em>t<sub>max</sub></em></td>
+              <td>maximaal toelaatbare kortsluittijd (s)</td>
+            </tr>
+            <tr>
+              <td width="60" valign="top"><em>I<sub>k,2s</sub></em></td>
+              <td>toelaatbare kortsluitstroom gedurende 2 seconden (kA) </td>
+            </tr>
+            <tr>
+              <td width="60" valign="top"><em>i<sub>th</sub></em></td>
+              <td>effectieve waarde van de kortsluitstroom in de tak (kA) </td>
+            </tr>
+		  </tbody>
+		</table><br>
+<a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.4.3"></div>
+        <br>
+<h3> 10.4.3 Kortsluitvastheid van MS-schakelinstallaties </h3>
+        <p> De afschakelstromen en doorgaande stromen waarvoor schakelmateriaal wordt gedimensioneerd, liggen vast in diverse IEC-publicaties. Voor schakelinstallaties
+          en de componenten wordt voor de thermische korte-duurstroom een tijdsduur aangehouden van 1 s. Als hiervan afgeweken moet worden, wordt 3 s aanbevolen.
+          Gedurende deze tijd dient het materiaal in staat te zijn de warmte en de mechanische krachten als gevolg van de toegekende kortsluitstroom te weerstaan. </p>
+        <p> De maximale amplitude van de kortsluitstroom bepaalt de mechanische belasting van de installatie. In de IEC-publicaties wordt ervan uitgegaan dat de
+          stootkortsluitstroom 2,5 maal de effectieve waarde van de stationaire kortsluitstroom is. Voor de meeste toepassingen zal dit voldoende zijn. Dicht bij de
+          generatoren kunnen echter grotere waarden optreden. De maximaal toelaatbare stootkortsluitstroom voor diverse soorten installaties volgt uit de normreeks. </p>
+        <p> Lastscheiders kunnen zowel enkelpolig als driepolig zijn uitgevoerd. De enkelpolige variant is het goedkoopst en wordt veruit het meest toegepast in het
+          MS-distributienet. Bij aansluitingen met nettransformatoren met een nominaal vermogen van groter dan 1000 kVA wordt driepolige uitschakeling toegepast. </p>
+        <p> Tabel 10.7 geeft een overzicht van enkele in Nederland veelvuldig toegepaste MS-schakelinstallaties. De gegevens zijn ontleend aan de brochures van de
+          fabrikant.  </p>
+        <h5> Tabel 10.7 Technische gegevens van enkele in Nederland toegepaste MS-schakelinstallaties </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="20%" valign="top"><p> <strong>Type</strong> </p></td>
+              <td width="20%" valign="top"><p align="center"> <strong>Unom (kV)</strong> </p></td>
+              <td width="20%" valign="top"><p align="center"> <strong>Inom (A)</strong> </p></td>
+              <td width="20%" valign="top"><p align="center"> <strong>I<sub>k,max</sub> (kA/s)</strong> </p></td>
+              <td width="20%" valign="top"><p align="center"> <strong>I<sub>p,max</sub> (kA)</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="68" rowspan="3"><p> Innovac MMS </p></td>
+              <td width="68" valign="top"><p align="center"> 12 </p></td>
+              <td width="68" valign="top"><p align="center"> 3150 </p></td>
+              <td width="68" valign="top"><p align="center"> 31,5/3 </p></td>
+              <td width="68" valign="top"><p align="center"> 80 </p></td>
+            </tr>
+            <tr>
+              <td width="68" valign="top"><p align="center"> 17,5 </p></td>
+              <td width="68" valign="top"><p align="center"> 3150 </p></td>
+              <td width="68" valign="top"><p align="center"> 31,5/3 </p></td>
+              <td width="68" valign="top"><p align="center"> 80 </p></td>
+            </tr>
+            <tr>
+              <td width="68" valign="top"><p align="center"> 24 </p></td>
+              <td width="68" valign="top"><p align="center"> 2000 </p></td>
+              <td width="68" valign="top"><p align="center"> 25/3 </p></td>
+              <td width="68" valign="top"><p align="center"> 63 </p></td>
+            </tr>
+            <tr>
+              <td width="68" valign="top"><p> Unitole UP </p></td>
+              <td width="68" valign="top"><p align="center"> 3,6-17,5 </p></td>
+              <td width="68" valign="top"><p align="center"> 630-3150 </p></td>
+              <td width="68" valign="top"><p align="center"> 40/3 </p></td>
+              <td width="68" valign="top"><p align="center"> 100 </p></td>
+            </tr>
+            <tr>
+              <td width="68" rowspan="2"><p> Innovac SVS06 </p></td>
+              <td width="68" valign="top"><p align="center"> 12 </p></td>
+              <td width="68" valign="top"><p align="center"> 630 </p></td>
+              <td width="68" valign="top"><p align="center"> 20/1 </p></td>
+              <td width="68" valign="top"><p align="center"> 50 </p></td>
+            </tr>
+            <tr>
+              <td width="68" valign="top"><p align="center"> 24 </p></td>
+              <td width="68" valign="top"><p align="center"> 630 </p></td>
+              <td width="68" valign="top"><p align="center"> 20/1 </p></td>
+              <td width="68" valign="top"><p align="center"> 50 </p></td>
+            </tr>
+            <tr>
+              <td width="68" rowspan="2"><p> Innovac SVS12 </p></td>
+              <td width="68" valign="top"><p align="center"> 12 </p></td>
+              <td width="68" valign="top"><p align="center"> 1250 </p></td>
+              <td width="68" valign="top"><p align="center"> 25/1,5 </p></td>
+              <td width="68" valign="top"><p align="center"> 63 </p></td>
+            </tr>
+            <tr>
+              <td width="68" valign="top"><p align="center"> 24 </p></td>
+              <td width="68" valign="top"><p align="center"> 1250 </p></td>
+              <td width="68" valign="top"><p align="center"> 25/1,5 </p></td>
+              <td width="68" valign="top"><p align="center"> 63 </p></td>
+            </tr>
+            <tr>
+              <td width="68" rowspan="2"><p> Xiria </p></td>
+              <td width="68" valign="top"><p align="center"> 12 </p></td>
+              <td width="68" valign="top"><p align="center"> 200-500 </p></td>
+              <td width="68" valign="top"><p align="center"> 20/3 </p></td>
+              <td width="68" valign="top"><p align="center"> 50 </p></td>
+            </tr>
+            <tr>
+              <td width="68" valign="top"><p align="center"> 24 </p></td>
+              <td width="68" valign="top"><p align="center"> 200-500 </p></td>
+              <td width="68" valign="top"><p align="center"> 16/3 </p></td>
+              <td width="68" valign="top"><p align="center"> 40 </p></td>
+            </tr>
+            <tr>
+              <td width="68" valign="top"><p> Magnefix MD4 </p></td>
+              <td width="68" valign="top"><p align="center"> 12 </p></td>
+              <td width="68" valign="top"><p align="center"> 400 </p></td>
+              <td width="68" valign="top"><p align="center"> 14,4/1 </p></td>
+              <td width="68" valign="top"><p align="center"> 31 </p></td>
+            </tr>
+            <tr>
+              <td width="68" valign="top"><p> Magnefix MF </p></td>
+              <td width="68" valign="top"><p align="center"> 15 </p></td>
+              <td width="68" valign="top"><p align="center"> 630 </p></td>
+              <td width="68" valign="top"><p align="center"> 20/1 </p></td>
+              <td width="68" valign="top"><p align="center"> 50 </p></td>
+            </tr>
+          </tbody>
+        </table><br>
+<a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.5"></div>
+        <br>
+<h2> 10.5 Maatregelen ter beperking van de kortsluitstroom </h2>
+        <p> Het kortsluitvermogen in een distributienet wordt voornamelijk bepaald door de impedanties van de transformatoren, door de impedanties van de eventueel
+          aanwezige generatoren, door de netstructuur en door de locatie van de kortsluiting. Indien een component niet bestand is tegen de te verwachten stationaire
+          en dynamische kortsluitstroom, moet het kortsluitvermogen beperkt worden in grootte, tijdsduur of beide. Mogelijkheden hiervoor worden geboden door
+          toepassing van distantiebeveiliging, differentiaalbeveiliging of snelle stroom-tijdbeveiligingen. Ook kan de grootte van de kortsluitstroom wordt begrensd
+          door de kortsluitstroom af te kappen voordat deze zijn verwachte maximale waarde bereikt. Dit kan met behulp van smeltveiligheden en I<sub>s</sub>-begrenzers (<a href="https://www.phasetophase.nl/boek/boek_1_4.html">zie hoofdstuk 4</a>). </p>
+        <p> De tijdsduur waarin de kortsluiting mag optreden kan worden beperkt met een snelle beveiliging zoals distantiebeveiliging. Met het oog op de selectiviteit
+          wordt naast de distantiebeveiliging hiervoor ook wel differentiaalbeveiliging toegepast. De meeste stroom-tijdbeveiligingen hebben een mogelijkheid om
+          boven een ingestelde drempelwaarde de stroom binnen zeer korte tijd af te schakelen (<a href="https://www.phasetophase.nl/boek/boek_1_6.html">zie hoofdstuk 6</a>). </p>
+        <p> Door het opnemen van een extra impedantie in het net kan de maximaal optredende kortsluitstroom worden beperkt. Meestal worden hiervoor smoorspoelen
+          gebruikt. Ook kan door het aanbrengen van een railscheiding het kortsluitvermogen worden beperkt. </p>
+        <p> De toepassing van de smoorspoel wordt toegelicht aan de hand van het netwerk van figuur 10.27. Volgens vergelijking 10.19 in <a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.3.2">paragraaf 10.3.2</a> is de
+          kortsluitbijdrage vanuit de voeding aan een driefasenkortsluiting direct aan het begin van de kabel, dus aan de secundaire klemmen van de
+          voedingstransformator in het onderstation, gelijk aan 15 kA. Tussenschakeling van een smoorspoel, zoals afgebeeld in figuur 10.27, zal de grootte van deze
+          kortsluitstroom verlagen. </p>
+        <img src="./kortsluitstroomberekeningen_files/10.27.png" width="712" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 10.27 Toepassing van een smoorspoel </h5>
+        <p> In dit voorbeeld heeft de smoorspoel een nominale stroom van 320 A en een reactantie van 0,3 Ω. Uit de loadflowberekening van de netconfiguratie van figuur
+          10.27 volgt dat de smoorspoel op knooppunt K2a zorgt voor een beperkt spanningsverlies van 10,424 kV naar 10,373 kV (0,5% spanningsdaling) bij een
+        vermogenstransport van 2,5 MW en 1,8 Mvar (166 A). Ook uit de benaderingsformule uit hoofdstuk 10 voor het spanningsverschil over de smoorspoel volgt dit: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.54.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.54 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> De impedantie links van de foutplaats K2a is gelijk aan de serieschakeling van de impedanties van de netvoeding, de transformator en de smoorspoel: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.55.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.55 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Een driefasenkortsluiting aan het begin van de kabel, dus praktisch op het knooppunt K2a, leidt dan tot een kortsluitstroombijdrage vanuit de voeding van: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./kortsluitstroomberekeningen_files/formule-10.56.png" alt="formules_2.10"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.56 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> De smoorspoel heeft dus een significante invloed op het reduceren van de kortsluitstroom van 15 kA naar 8,8 kA, terwijl de invloed op de loadflow in dit
+          voorbeeld beperkt is. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.6"></div>
+        <br>
+<h2>10.6 Sequentiële kortsluitstroomberekening</h2>
+        <p> De methode volgens IEC 60909 berekent alleen de kortsluitstromen in een net. De spanningen tijdens een kortsluiting worden niet expliciet berekend. In
+          enkele gevallen is het voor de ontwerper interessant om precies te weten hoe het net zich gedraagt in bijzondere gevallen, bijvoorbeeld in een complex net
+          of in de gevallen dat bijzondere opwekkers of machines aanwezig zijn. Er wordt dan gebruik gemaakt van een methode die, naast de stromen, ook de spanningen
+          van het net uitrekent en daarbij niet uitgaat van verwaarlozingen, zoals in de methode van IEC 60909. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.6.1"></div>
+        <br>
+<h3> 10.6.1 Methode </h3>
+        <p> De methode van de sequentiële kortsluitstroomberekening is gebaseerd op de werkelijke belastingssituatie en berekent de volledige toestand van het
+          net. De werking van specifieke beveiligingen die naast de stroom ook de spanning in hun werking betrekken, kan zo beter geanalyseerd worden. De methode
+          heet 'sequentieel' omdat het mogelijk is om successievelijk meer dan één fout te simuleren. Het komt bijvoorbeeld voor dat in netten een
+          fase-aardkortsluiting een volgende kortsluiting op een andere plaats inleidt. Bovendien is het met de methode mogelijk om ook andere dan botte
+          kortsluitingen te berekenen. De foutimpedantie van de kortsluiting kan bij de berekening worden opgegeven. </p>
+        <p> De methode van de sequentiële storingsanalyse gaat uit van de door de loadflow bepaalde situatie vóór aanvang van de kortsluiting. De
+          netvoeding en de synchrone en asynchrone machines zijn in de methode gemodelleerd als een Norton-equivalent met een stroombron en een kortsluitimpedantie.
+          De stroomsterkte van elke stroombron wordt berekend aan de hand van de loadflowspanning vóór de verstoring. De belastingen worden gemodelleerd
+          met constante impedanties, die worden afgeleid van hun actuele waarde. Ook eventuele dwarselementen, zoals shunts en capaciteiten, doen gewoon mee in de
+          berekening. De methode verwaarloost niets en maakt geen gebruik van correctiefactoren. </p>
+        <p> Het vervangingsschema van het netwerk van figuur 10.7 komt er voor de berekening volgens de methode van sequentiële kortsluitstroomberekening in het
+          normale systeem uit te zien als in figuur 10.28. </p>
+        <img src="./kortsluitstroomberekeningen_files/10.28.png" width="712" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 10.28 Vervangingsschema volgens storing sequentieel voor berekening van de kortsluiting op knooppunt K2 </h5>
+        <p> Op knooppunt K2 is een driefasensymmetrische storing aangebracht in de vorm van de impedantie <em>R<sub>f</sub> + jX<sub>f</sub></em>. Met de sequentiële
+          storingsanalyse wordt de subtransiënte kortsluitstroom <em>I<sub>k</sub>"</em> op de aangegeven foutplaats berekend. Daarnaast worden alle spanningen, tak- en
+          elementstromen berekend. Stromen en spanningen kunnen zowel complex als absoluut per fase (a, b, c) of per systeem (homopolair, normaal, invers) worden
+          weergegeven. In het vervangingsschema van figuur 10.7 wordt de kortsluiting op knooppunt K2 gevoed door de netvoeding en de transformator en door de
+          kortsluitstroombijdragen van de generator en de motor. Daarnaast is de belasting in de kortsluitsituatie niet verwaarloosd, zodat deze ook dan de door de
+          vervangingsimpedantie bepaalde stroom blijft trekken. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.6.2"></div>
+        <br>
+<h3> 10.6.2 Voorbeeld aan de hand van een registratie van een kortsluiting </h3>
+        <p> In een rekenvoorbeeld wordt aangetoond hoe met de methode een aantal opeenvolgende acties (kortsluitingen en schakelhandelingen) die veranderingen in het
+          net tot gevolg hebben, kunnen worden doorgerekend. Een stamvoeding, bestaande uit drie parallelle circuits met kabels met geleiders van 150 mm<sup>2</sup> Cu en 240 mm<sup>2</sup> Al, voedt een MS-distributienet vanuit een 50/10 kV onderstation. Het MS-distributienet is niet expliciet gemodelleerd, maar wordt
+          vertegenwoordigd door een belasting van 7,8 MW bij een cos(φ) van 0,9 (500 A bij nominale spanning). Het net is niet geaard. Op het onderstation is voor 30
+          MVA aan decentrale opwekking aangesloten, die is gemodelleerd met een enkele synchrone generator. Het net tussen onderstation met voeding en schakelstation
+          is afgebeeld in figuur 10.29. De afgebeelde spanningen zijn fasespanningen. </p>
+        <img src="./kortsluitstroomberekeningen_files/10.29.png" width="712" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 10.29 MS-net tussen onderstation en schakelstation in de toestand voor de kortsluiting </h5>
+        <p> Van het net van figuur 10.29 zijn in verband met een proef gedurende een lange tijd de stromen en de spanningen gemonitord. In deze periode heeft zich in
+          een van de voedingskabels op 60% van de afstand vanaf het onderstation een tweefasenkortsluiting met aardcontact voorgedaan. Het verloop van de
+          kortsluiting is geregistreerd in het onderstation. Figuur 10.30 toont het verloop in de gemeten stroom door de fasen aan de voedende zijde en in de gemeten
+          spanning op de voedende rail in het onderstation. </p>
+        <p> De kortsluiting tussen de fasen A, C en aarde vindt plaats op t = 990 ms. Duidelijk zichtbaar is de invloed van de afnemende kortsluitbijdrage van de
+          generator. Ook is goed te zien dat de piek in fase C positief is en in fase A negatief. De beginkortsluitstroom heeft een effectieve waarde van ongeveer
+          6,4 kA. De spanning van de gestoorde fasen neemt sterk af en de spanning van de niet gestoorde fase neemt sterk toe: tot een effectieve waarde van 8,3 kV. </p>
+        <img src="./kortsluitstroomberekeningen_files/10.30.png" width="712" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 10.30 Registratie van het verloop van de kortsluiting </h5>
+        <p> Na 290 ms, op t = 1280 ms, wordt de decentrale opwekking van het net geschakeld. Als gevolg van het afgenomen kortsluitvermogen in het onderstation
+          vermindert de voeding van de kortsluitstroom, tot een effectieve waarde van ongeveer 3,8 kA. </p>
+        <p> Na 380 ms, op t = 1370 ms, opent de vermogenschakelaar in het kortgesloten circuit aan de zijde van het schakelstation. De beveiliging is richtingsgevoelig,
+          waardoor de afschakeling snel kan plaatsvinden. Hierdoor kan de levering aan het net achter het schakelstation door blijven gaan. De kortsluiting wordt nu
+          alleen gevoed vanuit het onderstation. De voeding van de kortsluitstroom neemt toe, tot een effectieve waarde van ongeveer 5,4 kA. </p>
+        <p> Na 1060 ms, op t = 2050 ms, opent de vermogenschakelaar in het kortgesloten circuit aan de zijde van het onderstation. De ingestelde tijd is gekozen met het
+          oog op de selectiviteit. De spanning herstelt zich direct, waarbij een snel uitdempende gelijkstroomcomponent zichtbaar is. </p>
+                  <p> Het verloop van de storing is gesimuleerd met het sterk vereenvoudigde model van het complete distributienet, afgebeeld in figuur 10.29. Het voedende net
+          heeft een kortsluitvermogen van 3600 MVA (I<sub>k</sub>" = 40 kA bij 52,5 kV) en de transformator heeft een nominaal vermogen van 32 MVA en een relatieve
+          kortsluitspanning van 19,3%. De kabelcircuits hebben elk een lengte van 3 km en bestaan uit kabels met 150 mm<sup>2</sup> Cu-geleiders en 240 mm<sup>2</sup> Al-geleiders, resulterend in een normale impedantie van Z1 = 0,426+j0,238 Ω en een homopolaire impedantie van Z0 = 3,154+j3,253 Ω. Gesimuleerd is
+        een kortsluiting op 60% van de afstand vanaf het onderstation. </p>
+
+        <img src="./kortsluitstroomberekeningen_files/10.31.png" width="712" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 10.31 Simulatie van de tweefasenkortsluiting met aardcontact </h5>
+                <p> Figuur 10.31 toont het resultaat voor de berekening van de tweefasenkortsluiting tussen de fasen A en C met aardcontact. De voedende stroom in het
+          kortgesloten circuit bedraagt bij het onderstation 6,5 kA. Dit is iets meer dan de effectieve waarde van de registratie in figuur 10.30. De spanning in de
+          niet gestoorde fase is 8,9 kV. </p>
+
+        <img src="./kortsluitstroomberekeningen_files/10.32.png" width="712" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 10.32 Tweefasenkortsluiting met aardcontact en afgeschakelde generator </h5>
+                <p> Figuur 10.32 toont het resultaat voor de berekening, waarbij op t = 1280 ms de generator is afgeschakeld. De voeding van de kortsluiting vanuit het
+          onderstation is afgenomen tot 3,7 kA. Dit is iets minder dan de effectieve waarde van de registratie in figuur 10.30. De bijdrage vanuit de andere twee
+          circuits is 2,5 kA. De totale kortsluitstroom bedraagt 6,2 kA. </p>
+
+        <img src="./kortsluitstroomberekeningen_files/10.33.png" width="712" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 10.33 Kortsluiting met afgeschakelde generator en uitgeschakelde vermogenschakelaar bij SS </h5>
+        <p> Figuur 10.33 toont het resultaat voor de berekening, waarbij op t = 1370 ms de vermogenschakelaar in het gestoorde circuit aan de zijde van het
+          schakelstation is afgeschakeld. De voeding van de kortsluitstroom vanuit het onderstation is nu gelijk aan de kortsluitstroom zelf en bedraagt 5,6 kA. Deze
+          waarde is iets minder dan de effectieve waarde van de registratie in figuur 10.30. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_2_10.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_10.7"></div>
+        <br>
+<h2> 10.7 Foutplaatslokalisatie</h2>
+        <p> Storingen in het MS-netwerk hebben de grootste invloed op de betrouwbaarheid van de levering van elektriciteit (zie <a href="https://www.phasetophase.nl/boek/boek_2_12.html">hoofdstuk 12</a>). Het is gebruikelijk na
+          een kortsluiting de foutplaats op te sporen door elk netstation in een MS-streng te inspecteren, hetgeen veel tijd kost. Door de foutplaats te schatten aan
+          de hand van metingen van spanning en stroom in het onderstation tijdens de kortsluiting en deze te vergelijken met een kortsluitberekening aan het model
+          van het net, kan hier veel tijd mee worden bespaard (Oirsouw, 2003). De nauwkeurigheid van de methode hangt nauw samen met de exactheid van het model en de
+          nauwkeurigheid van de meting. De normale impedanties van het net zijn voldoende nauwkeurig bekend, zodat in geval van een twee- of driefasenkortsluiting
+          een grote nauwkeurigheid behaald kan worden. De homopolaire impedantie is echter niet altijd nauwkeurig bekend, zodat de foutplaats in geval van een
+          fase-aardsluiting veelal minder nauwkeurig berekend kan worden. </p>
+        <p> De meting kan worden uitgevoerd met apparatuur voor stationsautomatisering of met digitale beveiligingsrelais. Spanning en stroom worden continu gemeten en
+          gedurende korte tijd lokaal bewaard. Indien zich een verstoring heeft voorgedaan, worden de metingen doorgestuurd naar een centraal systeem. De gegevens
+          worden vervolgens in twee stappen geanalyseerd. In de eerste stap worden de metingen getransformeerd in signalen die de momentane amplitudes en fasen
+          weergeven. Van deze signalen worden tevens de momentane waarden van de symmetrische componenten bepaald. Elke storing vertoont een karakteristiek gedrag in
+          de normale, inverse en homopolaire componenten. Door de momentane waarden van de symmetrische componenten te vergelijken met de karakteristieke
+          eigenschappen van de diverse fouttypen, wordt het fouttype vastgesteld. Hierbij wordt gebruik gemaakt van een aantal kennisregels, die zijn afgeleid uit de
+          praktijkmetingen en de componentnetwerken voor de kortsluittypen van figuur 10.10: </p>
+        <ul>  
+        <li>er is sprake van een kortsluiting indien de normale component van de stroom (<em>I<sub>1</sub></em>) groter is dan de normale component van de stroom vóór de storing (<em>I<sub>1,pre</sub></em>) </li>
+          <li> een inverse component van de stroom (<em>I<sub>2</sub></em>) vloeit alleen bij een asymmetrische kortsluiting </li>
+          <li> een homopolaire component van de stroom (<em>I<sub>0</sub></em>) vloeit alleen bij een asymmetrische kortsluiting met aardcontact </li>
+        <li>bij een twee- of driefasenkortsluiting is de toename van de normale component van de stroom als gevolg van de kortsluiting (<em>I<sub>1</sub>-I<sub>1, pre</sub></em>) veel groter dan de waarde van de homopolaire component van de stroom tijdens de kortsluiting (<em>I<sub>0</sub></em>); dat is niet het geval bij een fase-aardsluiting </li>
+        <li>bij een tweefasenkortsluiting is de inverse component van de stroom (<em>I<sub>2</sub></em>) veel groter dan de homopolaire component van de stroom (<em>I<sub>0</sub></em>); dat is niet het geval bij een fase-aardsluiting of bij een driefasenkortsluiting. </li></ul>
+        <p> De hierboven genoemde kennisregels zijn samengevat als de karakteristieke eigenschappen van kortsluittypen van tabel 10.8. Door de metingen te vergelijken
+          met deze tabel kan het actuele type van de kortsluiting vastgesteld worden. </p>
+        <h5> Tabel 10.8 Karakteristieke eigenschappen van kortsluittypen </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="78" valign="top"><p> <strong>Kortsluittype</strong> </p></td>
+              <td width="57" valign="top"><p align="center"> <strong><em>I<sub>1</sub> &gt; I<sub>1,pre</sub></em></strong> </p></td>
+              <td width="40" valign="top"><p align="center"> <strong><em>I<sub>0</sub> &gt; 0</em></strong> </p></td>
+              <td width="52" valign="top"><p align="center"> <strong><em>I<sub>2</sub> &gt; 0</em></strong> </p></td>
+              <td width="64" valign="top"><p align="center"> <strong><em>I<sub>1</sub> –I<sub>1,pre</sub> &gt;&gt; I<sub>0</sub></em></strong> </p></td>
+              <td width="50" valign="top"><p align="center"> <strong><em>I<sub>2</sub> &gt;&gt; I<sub>0</sub></em></strong> </p></td>
+            </tr>
+            <tr>
+              <td width="78" valign="top"><p> Fase-aarde </p></td>
+              <td width="57" valign="top"><p align="center"> Ja </p></td>
+              <td width="40" valign="top"><p align="center"> Ja </p></td>
+              <td width="52" valign="top"><p align="center"> Ja </p></td>
+              <td width="64" valign="top"><p align="center"> Nee </p></td>
+              <td width="50" valign="top"><p align="center"> Nee </p></td>
+            </tr>
+            <tr>
+              <td width="78" valign="top"><p> Twee fasen-aarde </p></td>
+              <td width="57" valign="top"><p align="center"> Ja </p></td>
+              <td width="40" valign="top"><p align="center"> ja </p></td>
+              <td width="52" valign="top"><p align="center"> Ja </p></td>
+              <td width="64" valign="top"><p align="center"> Ja </p></td>
+              <td width="50" valign="top"><p align="center"> Ja </p></td>
+            </tr>
+            <tr>
+              <td width="78" valign="top"><p> Twee fasen </p></td>
+              <td width="57" valign="top"><p align="center"> Ja </p></td>
+              <td width="40" valign="top"><p align="center"> Nee </p></td>
+              <td width="52" valign="top"><p align="center"> ja </p></td>
+              <td width="64" valign="top"><p align="center"> Ja </p></td>
+              <td width="50" valign="top"><p align="center"> Ja </p></td>
+            </tr>
+            <tr>
+              <td width="78" valign="top"><p> Drie fasen </p></td>
+              <td width="57" valign="top"><p align="center"> Ja </p></td>
+              <td width="40" valign="top"><p align="center"> Nee </p></td>
+              <td width="52" valign="top"><p align="center"> Nee </p></td>
+              <td width="64" valign="top"><p align="center"> Ja </p></td>
+              <td width="50" valign="top"><p align="center"> Nee </p></td>
+            </tr>
+          </tbody>
+        </table><br>
+        <p> Het is ook mogelijk te detecteren of een asymmetrische kortsluiting optreedt in een wel of niet geaard net. Dit kan worden afgeleid uit het quotiënt
+          van de uit de metingen bepaalde homopolaire spanning en negatieve homopolaire stroom. </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="center"><img src="./kortsluitstroomberekeningen_files/formule-10.57.png" alt="formules_2.10"> Ω</td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 10.57 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> De fasehoek van de impedantie <em><u>Z</u></em><em><sub>g</sub></em> geeft een indicatie of de foutstroom een inductief dan wel een capacitief karakter
+          heeft. Ook de grootte van de impedantie heeft een relatie tot de aardingsimpedantie in het netwerk. Tabel 10.9 geeft een samenvatting van de
+          karakteristieke eigenschappen met betrekking tot de aarding.  </p>
+        <h5> Tabel 10.9 Vaststellen van het type aarding </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="33%" valign="top"><p> <strong>Netwerktype</strong> </p></td>
+              <td width="33%" valign="top"><p align="center"> <strong><em>|<u>Z</u><sub>g</sub>| (Ω)</em></strong> </p></td>
+              <td width="33%" valign="top"><p align="center"> <strong><em>Arg(<u>Z</u><sub>g</sub>) (graden)</em></strong> </p></td>
+            </tr>
+            <tr>
+              <td width="100" valign="top"><p> Impedantiegeaard </p></td>
+              <td width="100" valign="top"><p align="center"> <em><u>Z</u><sub>0</sub></em> aardingssysteem </p></td>
+              <td width="100" valign="top"><p align="center"> 90 </p></td>
+            </tr>
+            <tr>
+              <td width="100" valign="top"><p> Zwevend </p></td>
+              <td width="100" valign="top"><p align="center"> <em>1/(2 π f ⋅ C<sub>0</sub></em> netwerk) </p></td>
+              <td width="100" valign="top"><p align="center"> –90 </p></td>
+            </tr>
+          </tbody>
+        </table><br>
+        <p> Het blijkt dat de absolute waarde en de fasehoek van de impedantie <em><u>Z</u></em><em><sub>g</sub></em> in tabel 10.9 afhangt van de wijze waarop het net
+          geaard is. In een geaard systeem is de berekende impedantie <em><u>Z</u></em><em><sub>g</sub></em> nagenoeg gelijk aan de homopolaire impedantie <em><u>Z</u></em><em><sub>0</sub></em> van het aardingsysteem (aardingstransformator of sterpuntgeaarde transformator). De hoek van de berekende impedantie
+          is dan ongeveer 90 graden. In een zwevend netwerk is de berekende impedantie <em><u>Z</u></em><em><sub>g</sub></em> nagenoeg gelijk aan de impedantie van
+        de totale homopolaire capaciteit in het zwevende MS-net. De hoek van de berekende impedantie is in dat geval ongeveer –90 graden. </p>
+        <p> Met de kennis van het type kortsluiting kan de impedantie van de meetplaats naar de kortsluitplaats worden berekend. Aangezien de weerstand op de
+          foutplaats niet altijd nul is, wordt alleen met het reactantiedeel van de impedantie gewerkt. Tabel 10.10 geeft een samenvatting van de berekeningen van de
+          reactanties <em>X<sub>1</sub></em> en <em>X<sub>0</sub></em> voor de diverse fouttypen uit de gemeten spanningen <em>U<sub>1</sub></em>, <em>U<sub>2</sub></em> en <em>U<sub>0</sub></em> en gemeten stromen <em>I<sub>1</sub></em> en <em>I<sub>2</sub></em>. De berekeningen zijn gebaseerd op de
+          standaardsituaties van figuur 10.10 en tabel 10.3.  </p>
+        <h5> Tabel 10.10 Berekening van de reactantie </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="33%" valign="top"><p> <strong>Kortsluittype</strong> </p></td>
+              <td width="66%" valign="top"><p> <strong>Reactantie van meetplaats naar foutplaats</strong> </p></td>
+            </tr>
+            <tr>
+              <td><p> Fase-aarde </p></td>
+              <td><p> <em>2X<sub>1</sub> + X<sub>0</sub> = Im((U<sub>1</sub> + U<sub>2</sub> + U<sub>0</sub>) / I<sub>2</sub>)</em> </p></td>
+            </tr>
+            <tr>
+              <td><p> Twee fasen B-C-aarde </p></td>
+              <td><p> <em>X<sub>1</sub> = Im((U<sub>1</sub> – U<sub>2</sub> ) / (I<sub>1</sub> – I<sub>2</sub>))</em> </p></td>
+            </tr>
+            <tr>
+              <td><p> Twee fasen A-B-aarde </p></td>
+              <td><p> <em>X<sub>1</sub> = Im((U<sub>1</sub> – a</em> <em>⋅</em> <em>U<sub>2</sub>) / (I<sub>1</sub> – a</em> <em>⋅</em> <em>I<sub>2</sub>))</em> </p></td>
+            </tr>
+            <tr>
+              <td><p> Twee fasen A-C-aarde </p></td>
+              <td><p> <em>X<sub>1</sub> = Im((U<sub>1</sub> – a<sup>2</sup></em> <em>⋅</em> <em>U<sub>2</sub>) / (I<sub>1</sub> – a<sup>2</sup></em> <em>⋅</em> <em>I<sub>2</sub>))</em> </p></td>
+            </tr>
+            <tr>
+              <td><p> Twee fasen B-C </p></td>
+              <td><p> <em>X<sub>1</sub> = Im((U<sub>1</sub> – U<sub>2</sub>) / (I<sub>1</sub> – I<sub>2</sub>))</em> </p></td>
+            </tr>
+            <tr>
+              <td><p> Twee fasen A-B </p></td>
+              <td><p> <em>X<sub>1</sub> = Im((U<sub>1</sub> – a</em> <em>⋅</em> <em>U<sub>2</sub>) / (I<sub>1</sub> – a</em> <em>⋅</em> <em>I<sub>2</sub>))</em> </p></td>
+            </tr>
+            <tr>
+              <td><p> Twee fasen A-C </p></td>
+              <td><p> <em>X<sub>1</sub> = Im((U<sub>1</sub> – a<sup>2</sup></em> <em>⋅</em> <em>U<sub>2</sub>) / (I<sub>1</sub> – a<sup>2</sup></em> <em>⋅</em> <em>I<sub>2</sub>))</em> </p></td>
+            </tr>
+            <tr>
+              <td><p> Drie fasen </p></td>
+              <td><p> <em>X<sub>1</sub> = Im(U<sub>1</sub> / I<sub>1</sub>)</em> </p></td>
+            </tr>
+          </tbody>
+        </table><br>
+        <p> In de tweede stap wordt het netmodel geanalyseerd. Aan de hand van de meetgegevens vóór de kortsluiting worden de belastingen ingesteld.
+          Vervolgens worden kortsluitberekeningen gemaakt met de sequentiële kortsluitstroomberekening. Op opeenvolgende afstanden vanaf de meetlocatie in de
+          MS-streng worden kortsluitingen aangebracht en wordt telkens de impedantie vanaf de meetlocatie tot de foutlocatie vastgesteld. Van deze impedantie wordt
+          de reactantie vergeleken met de waarde die in de eerste stap uit de meetwaarden was berekend. De locatie waarvan de berekende reactantie het best
+          overeenkomt met de uit de metingen bepaalde reactantie is de meest waarschijnlijke foutplaats. </p>
+        <div class="row-ohm-center-dark">
+        <h6> Rekenvoorbeeld </h6>
+        <p> De hierboven beschreven methode wordt toegelicht aan de hand van de registratie van figuur 10.30 van een kortsluiting in het net van figuur 10.29. De
+          meting heeft plaatsgevonden in het onderstation. De eerste stap betreft het omzetten en analyseren van de gemeten waarden. De stromen en spanningen van
+          figuur 10.30 worden eerst omgezet in een signaal dat het momentane verloop van de amplitudes van de fasespanningen en fasestromen weergeeft. Figuur 10.34
+          geeft de topwaarde van alle signalen weer. Figuur 10.34 laat duidelijk zien dat de kortsluiting begint op t = 990 ms. De amplitudes van de stromen in de
+          fasen A en C bereiken een hoge waarde, die tussen t = 1400 ms en t = 2050 ms een vrij constante waarde aannemen. Op t = 2050 ms wordt de kortsluiting
+          afgeschakeld. Tevens is te zien dat de stroom in fase B relatief gezien vrij weinig verandert. Dit is een indicatie voor een kortsluiting in de fasen A en
+          C. De amplitudes van de spanningen in de fasen A en C nemen sterk af, maar worden niet nul. Dit is een indicatie dat de kortsluiting zich verderop in het
+          net bevindt. </p>
+        <img src="./kortsluitstroomberekeningen_files/10.34.png" width="712" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 10.34 Amplitudes van spanningen en stromen tijdens de kortsluiting </h5>
+        <img src="./kortsluitstroomberekeningen_files/10.35.png" width="712" alt="pics_2.10" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 10.35 Amplitudes van componentspanningen en componentstromen tijdens de kortsluiting </h5>
+        <p> De spanningen en stromen van de fasen A, B en C geven een eerste indicatie over het type en de plaats van de kortsluiting. Het beschreven algoritme in een
+          rekenprogramma werkt niet in het driefasensysteem maar met de in het symmetrische componentensysteem getransformeerde meetwaarden. De transformatie van de
+          signalen van figuur 10.34 levert de signalen die zijn weergegeven in figuur 10.35. </p>
+        <p> Figuur 10.35 laat zien dat de stromen in de normale en inverse componentsystemen (<em>I<sub>1</sub></em> en <em>I<sub>2</sub></em>) door de kortsluiting
+          sterk toenemen. De amplitude van beide componentstromen zijn ongeveer gelijk. Tussen t = 1400 ms en t = 2050 ms is de topwaarde ongeveer 4300 A en de
+          effectieve waarde daarvan is 3050 A. De amplitude van de homopolaire stroom (<em>I<sub>0</sub></em>) kan niet goed uit de figuur worden herleid. Uit de
+          metingen blijkt dat <em>I<sub>0</sub> = 25</em> A. Voor de spanningen zijn de effectieve waarden: <em>U<sub>0</sub> = 2,9</em> kV, <em>U<sub>1</sub> = 3,6</em> kV en <em>U<sub>2</sub> = 2,2</em> kV. </p>
+        <p> Met deze gegevens wordt eerst aan de hand van tabel 10.8 het kortsluittype bepaald: </p>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td width="120" valign="top"><em>I<sub>1</sub> &gt; I<sub>1,pre</sub></em></td>
+              <td>ja, dus kortsluiting</td>
+            </tr>
+            <tr>
+              <td><em>I<sub>0</sub> &gt; 0</em></td>
+              <td>ja, dus kortsluiting met aardcontact</td>
+            </tr>
+            <tr>
+              <td><em>I<sub>2</sub> &gt; 0</em></td>
+              <td>ja, dus kortsluiting met één of twee fasen</td>
+            </tr>
+            <tr>
+              <td><em>I<sub>1</sub> – I<sub>1,pre</sub> &gt;&gt; I<sub>0</sub></em></td>
+              <td>ja, dus kortsluiting met twee of drie fasen</td>
+            </tr>
+            <tr>
+              <td><em>I<sub>2</sub> &gt;&gt; I<sub>0</sub></em></td>
+              <td>ja, dus kortsluiting met twee fasen </td>
+            </tr>
+          </tbody>
+        </table><br>
+        <p> Hieruit wordt geconcludeerd dat het een tweefasenkortsluiting betreft met aardcontact. Met behulp van formule 10.57 wordt de impedantie <em><u>Z</u><sub>g</sub></em> bepaald. Voor deze berekening is naast de amplitude ook de fasehoek van <em>U<sub>0</sub></em> en <em>I<sub>0</sub></em> nodig. Uit
+          de metingen blijkt de fasehoek voor de homopolaire spanning 77 graden en voor de homopolaire stroom –34 graden te zijn. Hieruit wordt berekend: <em>|<u>Z</u><sub>g</sub>| = 116</em> Ω en fasehoek van <em><u>Z</u><sub>g</sub></em> is: –69 graden. Aan de hand van tabel 10.9 wordt geconcludeerd
+          dat het een kortsluiting in een zwevend netwerk betreft, omdat de fasehoek het dichtst ligt bij de theoretische waarde van –90 graden. De totale
+          homopolaire capaciteit van alle op het onderstation aangesloten MS-kabels van het netwerk (niet afgebeeld in figuur 10.29) is: <em>C<sub>0</sub> = 1/(2π⋅f⋅ <u>Z</u><sub>g</sub>) = 2,7⋅10<sup>-5</sup> F</em>, hetgeen
+          overeenkomt met een totale lengte van 135 km op het onderstation aangesloten kabels (bij een gemiddelde waarde van <em>C<sub>0</sub> = 0,2 μF</em> per km). </p>
+        <p> Met tabel 10.10 kan de reactantie van het meetpunt bij het onderstation naar de foutplaats worden berekend. Deze is voor de tweefasen A-C-aardfout: </p>
+        <p> <em>X<sub>1</sub> = Im((U<sub>1</sub>–a<sup>2</sup>⋅U<sub>2</sub>) / (I<sub>1</sub>–a<sup>2</sup>⋅I<sub>2</sub>)) = 0,14 </em> <em>Ω</em> . </p>
+        <p> waarin: </p>
+        
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td width="120" valign="top"><em>U<sub>1</sub> = 3624 V,</em></td>
+              <td> met fasehoek –170 graden</td>
+            </tr>
+            <tr>
+              <td><em>U<sub>2</sub> = 2233 V,</em></td>
+              <td> met fasehoek –28 graden</td>
+            </tr>
+            <tr>
+              <td><em>I<sub>1</sub> = 3053 A,</em></td>
+              <td> met fasehoek 133 graden</td>
+            </tr>
+            <tr>
+              <td><em>I<sub>2</sub> = 3073 A,</em></td>
+              <td> met fasehoek 73 graden</td>
+            </tr>
+            <tr>
+              <td><em>a</em> en <em>a<sup>2</sup>:</em></td>
+              <td>de complexe operators <em>a</em> en <em>a<sup>2</sup></em> (<a href="https://www.phasetophase.nl/boek/boek_2_7.html#_7.5">zie paragraaf 7.5</a>) </td>
+            </tr>
+          </tbody>
+        </table><br>
+        <p> Indien, zoals in <a href="https://www.phasetophase.nl/boek/boek_2_10.html#_10.6.2">paragraaf 10.6.2</a> gesteld, de totale reactantie van de kabel in dit voorbeeld gelijk is aan <em>Z<sub>1</sub> = 0,238 Ω</em>, dan bevindt zich de kortsluiting op 0,14/0,238⋅100% = 60% van het onderstation. </p>
+        </div>
+      </div>
+      <div class="col-lg-2 hidden-md">&nbsp;</div>
+    </div>
+  </div>
+</div>
+
+
+<div id="includeFooter" class="container-fluid-footer"><div class="container">
+  <div class="row">
+    <div class="text-justify col-xs-6 col-sm-3">
+      <img src="./kortsluitstroomberekeningen_files/logo-s-360px-grijs.png" alt="ptp_logo" width="230">
+    </div>
+    <div class="col-xs-6 col-sm-9">
+        <p> Phase to Phase is onderdeel van <a href="https://www.technolution.nl/">Technolution</a>. © 2009-2021 </p>
+    </div>
+  </div>
+</div></div></body></html>

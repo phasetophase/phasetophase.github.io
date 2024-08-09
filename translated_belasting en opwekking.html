@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+
+<!-- saved from url=(0046)https://www.phasetophase.nl/boek/boek_1_3.html -->
+<html class="wf-ffscalasansweb-n7-active wf-ffscalasansweb-n4-active wf-ffscalasansweb-i4-active wf-active" lang="en"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Phase to Phase – Netten voor distributie van elektriciteit</title>
+<!-- Bootstrap -->
+<link href="./belasting en opwekking_files/bootstrap-2-boek.css" rel="stylesheet"/>
+<style type="text/css">
+	body,td,th {
+	font-family: ff-scala-sans-web, sans-serif;
+}
+body {
+	background-color: #F7F7F7;
+}
+    </style>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+<script src="./belasting en opwekking_files/qke6lfb.js.download"></script>
+<style type="text/css">.tk-ff-scala-sans-web{font-family:"ff-scala-sans-web",sans-serif;}</style><style type="text/css">@font-face{font-family:tk-ff-scala-sans-web-n7;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-n4;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-i4;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style><script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script src="./belasting en opwekking_files/jquery-1.11.3.min.js.download"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./belasting en opwekking_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H8Q9E8BJ7Q');
+</script>
+<script>
+$(function(){
+  $("#includedHeader").load("/boek/header.html");
+  $("#includeFooter").load("/boek/footer.html"); 
+});
+</script><style type="text/css">@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style>
+</head>
+<body style="padding-top: 50px">
+<div id="includedHeader"> <nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="container">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button aria-expanded="false" class="navbar-toggle collapsed" data-target="#topFixedNavbar1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+<a class="navbar-brand" href="https://www.phasetophase.nl/">Phase to Phase</a></div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="topFixedNavbar1">
+<ul class="nav navbar-nav">
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li></li>
+</ul>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container -->
+</nav>
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<p></p>
+</div>
+</div>
+</div>
+<div class="container-fluid-boek">
+<div class="container">
+<div class="row-in-header">
+<div class="text-justify col-xs-6 col-sm-6">
+<img alt="Phase to Phase logo 360px" class="hidden-xs" src="./belasting en opwekking_files/logo-s-360px-wit.png" width="366"/>
+<img alt="Phase to Phase logo 261px" class="visible-xs" src="./belasting en opwekking_files/logo-s-360px-wit.png" width="261"/>
+</div>
+<div class="col-xs-6 hidden-xs col-sm-6">
+</div>
+</div>
+<div class="row-in-header">
+<div class="text-left col-xs-9 col-sm-9"> <p></p><h8>ICT voor elektriciteitsnetten</h8>
+</div>
+<div class="col-xs-3 col-sm-3">
+</div>
+</div>
+<div class="row-in-header-2">
+<div class="text-justify col-xs-6 col-sm-6"> 
+	</div>
+<div class="col-xs-6 hidden-xs col-sm-6">
+<h7> </h7>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row-intro">
+<h1><a href="https://www.phasetophase.nl/boek/index.html"> Netten voor distributie van elektriciteit</a></h1>
+</div></div></div>
+<div class="row-ohm-center-white">
+<a name="top"></a>
+<div class="row-b">
+<a href="https://www.phasetophase.nl/boek/index.html"><button class="btn btn-default active" type="button">I – De opbouw van een net</button></a>
+<a href="https://www.phasetophase.nl/boek/boek_2_7.html"><button class="btn btn-default" type="button">II – Rekenen aan een net</button></a>
+<a href="https://www.phasetophase.nl/boek/boek_3_13.html"><button class="btn btn-default" type="button">III – Ontwerpen en bedrijfsvoeren</button></a>
+</div>
+<div class="row-b">
+<a href="https://www.phasetophase.nl/boek/index.html"><button class="btn btn-default1" type="button">Inhoud</button></a>
+<a href="https://www.phasetophase.nl/boek/index.html"><button class="btn btn-default1" type="button">1 Inleiding</button></a>
+<a href="https://www.phasetophase.nl/boek/boek_1_2.html"><button class="btn btn-default1" type="button">2 Netten</button></a>
+<a href="https://www.phasetophase.nl/boek/boek_1_3.html"><button class="btn btn-default1 active" type="button">3 Belasting en opwekking</button></a>
+<a href="https://www.phasetophase.nl/boek/boek_1_4.html"><button class="btn btn-default1" type="button">4 Netcomponenten</button></a>
+<a href="https://www.phasetophase.nl/boek/boek_1_5.html"><button class="btn btn-default1" type="button">5 Aardingsconcepten en veiligheid</button></a>
+<a href="https://www.phasetophase.nl/boek/boek_1_6.html"><button class="btn btn-default1" type="button">6 Beveiliging</button></a>
+<div class="row">
+<div class="col-md-12 col-lg-10">
+<h3>Load and generation</h3>
+<p>Chapter 3 delves extensively into the loads and generation of electrical power. It addresses the long-term, medium-term, and short-term behavior of the load. Specifically, the stochastic behavior of the load in the short term is explained. Additionally, new developments in consumption and decentralized generation are discussed.</p>
+<div class="row">
+<div class="col-md-6">
+<p>
+</p><ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_1_3.html#_3"><strong>3    Load and Generation</strong></a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_3.html#_3">3.1 Introduction</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_3.html#_3.2">3.2 Load</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_3.html#_3.3">3.3 Long-term behavior of the load</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_3.html#_3.4">3.4 Medium-term behavior of the load</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_3.html#_3.5">3.5 Short-term behavior of the load</a></li>
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_1_3.html#_3.5.1">3.5.1 The stochastic behavior of the load</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_3.html#_3.5.2">3.5.2 Simultaneity of the load and the Rusck model</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_3.html#_3.5.3">3.5.3 Relationship between electricity consumption and the maximum load</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_3.html#_3.5.4">3.5.4  Determining the parameters for short-term variations using measurements</a></li>
+</ul>
+</ul>
+<p></p>
+</div>
+<div class="col-md-6">
+<p>
+</p><ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_1_3.html#_3.6">3.6 New developments</a></li>
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_1_3.html#_3.6.1">3.6.1  Heat Pumps</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_3.html#_3.6.2">3.6.2  Electric Car</a></li>
+</ul>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_3.html#_3.7">3.7  Decentralized Generation</a></li>
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_1_3.html#_3.7.1">3.7.1 Micro-CHP Systems</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_3.html#_3.7.2">3.7.2  PV Systems</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_3.html#_3.7.3">3.7.3  Wind Turbines</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_3.html#_3.7.4">3.7.4 Large CHP Systems</a></li>
+</ul>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_3.html#_3.8">3.8  Engines</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_1_3.html#_3.9">3.9 Distinction of issues at MV and LV levels</a></li>
+</ul>
+<p></p>
+</div>
+</div>
+<hr/>
+<div id="_3"></div>
+<h1>3 Load and Generation</h1>
+<div id="_3.1"></div>
+<h2>3.1 Introduction</h2>
+<p>Knowledge of load and generation is a fundamental requirement for sizing electricity distribution networks. For designing a distribution network that must be economically viable years into the future, it is necessary to base the design on well-founded assumptions regarding the demanded and produced power and their development. The network planner must demonstrate through calculations that the design will result in an economic optimum. In these calculations, the planner must be able to handle, on one hand, large quantities of similarly behaving loads and small decentralized generation units, and on the other hand, small quantities of dissimilarly behaving large loads and generation units.</p>
+<p>A distribution network is designed to provide uninterrupted electrical power of sufficient quality to its users for at least 40 years into the future. The energy transition will lead to the connection of new loads and generators, such as large numbers of similar heat pumps, micro-CHPs, solar panels, a gradually increasing number of electric cars, and air conditioning systems. The future distribution network must be designed in such a way that major adjustments can be avoided. Therefore, knowledge of the development of load and generation is of great importance.</p>
+<a href="https://www.phasetophase.nl/boek/boek_1_3.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_3.2"></div><br/>
+<h2>3.2 Load</h2>
+<p>The load is categorized into various types. This categorization includes an analysis of behavior as a function of time and as a function of the network voltage. The voltage-dependent behavior is discussed in the chapter on modeling. This chapter primarily addresses behavior over time, for short, medium, and long terms. The short term refers to the instantaneous behavior within a maximum of about one hour. The medium term refers to behavior over a limited period without growth, such as one day or one week. The long term refers to a period of several years, possibly in combination with periodic medium-term behavior.</p>
+<p>There are many conceivable ways to categorize the loads. Each company uses its own method. A commonly used method is
+    (EnergieNed, 1996):</p>
+<p>
+</p><blockquote>
+<p>1. Small business consumption<br/>2. Household small consumption<br/>a. detached houses<br/>b. single-family homes<br/>c. apartments<br/>3. Mixed small consumption (business and household)</p>
+</blockquote>
+<p></p>
+<p>It is inevitable that particularly in the category of 'small business consumption,' the diversity can be quite large. Taxes in the category of 'household small consumption' will exhibit a much more uniform character. Nothing can be said in advance about the category of 'mixed small consumption,' as it depends both on the type of business consumption and the distribution between business and household consumption. A more precise definition of these categories will have to be made by the network designer themselves. This, of course, depends on the level of accuracy one expects to achieve.</p>
+<p>Loads in the categories of commercial or household consumption exhibit similar behavior throughout the year. Specific loads, such as heat pumps and electric cars, place high demands on the distribution network and require a special approach. Loads in the 'heat pumps' category will consume a lot of electricity, particularly during the cold period. Loads in the 'electric cars' category will consume a lot of electricity, especially after the morning and evening rush hours.</p>
+<p>It should be noted here that decentralized generation deserves special attention. In locations where micro-CHP (Combined Heat and Power) or solar panels are widely used, decentralized generation plays a significant role in considerations regarding the power load on the distribution network. Depending on the concentrations, the load flow in the distribution network can be compensated or even change direction. A connection can both receive and supply power.</p>
+<a href="https://www.phasetophase.nl/boek/boek_1_3.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_3.3"></div><br/>
+<h2>3.3 Long-term behavior of the load</h2>
+<p>The loads in a distribution network exhibit annual growth (accretion). The accretion is usually indicated as a percentage relative to the baseline date. Distribution networks are dimensioned in such a way that the accretion within the economic lifespan does not lead to major adjustments. This means that the networks are designed for the maximum load that occurs at the end of their economic lifespan. For the forecast, the network planner must have insight into:</p>
+<ul>
+<li>load growth due to an increase in the number of connections</li>
+<li>load growth due to an increase as a result of changing customer behavior.</li>
+</ul>
+<p>The number of connections is primarily determined by planning from the national to the regional level. For the higher network levels, such as transformers and medium voltage networks, the increase is largely due to load growth resulting from the rise in the number of connections. There is a simple approach that uses the number of connections and the average annual consumption of the specific type of connection.</p>
+<p>In addition to the increase in the number of connections, a forecast of the load development of existing connections is important. This requires estimates and decisions regarding:</p>
+<ul>
+<li>the future behavior of the customer</li>
+<li>technical developments in electrical equipment</li>
+<li>possibilities for load control.</li>
+</ul>
+<p>The future behavior of the customer is almost impossible to predict. Therefore, it is usually sufficient to extrapolate historical data from categories of customers, possibly adjusted by personal insight. In doing so, the network planner relies on planning information and market analysis. There is no universally applicable model or forecasting system. The uncertainties are greatest in low-voltage networks. As a result, there is a trend for the network designer to increasingly hedge against future uncertainties by designing the low-voltage network as robustly as possible: with maximum cable cross-sections and the largest possible distribution transformer, for example, 630 kVA. Additionally, in new constructions, the designer will claim extra space to potentially place additional network spaces in the future if necessary, thereby avoiding future costs as much as possible.</p>
+<p>The technical developments in equipment are primarily focused on increasing efficiency, which should lead to energy savings. Think of energy-efficient lighting, for example. On the other hand, new equipment is being developed that, while efficient in energy use, consumes much more electricity. The rise of new types of loads such as heat pumps and electric cars also has a significant impact on growth. The lower the network level, the greater this influence is. Decentralized generation is also a complicating factor for the forecast.</p>
+<p>The possibilities for load management are becoming relevant again due to developments in the field of 'smart grids.' These developments mostly pertain to balancing the supply and demand of electrical energy.</p>
+<p>Figure 3.1 shows the development of electricity consumption in the Netherlands from 1938 to 2008 (source: CBS 2010). Noteworthy is the trend break around the year 1973. As a result, the growth over the entire period is roughly divided into two time frames. In the first period, from 1938 to 1973, the growth is 8% annually. From 1973 to 2008, the growth is 2.4% per year. This is based on exponential growth:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.1.png"/>
+</td>
+<td width="2%">
+<p align="left">[</p>
+</td>
+<td width="6%">
+<p align="center">3.1</p>
+</td>
+<td width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>The graph shows the figures recorded by CBS and the calculated curve with the growth rates mentioned above.</p>
+<p>
+<img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="280" src="./belasting en opwekking_files/3.1.png" width="714"/>
+</p>
+<h5>Figure 3.1 Development of electricity consumption in the Netherlands between 1938 and 2008</h5>
+<p>A period of 70 years is usually too long for a reasonable growth forecast. There is a clear trend break around 1973. Figure 3.2 shows the development of electricity consumption in the Netherlands from 1995 to 2008. A linear trend line has been added to the graph. Over this 13-year period, the increase relative to 1995 is approximately linear at 2.4% per year.</p>
+<p>
+<img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="280" src="./belasting en opwekking_files/3.2.png" width="714"/>
+</p>
+<h5>Figure 3.2
+  Development of electricity consumption in the Netherlands between 1995 and 2008</h5>
+<p>Figure 3.3 shows the consumption in the Netherlands in 2008. The difference between summer and winter is about 20 percent. This graph indicates that within the span of one year, growth is typically not taken into account. However, seasonal behavior is considered.</p>
+<p>
+<img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="280" src="./belasting en opwekking_files/3.3.png" width="714"/>
+</p>
+<h5>Figure 3.3 Development of monthly electricity consumption in the Netherlands in 2008</h5>
+<div class="row">
+<div class="col-sm-6"> <img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="297" src="./belasting en opwekking_files/3.4a1.png" width="344"/></div>
+<div class="col-sm-6"> <img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="297" src="./belasting en opwekking_files/3.4a2.png" width="344"/></div>
+</div>
+<div class="row">
+<div class="col-sm-6"> <img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="297" src="./belasting en opwekking_files/3.4b1.png" width="344"/></div>
+<div class="col-sm-6"> <img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="297" src="./belasting en opwekking_files/3.4b2.png" width="344"/></div>
+</div>
+<div class="row">
+<div class="col-sm-6"> <img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="297" src="./belasting en opwekking_files/3.4c1.png" width="344"/></div>
+<div class="col-sm-6"> <img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="297" src="./belasting en opwekking_files/3.4c2.png" width="344"/></div>
+</div>
+<h5>Figure 3.4 Daily load patterns in a residential area in winter (left) and in summer (right). Dark blue is maximum, pink is average, black is minimum; the light blue line is the standard deviation.</h5>
+<a href="https://www.phasetophase.nl/boek/boek_1_3.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_3.4"></div><br/>
+<h2>3.4 Medium-term behavior of the load</h2>
+<p>The medium term is a flexible concept. The load can be assumed to be known to some extent during this period, as growth and random behavior play a lesser role. The behavior of the load is then called deterministic. Medium-term behavior describes the load over a day, a week, a month, or a portion of a year. Depending on the application, the network planner uses the maximum and minimum values of the load or uses load patterns.</p>
+<p>The images on the left provide an example of the load flows in a residential area during the winter (left) and the summer (right). This residential area only has 'traditional' loads. That is to say: regular household appliances and lighting, and no electric cars, heat pumps, micro-CHP units, or solar panels. The loads on Sunday, Saturday, and weekdays are very similar, both in winter and summer. For all days of the week, the maximum in the summer is approximately 60% of the winter maximum. The minimum in the summer is roughly equal to the winter minimum. In the shape of the daily load curve in the winter, the behavior in the evening hours is clearly visible. Generally, between 5:00 PM and 10:00 PM, the load is significantly higher than during the day.</p>
+<p>
+</p><div class="row">
+<div class="col-sm-6"> <img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="297" src="./belasting en opwekking_files/3.5a1.png" width="344"/></div>
+<div class="col-sm-6"> <img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="297" src="./belasting en opwekking_files/3.5a2.png" width="344"/></div>
+</div>
+<p></p>
+<h5>Figure 3.5 Daily patterns of the cos(φ) of the load in a residential area in winter (left) and in summer (right)</h5>
+<p>Figure 3.5 illustrates the behavior of the cos(φ) over the weekdays in January (left) and July (right). It is noticeable that the cos(φ) averages 0.92 in the winter and 0.88 in the summer. During periods of low load, the cos(φ) shows lower values than during periods of high load.</p>
+<p>The load patterns can be applied to a short time span, such as a day, but also for a longer time span, such as a month or a year.
+    Figure 3.6 shows the behavior of the supply current from the substation of a 20 kV line in a greenhouse area over three weeks in September.
+    A negative value of the current means a reverse energy direction. It is clearly visible that the current changes sign daily. This means
+    that the sum of the current of all connected users alternates daily between consumption and production. In this case, a load current of 100 A corresponds to
+    a three-phase power of approximately 3.5 MVA.</p>
+<p>Measurement of the loads at the individual nodes shows how the total supply current of the feeder is composed of the sum of all loads and generators. The graphs of the generator capacities demonstrate how the switching on and off of decentralized generation leads to daily fluctuations of up to over 5 MW per generator.</p>
+<p>
+<img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="280" src="./belasting en opwekking_files/3.6.png" width="714"/>
+</p>
+<h5>Figure 3.6   Load pattern of a 20 kV line in a greenhouse area</h5>
+<p>
+<img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="280" src="./belasting en opwekking_files/3.7.png" width="714"/>
+</p>
+<h5>Figure 3.7
+  Power pattern of individual connections in a 20 kV line in a greenhouse area</h5>
+<a href="https://www.phasetophase.nl/boek/boek_1_3.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_3.5"></div><br/>
+<h2>3.5 Short-term behavior of the load</h2>
+<p>The short-term behavior of the load aims to make a statement about the load at the time of the minimum, maximum, or another specific moment. The load consists of a portion that is fairly predictable (the medium term) and a portion where the load behaves randomly. For a residential area, it is reasonably well known when the minimum and maximum load occurs and what the expected value of that load is. Additionally, there is always a certain random component that ensures the maxima of all individual loads never occur simultaneously, and thus the maximum of the sum of all loads is never equal to the sum of all maxima.</p>
+<p>The following paragraphs will further explain the concepts of 'stochastic behavior' and 'simultaneity' of the load. In existing networks without electric cars, heat pumps, micro-CHPs, and solar panels, the described technique accounts for the non-simultaneity of the loads. However, in networks with electric cars, heat pumps, micro-CHPs, and solar panels, one cannot rely solely on the non-simultaneous behavior of the load. In addition to the stochastic behavior, a significant component of the load that behaves with high simultaneity must also be considered. For instance, electric cars will be charged upon returning home at the end of a workday, and heat pumps with possible auxiliary heating will all operate simultaneously on cold days. As a result, the design of new networks will increasingly be based on the sum of the individual maximum loads, with only limited consideration given to stochastic behavior.</p>
+<a href="https://www.phasetophase.nl/boek/boek_1_3.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_3.5.1"></div><br/>
+<h3>3.5.1 The Stochastic Behavior of the Load</h3>
+<p>Individual customers exhibit a certain group behavior in electricity consumption over a 24-hour period, but at any given moment, they behave as independent individuals. After all, not everyone runs their washing machine at the same time. However, individual users, as a function of time spread over a day, generally show significant similarities in behavior. Figure 3.8, where the load curves are normalized to their own average, illustrates this. Between 1:00 AM and 7:00 AM, the load is minimal. Between 7:00 AM and 9:00 AM, the load increases rapidly. In the evening, the load increases even more, only to decrease again to the minimum.</p>
+<p>
+<img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="280" src="./belasting en opwekking_files/3.8.png" width="714"/>
+</p>
+<h5>Figure 3.8   Normalized power distribution for four consumers, spread over a day</h5>
+<p>The behavior of the loads is described by the deterministic behavior as a function of time and the instantaneous stochastic parameters, which are independent. The deterministic behavior is described with a pattern as a function of time. An obvious pattern is a 24-hour daily load curve. The load curves for groups of loads are now reasonably well known through measurement projects.</p>
+<p>All loads behave as mutually dependent stochastic signals over the entire day, but within a limited time window (for example, one hour), they behave as independent stochastic signals. For these independent stochastic signals, an average value and a spread (standard deviation) can be calculated per time window. Figure 3.9 illustrates this. From all normalized load curves, load curves based on hourly averages were first calculated. These hourly curves were then plotted as a function of time. For each hourly value, the spread between all four curves was calculated. This spread was plotted as a function of time.</p>
+<p>
+<img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="280" src="./belasting en opwekking_files/3.9.png" width="714"/>
+</p>
+<h5>Figure 3.9   Hourly averages of the normalized current for four consumers and spread</h5>
+<p>In figure 3.9, the<em>t=12 hrs</em>a time window is indicated. Within that time window, the instantaneous load behaves as an independent stochastic signal. The load can be described in each time window as a stochastic variable, with an average value and a spread. For the indicated time window in figure 3.9, the average value of the current is approximately equal to 1 pu and the spread is approximately equal to 0.2 pu.</p>
+<p>The Central Limit Theorem states that the probability distribution of the sum of a sufficiently large number of independent stochastic variables is approximately normally distributed. This means, in this case, that the sum of a sufficient number of independent stochastic load signals behaves approximately like a normal distribution. This is confirmed by Engels (RWTH, 2000) and Livik (CIRED, 1993).</p>
+<p>With this assumption, the load at a given point in time<em>t</em>can be described by a normal probability distribution with a mean<em>μ(t)</em>and standard deviation<em>σ(t)</em>Figure 3.10 shows the probability distribution for a load with an average value of 3 kW and a standard deviation of 1 kW.</p>
+<p>The load model is completed by representing the mean values and the standard deviations as functions of time. This describes the behavior of the load for any desired period through a profile of stochastic normal distributions, characterized by the time functions for the means.<em>μ(t)</em>and for the dispersions<em>σ(t)</em>.</p>
+<p>
+<img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="280" src="./belasting en opwekking_files/3.10.png" width="714"/>
+</p>
+<h5>Figure 3.10 Load as a normal probability distribution</h5>
+<p>This modeling applies to similar types of loads. Other types of loads must be modeled separately, each with their own time functions. For mixed loads, combinations of the separate time functions must be used. Special loads, such as heavy industry, agricultural enterprises, and electric traction, as well as decentralized generators, continue to require special attention and cannot be modeled using this method.</p>
+<p>Figure 3.11 shows the average load curve for the aforementioned four loads. This curve is labeled 'mu'. Additionally, a band has been indicated using the dispersion curve, within which the individual load curves will likely fall with a certain probability. The upper and lower limits are calculated by adding the dispersion curve to the average curve (labeled 'mu+s') and subtracting it (labeled 'mu-s'), respectively. If the stochastic load behaves as a normally distributed stochastic variable at all times, the actual value of the load would fall within the indicated limits with a probability of 70%.</p>
+<p>
+<img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="280" src="./belasting en opwekking_files/3.11.png" width="714"/>
+</p>
+<h5>Figure 3.11 Average current and 1s limit, over a day</h5>
+<p>All loads modeled in this strict manner can be summed according to the theory of stochastic signals. This has implications for the mean and the variance.</p>
+<p>Figure 3.12 illustrates how this works out in a distribution network. Each graph shows the probability distribution of the load flow for the beginning, middle, and end of a feeder, respectively. The average values are 50, 20, and 5, respectively. The spread increases towards the end of the feeder.</p>
+<p>
+<img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="300" src="./belasting en opwekking_files/3.12.png" width="765"/>
+</p>
+<h5>Figure 3.12 Probability distributions of the decreasing current in one direction of a distribution network</h5>
+<p>Close to the feeder, the number of loads, and thus the number of independent stochastic signals, is large. As the sum of the number of independent loads decreases further in the network, the uncertainty (and thus the spread) increases. This is because the maximum load for different consumers will occur at different times. This phenomenon was previously described by Rusck. Therefore, we see that the average value decreases and the spread proportionally increases. A study has shown that for outgoing directions in the low-voltage network, the number of connections is too small to apply the normal distribution. A notable result of this study was that around peak load moments, 20% of the connections were responsible for 50% of that peak (Provoost, 2011). For a small number of consumers, it is therefore no longer correct to apply the normal distribution.</p>
+<a href="https://www.phasetophase.nl/boek/boek_1_3.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_3.5.2"></div><br/>
+<h3>3.5.2 Simultaneity of the load and the Rusck model</h3>
+<p>For each specific moment of the day, the load size of a specific category can be approximately predicted. The deterministic part is described using patterns for, for example, a day. This way, the moments when the load is minimal or maximal can be estimated. These are important values for sizing a distribution network. However, a distribution network is not sized for the sum of the individual maximum load values of all connections, because the maximum load of the individual connections will occur at different times. This phenomenon is called diversity or non-simultaneity.</p>
+<p>Design calculations for low-voltage (LV) and medium-voltage (MV) networks are typically performed using maximum loads in combination with diversity factors. The technique is based on information that distribution companies gather annually through consumption and maximum load measurements at various points in the network.</p>
+<p>The maximum load<em>P<sub>max</sub></em>is defined as the highest value of the load for connections, cables, or transformers. An index indicates the number of connections to which the maximum load applies. The value is expressed in kW.</p>
+<p>Diversity (or non-coincidence) is the phenomenon where the maximum load at a point in the distribution network is smaller than the sum of the individual maximum loads of the connections or of the points fed from the considered point. Diversity occurs both for all connections that are connected to a feeder or a substation and for all feeders that are connected to a substation.</p>
+<img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="210" src="./belasting en opwekking_files/3.13.png" width="535"/>
+<h5>Figure 3.13 Diversity of the load</h5>
+<p>In figure 3.13, the<em>P<sub>max</sub></em>the feeder current and<em>P<sub>max</sub>(i)</em>the maximum load in direction<em>i</em>. For this (radially operated) network, the following applies:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.2.png"/>
+</td>
+<td width="2%">
+<p align="left">[</p>
+</td>
+<td width="6%">
+<p align="center">3.2</p>
+</td>
+<td width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>The relationship that calculates the maximum load of a part of the distribution network using the coincidence factor was described by Rusck in 1956. The model assumes that the loads behave as statistically independent variables with a normal probability distribution. The purpose of the model is to determine the maximum load of components, such as cables or a supply transformer, using diversity. The degree of diversity is described by the coincidence factor.<em>g</em>, which is defined as the quotient of the maximum load<em>P<sub>max,n</sub></em>for n connections and the sum of the maximum values<em>P<sub>max</sub>(i)</em>of the individual loads that are fed from this point.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.3.png"/>
+</td>
+<td width="2%">
+<p align="left">[</p>
+</td>
+<td width="6%">
+<p align="center">3.3</p>
+</td>
+<td width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>Voor<em>n</em>equal loads with maximum power<em>P<sub>max,1</sub></em>equation 3.3 becomes:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.4.png"/>
+</td>
+<td width="2%">
+<p align="left">[</p>
+</td>
+<td width="6%">
+<p align="center">3.4</p>
+</td>
+<td width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>in other words:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="480"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.5.png"/>
+</td>
+<td valign="bottom" width="2%">
+<p align="left">[</p>
+</td>
+<td valign="bottom" width="6%">
+<p align="center">3.5</p>
+</td>
+<td valign="bottom" width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>One of the conditions for applying Rusck's model is that all loads behave as mutually independent normally distributed stochastic variables. However, when considered over an entire day, the load does not behave as a normally distributed stochastic variable. Generally, two time windows can be identified for peak and off-peak loads. Within one time window, it can be assumed that the load behaves as a normally distributed stochastic variable. This specific time window preferably occurs during peak load. According to probability theory, the stochastic variable can be described with the average value in the time window and a corresponding spread (standard deviation). The difference between the maximum load and the average load in the time window is then proportional to the spread. For a single connection, the following applies:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="480"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.6.png"/>
+</td>
+<td valign="bottom" width="2%">
+<p align="left">[</p>
+</td>
+<td valign="bottom" width="6%">
+<p align="center">3.6</p>
+</td>
+<td valign="bottom" width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>in which:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody style="">
+<tr>
+<td><em>P<sub>max,1</sub></em></td>
+<td>maximum load of a single user</td>
+</tr>
+<tr>
+<td><em>P<sub>avg,1</sub></em> </td>
+<td>average load of a single user</td>
+</tr>
+<tr>
+<td><em>σ<sub>1</sub></em></td>
+<td>spread of a single user</td>
+</tr>
+<tr>
+<td><em>C</em></td>
+<td>a constant factor</td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>In a normal distribution, theoretically, the maximum of the argument of the normal distribution (the load value) is infinite. However, the maximum value of the load in the distribution network is indeed finite. The factor<em>C</em>establishes the relationship between, on the one hand, the difference between the maximum and the average of the load and, on the other hand, the dispersion from the probability concept. See figure 3.10, where<em>C=3</em>.</p>
+<p>For a simultaneous load of n connections, the same factor applies<em>C</em>:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="bottom" width="90%"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.7.png"/>
+</td>
+<td valign="bottom" width="2%">
+<p align="left">[</p>
+</td>
+<td valign="bottom" width="6%">
+<p align="center">3.7</p>
+</td>
+<td valign="bottom" width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>Because the load for each similar connection behaves as the same normal distribution, the dispersion applies to<em>n</em>connections:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="bottom" width="90%"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.8.png"/>
+</td>
+<td valign="bottom" width="2%">
+<p align="left">[</p>
+</td>
+<td valign="bottom" width="6%">
+<p align="center">3.8</p>
+</td>
+<td valign="bottom" width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>and for the average load of<em>n</em>connections:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="bottom" width="90%"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.9.png"/>
+</td>
+<td valign="bottom" width="2%">
+<p align="left">[</p>
+</td>
+<td valign="bottom" width="6%">
+<p align="center">3.9</p>
+</td>
+<td valign="bottom" width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>After combination, the following results from the above equations:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.10.png"/>
+</td>
+<td valign="bottom" width="2%">
+<p align="left">[</p>
+</td>
+<td valign="bottom" width="6%">
+<p align="center">3.10</p>
+</td>
+<td valign="bottom" width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>By dividing equation 3.10 by<em>n·P<sub>max,1</sub></em>the expression for the simultaneity factor follows:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.11.png"/>
+</td>
+<td width="2%">
+<p align="left">[</p>
+</td>
+<td width="6%">
+<p align="center">3.11</p>
+</td>
+<td width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>For an infinite number of connections, the following applies:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.12.png"/>
+</td>
+<td width="2%">
+<p align="left">[</p>
+</td>
+<td width="6%">
+<p align="center">3.12</p>
+</td>
+<td width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>The simultaneity factor for an infinite number of connections describes the behavior for a specific load type, independent of the number of connections. Thus, the equation for the simultaneity factor transforms into the Rusck equation:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.13.png"/></td>
+<td width="2%">
+<p align="left">[</p>
+</td>
+<td width="6%">
+<p align="center">3.13</p>
+</td>
+<td width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>As a result, the formula for the maximum load can also be written as:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="480"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.14.png"/>
+</td>
+<td valign="bottom" width="2%">
+<p align="left">[</p>
+</td>
+<td valign="bottom" width="6%">
+<p align="center">3.14</p>
+</td>
+<td valign="bottom" width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>For one connection, it is<em>n=1</em>and is the simultaneity factor<em>g<sub>1</sub>=1</em>. For an infinite number of connections, n applies<sup>→∞</sup>and is<em>g<sub>n</sub>=g<sub>∞</sub></em>. In practice, it appears<em>g</em><sub>∞</sub>to be approximately equal for most cases to<em>0.2</em>. In that case, the simultaneity factor<em>g<sub>n</sub></em>for 80% proportional to the inverse of the square root of the number of consumers.</p>
+<p>The simultaneity factor strongly depends on the homogeneity of the load. For a highly homogeneous load, such as public lighting, the factor will be approximately equal to 1. The size of the considered network segment also has a significant impact on the value.</p>
+<p>The location of the considered point affects the 'local' diversity. In general, closer to the supply, the local simultaneity factor will be greater than at a point further away from the supply. This is because, with a large number of loads, the random behavior is 'averaged out.' At a point further away, the number of connections is smaller, causing the total loads to behave more erratically. Figure 3.14 illustrates this. In node 1, the local simultaneity factor for a total of<em>n<sub>1</sub> </em>connections given by<em>g(n)<sub>1</sub>)</em>This value is greater than the local simultaneity factor at the more distant node 2 with a total of<em>n<sub>2</sub></em>connections. The same applies to node 3. The total simultaneity factor in node 1 for all<em>n</em>connections is calculated from the product of all underlying simultaneity factors:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="bottom" width="90%"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.15.png"/>
+</td>
+<td valign="bottom" width="2%">
+<p align="left">[</p>
+</td>
+<td valign="bottom" width="6%">
+<p align="center">3.15</p>
+</td>
+<td valign="bottom" width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+<img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="280" src="./belasting en opwekking_files/3.14.png" width="714"/>
+</p>
+<h5>Figure 3.14 Simultaneity at various locations in a distribution network</h5>
+<p>The maximum load for<em>n</em>equal connections is calculated from the simultaneity factor and the maximum load for one connection:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="bottom" width="90%"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.16.png"/>
+</td>
+<td valign="bottom" width="2%">
+<p align="left">[</p>
+</td>
+<td valign="bottom" width="6%">
+<p align="center">3.16</p>
+</td>
+<td valign="bottom" width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>where:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody style="">
+<tr>
+<td><em>n</em></td>
+<td>the number of consumers</td>
+</tr>
+<tr>
+<td><em>P<sub>max,1</sub></em></td>
+<td>maximum value of the load of one connection</td>
+</tr>
+<tr>
+<td><em>g<sub>n</sub></em></td>
+<td>simultaneity factor for n connections</td>
+</tr>
+</tbody>
+</table>
+<p>
+<br/><a href="https://www.phasetophase.nl/boek/boek_1_3.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+</p><div id="_3.5.3"></div><br/>
+<h3>3.5.3 Relationship between electricity consumption and maximum load</h3>
+<p>Consumption is the amount of electrical energy used per unit of time, usually per year. Consumption can pertain to a single connection or to a network segment. Consumption<em>V</em>is represented in kWh/year. For the various load categories, the consumption per connection is generally better known than the maximum load per connection. For designing a distribution network, a relationship between consumption and maximum load is needed. One of the possibilities for this is the operating time of the maximum load. This is defined as the quotient of the annual consumption and the maximum load in that year. The greater the diversity, the smaller the operating time of the maximum.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.17.png"/>
+</td>
+<td width="2%">
+<p align="left">[</p>
+</td>
+<td width="6%">
+<p align="center">3.17</p>
+</td>
+<td width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>To make a well-founded statement about the maximum load of a load category, Velander empirically established this relationship with consumption based on measurements in 1952. He assumed that the loads behave as mutually independent stochastic variables at a specific moment. This relationship was later used in 1975 by Strand and Axelsson for application in a computer system that manages the consumption and maximum load of a distribution network.</p>
+<p>The Velander relationship is suitable for calculating the maximum load of load categories. In combination with load forecasting, the models of Rusck and Velander form the basis for designing medium voltage (MV) and low voltage (LV) networks.</p>
+<p>The Velander formula is as follows (Velander, 1952; Strand-Axelsson, 1975, and EnergieNed, 1996):</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="bottom" width="90%"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.18.png"/></td>
+<td valign="bottom" width="2%">
+<p align="left">[</p>
+</td>
+<td valign="bottom" width="6%">
+<p align="center">3.18</p>
+</td>
+<td valign="bottom" width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>where:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody style="">
+<tr>
+<td><em>P<sub>max,n</sub></em></td>
+<td>maximum load of<em>n</em>connections (kW)</td>
+</tr>
+<tr>
+<td><em>V</em></td>
+<td>annual consumption of<em>n</em>connections (kWh/year)</td>
+</tr>
+<tr>
+<td><em>α, β</em></td>
+<td>parameters determined by measurement</td>
+</tr>
+</tbody>
+</table>
+<p>
+</p>
+<p align="left">The parameters<em>α, β</em>en<em>V</em>describe the load category. These parameters depend on:</p>
+<ul>
+<li>the nature of the area</li>
+<li>the type of connections</li>
+<li>the number of connections</li>
+</ul>
+<p>By dividing Velander's formula (3.18) by the number of connections, the equivalent simultaneous maximum load per connection at any given location in the considered network section is obtained, where<em>n</em>similar connections are present.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="480"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.19.png"/>
+</td>
+<td width="2%">
+<p align="left">[</p>
+</td>
+<td width="6%">
+<p align="center">3.19</p>
+</td>
+<td width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>With the equivalent simultaneous maximum load per connection, the simultaneous maximum load of a network section is essentially distributed over all individual connections. The value of<em>P<sub>max,eq</sub> </em>decreases with an increasing number of connections. The less erratic behavior of the load pattern near the supply points of a network section compared to the individual connections is noticeable because in the second part of the equation, it is divided by<em>√n</em>. For an infinite number of connections, the equivalent simultaneous maximum load per connection is equal to<em>α·V<sub>1</sub></em>Figure 3.15 illustrates this. The graph shows two curves for a consumption of 4300 kWh/year and 2300 kWh/year. The parameters used are:</p>
+<p>
+<em>α = 0.23·10<sup>-3</sup></em>
+<br/>
+<em>β = 0.016</em>
+</p>
+<p>
+</p>
+<img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="392" src="./belasting en opwekking_files/3.15.png" width="709"/>
+<h5>Figure 3.15 Equivalent simultaneous maximum load per connection</h5>
+<p>By considering the specific consumption of one connection, the simultaneous maximum load can be determined using the parameters α and β.<em>n</em>connections
+    are calculated.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="480"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.20.png"/>
+</td>
+<td valign="bottom" width="2%">
+<p align="left">[</p>
+</td>
+<td valign="bottom" width="6%">
+<p align="center">3.20</p>
+</td>
+<td valign="bottom" width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>By combining equation 3.20 with Rusck's formulas (3.6 through 3.14), the following relationships are derived.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.21.png"/>
+</td>
+<td width="2%">
+<p align="left">[</p>
+</td>
+<td width="6%">
+<p align="center">3.21</p>
+</td>
+<td width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+<tr>
+<td width="410"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.22.png"/>
+</td>
+<td width="2%">
+<p align="left">[</p>
+</td>
+<td width="6%">
+<p align="center">3.22</p>
+</td>
+<td width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>With these relationships, the parameters α and β can be determined if the annual consumption and the average and maximum power per connection of the connection category are known. It should be noted that the average power<em>P<sub>avg,1</sub></em>is not equal to the annual consumption divided by the number of hours in the year. As noted in the previous paragraph, the load does not behave as a normally distributed stochastic variable over a full day. Therefore,<em>P<sub>average,1</sub></em>the average value of the stochastic variable that can be assumed to be normally distributed within the considered time window. This is the average value during peak load.</p>
+<p>If the annual consumption for one connection of a type of user<em>V<sub>1</sub></em>, the operating time<em>T<sub>1</sub></em>and the simultaneity factor for an
+    infinite number of users<em>g<sub>∞</sub></em>are known, the parameters can<em>α</em>en<em>beta</em>can be determined. The maximum load for a single connection<em>P<sub>max,1</sub></em>follows from the definition of operating time and the average load can, according to Rusck, be calculated from the simultaneity factor and the average load:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.23.png"/>
+</td>
+<td width="2%">
+<p align="left">[</p>
+</td>
+<td width="6%">
+<p align="center">3.23</p>
+</td>
+<td width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>The value of<em>g<sub>∞</sub></em>can, according to Rusck, be derived from the simultaneity of<em>n</em>users:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.24.png"/>
+</td>
+<td width="2%">
+<p align="left">[</p>
+</td>
+<td width="6%">
+<p align="center">3.24</p>
+</td>
+<td width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>By substituting these equations into the formulas that describe the relationships between Velander and Rusck, the parameters α and β can be determined.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="500">
+<tbody style="">
+<tr>
+<td width="410"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.25.png"/>
+</td>
+<td width="2%">
+<p align="left">[</p>
+</td>
+<td width="6%">
+<p align="center">3.25</p>
+</td>
+<td width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+<tr>
+<td width="410"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.26.png"/>
+</td>
+<td width="2%">
+<p align="left">[</p>
+</td>
+<td width="6%">
+<p align="center">3.26</p>
+</td>
+<td width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>Conversely, the stochastic parameters can be determined from Velander's parameters. By combining Velander's equation with Rusck's formulas, the following relationships are obtained. The average value of the stochastic load is derived from:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="bottom" width="90%"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.27.png"/>
+</td>
+<td valign="bottom" width="2%">
+<p align="left">[</p>
+</td>
+<td valign="bottom" width="6%">
+<p align="center">3.27</p>
+</td>
+<td valign="bottom" width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>The spread of the stochastic load is subsequently calculated with:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.28.png"/>
+</td>
+<td width="2%">
+<p align="left">[</p>
+</td>
+<td width="6%">
+<p align="center">3.28</p>
+</td>
+<td width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>An aspect such as load variation can easily be incorporated into the patterns of the averages. However, the spread must always stay in line with the average value. A tool for this is the constant.<em>C</em>With an increase in load, without an increase in the number of connections, the spread must increase proportionally.</p>
+<p>
+<a name="_Ref299973136"> </a>
+</p>
+<p>
+<em></em>
+</p>
+<p>
+<img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="392" src="./belasting en opwekking_files/3.16a.png" width="709"/>
+<img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="392" src="./belasting en opwekking_files/3.16b.png" width="709"/>
+<img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="392" src="./belasting en opwekking_files/3.16c.png" width="709"/>
+</p>
+<h5>Figure 3.16 Probability distributions for the load as a stochastic variable at C=1, 2, and 3</h5>
+<p>The factor C is decisive for the probability that in the model the stochastic load is greater than the maximum load.<em>P<sub>max</sub></em>. With a value for the constant<em>C</em>equal to 1, the maximum value of the load is determined by<em>μ+1·σ</em>Due to the properties of the normal distribution, the actual maximum will be below this value with approximately 85% certainty.<em>μ+1·σ</em>value. If the constant<em>C</em>is taken to be 2, the actual maximum will be below this value with approximately 97.5% certainty.<em>μ+2·σ</em>value. The parameter s1 depends on the choice of C. Below, the probability distribution is shown for C = 1, 2, and 3, respectively. In figure 3.16, the value is indicated in the graphs with a vertical line.<em>P<sub>max,1</sub></em>indicated. When calculating the probability distributions, the following assumptions were made:</p>
+<p>
+<em>α = 0.23·10<sup>-3</sup>
+<br/>β = 0.023<br/>V<sub>1</sub>= 4500 kWh/year<br/>P<sub>avg,1</sub>= α·V<sub>1</sub>= 1.04 kW<br/>P<sub>max,1</sub>= α·V<sub>1</sub>+<strong>b</strong>·√V<sub>1</sub>= 2.6 kW<br/>g<sub>∞</sub>= P<sub>avg,1</sub>/P<sub>max,1</sub>= 0.4<br/>C·σ<sub>1</sub>=P<sub>max,1</sub>– P<sub>avg,1</sub>=1.54 kW<br/>C = 3<br/>sigma<sub>1</sub>= 0.51 kW</em> </p>
+<p>The graphs in figure 3.16 illustrate that the dispersion is inversely proportional to the constant.<em>C</em>. See also figure 3.10. With a small value of<em>C</em>the extremes calculated with this probability distribution become larger. This must be taken into account when interpreting the results.</p>
+<p>For planning, average patterns with a relatively small spread are used. When recalculating for individual consumers, the shape of the average pattern does not change, but the associated spread becomes relatively larger. This method does not account for individual extreme outliers. In that case, the old method of calculating with maximum values would be more suitable.</p>
+<a href="https://www.phasetophase.nl/boek/boek_1_3.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_3.5.4"></div><br/>
+<h3>3.5.4 Determining the parameters for short-term variations using measurements</h3>
+<p>The relationship between consumption and the maximum load of a similar group of connections is described by the Velander formula (equation 3.18). This formula uses two parameters, α and β, which are determined based on measurements. Generally, it is assumed that the measurements are sufficiently representative. Since the measurements can be considered a sample, the general rules of statistics dictate that the number of measurements (the population) must be large enough. When adding a new measurement to a collection of measurements, the parameters to be determined will generally change. As the number of measurements increases, the parameters converge to a fixed 'true' value. The larger the population, the better the parameters approximate the true value.</p>
+<p>It is important to conduct the measurements on a number of similar characteristics:</p><ul>
+<li>the nature of the areas</li>
+<li>the type of connections</li>
+</ul>
+<p></p>
+<p>In the measurement program, the goal is to achieve a sample that is as representative as possible. This means that measurements have been conducted on both individual connections as well as on the low-voltage cables and the distribution transformer of the supply area. To this end, kWh/kW meters have been placed on the connections, low-voltage cables, and distribution transformer. In an (unspecified) sample at a network company, measurements were taken on 18 individual connections with annual consumptions ranging from 1.5 to 14 MWh and on larger service areas with annual consumptions ranging from 681 to 10,170 MWh.</p>
+<p>The parameters of the Velander formula (equation 3.18) are determined using the least squares method. This method calculates the values of the parameters α and β, for which the sum of the squared differences between measured values and calculated values is minimized. The method is based on<em>m</em>meetpunten<em>(x<sub>1</sub>, f<sub>1</sub>), (x<sub>2</sub>, f<sub>2</sub>), ... , (x<sub>m</sub>, f<sub>m</sub>)</em>, where x<sub>i</sub>a
+    measured annual consumption is and<em>f<sub>i</sub></em>a measured maximum. These data points are approximated with the polynomial below.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.29.png"/>
+</td>
+<td width="2%">
+<p align="left">[</p>
+</td>
+<td width="6%">
+<p align="center">3.29</p>
+</td>
+<td width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>The method of least squares leads to the normal equations of Gauss. Under the condition that, in relation to Velander's formula, the parameter<em>a<sub>0</sub></em>is equal to zero and that only the parameters are being sought<em>a<sub>1</sub>and a<sub>2</sub></em>, this leads to equation 3.30.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.30.png"/>
+</td>
+<td width="2%">
+<p align="left">[</p>
+</td>
+<td width="6%">
+<p align="center">3.30</p>
+</td>
+<td width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>If these equations are substituted:<br/>
+<em>a<sub>1</sub>= β</em><br/>
+<em>a<sub>2</sub>= α</em><br/>
+<em>x<sub>1</sub>= √V<sub>i</sub></em><br/>
+<em>f<sub>i</sub>= P<sub>i</sub></em>
+</p>
+<p>the normal equations transform into:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.31.png"/>
+</td>
+<td width="2%">
+<p align="left">[</p>
+</td>
+<td width="6%">
+<p align="center">3.31</p>
+</td>
+<td width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>These equations can also be written as:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.32.png"/>
+</td>
+<td width="2%">
+<p align="left">[</p>
+</td>
+<td width="6%">
+<p align="center">3.32</p>
+</td>
+<td width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>Where:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.3" height="193" src="./belasting en opwekking_files/formule-3.33.png" width="123"/>
+</td>
+<td width="2%">
+<p align="left">[</p>
+</td>
+<td width="6%">
+<p align="center">3.33</p>
+</td>
+<td width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>These are two equations with two unknowns<em>alpha</em>en<em>beta</em>which are easily solved. After working out the summations for all the measurements, the parameters ultimately follow<em>alpha</em>en<em>beta</em>:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.3" height="102" src="./belasting en opwekking_files/formule-3.34.png" width="115"/></td>
+<td width="2%">
+<p align="left">[</p>
+</td>
+<td width="21">
+<p align="left">3.34</p>
+</td>
+<td width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>Using the above method, the sample measurements are calculated as follows:<em>a = 0.25·10<sup>-3</sup></em>en<em>b = 0.04</em>Figure 3.17 shows the measurements and the curve in a single graph.
+
+The diversity of the measurements is significant. The method estimates the parameters based on the smallest sum of squared deviations. This results in measurement points with high maximum loads weighing more heavily than those with low maximum loads. This method is preferred due to the law of large numbers in statistics. However, the model must also be representative of small numbers. Plotting the data in a graph with a double logarithmic scale provides more insight into the deviations of the measurements relative to the curve.</p>
+<p>
+<img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="280" src="./belasting en opwekking_files/3.17.png" width="714"/>
+</p>
+<h5>Figure 3.17 Measurement points and calculated curve, depicted on a linear scale</h5>
+<p>
+<a name="_Ref299973413"> </a>
+</p>
+<p>
+<img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="280" src="./belasting en opwekking_files/3.18.png" width="714"/>
+</p>
+<h5>Figure 3.18 Measurement points and calculated curve, depicted on a double logarithmic scale</h5>
+<p>The diversity in the measurements is clearly visible in the graph. Visible are a group of measurements for small consumers, several measurements for small distribution transformers, and two measurements for large distribution transformers. A study of the graphs in Figure 3.17 and Figure 3.18 shows that the curve is a good representation of the measurements for larger loads. For the measurements in the small consumers group, the curve is not representative.</p>
+<p>If in Velander's formula the annual consumption of<em>n</em>connections is written as the product of the average annual consumption of one connection and the number of connections, it becomes:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.35.png"/></td>
+<td width="2%">
+<p align="left">[</p>
+</td>
+<td width="6%">
+<p align="center">3.35</p>
+</td>
+<td width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>Here it is clearly visible that the parameter<em>alpha</em>has the same influence for both small and large numbers of connections. The parameter<em>beta</em>has through the square root of<em>n</em>relatively more influence for small numbers of connections.</p>
+<p>The graphs in figure 3.19 illustrate the influence of variation of the parameter α on the position of the curve relative to the data points. The first image shows the graph on a linear scale, and the second image on a double logarithmic scale. The images illustrate that variation of parameter α has a simple linear influence on the curves. For resolving discrepancies relative to measurements of low consumption and low load, variation of α does not provide the correct adjustment.</p>
+<p>
+<a name="_Ref299978931"> </a>
+</p>
+<div class="row">
+<div class="col-sm-6"> <img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="297" src="./belasting en opwekking_files/3.19a.png" width="344"/></div>
+<div class="col-sm-6"> <img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="296" src="./belasting en opwekking_files/3.19a.png" width="343"/></div>
+</div>
+<h5>Figure 3.19 Variation of parameter α, depicted with linear and double-logarithmic scales</h5>
+<p>The graphs in figure 3.20 illustrate the influence of variation of the parameter β on the position of the curve relative to the data points. The first image shows the graph on a linear scale, and the second image on a double-logarithmic scale. The images illustrate that variation of parameter β has a relatively large influence, particularly at lower power levels.</p>
+<p>
+<a name="_Ref299978951"> </a>
+</p>
+<div class="row">
+<div class="col-sm-6"> <img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="296" src="./belasting en opwekking_files/3.20a.png" width="343"/></div>
+<div class="col-sm-6"> <img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="296" src="./belasting en opwekking_files/3.20b.png" width="343"/></div>
+</div>
+<h5>Figure 3.20 Variation of parameter β, depicted with linear and double-logarithmic scales</h5>
+<p>In the described method, higher power levels carry more weight in the parameter determination. When considering the relative deviations from the calculated value, measurements of low consumption and low load are given more weight in the parameter determination. This method uses equation 3.36.</p>
+<p>From Velander's formula follows:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="90%"><img alt="formules_1.3" src="./belasting en opwekking_files/formule-3.36.png"/>
+</td>
+<td width="2%">
+<p align="left">[</p>
+</td>
+<td width="6%">
+<p align="center">3.36</p>
+</td>
+<td width="2%">
+<p align="right">]</p>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>where:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody style="">
+<tr>
+<td><em>P<sub>i</sub></em></td>
+<td>measured maximum load (kW)</td>
+</tr>
+<tr>
+<td><em>V<sub>i</sub></em></td>
+<td>measured annual consumption (kWh)</td>
+</tr>
+<tr>
+<td><em>α, β</em></td>
+<td>to determine parameters</td>
+</tr>
+<tr>
+<td><em>r<sub>i</sub></em></td>
+<td>residual of measurement<em>i</em></td>
+</tr>
+</tbody>
+</table><br/>
+<p>It is not easy to establish the residual equations from this formula, which means that the method of solving using Gauss's normal equations (equations 3.29 through 3.34) cannot be applied. However, it is possible to use a computer program to vary the parameters α and β to find the smallest sum of the squares of the residuals.<em>r<sub>i</sub></em>determined. Using this 'experimental method,' the measurement data from a sample is:<em>α = 0.20·10<sup>-3</sup></em>en<em>β = 0.09</em>Applying these values results in the curve being too low for high power levels. The least squares method, after all, leads to a curve where the data points have deviations both above and below. The experimental nature of this method allows for the parameters to be adjusted so that the curve does not fall too far below the measurement values for both high and low power levels. A better fit is found after adjusting the parameters:<em>α = 0.22·10<sup>-3</sup></em>en<em>β = 0.10</em>.</p>
+<p>The images in figure 3.21 show in a single graph the measurement points, the curve according to the parameter determination (which favors the high power levels), and the curve according to the experimentally estimated parameters.</p>
+<div class="row">
+<div class="col-sm-6"> <img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="296" src="./belasting en opwekking_files/3.21a.png" width="343"/></div>
+<div class="col-sm-6"> <img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="296" src="./belasting en opwekking_files/3.21b.png" width="343"/></div>
+</div>
+<h5>Figure 3.21 Variation of parameters α and β, depicted with linear and double-logarithmic scales</h5>
+<a href="https://www.phasetophase.nl/boek/boek_1_3.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_3.6"></div><br/>
+<h2>3.6 New Developments</h2>
+<p>In the context of making society more sustainable and the ongoing energy transition, alternatives for energy use are being sought. Examples can be found in the use of electrical energy as an alternative to other energy carriers, such as electric cars and space heating using heat pumps and electric auxiliary heating. Another example is the alternative way of generating electrical energy using wind turbines, micro-CHP systems, and solar energy systems (PV).</p>
+<p>A disadvantage of these developments is that they are responsible for a significant increase in electricity transport over the distribution network, accompanied by a very high simultaneity value. In networks where these new developments are applied, it is no longer sufficient to account only for the portion of the load that behaves asynchronously; consideration must also be given to a new component of the load that behaves with high simultaneity. For instance, nearly all electric cars will be charged upon returning home at the end of a workday, and heat pumps with possible auxiliary heating will all be in operation simultaneously on cold days. As a result, the design of the network (both existing and new) will increasingly need to take into account the sum of the individual maximum loads.</p>
+<a href="https://www.phasetophase.nl/boek/boek_1_3.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_3.6.1"></div><br/>
+<h3>3.6.1 Heat Pumps</h3>
+<p>In a growing number of new construction projects, homes are being equipped with heat pump systems for heating and cooling. Currently, 6% of new homes are being fitted with a heat pump, which corresponds to the installation of 3,500 heat pumps per year. For now, these are mainly electric heat pumps. The operating principle is similar to that of a refrigerator or air conditioner. To heat a space, heat is extracted from a medium. This medium can be the outside air or groundwater. The advantage of these systems is that they can work both ways. This means that a space can also be cooled by releasing heat to the same medium. When using groundwater as the medium, heat can be stored in the ground during the summer, which can then be extracted for heating purposes in the winter. Although these heat pump systems are more energy-efficient than traditional heating boilers, they still consume a significant amount of electrical energy. The electrical capacities range from 2 to 5 kW. Additionally, the heat pump is often equipped with an auxiliary heater with a capacity of approximately 6 kW, which can activate during low outside temperatures and after a prolonged power outage. Low outside temperatures and outages affect all homes simultaneously. Therefore, when heat pumps are widely used in homes, it must be taken into account that these devices exhibit a high degree of simultaneity in electricity demand. This demand is mainly determined by the need for heating in the winter or cooling in the summer. Particularly in the winter, the need for space heating increases simultaneously for all homes in the late afternoon and evening. Similarly, on the hottest days of summer, the need for space cooling will rise simultaneously. The actual behavior depends on the insulation level of the home. In well-insulated houses, the electricity profile of the heat pump will be almost flat.</p>
+<p>There are examples where, due to a change in environmental policy during a new construction project, the homes are equipped with heat pumps instead of conventional heating. As a result of the increased electricity demand, the distribution network proved to be insufficient. It is therefore crucial to take the possibility of this form of heating into account.</p>
+<p>In projects where these systems are applied, the Velander method cannot be used without adjustments, and consideration must be given to the simultaneous activation of almost all heat pumps. This often includes the auxiliary heating in addition to the usual small-scale load. This means that the total load is divided into a part with high simultaneity and a part with low simultaneity. Figure 3.22 shows a section of a low-voltage network with 4 sections, each with 10 detached houses, without heat pumps (top), with heat pumps (middle), and with heat pumps and activated auxiliary heating (bottom). In the calculation of the LV supply cables, a power of 3 kW per heat pump and 6 kW per auxiliary heating was assumed. In the case without heat pumps, the LV main cable with aluminum conductors can be reduced from 95 to 50 mm.<sup>2</sup>conductor cross-section. In the case with only heat pumps, cables with a 150 mm cross-section are used in the first two sections.<sup>2</sup>conductor cross-section applied and even then
+    the first section is overloaded. In the case with heat pumps and activated auxiliary heating, the network with the application of 150 mm<sup>2</sup>Aluminum cables
+    are heavily overloaded and the voltage at the end of the line is too low. A solution to this problem can be found by allowing fewer connections on
+    a line or by working with parallel cables, assuming that no cables with a larger conductor cross-section are used.</p>
+<p>If the heat pump and auxiliary heating are connected in three phases, this results in an additional load per connection of 9000 kVA / 3 / 235 V = 12.8 A per phase. With a simultaneity factor of 1, this can simply be multiplied by 10 for 10 connections, resulting in an additional load current of 128 A. This current is added to the standard load of 10 detached houses, which is a maximum of 24 A, resulting in a total load current of 128 + 24 = 152 A, as seen in the last cable section of figure 3.22. This shows that the impact of heat pump systems (128 A) is so significant that the influence of the stochastic behavior of the remaining load (24 A) can be practically neglected.</p>
+<p>
+<a name="_Ref272407091"></a>
+</p>
+<img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="276" src="./belasting en opwekking_files/3.22.png" width="693"/>
+<h5>Figure 3.22 LV main cable without and with heat pump systems</h5>
+<a href="https://www.phasetophase.nl/boek/boek_1_3.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_3.6.2"></div><br/>
+<h3>3.6.2 Electric car</h3>
+<p>The electric car began a slow rise in 2010. In the event of a breakthrough, there are concerns that peak load will increase abruptly. The forecasts for the number of electric cars in the Netherlands in the year 2020 vary widely, from 200,000 to more than 1 million. A quarter of a million is already ambitious but theoretically achievable. The effect of this will be most noticeable in the low-voltage networks, immediately followed by the medium-voltage networks. In this context, the grid operator faces several uncertainties. Among others: how can this new development be properly integrated with the existing transport capacity, and how should newly designed networks be prepared for this? To answer these questions, the expected electrical behavior of the electric car must first be examined.</p>
+<p>In 2007, a passenger car drove an average of 13,877 km per year (CBS Statline). It is assumed that the consumption of the electric car is 5-7 km/kWh (an average of 1 kWh per 6 km). This is based on specifications from suppliers and on practical figures, which range from 1 per 4 to 1 per 7, depending on driving style and type of car. This means that the annual consumption of an electric car is equal to 13,877/6 = 2,312 kWh/year. Based on this annual consumption, this amounts to a consumption of approximately 6.3 kWh per day. For comparison, the average annual consumption of a household in 2007 is 3,512 kWh (9.6 kWh per day).</p>
+<p>The peak load of an electric car is determined by the amount of energy to be recharged and the duration of the charging. For calculating the peak load in a home situation, it can be assumed that an empty battery should be able to be charged overnight. Assuming a duration of 8 hours (from 11:00 PM to 7:00 AM) and a battery capacity in the car of 16 to 36 kWh (as of 2009), the required charging power of a car is:</p>
+<ul>
+<li>For a small battery: 16 / 8 = 2 kW</li>
+<li>For a large battery: 36 / 8 = 4.5 kW</li>
+</ul>
+<p>There are electric cars whose peak charging power is adjusted to a regular installation of 10 A and 230 V, limiting the peak charging power to 2 kW. There are also electric cars equipped with a three-phase plug, suitable for 3 x 16 A and 400 V. With this, charging with one phase can be done at 3.5 kW and with three phases at 10 kW. The European standard plug is suitable for 3 x 63 A and 400 V. This would correspond to a peak charging power of 40 kW. This capacity is not yet fully utilized. As of 2010, the development of chargers has not progressed that far. Some manufacturers are considering a 20 kW charger. If such chargers are used in large quantities and charged simultaneously, they will pose a problem regarding the peak load on the distribution network.</p>
+<p>A power of 4.5 kW for charging a large battery in 8 hours can no longer be supplied by a regular outlet with a 16 A fuse. In that case, a three-phase connection must be used, or a longer charging time must be accepted. A duration of 10 hours means a charging power of 3.6 kW, which corresponds to a current of 15.7 A at a voltage of 230 V. A condition is that the charging cycle for each electric car, regardless of the battery's state of charge, is spread over the maximum duration of 8 to 10 hours. It should be considered that in many household situations, the charging time could also be 12 hours, which could reduce the peak load. Figure 3.23 illustrates the electricity demand in the case of an uncontrolled charging cycle, where the current is very high for a short period in the evening. Figure 3.24 shows a situation of an optimized charging cycle, where the duration is set by the customer. The example assumes a neighborhood with 40 single-family homes, of which 25% need to charge an electric car. Thus, in this example network, there are 10 electric cars, with an average energy requirement of 6.3 kWh per day.</p>
+<p>With an uncontrolled charging cycle, an average energy of 6.3 kWh per car can be delivered in 2 hours at a current of 13.7 A and a single-phase voltage of 230 V. In the example, it is assumed that half of the cars start charging at 7:00 PM and the other half at 8:00 PM. This causes an additional current of 23 A per phase in the first hour and an additional current of 46 A per phase in the second hour. If this occurs during the evening hours at peak load times, the grid can become overloaded.</p>
+<h6>
+<em>Example of uncontrolled charging:</em> </h6>
+<ul>
+<li>Number of homes: 40</li>
+<li>Number of electric cars: 10</li>
+<li>Energy requirement: 6.3 kWh per car on average</li>
+<li>Total energy requirement: 63 kWh</li>
+<li>Number of hours required for charging: 2</li>
+<li>Peak power: 63 kWh / 2 h = 31.5 kW</li>
+<li>Maximum current three-phase system: (31500/3) / 230 = 46 A/phase</li>
+</ul>
+<p>
+<a name="_Ref272333589"><em> </em></a>
+</p>
+<p>
+<img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="280" src="./belasting en opwekking_files/3.23.png" width="714"/>
+</p>
+<h5>Figure 3.23 Uncontrolled charging cycle of 10 electric cars</h5>
+<p>With a controlled and optimized charging cycle, the average energy of 6.3 kWh per car can be delivered over 8 hours at a current of 3.4 A and a single-phase voltage of 230 V. In the example, it is assumed that all cars start charging from 10:00 PM. This causes an additional current demand of 11.4 A per phase on the grid.</p>
+<h6>
+<em>Example of controlled and optimized charging:</em> </h6>
+<ul>
+<li>Number of homes: 40</li>
+<li>Number of electric cars: 10</li>
+<li>Energy requirement: 6.3 kWh per car on average</li>
+<li>Total energy requirement: 63 kWh</li>
+<li>Number of hours required for charging: 8</li>
+<li>Peak power: 63 kWh / 8 h = 7.9 kW</li>
+<li>Maximum current three-phase system: (7900/3) / 230 = 11.4 A/phase</li>
+</ul>
+<img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="280" src="./belasting en opwekking_files/3.24.png" width="714"/>
+<h5>Figure 3.24  Optimized charging cycle of 10 electric cars</h5>
+<p>The above example illustrates the importance of spreading out the charging period of electric cars. Load management also prevents charging from starting before or during the peak evening hours.</p>
+<p>By charging the batteries in a controlled manner (smart charging), the demand is adjusted to the grid capacity and potentially to the supply of sustainable energy. The currents at which batteries are charged when connected to the grid may vary during the charging session. In this process, the batteries are only charged from the grid. The batteries can, in principle, also be used as a buffer for the grid, where they supply electricity back to the grid. This will increase the number of charge and discharge cycles. A disadvantage of this is that it can lead to faster wear and tear on the batteries. Therefore, this will only be applied in moderation.</p>
+<p>Experiments are being conducted with fast charging within 20 to 40 minutes. In practice, fast charging means charging the battery from 20% to 80% capacity, not from 0 to 100%. However, due to the high power involved, significant heat loss occurs. Therefore, the charging power quickly becomes 10% or more greater than the power that actually goes into the battery. For charging 60% within half an hour, the required charging power per car, including heat losses, is:</p>
+<p>
+</p><ul>
+<li>For a small battery: 0.6 · (16 / 0.5) · 1.1 = 21 kW</li>
+<li>For a large battery: 0.6 · (36 / 0.5) · 1.1 = 48 kW</li>
+</ul>
+<p>These power levels correspond in an LV three-phase system with a current of 30 and 70 A, respectively, assuming a power factor of 1. 
+    Establishing a facility to fast-charge multiple cars requires a specific investment in the infrastructure. Due to the high current demand that occurs in this scenario, this may potentially lead to the need for a dedicated MV connection or a distribution station.</p>
+<p>For calculating the simultaneity of charging many cars in a residential situation, one can assume an average electricity consumption of 6.3 kWh/day per car. The simultaneous load on the grid by charging at night for 8 hours would then be 6.3 kWh divided by 8 = 0.79 kW per electric car (based on data from an electric car in 2010). The problem with simultaneity is that there is no experience yet with large-scale charging of electric cars. In the worst case, the simultaneity factor is 1, meaning all peak charging capacities are connected simultaneously. This means that the additional peak load can range between 0.79 kW per car and 10 kW per car, based on the technology applied in 2010.</p>
+<p>Calculating with simultaneity always assumes large numbers. The number of electric cars is still small. Moreover, the diversity of charging needs is significant. Additionally, consideration can be given to the possibility of charging car batteries during the day, in parking lots at shopping centers or at work. Specifically, the large number of electric cars can lead to a significant, previously unforeseen increase in the local load on the network.</p>
+<a href="https://www.phasetophase.nl/boek/boek_1_3.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_3.7"></div><br/>
+<h2>3.7 Decentralized generation</h2>
+<p>Decentralized generation is no longer a marginal phenomenon in distribution networks. The systems used range from micro-CHP units and PV systems in low-voltage networks to large CHP and wind energy systems connected to medium-voltage and high-voltage grids. Wind turbines with capacities of 3 to 5 MW each, grouped in wind farms, feed into transmission networks at medium-voltage or high-voltage levels. In combined heat and power plants, large generators are used, which, depending on their capacity, are connected to either the distribution or transmission network. Additionally, large numbers of small generators, such as those in micro-CHP installations, are increasingly being used in low-voltage networks. These are usually connected via converters.</p>
+<p>Various definitions for decentralized generation are used in the literature. Most definitions are based on the type of technology applied, the environmental impact of the installation, the size of the installed capacity of the installation, and the voltage level to which the installation is connected. A definition based on the type of technology is challenging due to the wide variety of technological developments, such as CHP systems, PV systems, and wind turbines. A definition based on the voltage level or the size of the installed capacity is also used. The NMa does not use a specific definition of decentralized generation but refers to (NMa 2009_2):</p>
+<p>
+</p><ul>
+<li>production facility: a (part of an) installation intended for generating electricity, consisting of one or more production units</li>
+<li>production unit: a (part of a) production facility that can independently (or independently of the other parts of the respective production facility) be used for generating electricity. A production unit can consist of one or more generators.</li>
+</ul>
+<p>Additionally, the NMa uses the term 'sustainable electricity,' which is generated from renewable energy sources such as wind, solar energy, geothermal energy, wave energy, tidal energy, hydropower, biomass, landfill gas, sewage treatment gas, and biogas (Electricity Act 1998). A large portion of decentralized generation falls under the category of sustainable electricity. The production of sustainable electricity increased from 6.0 percent of domestic electricity consumption in 2007 to 7.5 percent in 2008. This increase is due to a rise in electricity production from wind energy and biomass.</p>
+<p>
+<img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="290" src="./belasting en opwekking_files/3,25.jpg" width="739"/>
+</p>
+<h5>Figure 3.25 Development of sustainable electricity in the Netherlands (source: CBS)</h5>
+<p>Electricity production from wind energy was a quarter higher in 2008 than in 2007. This is mainly due to the commissioning of many new wind turbines. Wind energy is thus responsible for approximately half of the sustainable electricity production. At the end of 2008, wind turbine capacity was 2,216 megawatts, about 470 MW more than a year earlier (CBS, 2009).</p>
+<p>The generators of decentralized producers are usually designed as synchronous machines and sometimes as asynchronous machines. A synchronous generator has a rotor that is energized in such a way that it behaves like a rotating magnet. The rotor rotates in the electromagnetic field generated by the stator windings that are connected to the power grid. As a result, the synchronous machine is forced to rotate in sync with the rotating field determined by the grid. The frequency of the voltage generated by the synchronous generator must be 50 Hz. An asynchronous generator, on the other hand, has a short-circuited rotor winding, in which a current flows whose magnitude and frequency depend on the difference in rotational speed of the rotor relative to the rotating electromagnetic field of the stator windings. The asynchronous generator can only generate power if it rotates faster (thus asynchronously) than the rotating field determined by the grid.</p>
+<div class="row">
+<div class="col-sm-6"> <img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="250" src="./belasting en opwekking_files/3.26a.png" width="311"/></div>
+<div class="col-sm-6"> <img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="250" src="./belasting en opwekking_files/3.26b.jpg" width="339"/></div>
+</div>
+<h5>Figure 3.26 Synchronous generator for high power</h5>
+<p>Decentralized generation affects the behavior of currents and voltages in the distribution network. In general, a generator causes an increase in voltage and an increase in short-circuit power. Sometimes this can be desirable, but sometimes not. A load flow and short-circuit calculation provides more insight into this. This is further discussed in chapters 9 and 10. The maximum short-circuit current of generators connected via converters is limited by the electronics to approximately the nominal current. The following systems are most commonly used in distribution networks and medium-voltage transport networks.</p>
+<ul>
+<li>Micro-CHP systems: 1 .. 5 kW per connection</li>
+<li>PV systems: 0.5 .. 2 kW per connection</li>
+<li>Wind turbines: 1 .. 5 MW per connection</li>
+<li>CHP systems for horticulturists: 100 .. 630 kW per connection</li>
+<li>Large CHP systems: 1 .. 20 MW per connection</li>
+</ul>
+<p>Larger wind turbines with a capacity of 5 MW or more and large CHP systems cannot be integrated into the grid without further consideration. A detailed study and calculation of the effects associated with supplying or not supplying electrical energy to the grid, as well as the consequences of a short circuit in the grid, must be conducted in advance.</p>
+<a href="https://www.phasetophase.nl/boek/boek_1_3.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_3.7.1"></div><br/>
+<h3>3.7.1 Micro-CHP Systems</h3>
+<p>In a growing number of new construction projects, homes are being equipped with micro-CHP systems. These systems can deliver a relatively small power output of 1 to 5 kW per connection. The simultaneity of these systems is quite high. After all, electricity production follows the heat demand, which depends on the residents' patterns. In a relatively large group of similar homes, it can be expected that the heat demand will also be similar on average. For example, most working people will come home around 6:00 PM, and during cold days, the heat demand in homes will increase at that time. For non-working people, the heat demand will vary less throughout the day. The advantage of this form of decentralized generation is that most electricity production largely coincides with the demand. Especially in the winter months, the normal load of residential areas in the evening hours is quite high, as illustrated in figure 3.4. As a result, the net load on a distribution network will decrease due to the micro-CHP systems. However, the behavior of the connected users is uncertain, so for reducing the peak, an estimate of the minimum output of the micro-CHP systems can be used.</p>
+<p>In the low-voltage networks, single-phase micro-CHP systems are used. These are relatively simple components for network calculations, exhibiting specific behavior during startup and in case of short circuits. Since it is expected that these generators will be widely used in the future, it is important to pay specific attention to these types of components. In particular, the collective behavior during short circuits and the simultaneous startup after the restoration of the power supply is a subject of study in (future) projects.</p>
+<p>Many micro-CHP units are equipped with a Stirling engine. In a Stirling machine, the combustion of the fuel takes place outside the engine. The working medium, such as air or helium, that is inside the machine never leaves it. The engine consists of a cold part and a hot part. These are indicated in figure 3.27 with blue and red. A heat source, such as the flame of a gas burner or hot gases from a heating boiler, continuously heats the hot part of the engine while the cold part is continuously cooled by, for example, the return circuit of the heating system. Both parts, hot and cold, are constantly connected to each other. The working medium is moved back and forth between the hot and cold spaces by a displacer (almost) without work, where the medium in the hot space expands by absorbing heat and performs work by moving a piston. The air is then moved by the displacer back to the cold space, cools down there, and decreases in volume. The working medium, confined within the engine, thus continuously circulates from the hot part to the cold part and vice versa, moving the piston back and forth. The piston can drive a linear generator or, via a transmission, a more conventional rotary generator.</p>
+<p>
+<a name="_Ref299978992"><em> </em></a>
+</p>
+<p>
+<img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="261" src="./belasting en opwekking_files/3.27.png" width="713"/>
+</p>
+<h5>Figure 3.27 Example of a cutaway Stirling engine and its operating principle</h5>
+<p>There are two variants for electricity generation in micro-CHP systems.</p><ul>
+<li>The Microgen type is equipped with a linear synchronous generator.</li>
+<li>The WhisperGen type is equipped with a modified short-circuit armature generator.</li>
+</ul>
+<h6>Microgen</h6>
+<p>This generator is not a rotating machine. The electrical power is generated by a linearly oscillating magnet, which is driven by the piston of the Stirling engine. The generator is connected to the grid via a converter.</p>
+<h6>WhisperGen</h6>
+<p>The WhisperGen-CHP uses a modified asynchronous generator that is driven by four pistons of the Stirling engine via a transmission. The stator of the small asynchronous motor is wound as a 4-pole two-phase generator. The current in the auxiliary winding is shifted by 90 degrees using a capacitor to generate a rotating magnetic field. Figure 3.28 illustrates this with the winding diagram for the stator. The main winding is indicated in blue and the auxiliary winding in red.</p>
+<p>
+<img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="150" src="./belasting en opwekking_files/3.28.png" width="382"/>
+</p>
+<h5>Figure 3.28    Rotor and stator of modified asynchronous generator</h5>
+<a href="https://www.phasetophase.nl/boek/boek_1_3.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_3.7.2"></div><br/>
+<h3>3.7.2 PV Systems</h3>
+<p>Sunlight is converted into direct current by photovoltaic cells in solar panels. Through a converter, the solar panels are connected to the grid for power transfer. As of 2010, solar panels have a power output of 100 to 120 W per m² with the current state of technology.<sup>2</sup>In practical situations, this leads to power outputs of 0.5 to 2 kW per connection. Figure 3.29 shows a PV system with 112 panels. Together, these are good for over 10 kW. With large-scale application, these PV systems can produce so much electricity on summer days that during periods of low demand, the energy demand turns into an energy surplus, causing the energy flow direction in an LV network to reverse.</p>
+<p>The simultaneity of electricity yield from PV systems in an LV distribution network is high, due to the ratio of the area affected by cloud cover to the size of the area served by a distribution station. A simultaneity factor of 1 can safely be used for planning LV distribution networks. The service area of a feeder station covers a much larger area, reducing the simultaneity of all PV systems in case of cloud cover. However, on a clear day, all PV systems will produce at maximum capacity, so a simultaneity factor of 1 can also be used on the scale of an MV distribution network. Studies on the impacts of PV systems will mainly focus on local LV distribution networks. These studies will particularly look at the combination of maximum yield and minimum load.</p>
+<p>
+<a name="_Ref290553643"> </a>
+</p>
+<p>
+<img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="290" src="./belasting en opwekking_files/3.29.jpg" width="750"/>
+</p>
+<h5>Figure 3.29 10 kW PV system on a farm</h5>
+<p>
+<a name="_Ref290553647"> </a>
+</p>
+<p>
+<img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="290" src="./belasting en opwekking_files/3.30.jpg" width="750"/>
+</p>
+<h5>Figure 3.30 Converters for 20 kW PV system</h5>
+<p>The PV systems are always connected via an inverter. Figure 3.30 shows a system with three converters for a total power of 20 kW. The PV panels provide a direct current voltage of approximately 40 to 50 V, which needs to be converted. As a result, the short-circuit power is always limited to the maximum nominal current of the inverters. A PV system only delivers power when the system is connected to the 230 V distribution network. In case of a malfunction, the converter stops production. This is a safety requirement.</p>
+<a href="https://www.phasetophase.nl/boek/boek_1_3.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_3.7.3"></div><br/>
+<h3>3.7.3 Wind Turbines</h3>
+<p>Wind turbines have a nominal capacity of 1 to 5 MW per turbine. They are usually clustered in wind farms, ranging from small to fairly large groups. In the past, these wind farms were only placed on land, but increasingly, large wind farms are being built offshore. The potential yield of offshore wind energy is estimated to be twice the total Dutch energy consumption.</p>
+<p>The power of a single wind turbine is too large to be connected to a low-voltage grid. A power of 1 MW already results in a current of 1.4 kA in an LV grid. For this reason, wind turbines are connected at the MV level. Large wind farms are connected at the HV level.</p>
+<p>There are wind turbines for constant and variable rotational speeds. In wind turbines with a fixed rotational speed, the generator (an asynchronous machine) is directly connected to the grid. In these wind turbines, any fluctuation in wind speed is directly noticeable in the active power. Wind turbines with a variable rotational speed are controlled using power electronics, allowing fluctuations in wind speed to be largely stored in the rotational energy of the rotor. This ensures that wind turbines with variable rotational speed exhibit minimal fluctuations in the delivered energy.</p>
+<p>The new large generators are usually of the DFIG (Doubly Fed Induction Generator) type, with the stator winding directly connected to the grid and the rotor winding connected via a converter. By varying the frequency of the current through the rotor winding, this synchronous generator can operate at variable rotational speeds. This type of wind turbine and its behavior is well described in the literature (Slootweg, 2003). These generators are used in wind turbines with capacities between 1 and 5 MW.</p>
+<p>
+<img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="290" src="./belasting en opwekking_files/3.31.jpg" width="750"/>
+</p>
+<h5>Figure 3.31 Cutaway view of a wind turbine nacelle</h5>
+<p>To determine the expected electricity production, understanding the power characteristic is important. The power characteristic of each wind turbine is such that below the cut-in wind speed, the power is zero. Above this wind speed, the electrical power depends on the cube of the wind speed. Above the nominal wind speed, the power is constant and equal to the nominal power. Above the cut-out wind speed, the wind turbine is taken out of operation to prevent damage.</p>
+<p>
+<img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="280" src="./belasting en opwekking_files/3.32.png" width="714"/>
+</p>
+<h5>Figure 3.32 Power characteristic of a wind turbine</h5>
+<a href="https://www.phasetophase.nl/boek/boek_1_3.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_3.7.4"></div><br/>
+<h3>3.7.4 Large CHP Systems</h3>
+<p>A CHP system is installed to produce heat, usually at a high temperature. This heat is used in industry, for space heating, in horticulture, or for district heating. The CHP produces steam or hot water for this purpose, and the residual heat is used to generate electricity, which can potentially be fed back into the grid. The combined generation in the CHP system can achieve a high energy efficiency.</p>
+<p>Since 2006, electricity production in greenhouse horticulture has increased significantly. Many greenhouse horticulture companies use a gas engine to generate electricity and heat. They use this to light and heat their greenhouses. Due to the high energy prices, selling electricity has become an attractive additional source of income for these growers. As a result, many new gas engines have been installed, doubling the electrical capacity in this sector within two years. At the beginning of 2008, more than 10 percent of the total electrical capacity in the Netherlands consisted of production units in greenhouse horticulture (CBS, 2009). This percentage has since decreased due to the increase in conventional power plants and CHP plants.</p>
+<p>Due to the increase in the amount of decentralized generation with large CHP installations, the load on the medium voltage distribution network can change significantly. The consequences are highly dependent on the specific location in the network. It is possible that the distribution network is not designed for a lot of decentralized input. The direction of the power flow, traditionally from a high to a low voltage level, can reverse. This can lead to either reduced or increased network costs. Network losses can increase because the distance from the generation installation to the consumer can increase, for example, if many generators are set up in a peripheral region. On the other hand, network losses can decrease because the electrical power is generated closer to the consumer.</p>
+<p>The electrical capacities of CHP installations range from 0.1 to 20 MW per connection. Larger capacities also exist. A 10 kV cable with an aluminum conductor of 240 mm<sup>2</sup>may be loaded with 5 MVA. A capacity of 20 MW is therefore too much to connect to the medium-voltage distribution network. Figures 3.6 and 3.7 illustrate measurements of power flows of 20 kV lines in greenhouse areas. The patterns show daily load fluctuations up to 17 MW between maximum demand and supply. These fluctuations are caused by the sum of the patterns of the load and the generation. Particularly in greenhouse horticulture, CHP units with capacities of 3 to 4 MW are clustered. In horticultural areas, clusters with capacities up to 100 MW are connected to the high-voltage network. The size of a complete installation is then partly determined by the size of the respective greenhouse area.</p>
+<p>Growers not only produce electricity to meet their own heat and electricity needs but also according to market demand for electrical energy. When the kWh price is high, they can produce extra electricity, and when the kWh price is low, they can even purchase electricity. It is more of an economic consideration than an energy-technical one. Therefore, the maximum electricity production does not necessarily coincide with the maximum local electricity demand. For connecting such large installations, a thorough study must always be conducted, considering extreme situations of maximum generation coinciding with minimum load and minimum generation coinciding with maximum load. The capacity of the medium-voltage network is limited, so in many cases, a network upgrade is necessary to connect a large cluster. In extreme cases, even an upgrade of the high-voltage network is required.</p>
+<a href="https://www.phasetophase.nl/boek/boek_1_3.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_3.8"></div><br/>
+<h2>3.8 Motors</h2>
+<p>Motors are frequently used in industry and constitute the majority of the load. When designing industrial networks, the behavior of the motors must be carefully considered. The influence of the motor is particularly noticeable when starting the motor and when a short circuit occurs in the network. Starting a motor briefly requires a large current, 4 to 8 times the nominal current, which leads to a voltage dip. This inrush current can be limited by using a star-delta connection, a soft starter, or a frequency converter.
+
+If a motor is controlled using power electronics, this can lead to an increase in the harmonic distortion of the alternating voltage. If a short circuit occurs in the network, the motors will contribute to the short-circuit current, thereby increasing it at the short-circuit location. The influence of motors is minimal in most distribution networks. However, in an industrial environment where many large motors are used, it may be necessary to further study their impact on the network.</p>
+<p>Alternating current motors exist in the forms of synchronous and asynchronous machines. The synchronous motor has the same construction as the synchronous generator. Large synchronous motors are almost exclusively used in industry. The asynchronous motor has a squirrel-cage rotor winding.
+    These motors are also known as induction motors or squirrel-cage motors. At no load, the asynchronous motor runs slightly slower than the synchronous speed. If the motor is loaded, it will run even slower. This behavior is depicted in the torque-speed curve of the motor. As the load increases, the motor will reach a point where it can no longer deliver the required torque. The motor will then come to a stop.
+    The point at which this occurs is referred to as the pull-out torque. When stopped, the motor will draw a current equal to the starting current.</p>
+<div class="row">
+<div class="col-sm-6"> <img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="208" src="./belasting en opwekking_files/3.33a.png" width="243"/></div>
+<div class="col-sm-6"> <img alt="pics_1.3" class="img-responsive-leon-15px center-block" height="208" src="./belasting en opwekking_files/3.33b.jpg" width="307"/></div>
+</div>
+<h5>Figure 3.33 Asynchronous machine</h5>
+<p>Motors can be connected directly to the grid (DOL, Direct On Line). In that case, the highest starting current must be taken into account. To limit the starting current, the windings in some designs can be temporarily switched from delta to star. In this configuration, the windings receive a voltage during startup that is a factor of √3 lower than normal. Motors can also start using a soft starter. This limits the starting current to approximately the nominal current. Motors with adjustable speed are connected to the grid via a frequency converter. These converters limit the starting current to approximately the nominal current.</p>
+<p>Asynchronous motors provide a brief contribution to the short-circuit current in the event of a short circuit in the grid, which is approximately equal to the starting current. Motors connected via a frequency converter generally do not contribute to the short-circuit current. If the frequency converter allows for feedback, the short-circuit current contribution is limited to approximately the nominal current.</p>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="center" width="20%">
+<p>
+<strong>Motorbesturing</strong>
+</p>
+</td>
+<td valign="center" width="35%">
+<p>
+<strong>Aanloopstroom</strong>
+</p>
+</td>
+<td valign="center" width="45%">
+<p>
+<strong>Kortsluitstroombijdrage</strong>
+</p>
+</td>
+</tr>
+<tr>
+<td valign="center" width="20%">
+<p>Directly on the grid</p>
+</td>
+<td valign="center" width="35%">
+<p>6 .. 8 x nominal current</p>
+</td>
+<td valign="center" width="45%">
+<p>6 .. 8 x nominal current</p>
+</td>
+</tr>
+<tr>
+<td valign="center" width="20%">
+<p>Softstarter</p>
+</td>
+<td valign="center" width="35%">
+<p>approximately nominal current</p>
+</td>
+<td valign="center" width="45%">
+<p>6 .. 8 x nominal current</p>
+</td>
+</tr>
+<tr>
+<td valign="center" width="20%">
+<p>Converter</p>
+</td>
+<td valign="center" width="35%">
+<p>approximately nominal current</p>
+</td>
+<td valign="center" width="45%">
+<p>no contribution or approximately nominal current</p>
+</td>
+</tr>
+</tbody>
+</table>
+<br/><a href="https://www.phasetophase.nl/boek/boek_1_3.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a><p></p>
+<div id="_3.9"></div><br/>
+<h2>3.9 Distinguishing Issues at MV and LV Levels</h2>
+<p>At the low voltage level, the networks are usually characterized by large numbers of small consumers. It is generally justified to refer to them as consumers because they primarily consume electricity. The supply areas at the LV level are typically such that the consumers have a predictable and similar character. Therefore, it is common to work with specific load types and to utilize the simultaneity of the consumers. Even if the users generate electricity themselves using, for example, PV systems, it is still justified to work in this manner.</p>
+<p>With the introduction of large electricity consumers, such as electric cars and space heating using heat pumps and electric auxiliary heating, it is no longer sufficient to consider the non-simultaneity of the electricity demand of all consumers. Instead, it is necessary to account for the fact that large electricity consumers are operating simultaneously. Regarding future developments, the uncertainties are greatest in low-voltage networks. As a result, new network constructions will increasingly be designed based on the sum of individual maximum loads. Consequently, there is a trend that network designers will increasingly hedge against these future uncertainties by designing the low-voltage network as robustly as possible: with maximum cable cross-sections, for example, 150 mm.<sup>2</sup>aluminum conductor, and the largest possible distribution transformer, for example, 630 kVA. Additionally, the network designer will claim extra space in new constructions to potentially place additional network spaces in the future if necessary, thereby avoiding future costs as much as possible.</p>
+<p>At the medium voltage (MV) level, it must be carefully considered whether the network serves connections that exhibit abnormal behavior. In addition to the distribution stations that serve large groups of low-voltage customers, there are also small numbers of high-capacity connections that show varying load patterns over time. Specifically, decentralized generation at the MV level exhibits behavior that cannot be easily modeled with coincidence factors. If the load behavior of a large customer's generation is well known, load patterns can be used. In such cases, the focus is more specifically on the load and generation over a certain period. The network must then be suitable for distributing power in all situations. If the behavior is unknown and cannot be reliably determined, it is only possible to account for extreme situations in generation and load. In that case, when analyzing the MV network concerning these customers, one must assume maximum load and minimum production, and minimum load and maximum production, of course in combination with the other loads in the network.</p>
+<p></p>
+</div>
+<div class="col-lg-2 hidden-md"> </div>
+</div>
+</div>
+</div>
+<div class="container-fluid-footer" id="includeFooter"><div class="container">
+<div class="row">
+<div class="text-justify col-xs-6 col-sm-3">
+<img alt="ptp_logo" src="./belasting en opwekking_files/logo-s-360px-grijs.png" width="230"/>
+</div>
+<div class="col-xs-6 col-sm-9">
+<p> Phase to Phase is onderdeel van <a href="https://www.technolution.nl/">Technolution</a>. © 2009-2021 </p>
+</div>
+</div>
+</div></div></body></html>

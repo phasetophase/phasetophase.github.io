@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+
+<!-- saved from url=(0046)https://www.phasetophase.nl/boek/boek_2_9.html -->
+<html class="wf-ffscalasansweb-n7-active wf-ffscalasansweb-n4-active wf-ffscalasansweb-i4-active wf-active" lang="en"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Phase to Phase – Netten voor distributie van elektriciteit</title>
+<!-- Bootstrap -->
+<link href="./loadflowberekeningen_files/bootstrap-2-boek.css" rel="stylesheet"/>
+<style type="text/css">
+	body,td,th {
+	font-family: ff-scala-sans-web, sans-serif;
+}
+body {
+	background-color: #F7F7F7;
+}
+    </style>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+<script src="./loadflowberekeningen_files/qke6lfb.js.download"></script>
+<style type="text/css">.tk-ff-scala-sans-web{font-family:"ff-scala-sans-web",sans-serif;}</style><style type="text/css">@font-face{font-family:tk-ff-scala-sans-web-n7;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-n4;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-i4;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style><script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script src="./loadflowberekeningen_files/jquery-1.11.3.min.js.download"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./loadflowberekeningen_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H8Q9E8BJ7Q');
+</script>
+<script>
+$(function(){
+  $("#includedHeader").load("/boek/header.html");
+  $("#includeFooter").load("/boek/footer.html"); 
+});
+</script><style type="text/css">@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style>
+</head>
+<body style="padding-top: 50px">
+<div id="includedHeader"> <nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="container">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button aria-expanded="false" class="navbar-toggle collapsed" data-target="#topFixedNavbar1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+<a class="navbar-brand" href="https://www.phasetophase.nl/">Phase to Phase</a></div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="topFixedNavbar1">
+<ul class="nav navbar-nav">
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li></li>
+</ul>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container -->
+</nav>
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<p></p>
+</div>
+</div>
+</div>
+<div class="container-fluid-boek">
+<div class="container">
+<div class="row-in-header">
+<div class="text-justify col-xs-6 col-sm-6">
+<img alt="Phase to Phase logo 360px" class="hidden-xs" src="./loadflowberekeningen_files/logo-s-360px-wit.png" width="366"/>
+<img alt="Phase to Phase logo 261px" class="visible-xs" src="./loadflowberekeningen_files/logo-s-360px-wit.png" width="261"/>
+</div>
+<div class="col-xs-6 hidden-xs col-sm-6">
+</div>
+</div>
+<div class="row-in-header">
+<div class="text-left col-xs-9 col-sm-9"> <p></p><h8>ICT voor elektriciteitsnetten</h8>
+</div>
+<div class="col-xs-3 col-sm-3">
+</div>
+</div>
+<div class="row-in-header-2">
+<div class="text-justify col-xs-6 col-sm-6"> 
+	</div>
+<div class="col-xs-6 hidden-xs col-sm-6">
+<h7> </h7>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row-intro">
+<h1><a href="https://www.phasetophase.nl/boek/index.html"> Netten voor distributie van elektriciteit</a></h1>
+</div></div></div>
+<div class="row-ohm-center-white"> <a name="top"></a>
+<div class="row-b">
+<a href="https://www.phasetophase.nl/boek/index.html"><button class="btn btn-default" type="button">I – De opbouw van een net</button></a>
+<a href="https://www.phasetophase.nl/boek/boek_2_7.html"><button class="btn btn-default active" type="button">II – Rekenen aan een net</button></a>
+<a href="https://www.phasetophase.nl/boek/boek_3_13.html"><button class="btn btn-default" type="button">III – Ontwerpen en bedrijfsvoeren</button></a>
+</div>
+<div class="row-b">
+<a href="https://www.phasetophase.nl/boek/boek_2_7.html">
+<button class="btn btn-default1" type="button">7 Rekentechnische basis</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_2_8.html">
+<button class="btn btn-default1" type="button">8 Modellen</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_2_9.html">
+<button class="btn btn-default1 active" type="button">9 Loadflowberekeningen</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_2_10.html">
+<button class="btn btn-default1" type="button">10 Kortsluitstroomberekeningen</button> </a> <a href="https://www.phasetophase.nl/boek/boek_2_11.html">
+<button class="btn btn-default1" type="button">11 Power Quality</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_2_12.html">
+<button class="btn btn-default1" type="button">12 Betrouwbaarheid</button>
+</a>
+<div class="row">
+<div class="col-md-12 col-lg-10">
+<h3>Loadflowberekeningen</h3>
+<p>Chapter 9 describes the load flow calculation, which is always performed first on the model of a network. The load flow calculation provides information about the distribution of currents in all cables and other connections of the network. Additionally, this calculation determines all the voltages at the nodes. The calculation is based on the power consumed by the loads and supplied by the production units. Furthermore, the switching states in the network and the settings of components, such as adjustable transformers, are also important.</p>
+<div class="row">
+<div class="col-md-6">
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9">9  Load flow calculations</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.1">9.1  Theory</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.2">9.2 Loads</a></li>
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.2.1">9.2.1 Load with constant power behavior</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.2.2">9.2.2 Maximum power of a connection</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.2.3">9.2.3  Pitfalls in the application of constant power behavior</a></li>
+</ul>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.3">9.3  Generators</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.4">9.4  Grid Supply</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.5">9.5 Voltage Management</a></li>
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.5.1">9.5.1 Voltage regulation of supply transformers and regulating transformers</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.5.2">9.5.2  Power Factor Improvement</a></li>
+</ul>
+</ul>
+</div>
+<div class="col-md-6">
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.6">9.6  Grid Losses</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.7">9.7  Handling the stochastic behavior of the loads</a></li>
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.7.1">9.7.1 Compensating for the non-simultaneity of the loads</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.7.2">9.7.2 Stochastic Load Flow</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.7.3">9.7.3 Pseudo state estimation</a></li>
+</ul>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.8">9.8  Specific applications</a></li>
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.8.1">9.8.1  Network openings and optimization</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.8.2">9.8.2  Multiple external networks and supply points</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.8.3">9.8.3  Parallel transformers</a></li>
+</ul>
+</ul>
+</div>
+</div>
+<hr/>
+<h1>9 Load Flow Calculations</h1>
+<p>The load flow calculation is aimed at testing the network design against operational criteria during normal operation and exceptional conditions, such as fault and maintenance situations. In this process, voltages, currents, and power distribution are calculated. Network losses can also be determined using the load flow calculation.</p>
+<p>Devices connected to the electrical grid are specified to function properly if the currents and voltages remain within specific limits. A significant deviation from these limits can result in damage or accelerated aging of the device. This applies not only to the equipment of the connected users but also to the components of the network itself, which must be protected against high overvoltages and excessive currents caused by overload or short circuit. For the purpose of planning, analyzing, and operating an electrical grid at any voltage level, load flow calculations are made. These calculations are used, among other things, to gain insight into:</p>
+<ul>
+<li>Loading of components</li>
+<li>Spanningskwaliteit</li>
+<li>Weak points</li>
+<li>Network losses (reduction)</li>
+<li>Impact of the increase in generation and load</li>
+<li>Impact of high load and low load in combination with (decentralized) generation</li>
+<li>Bedrijfszekerheid</li>
+<li>Network configuration during outages and maintenance.</li>
+</ul>
+<p>Because the network voltage and the current carrying capacity of components must remain within specific limits under all normal circumstances, it is necessary to analyze the most likely scenarios using load flow calculations. A distribution network is analyzed under high and low load conditions and with high and low decentralized generation. Fault situations must also be calculated. Voltage limits are established at the international level, and the limits for current carrying capacity are determined by the manufacturer or set conservatively by the network operator. Insights are obtained from the results of a load flow calculation, with currents and voltages being the most important. In summary, a load flow calculation provides the following results:</p>
+<ul>
+<li>Node voltages:</li>
+<ul>
+<li>Magnitude (in V)</li>
+<li>Angle (in degrees)</li>
+</ul>
+<li>Stromen</li>
+<ul>
+<li>Magnitude (in A) and angle (in degrees)</li>
+<li>Loading of network components (in %)</li>
+</ul>
+<li>Vermogens</li>
+<ul>
+<li>Transport of active power and reactive power through the grid (W and var)</li>
+<li>Generated and requested power (W and var)</li>
+<li>Losses (W and var)</li>
+</ul>
+<li>Transformer tap positions.</li>
+</ul>
+<p>To perform the calculations, technical data of all components are required. The most important data are:</p>
+<ul>
+<li>Network structure and configuration: nominal node voltages and location of the network supply</li>
+<li>Connections: resistance, reactance, capacitance, current-carrying capacity (type data), length of the connection, network openings</li>
+<li>Transformers: nominal power, nominal voltages, relative short-circuit voltage, short-circuit loss, tap changer, voltage regulation</li>
+<li>Loads: power, power factor, growth, voltage dependency.</li>
+</ul>
+<p>The method most commonly used to calculate the voltages and currents in an electrical network is the load flow according to Newton-Raphson. The method was first described in 1959 (Van Ness, 1959) and later in 1967 (Tinney, 1967) and has been successfully tested and accepted worldwide.</p>
+<p>When analyzing distribution networks, it is generally assumed that the networks are symmetrically loaded and symmetrical. This means that the distribution networks are designed to be three-phase symmetrical and are also loaded symmetrically in three phases. This assumption is justified in the Dutch high-voltage (HS) and medium-voltage (MS) distribution networks. As a result, a single-phase representation of the network can be used in the load flow calculation, and it is not necessary to calculate all three phases. The network model used is that of the normal system.<a href="https://www.phasetophase.nl/boek/boek_2_7.html">see chapter 7</a>). In most Western European networks, this assumption also holds true, but in American distribution networks, for example, this cannot be done without further consideration, because those networks are operated differently and often exhibit asymmetry, both in design and in load.</p>
+<p>When analyzing low-voltage distribution networks, one cannot always rely on the model of symmetrically loaded symmetrical networks. First, the network is not perfectly symmetrical because the cables used are equipped with three phase conductors and a neutral conductor. As a result, the impedances between the three phase conductors are not equal to each other. The same applies to the impedances between the phase conductors and the neutral conductor. Second, the loads in the low-voltage networks are not always perfectly three-phase symmetrical. For this reason, an extensive three-phase model is used for calculations on these networks.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.1"></div>
+<br/>
+<h2>9.1 Theory</h2>
+<p>The foundation for all network calculations is laid by Ohm's Law and Kirchhoff's Law. Since alternating currents are used in distribution networks, all calculations are performed in the complex plane. Voltage, current, impedance, and power are complex numbers that can be presented in modulus and argument or with their real and imaginary values. This is illustrated in Figure 9.1 using an elementary network with a connection to nodes on both sides and a reference at the bottom. The connection has an impedance<em><u>Z</u>= R + jX</em>and the current<em><u>I</u></em>is the result of a load transfer from the left node with a magnitude of<em><u>S</u>= P + jQ.</em></p>
+<img alt="pics_2.9" class="img-responsive-leon-15px center-block" src="./loadflowberekeningen_files/9.1.png" width="390"/>
+<h5>Figure 9.1 Voltage, current, power, and impedance</h5>
+<p>The voltages at the left and right nodes are respectively<em><u>U</u><sub>1</sub></em>en<em><u>U</u><sub>2</sub></em>with respect to the reference. The voltage difference<em><u>ΔU</u></em>across the connection depends on the impedance and the current. The following relationships apply:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.1.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.1</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>So for the voltage at the right node, the following applies:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.2.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.2</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The voltage<em><u>U</u><sub>2</sub></em>at the right node can be depicted in a vector diagram, assuming that the voltage vector<em><u>U</u><sub>1</sub></em>a phase angle of<em>φ<sub>1</sub></em>makes degrees with respect to the real axis. The current vector<em><u>I</u></em>makes an angle<em>φ</em>with the voltage vector<em><u>U</u><sub>1</sub></em>. In the vector diagram, it is clearly visible that the voltage difference<em><u>ΔU</u></em>is composed of two vectors, of which the vector<em>–R·<u>I</u></em>runs parallel to the current vector and the vector<em>–jX·<u>I</u></em>perpendicular to the current vector. In this example, the value of<em>R</em>slightly larger than the value of<em>X</em>.</p>
+<img alt="pics_2.9" class="img-responsive-leon-15px center-block" src="./loadflowberekeningen_files/9.2.png" width="554"/>
+<h5>Figure 9.2 Voltage vectors and construction using the current vector</h5>
+<p>Since it also holds that:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.3.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.3</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>formula 9.1 for the voltage difference becomes:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.4.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.4</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The voltage<u>U</u><sub>2</sub>on the other side of the connection can now be easily calculated:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.5.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.5</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>If it is again assumed that the voltage vector<em><u>U</u><sub>1</sub></em>a phase angle of<em>φ<sub>1</sub></em>degrees with respect to the real axis,
+          the voltage vectors can be depicted in the vector diagram below. In figure 9.3, it is clearly visible that the voltage difference<em><u>ΔU</u></em>is composed of two vectors, of which the vector<em>–(RP+XQ)/<u>U</u><sub>1</sub><sup>*</sup></em>runs parallel to the voltage vector<u><em>U</em></u><em><sub>1</sub></em>and
+          the vector<em>–j(XP-RQ)/<u>U</u><sub>1</sub><sup>*</sup></em>perpendicular to the voltage vector<em><u>U</u><sub>1</sub></em>state. In the diagram, the voltage<em><u>U</u><sub>2</sub></em>a phase angle of<em>φ<sub>2</sub></em>degrees.</p>
+<img alt="pics_2.9" class="img-responsive-leon-15px center-block" src="./loadflowberekeningen_files/9.3.png" width="554"/>
+<h5>Figure 9.3 Voltage vectors in a power transmission</h5>
+<p>It is therefore possible to determine the value of the voltage difference<em><u>ΔU</u> </em>in terms of impedance and the transmitted power. In figure 9.3, it is noticeable that the absolute value of the voltage difference is largely determined by the vector<em>–(RP+XQ)/<u>U</u><sub>1</sub> <sup>*</sup></em>which runs parallel to the voltage vector<em><u>U</u><sub>1</sub></em>. Therefore, the voltage difference can be approximated as:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.6.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.6</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>Met<em>U<sub>1</sub>= |<u>U</u><sub>1</sub>|</em>. This approximation only holds for small values of<em>ΔU</em>, up to approximately 10% of<em>U<sub>1</sub></em>. In the same
+          figure 9.3, it is noticeable that the angular displacement of the voltage vectors<em><u>U</u><sub>1</sub></em>en<u><em>U</em></u><em><sub>2</sub></em>relative to each other is largely determined by the vector<em>–j(XP-RQ)/<u>U</u><sub>1</sub><sup>*</sup></em>, which is perpendicular to the voltage vector<em><u>U</u><sub>1</sub></em>.</p>
+<p>The absolute value and the angle of the voltage difference across a connection are therefore dependent on the impedance of the connection and the power to be transmitted. The ratio of<em>R</em>en<em>X</em>of the connection plays a major role. In an overhead high-voltage network, for example, the reactance is much greater than the resistance, causing the magnitude of the voltage difference to be primarily determined by the transmission of reactive power (the product<em>XQ</em>in equation 9.6). In cabled low-voltage networks, however, the resistance is much greater than the reactance, causing the magnitude of the voltage difference in that case to be primarily determined by the transmission of active power (the product<em>RP</em>in equation 9.6). In medium voltage networks, resistance and reactance are of the same order of magnitude, causing the voltage to be determined by both active power and reactive power. Table 9.1 provides an overview.</p>
+<h5>Table 9.1 Influence of R and X on the voltage</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="57"><p> <strong>Voltage level</strong> </p></td>
+<td valign="top" width="92"><p> <strong>Type</strong> </p></td>
+<td valign="top" width="35"><p> <strong>R/X</strong> </p></td>
+<td valign="top" width="78"><p> <strong>Main cause of voltage difference</strong> </p></td>
+<td valign="top" width="78"><p> <strong>Main cause of phase shift</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="57"><p>HS</p></td>
+<td valign="top" width="92"><p>Lijn</p></td>
+<td valign="top" width="35"><p>1</p></td>
+<td valign="top" width="78"><p>Q</p></td>
+<td valign="top" width="78"><p>P</p></td>
+</tr>
+<tr>
+<td valign="top" width="57"><p>MS</p></td>
+<td valign="top" width="92"><p>Kabel</p></td>
+<td valign="top" width="35"><p>1 ... 5</p></td>
+<td valign="top" width="78"><p>P and Q</p></td>
+<td valign="top" width="78"><p>P and Q</p></td>
+</tr>
+<tr>
+<td valign="top" width="57"><p>LS</p></td>
+<td valign="top" width="92"><p>Cable up to 150 mm<sup>2</sup> </p></td>
+<td valign="top" width="35"><p>&gt;&gt; 1</p></td>
+<td valign="top" width="78"><p>P</p></td>
+<td valign="top" width="78"><p>Q</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The table shows that only in high-voltage and low-voltage networks can a simple statement be made about the relationship between the voltage difference and the transmitted power. In the case where the R/X ratio is on the order of 1, as with all medium-voltage networks, the voltage difference is always caused by a combination of active power and reactive power. The influence of the R/X ratio on voltage regulation is already noticeable in the difference between using a circuit with three single-core cables or a three-core cable. The difference is that the reactance of three single-core cables is greater than that of a three-core cable. Figure 9.4 shows the voltage drop with a load of 5 Mvar behind a 10 km long three-core medium-voltage cable.<em>R=1.26 Ω, X=0.89 Ω</em>Figure 9.5 shows the voltage drop with the same load of 5 Mvar behind a 10 km long circuit with single-core medium-voltage cables.<em>R=1.26 Ω, X=1.6 Ω</em>It is clearly visible that the reactive power transport causes a greater voltage drop in a circuit with single-core cables.<em>R/X=0.8</em>) than in a circuit with a three-core cable (<em>R/X=1.4</em>).</p>
+<img alt="pics_2.9" class="img-responsive-leon-15px center-block" src="./loadflowberekeningen_files/9.4.png" width="697"/>
+<h5>Figure 9.4 Voltage drop in a circuit with three-core medium voltage cable</h5>
+<img alt="pics_2.9" class="img-responsive-leon-15px center-block" src="./loadflowberekeningen_files/9.5.png" width="696"/>
+<h5>Figure 9.5 Voltage drop in a circuit with three single-core medium voltage cables</h5>
+<p>For a load flow calculation, three types of nodes are important. These types are distinguished by whether only a load is connected, a voltage-regulated synchronous machine, or a network supply. Table 9.2 provides an overview.</p>
+<h5>Table 9.2 Types of nodes for a load flow calculation</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="135"><p> <strong>Node with:</strong> </p></td>
+<td valign="top" width="56"><p> <strong>Type</strong> </p></td>
+<td valign="top" width="75"><p> <strong>Known parameters</strong> </p></td>
+<td valign="top" width="74"><p> <strong>Unknown variables</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="135"><p>Belasting</p></td>
+<td valign="top" width="56"><p>PQ</p></td>
+<td valign="top" width="75"><p>P and Q</p></td>
+<td valign="top" width="74"><p>|U| and arg(U)</p></td>
+</tr>
+<tr>
+<td valign="top" width="135"><p>Voltage-regulated generator</p></td>
+<td valign="top" width="56"><p>PU</p></td>
+<td valign="top" width="75"><p>|U| and P</p></td>
+<td valign="top" width="74"><p>Q and arg(U)</p></td>
+</tr>
+<tr>
+<td valign="top" width="135"><p>Grid supply (swing bus)</p></td>
+<td valign="top" width="56"><p>UT</p></td>
+<td valign="top" width="75"><p>|U| and arg(U)</p></td>
+<td valign="top" width="74"><p>P and Q</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>Depending on what is connected at the nodes, there are known parameters and unknown variables. For a load, the specified values are the amount of active power and reactive power it wants to draw. The value of the voltage and the angle of the voltage vector at the node are calculated by the load flow. For a voltage-regulated generator, the specified values are the voltage at the node and the active power produced by the generator. The load flow calculates the reactive power produced by the generator and the angle of the voltage vector at the node. For a grid supply, the absolute value of the voltage is a fixed parameter, and the angle of the voltage relative to a reference is usually kept at zero degrees. The load flow calculates the active and reactive power delivered or absorbed by the grid supply. This is the result of all the power drawn and produced, including losses. The following paragraphs will delve deeper into these three types.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.2"></div>
+<br/>
+<h2>9.2 Loads</h2>
+<p>As described in Chapter 8, the power consumed by the load depends on the voltage. In most load flow programs, three load models can be chosen for active power.<em>P</em>and for the reactive power<em>Q</em>, namely:</p>
+<ul>
+<li>constant power</li>
+<li>constant current</li>
+<li>constant impedance.</li>
+</ul>
+<p>For a load that behaves as a constant power consumption, the load current will increase with decreasing voltage, as the product of voltage and current must remain constant. For a load that behaves as a constant current consumption, the power consumed will decrease proportionally with the voltage. For a load that behaves as a constant impedance, the current will decrease linearly with decreasing voltage according to Ohm's law. Consequently, the power consumed will decrease quadratically. Table 9.3 summarizes the voltage-dependent behavior for these three types.</p>
+<p>In formula form, the load can be described as a function of the normalized voltage with exponent<em>p</em>for the active power and<em>q</em>for the reactive power:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.7.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.7</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>with:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="60"><em>P<sub>nom</sub></em></td>
+<td>active power at nominal voltage</td>
+</tr>
+<tr>
+<td><em>Q<sub>nom</sub></em></td>
+<td>reactive power at nominal voltage</td>
+</tr>
+<tr>
+<td><em>|U|</em></td>
+<td>current voltage</td>
+</tr>
+<tr>
+<td><em>U<sub>nom</sub></em></td>
+<td>nominal voltage</td>
+</tr>
+</tbody>
+</table><br/>
+<h5>Table 9.3 Load Models and Their Voltage Dependency</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="125"><p> <strong>Belastingsmodel</strong> </p></td>
+<td valign="top" width="136"><p> <strong>Voltage dependency of power</strong> </p></td>
+<td valign="top" width="35"><p> <strong>p, q</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="125"><p>Constant power</p></td>
+<td valign="top" width="136"><p>constant</p></td>
+<td valign="top" width="35"><p>0</p></td>
+</tr>
+<tr>
+<td valign="top" width="125"><p>Constant current</p></td>
+<td valign="top" width="136"><p>lineair</p></td>
+<td valign="top" width="35"><p>1</p></td>
+</tr>
+<tr>
+<td valign="top" width="125"><p>Constant impedance</p></td>
+<td valign="top" width="136"><p>kwadratisch</p></td>
+<td valign="top" width="35"><p>2</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>Figure 9.6 illustrates the relationship between voltage and power for the three models in Table 9.3. The horizontal line represents the constant power model, independent of the voltage. For the constant current model, the power increases linearly with the voltage, and for the constant impedance model, it increases quadratically. Both of the latter models start at the origin. All load models pass through the common point, characterized by the nominal power that is drawn at the nominal voltage.</p>
+<img alt="pics_2.9" class="img-responsive-leon-15px center-block" src="./loadflowberekeningen_files/9.6.png" width="709"/>
+<h5>Figure 9.6 Voltage dependence of the load</h5>
+<p>Often, the constant current model is not directly supported. In such cases, it is common to approximate the constant current model with a combination of 50% constant power and 50% constant impedance. For voltages between 0.8 and 1.2 pu, the deviation of the approximation from the constant current model is at most 2.5%. Figure 9.7 illustrates this.</p>
+<img alt="pics_2.9" class="img-responsive-leon-15px center-block" src="./loadflowberekeningen_files/9.7.png" width="709"/>
+<h5>Figure 9.7 Voltage dependence of the load with the approximated constant current model</h5>
+<p>In practical cases, it is common to model the load with a portion of constant power and a portion of constant impedance. By dividing the active and reactive load at nominal voltage into a portion of constant power and a portion of constant impedance, most cases can be accurately calculated. This model is described in Chapter 8. The complex power is then calculated as follows:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.8.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.8</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The impedance for the constant impedance portion is calculated from the nominal voltage:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.9.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.9</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p> <a href="https://www.phasetophase.nl/boek/boek_2_8.html">Chapter 8</a>provides the voltage-dependent behavior for several types of loads. The reactive part of the load in medium voltage (MV) and low voltage (LV) networks often behaves as a constant impedance. The active part can be composed of a portion of constant power and a portion of constant impedance. Table 9.4 provides an overview of the voltage dependency of several well-known types.</p>
+<h5>Table 9.4 Loads and their voltage dependency</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="33%"><p> <strong>Type of load</strong> </p></td>
+<td valign="top" width="33%"><p align="center"> <strong>Share of constant power (%)</strong> </p></td>
+<td valign="top" width="33%"><p align="center"> <strong>Share of constant impedance (%)</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="113"><p>Industrieel</p></td>
+<td valign="top" width="102"><p align="center">90</p></td>
+<td valign="top" width="125"><p align="center">10</p></td>
+</tr>
+<tr>
+<td valign="top" width="113"><p>Asynchronous machine</p></td>
+<td valign="top" width="102"><p align="center">100</p></td>
+<td valign="top" width="125"><p align="center">0</p></td>
+</tr>
+<tr>
+<td valign="top" width="113"><p>Switched-mode power supply</p></td>
+<td valign="top" width="102"><p align="center">100</p></td>
+<td valign="top" width="125"><p align="center">0</p></td>
+</tr>
+<tr>
+<td valign="top" width="113"><p>Zakelijk</p></td>
+<td valign="top" width="102"><p align="center">35</p></td>
+<td valign="top" width="125"><p align="center">65</p></td>
+</tr>
+<tr>
+<td valign="top" width="113"><p>Woningen</p></td>
+<td valign="top" width="102"><p align="center">30</p></td>
+<td valign="top" width="125"><p align="center">70</p></td>
+</tr>
+<tr>
+<td valign="top" width="113"><p>Gloeilampen</p></td>
+<td valign="top" width="102"><p align="center">0</p></td>
+<td valign="top" width="125"><p align="center">100</p></td>
+</tr>
+<tr>
+<td valign="top" width="113"><p>Electric heating</p></td>
+<td valign="top" width="102"><p align="center">0</p></td>
+<td valign="top" width="125"><p align="center">100</p></td>
+</tr>
+<tr>
+<td valign="top" width="113"><p>Airconditioner</p></td>
+<td valign="top" width="102"><p align="center">75</p></td>
+<td valign="top" width="125"><p align="center">25</p></td>
+</tr>
+<tr>
+<td valign="top" width="113"><p>Verlichting</p></td>
+<td valign="top" width="102"><p align="center">25</p></td>
+<td valign="top" width="125"><p align="center">75</p></td>
+</tr>
+</tbody>
+</table><br/>
+<a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.2.1"></div>
+<br/>
+<h3>9.2.1 Load with constant power behavior</h3>
+<p>The influence of the transmitted power on the voltage in the network and on the losses is best explained using a load with constant power behavior. The network in figure 9.8 is powered by an infinitely strong power source at a connected voltage of 10.5 kV.</p>
+<img alt="pics_2.9" class="img-responsive-leon-15px center-block" src="./loadflowberekeningen_files/9.8.png" width="621"/>
+<h5>Figure 9.8 Example network for calculating voltages, current, and power</h5>
+<p>The connection is a 10 km long cable of type 3 x 150 Cu XLPE 6/10. The impedance over the entire length is:<em>R = 1.26 Ω</em>en<em>X = 0.93 Ω</em>.</p>
+<p>The load of 4.67 MW and 1.76 Mvar causes a power transfer of 5.0 MW and 2.0 Mvar from the supply. This corresponds to a power factor of 0.93. The power per phase at the supply is: 1.67 MW and 0.67 Mvar.</p>
+<p>The phase voltage at the supply node is:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.10.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.10</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The voltage difference is, according to equation 9.6:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.11.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.11</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The voltage on the load side is:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.12.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.12</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The current follows from equation 9.1:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.13.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.13</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The power consumed by the load per phase is then according to equation 9.3 equal to:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.14.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.14</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>This corresponds to a three-phase power consumed by the load of 4.67 MW and 1.76 Mvar. The power on the load side is smaller than the power on the supply side because the voltage at the load node is lower than at the supply node while the current is the same. The difference between the power on the supply side and the power on the load side is equal to the loss in the connection:<u>S</u><sub>verlies</sub>= 0.34 +
+          0.12 Mvar.</p>
+<p>The real part can also be calculated as follows:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.15.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.15</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>By varying the load step by step, an overview of the influence of load variation on the voltage is obtained. Figure 9.9 shows the voltage at the load node where the active power<em>P</em>of the load is varied between –5 and 5 MW and the reactive power<em>Q</em>is varied from –5 to 5 Mvar. The voltage for each combination of<em>P</em>en<em>Q</em>is depicted on a plane in the three-dimensional graph. Figure 9.9 shows that the influence of variation in active power and reactive power on the voltage in the example network is approximately equal. This corresponds to what is stated in Table 9.1 for an MV network.</p>
+<img alt="pics_2.9" class="img-responsive-leon-15px center-block" src="./loadflowberekeningen_files/9.9.png" width="708"/>
+<h5>Figure 9.9 Voltage U<sub>2</sub>at node 1 with variation of P and Q</h5>
+<a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.2.2"></div>
+<br/>
+<h3>9.2.2 Maximum power of a connection</h3>
+<p>In the simple example network of figure 9.8 with a power supply, an impedance, and a load node, there is a load with power<em>P+jQ</em>connected. This load has a power factor<em>cos(φ)</em>The relationship between the transmitted power and the voltage on the load side exhibits a characteristic curve, which is called the U-P curve of a connection. This curve is calculated as follows (Cigré, 1986), (Johansson, 1995):</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.16.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.16</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The curves are shown in figure 9.10 for various values of<em>cos(φ)</em>. The curves show that there is a maximum for the power<em>P+jQ</em>that over a connection with impedance<em>R+jX</em>can be transported. Additionally, the same figure shows that theoretically, power can be transported at two voltages. The upper half of each U-P curve indicates that as the transported power increases, the voltage at the load decreases. This is a normal situation. The lower half of each curve, shown in the shaded area, indicates that with decreasing load, the voltage at the load point decreases. This is not a stable situation and thus will not occur in reality. If the demanded power exceeds the maximum power, the voltage will collapse to zero. This is also known as voltage collapse. In such a case, a load flow calculation program will generate a message indicating that the load flow cannot be solved.</p>
+<img alt="pics_2.9" class="img-responsive-leon-15px center-block" src="./loadflowberekeningen_files/9.10.png" width="707"/>
+<h5>Figure 9.10 U-P curve: voltage with variation of P and cos(φ)</h5>
+<p>It is therefore not possible with a given<em>cos(φ)</em>greater power to be transported than the rightmost point in the U-P curve indicates. The image below shows the result of the load flow calculation of the example network for the maximum power of one of the curves: a load of 17 MW at a<em>cos(φ)</em>of 0.95. Incidentally, this load is much greater than the specified maximum load capacity of the cable.</p>
+<img alt="pics_2.9" class="img-responsive-leon-15px center-block" src="./loadflowberekeningen_files/9.11.png" width="649"/>
+<h5>Figure 9.11 Load flow calculation for the maximum power</h5>
+<a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.2.3"></div>
+<br/>
+<h3>9.2.3 Pitfalls in the application of constant power behavior</h3>
+<p>When applying the constant power model, it can happen that due to voltage collapse, as described in paragraph 9.2.2, the load flow cannot be calculated because the load current increases as the voltage decreases. In that case, the solution of the load flow calculation overshoots the rightmost point of figure 9.10. However, when applying the constant current model or the constant impedance model, the load flow can usually be calculated in those cases. If the load flow cannot be solved, it is recommended to investigate the problem by choosing the constant impedance model. In most cases, it will become apparent that the specified power is too large for the connections used.</p>
+<p>A pitfall arises when using a load with the behavior of 100% constant power behind a voltage-regulated transformer. If the size of the load is of the same order of magnitude as the nominal power of the transformer, an undesirable interaction between the load and the transformer regulation can occur. In that case, it is better to model the load with a constant current or constant impedance.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.3"></div>
+<br/>
+<h2>9.3 Generators</h2>
+<p>In general, a generator causes a voltage change in the electrical vicinity of the coupling point. The percentage voltage change at the coupling point can be estimated using an approximation formula (EnergieNed, 1996):</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.17.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.17</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>with:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="60"><em>S<sub>G</sub></em></td>
+<td>nominal generator capacity (MVA)</td>
+</tr>
+<tr>
+<td><em>S<sub>k</sub></em></td>
+<td>short-circuit power (MVA)</td>
+</tr>
+<tr>
+<td><em>alpha</em></td>
+<td>phase angle of short-circuit impedance (rad)</td>
+</tr>
+<tr>
+<td><em>phi</em></td>
+<td>phase angle of generator current (rad)</td>
+</tr>
+</tbody>
+</table><br/>
+<p>Using this approximation formula, it is recommended to maintain a maximum allowable voltage increase of 2% for decentralized generation in medium voltage (MV) networks and 3% in low voltage (LV) networks (EnergieNed, 1996). Figure 9.12 shows an MV feeder, where a decentralized generator is connected at 'Substation 4'. If the generator switch is open, the load flow calculation results in a voltage of 10.389 kV for the substation. If the short-circuit power and the phase angle of the short-circuit impedance are given, the percentage voltage change can be approximated using the generator data. It is given that the short-circuit power is 96 MVA and the phase angle is 0.82 rad (calculated from<em>R<sub>i</sub>= 0.783 Ω</em>en<em>X<sub>i</sub>= 0.840 Ω</em>). The terms used regarding short-circuit power and short-circuit impedance are further explained in Chapter 10. For a fully loaded generator with a nominal power of 0.3 MVA and a nominal cos(φ) of 0.85, formula 9.17 calculates a voltage change of 0.3%. A larger generator with a nominal power of 3.0 MVA and a nominal cos(φ) of 0.85 results in a voltage change of 3.0%.</p>
+<img alt="pics_2.9" class="img-responsive-leon-15px center-block" src="./loadflowberekeningen_files/9.12.png" width="693"/>
+<h5>Figure 9.12 MV line with a generator</h5>
+<p>The load flow calculation must confirm this. The voltage increased to 10.419 kV with the application of the 0.3 MVA generator, which corresponds to a 0.3% voltage increase. With the application of a 3.0 MVA generator, the voltage indeed increases by approximately 3% to 10.684 kV.</p>
+<p>The generators are modeled according to chapter 8 with a cos(φ) control or with a voltage control. In the first case, the ratio between active power<em>P</em>and reactive power<em>Q</em>fixed. The generator with a cos(φ) control can therefore be modeled in the load flow calculation as a negative load with the constant power model.</p>
+<p>If the generator has a voltage regulation, the reactive power generated in the load flow calculation depends on the actual voltage relative to the desired voltage at the regulated node: the voltage increases if the generator produces more reactive power. According to Table 9.1, the influence is greatest in networks with a small R/X ratio, such as in high-voltage networks and to a lesser extent in medium-voltage networks. The reactive power that the generator can produce or absorb is limited between<em>Q<sub>min</sub></em>en<em>Q<sub>max</sub></em>. Between these minimum and maximum values of reactive power, the generator can influence the voltage by adjusting the production of reactive power. Conversely, the deviation of the actual voltage from the set voltage determines the produced reactive power. If the actual voltage is equal to the set voltage<em>U<sub>ref</sub></em>zero var
+          reactive power is generated.</p>
+<p>Figure 9.13 shows the relationship between the actual voltage at the controlled node and the generated reactive power. The set voltage is<em>U<sub>ref</sub></em>. If the actual voltage is equal to<em>U<sub>ref</sub></em>, the generated reactive power is zero. If the actual voltage drops, the generator will generate more reactive power according to the sloped line. If the production of reactive power reaches the upper limit<em>Q<sub>max</sub></em>reached, the voltage is lower than or equal to<em>U<sub>min</sub></em>If the voltage increases, the generator will produce less reactive power or even absorb it. If the production of reactive power reaches the lower limit<em>Q<sub>mi</sub></em><sub>n</sub>comes, the voltage is higher than or equal to<em>U<sub>max</sub></em>.</p>
+<p>In the event of a change in the set voltage<em>U<sub>ref</sub></em>the graph will shift entirely up or down. If the value of<em>U<sub>ref</sub></em>is set higher, the generator will produce more reactive power and the actual voltage will increase.</p>
+<img alt="pics_2.9" class="img-responsive-leon-15px center-block" src="./loadflowberekeningen_files/9.13.png" width="450"/>
+<h5>Figure 9.13 Relationship between generator reactive power and voltage</h5>
+<p>The slope of the line between<em>U<sub>min</sub></em>en<em>U<sub>max</sub></em>is the voltage-reactive power characteristic, which represents the value of the voltage variation as a result of a variation in reactive power.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.18.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.18</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.4"></div>
+<br/>
+<h2>9.4 Grid Supply</h2>
+<p>The calculation of the load flow is based on Kirchhoff's and Ohm's laws and on balancing the complex power:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="center" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.19.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.19</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>Herein is<em>S</em>the complex power, consisting of active power and reactive power. The power generated by generators is absorbed by the loads. The grid losses are a result of the electricity transport. Since these powers are not automatically balanced, grid supply is needed to make the power balance correct. Distribution networks are, under normal operating conditions, connected to an external grid from which they are supplied. This external grid consists of a network of transmission connections, generators, and loads, usually at a higher voltage level. The grid supply represents this with a constant voltage source and a grid impedance, as described in Chapter 8.</p>
+<p>The active power and reactive power that the grid supply delivers or absorbs is the result of the load flow calculation. Additionally, the voltage of the grid supply is given and constant, both in magnitude and angle. In load flow analysis, a node to which the grid supply is connected is also referred to as a swing bus.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.5"></div>
+<br/>
+<h2>9.5 Voltage Regulation</h2>
+<p>For the proper functioning of equipment, the voltage must remain within certain limits. Therefore, international agreements have been made regarding the level of nominal grid voltage and the permissible deviations from it. These are laid down in the international standard IEC 50160. The standard prescribes the requirements concerning voltage in public low-voltage (LV) and medium-voltage (MV) networks. The nominal voltage for low-voltage networks is 230 V. Most Western European countries had a nominal voltage of 220 V before 1995. The United Kingdom had a nominal voltage of 240 V. The nominal value of 230 V resulted from a compromise to establish a European standard. The nominal voltage for medium-voltage networks can vary by region, so the standard refers to a declared voltage, categorized between 1 and 35 kV. The requirements for slow voltage variations during normal operation have been adopted by the Energy Chamber (Netcode, 2009).</p>
+<ul>
+<li>For networks with U<sub>nom</sub>≤ 1 kV:</li>
+<ul>
+<li>U<sub>nom</sub>±10% for 95% of the 10-minute average values over one week</li>
+<li>U<sub>nom</sub>+10/-15% for all 10-minute average values</li>
+</ul>
+<li>For networks with 1 kV &lt; U<sub>nom</sub>&lt; 35 kV</li>
+<ul>
+<li>U<sub>nom</sub>±10% for 95% of the 10-minute average values over one week</li>
+<li>U<sub>nom</sub>+10/-15% for all 10-minute average values</li>
+</ul>
+<li>For networks with U<sub>nom</sub>≥ 35 kV</li>
+<ul>
+<li>U<sub>nom</sub>±10% for 99.9% of the 10-minute average values over a one-week observation period</li>
+</ul>
+</ul>
+<p>The possibility of temporarily allowing a voltage drop of 15% is intended for cases of maintenance or repair, where the network needs to be switched differently. For normal operating situations, the network must be designed in such a way that the voltage remains as much as possible within the margins over a long period. The settings of the distribution transformers and the reactive power distribution are important in this regard. A good power factor (cos(φ)) can contribute to this. Slow load variations, such as over a day, can be managed using the voltage regulations on the supply transformers.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.5.1"></div>
+<br/>
+<h3>9.5.1 Voltage Regulation of Supply Transformers and Control Transformers</h3>
+<p>In an electrical grid, the transport of electrical power is always accompanied by voltage variations at the nodes. The voltage variations in the distribution network are caused by events in the high-voltage (HV) network and by power transport over the cable connections and transformers. Voltage variations are automatically compensated in the substations using voltage regulation on the HV/medium-voltage (MV) transformer. The supply transformer is equipped with an adjustable tap changer on the primary side for this purpose. The tap changer is controlled by a system that measures the voltage on the MV side and tries to keep it within limits. Because the system controls a discrete tap changer, it is not possible to set the voltage on the secondary side to an exact desired value. It may happen that sometimes two or more tap positions are possible, depending on the tap size relative to the voltage band to be regulated. Common tap positions for the supply transformer are: 21 steps of 1.5%.</p>
+<p>In the low voltage networks, there is no automatic voltage regulation, and the tap position on the MV/LV distribution transformer can be manually set so that all voltage variations remain within the specified limits. The distribution transformer can be adjusted with 5 steps at: –7.5%, –5%, –2.5%, 0%, and +2.5%.</p>
+<img alt="pics_2.9" class="img-responsive-leon-15px center-block" src="./loadflowberekeningen_files/9.14.png" width="693"/>
+<h5>Figure 9.14 Typical MV string with substations</h5>
+<p>Figure 9.14 provides an example of a typical MV string with substations. A substation typically has 20 fields connected with MV strings. The load of the remaining MV strings is concentrated in an MV load on the MV busbar of the substation.</p>
+<img alt="pics_2.9" class="img-responsive-leon-15px center-block" src="./loadflowberekeningen_files/9.15.png" width="671"/>
+<h5>Figure 9.15 Voltage profile in the feeding network and in a typical MV string</h5>
+<p>A simulation was conducted on this network with a varying voltage on the HV side of the supply transformer and daily varying loads. The variations are recorded in profiles as a function of time, for which a load flow calculation is made for each value. Figure 9.15 shows the node voltages from the HV busbar to all LV busbars as a result of the load flow calculation for the profiles. The voltage is displayed in pu. Clearly visible is the variation of the voltage on the HV busbar of the substation, which was set to plus and minus 5%. Due to the control action of the supply transformer, the variation on the MV busbar of the substation is limited to about 2%. The voltage variation does not significantly increase in the direction of 'Substation 6'. The voltage level slightly decreases in that direction. It is also clearly visible that the voltage variation on the LV busbars, at about 3%, is slightly larger than on the MV busbars of the substations. This is caused by the impedance of the distribution transformers.</p>
+<p>If the MV network is extensive behind the supply transformer, current compensation (compounding) is sometimes applied. In this case, in addition to the voltage on the MV side, the load current also influences the regulation of the tap changer. With an increasing load current, the regulated voltage on the secondary side will increase further, ensuring that the value of the MV and LV voltage in the network remains within the permissible limits. Figure 9.16 illustrates this.</p>
+<img alt="pics_2.9" class="img-responsive-leon-15px center-block" src="./loadflowberekeningen_files/9.16.png" width="439"/>
+<h5>Figure 9.16 Voltage-regulated power transformer with current compensation</h5>
+<p>A correction is subtracted from the voltage used for regulation, which depends on the load current and a chosen compensation impedance.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.20.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.20</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>Figure 9.17 shows the secondary voltage of the power transformer as a function of the power transported by the transformer. Without regulation, the voltage decreases due to the transformer impedance with increasing power. With a standard voltage regulation, when a voltage threshold is undershot, the tap changer is adjusted, resulting in a stepped curve that lies between the lower and upper limits. With voltage regulation that includes current compensation, the compensated control voltage will undershoot a voltage threshold earlier, causing the tap changer to adjust sooner. As a result, the stepped curve rises with increasing power.</p>
+<img alt="pics_2.9" class="img-responsive-leon-15px center-block" src="./loadflowberekeningen_files/9.17.png" width="708"/>
+<h5>Figure 9.17 Influence of current compensation on voltage regulation</h5>
+<p>The compensation factor is specified in Ohms and ensures that the regulation 'sees' a slightly reduced voltage as a result of increased current in the line. The compensation ensures that the voltage in a long line generally meets the user's requirements. With a large current, the regulation will ensure that the voltage is increased, thereby improving the voltage in the medium voltage (MV) line at an average distance from the supply transformer. Figure 9.18 illustrates this with the voltage profile for all nodes, distributed over a long line, from the supply transformer to the end. The voltage profile shows a declining line due to power transport from the supply transformer. Without compensation, the voltage is only within the specified minimum and maximum values near the supply station. The voltage at the end of the line can become lower than the minimum voltage. With compensation, the voltage profile in the line is generally improved because it now regulates at a fictitious point near the middle of the line. As a result, the voltages of all nodes in the line are within the limits.</p>
+<img alt="pics_2.9" class="img-responsive-leon-15px center-block" src="./loadflowberekeningen_files/9.18.png" width="659"/>
+<h5>Figure 9.18 Voltage profile transformer control without and with current compensation</h5>
+<p>By applying current compensation, the voltage variation due to the varying load at the end of the line is smaller than with voltage regulation without current compensation. As a result, a heavy load is less likely to cause the voltage limit to be exceeded. Additionally, the use of current compensation allows for longer cables to be permitted.</p>
+<p>If decentralized generators are located close to the regulated transformer, current compensation must be applied with caution. The generated power reduces the load current through the supply transformer, which can cause the voltage at the end of the line to exceed the voltage limits. This can be prevented by connecting the decentralized generation to a separate field, whose current is not used for current compensation. If this is not possible, the current from the decentralized generators must be subtracted from the load current to be compensated in the regulation. This option is offered by various manufacturers (Hiscock, 2007).</p>
+<p>In extensive medium-voltage networks, regulating transformers are sometimes used, which are installed in regulation stations. This allows for local and independent voltage regulation in a downstream section of the network, separate from the voltage regulation at the supply station. Regulating transformers can be autotransformers or booster transformers. Similar to supply transformers, the voltage is regulated by changing the transformation ratio using a tap changer. The control of the tap changer is managed by an automatic voltage regulator that measures the voltage on the secondary side. The advantage is that the voltage in an area with a varying load pattern can be independently regulated. Disadvantages include the high costs and the reduced short-circuit capacity.</p>
+<p>In the network, in addition to adjustable transformers, there are also synchronous generators with voltage regulation. The control action of these components affects the voltages in the network and thereby the currents and load currents. In practice, the control action of the generators is faster than the control action of the tap changers of the transformers in the substations.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.5.2"></div>
+<br/>
+<h3>9.5.2 Power Factor Improvement</h3>
+<p>The angle that the current vector makes with respect to the voltage vector is referred to as<em>φ</em>. Instead of the angle, the power factor is usually used<em>cos(φ)</em>, also referred to as the power factor. With a small angle, the current is almost in phase with the voltage. In that case, the<em>cos(φ)</em>approximately equal to 1. At this value, almost all the current is used for performing work with active power. At a value of<em>cos(φ)</em>that is less than 1, not all the current is used for performing work. For the same amount of active power, a larger current is needed than with a power factor of 1. Formula 9.21 describes the relationship between the transported active power and the current with the<em>cos(φ)</em>in a three-phase system.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.21.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.21</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>In a network with predominantly inductive load, the current lags behind the voltage and reactive power is absorbed. This reactive power is transported through the network and causes an increase in the current. An increase in the current leads to a quadratic increase in the losses in the network. An improvement in the<em>cos(φ)</em>leads to a reduction of these additional network losses. Moreover, the elimination of a certain amount of reactive power to be transported makes more transport capacity of transformers and connections available for transporting active power. It is common to<em>cos(φ)</em>to improve with the help of capacitors. In high-voltage networks, adjustable capacitor banks ranging from 50 to 150 Mvar are used. At the medium-voltage level, compensation is often done decentrally within the networks, and at the low-voltage level, it is done at the component level, particularly with motors. The loss in the three phases of a cable connection is:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.22.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.22</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>If the<em>cos(φ)</em>is improved to<em>cos(φ)<sub>v</sub>)</em>, the ratio of the loss after and before the improvement is:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.23.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.23</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>With an improvement of the<em>cos(φ)</em>from 0.8 to 0.95, the ratio is 0.71. This means a reduction in loss of 29%. Because a smaller current is needed to transport the same active power, after the<em>cos(φ)</em>-improvement, more active power can be transported. The ratio of the currents after and before the improvement is:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.24.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.24</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>During the improvement of the<em>cos(φ)</em>from 0.8 to 0.95, the ratio is 0.84. This means a reduction in the required current by 16%. As a result, the capacity of the cable connection appears to have increased.</p>
+<p>If the<em>cos(φ)</em>-improvement is carried out with a capacitor bank, the required reactive power<em>Q<sub>C</sub></em>) can be calculated from the difference of
+          the reactive power before the improvement (<em>Q</em>) and after (<em>Q<sub>v</sub></em>).</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.25.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.25</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>From this, the required reactive power can be determined:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.26.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.26</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>This reactive power is generated at nominal voltage by a capacitor bank, whose capacity in<em>F</em>per phase with respect to the neutral point is equal to:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.27.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.27</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.6"></div>
+<br/>
+<h2>9.6 Network Losses</h2>
+<p>The transmission of electricity always involves losses, particularly in cables and transformers. For an electricity supply system, the network loss is equal to the difference between the generated and imported power and the power consumed by the loads:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.28.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.28</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<img alt="pics_2.9" class="img-responsive-leon-15px center-block" src="./loadflowberekeningen_files/9.19.png" width="609"/>
+<h5>Figure 9.19 Load and imported power</h5>
+<p>The active part of the loss is equal to the heat development in the involved components. The reactive power loss is not. In the example network of figure 9.19, the loss for the entire network is equal to:</p>
+<div class="row">
+<div class="col-md-8"> <p> <em>P<sub>verlies</sub>= P loss<sub>import</sub>– P<sub>belasting</sub>= 5.00 – 4.67 = 0.33 MW</em></p>
+<p> <em>Q<sub>verlies</sub>= Q<sub>import</sub>– Q loss = Q import<sub>belasting</sub>= 2.00 – 1.88 = 0.12 Mvar</em></p>
+<p>For each connection in an electrical grid, the loss can be calculated from the sum of the power flowing into the connection from both sides.
+          Figure 9.20 illustrates this.</p>
+</div>
+<div class="col-md-4">
+<img alt="pics_2.9" class="img-responsive-leon-15px center-block" src="./loadflowberekeningen_files/9.20.jpg" width="180"/>
+<h5>Figure 9.20 Power on both sides of a connection</h5>
+</div>
+</div>
+<p>On the supply side, the power values are positive. On the load side, the power values flowing into the connection are negative.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.29.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.29</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The loss can also be directly calculated from the current and the impedance. It is important to take into account that the cable has a capacitance.<em>C</em>has and therefore also generates reactive power itself, which must be subtracted from the loss. It is customary to split the capacitance of the connection into two equal parts and concentrate these at the sending and receiving ends of the connection. Figure 9.21 shows the usual Pi-model of a connection. Here, nodes 1 and 2 are respectively the nodes at the sending and receiving ends of the connection. The transverse impedance is usually only used for modeling a lossless capacitance. The total transverse impedance of the connection is evenly distributed over both ends of the connection.<em>Z<sub>d1</sub></em>en<em>Z<sub>d2</sub></em>.</p>
+<img alt="pics_2.9" class="img-responsive-leon-15px center-block" src="./loadflowberekeningen_files/9.21.png" width="486"/>
+<h5>Figure 9.21 Pi-model of a connection</h5>
+<p>The complex powers are calculated as follows. For the reactive power generated by the capacitance, the following applies:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.30.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.30</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The total power loss in the connection, corrected for the reactive power generated in the connection, is then:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.31.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.31</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>For the calculation example, the total capacitance for 10 km of cable of type 3x150 Cu XLPE 6/10 is equal to:<em>C = 3.8 μF</em>The impedance of this capacitance is applied 50% at the supply node and 50% at the load node, so that in the calculation model the capacitive reactive power is generated distributed across both nodes. For the losses in the three phases, the following applies:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.32.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.32</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>Due to the loss, the involved network components become warm. An excessive rise in temperature leads to accelerated aging of the components. The temperature of a loaded cable depends on the current strength and environmental factors, including the ability to dissipate heat. For cables, this is specified in the international standard IEC 60287. Temperature fluctuations can also lead to accelerated aging. One of the causes of daily temperature fluctuations is the daily cyclically varying load current. Due to temperature fluctuations, materials expand and contract. In cables, this leads to weak points in the insulation, which can result in a spontaneous short circuit.<a href="https://www.phasetophase.nl/boek/boek_1_4.html#_4.1">see paragraph 4.1</a>The permissible thermal load of cables under cyclically varying load is specified in the international standard IEC 60853.</p>
+<p>The loss of a transformer is divided into short-circuit loss (or copper loss) and no-load loss (or iron loss or magnetization loss). The short-circuit loss depends on the transported current and is comparable to the active power loss in a connection. The no-load loss arises from eddy current losses that occur in the iron core of the transformer during the magnetization of the core. The no-load loss is not dependent on the transported current but on the voltage.</p>
+<p>As described in<a href="https://www.phasetophase.nl/boek/boek_2_8.html">chapter 8</a>, the short-circuit loss is equal to:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.33.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.33</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>Herein, the resistance, referred to the secondary side, is calculated from the nominal short-circuit loss.<em>P<sub>k</sub></em>(in kW), the nominal voltage (in kV), and the nominal power (in MVA):</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.34.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.34</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The modeling of the no-load loss of the transformer is described in chapter 8. The value is given for the nominal voltage. From this, the main field resistance is calculated.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.35.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.35</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The loss is then calculated as follows:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.36.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.36</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>If saturation is taken into account, the exponent in equation 9.36 can become larger. A value of 2.6 is sometimes mentioned (EnergieNed, 1996).</p>
+<p>The loss percentage at the national level is approximately 4 to 5% of the total electricity production. This includes the losses in all HV, MV, and LV networks, including the associated transformers. The losses can be attributed to the various levels of the electricity supply system. For the electricity networks, the following general key figures apply (EnergieNed, 1996):</p>
+<ul>
+<li>LV networks: 0.3 to 2.1% (average 1.1%)</li>
+<li>MV/LV network transformers: 1.1 to 2.6%</li>
+<li>MV distribution networks: 0.1 to 2.7% (average 0.9%)</li>
+<li>HS/TS/MS transmission networks: 1 to 2%.</li>
+</ul>
+<p>As consumption occurs at a lower voltage level, multiple higher voltage levels are utilized. Thus, the total loss percentage for electricity consumed at the LV level is on average about 7 to 8%. The costs of the network losses are allocated to the various consumer categories at the different voltage levels through the calculation of fuel costs.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.7"></div>
+<br/>
+<h2>9.7 Processing the stochastic behavior of the loads</h2>
+<p>The stochastic behavior of the load was discussed in Chapter 3, where the concept of 'simultaneity' of the load was introduced. However, a load flow calculation cannot adequately handle the simultaneity of the load in principle. Loads are usually specified for their maximum values. In reality, the load varies between a minimum and a maximum value. Therefore, the exact size of the load is usually not known but can be described with a probability function (see Chapter 3). This is called stochastic behavior. As the size of the network decreases, the stochastic behavior becomes more important for the network designer. This is taken into account when planning MV and LV distribution networks. If the network designer does not do this, the network will be overdesigned. This paragraph discusses three techniques that provide more insight into this:</p>
+<ul>
+<li>compensation for the non-coincidence of loads</li>
+<li>stochastic load flow</li>
+<li>pseudo state estimation.</li>
+</ul>
+<a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.7.1"></div>
+<br/>
+<h3>9.7.1 Compensating for the Non-Coincidence of Loads</h3>
+<p>There are various ways to model the non-coincidence of loads. The simplest method is to incorporate the coincidence factor into all loads. To do this, the loads are multiplied by the coincidence factors, making them smaller. If this is done for all loads at the substations, the sum of the load at the substation level will match the actual value, but the load flows in the medium-voltage (MV) lines will be smaller than the actual values. The reason lies in the non-coincidence of the loads, which causes the occurring local maximum flows to be 'averaged out' at a higher level.</p>
+<p>A better approach uses negative current injections, which can account for the non-coincidence of the load in radially operated networks. This ensures that in a lower network segment, the maximum loads can be considered, while at a higher level, the simultaneity of the loads from the lower network segment is managed by connecting a negative load.</p>
+<img alt="pics_2.9" class="img-responsive-leon-15px center-block" src="./loadflowberekeningen_files/9.22.png" width="690"/>
+<h5>Figure 9.22 Negative load to compensate for simultaneity</h5>
+<p>Figure 9.22 illustrates how a simultaneity factor of 0.82 can be managed by injecting a negative load current of 19 A into the MV busbar of the substation on a total load of 113 A (56 plus 57 A in the two branches). As a result, the load current through the supply transformer is 93 A, while the load currents in the branches are not reduced. The advantage of this method is that the supply transformer is not oversized and the cables in the branches are not designed too tightly. In the example, the simultaneity of the loads across various branches is managed by the negative load on the supply transformer. However, it is also possible to manage the simultaneity of the loads at other points in the MV distribution network. This can be done, for example, in a very long branch with a negative load applied halfway along the branch or at a branching point. The latter can be done in radially operated networks.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.7.2"></div>
+<br/>
+<h3>9.7.2 Stochastic Load Flow</h3>
+<p>A stochastic load flow calculates the extremes of currents and voltages in a distribution network where the loads behave stochastically. It is assumed that the loads can be modeled with normally distributed probability functions. This is an approximation of reality, which in practice can be used with sufficient accuracy. Loads that do not behave as a normally distributed probability function, such as very large switching loads and decentralized generation installations, cannot be calculated with the stochastic load flow. This method is particularly suitable for calculating the load flow in low-voltage distribution networks (Phase, 2008).</p>
+<p>All normally distributed stochastic loads can be described according to chapter 3 with their average value and a spread. The stochastic load flow first calculates the load flow for the average values of all stochastic loads. The result consists of the average values for the voltages<em><u>U</u></em><em><sub>gemiddeld</sub></em>) and currents (<em><u>I</u></em><em><sub>gemiddeld</sub></em>) in the grid. Then, the currents and voltages in the grid are calculated for the situation where the grid supply is disconnected, and a current is injected at the location of all stochastic loads equal to the variance (the square of the standard deviation) of the respective stochastic probability distribution. This calculation determines the spreads of all voltages<em><u>U</u></em><em><sub>spreiding</sub></em>) and currents (<em><u>I</u></em><em><sub>spreiding</sub></em>) calculated in the grid. This allows for the calculation of the upper and lower limits of the currents and voltages in the network, where it is sufficient to consider adding and subtracting one times the spread:</p>
+<ul>
+<li> <em><u>U</u><sub>max</sub>=<u>U</u><sub>gemiddeld</sub>+<u>U</u><sub>spreiding</sub></em> </li>
+<li> <em><u>U</u><sub>min</sub>=<u>U</u><sub>gemiddeld</sub>–<u>U</u><sub>spreiding</sub></em> </li>
+<li> <em><u>I</u><sub>max</sub>=<u>I</u><sub>gemiddeld</sub>+<u>I</u><sub>spreiding</sub></em> </li>
+<li> <em><u>I</u><sub>min</sub>=<u>I</u><sub>gemiddeld</sub>–<u>I</u><sub>spreiding</sub></em> </li>
+</ul>
+<p>Figure 9.23 shows an LV distribution network, consisting of two branches each with 4 LV cables, where each cable is connected to 10 detached houses.
+          According to the Velander method, the load current of 10 detached houses is 24 A<em>alpha=0.00023, beta=0.023, V=4400 kWh</em>According to the same method, the load current of 40 detached houses is 81 A (at the beginning of each branch) and of 80 detached houses is 153 A (on the secondary side of the network transformer).</p>
+<img alt="pics_2.9" class="img-responsive-leon-15px center-block" src="./loadflowberekeningen_files/9.23.png" width="701"/>
+<h5>Figure 9.23 Two branches in an LV distribution network</h5>
+<p>In figure 9.23, the minimum and maximum voltage values for the nodes are shown, based on the average value plus and minus one times the spread. Additionally, the minimum and maximum current values are displayed, also based on the average value plus and minus one times the spread. It is notable that the calculated maximum current values on the secondary side of the network transformer and at the beginning of each branch correspond to the values calculated according to the Velander method.</p>
+<p>The advantage of the stochastic load flow over the method of injecting negative loads is that it can also be applied to meshed networks. For example, if the switch in the last connection between nodes A4 and B4 is closed, the average values will not change because both branches were equal. Therefore, the average current value through the connection between A4 and B4 is zero. However, the spread of the current over that connection is not zero: the stochastic load flow calculates a value of 5 A. As a result, the spread of the other current and voltage values in the network also decreases.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.7.3"></div>
+<br/>
+<h3>9.7.3 Pseudo state estimation</h3>
+<p>To make good use of the capacity of cables and transformers in medium-voltage distribution networks, the planner must have insight into the actual network load and voltage management. For this, detailed measurement data is needed, which, unlike in transmission networks, is not abundantly available in distribution networks. When designing these networks, maximum loads are often assumed, taking into account the growth of individual users. As a result, there is often more transport capacity in the medium-voltage networks than needed. However, because measurements in these networks are limited, there is insufficient insight to utilize that capacity. In recent years, more measurement data has become available that characterizes the behavior of users and user groups. The pseudo state estimation makes use of this. By determining the non-coincidence of loads per time unit, a much better understanding of the network load and voltage management is achieved without having to measure at every point in the network.</p>
+<p>The goal of pseudo state estimation is to monitor medium voltage networks based on a limited amount of measurements and load profiles. Monitoring involves calculating the voltage and current management in a network over a period. This process utilizes the specific behavior of groups of customers. In recent years, a lot of data has been collected in the Netherlands about the behavior of various customer groups. By combining measurements in substations with insights into the behavior of different customer groups (profiles and composition) in pseudo state estimation, an understanding of the load distribution in the network is achieved, allowing for the calculation of currents and voltages.</p>
+<p>A traditional state estimator typically operates with more than the strictly necessary number of measurements to describe the state of a network. In contrast, pseudo state estimation works with fewer than the necessary number of measurements, combined with knowledge of the network and load behavior. The method is tailored for use in a medium-voltage distribution network. Here, measurements in a substation are combined with load patterns from network stations. The maximum current measurements from network stations serve as the base distribution. The load patterns can be constructed from the composition of customer groups per station and the load patterns of individual customer groups, such as households, shops, and offices. Additional measurements, such as those from decentralized generators, can also be incorporated into the method. The pseudo state estimation is based on:</p>
+<ul>
+<li>Load measurements of the outgoing directions in the substation</li>
+<li>Other load measurements from decentralized generators or large consumers</li>
+<li>Maximum current measurements at the substations</li>
+<li>Load patterns of the substations</li>
+<li>Composition of customer groups per substation</li>
+<li>Load patterns of the individual customer groups</li>
+</ul>
+<p>Figure 9.24 illustrates the principle of pseudo state estimation. The load current of a supply transformer is measured. The maximum load currents of all substations are known, and the load profiles are estimated.</p>
+<img alt="pics_2.9" class="img-responsive-leon-15px center-block" src="./loadflowberekeningen_files/9.24.png" width="706"/>
+<h5>Figure 9.24 MV feeder with different load profiles</h5>
+<p>If the composition with standard load categories is known, the resulting load profile for each substation is equal to the weighted average of all standard load profiles.</p>
+<p>The transformer load<em>b<sub>transf,i</sub></em>for time<em>i</em>must be equal to the sum of the loads<em>b<sub>j,i</sub></em>for all substations in the line. For the estimation, the losses are initially disregarded.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.37.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.37</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The simultaneity factors<em>g<sub>i</sub></em>for each time point<em>i</em>can be easily determined from the measured transformer profile and the load profiles for the substations.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.38.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.38</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>By determining for each time point<em>i</em>to correct the loads per substation with the simultaneity factor<em>g<sub>i</sub></em>the load flow for that time point can be calculated, and thus the state is estimated.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.8"></div>
+<br/>
+<h2>9.8 Specific applications</h2>
+<p>This paragraph explains three specific applications of the load flow calculation. First, it addresses the network openings in radially operated distribution networks. By choosing the location of the network openings carefully, network losses can be minimized. Next, it briefly discusses the issue of modeling multiple distribution networks, each with its own feed point and network supply. There is a risk that incorrect currents will be calculated when these networks are connected. Finally, it briefly touches on the parallel switching of transformers that are not exactly identical.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.8.1"></div>
+<br/>
+<h3>9.8.1 Network Openings and Optimization</h3>
+<p>A network opening is a location in the distribution network where a switch is open during normal operating conditions. Network openings occur in both medium voltage (MV) and low voltage (LV) distribution networks. The location of the network openings in an MV distribution network is usually chosen based on the accessibility of the substation and the possibility of combining the closing of the network opening with any other desired switching operation during fault situations. Additionally, no cables should become overloaded. When choosing a network opening, attention is also paid to the network voltage and losses. The network opening is optimally chosen if the losses are minimized. This is illustrated by a single MV distribution ring consisting of two branches, both of which are equally long and contain an equal number of substations with equal load.</p>
+<img alt="pics_2.9" class="img-responsive-leon-15px center-block" src="./loadflowberekeningen_files/9.25.png" width="694"/>
+<h5>Figure 9.25 MV distribution ring with a network opening</h5>
+<p>In the MV distribution ring of figure 9.25, one of the disconnectors in the cable between nodes 'Netstation 16' and 'Netstation 26' is opened. This seems like a logical choice, considering the network losses. A load flow calculation provides insight into the network loss during maximum load. Moving the network opening will demonstrate that the network loss increases.</p>
+<p>In reality, however, both branches are not equal in length and contain an unequal number of substations with unequal loads. The load profiles can also be unequal. To optimize the opening, one can choose to minimize the network losses over a period, during which the entire load cycle is completed. This was done for the example network in figure 9.25, where in figure 9.26 the load profile of the upper branch (Substation 11 through 16) is shown in hourly values as 'Load 11' and the load profile of the lower branch as 'Load 21'.</p>
+<img alt="pics_2.9" class="img-responsive-leon-15px center-block" src="./loadflowberekeningen_files/9.26.png" width="661"/>
+<h5>Figure 9.26 Load profiles for the MV branches</h5>
+<p>With a load flow calculation, the power losses of all cables are calculated for each hour. If these losses apply for the entire hour, the calculated numbers are equal to the energy loss during that hour:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.39.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.39</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>By performing this calculation over a period of one week (168 hours), the total energy loss across all cables for the entire period is calculated as follows:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.9" src="./loadflowberekeningen_files/formule-9.40.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">9.40</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>A load flow calculation for the specified load profiles can demonstrate whether the chosen location for the network opening is indeed optimal and results in the smallest losses, while also meeting the voltage requirements.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.8.2"></div>
+<br/>
+<h3>9.8.2 Multiple external networks and supply points</h3>
+<p>A distribution network typically has a single power supply. It is indeed possible to apply multiple power supplies in a load flow calculation, but caution is advised. If two or more subnetworks are modeled that are not connected to each other, each subnetwork can be connected to its own power supply. If these subnetworks are later interconnected, balancing currents will be calculated that usually do not match reality. This is caused by the fact that a power supply is defined with a fixed voltage, both in magnitude and angle. The magnitude of the voltage is usually fairly well known, but the angle is almost always unknown. When multiple power supplies are connected, currents will flow due to differences in these voltages. Therefore, to study the balancing currents in (whether short-term or not) connections, it is best to also model the higher-level feeding transmission network, so that only one power supply is needed. Figure 9.27 provides an example.</p>
+<img alt="pics_2.9" class="img-responsive-leon-15px center-block" src="./loadflowberekeningen_files/9.27.png" width="691"/>
+<h5>Figure 9.27 Connecting subnetworks</h5>
+<p>As a result of a through-transport in the HV transmission network, a voltage difference arises on the HV rails of both substations. The voltage regulation of the supply transformers limits the voltage difference on the MV sides of both supply transformers, but the phase angle difference is not regulated. This phase angle difference is also noticeable in both MV strings. If the switch at 'Netstation 26' needs to be briefly closed for maintenance, the voltage difference, including the phase angle, must be limited to prevent dangerous situations. If both MV strings were modeled with their own network supply, a voltage difference due to variations in the supplying network would not be visible, making it impossible to calculate the equalizing current. More extensive publications on this topic, particularly regarding the connection of subnetworks for maintenance purposes, can be found in (Provoost, 2005) and (Nuijten, 2006).</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.8.3"></div>
+<br/>
+<h3>9.8.3 Parallel transformers</h3>
+<p>When using two parallel transformers, it is important to ensure that both have the same turns ratio to prevent unequal loading. The impedance of a transformer has a small R/X ratio, meaning the reactance is much greater than the resistance. This predominantly reactive nature of the transformer impedance results in an unequal turns ratio causing a difference in reactive power transfer. The active power transfer is only slightly affected by an unequal tap setting. Figure 9.28 shows a situation with two identical and equally set transformers.</p>
+<img alt="pics_2.9" class="img-responsive-leon-15px center-block" src="./loadflowberekeningen_files/9.28.png" width="348"/>
+<h5>Figure 9.28 Two equally set parallel transformers</h5>
+<p>Figure 9.29 shows the same two transformers, with the tap changer of transformer T2 adjusted by one step. As a result, the nominal voltage on the primary side is reduced from 132 to 129.75 kV. Consequently, the reactive power transfer through T2 increases by nearly 10%. By comparison, the active power through T2 increases by only about 1%.</p>
+<img alt="pics_2.9" class="img-responsive-leon-15px center-block" src="./loadflowberekeningen_files/9.29.png" width="348"/>
+<h5>Figure 9.29 Two unequally set parallel transformers</h5>
+<p>If it is not the reactive power but the active power that needs to be influenced, the phase angle of the transformation ratio would need to be changed. These so-called phase-shifting transformers are only sporadically found in high-voltage transmission networks and are never used in distribution networks.</p>
+</div>
+<div class="col-lg-2 hidden-md"> </div>
+</div>
+</div>
+</div>
+<div class="container-fluid-footer" id="includeFooter"><div class="container">
+<div class="row">
+<div class="text-justify col-xs-6 col-sm-3">
+<img alt="ptp_logo" src="./loadflowberekeningen_files/logo-s-360px-grijs.png" width="230"/>
+</div>
+<div class="col-xs-6 col-sm-9">
+<p> Phase to Phase is onderdeel van <a href="https://www.technolution.nl/">Technolution</a>. © 2009-2021 </p>
+</div>
+</div>
+</div></div></body></html>

@@ -1,0 +1,1922 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://www.phasetophase.nl/boek/boek_1_6.html -->
+<html lang="en" class="wf-ffscalasansweb-n7-active wf-ffscalasansweb-n4-active wf-ffscalasansweb-i4-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Phase to Phase – Netten voor distributie van elektriciteit</title>
+    <!-- Bootstrap -->	
+<link href="./beveiliging_files/bootstrap-2-boek.css" rel="stylesheet">
+<style type="text/css">
+	body,td,th {
+	font-family: ff-scala-sans-web, sans-serif;
+}
+body {
+	background-color: #F7F7F7;
+}
+    </style>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+<script src="./beveiliging_files/qke6lfb.js.download"></script>
+<style type="text/css">.tk-ff-scala-sans-web{font-family:"ff-scala-sans-web",sans-serif;}</style><style type="text/css">@font-face{font-family:tk-ff-scala-sans-web-n7;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-n4;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-i4;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style><script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script src="./beveiliging_files/jquery-1.11.3.min.js.download"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./beveiliging_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H8Q9E8BJ7Q');
+</script>
+<script>
+$(function(){
+  $("#includedHeader").load("/boek/header.html");
+  $("#includeFooter").load("/boek/footer.html"); 
+});
+</script><style type="text/css">@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style>	  
+</head>
+<body style="padding-top: 50px">
+
+<div id="includedHeader"> <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topFixedNavbar1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="https://www.phasetophase.nl/">Phase to Phase</a></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="topFixedNavbar1">
+      <ul class="nav navbar-nav">
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+	<p></p>
+	
+    </div>
+    </div>
+  </div>
+
+<div class="container-fluid-boek">
+  <div class="container">
+
+<div class="row-in-header">
+	<div class="text-justify col-xs-6 col-sm-6">
+    <img class="hidden-xs" src="./beveiliging_files/logo-s-360px-wit.png" alt="Phase to Phase logo 360px" width="366">
+	<img class="visible-xs" src="./beveiliging_files/logo-s-360px-wit.png" alt="Phase to Phase logo 261px" width="261"> 
+	</div>
+		<div class="col-xs-6 hidden-xs col-sm-6">
+	</div>
+</div>
+
+<div class="row-in-header">
+	<div class="text-left col-xs-9 col-sm-9">        <p></p><h8>ICT voor elektriciteitsnetten</h8>
+</div>
+	<div class="col-xs-3 col-sm-3">
+	</div>
+</div>
+
+<div class="row-in-header-2">
+	<div class="text-justify col-xs-6 col-sm-6">&nbsp;
+	</div>
+	<div class="col-xs-6 hidden-xs col-sm-6">
+	  <h7>&nbsp;</h7>
+	</div>
+</div>
+
+</div>
+</div>
+
+<div class="container">
+
+<div class="row-intro">
+<h1><a href="https://www.phasetophase.nl/boek/index.html"> Netten voor distributie van elektriciteit</a></h1>
+</div></div></div>
+
+  <div class="row-ohm-center-white"> <a name="top"></a>
+    <div class="row-b">
+		  <a href="https://www.phasetophase.nl/boek/index.html"><button type="button" class="btn btn-default active">I – De opbouw van een net</button></a>
+		  <a href="https://www.phasetophase.nl/boek/boek_2_7.html"><button type="button" class="btn  btn-default">II – Rekenen aan een net</button></a>
+		  <a href="https://www.phasetophase.nl/boek/boek_3_13.html"><button type="button" class="btn  btn-default">III – Ontwerpen en bedrijfsvoeren</button></a>
+	</div>
+    <div class="row-b">
+<a href="https://www.phasetophase.nl/boek/index.html"><button type="button" class="btn btn-default1">Inhoud</button></a>
+      <a href="https://www.phasetophase.nl/boek/boek_1_1.html">
+      <button type="button" class="btn btn-default1">1 Inleiding</button>
+      </a> <a href="https://www.phasetophase.nl/boek/boek_1_2.html">
+      <button type="button" class="btn btn-default1">2 Netten</button>
+      </a> <a href="https://www.phasetophase.nl/boek/boek_1_3.html">
+      <button type="button" class="btn btn-default1">3 Belasting en opwekking</button>
+      </a> <a href="https://www.phasetophase.nl/boek/boek_1_4.html">
+      <button type="button" class="btn btn-default1">4 Netcomponenten</button>
+      </a> <a href="https://www.phasetophase.nl/boek/boek_1_5.html">
+      <button type="button" class="btn btn-default1">5 Aardingsconcepten en veiligheid</button>
+      </a> <a href="https://www.phasetophase.nl/boek/boek_1_6.html">
+      <button type="button" class="btn btn-default1 active">6 Beveiliging</button>
+      </a>
+    <div class="row">
+      <div class="col-md-12 col-lg-10">
+        <h3>Beveiliging</h3>
+        <p>Hoofdstuk 6 behandelt de opzet van de beveiliging en de toegepaste beveiligingscomponenten. Het hoofdstuk gaat in op beveiliging van een aansluiting, een transformator en het net zelf. Ook wordt kort ingegaan op enkele complicaties die, bijvoorbeeld door de aanwezigheid van decentrale productie-eenheden, kunnen optreden. </p>
+        <div class="row">
+          <div class="col-md-6">
+            <ul style="list-style-type:none">
+              <li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6"><strong>6&nbsp;&nbsp;Beveiliging</strong></a></li>
+              <li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.1">6.1&nbsp;&nbsp;Beveiligingscomponenten</a></li>
+              <ul style="list-style-type:none">
+                <li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.1">6.1.1&nbsp;&nbsp;Principe van stroombeveiliging</a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.1.2">6.1.2&nbsp;&nbsp;Smeltveiligheden</a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.1.3">6.1.3&nbsp;&nbsp;Beveiligingsrelais</a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.1.4">6.1.4&nbsp;&nbsp;Meettransformatoren</a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.1.5">6.1.5&nbsp;&nbsp;Maximaal stroom-tijdrelais</a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.1.6">6.1.6&nbsp;&nbsp;Energierichtingrelais</a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.1.7">6.1.7&nbsp;&nbsp;Blokkering en versnelling</a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.1.8">6.1.8&nbsp;&nbsp;Differentiaalbeveiliging</a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.1.9">6.1.9&nbsp;&nbsp;Distantiebeveiliging</a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.1.10">6.1.10&nbsp;&nbsp;Spanningsbeveiligingen</a></li>
+              </ul>
+              <li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.2">6.2&nbsp;&nbsp;Beveiligen van aansluitingen</a></li>
+            </ul>
+            <p></p>
+          </div>
+          <div class="col-md-6">
+            <ul style="list-style-type:none">
+              <li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.3">6.3&nbsp;&nbsp;Transformatorbeveiliging</a></li>
+              <ul style="list-style-type:none">
+                <li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.3.1">6.3.1&nbsp;&nbsp;Distributietransformator</a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.3.2">6.3.2&nbsp;&nbsp;Voedingstransformator</a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.3.3">6.3.3&nbsp;&nbsp;Regeltransformator</a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.3.4">6.3.4&nbsp;&nbsp;Aardingstransformator</a></li>
+              </ul>
+              <li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.4">6.4&nbsp;&nbsp;Beveiliging in de netten</a></li>
+              <ul style="list-style-type:none">
+                <li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.4.1">6.4.1&nbsp;&nbsp;MS-transportnetten</a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.4.2">6.4.2&nbsp;&nbsp;MS-distributienetten</a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.4.3">6.4.3&nbsp;&nbsp;Uitlopers</a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.4.4">6.4.4&nbsp;&nbsp;Beveiliging in netten met zwevend sterpunt</a></li>
+              </ul>
+              <li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.5">6.5&nbsp;&nbsp;Betrouwbaarheid van de beveiliging</a></li>
+              <li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.6">6.6&nbsp;&nbsp;Afschakelbare belasting</a></li>
+              <li><a href="https://www.phasetophase.nl/boek/boek_1_6.html#_6.7">6.7&nbsp;&nbsp;Decentrale opwekking</a></li>
+            </ul>
+            <p></p>
+          </div>
+        </div>
+		
+        <hr>
+		<div id="_6">
+          <h1>Beveiliging</h1>
+        </div>
+        <p> Bij een kortsluiting treden zeer grote stromen op, die grote krachten veroorzaken en die de kabels en installaties kunnen beschadigen. Ook stijgt de
+          temperatuur in kabels, transformatoren en railsystemen in korte tijd zeer snel, waardoor schade ontstaat. Deze schade hoeft zich niet in alle gevallen
+          direct te openbaren. Met name bij kabels en transformatoren cumuleren incidentele temperatuurstijgingen in beschadigingen in de isolatie, die op een later
+          tijdstip kan bezwijken. Hierom moet in principe elke kortsluiting zo snel mogelijk worden afgeschakeld. De afschakeling moet bovendien selectief gebeuren
+          om zo weinig mogelijk klanten te hinderen. Een korte afschakeltijd voor grote kortsluitstromen heeft als bijkomend voordeel dat de spanningsdip, die
+          optreedt ten gevolge van een grote kortsluitstroom, korter van duur is. Dit geeft bij de omliggende klanten minder verstoring. </p>
+        <p> Om een kortsluiting af te schakelen en om de gevolgen van een kortsluiting te beperken wordt een beveiligingssysteem aangebracht. De beveiliging heeft een
+          drieledig doel: </p>
+        <ul>
+          <li> beperken van de materiële schade </li>
+          <li> beperken van hinder en overlast </li>
+          <li> waarborgen van de persoonlijke veiligheid. </li>
+        </ul>
+        <h6> Beperken van de materiële schade </h6>
+        <p> Een beveiligingssysteem beperkt de mogelijke gevolgschade aan de infrastructuur van een elektriciteitsnet in geval van een kortsluiting. De beveiliging
+          doet dit door de gestoorde netgedeelten of de gestoorde componenten voldoende snel van het ongestoorde net te scheiden en hiermee de schade door de
+          vloeiende kortsluitstroom te minimaliseren. De investeringskosten voor de beveiliging moeten in verhouding staan tot de te voorkomen schade en de kans
+          daarop. </p>
+        <h6> Beperken van hinder en overlast </h6>
+        <p> Bij een kortsluiting moet liefst alleen de gestoorde component worden uitgeschakeld. Aangezien het uit economische overwegingen niet haalbaar is alle
+          componenten individueel te beveiligen, zullen in een net alleen op strategische plaatsen beveiligingen worden opgenomen die selectief een beperkt netdeel
+          afschakelen. Het principe hierbij is, dat het aantal aangeslotenen die niet rechtstreeks door de storing zijn getroffen, maar toch worden afgeschakeld, zo
+          klein mogelijk is. Een juiste keuze van de beveiligingen, qua type en instelling, en een juiste keuze van de locaties in de netten, is belangrijk voor de
+          goede werking van de beveiliging en is een belangrijk onderdeel van het ontwerpproces van een elektriciteitsnet. </p>
+        <h6> Waarborgen van de persoonlijke veiligheid </h6>
+        <p> Bij een kortsluiting kunnen lichtbogen en explosies voorkomen. Ook kunnen de kortsluitstromen leiden tot hoge aanrakingsspanningen en stapspanningen. Het
+          aardingssysteem reduceert de gevaarlijke spanningen, maar een snelle afschakeling levert de grootste bijdrage aan de persoonlijke veiligheid. </p>
+        <p> De drie genoemde beveiligingsdoelen zijn vaak strijdig met elkaar, zodat er meestal compromissen moeten worden gesloten. Bijvoorbeeld, vanwege het beperken
+          van de materiële schade en vanwege het waarborgen van de persoonlijke veiligheid moet altijd zo snel mogelijk worden afgeschakeld. Echter, het
+          beperken van hinder kan worden verkregen door achterelkaar geplaatste beveiligingen met een toenemende tijdvertraging te laten werken. Om te voorkomen dat
+          beveiligingen onterecht uitschakelen mogen de tijdmarges niet te krap worden gekozen, waardoor in sommige gevallen de kortsluitstroom een relatief lange
+          tijd kan vloeien. Bij alle keuzes staat echter voorop dat de beveiliging primair de persoonlijke veiligheid moet waarborgen; materiële schade en
+          hinder zijn hieraan ondergeschikt. </p>
+        <h6>Kortsluiting en overbelasting</h6>
+        <p> In principe kunnen alle componenten in het distributiesysteem getroffen worden door een storing, leidend tot een kortsluiting. Het meest berucht zijn de
+          kortsluitingen in kabelverbindingen door graafwerkzaamheden of werking van de bodem of door spontane kortsluitingen in verbindingsmoffen. De stroom die dan
+          vloeit, veroorzaakt grote mechanische krachten en een grote warmteontwikkeling in de overige stroomvoerende componenten van het net. De grootte van de
+          kortsluitstroom hangt af van het kortsluitvermogen van de voedingsbron, de afstand en daarmee de impedantie naar de foutplaats en het type kortsluiting.
+          Meer hierover in hoofdstuk 10. </p>
+        <p> Overbelasting kan optreden indien de belasting onvoorzien groter is dan oorspronkelijk voorzien. Ook ondoordachte omschakelacties in een distributienet
+          kunnen leiden tot overbelasting. De beveiliging kan het net voldoende beschermen tegen deze ongewenste situaties. </p>
+        <p> Meestal is het beveiligingssysteem alleen gedimensioneerd om kortsluitstromen af te schakelen. In dat geval moet men alert zijn voor het grijze gebied,
+          tussen de maximaal toelaatbare stroom van de componenten in het net en het aanspreekniveau van de beveiliging. In voedingstransformatoren worden
+          overbelastingen in het algemeen wel door een beveiliging afgeschakeld, maar bij kabels en nettransformatoren is dat meestal niet het geval. </p>
+        <h6>Selectiviteit</h6>
+        <p> Selectiviteit is een belangrijk begrip voor elektrische netwerken waarin, tussen de voeding en de foutplaats, twee of meer beveiligingstoestellen aanwezig
+          zijn. Als in een elektriciteitsnet een kortsluiting ontstaat, moet het gedeelte waarin zich de fout bevindt zo snel mogelijk worden afgeschakeld voordat er
+          op enige plaats in het net aanrakingsspanningen, stapspanningen, temperaturen of krachten optreden die schade kunnen veroorzaken. Het afgeschakelde
+          gedeelte moet zo klein mogelijk zijn en er moet zo dicht mogelijk bij de fout worden afgeschakeld. Dit wordt selectief afschakelen genoemd. Hiermee wordt
+          bereikt dat de gevolgen van een overbelasting of kortsluitstroom tot een zo klein mogelijk deel van het netwerk worden beperkt en dat zo weinig mogelijk
+          klanten door een onderbreking worden getroffen. Het type beveiliging dat wordt gebruikt en de instelling van de beveiliging hangen nauw samen met de
+          netstructuur en de gewenste selectiviteit. </p>
+        <h6>Betrouwbaarheid</h6>
+        <p> Bij een storing moeten de dichtstbijzijnde smeltveiligheden de kortsluitstroom onderbreken of moeten vermogenschakelaars openen. Een vermogenschakelaar
+          ontvangt hiervoor een uitschakelcommando van de beveiliging. Een beveiliging kan echter defect zijn of een vermogenschakelaar kan weigeren. Om die reden is
+          vaak een reservebeveiliging (ofwel back-up beveiliging) aangebracht, die de kortsluiting bij een weigering niet-selectief afschakelt. </p>
+        <p> De beveiliging in elektriciteitsnetten is afgestemd op hun specifieke functie. Netten op verschillende spanningsniveaus verschillen van structuur en er
+          worden specifieke eisen gesteld aan de betrouwbaarheid van de energielevering. Zo hebben transportnetten meestal een vermaasde structuur en hebben een
+          enkelvoudige storingsreserve zonder energie onderbreking, zodat bij een kortsluiting alleen de gestoorde component snel wordt afgeschakeld. Hierbij kan het
+          transportnet ongestoord blijven functioneren. In een distributienet wordt bij een storing een, liefst zo klein mogelijk, netdeel afgeschakeld, waarvan na
+          isoleren van de fout de levering wordt hersteld. Deze verschillen zijn terug te vinden in de keuzes voor de typen en de instellingen van de beveiliging.
+          Onderstaande beveiligingssystemen worden toegepast: </p>
+        <ul>
+          <li> MS-transportnetten: </li>
+          <ul>
+            <li> distantiebeveiliging </li>
+            <li> differentiaalbeveiliging </li>
+            <li> maximaalstroomtijdbeveiliging </li>
+            <li> energierichtingsbeveiliging </li>
+          </ul>
+        </ul>
+        <ul>
+          <li> MS-distributienetten: </li>
+          <ul>
+            <li> maximaalstroomtijdbeveiliging </li>
+            <li> differentiaalbeveiliging </li>
+            <li> smeltveiligheden </li>
+          </ul>
+        </ul>
+        <ul>
+          <li> LS-distributienetten: </li>
+          <ul>
+            <li> smeltveiligheden </li>
+            <li> automaten. </li>
+          </ul>
+        </ul>
+        <a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_6.1"></div>
+        <br>
+        <h2> 6.1 Beveiligingscomponenten </h2>
+        <h3> 6.1.1 Principe van stroombeveiliging </h3>
+        <p> De stroom kan zich bevinden in het normaal bedrijfsgebied, in het overbelastinggebied of in het kortsluitgebied. Stromen onder de nominale stroomsterkte
+          bevinden zich in het normale bedrijfsgebied. Bijna alle storingen in het elektriciteitsnet leiden tot een toename van de stroom en kunnen veroorzaakt zijn
+          door een overbelasting of een sluiting. De grens tussen het overbelastinggebied en het kortsluitgebied is niet altijd duidelijk te leggen. </p>
+        <p> Een stroombeveiliging meet de stroom en is in staat is om een kortsluiting vast te stellen en deze zo nodig op te heffen. Een kortsluiting kan optreden op
+          een rail, in een kabel, in een transformator of in een elektrische machine. </p>
+        <p> Het meest toegepaste beveiligingsprincipe is de maximaal stroom-tijdbeveiliging. Deze beveiliging bewaakt de maximaal toelaatbare stroom in een kabel,
+          transformator of elektrische machine. Bij een te grote stroom, die de maximaal toelaatbare stroom van het te beveiligen object gedurende een bijbehorende
+          tijd overschrijdt, zal de beveiliging uitschakelen. De te grote stroom kan onder andere veroorzaakt worden door: </p>
+        <ul>
+          <li> Overbelasting </li>
+          <li> Kortsluiting </li>
+          <li>Inschakelverschijnsel (een grote overbelasting van zeer korte duur). </li>
+        </ul>
+        <p> De meest toegepaste beveiligingscomponenten zijn de stroombeveiliging en de smeltveiligheid. De stroombeveiliging bepaalt aan de hand van de signalen die
+          hij ontvangt van de stroom- en spanningstransformatoren of er sprake is van een kortsluiting. Is dat het geval dan geeft hij (na een eventuele
+          tijdsvertraging) een uitschakelcommando aan de vermogenschakelaar, waarna deze voor de onderbreking van de stroom zorgt. De smeltveiligheid kan worden
+          opgevat als een combinatie van een beveiliging en een vermogenschakelaar, omdat hij een kortsluitstroom zelf onderbreekt op grond van zijn karakteristiek. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_6.1.2"></div>
+        <br>
+        <h3> 6.1.2 Smeltveiligheden </h3>
+        <p> Bij het beveiligen van elektrische netten en installaties of delen daarvan wordt veelvuldig gebruik gemaakt van smeltveiligheden. Voordelen zijn dat een
+          smeltveiligheid relatief goedkoop is, een hoge beschikbaarheid heeft, zeer snel is en stroombegrenzend is. Nadelen zijn dat de smeltpatroon na afschakeling
+          defect is en dus niet zelfherstellend is en dat hij een beperkt toepassingsgebied heeft. Er zijn grote verschillen in de technische constructie en de
+          eigenschappen van smeltveiligheden. Deze verschillen betreffen het gedrag in overbelastings- en kortsluitsituaties en de verschillende toepassingsgebieden
+          met hun specifieke problemen. </p>
+        <p> Smeltveiligheden zijn in het algemeen zeer geschikt voor het afschakelen van kortsluitstromen. Daarnaast moet een smeltveiligheid de volgende eigenschappen
+          hebben: </p>
+        <ul>
+          <li>continu de nominale stroom kunnen geleiden zonder de omgeving ontoelaatbaar te verwarmen </li>
+          <li>regelmatige en kortstondige overbelastingen ten gevolge van het inschakelen van apparatuur kunnen verdragen </li>
+          <li>de boogenergie kunnen verwerken zonder andere componenten in de omgeving te beschadigen </li>
+          <li>de kortsluitstromen kunnen onderbreken zonder dat daarbij de smeltveiligheid uitwendig wordt beschadigd </li>
+          <li>bij kortsluitingen voldoende stroombegrenzend zijn. </li>
+        </ul>
+        <p> Een smeltveiligheid onderbreekt een te hoge stroom altijd, doordat de geleidende delen doorsmelten bij het voeren van de te hoge stroom. Als de
+          smeltveiligheid een stroom voert die net groot genoeg is om het smeltproces in te zetten, kan het voorkomen dat de stroom niet of pas na lange tijd
+          onderbreekt. Dit onzekere gebied wordt het kritische gebied van de smeltveiligheid genoemd. Er zijn verschillende soorten smeltveiligheden op de markt, die
+          zich onderscheiden in de grootte van het kritische gebied (Wright, 2004). In volgorde van afnemend kritisch gebied: Back-Up, General Purpose en Full Range
+          smeltveiligheden. </p>
+        <ul>
+          <li>De Back-Up smeltveiligheid moet alle stromen kunnen onderbreken tussen een door de fabrikant gespecificeerde minimum onderbrekingsstroom en de
+            nominale onderbrekingsstroom. </li>
+          <li>De General Purpose smeltveiligheid moet alle stromen kunnen onderbreken tussen de stroom die de smeltveiligheid in één uur doet
+            doorsmelten en de nominale onderbrekingsstroom. </li>
+          <li>De Full Range smeltveiligheid moet alle stromen kunnen onderbreken tussen de kleinste stroom die de smeltveiligheid doet doorsmelten en de nominale
+            onderbrekingsstroom. </li>
+        </ul>
+        <p> Voor een General Purpose smeltveiligheid is de minimum onderbrekingsstroom 1,5 maal de nominale stroom en voor een Back Up smeltveiligheid is de waarde 2,5
+          tot 3 maal de nominale stroom. Bij een Full Range smeltveiligheid is het kritische gebied erg beperkt en deze smelt zowel bij overbelasting als bij
+          kortsluitingen. De Back-up en General Purpose smeltveiligheden hebben een groter kritisch gebied en werken vooral bij kortsluitingen goed. De
+          MS-smeltveiligheden zijn Full-Range patronen. Figuur 6.1 illustreert de karakteristieken van een reeks smeltveiligheden voor toepassing in MS-netten. </p>
+        <img src="./beveiliging_files/6.1.png" width="717" height="464" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.1 Karakteristieken van MS-smeltveiligheden </h5>
+        <h6> Toepassing in middenspanningsnetten </h6>
+        <p> In middenspanningsnetten worden smeltveiligheden het meest toegepast als kortsluitbeveiliging bij distributietransformatoren en soms voor beveiliging van
+          uitlopers in het 10 kV-net. Dit is economisch aantrekkelijker dan de toepassing van vermogenschakelaars. Bovendien vragen smeltveiligheden minder ruimte.
+          Bij het kiezen van de juiste smeltveiligheid moet rekening worden gehouden met de inrush stroom die optreedt bij het inschakelen van een onbelaste
+          transformator. In de praktijk zal men daarom de waarde van de smeltveiligheid op 1,5 tot 2,5 maal de nominale waarde van de transformatorstroom kiezen. </p>
+        <p> Bij motoren worden de smeltveiligheden door de aanloopstromen vaak zwaar belast. Een ongewenste afschakeling tijdens het aanlopen kan hiervan het gevolg
+          zijn. Dit kan worden voorkomen door een smeltveiligheid te kiezen, waarvan de smeltstroom groter is dan de aanloopstroom. Tevens zijn de factoren
+          aanlooptijd en het aantal inschakelingen per tijdseenheid van belang. </p>
+        <p> In een zwevend net zal in het geval van een aardfout een aardfoutstroom gaan lopen, waarvan de grootte wordt bepaald door de capaciteit van het net. Samen
+          met de belastingstroom kan de stroom door de smeltveiligheid dan een waarde bereiken die ligt tussen de minimum smeltstroom en de minimum
+          onderbrekingsstroom. Stromen tussen deze twee waarden bevinden zich in het gebied waarbinnen de afschakeling onzeker is, indien General Purpose en Back-up
+          smeltveiligheden zijn toegepast. Als deze situatie een grote kans van optreden heeft, dan zullen Full Range smeltveiligheden moeten worden toegepast of
+          moet er een andere oplossing gezocht worden met bijvoorbeeld een vermogenschakelaar. </p>
+        <p> Sommige uitvoeringen van smeltpatronen hebben een uitschakel- of meldermechanisme. Daarbij wordt na het doorsmelten een slagstift naar buiten gestoten. De
+          verplaatsing van deze slagstift kan worden gebruikt voor signalering of voor het tot uitschakeling brengen van een driefasige lastscheider of
+          vermogenschakelaar. Dit zorgt ervoor dat in het onzekere gebied, waarin niet alle smeltveiligheden zullen doorsmelten, toch een driefasige afschakeling
+          plaatsvindt. </p>
+        <p> In het gebied dat ligt tussen de nominale en de minimum smeltstroomwaarde kunnen de stromen door een smeltveiligheid moeilijk worden geblust. Hierbij doet
+          zich een sterke warmteontwikkeling voor met het bijkomende gevaar dat zich in de smeltveiligheid te veel warmte ontwikkelt. Dit levert de kans op explosie
+          van de smeltveiligheid of de kans op zelfontbranding van de installatie, waarin die smeltveiligheid is opgenomen. Dit komt in de praktijk af en toe voor. </p>
+        <p> Met uitzondering van de Full-range patronen zijn MS-smeltveiligheden in het algemeen minder geschikt als overbelastingsbeveiliging en beter geschikt als
+          kortsluitbeveiliging. </p>
+        <p> Een probleem van smeltveiligheden is de warmteontwikkeling. Bij vermogens hoger dan 630 kVA (36 A bij 10 kV) warmen de MS-smeltpatronen teveel op. De
+          warmte neemt kwadratisch toe met de stroom (I<sup>2</sup>R). Hierdoor kunnen de houders van de installatie in een netstation, bijvoorbeeld een Magnefix,
+          thermisch overbelast raken. Zodoende wordt in het geval dat het vermogen van de aansluiting groter dan 630 kVA is, bij voorkeur gebruik gemaakt van een
+          vermogenschakelaar en beveiligingsrelais. Er is ook een mogelijkheid om voor zwaardere MS-smeltpatronen te kiezen. Hierdoor ontstaan er echter problemen
+          met de selectiviteit met de beveiligingen in de LS-strengen. Daarom wordt voor vermogens groter dan 630 kVA gekozen voor beveiligingen met
+          vermogenschakelaars waardoor de beoogde selectiviteit behouden blijft. </p>
+        <h6>Kapstroom</h6>
+        <p> In een smeltveiligheid kan de kortsluitstroom binnen zeer korte tijd worden onderbroken. De tijdsduur is afhankelijk van de energie die nodig is om de
+          patroon bij kortsluiting te doen doorsmelten. Door de constructie van de patroon wordt de stroom begrensd op een waarde die lager ligt dan de te verwachten   topwaarde (prospectieve kortsluitstroom). Daarna zal de stroom snel naar nul afnemen. De doorgelaten maximale waarde van de stroom wordt de kapstroom
+          genoemd. De kapstroomkromme geeft het verband weer tussen de hoogte van de doorgelaten stroom en de hoogte van de prospectieve kortsluitstroom door de
+          smeltveiligheid. De prospectieve kortsluitstroom is de waarde van de stroom die in geval van kortsluiting zou gaan lopen indien er geen
+          beveiligingscomponent in het circuit zou zijn opgenomen. Figuur 6.2 illustreert dit. </p>
+        <img src="./beveiliging_files/6.2.png" width="412" height="258" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.2 Kapstroomkromme van een smeltveiligheid </h5>
+        <p> Op tijdstip t<sub>0</sub> treedt de kortsluiting op. Wanneer er geen beveiligingscomponent zou zijn geïnstalleerd, zou de volledige prospectieve   kortsluitstroom gaan lopen (gestippelde lijn). Bij toepassing van een smeltveiligheid gebeurt het volgende. </p>
+        <ul>
+          <li> Van t<sub>0</sub> tot t<sub>1</sub> wordt het smeltbandje als gevolg van de kortsluitstroom heel snel opgewarmd. Op t<sub>1</sub> smelt het bandje.
+            Waar voorheen sprake was van geleiding ontstaat een boogontlading in de smeltveiligheid, waarna de stroom wordt onderbroken (gekapt). De hoeveelheid
+            energie (I<sup>2</sup>t) die nodig is om het bandje te doen smelten wordt I<sup>2</sup>t<sub>smelt</sub> genoemd. Dit is de energie tot aan t <sub>1</sub>. </li>
+          <li> Op t<sub>1</sub> wordt de stroom echter nog niet onderbroken. De boogspanning van de boogontlading drukt de stroom weliswaar snel naar nul, maar er     loopt nog steeds enige stroom vanwege de boogontlading. Zolang er stroom loopt wordt er dus ook nog energie (I<sup>2</sup>t) doorgelaten. De
+            hoeveelheid doorgelaten energie van t<sub>1</sub> tot t<sub>2</sub> wordt I<sup>2</sup>t<sub>boog</sub> genoemd. Pas bij t<sub>2</sub> is de stroom
+            definitief onderbroken. De totale hoeveelheid energie die van t<sub>0</sub> tot t<sub>2</sub> is doorgelaten wordt I<sup>2</sup>t<sub>totaal</sub> genoemd. I<sup>2</sup>t<sub>totaal</sub> is dus gelijk aan de som van I<sup>2</sup>t<sub>smelt</sub> en I<sup>2</sup>t<sub>boog</sub>. </li>
+        </ul>
+        <a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_6.1.3"></div>
+        <br>
+        <h3> 6.1.3 Beveiligingsrelais </h3>
+        <p> De algemene benaming van een beveiligingsapparaat dat op basis van een meting een uitschakelcommando aan een vermogenschakelaar geeft, is
+          beveiligingsrelais of, kortweg, relais. Een relais wordt toegepast voor die situaties dat de beveiliging moet reageren op andere grootheden dan alleen de
+          stroom die gedurende een bepaalde tijdsduur vloeit of als een andere onderbrekingskarakteristiek moet worden toegepast dan die van een smeltveiligheid.
+          Afhankelijk van de grootheid die gemeten moet worden staan verschillende soorten beveiligingsrelais ter beschikking. Een beveiligingsrelais is opgebouwd
+          uit drie basiselementen. </p>
+        <ul>
+          <li> Een element om te meten </li>
+          <li> Een element om te vergelijken </li>
+          <li>Een element om een uitschakelcommando te verzorgen. </li>
+        </ul>
+        <p> Figuur 6.3 geeft het schematische overzicht van de basisopbouw van een beveiligingsrelais. Het meetelement zorgt voor een omzetting van de primair gemeten
+          grootheid in een signaalsoort en een signaalwaarde, die in het vergelijkingselement van het beveiligingscircuit vergeleken kunnen worden. In het
+          vergelijkingselement worden de gemeten waarden vergeleken met de ingestelde waarden. </p>
+        <p> Bij overschrijding van één waarde, of een combinatie van ingestelde waarden, gedurende een tijdsinterval dat langer is dan een ingestelde
+          tijdsduur, wordt door het besliselement een uitschakelcommando gegeven. </p>
+        <img src="./beveiliging_files/6.3.png" width="671" height="157" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.3 Basisopbouw van een relais </h5>
+        <p> Van een relais bestaan verschillende uitvoeringsvarianten. Beveiligingsrelais worden los van hun meetfunctie in twee hoofdsoorten ingedeeld. </p>
+        <ul>
+          <li>Elektromechanische relais (primaire en secundaire relais); </li>
+          <li>Statische relais (analoge relais en microprocessor gestuurde relais). </li>
+        </ul>
+        <h6>Elektromechanische relais</h6>
+        <p> Elektromechanische relais zijn meestal robuust uitgevoerd. Ze bevatten een aantal onderdelen zoals ankers, ferrarisschijven, kleine synchrone motoren of
+          draaispoelrelais die bewegen door de invloed van magnetische velden. Elektromechanische relais zijn vooralsnog de meest voorkomende beveiligingsapparaten
+          in de netten. Door de snelle ontwikkelingen in de elektronica worden bij vervanging statische relais (zie verderop) toegepast. De relais worden gebruikt in
+          het primaire en secundaire circuit. </p>
+        <h6> Primair beveiligingsrelais </h6>
+        <p> Het primair beveiligingsrelais is een relais dat eenvoudige beveiligingstaken verricht, zoals bijvoorbeeld het bewaken van de maximum stroom/tijd, al dan
+          niet gecombineerd met een thermische functie. Het relais is opgenomen in het primaire circuit bij de vermogenschakelaar. De energie voor het functioneren
+          van het relais wordt rechtstreeks betrokken uit het net. </p>
+        <h6> Secundair beveiligingsrelais </h6>
+        <p> Een veelvuldig toegepast relais is het secundair beveiligingsrelais. Dit relais wordt in de meeste gevallen aangesloten op meettransformatoren (stroom-
+          en/of spanningstransformatoren). Deze meettransformatoren zorgen voor een reductie van hoge spanningen en grote stromen naar standaardwaarden, die gebruikt
+          kunnen worden als ingangsignaal voor de verschillende beveiligingssystemen. De meettransformatoren zorgen tevens voor een scheiding tussen de primaire
+          installatie met hoge spanning en de op laagspanningsniveau werkende, secundaire beveiligingscircuits. Het secundaire relais heeft voor zijn functioneren
+          hulpenergie nodig. </p>
+        <h6>Statische relais</h6>
+        <p> Deze relais worden vanaf 1960 toegepast. De term ‘statisch’ impliceert dat deze relais geen bewegende delen hebben die de relaiskarakteristiek
+          bepalen. Deze taak wordt geheel door de elektronica verzorgd. De meetgrootheden worden omgezet in een signaal van een zodanige soort en grootte, dat ze
+          verwerkbaar zijn door het elektronische deel van het relais. Hier worden twee typen onderscheiden. </p>
+        <h6> Statisch analoog relais </h6>
+        <p> In dit relais worden de grootheden stroom en/of spanning omgezet in een analoog signaal en daarna (meestal) gelijkgericht. Het zo verkregen signaal wordt
+          door een elektronische schakeling verwerkt en vervolgens aan het vergelijkingsorgaan of de detectieschakeling toegevoerd, waarna het zo nodig een
+          uitschakelcommando verzorgt. Dit type relais heeft hulpenergie uit het net nodig. </p>
+        <h6> Microprocessorrelais </h6>
+        <p> Het microprocessorrelais verschilt met de andere relais doordat de ingangsgegevens, zoals stroom en spanning, worden omgezet in digitale grootheden. De
+          processor berekent vervolgens of er een overschrijding plaatsvindt van de maximale of minimale grenswaarde, waarna eventueel een uitschakelcommando volgt.
+          Vanwege de flexibiliteit en de grote rekenkracht van moderne processors, waarvan er meerdere in een relais zijn aangebracht, kan een groot aantal functies
+          in een enkel relais worden gecombineerd. </p>
+        <p> In de praktijk worden geen nieuwe elektromechanische relais meer toegepast. Hiervoor zijn de elektronische relais in de plaats gekomen. Bij nieuwbouw of
+          renovatieprojecten worden microprocessorgestuurde beveiligingen toegepast. Betrouwbaarheid, energieverbruik en werkingssnelheid zijn vergelijkbaar aan die
+          van elektronische relais, maar de mogelijkheden voor aanvullende toepassingen en berekeningen, die met behulp van de digitaal beschikbare gegevens mogelijk
+          worden, zijn groter. Zo kunnen beveiligingskarakteristieken worden aangepast en kunnen deze digitale gegevens na een gebeurtenis worden uitgelezen. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_6.1.4"></div>
+        <br>
+        <h3> 6.1.4 Meettransformatoren </h3>
+        <p> Beveiligingsrelais krijgen hun informatie uit meettransformatoren. Zij transformeren de hoge spanningen en grote stromen naar waarden die de relais
+          verwerken kunnen. Zij zorgen tevens voor de isolatie tussen het hoogspanningsnet en de secundaire installatie. </p>
+        <ul>
+          <li>Stroomtransformatoren transformeren de zeer grote primaire stromen naar de grootte die voor het relais geschikt is. De nominale waarde van de stroom
+            bedraagt veelal 1 of 5 A. Van een stroomtransformator zijn overzetverhouding, nominaal vermogen, overstroomfactor en foutklasse gespecificeerd. </li>
+          <li>Spanningstransformatoren transformeren de primaire spanning naar een waarde die voor het relais geschikt is. Een veel gebruikte secundaire spanning
+            is 100 V. Van een spanningstransformator zijn overzetverhouding, nominaal vermogen en foutklasse gespecificeerd. De foutklasse is gespecificeerd voor een
+            spanningsbereik van 5% tot 120% van de nominale spanning. </li>
+        </ul>
+        <img src="./beveiliging_files/6.4.png" width="671" height="157" alt="pics_6.4" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.4 Opstelling van meettransformatoren bij een relais </h5>
+        <p> Meettransformatoren moeten voldoen aan specifieke eisen, bijvoorbeeld ten aanzien van het isolatieniveau, de mate van verzadiging bij het meten van
+          kortsluitstromen en de nauwkeurigheid waarmee wordt gemeten. De nauwkeurigheidseisen zijn in het algemeen hoog. </p>
+        <h6>Stroomtransformator</h6>
+        <p> Stroomtransformatoren voor de beveiliging kan men herkennen aan de aanduiding ‘P’ (protection), bijvoorbeeld 5P20. Dit betekent dat de
+          nauwkeurigheid 5% is bij een overstroomfactor van 20. De overstroomfactor is de verhouding van de primaire kortsluitstroom en de primaire nominale stroom
+          van de stroomtransformator. De nauwkeurigheid wordt alleen gehaald indien de stroomtransformator door het relais of een ander beveiligingsapparaat belast
+          wordt met het nominale vermogen waarop hij ontworpen is. </p>
+        <p> De belasting van een stroomtransformator wordt gevormd door het beveiligingstoestel en het verlies in de meetleidingen. Doorgaans bedraagt het nominale
+          vermogen van een stroomtransformator 15 tot 20 VA. Is de belasting lager dan nominaal dan neemt de overstroomfactor toe. Dit is meestal het geval bij
+          statische relais. Deze hebben in vergelijking met de elektromechanische relais een relatief laag eigen verbruik. Een voorbeeld van de aanduiding van een
+          stroomtransformator is 5P20, 30 VA, 2500/5A, hetgeen betekent: </p>
+        <ul>
+          <li> nauwkeurigheid 5% </li>
+          <li>P: de functie van de transformator is protection (beveiliging) </li>
+          <li> overstroomfactor: 20 </li>
+          <li> nominaal vermogen: 30 VA </li>
+          <li> overzetverhouding: 2500 : 5. </li>
+        </ul>
+        <p> Een stroomtransformator waarop geen belasting is aangesloten, moet worden kortgesloten om beschadiging te voorkomen. De secundaire winding mag niet geopend
+          zijn. Bij een open secundaire winding vindt namelijk geen compensatie van de flux in de transformatorkern plaats en raakt de kern sterk in verzadiging,
+          waardoor deze kan verbranden. </p>
+        <img src="./beveiliging_files/6.5.png" width="223" height="145" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.5 Stroomtransformatoren </h5>
+        <h6>Spanningstransformator</h6>
+        <p> Het werkingsprincipe van de spanningstransformator is gebaseerd op dat van een gewone vermogenstransformator met twee wikkelingen. De hoge primaire
+          spanning wordt getransformeerd naar een secundaire spanning van 100 V of 100/√3 V. </p>
+        <p> Het bijzondere van spanningstransformatoren voor beveiligingsfuncties is dat verlangd wordt dat deze ook bij zeer lage spanningen een aanvaardbare kleine
+          overzetfout vertonen. Dit is noodzakelijk omdat bij kortsluitingen de spanning in het net tot zeer lage waarden kan dalen. Spanningstransformatoren voor
+          beveiligingsfuncties worden aangeduid met de klassen 3P en 6P. Dit wil zeggen dat de overzetfout bij 5% van de nominale spanning en bij de hoogste spanning
+          die in het elektriciteitsnet kan voorkomen (tot <em>1,9 · U<sub>nom</sub></em>) niet groter mag zijn dan 3% respectievelijk 6%. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_6.1.5"></div>
+        <br>
+        <h3> 6.1.5 Maximaal stroom-tijdrelais </h3>
+        <p> Het meest toegepaste beveiligingssysteem is de maximaal stroom-tijdbeveiliging (MST). Deze beschermt het elektriciteitnet tegen de gevolgen van een te hoge
+          stroom door het circuit. Bij deze beveiliging wordt onderscheid gemaakt tussen: </p>
+        <ul>
+          <li> Onafhankelijke MST (OMT-relais): bij voortdurende overschrijding van een ingestelde waarde van de stroom volgt een uitschakelbevel op een ingesteld
+            tijdstip </li>
+          <li> Afhankelijke MST (AMT-relais): bij voortdurende overschrijding van een ingestelde waarde van de stroom volgt een uitschakelbevel; de tijdsduur
+            waarna een uitschakelbevel volgt, is afhankelijk van de mate waarin de stroom de ingestelde waarde overschrijdt. </li>
+        </ul>
+        <p> Deze methode van beveiligen is eenvoudig, betrouwbaar en goedkoop. De MST is onderdeel van het drietal: stroomtransformator – relais –
+          vermogenschakelaar. De stroom van het primaire circuit wordt door de stroomtransformator omgezet naar het lagere stroomniveau van het relais. Vervolgens
+          wordt de stroom door het relais beoordeeld. Indien de gemeten stroom hoger is dan een ingestelde waarde, zal het relais de vermogenschakelaar opdracht
+          geven uit te schakelen. </p>
+        <p> De MST kan ook als back-up beveiliging voor weigerende achterliggende vermogenschakelaars en beveiligingen worden ingezet. Voor de werking is geen
+          communicatie benodigd. </p>
+        <p> Naast deze voordelen zijn er ook nadelen. Zo is de MST alleen toepasbaar in straalvormig bedreven netten, waarbij de stroom in één richting van
+          onderstation naar de uiteinden van het net vloeit. Bovendien worden door de tijdstaffeling, die nodig is om de selectiviteit in radiale netten te
+          verkrijgen, de afschakeltijden groter, naarmate de streng dichter bij het onderstation ligt. </p>
+        <h6>Onafhankelijke maximaal stroom-tijdrelais (OMT)</h6>
+        <p> De onafhankelijke maximaal stroom-tijdbeveiliging geeft een uitschakelcommando aan een vermogenschakelaar van de streng wanneer het ingangssignaal van het
+          relais de ingestelde waarde overschrijdt (de gemeten waarde is groter dan de ingestelde waarde) en de tijdsduur van de overschrijding langer is dan de op
+          het beveiligingsrelais ingestelde tijd. </p>
+        <p> Daalt het ingangssignaal onder de ingestelde grenswaarde voordat de ingestelde tijd is verlopen, dan valt het relais terug in zijn normaalpositie en volgt
+          er geen uitschakelcommando. Het relais geeft wel een indicatie dat het is aangesproken. </p>
+        <p> De uitschakeltijd is onafhankelijk van de grootte van de stroom. De meeste onafhankelijke maximaal stroom-tijdrelais hebben de mogelijkheid tot instelling
+          van één of meer stroomgrenzen met bijbehorende uitschakeltijden. Veelal hebben de relais ook een instelmogelijkheid voor een stroomgrenswaarde,
+          die tot directe uitschakeling leidt. De uitschakeltijd is dan gelijk aan de reactietijd van het relais (ongeveer 30 ms) en die van de vermogenschakelaar
+          (40 tot 80 ms). Doel hiervan is het beperken van de schade bij grote kortsluitstromen. </p>
+        <img src="./beveiliging_files/6.6.png" width="353" height="228" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.6 Uitschakelkarakteristiek van een OMT-relais </h5>
+        <p> Figuur 6.6 geeft de karakteristiek van het onafhankelijk maximum stroomtijdrelais, waarin de ingestelde stroomwaarde 250 A en de uitschakeltijd
+          0,3 s is. </p>
+        <h6> Afhankelijke maximaal stroom-tijdrelais (AMT) </h6>
+        <p> Bij dit type beveiliging is de uitschakeltijd afhankelijk van de stroomsterkte: hoe groter de stroom, hoe sneller afschakeling volgt. Ook de
+          smeltveiligheid heeft deze eigenschap. Het grote voordeel van een beveiliging met AMT-relais is dat door het snelle afschakelen bij grote stromen de
+          installatie beter beveiligd wordt tegen grote kortsluitstromen. Het verkrijgen van selectiviteit tussen achter elkaar geschakelde beveiligingstoestellen is
+          moeilijker dan bij een OMT-relais. Bij lage kortsluitstromen kan de belastingstroom (de voorbelasting) de werking beïnvloeden. </p>
+        <p> Het uitschakelkarakter maakt dit relais zeer geschikt voor het beschermen van motoren, transformatoren en kabels. Figuur 6.7 illustreert de karakteristiek
+          van een afhankelijk maximaal stroom-tijdrelais, waarin de ingestelde stroomwaarde (I&gt;) gelijk is aan 250 A. </p>
+        <p> Zowel het OMT als het AMT relais kunnen ook voorzien worden van een begrenzing, aangegeven met I&gt;&gt;. Deze begrenzing zorgt ervoor dat boven een
+          bepaalde stroomwaarde het relais sneller een uitschakelcommando geeft dan het op grond van de karakteristiek zou doen. Figuur 6.8 illustreert dit voor een
+          waarde van I&gt;&gt; gelijk aan 1000 A en t&gt;&gt; gelijk aan 0,3 s. In feite is dit een combinatie van een afhankelijk en een onafhankelijk relais. </p>
+        <div class="row">
+          <div class="col-md-6">
+            <h5> <img src="./beveiliging_files/6.7.png" width="356" height="309" alt="pics_1.6" class="img-responsive-leon-15px center-block"> Figuur 6.7 Uitschakelkarakteristiek van een AMT-relais </h5>
+          </div>
+          <div class="col-md-6">
+            <h5> <img src="./beveiliging_files/6.8.png" width="361" height="309" alt="pics_1.6" class="img-responsive-leon-15px center-block"> Figuur 6.8 Uitschakelkarakteristiek van een begrensd AMT-relais </h5>
+          </div>
+        </div>
+        <h6>Selectiviteit </h6>
+        <p> Indien in een radiaal bedreven net meerdere beveiligingen achter elkaar worden toegepast, moet vanwege de gewenste selectiviteit de staffeltijd van de
+          beveiligingen van het uiteinde van het net naar de voedingsbron toe oplopen. De insteltijden van twee opeenvolgende relais moeten zodanig zijn dat het
+          relais dat zich het dichtst bij de fout bevindt als eerste het uitschakelcommando geeft. Weigert de vermogenschakelaar die door het relais wordt
+          geactiveerd, dan zal een voorliggende beveiliging iets later in de tijd alsnog de voorliggende vermogenschakelaar activeren. Deze tweede vermogenschakelaar
+          met beveiliging fungeert hierbij als back-up van de weigerende schakelaar. Dit geldt niet alleen voor twee opeenvolgende relais op hetzelfde
+          spanningsniveau, maar ook voor twee beveiligingen aan weerszijden van een transformator. Zo moet het relais aan de primaire zijde van een
+          distributietransformator selectief zijn met de smeltveiligheid aan de secundaire zijde. </p>
+        <p> Bij het staffelen van de tijdinstellingen moet rekening gehouden worden met de eigen schakeltijd van de vermogenschakelaar, die ongeveer 40 tot 80 ms is.
+          Rekening houdend met vele onzekerheden in het beveiligingscircuit zoals de spreidingen in de uitschakeltijden, wordt bij het staffelen van de tijd in
+          circuits met elektromechanische relais een marge van 0,3 tot 0,5 s aangehouden. Voor statische relais zou een kleinere marge kunnen worden aangehouden.
+          Figuur 6.9 illustreert de tijdstaffeling van twee relais. Hierin is ‘AMT-relais 2’ dichter bij de voeding geplaatst dan
+          ‘AMT-relais’, hetgeen tot uiting komt doordat van de karakteristiek van ‘AMT-relais 2’ zowel de stroom- als de tijdinstellingen
+          groter zijn dan van ‘AMT-relais’. Bovendien is te zien dat de tijdstaffeling voor lage stroomwaarden het grootst is. Voor de selectiviteit is
+          het belangrijk dat de marge voor alle afschakeltijden in de karakteristiek voldoet en dat de karakteristieken elkaar niet kruisen. </p>
+        <img src="./beveiliging_files/6.9.png" width="711" height="350" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.9 Tijdstaffeling van twee AMT-relais </h5>
+        <h6>Genormeerde karakteristieken </h6>
+        <p> Bij het instellen van de beveiligingen kan worden gekozen uit een grote hoeveelheid mogelijkheden. Voor de tijdstaffeling moet eerst een normkarakteristiek
+          worden gekozen. In de internationale standaards is in IEC 60255 een aantal normkarakteristieken gedefinieerd. Deze karakteristieken zijn opgenomen in tabel
+          6.1. </p>
+        <h5> Tabel 6.1  Inverse beveiligingskarakteristieken  volgens IEC 60255 </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="25%" valign="top"><p> <strong>Normkarakteristiek</strong> </p></td>
+              <td width="25%" valign="top"><p align="center"> Standard inverse (SI) </p></td>
+              <td width="25%" valign="top"><p align="center"> Very inverse (VI) </p></td>
+              <td width="25%" valign="top"><p align="center"> Extremely inverse (EI) </p></td>
+            </tr>
+            <tr>
+              <td height="100"><p> Functie </p></td>
+              <td align="center"><img src="./beveiliging_files/formule-tabel-6.1a.png" width="123" height="78" alt=""></td>
+              <td align="center"><img src="./beveiliging_files/formule-tabel-6.1b.png" width="99" height="74" alt=""></td>
+              <td align="center"><img src="./beveiliging_files/formule-tabel-6.1c.png" width="107" height="78" alt=""></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Hierin is I<sub>k</sub> de optredende kortsluitstroom en I&gt; de ingestelde stroomwaarde. De drie normkarakteristieken worden getypeerd door de steilheid
+          van hun hellingen: standard inverse (minst steile), very inverse (steiler) en extremely inverse (steilste). Deze karakteristieken zijn vaste eigenschappen
+          van oude elektromechanische relais, maar kunnen ook bij moderne statische relais ingesteld worden. Van de inverse karakteristiek moet eerst het
+          aanspreekpunt (pick up) ingesteld worden. Dit is de waarde van de stroom waarboven de timer begint te lopen. Hierna kan de afschakeltijd ingesteld worden,
+          indien wordt afgeweken van de normkarakteristieken. Figuur 6.10 illustreert de drie normkarakteristieken. </p>
+        <img src="./beveiliging_files/6.10.png" width="713" height="381" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.10 Relaiskarakteristieken volgens IEC 60255 </h5>
+        <p> In de meeste gevallen voldoet een relais met een standaard inverse karakteristiek. Indien echter geen voldoende selectiviteit kan worden verkregen, kan
+          wellicht voor een very inverse of een extremely inverse karakteristiek gekozen worden. Very inverse relais zijn met name geschikt voor het geval dat de
+          kortsluitstroom snel afneemt bij toenemende afstand van de bron. Dit is het geval bij een substantiële toename van de impedantie bij de toenemende
+          afstand. </p>
+        <img src="./beveiliging_files/6.11.png" width="512" height="252" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.11 Elektromechanische maximaal stroom-tijdbeveiligingen </h5>
+        <a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_6.1.6"></div>
+        <br>
+        <h3> 6.1.6 Energierichtingrelais </h3>
+        <p> Naast de standaard MST bestaat er een soort, waarbij ook de spanning wordt gemeten. Hierdoor kan de richting van de stroom bepaald worden. Dit wordt een
+          energierichting (ER) beveiliging genoemd. In het middenspanningsnet is het niet meer vanzelfsprekend dat de klant een pure belasting is. Door decentrale
+          opwekking (DCO) gaan stromen steeds vaker in andere richtingen lopen dan de gebruikelijke, van de bron naar de afnemer. Ook in het geval van parallelle
+          circuits is het belangrijk om op grond van de stroomrichting al dan niet een uitschakelcommando te geven. </p>
+        <p> In principe bestaat de energierichtingsbeveiliging uit een combinatie van een maximaal stroom-tijdrelais en een richtingrelais. Het MST kan onafhankelijk
+          of afhankelijk zijn. Dit relais bepaalt of de stroom boven de ingestelde waarde ligt en bepaalt het moment waarop een eventuele uitschakeling plaatsvindt.
+          Het richtingsrelais bepaalt de richting van de stroom aan de hand van de stroom en de spanning. Als de stroomvector zich in de voorwaartse richting
+          bevindt, geeft het richtingsrelais het uitschakelcommando van het MST door. Is de stroom achterwaarts, dan verhindert het richtingsrelais het
+          uitschakelcommando. </p>
+        <p> In figuur 6.12 zijn de spanningsvectoren <em>V<sub>a</sub>, V<sub>b</sub></em> en <em>V<sub>c</sub></em> van de drie fasen weergegeven, alsmede de stroomvector <em>I<sub>a</sub></em> van fase <em>a</em>. Er zijn veel manieren denkbaar om de stromen en spanningen te meten. Bij een relais is de ‘90° Quadrature Connection’
+          de standaard aansluitmethode. Bij deze methode wordt voor beveiliging van fase <em>a</em> de fasestroom <em>I<sub>a</sub></em> en de gekoppelde spanning <em>V <sub>bc</sub></em> gebruikt. Op deze manier is een voldoende grote spanningsvector voorhanden, ook al daalt de spanning in de <em>a</em>-fase bij een
+          kortsluiting tot nul. Vervolgens wordt de gekoppelde spanning <em>V<sub>bc</sub></em> gedraaid met een hoek die de karakteristieke hoek <em>RCA</em> (Relay
+          Characteristic Angle) wordt genoemd. De gemeten en gedraaide spanningsvector wordt aangeduid met <em>V’<sub>bc</sub></em>. Figuur 6.12 illustreert dit voor
+          een <em>RCA</em> van <em>45°</em>. Op deze manier wordt de maximale gevoeligheid van het relais bereikt indien de stroom met een hoek van <em>45°</em> (<em>= 90° – RCA) </em>na-ijlt op de fasespanning. </p>
+        <img src="./beveiliging_files/6.12.png" width="513" height="390" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.12 Karakteristieke hoek van een relais </h5>
+        <p> De maximale gevoeligheid van het relais wordt bereikt als de gemeten stroom dezelfde hoek heeft als de spanningsvector <em>V’<sub>bc</sub></em>. Dat is in
+          figuur 6.12 het geval als de stroomvector <em>I<sub>a</sub></em> met een hoek van<em> 90° – RCA</em>, in dit geval 45°, na-ijlt op de fasespanning <em>V<sub>a</sub></em> van fase <em>a</em>. De kleinste gevoeligheid wordt bereikt als de stroomvector <em>I<sub>a</sub></em> 45° voorijlt op de fasespanning <em>V<sub>a</sub></em> van fase a of 135° na-ijlt. In dat geval staat de stroomvector namelijk haaks op de spanningsvector <em>V’<sub>bc</sub></em>. De lijn die een hoek van 90° maakt met de spanningsvector <em>V’<sub>bc</sub></em> wordt de ‘zero torque line’ genoemd. </p>
+        <p> Bij een voorwaarts gericht richtingrelais vindt afschakeling plaats indien de stroomvector zich bevindt in het grijze gebied van figuur 6.12, dus wanneer
+          de stroom maximaal 45° voorijlt op de spanning of maximaal 135° na-ijlt. Bij moderne relais kan de karakteristieke hoek RCA worden ingesteld,
+          waardoor ook de zero torque line ingesteld kan worden. In feite komt dit neer op een cos(φ)-correctie voor de te beveiligen richting. </p>
+        <p> Stroom- en tijdstaffeling functioneert alleen goed, als de stroom door een netgedeelte altijd in dezelfde richting loopt. Is dit niet het geval, dan kunnen
+          door de toepassing van richtingrelais alsnog maximaal stroom-tijdrelais worden toegepast. Maximum stroom-tijdrichtingrelais worden meestal toegepast bij
+          parallelle kabels. Een kortsluiting in één van de parallelle kabels wordt gevoed vanuit de voedende zijde en ook vanuit de parallelle kabel. Het
+          is niet mogelijk om deze situatie selectief te beveiligen met ongerichte MST-beveiligingen. </p>
+        <img src="./beveiliging_files/6.13.png" width="575" height="437" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.13  Toepassing van richtingrelais </h5>
+        <p> Figuur 6.13 geeft een voorbeeld van toepassing van energierichtingrelais. Een gedeelte van een net met twee parallelle circuits wordt vanuit A gevoed. Aan
+          de voedende zijde van twee parallelle circuits zijn ongerichte OMT-relais (B en C) toegepast die bij een hogere stroom dan 250 A na 1 s een
+          uitschakelcommando zullen geven. Aan de andere zijde van de twee parallelle circuits zijn energierichtingrelais (D en E) toegepast, die bij een hogere
+          stroom dan 250 A na 0,1 s een uitschakelcommando zullen geven. Bij een kortsluiting in kabel C-E zal de kortsluiting door beide parallelle circuits gevoed
+          worden en zullen de beveiligingen in A, B, C en E aanspreken. De beveiliging in E zal na 0,1 s een uitschakelcommando geven waarna de kortsluiting niet
+          meer via B gevoed wordt. Beveiliging B zal dan ook geen uitschakelcommando geven. De kortsluiting wordt nog wel via C gevoed. De beveiliging in C zal na 1
+          s een uitschakelcommando geven. Deze situatie is selectief beveiligd, dankzij de richtingrelais. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_6.1.7"></div>
+        <br>
+        <h3> 6.1.7 Blokkering en versnelling </h3>
+        <p> Moderne statische relais zijn voorzien van vele logische in- en uitgangen. Met behulp van een communicatieverbinding die twee relais aan beide zijden van
+          een te beveiligen object, zoals een kabelverbinding, verbindt, kunnen de beveiligingsacties (veelal afschakelen) worden beïnvloed. </p>
+        <p> Een van de toepassingen is het blokkeren van het relais. Een beveiliging die een kortsluiting detecteert buiten zijn te beveiligen zone, kan een
+          blokkeersignaal sturen naar de beveiliging aan de andere zijde van het te beveiligen object. Figuur 6.14 illustreert dat Beveiliging 1 een blokkeersignaal
+          stuurt naar Beveiliging 2 indien de kortsluiting zich in achterwaartse richting van Beveiliging 1 bevindt. </p>
+        <div class="row">
+          <div class="col-md-6"> <img src="./beveiliging_files/6.14.png" width="343" height="108" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+            <h5>Figuur 6.14 Blokkering</h5>
+          </div>
+          <div class="col-md-6"> <img src="./beveiliging_files/6.15.png" width="344" height="116" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+            <h5>Figuur 6.15 Versnelling</h5>
+          </div>
+        </div>
+        <p> Een andere toepassing is het versnellen van het afschakelen door een ander relais. Als in figuur 6.15 Beveiliging 1 een kortsluiting detecteert in de
+          voorwaartse richting zal deze aanspreken en een afschakelcommando geven. In een vermaasde netstructuur moet deze fout ook door Beveiliging 2 worden
+          afgeschakeld. Indien Beveiliging 1 een versnellingssignaal aan Beveiliging 2 geeft, is de fout snel geïsoleerd. Bij een distantiebeveiliging wordt dit
+          schema voor het verkorten van de afschakeltijden van een volgende zone ook wel meeneemschakeling genoemd. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_6.1.8"></div>
+        <br>
+        <h3> 6.1.8 Differentiaalbeveiliging </h3>
+        <p> De werking van de differentiaalbeveiliging is gebaseerd op het feit dat de som van de stromen die naar een object toevloeien in ongestoorde situatie altijd
+          gelijk is aan nul. Een kortsluiting in het object leidt ertoe dat deze som van de stromen niet meer gelijk aan nul is. Bij een object met één
+          ingaand stroomcircuit en één uitgaand stroomcircuit heeft de stroom die erin vloeit een andere waarde dan de stroom die eruit vloeit. Door de
+          stromen aan de ingang en aan de uitgang met elkaar te vergelijken kan een kortsluiting worden gedetecteerd. In het geval dat beide uiteinden dicht bij
+          elkaar zijn gelokaliseerd is dit eenvoudig te realiseren, maar bij het beveiligen van een kabel moet voor communicatie gezorgd worden.
+          Differentiaalbeveiliging wordt toegepast bij transformatoren, lijnen, kabels en railsystemen. </p>
+        <p> Figuur 6.16 en figuur 6.17 illustreren het principe van de differentiaalbeveiliging. De differentiaal beveiliging sommeert de stromen vanuit alle
+          meetpunten. Indien de meetfout ten gevolge van de stroomtransformatoren buiten beschouwing wordt gelaten, is in een gezonde situatie de som van de stromen
+          gelijk aan nul. In een gestoorde situatie is de som van de stromen niet meer gelijk aan nul en wordt een uitschakeling geïnitieerd. Een te grote
+          meetfout ten gevolge van de stroomtransformatoren kan hetzelfde effect geven. De stroomtransformatoren van de verschillende meetpunten moeten daarom voor
+          de stroomoverdracht zoveel mogelijk over dezelfde eigenschappen beschikken. Het voordeel van de differentiaalbeveiliging is dat de uitschakeltijd bij een
+          fout in de te beveiligen zone vrijwel onafhankelijk is van de plaats en type van de fout. De uitschakeltijd is gelijk aan de eigentijd van de beveiliging
+          en de vermogenschakelaar, circa 40 tot 80 ms. </p>
+        <img src="./beveiliging_files/6.16.png" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.16
+          Stromen bij differentiaalbeveiliging van een rail; normale situatie </h5>
+        <p> Figuur 6.16 toont de beveiliging van een railsysteem. Van alle inkomende en uitgaande kabelverbindingen van een rail worden de stroomwaarden, afkomstig van
+          de stroomtransformatoren, op de differentiaalbeveiliging aangesloten. In de differentiaalbeveiliging wordt de vectoriële som van deze waarden bepaald.
+          Indien consequent met de definitie van de stroomrichting is omgegaan (inkomend positief en uitgaand negatief), zal in de normale ongestoorde situatie de
+          som van de stromen gelijk aan nul zijn. De beveiliging schakelt dan niet af. </p>
+        <p> Bij een kortsluiting op de rail zal een kortsluitstroom <em>I<sub>F</sub></em> lopen. De vectoriële som van de stromen door de kabelverbindingen is
+          dan niet meer gelijk aan nul, maar gelijk aan de kortsluitstroom. De differentiaalbeveiliging zal dan zonder tijdvertraging een afschakelcommando geven. </p>
+        <img src="./beveiliging_files/6.17.png" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.17 Stromen bij differentiaalbeveiliging van een rail; kortsluiting op de rail </h5>
+        <p> Indien het te beveiligen object een kabelverbinding is, moet gezorgd worden voor communicatie tussen beide zijden. Dit zal tegenwoordig met een
+          glasvezelverbinding gerealiseerd worden. Bij het beveiligen van een transformator moeten de stroomtransformatoren zodanig gekozen worden dat zij de
+          overzetverhouding corrigeren. Bij het optellen van de stromen uit de primaire en secundaire circuits moeten zij immers betrokken zijn op eenzelfde
+          spanningsniveau. Ook moet rekening worden gehouden met de schakelwijze van de transformator (ster-driehoek). </p>
+        <p> De differentiaalbeveiliging beveiligt een vast afgebakend gebied, dat de beveiligde zone wordt genoemd. In principe is hierdoor de selectiviteit van de
+          differentiaalbeveiliging hoog. Bij het instellen van de beveiliging hoeft geen rekening gehouden te worden met andere beveiligingen. </p>
+        <p> De differentiaalbeveiliging wordt ook wel ingezet om parallelle kabelverbindingen te beveiligen als alternatief voor de beveiliging met richtingrelais. </p>
+        <p> Door middel van ‘dual slope’ bias techniek (zie figuur 6.18) is de differentiaalbeveiliging ongevoeliger gemaakt voor doorgaande kortsluitingen
+          en meetfouten (zoals verzadiging) van de stroomtransformatoren. De gevoeligheid van de beveiliging is afhankelijk van een bias stroom. Voor kleine stromen
+          is de bias klein. Naarmate de stroom toeneemt, wordt de bias groter. Figuur 6.18 illustreert dit. </p>
+        <img src="./beveiliging_files/6.18.png" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.18  Bias karakteristiek van een differentiaalbeveiliging </h5>
+        <p> De som van de gemeten stromen is <em>I<sub>diff</sub></em>. De beveiliging geeft een afschakelcommando indien deze waarde groter is dan de corresponderende waarde
+          van de biaskarakteristiek. De meting van <em>n</em> stromen is gegeven door de absolute waarde van de vectoriële som van de stromen (alle gericht naar het te
+          beveiligen object toe): </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./beveiliging_files/formule-6.1.png" alt="formules_1.6"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 6.1 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> De bijbehorende bias is gegeven door de som van de absolute waarden van de stromen, gedeeld door het aantal metingen: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./beveiliging_files/formule-6.2.png" alt="formules_1.6"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 6.2 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Het afschakelcommando wordt gegeven indien: </p>
+        <p> Voor <em>I<sub>bias</sub> &lt; I<sub>s2</sub> :</em>  <img src="./beveiliging_files/formule-6.2-.png" alt="" height="27"></p>
+        <p> Voor <em>I<sub>bias</sub> ≥ I<sub>s2</sub> :</em>  <img src="./beveiliging_files/formule-6.2--.png" width="264" height="27" alt=""></p>
+        <p> Om ongevoelig te zijn voor de laadstroom van het circuit moet de instelling van <em>I<sub>s1</sub></em> tenminste gelijk zijn aan 2,5 maal de statische laadstroom
+          van het circuit. Een andere mogelijkheid is dat de differentiaal beveiliging zelf de laadstroom weg filtert uit de gemeten stroomwaarde. De differentiaal
+          beveiliging moet dan een ingang hebben voor een spanningstransformator. Bovendien moet de capaciteit van het circuit bekend zijn. De fabrikant geeft in de
+          handleiding van de beveiliging vaak een aanbeveling voor de overige drie instellingen. Gebruikelijke waarden voor een langsdifferentiaalbeveiliging (voor
+          een verbinding) zijn: </p>
+        <blockquote>
+          <p> <em>I<sub>s2</sub> = 2 pu</em> (per unit; zie hoofdstuk 7) <br>
+            <em>k<sub>1</sub> = 0,3</em> <br>
+            <em>k<sub>2</sub> = 1,5</em> </p>
+        </blockquote>
+        <img src="./beveiliging_files/6.19.png" width="317" height="205" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.19 Microprocessorbestuurde differentiaalbeveiliging </h5>
+        <a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_6.1.9"></div>
+        <br>
+        <h3> 6.1.9 Distantiebeveiliging </h3>
+        <p> De distantiebeveiliging wordt met name toegepast voor het beveiligen van hoogspanningslijnen en kabelverbindingen. De werking is gebaseerd op het bepalen
+          van de impedantie van de verbinding op basis van de gemeten spanningen en stromen. De impedantie van de meetplaats tot een punt op de verbinding neemt
+          recht evenredig toe met de afstand vanaf de meetplaats. Een kortsluiting wordt gedetecteerd vanwege de drastische reductie van de impedantie in de richting
+          van de kortsluiting. Als de gemeten impedantie veel kleiner is dan de normale impedantie, is er sprake van een sluiting. De beveiliging spreekt aan bij het
+          overschrijden van een ingestelde aanspreekstroom of bij het onderschrijden van een ingestelde aanspreekimpedantie. De impedantie wordt berekend uit het
+          quotiënt van de gemeten spanning en de gemeten stroom. Hierdoor is de beveiliging per definitie richtingsgevoelig. De afstand van de meetplaats tot de
+          foutplaats wordt als volgt bepaald: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./beveiliging_files/formule-6.3.png" alt="formules_1.6" height="45"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 6.3 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> waarin: </p>
+        <blockquote>
+          <p> <em>Z<sub>X </sub>= U<sub>gemeten</sub> / I<sub>gemeten</sub></em> <br>
+            <em>Z<sub>kabel</sub> </em>: de impedantiewaarde van de kabel of lijn, ingesteld op de beveiliging </p>
+        </blockquote>
+        <p> Het afschakelen door een distantiebeveiliging vindt plaats in stappen, trappen genoemd. De eerste trap, de sneltrap, geeft onvertraagd een
+          uitschakelcommando indien de gemeten impedantie <em>Z<sub>X</sub></em> kleiner is dan de eerste ingestelde impedantie, die gelijk is aan 85 tot 90% van de eerste te
+          beveiligen sectie. Deze sectie is meestal de lengte van de te beveiligen kabel- of lijnverbinding (zie figuur 6.20). Een veiligheidsmarge van 10 tot 15%
+          wordt aangehouden vanwege de mogelijkheid dat de kortsluiting nog enige impedantie heeft of vanwege onnauwkeurigheid van meettransformatoren en beschikbare
+          gegevens van de impedantie van de verbinding. Om deze reden komt de waarde van <em>Z<sub>1</sub></em> meestal overeen met 85 tot 90% van de totale impedantie van de
+          eerste te beveiligen sectie. Storingen tussen 85 tot 90% en 100% van de sectie zullen met enige tijdsvertraging door de tweede trap worden afgeschakeld. </p>
+        <p> De tweede trap wordt ingesteld op een waarde die weer 85 tot 90% van de impedantie van de volgende sectie bedraagt. Op deze manier is de tweede trap een
+          back-up voor de eerste trap van de volgende beveiliging. Als een fout in de tweede verbinding niet door de bijbehorende beveiliging wordt afgeschakeld, zal
+          de voorliggende beveiliging met tijdvertraging het afschakelcommando geven. Figuur 6.20 illustreert dit voor drie verbindingen met impedanties <em>Z<sub>1</sub></em>, <em>Z<sub>2</sub></em> en <em>Z<sub>3</sub></em>, die beveiligd worden door drie distantiebeveiligingen. Hierin zijn de afschakeltijden <em>t<sub>1</sub></em> tot en met <em>t<sub>4</sub></em> de afschakeltijden van de eerste tot en met de vierde trap. </p>
+        <img src="./beveiliging_files/6.20.png" width="635" height="411" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.20 Selectiviteit van de distantiebeveiliging </h5>
+        <p> In middenspanningsnetten is het aantal toegepaste trappen vaak beperkt tot 2. Zo is het gebruikelijk om <em>Z<sub>2</sub></em> in te stellen op 115%, zijnde 100%   van het te beveiligen circuit plus 15% van de achterliggende verbinding. </p>
+        <p> Er is een eindtrap, die bij een distantiebeveiliging wordt ingesteld om hoogohmige fouten af te schakelen. De bijbehorende eindtijd is een langere
+          afschakeltijd dan alle andere beveiligingen. De eindtrap dient als het ware als noodrem. </p>
+        <p> De distantiebeveiliging reageert op fouten aan weerszijden van het station. Zo is het ook mogelijk een achterwaartse trap in te stellen als back-up voor
+          fouten in de voorliggende verbindingen. </p>
+        <p> Het meten en berekenen van de impedantie door de beveiliging moet nauwkeurig gebeuren. De basis is de meting van de spanningen en de stromen. Er zijn vele   mogelijkheden om deze grootheden te meten. De keuze van de methode hangt af van de fasehoek die stroom en spanning met elkaar maken. In een statisch relais   worden de faseverschuivingen gerealiseerd met behulp van de software, maar bij elektromechanische relais worden de faseverschuivingen gerealiseerd door   middel van de aansluitmogelijkheden op het relais (zie ook de karakteristieke hoek van een relais in figuur 6.12). Een veel gebruikte methode maakt gebruik   van de spanning in de gezonde fasen en de stroom in de betrokken fase. Voor de vier meest voorkomende kortsluitingen worden hierna de meetmethodes   toegelicht. In de toelichting wordt gebruik gemaakt van de vectoren die spanningen en stromen beschrijven. Dit betekent dat er rekening wordt gehouden met   de grootte (lengte) en de hoek van de vectoren. Bij het toepassen van de formules wordt complex gerekend. </p>
+        <h6> Driefasenkortsluiting </h6>
+        <p> Bij de driefasenkortsluiting maakt het niet uit of er contact wordt gemaakt met de aarde. De spanning op het kortsluitpunt is immers nul Volt. De
+          distantiebeveiliging ziet op het meetpunt de drie fasespanningen, de drie gekoppelde spanningen en de drie fasestromen. </p>
+        <img src="./beveiliging_files/6.21.png" width="372" height="168" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.21 Driefasenkortsluiting, gezien vanuit de distantiebeveiliging </h5>
+        <p> Voor de gekoppelde spanning over fasen <em>b</em> en <em>c</em> geldt: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./beveiliging_files/formule-6.4.png" alt="formules_1.6"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 6.4 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Hieruit volgt voor de gemeten impedantie: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./beveiliging_files/formule-6.5.png" alt="formules_1.6"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 6.5 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <h6><br>
+        </h6>
+        <h6> Tweefasenkortsluiting zonder aardcontact </h6>
+        <p> Bij de tweefasenkortsluiting maakt het wel uit of er contact wordt gemaakt met de aarde. In het geval van een tweefasenkortsluiting zonder aardcontact
+          wordt uitgegaan van de gekoppelde spanning over en de stromen in de betrokken fasen. Hieronder wordt de kortsluiting tussen fasen <em>b</em> en <em>c</em> toegelicht. </p>
+        <img src="./beveiliging_files/6.22.png" width="372" height="169" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.22 Tweefasenkortsluiting zonder aardcontact, gezien vanuit de distantiebeveiliging </h5>
+        <p> Voor de gekoppelde spanning over fasen <em>b</em> en <em>c</em> geldt: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./beveiliging_files/formule-6.6.png" alt="formules_1.6"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 6.6 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Hieruit volgt voor de gemeten impedantie: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./beveiliging_files/formule-6.7.png" alt="formules_1.6"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 6.7 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <h6> Kortsluitingen met aardcontact </h6>
+        <p> Bij een kortsluiting met aardcontact is de fasespanning op de foutplaats gelijk aan nul Volt. Het is verleidelijk om aan te nemen dat de spanningsval van
+          de meetplaats tot de foutplaats gewoon bepaald zou kunnen worden met het product van fase-impedantie en fasestroom. Echter, de stroom in het totale
+          kortgesloten circuit wordt mede bepaald door de retourimpedantie, die weer afhankelijk is van het aantal aardelektrodes, de methode van aarding en de
+          aardimpedanties. Als met deze factoren niet voldoende rekening wordt gehouden, zal de impedantiemeting niet correct zijn. </p>
+        <p> De spanningsval van het meetpunt tot aan de foutplaats is de som van de spanningsvallen in de componentnetwerken van het meetpunt tot aan de foutplaats.
+          Voor nadere informatie over symmetrische componenten en deze aardfout wordt verwezen naar hoofdstuk 7 en hoofdstuk 10, tabellen 10.3 (kortsluittypen) en
+          10.4 (componentnetwerken voor kortsluittypen) en de daarbij behorende uitleg. Volgens de methode van symmetrische componenten zijn de spanningsval en de
+          stroom in het kortgesloten circuit gegeven door: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./beveiliging_files/formule-6.8.png" alt="formules_1.6"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 6.8 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./beveiliging_files/formule-6.9.png" alt="formules_1.6"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 6.9 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> De retourstroom op het meetpunt is gegeven door: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./beveiliging_files/formule-6.10.png" alt="formules_1.6"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 6.10 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Hierin zijn <em><u>I</u><sub>a</sub></em>, <em><u>I</u><sub>b</sub></em> en <em><u>I</u><sub>c</sub></em> de gemeten fasestromen en <em><u>I</u><sub>1</sub></em>, <em><u>I</u><sub>2</sub> </em>en <em><u>I</u><sub>0</sub></em> de stromen in de componentnetwerken. Er wordt gezocht naar een relatie tussen de spanning op het meetpunt en de fasestromen en de verhouding tussen de homopolaire en de normale impedantie van de verbinding. Hierom wordt een complexe factor <em><u>K</u></em> geïntroduceerd, die de   verhouding tussen <em><u>Z</u><sub>L,0</sub></em> en <em><u>Z</u><sub>L,1</sub></em> vastlegt. </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./beveiliging_files/formule-6.11.png" alt="formules_1.6"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 6.11 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Invullen van de vergelijkingen voor <em><u>K</u></em> en voor <u><em>I</em></u><em><sub>a</sub></em> in de spanningsvergelijking levert: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./beveiliging_files/formule-6.12.png" alt="formules_1.6"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 6.12 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Tenslotte invullen van de vergelijking voor de retourstroom <em><u>I</u><sub>n</sub></em> in deze spanningsvergelijking levert: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./beveiliging_files/formule-6.13.png" alt="formules_1.6"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 6.13 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> In de beveiligingstechniek wordt ook wel de factor <em><u>K</u><sub>N</sub></em> gebruikt: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./beveiliging_files/formule-6.14.png" alt="formules_1.6"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 6.14 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Aangezien de homopolaire impedantie <em><u>Z</u><sub>L,0</sub></em> gelijk is aan <em><u>Z</u><sub>L,1</sub> + 3<u>Z</u><sub>E</sub></em>, vereenvoudigt de vergelijking voor
+          de factor <em><u>K</u><sub>N</sub></em> in: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./beveiliging_files/formule-6.15.png" alt="formules_1.6"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 6.15 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Hierin is <em><u>Z</u><sub>E</sub></em> de aard- of retourimpedantie. Een distantierelais meet de juiste impedantie door een complexe factor <em><u>K</u><sub>N</sub></em> van de retourstroom <em><u>I</u><sub>n</sub></em> op te tellen bij de fasestroom <em><u>I</u><sub>a</sub></em>. Deze methode wordt ‘Residual Compensation’
+          genoemd (NPAG, 2002). </p>
+        <h6> Tweefasenkortsluiting met aardcontact </h6>
+        <p> In het geval van een tweefasenkortsluiting met aardcontact wordt uitgegaan van de spanningsval en de stromen in de betrokken fasen. De retourstroom wordt
+          met de <em><u>K</u><sub>N</sub></em>-factor in rekening gebracht. Hieronder wordt de kortsluiting tussen fasen <em>b</em> en <em>c</em> en aarde toegelicht. </p>
+        <img src="./beveiliging_files/6.23.png" width="372" height="222" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.23 Tweefasenkortsluiting met aardcontact, gezien vanuit de distantiebeveiliging </h5>
+        <p> Voor de fasespanning over fase <em>b</em> geldt: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./beveiliging_files/formule-6.16.png" alt="formules_1.6"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 6.16 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Hieruit volgt voor de gemeten impedantie: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./beveiliging_files/formule-6.17.png" alt="formules_1.6"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 6.17 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <h6> Eenfasekortsluiting met aardcontact </h6>
+        <p> In het geval van een eenfasekortsluiting met aardcontact wordt uitgegaan van de spanningsval en de stroom in de betrokken fase. De retourstroom wordt met
+          de <em><u>K</u><sub>N</sub></em>-factor in rekening gebracht. Hieronder wordt de kortsluiting tussen fase <em>c</em> en aarde toegelicht. </p>
+        <img src="./beveiliging_files/6.24.png" width="372" height="168" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.24 Eenfasekortsluiting met aardcontact, gezien vanuit de distantiebeveiliging </h5>
+        <p> Voor de fasespanning over fase <em>c</em> geldt: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./beveiliging_files/formule-6.18.png" alt="formules_1.6"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 6.18 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Hieruit volgt voor de gemeten impedantie: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./beveiliging_files/formule-6.19.png" alt="formules_1.6"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 6.19 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <h6>Afschakelkarakteristieken</h6>
+        <p> Een afschakelkarakteristiek wordt ook wel relaiskarakteristiek genoemd en beschrijft voor elke trap van de distantiebeveiliging bij welke waarde van R en X
+          het relais een afschakelcommando moet geven. Numerieke relais meten de absolute foutimpedantie en bepalen aan de hand van de relaiskarakteristiek of zij
+          een afschakelcommando moeten geven. Traditionele distantierelais doen dit iets anders: zij vergelijken de gemeten spanning met een berekende spanning, die
+          afgeleid wordt van de gemeten stroom en de impedantie voor de betreffende zone. De relaiskarakteristieken worden geconstrueerd met cirkels en rechte lijnen
+          in een R/X-vlak. Zo worden onderscheiden: </p>
+        <ul>
+          <li> cirkelkarakteristiek </li>
+          <li> polygoonkarakteristiek. </li>
+        </ul>
+        <p> Er worden vele technieken toegepast in de beveiligingstechniek. Een van de eenvoudigste technieken maakt geen onderscheid in de hoek van de gemeten
+          impedantie. De karakteristiek in het R/X diagram is een cirkel met het middelpunt in de oorsprong. De straal van de cirkel is de zone-instelling in Ohm.
+          Het relais is niet richtingsgevoelig en zal een afschakelcommando geven voor alle uit de gemeten spanningen en stromen berekende impedanties die binnen de
+          cirkel vallen; dus aan beide zijden van het knooppunt waar het relais is geïnstalleerd. Dit is in de meeste gevallen onvoldoende en daarmee niet
+          wenselijk, zodat een richtingsgevoelig element, zoals beschreven bij het energierichtingrelais (paragraaf 6.1.6), wordt ingebouwd. Op deze wijze verandert
+          de cirkelkarakteristiek in een halve cirkel. Figuur 6.25 illustreert dit voor een relais met drie trappen. Elke trap is ingesteld met een impedantie en een
+          bijbehorende afschakeltijd. Het grijze gebied geeft het vlak aan waarbinnen een afschakelcommando mag worden gegeven. Als de gemeten impedantie kleiner is
+          dan <em>Z<sub>1</sub></em>, dan wordt op tijdstip <em>t<sub>1</sub></em> een afschakelcommando gegeven. Ligt de waarde van de gemeten impedantie tussen <em>Z<sub>1</sub></em> en <em>Z<sub>2</sub></em>, dan wordt op tijdstip <em>t<sub>2</sub></em> een afschakelcommando gegeven. </p>
+        <img src="./beveiliging_files/6.25.png" width="458" height="297" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.25 Cirkelkarakteristiek van een distantiebeveiliging </h5>
+        <p> Een bijzondere vorm van een cirkelvormige relaiskarakteristiek is die van het Mho-relais. De karakteristiek in het R/X-vlak is een cirkel waarvan niet het centrum maar de omtrek door de oorsprong gaat. Hiermee is een redelijke vorm van richtingsgevoeligheid ingebouwd. Deze relais zijn in het verleden veel toegepast. </p>
+        <img src="./beveiliging_files/6.26.png" width="576" height="373" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.26 Mho-karakteristiek van een distantiebeveiliging </h5>
+        <img src="./beveiliging_files/6.27.png" width="541" height="350" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.27 Polygoonkarakteristiek van een distantiebeveiliging </h5>
+        <p> Moderne microprocessorrelais kunnen worden ingesteld voor cirkel- en Mho-karakteristieken, waarmee zij de werking van traditionele relais simuleren. Met
+          deze relais is het ook mogelijk de karakteristiek volgens een polygoon in te stellen. De polygoon is beschreven met rechte lijnen die elkaar zodanig
+          kruisen dat zij een afgesloten gebied omsluiten. Het voordeel hiervan is dat alle instellingen onafhankelijk van elkaar gedaan kunnen worden, waardoor het
+          relais veel beter toepasbaar is voor bijzondere gevallen. </p>
+        <img src="./beveiliging_files/6.28.png" width="435" height="282" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.28 Elektromechanische en microprocessorbestuurde distantiebeveiliging </h5>
+        <a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_6.1.10"></div>
+        <br>
+        <h3> 6.1.10 Spanningsbeveiligingen </h3>
+        <p> Er zijn drie verschillende soorten spanningsbeveiliging: </p>
+        <ul>
+          <li> overspanningsbeveiliging </li>
+          <li> onderspanningsbeveiliging </li>
+          <li> nulspanningsbeveiliging. </li>
+        </ul>
+        <h6>Overspanningsbeveiliging</h6>
+        <p> Er is overspanning wanneer de spanning een waarde aanneemt die ver boven de nominale spanning uitkomt. Als zo’n overspanning niet onderbroken kan worden kan dit gevaarlijk zijn voor personen en kan het schade aanrichten aan elektrische apparatuur. Daarom moet in sommige gevallen spanningsbeveiliging toegepast worden. </p>
+        <h6>Onderspanningsbeveiliging</h6>
+        <p> Er is sprake van onderspanning wanneer de netspanning 35 tot 70% onder de nominale spanning is. Apparaten en motoren kunnen defect raken indien zij bij een te lage spanning in bedrijf blijven. In geval van een kortsluiting in het net zullen de aangesloten generatoren de kortsluiting voeden. Hierbij is het gedrag van de generator afhankelijk van de afstand van de generator tot de kortsluitplaats. De onderspanningsbeveiliging beveiligt de aangesloten machines door deze binnen korte tijd (ongeveer 0,2 s) af te schakelen. </p>
+        <h6>Nulspanningsbeveiliging</h6>
+        <p> Deze beveiliging spreekt aan wanneer de netspanning 70% of meer onder de nominale spanning zakt. De beveiliging schakelt de netspanning af en niet meer automatisch in. Dit is voor de veiligheid van personen. Als de voedingsspanning van een installatie weg valt, valt alle aangesloten apparatuur stil. Als de spanning bij automatische herinschakeling weer zou terugkeren, dan zou alle apparatuur in de installatie tegelijkertijd opstarten. Dit leidt veelal tot een overbelasting van het net en eventueel schade aan de apparatuur. Het onvoorzien uitschakelen en weer inschakelen is gevaarlijk omdat dit ook lichamelijk letsel van het bedienend personeel tot gevolg kan hebben. De nulspanningsbeveiliging voorkomt dit ongecontroleerde opstarten. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_6.2"></div>
+        <br>
+        <h2> 6.2 Beveiligen van aansluitingen </h2>
+        <p> In de Netcode (Netcode, 2009) is opgenomen aan welke randvoorwaarden de beveiliging van de installatie van een klant moet voldoen. De Netcode beschrijft de
+          randvoorwaarden voor alle aangeslotenen en geeft daarnaast aanvullende voorwaarden voor: </p>
+        <ul>
+          <li> op laagspanningsnetten aangeslotenen </li>
+          <li> op hoogspanningsnetten aangeslotenen </li>
+          <li>op laagspanningsnetten aangesloten productie-eenheden </li>
+          <li>op hoogspanningsnetten aangesloten productie-eenheden </li>
+          <li>op laagspanningsnetten aangesloten particuliere netten </li>
+          <li>op hoogspanningsnetten aangesloten particuliere netten </li>
+          <li> netbeheerders onderling. </li>
+        </ul>
+        <p> De randvoorwaarden voor alle aangeslotenen zijn globaal beschreven met betrekking tot de selectiviteit (Netcode, 2009, paragraaf 2.1): </p>
+        <ul>
+          <li>de beveiliging van elektrische installaties en onderdelen daarvan is selectief ten opzichte van de beveiliging die de netbeheerder in de aansluiting   van de elektrische installatie of in het voedende net toepast </li>
+          <li>bij het dimensioneren van de elektrische installatie wordt rekening gehouden met de door de netbeheerder toe te passen beveiliging </li>
+          <li>de netbeheerder informeert de aangeslotene en overlegt met hem voor zover van toepassing bij eerste aansluiting en bij latere wijzigingen van het
+            net omtrent: de beveiligingsfilosofie, de minimum en maximum waarde van het kortsluitvermogen tijdens de normale bedrijfstoestand, de wijze van
+            sterpuntsbehandeling, de isolatiecoördinatie, de netconfiguratie en de bedrijfsvoering. </li>
+        </ul>
+        <p> Daarnaast zijn er aanvullende voorwaarden voor aangeslotenen op laag- en middenspanningsnetten. De middenspanningsnetten worden in de Netcode aangeduid als hoogspanningsnetten. </p>
+        <h6> Aangeslotenen op laagspanningsnetten </h6>
+        <p> Indien in het net van de aangeslotene motoren geïnstalleerd zijn, worden eisen gesteld aan de nulspanningsbeveiliging. Om te voorkomen dat na een storing bij het herstellen van de spanning alle machines tegelijkertijd opstarten, wordt de voorwaarde gesteld dat er een nulspanningsbeveiliging geïnstalleerd is die ervoor moet zorgen dat niet meer dan 10 kW geïnstalleerd vermogen gelijktijdig wordt opgestart (Netcode, 2009, paragraaf
+          2.2). </p>
+        <p> Van alle productie-eenheden moeten de beveiligingen selectief zijn met die van de netbeheerder. De beveiliging van de generator en een   vermogenselektronische omzetter met een vermogen groter dan 5 kVA moet in ieder geval op drie fasen voorzien zijn van (Netcode, 2009, paragraaf 2.4): </p>
+        <ul>
+          <li>een onderspanningsbeveiliging met een aanspreeksnelheid van 2 seconden bij 80% van de nominale spanning én van 0,2 seconden bij 70% van de
+            nominale spanning (tenzij in geval van een generator uit een berekening van de kritische kortsluittijd een snellere uitschakeling noodzakelijk blijkt) </li>
+          <li>een overspanningsbeveiliging met een aanspreeksnelheid van 2 seconden bij 106% van de nominale spanning </li>
+          <li>bij een generator een maximum-stroomtijdbeveiliging; bij een vermogenselektronische omzetter een overbelastingsbeveiliging </li>
+          <li>een frequentiebeveiliging met een aanspreeksnelheid van 2 seconden bij een afwijking van 2 Hz; deze beveiliging mag éénfasig zijn </li>
+          <li>een inschakelvertraging na uitschakeling: 2 minuten. </li>
+        </ul>
+        <p> De beveiliging van een vermogenselektronische omzetter met een vermogen kleiner dan 5 kVA is in ieder geval voorzien van: </p>
+        <ul>
+          <li>een onderspanningsbeveiliging met een aanspreeksnelheid van 0,1 seconde bij 80% van de nominale spanning </li>
+          <li>een overspanningsbeveiliging met een aanspreeksnelheid van 0,1 seconde bij 106% van de nominale spanning </li>
+          <li>een frequentiebeveiliging met een aanspreeksnelheid van 2 seconden bij een afwijking van 2 Hz </li>
+          <li> een overbelastingsbeveiliging. </li>
+        </ul>
+        <h6> Aangeslotenen op hoogspanningsnetten </h6>
+        <p> De aangeslotene moet zorgen voor een staffelplan met betrekking tot de beveiligingen, ter beoordeling van de netbeheerder (Netcode, 2009, paragraaf 2.3).
+          Van alle aangesloten productie-eenheden moeten de beveiligingen selectief zijn ten opzichte van de beveiligingen in het net van de netbeheerder. De
+          producenten zijn zelf verantwoordelijk voor adequate beveiligingen van de productie-eenheden tegen storingen die ontstaan in het net en extreme afwijkingen
+          van spanning en frequentie. </p>
+        <h6> Netbeheerders onderling </h6>
+        <p> Bij onderlinge aansluiting van netten stellen de netbeheerders na onderling overleg de toe te passen beveiligingsconcepten vast (Netcode, 2009, paragraaf
+          2.8). Het beveiligingsconcept van de transformator wordt bepaald door de beheerder van de transformator. De netbeheerders stellen elkaar de
+          uitschakelcommando’s voor het uitschakelen van de vermogenschakelaars aan weerszijden van de transformator ter beschikking. De voor het overbrengen
+          van deze commando’s benodigde verbindingen met toebehoren zijn eigendom van de eigenaar van de transformator. Instellingen van de beveiligingen, het
+          type beveiliging en de inschakelvoorwaarden worden in de aansluitovereenkomst vastgelegd. </p>
+        <p> De aansluitingen worden beveiligd met smeltveiligheden, automaten of met beveiligingsrelais en vermogenschakelaars. Deze beveiliging bevindt zich bij de
+          aansluiting vóór het overdrachtspunt (de meter). Aansluitingen kunnen kleinverbruikers zijn met een elektriciteitsaansluiting van 3x80 A of
+          minder of grootverbruikers met een elektriciteitsaansluiting van meer dan 3x80 A. Bij de keuze van de beveiliging wordt uitgegaan van de indeling in de 7
+          aansluitcategorieën van de Tarievencode (Tarievencode, 2009, Bijlage A). </p>
+        <h6> A.1: Kleinverbruikers tot en met 1 x 6A op een geschakeld net. </h6>
+        <p> De standaard aansluitmethode voor aangeslotenen tot 1 x 6A is op de laagspanningskabel, hulpader of OV-kabel die deel uitmaken van het net van de
+          netbeheerder. Het net wordt geschakeld door de netbeheerder, bijvoorbeeld voor de openbare verlichting. Deze installaties worden beveiligd met een
+          smeltpatroon of een automaat in de aansluitkast, die zich bevindt in het aan te sluiten object. </p>
+        <h6> A.2: Kleinverbruikers van 3 x 25A tot en met 60 kVA. </h6>
+        <p> De standaard aansluitmethode voor aangeslotenen tot 60 kVA is op de laagspanningskabel. Deze installaties worden beveiligd met een of meerdere
+          smeltpatronen of een automaat in de aansluitkast, die zich bevindt in het aan te sluiten object. De klant kan kiezen uit een meerdere uitvoeringsvormen
+          voor de aansluiting, zoals: </p>
+        <ul>
+          <li> 1x40 A en 3x25 A </li>
+          <li> 3x25 A - 3x50 A </li>
+          <li> 3x63 A - 3x80 A. </li>
+        </ul>
+        <p> Als voorbeeld is de aansluiting van een 3x80 A kleinverbruiker gemodelleerd. De aansluiting bevindt zich achter 10 m aansluitkabel van het type 4x16
+          VGVMvKas/Al. De toegepaste smeltveiligheid is 80 A. </p>
+        <img src="./beveiliging_files/6.29.png" width="705" height="457" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.29 Aansluiting kleinverbruiker 3x80 A </h5>
+        <p> De kortsluitstroom bij een kortsluiting direct na de meterkast is 5 kA. Volgens de karakteristiek van de smeltveiligheid wordt daarom een kortsluiting op
+          knooppunt ‘LS-aansluiting’ zeer snel (minder dan 0,01 s) afgeschakeld. </p>
+        <h6> A.3: Grootverbruikers van 60 kVA tot en met 0,3 MVA. </h6>
+        <p> De standaard aansluitmethode voor aangeslotenen vanaf 60 kVA tot en met 0,3 MVA is op het dichtstbijzijnde algemene LS-voedingspunt in het net van de
+          netbeheerder (MS/LS-netstation). Deze installaties worden beveiligd met smeltpatronen of een automaat in de aansluitkast, die zich bevindt in het aan te
+          sluiten object. De beveiliging heeft een nominale waarde van 3x80 tot 3x400 A. </p>
+        <h6> A.4: Grootverbruikers van 0,3 MVA tot en met 3 MVA met zuivere MS-aansluiting. </h6>
+        <p> De standaard aansluitmethode voor aansluitingen vanaf 0,3 MVA tot en met 3MVA is inlussen in het middenspanningsnet. De installatie bevindt zich in een
+          ruimte van de aangeslotene. In deze grootverbruikersruimte bevinden zich onder andere twee scheiders en een vermogenschakelaar. Zie ook A.5. </p>
+        <h6> A.5: Grootverbruikers van 0,3 MVA tot en met 3 MVA met fysieke levering van LS.</h6>
+        <p> Deze aansluiting wordt gerealiseerd door een transformatiestap aan te bieden en te meten op laagspanning. De installatie bevindt zich in een ruimte van de
+          aangeslotene. In deze grootverbruikersruimte bevinden zich onder andere twee scheiders, een MS-beveiliging en een vermogenstransformator. De klant moet
+          zijn installatie zodanig ontwerpen dat deze bestand is tegen de mechanische en thermische effecten die optreden door een overstroom. Er zijn drie
+          standaardaansluitingen, afhankelijk van het aansluitvermogen: </p>
+        <ul>
+          <li>A.5a: tot en met 630 kVA: aansluiting met een installatie type KKT (twee kabelvelden en een transformatorveld) </li>
+          <li>A.5b: tot en met 1000 kVA: aansluiting met een installatie type KKB (twee kabelvelden en een beveiligd vermogenschakelaarveld) </li>
+          <li>A.5: boven 1000 kVA: aansluiting met een installatie type KKMV (twee kabelvelden, een meetveld en een vermogenschakelaarveld). </li>
+        </ul>
+        <p> De A.5a aansluiting (tot en met 630 kVA) wordt beveiligd met smeltpatronen aan de middenspanningszijde, net zoals de distributietransformatoren die het
+          laagspanningsnet voeden. Aan laagspanningszijde van de transformator moet de klant zelf een beveiliging plaatsen tegen overbelasting en kortsluitstromen in
+          zijn installatie. De beveiliging moet selectief zijn met de beveiliging van de netbeheerder. Indien de LS-beveiliging bestaat uit een
+          laagspanningsautomaat, dan wordt deze meestal ingesteld met <em>I<sub>thermisch</sub></em> volgens: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./beveiliging_files/formule-6.20.png" alt="formules_1.6"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 6.20 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Waarin <em>S<sub>nom,transformator</sub></em> het nominale vermogen van de transformator. De waarde van <em>U<sub>LS</sub></em> is gelijk aan de minimale gekoppelde spanning
+          aan de laagspanningszijde, zijnde 90% van de nominale spanning. De tijd is ingesteld op enkele seconden. De waarde voor <em>I<sub>&gt;&gt;</sub></em> wordt
+          ingesteld op <em>4 x I<sub>nom</sub></em>. De waarde van <em>t<sub>&gt;&gt;</sub></em> is <em>0 s.</em> </p>
+        <p> De A.5b aansluiting (tot en met 1000 kVA) wordt beveiligd met een beveiligingsrelais en een vermogenschakelaar aan de middenspanningszijde. De maximaal
+          stroom-tijdbeveiliging wordt ingesteld volgens: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./beveiliging_files/formule-6.21.png" alt="formules_1.6"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 6.21 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Hierin is <em>factor<sub>MS</sub></em> gelijk aan 1,5 en <em>S<sub>nom,transformator</sub></em> het nominale vermogen van de transformator. De waarde van <em>U<sub>MS</sub></em> is
+          gelijk aan de minimale gekoppelde spanning aan de middenspanningszijde, zijnde 90% van de nominale spanning. De instelling van de afschakeltijd <em>t<sub>&gt;</sub></em> kan tussen 0,3 en 0,9 s liggen, afhankelijk van de instellingen bij de klant. De voorkeur gaat naar een zo kort mogelijke afschakeltijd, om
+          de gevolgen van de spanningsdips in de streng te beperken. </p>
+        <p> De A.5 aansluiting (boven 1000 kVA) wordt beveiligd met een beveiligingsrelais en een vermogenschakelaar op het overdrachtspunt. Het achterliggende net van
+          de klant kan vele uitvoeringsvormen hebben. Er kunnen meerdere transformatoren, motoren en generatoren voorkomen. Om die reden moet de beveiliging in nauw
+          overleg met de klant vastgesteld worden. De beveiliging moet het MS-net van de netbeheerder beschermen tegen de risico’s van een fout in de
+          klantinstallatie. Daarnaast moet de beveiliging in het overdrachtspunt selectief zijn met de beveiligingen in het MS-net en met de beveiligingen in het net
+          van de klant. </p>
+        <h6> A.6: Grootverbruikers van 3 MVA tot en met 10 MVA </h6>
+        <p> In het MS-transportnet worden rail systemen met een groot vermogen (meer dan 2 MVA) meestal met meerdere kabels gevoed. Deze worden uitgelegd met een
+          enkelvoudige storingsreserve zonder energieonderbreking, zodat het uitvallen van één kabel geen invloed heeft op de energielevering. De meest
+          selectieve en snelle beveiliging voor een parallelle kabel is te realiseren met een langs differentiaal beveiliging. De back-up beveiliging is vaak een
+          maximaal stroom-tijdbeveiliging in het onder-, regel- of schakelstation, die de kabel niet selectief afschakelt. De optie met een langs differentiaal
+          beveiliging als hoofdbeveiliging geniet de voorkeur om een parallelle kabel te beveiligen. Hiervoor is communicatie noodzakelijk tussen de stations. Indien
+          geen communicatie gerealiseerd kan worden, wordt een distantierelais met energierichtingsbeveiliging toegepast. </p>
+        <h6> A.7: Grootverbruikers van meer dan 10 MVA </h6>
+        <p> Het realiseren van aansluitingen van deze grootte is altijd maatwerk en is niet standaard voorgeschreven in de Tarievencode. Zie A.6. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_6.3"></div>
+        <br>
+        <h2> 6.3 Transformatorbeveiliging </h2>
+        <p> Doorgaans worden MS/LS-transformatoren tot een vermogen van 630 kVA aan de primaire zijde met smeltveiligheden beveiligd. Transformatoren met grotere
+          vermogens worden aan middenspanningszijde met een maximaalstroomtijdrelais in combinatie met een vermogenschakelaar beveiligd. Aan laagspanningszijde
+          worden transformatoren beveiligd met smeltveiligheden of een automaat. </p>
+        <p> Bij het toepassen van smeltveiligheden aan middenspanningszijde moet worden gelet op: </p>
+        <ul>
+          <li> nominale stroom van de transformator </li>
+          <li>inschakelstroom van de transformator (inrush current) </li>
+          <li>selectiviteit van de smeltveiligheid ten opzichte van de maximaalstroomtijdrelais in het onder-, regel- of schakelstation </li>
+          <li>selectiviteit van de smeltveiligheid ten opzichte van de beveiliging aan de LS-zijde van de transformator. </li>
+        </ul>
+        <a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_6.3.1"></div>
+        <br>
+        <h3> 6.3.1 Distributietransformator </h3>
+        <p> Voor de beveiliging van een distributietransformator tot en met 630 kVA wordt veelal om financiële redenen gebruik gemaakt van smeltpatronen. De
+          waarden voor de MS- en LS-smeltpatronen worden berekend met onderstaande formules: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./beveiliging_files/formule-6.1.png" alt="formules_1.6"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 6.22 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./beveiliging_files/formule-6.1.png" alt="formules_1.6"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 6.23 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Met: </p>
+        <blockquote>
+          <table width="100%" border="0">
+            <tbody>
+              <tr>
+                <td width="40"><em>U<sub>MS</sub></em></td>
+                <td>minimale gekoppelde spanning aan MS-zijde (0,9 x U<sub>nom,MS</sub>)</td>
+              </tr>
+              <tr>
+                <td><em>U<sub>LS</sub></em></td>
+                <td>minimale gekoppelde spanning aan LS-zijde (0,9 x U<sub>nom,LS</sub>)</td>
+              </tr>
+              <tr>
+                <td><em>factor<sub>MS</sub></em></td>
+                <td>1,5</td>
+              </tr>
+              <tr>
+                <td><em>factor<sub>LS</sub></em></td>
+                <td>1,1</td>
+              </tr>
+            </tbody>
+          </table>
+        </blockquote>
+        <p> De met deze formules berekende waarden voor de smeltpatronen aan MS- en LS-zijde, afgerond naar gebruikelijke waarden, zijn in tabel 6.2 vermeld. </p>
+        <h5> Tabel 6.2 Voorkeurswaarden van smeltpatronen voor nettransformatoren </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="113" valign="top"><p align="center"> <strong>Transformator (kVA)</strong> </p></td>
+              <td width="113" valign="top"><p align="center"> <strong>MS patroon (A)</strong> </p></td>
+              <td width="113" valign="top"><p align="center"> <strong>LS patroon (A)</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="113" valign="top"><p align="center"> 100 </p></td>
+              <td width="113" valign="top"><p align="center"> 10 </p></td>
+              <td width="113" valign="top"><p align="center"> 160 </p></td>
+            </tr>
+            <tr>
+              <td width="113" valign="top"><p align="center"> 160 </p></td>
+              <td width="113" valign="top"><p align="center"> 16 </p></td>
+              <td width="113" valign="top"><p align="center"> 250 </p></td>
+            </tr>
+            <tr>
+              <td width="113" valign="top"><p align="center"> 250 </p></td>
+              <td width="113" valign="top"><p align="center"> 20 </p></td>
+              <td width="113" valign="top"><p align="center"> 400 </p></td>
+            </tr>
+            <tr>
+              <td width="113" valign="top"><p align="center"> 315 </p></td>
+              <td width="113" valign="top"><p align="center"> 25 </p></td>
+              <td width="113" valign="top"><p align="center"> 500 </p></td>
+            </tr>
+            <tr>
+              <td width="113" valign="top"><p align="center"> 400 </p></td>
+              <td width="113" valign="top"><p align="center"> 31,5 </p></td>
+              <td width="113" valign="top"><p align="center"> 630 </p></td>
+            </tr>
+            <tr>
+              <td width="113" valign="top"><p align="center"> 630 </p></td>
+              <td width="113" valign="top"><p align="center"> 50 </p></td>
+              <td width="113" valign="top"><p align="center"> 910 </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Aan de laagspanningszijde van de transformator worden bij voorkeur smeltpatronen aangebracht vanwege de veiligheid van personeel in het geval dat er een
+          kortsluiting ontstaat. Door het gebruik van LS smeltpatronen wordt de kortsluitstroom beperkt (kapstroom), waardoor de dynamische krachten, die in de
+          LS-verdeelinrichting bij de hoge kortsluitstromen optreden, worden beperkt. De kortsluitstromen aan LS-zijde worden namelijk door de MS smeltpatronen niet
+          in het kapgebied gezien en daardoor zou bij een niet door LS smeltpatronen beveiligde verdeelinrichting het maximale dynamisch effect optreden. Nadeel van
+          deze constructie is dat MS- en LS-smeltpatronen niet altijd selectief met elkaar gekozen kunnen worden (zie figuur 6.30). Hierdoor kunnen na een
+          kortsluiting aan de LS-zijde verkeerde conclusies worden getrokken als de MS-beveiliging is aangesproken en als de LS-smeltveiligheid niet geheel is
+          doorgebrand. Een eerste conclusie is dan dat er een interne sluiting in de transformator zit, terwijl de werkelijke oorzaak lager zit. Wel moet worden
+          opgemerkt dat selectiviteit tussen de MS-smeltpatronen en de afgaande velden van de LS-verdeelinrichting wel te realiseren is. </p>
+        <p> De a-selectiviteit wordt geaccepteerd aangezien de a-selectiviteit alleen optreedt indien de fout zich bevindt in het afgesloten gebied van het netstation.
+          De kans hierop is erg klein. Bovendien blijven de eventuele gevolgen van a-selectief afschakelen beperkt tot de transformator en de daarop aangeslotenen. </p>
+        <img src="./beveiliging_files/6.30.png" width="682" height="441" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.30 A-selectiviteit bij MS- en LS-smeltveiligheden van een 400 kVA-nettransformator </h5>
+        <p> Bij transformatoren met een nominaal vermogen vanaf 1000 kVA kunnen problemen ontstaan met de warmteontwikkeling door de stroom door de smeltveiligheden.
+          Vooral in afgesloten ruimten kan deze warmteontwikkeling leiden tot een aanzienlijke temperatuurverhoging van meer dan 65 graden, waardoor
+          isolatiematerialen kunnen beschadigen. Dit beperkt het gebruik van smeltveiligheden in een afgesloten ruimte. </p>
+        <p> Voor de beveiliging van nettransformatoren groter dan 630 kVA wordt een vermogenschakelaar met een maximaal stroom-tijdbeveiliging toegepast. De waarde
+          voor <em>I<sub>&gt;</sub></em> wordt berekend met formule 6.22 voor de berekening van de MS-smeltpatroon. Tabel 6.3 geeft een overzicht voor de instellingen voor <em>I <sub>&gt;</sub></em> en <em>I<sub>&gt;&gt;</sub></em>. </p>
+        <h5> Tabel 6.3 Instellingen voor een transformator MST </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="113" valign="top"><p align="center"> <strong>Transformator (kVA)</strong> </p></td>
+              <td width="113" valign="top"><p align="center"> <strong>I<sub>&gt;</sub> (A), t<sub>&gt;</sub>=0,5 s</strong> </p></td>
+              <td width="113" valign="top"><p align="center"> <strong>I<sub>&gt;&gt;</sub> (A), t<sub>&gt;&gt;</sub>=0 s</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="113" valign="top"><p align="center"> 750 </p></td>
+              <td width="113" valign="top"><p align="center"> 65 </p></td>
+              <td width="113" valign="top"><p align="center"> 1500 </p></td>
+            </tr>
+            <tr>
+              <td width="113" valign="top"><p align="center"> 800 </p></td>
+              <td width="113" valign="top"><p align="center"> 70 </p></td>
+              <td width="113" valign="top"><p align="center"> 1500 </p></td>
+            </tr>
+            <tr>
+              <td width="113" valign="top"><p align="center"> 1000 </p></td>
+              <td width="113" valign="top"><p align="center"> 90 </p></td>
+              <td width="113" valign="top"><p align="center"> 1500 </p></td>
+            </tr>
+            <tr>
+              <td width="113" valign="top"><p align="center"> 1600 </p></td>
+              <td width="113" valign="top"><p align="center"> 140 </p></td>
+              <td width="113" valign="top"><p align="center"> 1500 </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Bij een transformator met een vermogen groter dan 630 kVA kan met smeltpatronen aan de middenspanningszijde geen selectiviteit meer worden bereikt met de
+          beveiliging aan secundaire zijde. Voor beveiliging met een vermogenschakelaar met maximaal stroom-tijdbeveiliging wordt gekozen voor een instelling voor <em>I <sub>&gt;</sub>/t<sub>&gt;</sub></em> gelijk aan <em>1,5 x I<sub>nom</sub>/0,5 s</em> en voor <em>I<sub>&gt;&gt;</sub>/t<sub>&gt;&gt;</sub></em> gelijk aan <em>1500 A/0 s</em>. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_6.3.2"></div>
+        <br>
+        <h3> 6.3.2 Voedingstransformator </h3>
+        <p> Grote regelbare HS/MS-voedingstransformatoren van 150, 110 en 50 kV naar 25, 20 en 10 kV zijn doorgaans voorzien van eigen transformatorbeveiligingen
+          (Buchholz, temperatuur en druk), een differentiaalbeveiliging en een maximaalstroomtijdbeveiliging aan HS- en MS-zijde. De maximaalstroomtijdbeveiliging
+          aan HS-zijde fungeert als reserve voor de differentiaalbeveiliging en als back-up voor de beveiliging aan MS-zijde. </p>
+        <p> De differentiaalbeveiliging vergelijkt de stromen aan primaire en secundaire zijde met elkaar. Bij een transformator met vaste overzetverhouding wordt de
+          differentiaalbeveiliging zo gevoelig mogelijk ingesteld. Bij een regelbare transformator wordt een minder gevoelige instelling gekozen, zodat in de
+          uiterste standen van de regelschakelaar geen onterechte uitschakeling plaatsvindt. De differentiaalbeveiliging kan worden ingesteld op <em>I<sub>d&gt;</sub> = 0,3 x I<sub>nom</sub> ; t<sub>d&gt;</sub> = 0 s</em>. De maximaalstroomtijdbeveiligingen van de voedingstransformator kunnen worden
+          ingesteld volgens onderstaand schema. Hierin is tussen HS- en MS-zijde een tijdstaffeling van 0,3 s toegepast. </p>
+        <p> <em>Hoogspanningszijde</em> <br>
+          Eerste trap: <em>I<sub>&gt;</sub> = 1,4 x I<sub>nom</sub>; t<sub>&gt;</sub> = 3 s</em><br>
+          Tweede trap: <em>I<sub>&gt;&gt;</sub> = 2,5 x I<sub>nom</sub> (maximaal 4500 A); t<sub>&gt;&gt;</sub> = 1,5 s</em> </p>
+        <p> <em>Middenspanningszijde</em> <br>
+          Eerste trap: <em>I<sub>&gt;</sub> = 1,25 x I<sub>nom</sub>; t<sub>&gt;</sub> = 2,7 s</em><br>
+          Tweede trap: <em>I<sub>&gt;&gt;</sub> = 2,0 x I<sub>nom</sub> (maximaal 4000 A); t<sub>&gt;&gt;</sub> = 1,2 s</em> </p>
+        <p> Bij de transformatoren geeft de beveiliging aan primaire zijde een uitschakeling aan de vermogenschakelaar aan primaire-, secundaire- en eventueel
+          tertiaire zijde. De beveiliging aan secundaire- en tertiaire zijde geeft echter alleen een uitschakeling aan de vermogenschakelaar van hun eigen zijde. </p>
+        <p> Bij het inschakelen van een onbelaste transformator kan gedurende meerdere seconden een grote inrushstroom gaan lopen met een frequentie gelijk aan de
+          tweede harmonische. Deze stroom zal zonder aanvullende maatregelen tot een afschakeling door de differentiaalbeveiliging kunnen leiden. Om die reden wordt
+          in het statische relais vaak een filter op de tweede harmonische toegepast. </p>
+        <p> Voedingstransformatoren zijn meestal oliegevuld en zijn voorzien van een Buchholzbeveiliging. Deze beveiliging detecteert gasontwikkeling in olie, die door
+          plaatselijke verhitting ontstaat. De werking berust op scharnierende luchtgevulde vlotters die in olie omhoog worden gedrukt en die naar beneden vallen
+          indien de opwaartse kracht van de olie door gasbellen wegvalt. Vaak zijn er twee vlotters, waarvan één vlotter zeer gevoelig is voor kleine
+          hoeveelheden gas en een Buchholz signaal afgeeft. De andere vlotter reageert op sterke gasontwikkeling en geeft een uitschakelcommando. </p>
+        <p> De drukbeveiliging schakelt de transformator onvertraagd uit indien de druk in het compartiment van de regelschakelaar te hoog oploopt, bijvoorbeeld door
+          inwendige sluiting. </p>
+        <p> Een hoge bedrijfstemperatuur in een transformator kan de levensduur van de aanwezige isolatie aanmerkelijk bekorten. Daarom worden zowel de
+          wikkelingstemperatuur als ook de olietemperatuur gemeten. Voor giethars transformatoren leiden de hoge temperaturen snel tot defecten, waarbij de kans op
+          brand groot is. Het snel signaleren van een temperatuursverhoging in het object is noodzakelijk om snel in te kunnen grijpen. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_6.3.3"></div>
+        <br>
+        <h3> 6.3.3 Regeltransformator </h3>
+        <p> Regeltransformatoren zijn doorgaans voorzien van eigen transformatorbeveiligingen (Buchholz en druk), een differentiaalbeveiliging en een
+          maximaalstroomtijdbeveiliging aan de ongeregelde voedende zijde. De maximaalstroomtijdbeveiliging aan ongeregelde zijde fungeert als reserve voor de
+          differentiaalbeveiliging. </p>
+        <p> Tijdens een kortsluiting in een afgaand veld of geregelde rail zal de regeling van de regelbare transformator de spanningsdaling willen compenseren door de
+          spanning te verhogen. In dit geval moet echter de regelschakelaar geblokkeerd worden, zodat het niet mogelijk is om te regelen tijdens een doorgaande
+          foutstroom. Het conflict wordt vermeden door de uitvoering (het verstellen van de trappenschakelaar) met enkele seconden te vertragen. </p>
+        <p> De differentiaalbeveiliging kan worden ingesteld op <em>I<sub>d&gt;</sub> = 0,3 x I<sub>nom</sub> ; t<sub>d&gt;</sub> = 0 s</em>. De maximaal
+          stroom-tijdbeveiliging van de ongeregelde zijde kan worden ingesteld volgens onderstaand schema. </p>
+        <p> Eerste trap: <em>I<sub>&gt;</sub> = 1,25 x I<sub>nom</sub>; t<sub>&gt;</sub> = 2,1 s</em><br>
+          Tweede trap: <em>I<sub>&gt;&gt;</sub> = 2,0 x I<sub>nom</sub> (maximaal 3600 A); t<sub>&gt;&gt;</sub> = 0,9 s</em> </p>
+        <a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_6.3.4"></div>
+        <br>
+        <h3> 6.3.4 Aardingstransformator </h3>
+        <p> Veel MS-distributienetten hebben een zwevend sterpunt. Het nadeel van een zwevend net is dat bij een fase-aardfout langdurig grote capacitieve stromen
+          kunnen vloeien. Ook leidt de verhoogde spanning op de gezonde fasen tot verhoogde spanning op kabels en overige componenten, hetgeen op een andere locatie
+          tot doorslag kan leiden op zwakke plekken in de isolatie (cross country fouten). Hierom kunnen MS-distributienetten geaard worden met behulp van
+          aardingstransformatoren of sterpuntsspoelen op de secundaire wikkeling van de voedingstransformator. Hierdoor zal bij een fase-aardsluiting een grote
+          foutstroom gaan vloeien. Het is nu eenvoudiger om fase-aardsluitingen selectief af te schakelen. </p>
+        <p> Een fase-aardfout leidt tot een aardstroom door de aardingstransformator. Deze wordt door de maximaal stroom-tijdbeveiliging gemeten. Bij een foutstroom
+          van meer dan 50 A geeft de MST-beveiliging een afschakelcommando. De hierbij toegepaste tijdvertraging is relatief lang. Zij wordt bijvoorbeeld op 240 s
+          ingesteld, zodat mogelijke tijdelijke asymmetrische situaties, die tijdens handmatige netverschakelingen kunnen optreden en enkele minuten kunnen duren,
+          niet worden gezien als fase-aardsluitingen. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_6.4"></div>
+        <br>
+        <h2> 6.4 Beveiliging in de netten </h2>
+        <p> Bij het beveiligen van het net staat als eerste de persoonlijke veiligheid voorop, gevolgd door het zoveel mogelijk beperken van de materiële schade.
+          Bij het afschakelen dient er zo weinig mogelijk hinder te ontstaan in de gezonde delen van het net. Om die reden wordt veel aandacht besteed aan de
+          instelling van de beveiliging en aan de keuze van de smeltveiligheden. </p>
+        <p> Een distributienet is te beschouwen als een keten, die opgebouwd is uit verscheidene kabels en componenten, waarvan de nominale stroom onderling verschilt.
+          De beveiligingsinstelling wordt bepaald op de laagste nominale stroom van de componenten in de te beveiligen streng. De stroom door de streng kan zich
+          bevinden in het normale bedrijfsgebied, in het overbelastinggebied en in het kortsluitgebied. Stromen kleiner dan <em>I<sub>nom</sub></em> bevinden zich in het
+          normale bedrijfsgebied. Stromen in het gebied daarboven kunnen veroorzaakt zijn door een overbelasting of een kortsluiting. De grens tussen het
+          overbelastinggebied en kortsluitgebied is niet altijd even duidelijk vast te leggen. De distributienetten worden in beginsel alleen tegen de gevolgen van
+          kortsluitstromen beveiligd. De beveiliging moet voldoende snel zijn om thermische schade te voorkomen. Om dit te bereiken moeten grote kortsluitstromen
+          snel worden afgeschakeld. Als bijkomend voordeel van de snelle afschakeling duren de spanningsdips in de gezonde delen van het net minder lang, hetgeen de
+          bijkomende gevolgen van de verstoring beperkt. </p>
+        <p> Bij een kortsluiting moet alleen het gestoorde deel worden afgeschakeld. Dit wordt gerealiseerd door de dichtstbijzijnde vermogenschakelaar(s) te openen.
+          Hiermee worden alleen de hierop aangesloten klanten getroffen. Mocht dit niet mogelijk zijn, bijvoorbeeld door een weigering van de beveiliging of
+          vermogenschakelaar, dan moet een hoger in het net aanwezige beveiliging als back-up deze kortsluiting afschakelen. </p>
+        <p> Bij het instellen van de beveiligingen wordt van onderstaande punten uitgegaan: </p>
+        <ul>
+          <li>Waarborgen van de persoonlijke veiligheid door het beperken van lichtboogverschijnselen, aanraakspanningen en stapspanningen. </li>
+          <li>Voorkomen van schade aan componenten als gevolg van de optredende kortsluitstromen. De componenten worden beschermd tegen de hoge thermische
+            belasting. Tegen de dynamische belasting kan niet worden beveiligd. De installatie moet bestand zijn tegen de krachten die optreden door het heersende
+            dynamische kortsluitvermogen. </li>
+          <li>Beperken van de uitval van het aantal aangesloten klanten. Echter, veiligheid is belangrijker dan selectiviteit. Op plaatsen waar bescherming van
+            mens en componenten niet verenigbaar is met selectiviteit, wordt de voorkeur gegeven aan de bescherming van mens en component. </li>
+          <li>Beperken van de duur van spanningsdips als gevolg van grote kortsluitstromen. Echter, selectiviteit is belangrijker dan het verminderen van
+            spanningsdips. </li>
+          <li>Bij tijdsinstellingen gaat het over relais tijden (parametering), exclusief tijden van de vermogensschakelaar. Deze tijd wordt opgevangen met de
+            tijd staffelingen (bijvoorbeeld van 0,3 s). Een tijdsinstelling van ‘nul’ seconde, houdt in dat er wel rekening moet worden gehouden met de
+            eigen tijd van het beveiligingssysteem (relais en vermogenschakelaar) van ongeveer 40 tot 80 ms. </li>
+        </ul>
+        <a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_6.4.1"></div>
+        <br>
+        <h3> 6.4.1 MS-transportnetten </h3>
+        <p> In het MS-transportnet worden stations voor een groot vermogen meestal met meerdere parallelle kabels gevoed. Deze netten worden meestal met een
+          enkelvoudige storingsreserve zonder energie onderbreking aangelegd, zodat het uitvallen van één kabel geen invloed heeft op de levering van
+          elektriciteit. Deze netten komen voor in de volgende gevallen: </p>
+        <ul>
+          <li> van onderstation naar schakelstation/regelstation </li>
+          <li>van onderstation naar grootverbruiker (aansluiting type A.6) </li>
+          <li>van schakelstation/regelstation naar grootverbruiker (aansluiting type A.6). </li>
+        </ul>
+        <img src="./beveiliging_files/6.31.png" width="576" height="373" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.31 Basisstructuur van een MS-transportnet </h5>
+        <p> In Nederland is het gebruikelijk dat bij de bedrijfsvoering van vermaasde transportnetten deze netten worden beveiligd met distantie- en
+          differentiaalbeveiligingen. De beste beveiligingsoplossing in MS-transportnetten blijkt langsdifferentiaalbeveiliging te zijn. Deze levert de meest
+          selectieve beveiliging en kan zonder tijdvertraging actief worden. Als back-upbeveiliging wordt vaak een maximaal stroom-tijdbeveiliging gebruikt, die bij
+          een kortsluiting de kabel niet selectief afschakelt. Voor toepassing van de langsdifferentiaalbeveiliging is een communicatieverbinding tussen beide zijden
+          van de kabelverbinding nodig. </p>
+        <p> Als eerste alternatief voor de langsdifferentiaalbeveiliging kan de beveiliging bestaan uit een distantiebeveiliging aan de voedende zijde en een
+          energierichtingsbeveiliging aan de andere zijde. Indien geen communicatieverbinding mogelijk is, geniet deze configuratie de voorkeur. Als tweede
+          alternatief is het mogelijk deze situatie te beveiligen met aan beide zijden een distantiebeveiliging of met een maximaal stroom-tijdbeveiliging aan de
+          voedende zijde in combinatie met een energierichtingsbeveiliging aan de andere zijde. Voor toepassing van een distantiebeveiliging moet de impedantie van
+          de kabel groot genoeg zijn om deze selectief in te kunnen stellen. Een kabellengte van meer dan 1 km is meestal voldoende. </p>
+        <p> Voor deze situaties wordt de differentiaalbeveiliging ingesteld op: <em>I<sub>d&gt;</sub> = 0,5 x I<sub>nom</sub></em>. De back-upbeveiliging van de voeding van een
+          schakelstation is een maximaal stroom-tijdbeveiliging, die bijvoorbeeld is ingesteld volgens: <em>I<sub>&gt;</sub> = 1,5 x I<sub>nom </sub></em>; <em>t<sub>&gt;</sub> =
+          2,1 s</em>. Indien een grootverbruiker van het type A.6 wordt gevoed, is de back-upbeveiliging bijvoorbeeld ingesteld volgens: <em>I<sub>&gt;</sub> = 1,5 x I <sub>nom </sub></em>; <em>t<sub>&gt;</sub> = 1,5 s</em>, om selectief te zijn met de beveiliging op het overdrachtspunt naar de grootverbruiker. De back-upbeveiliging is
+          ook voorzien van een instelling voor <em>I<sub>&gt;&gt;</sub></em> ten behoeve van fase-fasesluitingen in een parallelle kabel en voor <em>I<sub>0&gt;</sub></em> ten behoeve
+          van fase-aardsluitingen in een parallelle kabel. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_6.4.2"></div>
+        <br>
+        <h3> 6.4.2 MS-distributienetten </h3>
+        <p> De MS-distributienetten zijn meestal vermaasd aangelegd maar worden radiaal bedreven door in elke maas een scheiding aan te brengen (Netopening; Normal
+          Open Point). De beveiliging is daarop afgestemd. De strengen worden meestal beveiligd met maximaal stroom-tijdbeveiligingen, bij voorkeur ingesteld met <em>I<sub>&gt;</sub> / t<sub>&gt;</sub>, I<sub>&gt;&gt;</sub> / t<sub>&gt;&gt;</sub>, I<sub>0&gt;</sub> / t<sub>0&gt;</sub></em> en <em>I<sub>0&gt;&gt;</sub> / t <sub>0&gt;&gt;</sub></em>. Bij het instellen van de beveiligingen in de strengen moet rekening gehouden worden met de instellingen van de beveiligingen in het
+          HS-net en het onderstation en de instellingen van achtergelegen strengen en aansluitingen. </p>
+        <p> In een MS-distributienet komt het regelmatig voor dat op een zekere afstand vanaf het onderstation overgegaan wordt op kabels met een kleinere
+          geleiderdoorsnede, omdat die kabels maar een kleinere belastingstroom hoeven te voeren. Dit heet ‘verjongen’. Bij elke verjonging wordt een
+          beveiliging toegepast, die afgestemd is op het kabeltype dat erachter ligt. Door de beveiliging is het verjongde netdeel een nieuwe streng. </p>
+        <p> Bij het instellen van de beveiligingen moet rekening gehouden worden met de selectiviteit. Dit kan worden bereikt met een staffeling van de instellingen.
+          Dat betekent dat bij het instellen van stroomwaarden en afschakeltijden rekening gehouden moet worden met de instellingen van de beveiligingen aan de
+          voorliggende voedende en de achterliggende zijde. Bij een beveiliging wordt gesproken van stroomselectiviteit en tijdselectiviteit. In figuur 6.32 is
+          Streng 1 stroomselectief met Streng 2 als de stroominstelling van Streng 1 hoger is dan van Streng 2. Verder is Streng 1 tijdselectief met Streng 2 als de
+          tijdinstelling voor Streng 1 langer is dan van Streng 2. Voor smeltveiligheden geldt dat twee patronen met een nominale stroomverhouding groter dan of
+          gelijk aan 1,6 : 1 ten opzichte van elkaar absoluut selectief zijn. </p>
+        <img src="./beveiliging_files/6.32.png" width="698" height="395" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.32 Basisstructuur van de meeste MS-distributienetten </h5>
+        <p> Figuur 6.32 illustreert de basisstructuur van een distributienet. Op een van de velden van het onderstation wordt een kabel aangesloten, die het begin is
+          van een hoofdstreng (Streng 1), waarop netstations en klantstations worden aangesloten. Op deze hoofdstreng kan in een netstation een tweede streng (Streng
+          2) worden aangesloten. Deze streng heeft een eigen beveiliging. Op deze tweede streng wordt soms een derde streng aangesloten, die ook voorzien is van een
+          eigen beveiliging. In de meeste netstations is een distributietransformator aanwezig, voorzien van een beveiliging aan de primaire en secundaire zijde. In
+          het laagspanningscircuit zijn alle afgaande richtingen beveiligd, meestal met smeltveiligheden. In een klantstation wordt een grootverbruiker rechtstreeks
+          op middenspanningsniveau aangesloten. De voedingskabel van deze grootverbruikersaansluiting is beveiligd met een vermogenschakelaar. </p>
+        <p> Een streng wordt meestal beveiligd met een onafhankelijke maximaal stroom-tijdbeveiliging. De aanspreekwaarde van het beveiligingsrelais moet hoger zijn
+          dan de continu toegelaten stroom <em>I<sub>nom</sub> </em>van de kabel. Voor de instelling van <em>I<sub>&gt;</sub></em> van een streng moet rekening gehouden worden met een
+          bepaalde marge boven de nominale stroomsterkte van de kabel. Deze marge heeft oorspronkelijk te maken met de afvalwaarde van een elektromechanisch relais.
+          Om te voorkomen dat ten gevolge van een kortstondige stroompiek onnodig een afschakelcommando wordt gegeven, moet de afvalwaarde van de beveiliging groter
+          zijn dan de nominale stroomsterkte van de kabel. De afvalwaarde bedraagt 80% van de aanspreekwaarde. Dit geeft voor <em>I<sub>&gt;</sub></em> als ondergrens een
+          factor van 1,25. Een nieuw digitaal relais heeft een verhouding aanspreekwaarde/afvalwaarde van 1. Indien de netbeheerder een overbelasting van 20%
+          toestaat en de meetnauwkeurigheid van een stroomtransformator 5% is, komt dit ook overeen met een factor van 1,25 (≈ 1,2 x 1,05). Hiermee wordt het
+          risico geaccepteerd dat de kabel thermisch wordt overbelast. Het voordeel van een ruimere marge is daarentegen dat tijdelijke overbelastingen bij
+          omschakelacties minder vaak tot afschakelingen leiden. De uiteindelijke keuze voor de instelling hangt af van diverse factoren, zoals leeftijd van de kabel
+          en mogelijkheden om de kabelbelasting te monitoren. Voor de eerste streng is de instelling voor <em>I<sub>&gt;</sub></em> standaard gelijk aan 1,25 maal de nominale
+          stroom, maar indien het veld met verremeting bewaakt is, is de instelling 1,5 maal de nominale stroom. Dit heeft overigens als consequentie dat stromen die
+          tot 25% groter zijn dan de nominale stroom niet worden afgeschakeld. </p>
+        <p> De tijdsinstelling wordt gestaffeld van voedingstransformator tot aan de laatste streng. Dit houdt in dat de staffeltijd oploopt naar de voedingsbron toe,
+          gerekend vanaf de beveiliging die zich het verst in het net bevindt. De insteltijden van twee opeenvolgende beveiligingen moeten zodanig zijn dat de
+          beveiliging die zich het dichtst bij de fout bevindt een uitschakelcommando aan de bijbehorende vermogenschakelaar geeft. Deze schakelaar moet de fout
+          afschakelen voordat de volgende beveiliging een afschakelcommando geeft. De tijdsinstelling voor de eerste streng moet zich onder de instelling van de
+          voedingstransformator bevinden en boven de instelling van de tweede en derde streng. De laatste beveiliging heeft de kortste afschakeltijd. Een goede
+          waarde voor de instelling van <em>t<sub>&gt;</sub></em> voor de eerste streng is bijvoorbeeld 1,8 s. </p>
+        <p> Bij de tijdstaffeling van maximaal stroom-tijdbeveiligingen moet rekening gehouden worden met de eigen schakeltijd van de vermogenschakelaar. De
+          uitschakeltijd van een vermogenschakelaar ligt tussen 40 en 80 ms. Vooralsnog houdt men in de praktijk bij de tijdstaffeling een marge aan van 0,3 s. </p>
+        <p> Kortsluitingen dicht bij het onderstation leiden tot grote kortsluitstromen. Voor het beperken van materiële schade aan de componenten en voor het
+          beperken van de grote spanningsdip elders in het net, worden deze grote kortsluitstromen snel afgeschakeld met een instelling voor <em>I<sub>&gt;&gt;</sub></em> en <em> t<sub>&gt;&gt;</sub></em>. De stroominstellingen voor de strengen worden onderling gestaffeld. De tijdinstellingen worden gestaffeld met voorliggende en
+          achterliggende beveiligingen. </p>
+        <p> Voor kortsluitingen in de hoofdstreng tussen het onderstation en de eerstvolgende beveiliging is soms een derde instelling <em>I<sub>&gt;&gt;&gt;</sub></em> en t<em><sub>&gt;&gt;&gt;</sub></em> mogelijk, waarbij de tijdinstelling meestal 0 s is. Oude relais hebben deze instelling niet en vaak missen relatief simpele digitale systemen deze instellingmogelijkheid ook. Bij nieuwere beveiliging systemen is deze mogelijkheid standaard. </p>
+        <p> In de impedantie-geaarde middenspanningsnetten lopen relatief hoge stromen bij een fase-aardfout. De hoogte van deze stroom is afhankelijk van de
+          impedantie van het aardpunt en de foutplaats. Afhankelijk van de kabelsoort en lengte van de streng kan deze stroom lager zijn dan de nominale stroom. De
+          sterpunten van de middenspanningsnetten worden in het onderstation geaard met aardingstransformatoren of sterpuntsspoelen. Hierbij worden de sterpunten
+          bewaakt door een MST beveiliging die de stroom naar aarde meet. Bij een stroom groter dan bijvoorbeeld 50 A kan door overbelasting schade optreden aan het
+          sterpunt indien de fase-aardfout niet in de streng wordt afgeschakeld. De eerste strengen worden daarom beveiligd met bijvoorbeeld een <em>I<sub>0&gt;</sub></em> van 50 A en een tijdsinstelling van <em>t<sub>0&gt;</sub></em> van 60 s. Voor deze lange tijd (1 minuut) wordt gekozen omdat bij het veranderen van netkoppelingen
+          tijdens het 1-polig schakelen een a-symmetrische stroom kan lopen. </p>
+        <p> Naast de <em>I<sub>0&gt;</sub></em> wordt voor de eerste streng een <em>I<sub>0&gt;&gt;</sub></em> ingesteld met een waarde onder de instelling voor <em>I<sub>0&gt;</sub></em> van de
+          voedende HS-transformator (500 A / 2,7 s). De tijdsinstelling is gelijk aan de fase instelling <em>t<sub>&gt;</sub></em>. </p>
+        <p> In een onderstation kunnen in verband met de selectiviteit maximaal 3 strengen ‘achter elkaar’ aangesloten worden. In nieuwbouwprojecten worden
+          bij voorkeur geen derde strengen meer aangesloten. De selectiviteit wordt bepaald door de beveiligingsinstellingen van de HS-zijde van de
+          voedingstransformator tot aan de beveiligingsinstellingen van de MS-aansluitingen van distributietransformatoren en A.5 aansluitingen. </p>
+        <p> In een regelstation of schakelstation kunnen alleen 3 strengen achter elkaar worden aangesloten indien de voedende kabels beveiligd zijn met
+          differentiaalbeveiligingen. Zo niet, is het maximum aantal strengen vanuit een regelstation of schakelstation gelijk aan 2. </p>
+        <p> Tabel 6.4 geeft een mogelijk schema weer voor de beveiliging van een MS-distributienet, vanaf de voedingstransformator tot aan de derde streng. Hierbij
+          zijn de waarden van <em>I<sub>&gt;&gt;</sub></em> voor de transformator gemaximeerd op 4500 A, betrokken op een spanningsniveau van 10 kV. De beveiligingen voor de
+          aansluitingen zijn beschreven in paragraaf 6.2 en voor de MS/LS-transformatoren in paragraaf 6.3.1. </p>
+        <h5> Tabel 6.4  Instelling voor de beveiliging vanaf de voedingstransformator </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="15%" valign="top"><p> <strong>Locatie</strong> </p></td>
+              <td width="10%" valign="top"><p align="center"> <strong>I<sub>&gt;</sub></strong> </p></td>
+              <td width="10%" valign="top"><p align="center"> <strong>t<sub>&gt;</sub></strong> <strong> (s)</strong> </p></td>
+              <td width="15%" valign="top"><p align="center"> <strong>I<sub>&gt;&gt;</sub></strong> </p></td>
+              <td width="10%" valign="top"><p align="center"> <strong>t<sub>&gt;&gt;</sub></strong> <strong><em> </em>(s)</strong> </p></td>
+              <td width="10%" valign="top"><p align="center"> <strong>I<sub>0&gt;</sub></strong> </p></td>
+              <td width="10%" valign="top"><p align="center"> <strong>t<sub>0&gt;</sub></strong> <strong><em> </em>(s)</strong> </p></td>
+              <td width="10%" valign="top"><p align="center"> <strong>I<sub>0&gt;&gt;</sub></strong> </p></td>
+              <td width="10%" valign="top"><p align="center"> <strong>t<sub>0&gt;&gt;</sub></strong> <strong><em> </em>(s)</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="71" valign="top"><p> Transformator HS-zijde </p></td>
+              <td width="48" valign="top"><p align="center"> 1,4 x I<sub>nom</sub> </p></td>
+              <td width="23" valign="top"><p align="center"> 3,0 </p></td>
+              <td width="57" valign="top"><p align="center"> 2,5 x I<sub>nom </sub>, max 4500 A (op 10 kV) </p></td>
+              <td width="28" valign="top"><p align="center"> 1,5 </p></td>
+              <td width="35" valign="top"><p align="center"> 700 A </p></td>
+              <td width="28" valign="top"><p align="center"> 3,0 </p></td>
+              <td width="25" valign="top"></td>
+              <td width="25" valign="top"></td>
+            </tr>
+            <tr>
+              <td width="71" valign="top"><p> Transformator MS-zijde </p></td>
+              <td width="48" valign="top"><p align="center"> 1,25 x I<sub>nom</sub> </p></td>
+              <td width="23" valign="top"><p align="center"> 2,7 </p></td>
+              <td width="57" valign="top"><p align="center"> 2,0 x I<sub>nom </sub>, max 4000 A (op 10 kV) </p></td>
+              <td width="28" valign="top"><p align="center"> 1,2 </p></td>
+              <td width="35" valign="top"><p align="center"> 500 A </p></td>
+              <td width="28" valign="top"><p align="center"> 2,7 </p></td>
+              <td width="25" valign="top"></td>
+              <td width="25" valign="top"></td>
+            </tr>
+            <tr>
+              <td width="71" valign="top"><p> Eerste streng </p></td>
+              <td width="48" valign="top"><p align="center"> 1,25 of </p>
+                <p align="center"> 1,5 x I<sub>nom</sub> </p></td>
+              <td width="23" valign="top"><p align="center"> 1,8 </p></td>
+              <td width="57" valign="top"><p align="center"> 1900 A </p></td>
+              <td width="28" valign="top"><p align="center"> 0,6 </p></td>
+              <td width="35" valign="top"><p align="center"> 50 A </p></td>
+              <td width="28" valign="top"><p align="center"> 60 </p></td>
+              <td width="25" valign="top"><p align="center"> 300 A </p></td>
+              <td width="25" valign="top"><p align="center"> 1,8 </p></td>
+            </tr>
+            <tr>
+              <td width="71" valign="top"><p> Tweede streng </p></td>
+              <td width="48" valign="top"><p align="center"> 1,25 x I<sub>nom</sub> </p></td>
+              <td width="23" valign="top"><p align="center"> 1,5 </p></td>
+              <td width="57" valign="top"><p align="center"> 1700 A </p></td>
+              <td width="28" valign="top"><p align="center"> 0,3 </p></td>
+              <td width="35" valign="top"><p align="center"> 250 A </p></td>
+              <td width="28" valign="top"><p align="center"> 1,5 </p></td>
+              <td width="25" valign="top"></td>
+              <td width="25" valign="top"></td>
+            </tr>
+            <tr>
+              <td width="71" valign="top"><p> Derde streng </p></td>
+              <td width="48" valign="top"><p align="center"> 1,25 x I<sub>nom</sub> </p></td>
+              <td width="23" valign="top"><p align="center"> 1,2 </p></td>
+              <td width="57" valign="top"><p align="center"> 1500 A </p></td>
+              <td width="28" valign="top"><p align="center"> 0,0 </p></td>
+              <td width="35" valign="top"><p align="center"> 200 A </p></td>
+              <td width="28" valign="top"><p align="center"> 1,2 </p></td>
+              <td width="25" valign="top"></td>
+              <td width="25" valign="top"></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Deze instellingen zijn ingevuld voor de beveiligingen van het voorbeeldnet van figuur 6.32. In het net zijn ook de beveiligingen van de
+          distributietransformator en een laagspanningsstreng ingevuld. Figuur 6.33 geeft grafisch de instellingen van alle beveiligingen weer. Alle stromen in de
+          grafiek zijn betrokken op het 10 kV-spanningsniveau. </p>
+        <img src="./beveiliging_files/6.33.png" width="705" height="457" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.33 Instelling van de beveiligingen in een MS- en LS-distributienet </h5>
+        <p> In het geval dat de strengen gevoed worden vanuit een regelstation of schakelstation, waarvan de voedende kabels beveiligd zijn met
+          differentiaalbeveiligingen, kunnen maximaal 3 strengen worden aangesloten en is het schema voor de instellingen van de beveiligingen zoals aangegeven in
+          tabel 6.5. In deze tabel is n het aantal voedende parallelle kabels tussen het onderstation en het regel- of schakelstation. Indien de voedende kabels niet
+          beveiligd zijn met differentiaalbeveiligingen, vervalt de derde streng. </p>
+        <h5> Tabel 6.5 Instelling voor de beveiliging vanaf een regel- of schakelstation </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="15%" valign="top"><p> <strong>Locatie</strong> </p></td>
+              <td width="10%" valign="top"><p align="center"> <strong>I<sub>&gt;</sub></strong> </p></td>
+              <td width="23" valign="top"><p align="center"> <strong>t<sub>&gt;</sub></strong> <strong> (s)</strong> </p></td>
+              <td width="15%" valign="top"><p align="center"> <strong>I<sub>&gt;&gt;</sub></strong> </p></td>
+              <td width="10%" valign="top"><p align="center"> <strong>t<sub>&gt;&gt;</sub></strong> <strong> (s)</strong> </p></td>
+              <td width="10%" valign="top"><p align="center"> <strong>I<sub>0&gt;</sub></strong> </p></td>
+              <td width="10%" valign="top"><p align="center"> <strong>t<sub>0&gt;</sub></strong> <strong> (s)</strong> </p></td>
+              <td width="10%" valign="top"><p align="center"> <strong>I<sub>0&gt;&gt;</sub></strong> </p></td>
+              <td width="10%" valign="top"><p align="center"> <strong>t<sub>0&gt;&gt;</sub></strong> <strong> (s)</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="62" valign="top"><p> Transformator HS-zijde </p></td>
+              <td width="48" valign="top"><p align="center"> 1,4 x I<sub>nom</sub> </p></td>
+              <td width="23" valign="top"><p align="center"> 3,0 </p></td>
+              <td width="57" valign="top"><p align="center"> 2,5 x I<sub>nom </sub>, <br>
+                  max 4500 A <br>
+                  (op 10 kV) </p></td>
+              <td width="23" valign="top"><p align="center"> 1,5 </p></td>
+              <td width="35" valign="top"><p align="center"> 700 A </p></td>
+              <td width="23" valign="top"><p align="center"> 3,0 </p></td>
+              <td width="28" valign="top"></td>
+              <td width="26" valign="top"></td>
+            </tr>
+            <tr>
+              <td width="62" valign="top"><p> Transformator MS-zijde </p></td>
+              <td width="48" valign="top"><p align="center"> 1,25 x I<sub>nom</sub> </p></td>
+              <td width="23" valign="top"><p align="center"> 2,7 </p></td>
+              <td width="57" valign="top"><p align="center"> 2,0 x I<sub>nom </sub>, <br>
+                  max 4500 A <br>
+                  (op 10 kV) </p></td>
+              <td width="23" valign="top"><p align="center"> 1,2 </p></td>
+              <td width="35" valign="top"><p align="center"> 500 A </p></td>
+              <td width="23" valign="top"><p align="center"> 2,7 </p></td>
+              <td width="28" valign="top"></td>
+              <td width="26" valign="top"></td>
+            </tr>
+            <tr>
+              <td width="62" valign="top"><p> Parallelle kabel </p></td>
+              <td width="48" valign="top"><p align="center"> 1,5 x I<sub>nom</sub> </p></td>
+              <td width="23" valign="top"><p align="center"> 1,8 </p></td>
+              <td width="57" valign="top"><p align="center"> 3600 / n </p></td>
+              <td width="23" valign="top"><p align="center"> 0,9 </p></td>
+              <td width="35" valign="top"><p align="center"> 400/n </p></td>
+              <td width="23" valign="top"><p align="center"> 1,8 </p></td>
+              <td width="28" valign="top"></td>
+              <td width="26" valign="top"></td>
+            </tr>
+            <tr>
+              <td width="62" valign="top"><p> Eerste streng </p></td>
+              <td width="48" valign="top"><p align="center"> 1,25 of </p>
+                <p align="center"> 1,5 x I<sub>nom</sub> </p></td>
+              <td width="23" valign="top"><p align="center"> 1,5 </p></td>
+              <td width="57" valign="top"><p align="center"> 1900 A </p></td>
+              <td width="23" valign="top"><p align="center"> 0,6 </p></td>
+              <td width="35" valign="top"><p align="center"> 50 A </p></td>
+              <td width="23" valign="top"><p align="center"> 60 </p></td>
+              <td width="28" valign="top"><p align="center"> 300 A </p></td>
+              <td width="26" valign="top"><p align="center"> 1,8 </p></td>
+            </tr>
+            <tr>
+              <td width="62" valign="top"><p> Tweede streng </p></td>
+              <td width="48" valign="top"><p align="center"> 1,25 x I<sub>nom</sub> </p></td>
+              <td width="23" valign="top"><p align="center"> 1,2 </p></td>
+              <td width="57" valign="top"><p align="center"> 1700 A </p></td>
+              <td width="23" valign="top"><p align="center"> 0,3 </p></td>
+              <td width="35" valign="top"><p align="center"> 250 A </p></td>
+              <td width="23" valign="top"><p align="center"> 1,5 </p></td>
+              <td width="28" valign="top"></td>
+              <td width="26" valign="top"></td>
+            </tr>
+            <tr>
+              <td width="62" valign="top"><p> Derde streng </p></td>
+              <td width="48" valign="top"><p align="center"> 1,25 x I<sub>nom</sub> </p></td>
+              <td width="23" valign="top"><p align="center"> 1,2 </p></td>
+              <td width="57" valign="top"><p align="center"> 1500 A </p></td>
+              <td width="23" valign="top"><p align="center"> 0,0 </p></td>
+              <td width="35" valign="top"><p align="center"> 200 A </p></td>
+              <td width="23" valign="top"><p align="center"> 1,2 </p></td>
+              <td width="28" valign="top"></td>
+              <td width="26" valign="top"></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <img src="./beveiliging_files/6.34.png" width="693" height="449" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.34 Beveiliging van MS-strengen </h5>
+        <p> De tabellen geven een indicatie van een instelplan voor beveiligingen in middenspanningsnetten. Hiervan wordt in de praktijk vanwege historische of
+          bedrijfsfilosofische redenen vaak afgeweken. Figuur 6.34 illustreert de beveiliging van een richting in het middenspanningsdistributienet met behulp van
+          onafhankelijke maximaal stroom-tijdrelais. De maximale stroom in normaal bedrijf is ongeveer 180 A. De nominale stroom van de kabels in de ‘eerste
+          streng’ is 310 A. De ‘eerste streng’ wordt vanuit het onderstation gevoed via een smoorspoel, die beveiligd is met een OMT-relais (zie
+          paragraaf 6.1.5) dat een uitschakelcommando geeft op 1,8 s indien de stroom groter is dan 465 A. Indien de kortsluitstroom groter is dan 1900 A wordt op
+          0,6 s een uitschakelcommando gegeven. </p>
+        <img src="./beveiliging_files/6.35.png" width="705" height="457" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.35 Uitschakelkarakteristieken van de beveiliging van MS-strengen </h5>
+        <p> Op de eerste streng zijn twee ‘tweede strengen’ aangesloten met een nominale stroom van respectievelijk 120 A en 125 A. Beide ‘tweede
+          strengen’ zijn beveiligd met een OMT-relais. De beveiliging van Streng 2-1 geeft op 1,5 s een uitschakelcommando indien de stroom groter is dan 150
+          A. Indien de stroom groter is dan 1700 A geeft het relais op 0,3 s een uitschakelcommando. Het relais dat de tweede uitloper beveiligt heeft een instelling
+          voor <em>I<sub>&gt;</sub></em> van 156 A. Figuur 6.35 geeft de karakteristieken weer van de drie genoemde beveiligingen. </p>
+        <p> Duidelijk zichtbaar is dat de karakteristieken van de beveiligingen van Streng 2-1 en Streng 2-2 zich onder de karakteristiek van de voeding bevinden. In
+          het middengebied van de karakteristiek is de marge 0,3 s. Deze instelling is selectief. Aangezien de beveiligingen van Streng 2-1 en Streng 2-2 zich niet
+          achter elkaar bevinden (het zijn beide ‘tweede strengen’), hoeven deze geen marge ten opzichte van elkaar te hebben. </p>
+        <p> Storingen dichtbij het onderstation hebben de grootste kortsluitstroom en worden met de instellingen van tabel 6.4 en tabel 6.5 na 0,6 s afgeschakeld. Deze
+          storingen veroorzaken gedurende de 0,6 s schade aan componenten en een spanningsdip voor alle aangesloten klanten op de installatie van het onderstation.
+          Om deze effecten te verminderen wordt een <em>I<sub>&gt;&gt;&gt;</sub></em> ingesteld om fouten dichtbij het onderstation met grote kortsluitstromen direct af te
+          schakelen. Mocht de marge om <em>I<sub>&gt;&gt;&gt;</sub></em> in te stellen te klein zijn, waardoor er een risico ontstaat dat de instelling ook reageert op fouten
+          in de tweede strengen, dan zal de instelling van <em>I<sub>&gt;&gt;&gt;</sub></em> achterwege blijven. In dat geval wordt gekozen voor selectiviteit in plaats van
+          het voorkomen van grote spanningsdips. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_6.4.3"></div>
+        <br>
+        <h3> 6.4.3 Uitlopers </h3>
+        <p> Het distributienet wordt zoveel mogelijk in ringen aangelegd, zodat bij een storing, na het vrijschakelen van het gestoorde netdeel, omgeschakeld kan
+          worden voor het herstel van de levering. In situaties zoals bij een uitloper is dat niet mogelijk en moeten de afgeschakelde aansluitingen via een
+          aggregaat gevoed worden. Bij een ringstructuur wordt het net straalvormig bedreven maar zijn de afschermingen van de kabels wel in de ring met elkaar
+          verbonden. Bij een uitloper is dat niet mogelijk. In een geaard distributienet kan bij een fase-aardsluiting de aardfoutstroom via de afschermingen van de
+          kabels terugvloeien naar het geaarde sterpunt. In een ringstructuur is het retourpad vermaasd en kan de aardfoutstroom over meerdere wegen terugvloeien.
+          Bij een uitloper is maar één retourpad beschikbaar. </p>
+        <p> Bij een fase-aardfout verhoogt de spanning van het scherm van de kabel ten opzichte van de aarde. In de netstations kunnen de schermen van de MS-kabels
+          verbonden zijn met het aardingssysteem van het LS-net. Indien dat het geval is, resulteert een spanningsverhoging op het scherm van de MS-kabel in een
+          verhoogde aanrakingsspanning bij de aangeslotenen in het LS-net. Doordat er bij een uitloper maar één retourpad voor de aardfoutstroom is, is de
+          retourimpedantie groter waardoor de potentiaalverhoging groter is dan bij een fase-aardfout in de ringstructuur. De hoogte van de aanrakingsspanning en de
+          daarbij behorende uitschakeltijd is vastgelegd in NEN 1041 en is nader beschreven in hoofdstuk 5. In de praktijk is gebleken dat bij toepassing van sommige
+          typen kabel, zoals 3*240 AL XLPE met 70 mm<sup>2</sup> aardscherm, de aanrakingsspanning hoger kan worden dan toegestaan. Deze situatie is afgebeeld in
+          figuur 6.36. </p>
+        <img src="./beveiliging_files/6.36.png" width="693" height="449" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.36 Ringvormig net met vermaasde kabelschermen en een uitloper </h5>
+        <p> In dit voorbeeldnet is bij het onderstation een aarding van 0,2 Ω toegepast en bij ieder netstation een aarding van 2 Ω. Indien de fase-aardsluiting zich
+          in de ring bevindt ter hoogte van ‘Netstation B3’ is de potentiaalverhoging op het scherm van de kabel 270 V. Bij een fase-aardsluiting ter
+          hoogte van ‘Netstation Uitloper’ is de potentiaalverhoging 416 V. Volgens de norm moet bij deze spanning de fout binnen 0,3 s zijn
+          afgeschakeld. Daarom wordt de uitloper voorzien van een vermogenschakelaar en een beveiliging, waarvan <em>t<sub>0&gt;</sub></em> niet ingesteld wordt op <em>t<sub>&gt;</sub>,</em> maar standaard op 0,3 s. De a-selectiviteit die hiermee ontstaat met eventuele aansluitingen wordt aanvaard omdat veiligheid voor
+          selectiviteit gaat. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_6.4.4"></div>
+        <br>
+        <h3> 6.4.4 Beveiliging in netten met zwevend sterpunt </h3>
+        <p> Zeer veel middenspanningsnetten hebben een zwevend sterpunt. In deze netten hoeft een fase-aardfout niet onmiddellijk te worden afgeschakeld omdat de   foutstroom niet groot is. In zwevende netten wordt de foutstroom bij kortsluiting van een fase met aarde voornamelijk bepaald door de totale capaciteit van   alle gekoppelde kabels. Tijdens deze kortsluiting is de spanning op de kortgesloten fase gelijk aan nul en is de spanning op de gezonde twee fasen ten   opzichte van aarde gelijk aan de gekoppelde spanning. Deze verhoogde spanning kan met name bij kabels leiden tot een doorslag elders in het net
+          (‘cross-country’). Hierdoor gaat de fase-aardsluiting over in een complexe tweefasen-aardsluiting. Om deze ongewenste situatie van gekoppelde   spanning op de fasen van de kabels niet te lang te laten bestaan, wordt een fase-aardfout toch na enige tijd afgeschakeld. Ook kan het zijn dat de   capacitieve stroom leidt tot thermische overbelasting van het kabelscherm. In dat geval moet het ontwerp van het distributienet voorzien in een   impedantie-geaard net, waardoor de fout kan worden gedetecteerd en afgeschakeld. Een fase-aardfout kan worden gedetecteerd door de systeemspanning te meten   of door de drie fasestromen te meten. </p>
+        <p> De detectie met behulp van de systeemspanning vindt plaats door de drie afzonderlijke fasespanningen te meten en vectoriëel op te tellen. De primaire
+          wikkelingen van drie spanningstransformatoren hebben een gezamenlijk geaard sterpunt. De secundaire wikkelingen zijn geschakeld in een open
+          driehoekswikkeling. In de normale bedrijfstoestand is de vectoriële som van de drie fasespanningen nul. Bij een fase-aardfout is de som van de
+          fasespanningen aanzienlijk, waardoor deze schakeling een grote gevoeligheid heeft voor fase-aardfouten. </p>
+        <p> De fase-aardfout kan ook worden gedetecteerd door de drie stromen te meten en vectoriëel op te tellen. Dit gebeurt in een Holmgreen-schakeling, waarin   de secundaire wikkelingen van de drie stroomtransformatoren parallel zijn geschakeld en aangesloten op het aardfoutrelais. In de normale bedrijfstoestand   is de vectoriële som van de stromen gelijk aan nul. Tijdens een fase-aardfout lekt de stroom van de gestoorde fase via de aarde weg, waardoor de som   van de stromen niet meer gelijk aan nul is. Deze meting reageert alleen op kortsluitingen met aardcontact, waardoor de instelling onafhankelijk van de   nominale stroom vrij klein gekozen kan worden. In praktijk blijkt dit niet gevoeliger te zijn dan 10 à 20% van de nominale stroom. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_6.5"></div>
+        <br>
+        <h2> 6.5 Betrouwbaarheid van de beveiliging </h2>
+        <p> De beschikbaarheid van zowel de beveiliging als de vermogensschakelaar is niet 100%. Dit betekent dat er een kans is dat ze niet functioneren of dat ze   onterecht afschakelen. Door meerdere beveiligingen in te zetten kan de beschikbaarheid van de beveiliging voor het afschakelen worden verhoogd. Echter,   hierdoor neemt de kans op een onterechte afschakeling ook weer toe. Bij een kortsluiting moet in beginsel alleen het gestoorde netdeel worden   uitgeschakeld. Hiermee wordt bereikt dat er zo weinig mogelijk klanten worden getroffen. Indien dat door weigering van beveiliging of vermogenschakelaar   niet gebeurt, moet een andere beveiliging afschakelen. </p>
+        <p> Een goede oplossing voor het mogelijk niet functioneren van een beveiliging kan worden gevonden door de beveiliging op te bouwen uit een beveiliging en een   back-up beveiliging. De back-up beveiliging wordt bij voorkeur gerealiseerd met beveiligingen die elders zijn aangebracht voor andere primaire objecten.   Ook voor een weigerende vermogenschakelaar moet gekeken worden naar een alternatief. Hiervoor kan extra apparatuur (bijvoorbeeld een schakelaar reserve   beveiliging) worden aangebracht om het weigeren van de vermogenschakelaar te ondervangen. De kans dat de beveiliging en de back-up beveiliging gelijktijdig   weigeren is zeer klein. In het huidige netontwerp wordt hier geen rekening mee gehouden. </p>
+        <p> De back-up voor de derde streng wordt verzorgd door de beveiliging van de tweede streng. De back-up voor de tweede streng wordt verzorgd door de
+          beveiliging van de eerste streng. In de eerste streng van een MS-distributienet zijn twee MST beveiligingen aanwezig die beide dezelfde vermogenschakelaar   besturen. Er is veelal geen back-up door een bovenliggende beveiliging. Daarom is in dat geval een schakelaar reservebeveiliging (SRB) nodig om bij
+          weigering van een afgaande vermogenschakelaar de fout toch uit te schakelen. Indien een afgaande vermogenschakelaar niet afschakelt, geeft de SRB   beveiliging een uitschakelcommando aan alle op de rail aangesloten vermogenschakelaars. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_6.6"></div>
+        <br>
+        <h2> 6.6 Afschakelbare belasting </h2>
+        <p> Spanningsbeveiliging en frequentiebeveiliging zijn in principe bedoeld om het aangesloten elektrisch materieel te beschermen. Het elektriciteitsnet dat   deze apparatuur voedt, zal er in het algemeen geen probleem mee hebben om een overbelaste transformator of motor al dan niet bij een te lage spanning te   voeden. Laat men deze abnormale bedrijfssituaties voortbestaan, dan zullen deze uiteindelijk ontaarden in een kortsluiting. Het aangesloten apparaat is dan   defect; er gaan grote stromen lopen in het distributienet die uiteindelijk tot oververhitting van kabels, transformator en schakelaars kunnen leiden,   waardoor ook deze defect raken. De beveiliging in het overdrachtspunt moet overbelasting van het net van de netbeheerder beschermen. Er wordt dus beveiligd   om schade aan elektrisch materieel te voorkomen en om de schade op de foutplaats zelf te beperken en schade aan andere netdelen te voorkomen. </p>
+        <p> Onderspanningsbeveiliging: bij een verlaging van de netspanning neemt bij gelijkblijvend vermogen de stroom toe, waardoor overbelasting kan ontstaan. Dit
+          wordt met name veroorzaakt door motoren die bij een lagere voedingsspanning in een ongunstig werkgebied geraken. In eerste instantie zullen de motoren ten
+          gevolge van de verlaagde spanning steeds meer stroom gaan trekken om het gewenste aandrijvende koppel te kunnen blijven leveren. Vervolgens zullen zij
+          oververhit raken en doorbranden. </p>
+        <p> Overspanningsbeveiliging: bij een verhoging van de netspanning neemt bij gelijkblijvend vermogen de stroom af. In motoren en transformatoren zal het
+          ijzerverlies toenemen. Een te hoge netspanning leidt ertoe dat aangesloten apparatuur te warm kan worden. Bovendien zullen er isolatiedefecten optreden. </p>
+        <p> Frequentiebeveiliging: een te lage of te hoge frequentie veroorzaakt dat transformatoren aan secundaire zijde niet meer de juiste spanning hebben.
+          Bovendien ontregelt een verkeerde frequentie het gedrag van motoren. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_6.7"></div>
+        <br>
+        <h2> 6.7 Decentrale opwekking </h2>
+        <p> Generatoren in het middenspanningsnet leveren tijdens een kortsluiting een bijdrage aan de kortsluitstroom. Voor een goede werking van de beveiliging van   de strengen moeten generatoren in geval van een kortsluiting in het middenspanningsnet onmiddellijk afschakelen. Vanwege de veiligheid rondom het gestoorde   netdeel mogen decentrale opwekkers niet opnieuw op het spanningsloze netwerk inschakelen. De vermogenschakelaars zijn hiervoor voorzien van een extra   beveiliging. Ook mogen decentrale opwekkers het net niet in eilandbedrijf voeden. Het in eilandbedrijf werkende deelnet en het hoofdnet zijn namelijk niet   gesynchroniseerd. Om te kunnen koppelen is synchronisatie-apparatuur nodig. In de Netcode (Netcode, 2009) is beschreven aan welke eisen aangeslotenen met   decentrale opwekking moeten voldoen. </p>
+        <p> Bij de toename van de hoeveelheid en de concentratie van decentrale opwekking kan een aantal problemen voor de beveiliging in het net optreden, zoals   ‘onbedoeld eilandbedrijf’, ‘foutief afschakelen’ en ‘verblinden van de beveiliging’ (Coster, 2007). Met name het   verblinden van de beveiliging en het foutief afschakelen worden gezien als serieuze bedreigingen. </p>
+        <h6> Onbedoeld eilandbedrijf </h6>
+        <p> De kans op het onbedoeld in eilandbedrijf geraken is klein. De decentrale opwekeenheden zijn niet voorzien van een automatische   frequentie/vermogensregeling. Hierdoor kunnen zij niet regelen op de onbalans tussen vraag en aanbod, wat in eilandbedrijf noodzakelijk is. Alle
+          productie-eenheden zullen bij een grote afwijking van de frequentie met behulp van hun frequentiebeveiligingen afschakelen. Decentrale opwekeenheden zijn   juist voorzien van stroom- en spanningsbeveiligingen om de toestand van eilandbedrijf te voorkomen. </p>
+        <p> De stroom- en spanningsbeveiliging van de decentrale opwekeenheden zijn zodanig afgesteld dat zij snel de opwekeenheden afschakelen op grond van een te   grote kortsluitstroombijdrage of een te grote spanningsdip. Dit afschakelen van opwekeenheden kan leiden tot grote plotselinge en ongewenste veranderingen   in de vermogensstromen. </p>
+        <h6> Foutief afschakelen </h6>
+        <p> In geval van een kortsluiting in een van de afgaande strengen, zullen alle decentrale opwekkers in het MS-net bijdagen aan de kortsluitstroom. Als de   kortsluitstroombijdrage groter is dan de aanspreekwaarde van de maximaal stroom-tijdbeveiliging van de strengen, dan zal de gezonde streng met de   decentrale opwekker afgeschakeld worden. De kans hierop neemt toe naarmate de decentrale opwekker zich dichter bij het onder-, regel- of schakelstation   bevindt (zie figuur 6.37). </p>
+        <img src="./beveiliging_files/6.37.png" width="517" height="335" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.37 Het principe van foutief afschakelen </h5>
+        <p> De oplossing voor dit probleem is eenvoudig door in de streng met de decentrale opwekker gebruik te maken van een maximaal stroom-tijdbeveiliging met
+          energierichting. Bovendien, indien de generator door de onderspanningbeveiliging of door de frequentiebeveiliging eerder afschakelt dan de
+          stroombeveiliging in de streng, zal dit probleem zich niet voordoen. </p>
+        <h6> Verblinden van de beveiliging </h6>
+        <p> Als een kortsluiting optreedt in een streng waar zich decentrale opwekking bevindt, zullen de generatoren bijdragen aan de kortsluitstroom en neemt de   bijdrage vanuit het voedende net aan de kortsluitstroom evenredig af. Figuur 6.38 geeft een overzicht van de situatie. </p>
+        <img src="./beveiliging_files/6.38.png" width="529" height="342" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.38   Kortsluiting in een streng met een generator </h5>
+        <p> Door de afname van de bijdrage vanuit het voedende net aan de kortsluitstroom meet de beveiliging aan het begin van de streng een kleinere kortsluitstroom
+          dan die op de foutplaats. Hierdoor is het mogelijk dat deze beveiliging niet aanspreekt. De kortsluitbijdrage vanuit de voeding neemt af naarmate het
+          kortsluitvermogen van de generator in verhouding tot het kortsluitvermogen van de voeding toeneemt. Ook neemt de kortsluitbijdrage vanuit de voeding af
+          naarmate de generator zich dichter bij de voeding bevindt. Dit wordt bepaald door de verhoudingen van de impedanties in de kortsluitstroomberekening
+          (Coster, 2007). De berekeningen van figuur 6.39 en figuur 6.40 zijn uitgevoerd voor een middenspanningsstreng, die gevoed wordt via een 50 MVA
+          transformator. De streng is 20 km lang. De berekende kortsluitstroom is 1758 A. </p>
+        <img src="./beveiliging_files/6.39.png" width="693" height="449" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.39 Kortsluitberekening in een streng zonder generator </h5>
+        <p> Indien op 5 km afstand van de voeding een generator van 2 MVA wordt aangesloten, blijkt de kortsluitbijdrage vanuit de voeding met 122 A te dalen naar 1636
+          A. </p>
+        <img src="./beveiliging_files/6.40.png" width="693" height="449" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.40 Kortsluitberekening in een streng met een generator </h5>
+        <p> De oorzaak ligt in de parallelschakeling van de impedanties van het voedende gedeelte en van de generator. Dit effect is het sterkst in relatief zwakke
+          netten met veel decentrale opwekking. Indien de beveiliging een kortsluitstroom meet die kleiner is dan de aanspreekwaarde, zal de kortsluiting in eerste
+          instantie niet afgeschakeld worden. Indien de kortsluitstroombijdrage van de generator groter is dan de aanspreekwaarde van de generatorbeveiliging, zal
+          deze eerst afschakelen, waarna de kortsluitstroombijdrage van het voedende net weer toeneemt en de beveiliging alsnog zal aanspreken. Het is geen
+          wenselijke situatie dat de beveiliging van de streng afhangt van het al dan niet afschakelen van de decentrale opwekkers. In deze situatie moeten de
+          decentrale opwekkers bij een kortsluiting in het net door een onderspanningbeveiliging onmiddellijk worden afgeschakeld. In praktijk echter is de kans op
+          het verblinden van de beveiliging in Nederlandse netten zeer klein (Coster, 2010). </p>
+        <p> De instellingen voor de beveiliging van decentrale opwekeenheden hangt af van de eenheidsgrootte en het spanningsniveau, waarop zij zijn aangesloten. Tabel
+          6.6 geeft een overzicht van mogelijke beveiligingsinstellingen, die herleid zijn uit de Systeemcode voor opwekeenheden die op laagspannings- en
+          middenspanningsniveau zijn aangesloten. </p>
+        <h5> Tabel 6.6 Beveiligingsinstellingen voor opwekeenheden </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="40%" valign="top"><p> <strong>Opwekeenheid</strong> </p></td>
+              <td width="15%" valign="top"><p> <strong>Onderspannings-beveiliging</strong> </p></td>
+              <td width="15%" valign="top"><p> <strong>Overspannings-beveiliging</strong> </p></td>
+              <td width="15%" valign="top"><p> <strong>Maximaal stroom-tijdbeveiliging</strong> </p></td>
+              <td width="15%" valign="top"><p> <strong>Frequentie-beveiliging</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="68" valign="top"><p> LS: Generator of vermogenselektronische omzetter <br>
+                  &lt; 5 kVA </p></td>
+              <td width="68" valign="top"><p> U<sub>&lt;</sub> = 80% <br>
+                  t<sub>U&lt;</sub> = 0,1 s </p></td>
+              <td width="68" valign="top"><p> U<sub>&gt;</sub> = 106% <br>
+                  t<sub>U&gt;</sub> = 0,1 s </p></td>
+              <td width="68" valign="top"><p> I<sub>&gt;</sub> = 1,25 x I<sub>nom</sub> <br>
+                  t<sub>I&gt;</sub> = 0,1 s </p></td>
+              <td width="4" valign="top"><p> F<sub>&lt;&gt;</sub> = 2 Hz <br>
+                  T<sub>F&lt;&gt;</sub> = 2 s </p></td>
+            </tr>
+            <tr>
+              <td width="68" valign="top"><p> LS: Generator of vermogenselektronische omzetter <br>
+                  &gt; 5 kVA </p></td>
+              <td width="68" valign="top"><p> U<sub>&lt;</sub> = 80% <br>
+                  t<sub>U&lt;</sub> = 2 s <br>
+                  U<sub>&lt;&lt;</sub> = 70% <br>
+                  t<sub>U&lt;&lt;</sub> = 0,2 s </p></td>
+              <td width="68" valign="top"><p> U<sub>&gt;</sub> = 106% <br>
+                  t<sub>U&gt;</sub> = 2 s </p></td>
+              <td width="36" valign="top"><p> I<sub>&gt;</sub> = 1,25 x I<sub>nom</sub> <br>
+                  t<sub>I&gt;</sub> = 0,2 s </p></td>
+              <td width="36" valign="top"><p> F<sub>&lt;&gt;</sub> = 2 Hz <br>
+                  T<sub>F&lt;&gt;</sub> = 2 s </p></td>
+            </tr>
+            <tr>
+              <td width="68" valign="top"><p> MS: Generator of vermogenselektronische omzetter </p></td>
+              <td width="68" valign="top"><p> U<sub>&lt;</sub> = 80% <br>
+                  t<sub>U&lt;</sub> = 2 s <br>
+                  U<sub>&lt;&lt;</sub> = 70% <br>
+                  t<sub>U&lt;&lt;</sub> = 0,2 s </p></td>
+              <td width="68" valign="top"><p> U<sub>&gt;</sub> = 106% <br>
+                  t<sub>U&gt;</sub> = 2 s </p></td>
+              <td width="36" valign="top"><p> I<sub>&gt;</sub> = 1,25 x I<sub>nom</sub> <br>
+                  t<sub>I&gt;</sub> = 0,2 s <br>
+                  I<sub>&gt;&gt;</sub> = 1000 A <br>
+                  t<sub>I&gt;&gt;</sub> = 0,0 s <br>
+                  I<sub>0&gt;</sub> = 30 A <br>
+                  t<sub>I0&gt;</sub> = 0,0 s </p></td>
+              <td width="36" valign="top"><p> F<sub>&lt;&gt;</sub> = 2 Hz <br>
+                  T<sub>F&lt;&gt;</sub> = 2 s </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Voor opwekeenheden die op middenspanningsniveau zijn aangesloten geeft de Systeemcode (Systeemcode, 2009, Bijlage 3) een overzicht voor abnormale
+          bedrijfssituaties, waarin niet direct van het net mag worden geschakeld. Dit betreft spanningen tussen 80 en 105% van de nominale waarde en frequenties
+          tussen 48 en 51 Hz. </p>
+        <p> Onderscheiden worden de gebieden a, b, c en d, waarvoor geldt: <br>
+          a) nominaal vermogen leveren gedurende onbeperkte tijd <br>
+          b) nominaal vermogen leveren gedurende 15 minuten; vervolgens gedurende 5 minuten parallel aan het net blijven <br>
+          c) 90% van het nominale vermogen leveren gedurende 10 seconden; vervolgens gedurende 5 minuten parallel aan het net blijven <br>
+          d) gedurende 5 minuten parallel aan het net blijven </p>
+        <img src="./beveiliging_files/6.41.png" width="705" height="457" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.41 Bedrijfssituaties waarbij de generator gekoppeld moet blijven met het net </h5>
+        <h6> Verblinden van de beveiliging voor overbelasting </h6>
+        <p> Een derde meer theoretische situatie doet zich voor in een MS-streng waar decentrale opwekking een grote belasting voedt die verderop in dezelfde streng   aanwezig is. Indien deze belasting, bijvoorbeeld door afspraken met de decentrale producent, alleen tijdens productie van de generator vermogen afneemt,   wordt deze stroom niet door de beveiliging in het onderstation gezien. Hierdoor is het mogelijk dat het netdeel tussen producent en afnemer overbelast
+          raakt zonder dat dit opgemerkt wordt. </p>
+        <p> Figuur 6.42 toont de situatie dat de verbinding tussen netstations DCO en MV2 door een stroom van 125% van de nominale waarde overbelast is, terwijl de
+          beveiliging in het onderstation een stroom van 89% van de nominale waarde ziet en met een instelling van <em>1,25 x I<sub>nom</sub></em> niet zal
+          afschakelen. </p>
+        <img src="./beveiliging_files/6.42.png" width="693" height="449" alt="pics_1.6" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 6.42  Verblinding van de beveiliging voor overbelasting </h5>
+        <a href="https://www.phasetophase.nl/boek/boek_1_6.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_6.8"></div>
+        <br>
+        <h2> 6.8 Ontwikkelingen op het gebied van de beveiligingen </h2>
+        <p> Het ontwerpen van de beveiliging en het navolgend instellen van beveiligingsrelais is een tijdrovende bezigheid waarbij ervaring een grote rol speelt. Om   die reden worden door de bedrijven zelf richtlijnen voor standaardsituaties opgesteld. Het is echter onvermijdelijk dat er gerekend moet worden om tot de
+          juiste instellingen te komen. In het verleden was dat veelal handmatig werk, waarbij elke situatie afzonderlijk werd doorgerekend en beoordeeld. Sommige
+          bedrijven hebben daar nu zelf software voor ontwikkeld (Rombouts, 1998). </p>
+        <p> Daarnaast is er algemeen beschikbare software voorhanden, waarmee de instellingen van beveiligingen getoetst kunnen worden. Deze software voert
+          kortsluitberekeningen uit voor storingen op knooppunten en in kabels van het netwerk. Hierbij kan de impedantie op de foutplaats worden gevarieerd. De
+          software rapporteert het gedrag van de beveiligingen en toetst de selectiviteit. </p>
+        <p> Beveiligingsfuncties worden langzamerhand steeds meer geïntegreerd in stationsautomatisering. Het doel is op termijn het systeem van losse functionele
+          beveiligingsunits te verenigen in een enkel eenvoudig en transparant beveiligingssysteem. Deze ontwikkeling is ingegeven door de problematiek rond het
+          onderhouden en vervangen van de beveiligings- en besturingsapparatuur in een onderstation. Na het bereiken van de technische levensduur van de
+          beveiligingsapparatuur is het soms moeilijk aan vervangende componenten te komen. Vergelijkbare apparaten van alternatieve leveranciers communiceren niet
+          altijd op de gewenste wijze met de bestaande structuur. Bovendien is er behoefte aan nieuwe functionaliteiten, die moeilijk te integreren zijn in de
+          bestaande stationsautomatisering. </p>
+        <p> Ook bestaat er een toenemende behoefte om meer dan tot op heden gebruikelijk in de MS-netten te meten en op basis van meetgegevens lokaal te besturen. Door
+          toepassing van ICT-technologie en glasvezelcommunicatie kunnen de beslissingsfuncties in één geïntegreerd systeem met een open
+          communicatieprotocol worden ondergebracht, terwijl het daadwerkelijke meten van stroom en spanning door eenvoudige meetapparatuur in de velden van het
+          onderstation blijft ondergebracht. Een modern systeem dat in Nederland al op diverse plaatsen op bescheiden schaal wordt toegepast, combineert functies
+          voor beveiliging, foutplaatslocalisatie, power quality, monitoring en besturing. Het doel van dit systeem is de beveiliging en de besturing in een
+          onderstation eenvoudig en goedkoop te maken (Riet, 2005). Meer over dit onderwerp in paragraaf 14.8 en in hoofdstuk 15 over intelligente netten. </p>
+      </div>
+      <div class="col-lg-2 hidden-md">&nbsp;</div>
+    </div>
+  </div>
+</div>
+
+<div id="includeFooter" class="container-fluid-footer"><div class="container">
+  <div class="row">
+    <div class="text-justify col-xs-6 col-sm-3">
+      <img src="./beveiliging_files/logo-s-360px-grijs.png" alt="ptp_logo" width="230">
+    </div>
+    <div class="col-xs-6 col-sm-9">
+        <p> Phase to Phase is onderdeel van <a href="https://www.technolution.nl/">Technolution</a>. © 2009-2021 </p>
+    </div>
+  </div>
+</div></div></body></html>

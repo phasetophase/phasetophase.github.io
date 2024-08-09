@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+
+<!-- saved from url=(0047)https://www.phasetophase.nl/boek/boek_3_15.html -->
+<html class="wf-ffscalasansweb-n7-active wf-ffscalasansweb-n4-active wf-ffscalasansweb-i4-active wf-active" lang="en"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Phase to Phase – Netten voor distributie van elektriciteit</title>
+<!-- Bootstrap -->
+<link href="./intelligente netten_files/bootstrap-2-boek.css" rel="stylesheet"/>
+<style type="text/css">
+	body,td,th {
+	font-family: ff-scala-sans-web, sans-serif;
+}
+body {
+	background-color: #F7F7F7;
+}
+    </style>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+<script src="./intelligente netten_files/qke6lfb.js.download"></script>
+<style type="text/css">.tk-ff-scala-sans-web{font-family:"ff-scala-sans-web",sans-serif;}</style><style type="text/css">@font-face{font-family:tk-ff-scala-sans-web-n7;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-n4;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-i4;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style><script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script src="./intelligente netten_files/jquery-1.11.3.min.js.download"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./intelligente netten_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H8Q9E8BJ7Q');
+</script>
+<script>
+$(function(){
+  $("#includedHeader").load("/boek/header.html");
+  $("#includeFooter").load("/boek/footer.html"); 
+});
+</script><style type="text/css">@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style>
+</head>
+<body style="padding-top: 50px">
+<div id="includedHeader"> <nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="container">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button aria-expanded="false" class="navbar-toggle collapsed" data-target="#topFixedNavbar1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+<a class="navbar-brand" href="https://www.phasetophase.nl/">Phase to Phase</a></div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="topFixedNavbar1">
+<ul class="nav navbar-nav">
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li></li>
+</ul>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container -->
+</nav>
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<p></p>
+</div>
+</div>
+</div>
+<div class="container-fluid-boek">
+<div class="container">
+<div class="row-in-header">
+<div class="text-justify col-xs-6 col-sm-6">
+<img alt="Phase to Phase logo 360px" class="hidden-xs" src="./intelligente netten_files/logo-s-360px-wit.png" width="366"/>
+<img alt="Phase to Phase logo 261px" class="visible-xs" src="./intelligente netten_files/logo-s-360px-wit.png" width="261"/>
+</div>
+<div class="col-xs-6 hidden-xs col-sm-6">
+</div>
+</div>
+<div class="row-in-header">
+<div class="text-left col-xs-9 col-sm-9"> <p></p><h8>ICT voor elektriciteitsnetten</h8>
+</div>
+<div class="col-xs-3 col-sm-3">
+</div>
+</div>
+<div class="row-in-header-2">
+<div class="text-justify col-xs-6 col-sm-6"> 
+	</div>
+<div class="col-xs-6 hidden-xs col-sm-6">
+<h7> </h7>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row-intro">
+<h1><a href="https://www.phasetophase.nl/boek/index.html"> Netten voor distributie van elektriciteit</a></h1>
+</div></div></div>
+<div class="row-ohm-center-white"> <a name="top"></a>
+<div class="row-b">
+<a href="https://www.phasetophase.nl/boek/index.html"><button class="btn btn-default" type="button">I – De opbouw van een net</button></a>
+<a href="https://www.phasetophase.nl/boek/boek_2_7.html"><button class="btn btn-default" type="button">II – Rekenen aan een net</button></a>
+<a href="https://www.phasetophase.nl/boek/boek_3_13.html"><button class="btn btn-default active" type="button">III – Ontwerpen en bedrijfsvoeren</button></a>
+</div>
+<div class="row-b">
+<a href="https://www.phasetophase.nl/boek/boek_3_13.html">
+<button class="btn btn-default1" type="button">13 Ontwerpen van distributienetten</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_3_14.html">
+<button class="btn btn-default1" type="button">14 Bedrijfsvoering van de MS- en LS-netten</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_3_15.html">
+<button class="btn btn-default1 active" type="button">15 Intelligente netten</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_3_16.html">
+<button class="btn btn-default1" type="button">16 Geografische visualisatie van distributienetten</button>
+</a>
+<div class="row">
+<div class="col-md-12 col-lg-10">
+<h3>Smart grids</h3>
+<p>Chapter 15 provides a description of the developments surrounding smart grids and the potential implications for the design and operation of the grids. The developments are progressing rapidly, causing the topics discussed in this chapter to quickly become outdated.</p>
+<div class="row">
+<div class="col-md-6">
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15"><strong>15  Smart Grids</strong></a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.1">15.1 What is a smart grid?</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.2">15.2 Why smart grids?</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.3">15.3  How is a smart grid structured?</a></li>
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.3.1">15.3.1 Intelligent MV distribution network with combined network structure</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.3.2">15.3.2 MV distribution network with intelligent node in the open ring</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.3.3">15.3.3  First step towards an MV distribution network with automation in the substations</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.3.4">15.3.4  LV distribution network</a></li>
+</ul>
+</ul>
+</div>
+<div class="col-md-6">
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.4">15.4  Techniques</a></li>
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.4.1">15.4.1  Balancing load with generation</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.4.2">15.4.2  Control in a low-voltage network</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.4.3">15.4.3 Storage Systems</a></li>
+</ul>
+<li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.5">15.5 Applications</a></li>
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.5.1">15.5.1 The Mobile Smart Grid concept</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.5.2">15.5.2  Storage of electrical energy</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.5.3">15.5.3 Intelligent Distribution Station</a></li>
+</ul>
+</ul>
+</div>
+</div>
+<hr/>
+<h1>15 Intelligent Grids</h1>
+<p>The global energy transition aims to shift from a fossil fuel-based energy supply to a fully sustainable energy supply. This involves a transition from using gas for central heating boilers to using electric heat pumps for space heating, and from using gasoline for cars to using biogas or electric vehicles. Large-scale introduction of electric vehicles can result in a doubling of current household electricity consumption. The use of heat pumps for space heating can also lead to a doubling in existing situations. To ensure the energy supply for these kinds of developments, the existing distribution networks would need to be reinforced. Due to the scale and costs involved, this is not always an acceptable solution.</p>
+<p>Developments in the context of the energy transition also lead to an increase in sustainable decentralized generation. Unfortunately, sustainably generated electricity cannot always be controlled, so it is necessary to look for ways to match demand with the available sustainable supply from solar and wind. A physical problem here is that the supply and demand of electrical energy must be balanced at all times, while this is not inherently possible when using sustainable sources without buffer systems. Over time, the need will arise for a more supply-following system instead of a purely demand-following system. The existing conventional distribution network is a demand-following system and is not designed for these developments. Therefore, it is important to gain insight into the developments and societal needs for these new energy demands, thereby developing an understanding of the associated energy flows. The behavior of customers who have an electric car, heat pump system, solar panels, and micro-CHP units is not yet sufficiently known. The question is whether we can count on the distribution of energy demand throughout the day or if new peaks in consumption should be anticipated, for example, at the start of the night rate. The application of remotely readable electricity meters can help monitor these developments.</p>
+<p>To ensure the continuity and quality of electricity supply in the future and to facilitate the development of electricity production from sustainable sources, possibilities are being explored to make the distribution network 'intelligent.'</p>
+<a href="https://www.phasetophase.nl/boek/boek_3_15.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_15.1"></div>
+<br/>
+<h2>15.1 What is an intelligent grid?</h2>
+<p>The term 'intelligent grid' or 'smart grid' is an overarching concept that encompasses various innovative developments related to energy infrastructure (Taskforce, 2010). There are many definitions of an intelligent grid. The European Technology Platform defines it as follows (ETP, 2010): 'An intelligent grid is an electricity network that intelligently manages the behavior and actions of all connected parties (producers, consumers, and those who do both) in order to achieve an economically efficient and sustainable electricity supply system with minimal losses, high quality, reliability, and safety.' In an intelligent grid, components and systems are controlled and regulated based on measurement data to ensure the quality of the electricity supply.</p>
+<p>According to the same European Technology Platform, an intelligent grid uses innovative products and services, in combination with intelligent measurement, control, communication, and self-healing techniques, to ensure that in the future, compared to the current situation:</p>
+<ul>
+<li>to better support the connection and operation of generation units of any size</li>
+<li>to enable connected parties to play a role in optimizing the operation of the electricity grid</li>
+<li>to provide customers with information so that they have more choices regarding the supply of electrical energy</li>
+<li>significantly reduce the impact of the entire electricity supply system on the environment</li>
+<li>to improve the reliability of the supply.</li>
+</ul>
+<p>In the realization of an intelligent network, the focus is on three main objectives: increasing reliability (recovery after a failure, load shedding), maintaining affordability (for the grid operator and the connected users), and enhancing sustainability, including more active customer involvement (sustainable sources and energy transition). Various approaches are taken to achieve these objectives: the grid-oriented, market-oriented, and integrated concepts (Slootweg, 2010).</p>
+<h6>Grid-oriented concept</h6>
+<p>With the grid-oriented concept, the grid operator aims to increase the utilization and reliability of distribution networks. To achieve this, the networks are equipped with remotely readable meters and remote control. Additionally, decentralized storage of electrical energy (see paragraph 15.4.3) can be introduced to manage the peaks and troughs in the production and consumption of electrical power. In this concept, there is no involvement of producers and consumers.</p>
+<h6>Market-oriented concept</h6>
+<p>With the market-oriented concept, participants are more intensively involved in the electricity market. This is achieved on one hand by incentivizing participants through tariffs to adopt certain behaviors for the consumption or production of electricity, and on the other hand by making specific processes of the participants adaptable for the flexibilization of electricity demand. In this concept, commercial energy market parties, suppliers, and consumers are involved, and the grid operator does not play a role.<a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.4.1">paragraph 15.4.1</a>The market-oriented concept does not lead to an intelligent electricity grid.</p>
+<h6>Integrated concept</h6>
+<p>By combining the grid-oriented and market-oriented concepts, the integrated concept is created, where the tariff structures are based on the energy market and the locally available grid capacity. In this concept, certain devices (such as for washing, cooling, and heating) can be remotely switched on and off, taking into account the price of electricity on the market and the local electricity production and grid capacity.</p>
+<p>There are many initiatives for automatically aligning demand with supply. These systems must balance the interests of the consumer, producer, and grid operator without overloading the electricity grid. The objective is for the consumer to pay the lowest possible price and to maximize the use of sustainably generated energy. With intelligent systems, such as software agents, it is possible to make quick and rational decisions based on current measurement data (demand, supply, price, grid capacity) and other conditions (Warmer, 2010).</p>
+<p>Essential for an intelligent grid is that it allows for the bidirectional flow of electrical power within the network. By adding (intelligent) measurement systems to the distribution network, energy flows can be better monitored, controlled, and managed. The application of new ICT technologies and the further development of the desired automation systems create an intelligent distribution network where the 'intelligence' supports the desired reliability, affordability, and sustainability of the energy supply.</p>
+<p>The key word in the development of intelligent grids is flexibility. An intelligent grid detects bottlenecks. The intelligent systems in the grid respond to these by independently intervening, automatically changing circuits, and influencing loads. Additional flexibility is achieved through the application of new technologies and concepts, such as the storage of electrical energy.</p>
+<p>It is important that the intelligent grid enables local production and storage of electrical energy. The future intelligent grid should be as self-healing as possible. Faults and problem areas in the network can be detected using the latest digital tools. Additionally, the 'small' consumer should have the opportunity to participate in the market. The intelligent grid must be equipped with telecommunications and high-quality IT, so that consumers can manage their electricity affairs at home and owners of electric cars can charge their batteries at a favorable rate in the evenings and at night.</p>
+<a href="https://www.phasetophase.nl/boek/boek_3_15.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_15.2"></div>
+<br/>
+<h2>15.2 Why smart grids?</h2>
+<p>The transition to sustainable energy results in more electricity being generated decentrally at MV and LV levels, such as with solar panels, micro-CHPs, and wind turbines. Additionally, as traditional energy sources are gradually phased out, more electricity is being used for applications like space heating and electric driving. These developments mean that electricity no longer flows solely in the traditional, design-predicted direction to the consumer but becomes bidirectional. As a result of the increase in decentralized generation and electricity consumption, the variations in power flows within the distribution network will significantly increase. This has several implications for the existing distribution network, including:</p>
+<ul>
+<li>the increase in electricity consumption can lead to overloading in existing network segments</li>
+<li>Reversing the direction of energy transport has implications for the functioning of the security systems; the existing security concepts have not yet been adapted to this.</li>
+<li>the fluctuations in power transport lead to a deterioration in voltage quality.</li>
+</ul>
+<p>To solve the outlined problems, there is an urgent search for ways to make the existing distribution networks resilient to the described future developments. Choices need to be made in this regard. On one hand, the networks can be made more robust, and security can be implemented using techniques similar to those used in transmission networks. On the other hand, the introduction of measurements, controls, and automation in combination with the use of power electronic equipment (for regulating and buffering energy) is being considered as a solution, which also provides more flexibility. These techniques are ingredients for an 'intelligent grid.' The future-proof distribution network must have sufficient capacity and be both stable and reliable. To achieve this, the network must be made suitable through the use of 'intelligent' systems. These systems still need to be developed and must lead to an efficient, sustainable, and reliable electricity supply at acceptable costs.</p>
+<p>Nationally and internationally, there is a lot of attention for smart grids. Organizations such as the European Technology Platform and Cigré describe in various publications the developments for now and the near future. According to the European Technology Platform, the main challenges for smart grids are (ETP, 2010):</p>
+<ul>
+<li>strengthening the electricity grid: ensuring that there is sufficient capacity to connect, in particular, renewable energy sources</li>
+<li>enabling offshore energy generation: developing efficient connections to offshore wind farms and other generation units; the impact on medium voltage (MV) networks is limited, as large wind farms will be integrated more at the high voltage (HV) level</li>
+<li>development of decentralized infrastructure: enabling small-scale electricity systems to integrate well with the overall electricity supply system</li>
+<li>communication: developing a communication infrastructure that enables all connected parties to actively participate in the electricity market; information exchange between parties requires protection and regulation due to privacy concerns</li>
+<li>active role of connected parties: enabling all connected parties, with or without their own generation, to play an active role in the electricity supply</li>
+<li>integration of variable generation: finding the best solutions to integrate highly variable generation, such as household micro-CHP systems; here, the scale at which small-scale systems are connected to the LV network is important</li>
+<li>adding intelligent systems in generation, load, and especially in the network</li>
+<li>taking advantage of the benefits of decentralized generation and storage of energy</li>
+<li>preparing all electric vehicles: with their inherently mobile and decentralized nature and their high power demand, they place high demands on the flexibility of the distribution network.</li>
+</ul>
+<p>The aforementioned challenges are largely driven by developments in the sustainability of energy supply. From these challenges, the European Technology Platform has defined six priorities:</p>
+<ul>
+<li>optimizing the operation and utilization of the electricity grid</li>
+<li>optimizing the infrastructure of the electricity grid</li>
+<li>large-scale integration of decentralized generation with highly variable power outputs</li>
+<li>definition and implementation of standards for information and communication technology</li>
+<li>supporting the transition to active distribution networks</li>
+<li>supporting the new market operations and energy efficiency.</li>
+</ul>
+<p>Most of these priorities pertain to the electricity grid, with one relating to market operations. Therefore, most challenges fall upon the grid operator, for whom optimizing operations and infrastructure requires considerable thought and creativity. Integrating sources with highly variable power outputs demands flexibility from the grid. Instead of traditional methods, planners and designers will need to use scenarios and risk management to handle the increased variability and uncertainty in electricity generation. The application of ICT is a prerequisite for the operation of smart grids, involving data exchange for the measurement and control of the flexible network on one hand, and data exchange between various market parties on the other. The development of active distribution networks marks the transition from current grids, which depend on planned operational actions, to a new type of grid that can automatically and quickly adapt to highly variable situations. According to Cigré, the main developments in active distribution networks are in the areas of security, communication, integration into existing systems, and flexible network topology (Cigré, 2009-2). Regarding applications, possibilities include monitoring the capacity of the electricity grid, data collection and management, voltage regulation, load and decentralized generation management, and rapid network configuration changes. The cited benefits include improved reliability, increased utilization of assets, enhanced capabilities for connecting decentralized generation, providing alternatives to network reinforcement, and improved network stability.</p>
+<p>At the national level, the Smart Grids Taskforce is examining the possibilities and developments of smart grids. Table 15.1 provides an overview of the capabilities offered by a traditional electricity grid and a smart electricity grid (Taskforce, 2010).</p>
+<h5>Table 15.1 Capabilities in a traditional and a smart electricity grid</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="20%"><p> <strong>Aspect</strong> </p></td>
+<td valign="top" width="40%"><p> <strong>Traditional network</strong> </p></td>
+<td valign="top" width="40%"><p> <strong>Smart grid</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="58"><p>Gebruikers</p></td>
+<td valign="top" width="112"><p>The users are not informed and do not participate</p></td>
+<td valign="top" width="170"><p>The users are informed, engaged, and active; savings through 'smartness' (with privacy!)</p></td>
+</tr>
+<tr>
+<td valign="top" width="58"><p>Productie</p></td>
+<td valign="top" width="112"><p>Mainly centrally located production resources</p></td>
+<td valign="top" width="170"><p>Various decentralized production resources; consumption can be linked to the type of production resource</p></td>
+</tr>
+<tr>
+<td valign="top" width="58"><p>Sustainable energy</p></td>
+<td valign="top" width="112"><p>Integration of (decentralized) sustainable energy is limited and sometimes challenging</p></td>
+<td valign="top" width="170"><p>Standardized plug-in for sustainable production, driven by electronics and IT</p></td>
+</tr>
+<tr>
+<td valign="top" width="58"><p>Emissies</p></td>
+<td valign="top" width="112"><p>Emissions and losses (heat) built into the system and not very transparent</p></td>
+<td valign="top" width="170"><p>The users are informed and optimize based on the 'color' of their energy consumption (sustainable or not).</p></td>
+</tr>
+<tr>
+<td valign="top" width="58"><p>Opslag</p></td>
+<td valign="top" width="112"><p>Hardly any or no storage options</p></td>
+<td valign="top" width="170"><p>Availability of storage resources participating in the market</p></td>
+</tr>
+<tr>
+<td valign="top" width="58"><p>Marktwerking</p></td>
+<td valign="top" width="112"><p>Mainly producers and industrial large-scale consumers active in the market</p></td>
+<td valign="top" width="170"><p>Large (price-dependent) demand response based on new services and innovative applications</p></td>
+</tr>
+<tr>
+<td valign="top" width="58"><p>Kwaliteit</p></td>
+<td valign="top" width="112"><p>Focus on supply interruptions</p></td>
+<td valign="top" width="170"><p>Dynamic interaction between price and quality with a quick response to quality issues</p></td>
+</tr>
+<tr>
+<td valign="top" width="58"><p>Systeembeheer</p></td>
+<td valign="top" width="112"><p>Limited integration of asset management, operations, and operational data</p></td>
+<td valign="top" width="170"><p>Real-time system information available for operations, with a focus on prevention</p></td>
+</tr>
+<tr>
+<td valign="top" width="58"><p>Verstoringen</p></td>
+<td valign="top" width="112"><p>System security focuses on preventing damage to components</p></td>
+<td valign="top" width="170"><p>System security responds automatically to ensure delivery remains guaranteed (self-healing)</p></td>
+</tr>
+<tr>
+<td valign="top" width="58"><p>Rampen</p></td>
+<td valign="top" width="112"><p>System sensitive to (natural) disasters and terrorist attacks</p></td>
+<td valign="top" width="170"><p>The system is relatively insensitive to disasters ('dispersed' and with efficient recovery mechanisms) but may be sensitive to cyber attacks.</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<a href="https://www.phasetophase.nl/boek/boek_3_15.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_15.3"></div>
+<br/>
+<h2>15.3 How is an intelligent network structured?</h2>
+<p>The medium and low voltage electrical distribution networks will be instrumented and digitized at a rapid pace in the coming years. Three functional layers will emerge. The traditional distribution networks form the first physical layer. This layer will be expanded in the coming years with a second layer consisting of sensors, data connections, remote control, and regulations. This will enable more opportunities for information exchange, allowing energy flows to be better monitored, controlled, and managed. Gradually, a third layer with specific 'intelligent' applications will be added to this second layer, such as fault location, fault analysis, decentralized balance maintenance with decentralized generation, and actively participating consumers.</p>
+<p>The challenges of implementing the second layer in the medium-voltage (MV) networks differ from those in the low-voltage (LV) networks. This is partly due to the scale of the power and the corresponding number of connected users. Additionally, it is caused by differences in network structure, electrical properties, and generation systems.</p>
+<ul>
+<li>In the medium voltage networks, there are switching possibilities due to the installation in open-operated rings, while the low voltage networks are usually laid out in a star configuration, causing them to miss out on these advantages.</li>
+<li>The electrical properties of the cable connections differ at both voltage levels, causing the impact of power transmission on the voltage regulation in a connection to vary significantly.</li>
+<li>The supply transformers of the medium voltage (MV) networks are equipped with voltage regulation, while the current network transformers that supply the low voltage (LV) networks are set to a fixed transformation ratio.</li>
+<li>In the generation systems in the medium voltage (MV) networks, there are a small number of large generation units, such as CHP systems (1 to 20 MW per connection) and wind turbines (1 to 5 MW per connection), while in the low voltage (LV) networks, there are large numbers of small generation units, such as micro-CHP (1 to 5 kW per connection) and PV systems (0.5 to 2 kW per connection).</li>
+<li>Given their costs and their contribution to power management, energy storage systems will primarily be introduced at the LV level.</li>
+<li>Large amounts of decentralized generation can particularly cause problems in the MV networks with protections and voltage management. In the LV networks, this also applies to protection but less so to voltage management. In the LV networks, voltage management is negatively affected by the increased load due to the growing energy transition of connected users. This results in problems in the LV networks concerning the load on the network and cables.</li>
+<li>The communication infrastructure in the LV networks will focus on information exchange with connected users via 'smart meters' and control of controllable loads, while the communication infrastructure in the MV networks will primarily focus on the flexibility of the grid.</li>
+</ul>
+<p>Table 15.2 provides a summary of the mentioned differences. Due to all these differences, the application of smart grids in electricity distribution at the MV level is approached differently than at the LV level.</p>
+<h5>Table 15.2  Different aspects of MV and LV networks</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="33%"><p> <strong>Item</strong> </p></td>
+<td valign="top" width="33%"><p> <strong>MV network</strong> </p></td>
+<td valign="top" width="33%"><p> <strong>LV network</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="97"><p>Network structure: switching options</p></td>
+<td valign="top" width="118"><p>ja</p></td>
+<td valign="top" width="125"><p>nee</p></td>
+</tr>
+<tr>
+<td valign="top" width="97"><p>Electrical properties</p></td>
+<td valign="top" width="118"><p>R/X ratio approximately 1</p></td>
+<td valign="top" width="125"><p>R/X ratio large</p></td>
+</tr>
+<tr>
+<td valign="top" width="97"><p>Transformer voltage regulation</p></td>
+<td valign="top" width="118"><p>ja</p></td>
+<td valign="top" width="125"><p>nee</p></td>
+</tr>
+<tr>
+<td valign="top" width="97"><p>Opwekeenheden</p></td>
+<td valign="top" width="118"><p>CHP, wind energy</p></td>
+<td valign="top" width="125"><p>Micro-CHP, PV systems</p></td>
+</tr>
+<tr>
+<td valign="top" width="97"><p>Opslagsystemen</p></td>
+<td valign="top" width="118"><p>Still limited possible</p></td>
+<td valign="top" width="125"><p>Quite possible</p></td>
+</tr>
+<tr>
+<td valign="top" width="97"><p>Issues DCO</p></td>
+<td valign="top" width="118"><p>Protection, voltage management</p></td>
+<td valign="top" width="125"><p>Protection, limited voltage management</p></td>
+</tr>
+<tr>
+<td valign="top" width="97"><p>Issues of the energy transition</p></td>
+<td valign="top" width="118"><p>Fluctuating grid load</p></td>
+<td valign="top" width="125"><p>Load on the network and cables, voltage management</p></td>
+</tr>
+<tr>
+<td valign="top" width="97"><p>Communication infrastructure</p></td>
+<td valign="top" width="118"><p>Flexibility: measuring and controlling the network</p></td>
+<td valign="top" width="125"><p>Market and grid load: measuring and controlling loads</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>In all networks, it is not possible to structurally increase capacity with the existing resources and network structures. Due to the lack of measurements, capacity control is limited. The possibilities for remote control to increase flexibility and bidirectional traffic to accommodate large amounts of decentralized generation are restricted. Additionally, substantial reductions in network losses and increases in reliability are no longer achievable. Therefore, new concepts are being sought for distribution networks. Several concepts for application in the medium-voltage (MV) and low-voltage (LV) networks are briefly explained in the following paragraphs.</p>
+<a href="https://www.phasetophase.nl/boek/boek_3_15.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_15.3.1"></div>
+<br/>
+<h3>15.3.1 Intelligent MV Distribution Network with Combined Network Structure</h3>
+<p>The requirements regarding sustainability, flexibility, reliability, utilization of assets, and customer orientation lead to several measures. First, it is inevitable that the capacity of the distribution network must be increased and that power flows must be monitored. For the sake of flexibility, the power switches essential for network configuration must be remotely operable. The security must be configured in such a way that bidirectional traffic is possible for electrical power. If the power generated by wind farms and CHP systems becomes too large, it will need to be integrated at a higher voltage level. The sixth priority of the European Technology Platform, improving energy efficiency, can be achieved by reducing network losses. This can be accomplished by choosing a higher voltage level in the MV networks.</p>
+<p>In<a href="https://www.phasetophase.nl/boek/boek_1_2.html#_2.4.3">section 2.4.3</a>A combined network structure has already been discussed, which meets the above requirements. In this structure, the 10 kV distribution network is fed from a 20 kV transmission network, which is configured as a closed-operated ring with multiple substations. The advantage of the 20 kV voltage level is that the technology and price of commercially available equipment do not differ much from those at the 10 kV level, while double the power can be transported. In a combined network structure, the substations in the 20 kV transmission ring are set up as Intelligent Distribution Rooms (IDR). The IDR is monitored, secured, and controlled remotely. In the substations, depending on the situation at the connected points, the power can flow in two directions. The substation can feed the 20 kV transmission ring and supply the 10 kV branches where the network stations are located. These network stations can also be set up as intelligent network stations, so they are monitored, secured, and controlled remotely.</p>
+<p>Figure 15.1 illustrates three possibilities for applying the combined network structure. The left example shows how an existing network is converted by feeding the 10 kV branches from a 20/10 kV IDR. The 20 kV ring is operated as a closed transport ring, with each 20 kV segment being secured from the IDRs. In the event of a short circuit in one of the 20 kV segments, it will be immediately disconnected from the two neighboring IDRs, after which the supply will continue as an open transport ring. In the event of a short circuit in one of the 10 kV branches, it will be immediately disconnected in the IDR, after which the supply will continue in the traditional way through fault finding and recovery actions.</p>
+<p>The middle example shows that this setup is very well suited for a gradual transition from low to high intelligence. In this example, there are 10 kV branches without intelligence, but also 10 kV branches with intelligent 10 kV substations that are remotely monitored, secured, and controlled. In the event of a short circuit in a 10 kV segment, both adjacent intelligent substations will immediately disconnect, after which the supply will continue uninterrupted. In this setup, it is also possible to choose the 20 kV voltage level for new substations. These will then also be configured as intelligent substations.</p>
+<p> <img alt="pics_3.15" class="img-responsive-leon-15px center-block" height="400" src="./intelligente netten_files/15.1.png" width="712"/> </p>
+<h5>Figure 15.1 Combined networks with 20 kV transport ring and 10 kV distribution branches</h5>
+<p>Due to the concept of the combined network structure, the 10 kV branches are on average shorter, as the greatest distance is bridged by the 20 kV transport ring. The concept provides more feeding points for the 10 kV branches, resulting in fewer substations per branch compared to the traditional setup. Consequently, the number of connections per 10 kV branch is smaller, and thus the network load in the branch is reduced. As a result, and by choosing a higher voltage level in the transport ring, the network loss in this concept is significantly smaller, thereby meeting the sustainability requirements.</p>
+<p>The mentioned advantages make it possible that, compared to the traditional network design, larger amounts of decentralized generation can now be integrated into the distribution network, both at the 10 kV and 20 kV levels. The design of the security concept is such that it does not hinder the bidirectional flow of electrical power. The voltage management also improves due to the greater transport capacity of the transport ring and because the sections are shorter. Due to the security concept and because a 10 kV section serves fewer connections, the number of outage minutes is significantly reduced.</p>
+<p>Figure 15.2 provides an example of a 20/10 kV IDR that feeds 10 kV strands with conventional substations. The incoming and outgoing 10 and 20 kV cables and the 20/10 kV transformer are protected with remotely controlled circuit breakers. All fields are equipped with remotely readable sensors.</p>
+<p> <img alt="pics_3.15" class="img-responsive-leon-15px center-block" height="400" src="./intelligente netten_files/15.2.png" width="712"/> </p>
+<h5>Figure 15.2
+          Example of a 20/10 kV IDR and 10 kV substations</h5>
+<p>The shown combined structure can also be effectively applied in 10 kV networks without opting for the conversion of power transport to the 20 kV level. This avoids additional investments in transformers and the 20 kV bus system in the IDRs. However, the benefits of increased transport capacity and reduced losses are then lost. Additionally, the amount of decentralized generation that can be integrated is smaller. For bi-directional power transport, additional directional-sensitive protection is required.</p>
+<a href="https://www.phasetophase.nl/boek/boek_3_15.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_15.3.2"></div>
+<br/>
+<h3>15.3.2 Medium Voltage Distribution Network with Intelligent Node in the Open Ring</h3>
+<p>The existing medium voltage (MV) distribution networks are usually designed with a ring structure but are operated radially. The normal voltage profile of the MV feeders shows a decreasing voltage with increasing distance from the substation. The maximum length and maximum load of the feeders are, among other things, limited by the maximum voltage drop (see<a href="https://www.phasetophase.nl/boek/boek_3_13.html#_13.3">paragraph 13.3</a>Figure 15.3 provides an example of two medium-voltage (MV) feeders, both supplied from a common substation. In the lower of the two depicted feeders, there is a decentralized generator with a nominal capacity of 4 MVA. The load of the network stations is 300 kW with a power factor (cos(φ)) of 0.9. The decentralized generator supplies 3.2 MW with a power factor (cos(φ)) of 0.85.</p>
+<p> <img alt="pics_3.15" class="img-responsive-leon-15px center-block" height="400" src="./intelligente netten_files/15.3.png" width="712"/> </p>
+<h5>Figure 15.3 Medium Voltage lines with and without generation</h5>
+<p>Due to the generated power in the lower of the two depicted sections, the direction of power in the cable sections between the substation and the medium voltage (MV) room, where the generator is connected, is towards the substation. As a result, the voltage in that section rises, only to decrease again in the substations that are further away. Figure 15.4 illustrates this for the 'Open ring with generation,' where the voltage in this example increases to 10.7 kV with a voltage on the MV busbar in the substation of 10.54 kV. The voltage of the section without generation drops to 10.35 kV.</p>
+<p>If the network opening were to be closed, the voltage profile would improve because the required power in the upper section would now be partially supplied by the decentralized generator in the lower section. Figure 15.4 illustrates this for the 'Closed ring with/without generation,' where the voltage ranges from a maximum of 10.64 kV to a minimum of 10.47 kV. Closing the network opening has a positive effect on voltage quality, but it has the drawback of increasing the short-circuit power in the MV network. To achieve selective protection for the configuration with the closed ring, the protection system must be expanded, making it more complex.</p>
+<p> <img alt="pics_3.15" class="img-responsive-leon-15px center-block" height="354" src="./intelligente netten_files/15.4.png" width="708"/> </p>
+<h5>Figure 15.4           Voltage profile in MV feeders with and without generation</h5>
+<p>In the literature, it has been proposed to place an 'intelligent node' at the location of the network opening of an open-operated MV ring (Provoost, 2005-2). The idea behind this concept is to distribute the power over two branches using a power electronic power flow controller (PFC). Figure 15.5 provides an example of an application of the intelligent node. The currents of the two connected branches A and B are measured and processed by the local autonomous control, as well as the voltages on both sides of the network opening, at the internal nodes A and B. The current generated by the operation of the PFC is also processed. With these measurements, the local autonomous process controls the PFC.</p>
+<p>By applying the PFC, the voltage quality will improve in a similar manner as it would by closing the network opening. However, the PFC does not allow short-circuit currents to pass through, so the intelligent node does not affect the short-circuit capacity.</p>
+<p>The intelligent node meets the objective of enabling more decentralized generation in the distribution network in cases where the power distribution across various branches is unequal. The intelligent node also enhances reliability, as during the recovery process after a short circuit, the network opening can be closed remotely immediately after the faulty cable section is isolated. The issue that a large amount of decentralized generation blinds the protection against overload is not resolved by the intelligent node, so the protection in this concept still needs to be adjusted.</p>
+<p> <img alt="pics_3.15" class="img-responsive-leon-15px center-block" height="400" src="./intelligente netten_files/15.5.png" width="712"/> </p>
+<h5>Figure 15.5   Application of an intelligent node in a network opening</h5>
+<a href="https://www.phasetophase.nl/boek/boek_3_15.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_15.3.3"></div>
+<br/>
+<h3>15.3.3 First step towards an MV distribution network with automation in the substations</h3>
+<p>The intelligent systems required for the realization of intelligent nodes are still in the conceptual phase as of 2011. The first steps towards intelligent systems are being taken slowly. Based on the current traditional MV distribution network, solutions are being developed where substations, switching stations, and control stations are equipped with remotely readable sensors and controllable switches. This is possible, for example, with a system like the SASensor, as described in<a href="https://www.phasetophase.nl/boek/boek_3_14.html#_14.2.7">paragraph 14.2.7</a>(Riet, 2005). Figure 15.6 shows how the SASensor technology is applied in an existing situation alongside conventional protection in a pilot project. The system continuously measures voltage and current. As a result, the protection functions can be centrally executed by this system. The measurements are available to operations, allowing for better monitoring. By continuously monitoring the quality of the voltage, potential problems can be addressed in a timely manner. In the event of a fault, operations have immediate access to all measurement data and can quickly locate the fault using a fault location system.</p>
+<p> <img alt="pics_3.15" class="img-responsive-leon-15px center-block" height="400" src="./intelligente netten_files/15.6.png" width="712"/> </p>
+<h5>Figure 15.6
+          Substation 10 kV installation with conventional protection and SAS sensor technology</h5>
+<p>The functions of such a system are, in summary:</p>
+<ul>
+<li>accurate measurement of current, voltage, and power</li>
+<li>status indication of circuit breakers, load disconnectors, grounders, short-circuit indicators</li>
+<li>signaling of protections and fuses</li>
+<li>remote control of switches and load disconnectors</li>
+<li>alarmafhandeling</li>
+<li>measurement of voltage quality</li>
+<li>foutplaatslokalisatie</li>
+<li>maximum current-time protection</li>
+<li>ground fault protection.</li>
+</ul>
+<p>In addition to the substations, strategic network stations can also be equipped with remote measurement, remote signaling, and remotely controllable circuit breakers. This already makes it possible to achieve a significant reduction in recovery time in the event of a short circuit. By adding automation, a self-healing distribution network can be realized.</p>
+<a href="https://www.phasetophase.nl/boek/boek_3_15.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_15.3.4"></div>
+<br/>
+<h3>15.3.4 Low Voltage Distribution Network</h3>
+<p>The low voltage (LV) distribution networks have the lowest degree of automation and the fewest switching options. The network transformers are equipped with a fixed tap, so the voltage at this level is not regulated but entirely depends on the voltage regulation of the supply transformer in the substation. As a result of the energy transition, the load can significantly increase due to the rise in electric vehicles and space heating with heat pumps. The amount of decentralized generation, mainly consisting of micro-CHP and PV systems, will also increase. The impact of these changes on the LV networks is expected to be greater than the impact on the medium voltage (MV) networks. Power transport in the LV networks will exhibit much more fluctuating behavior than it currently does, with increasing cable loads and adverse effects on voltage quality. There are various ideas, concepts, and systems to mitigate these adverse effects. The most important ones relate to load control and the storage of electrical energy. Due to the structure of the LV networks, the possibilities to make them more flexible with remote measurement and remote control are still limited. To provide some insight into aspects that are still uncertain with the current state of technology and require further research, a number of initiatives are briefly discussed in paragraph 15.4.</p>
+<p>An example of an initiative related to demand-side management is a pilot project in which the decision-making behavior of participants is studied using smart meters. In this pilot project, 57 houses and 246 apartments in a newly built residential area are equipped with PV systems, heat pumps, and a shared CHP installation. The participants receive a large amount of information via a display, including weather forecasts and current energy rates. With the provided information, they can decide when it is advantageous to turn on large energy consumers such as washing machines. The question is whether additional price incentives can entice the participants into a predictable consumption pattern.</p>
+<a href="https://www.phasetophase.nl/boek/boek_3_15.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_15.4"></div>
+<br/>
+<h2>15.4 Techniques</h2>
+<p>On various fronts, techniques are being developed in 2011 that are used in pilot projects to create an intelligent grid. In these pilot projects, techniques of varying degrees of automation are applied. For example, these pilot projects involve matching load to generation using sustainable sources or the introduction of switching or regulating components in the low-voltage network. Additionally, there are significant global developments in the storage of electrical energy. These two examples are briefly explained below.</p>
+<a href="https://www.phasetophase.nl/boek/boek_3_15.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_15.4.1"></div>
+<br/>
+<h3>15.4.1 Matching Load to Generation</h3>
+<p>In 2011, systems were being developed that optimize the supply and demand of electrical energy in a distribution network with a high concentration of decentralized generation, based on potential price advantages. The premise is that solar collectors are installed on the roofs of residential houses, heat pumps or micro-CHP installations are set up in the houses, and certain consumption devices are automatically controlled. Such a system is aimed at participating in and engaging with the electricity market, finding a good balance between the interests of the consumers, the producers, and the grid operator. By providing customers with a price signal that reflects the situation in the electricity market, they will adjust their consumption and production (if available) accordingly. The idea is that during periods of surplus sustainable energy, because it happens to be very windy and sunny, the electricity price is low, and consumers are encouraged to draw energy from the distribution network. In case of a shortage of sustainable energy, they are financially incentivized to consume less and possibly produce more. The system thus ensures greater involvement of consumers in the energy supply. It promotes self-generation because it can be profitable and supports a sustainable society. The system functions as an open flexible marketplace. Sustainable energy, in particular, will benefit from this, as despite the variable and unpredictable nature of sustainable sources, availability is made attractive with financial incentives. The payback period on personal investments in sustainable systems is thereby greatly improved.</p>
+<p>In one of the concepts of such a system, each device is represented by a software agent, which tries to make the process of that device work economically optimally (Kok, 2006). The software agents negotiate on an electronic market about their consumption or production of electricity. The resulting market price determines the volume of power that each represented device is allowed to consume or produce. The equipment is classified into several categories, of which the three main ones are:</p>
+<ul>
+<li>devices with a stochastic nature: PV systems and wind turbines depend on the weather, and their production can vary greatly</li>
+<li>devices whose consumption can be shifted in time: these are devices that need to operate for a certain duration, regardless of the exact time; examples include systems for washing, heating, cooling, ventilation, and rechargeable cars</li>
+<li>devices whose operation is set by the customer: these are devices that are turned on by the customer to perform work at a specific moment; examples include lighting, computers, and audio and video equipment.</li>
+</ul>
+<p>The agents ensure that consumption occurs as much as possible during periods of low energy prices and that the production from non-sustainable sources is shifted as much as possible to periods of high energy prices. The system has been installed in a residential environment for a pilot project.</p>
+<a href="https://www.phasetophase.nl/boek/boek_3_15.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_15.4.2"></div>
+<br/>
+<h3>15.4.2 Control in a Low Voltage Network</h3>
+<p>The voltage in a low voltage (LV) distribution network is not regulated relative to the medium voltage (MV) level. The transformers in the substations have a fixed transformation ratio, which is set to one of five possible positions. Because it is sometimes desirable to regulate the voltage at a fixed level, an MV/LV regulated transformer has been introduced. This transformer differs from a standard distribution transformer by being able to switch to a different voltage level under load. In weak networks or with highly variable loads, the transformer will stabilize the voltage on the LV side with its stepless regulator, regardless of the transmitted power. This concept has been applied to a distribution transformer (10kV/400V, 50Hz, 3 phases), equipped with electronic power regulation and control. The windings of the transformer are switched with IGBT power electronics at the 10kV level in such a way that voltage fluctuations on the LV side are continuously and steplessly regulated away, both under load and no-load conditions. The operation is described in section 4.3. The regulator operates autonomously but can be controlled in an intelligent network.</p>
+<a href="https://www.phasetophase.nl/boek/boek_3_15.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_15.4.3"></div>
+<br/>
+<h3>15.4.3 Storage Systems</h3>
+<p>The large fluctuations in power demand by the low-voltage (LV) networks lead to significant peaks and troughs in power transmission in the medium-voltage (MV) network. These peaks and troughs can be leveled out using an electrical energy storage system (peak shaving), thereby creating more capacity for electricity transmission in the network. One of the possibilities is to build a storage system at or under a substation that can store renewable energy and also relieve the MV network. This concept is called Smart Storage. The system is suitable for both grid-connected operation and island operation, and it can automatically switch between these two states. An additional advantage of this system is that in the event of a failure in the MV network, the underlying LV network can be supplied for a limited time, which increases reliability.</p>
+<p> <img alt="pics_3.15" class="img-responsive-leon-15px center-block" height="400" src="./intelligente netten_files/15.7.jpg" width="712"/> </p>
+<h5>Figure 15.7 Redox-flow storage system for 10 kW and 100 kWh</h5>
+<p>Figure 15.7 shows a Redox-flow storage system with a capacity of 10 kW and an amount of stored energy of 100 kWh, illustrating that the systems for storing electrical energy are not yet very compact.</p>
+<p>Storage systems are also being developed for the medium voltage (MV) level. Figure 15.8 shows a Li-ion storage system composed of modules with 646 V and 41 Ah. These systems are used in static var compensation systems with energy storage capabilities. A storage system built with 8 modules is suitable for a nominal voltage of 5.2 kV and can deliver 200 kW of energy for one hour (Saft, 2008).</p>
+<p>Figure 15.9 shows a NaS storage system based on modules of 1 MW and an energy content of 7.2 MWh. The modules operate at a voltage of 480 V, which is converted to 12.5 and 34.5 kV via step-up transformers.</p>
+<p>The developments in battery technology over the past 20 years are primarily due to efforts in consumer electronics. The advancements in battery systems for electric cars have accelerated the developments in battery technology for power systems. Additionally, developments that have made power electronics more economically attractive, such as the development of reliable converters, have contributed to this progress. Various electrochemical technologies have been developed for storage systems. Six of these are briefly discussed below.</p>
+<div class="row">
+<div class="col-md-4"><img alt="pics_3.15" class="img-responsive-leon-15px center-block" src="./intelligente netten_files/15.8.jpg" width="210"/>
+<h5>Figure 15.8 Li-ion storage system with modules for 646 V and 41 Ah</h5>
+</div>
+<div class="col-md-8"><img alt="pics_3.15" class="img-responsive-leon-15px center-block" src="./intelligente netten_files/15.9.jpg" width="712"/>
+<h5>Figure 15.9 Li-ion storage system based on modules of 1 MW and 7.2 MWh</h5>
+</div>
+</div>
+<h6>Sodium sulfur</h6>
+<p>The sodium sulfur (NaS) battery is a battery system that operates at a high temperature. It consists of a positive electrode made of molten sulfur and a negative electrode made of molten sodium, separated by a solid beta-alumina ceramic electrolyte. The electrolyte only allows positive sodium ions to pass through to react with the sulfur.</p>
+<h6>Flow battery technology</h6>
+<p>A flow battery is based on an electrolyte in which one or more electro-active substances flow through an electrochemical cell. In the cell, chemical energy is converted into electrical energy and vice versa. The electrolyte can be stored outside the system and is pumped through the electrochemical cells. Flow batteries can be easily refreshed by replacing the electrolyte. Figure 15.7 shows an example of a Redox flow battery.</p>
+<h6>Nickel-cadmium</h6>
+<p>The Nickel-cadmium battery (NiCd) is a dry battery. In the past, under very specific and exceptional circumstances, a memory effect has been demonstrated in NiCd batteries. This means that with repeated partial discharges, the capacity decreases to the actually used capacity. Modern NiCd batteries do not suffer from the memory effect. The capacity decreases due to aging, high temperature, over-discharging (which is sometimes done as a remedy against the memory effect), overcharging, and incorrect polarity connection.</p>
+<p>The energy density of NiCd batteries is low: 45Wh/kg. On the other hand, the power density of this type of battery is high: 200W/kg. Nowadays, NiCd batteries are being used less and less, and NiMH batteries are gaining ground.</p>
+<h6>Nickel-metal hydride</h6>
+<p>The nickel-metal hydride battery (NiMH) uses a hydrogen-absorbing alloy for the negative electrode instead of cadmium. A NiMH battery can store more energy than a NiCd battery of the same size but has less power. Compared to the lithium-ion battery, the energy density is lower and the self-discharge rate is higher. NiMH cells are assembled into storage systems for higher voltage applications, such as in electric cars.</p>
+<h6>Lithium-ion</h6>
+<p>The most commonly used battery technology is lithium-ion. This technology can be applied in a variety of types and sizes, such as in a mobile phone or laptop computer. This flexibility is accompanied by a light weight compared to liquid-based battery technologies like lead-acid.</p>
+<h6>Lead-acid</h6>
+<p>Lead-acid is the oldest and most mature technology. Due to extensive experience in automotive engineering, the first emergency power supplies in energy technology were equipped with these batteries. These battery systems are still used for backup power sources in large power plants to perform a 'black start' after emergencies.</p>
+<h5>Table 15.3 Electrochemical Technologies for Storage Systems</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="bottom" width="14%"><p>Technologie</p></td>
+<td width="14%"><p align="center">Vermogen</p></td>
+<td width="14%"><p align="center">Capaciteit</p></td>
+<td width="14%"><p align="center">Rendement</p></td>
+<td width="14%"><p align="center">Levensduur</p></td>
+<td width="14%"><p align="center">Zelfontlading</p></td>
+<td width="14%"><p align="center">Kosten</p></td>
+</tr>
+<tr>
+<td valign="top" width="80"><p>Lead-acid</p></td>
+<td valign="top" width="61"><p align="center">up to 20 MW</p></td>
+<td valign="top" width="69"><p align="center">up to 40 MWh</p></td>
+<td valign="top" width="59"><p align="center">75 - 80%</p></td>
+<td valign="top" width="56"><p align="center">200 - 1200 cycles</p></td>
+<td valign="top" width="64"><p align="center">2 - 5% per month</p></td>
+<td valign="top" width="92"><p align="center">200 - 900 EUR/kWh,<br/>40 - 450 EUR/kW</p></td>
+</tr>
+<tr>
+<td valign="top" width="80"><p>Nickel-Cadmium</p></td>
+<td valign="top" width="61"><p align="center">up to 30 MW</p></td>
+<td valign="top" width="69"><p align="center">up to 40 MWh</p></td>
+<td valign="top" width="59"><p align="center">60 - 70%</p></td>
+<td valign="top" width="56"><p align="center">1000 - 3000 cycles</p></td>
+<td valign="top" width="64"><p align="center">5 - 20% per year</p></td>
+<td valign="top" width="92"><p align="center">600 - 1500 EUR/kW</p></td>
+</tr>
+<tr>
+<td valign="top" width="80"><p>Sodium-sulfur</p></td>
+<td valign="top" width="61"><p align="center">0.1 - 50 MW</p></td>
+<td valign="top" width="69"><p align="center">up to 400 MWh</p></td>
+<td valign="top" width="59"><p align="center">85 - 90%</p></td>
+<td valign="top" width="56"><p align="center">1000 - 4000 cycles</p></td>
+<td valign="top" width="64"></td>
+<td valign="top" width="92"><p align="center">200 - 350 EUR/kWh,<br/>250 EUR/kW</p></td>
+</tr>
+<tr>
+<td valign="top" width="80"><p>Lithium</p></td>
+<td valign="top" width="61"><p align="center">up to 2 MW</p></td>
+<td valign="top" width="69"><p align="center">up to 15 kWh</p></td>
+<td valign="top" width="59"><p align="center">95%</p></td>
+<td valign="top" width="56"><p align="center">3000 - 5000 cycles</p></td>
+<td valign="top" width="64"></td>
+<td valign="top" width="92"><p align="center">500 - 2500 EUR/kWh</p></td>
+</tr>
+<tr>
+<td valign="top" width="80"><p>Redox Flow</p></td>
+<td valign="top" width="61"><p align="center">up to 12 MW</p></td>
+<td valign="top" width="69"><p align="center">up to 40 MWh</p></td>
+<td valign="top" width="59"><p align="center">65 - 75%</p></td>
+<td valign="top" width="56"><p align="center">1000 cycles</p></td>
+<td valign="top" width="64"><p align="center">nihil</p></td>
+<td valign="top" width="92"><p align="center">500 - 1000 EUR/kWh,<br/>500 EUR/kW</p></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p>Table 15.3 provides a summary of several characteristics of electrochemical technologies for some storage systems. The development of new techniques is progressing rapidly, so the information in the table will quickly become outdated. Figure 15.10 provides an overview of the scale of various types of storage systems. On the horizontal axis, the energy content per unit of weight is plotted, in Wh per kilogram. On the vertical axis, the power per unit of weight is plotted, in W per kilogram (Battery, 2011). The figure clearly shows that new technologies have a much higher capacity and power per unit of weight than the old ones. Older types, based on lead-acid, have a low capacity and power per unit of weight. This means that these battery systems are often large and heavy. This is in contrast to modern storage systems, which are much smaller and lighter for the same capacity.</p>
+<p> <img alt="pics_3.15" class="img-responsive-leon-15px center-block" height="280" src="./intelligente netten_files/15.10.png" width="500"/> </p>
+<h5>Figure 15.10 Specific energy and power of electrochemical storage systems</h5>
+<p>Currently, stationary battery systems are often still based on lead-acid batteries because size and weight are not as critical as in mobile applications. The limited number of charge and discharge cycles (see Table 15.3) also does not need to be a drawback if these systems are not fully discharged and have 'shallower' charge and discharge cycles. NiCd batteries are used if the storage system is regularly fully discharged. These batteries can withstand high and low temperatures better than lead-acid batteries. However, NiCd battery systems are still about four times more expensive than lead-acid battery systems. The latest developments for use in the power grid are based on NiMH and Li-ion battery systems. These systems have a wide temperature range and the ability to be 'deeply' discharged and quickly recharged. Storage systems based on these technologies have a long lifespan. Due to their light weight, these storage systems are also suitable for mobile applications, such as emergency power supplies. As long as the new battery systems remain relatively expensive, lead-acid batteries will still be used on a large scale.</p>
+<a href="https://www.phasetophase.nl/boek/boek_3_15.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_15.5"></div>
+<br/>
+<h2>15.5 Applications</h2>
+<p>In<a href="https://www.phasetophase.nl/boek/boek_3_15.html#_15.1">paragraph 15.1</a>It has been demonstrated that a smart grid allows for the bidirectional flow of electrical power and thereby supports the sustainability of the energy supply. The smart grid is metered at more locations than a traditional grid and can also be automatically controlled remotely. By incorporating modern ICT technology and power electronics solutions, the smart grid can monitor, direct, and manage energy flows. To realize a smart grid, several technical applications are in development, with some already implemented:</p>
+<ul>
+<li>Monitoring of voltage management (maintaining Power Quality)</li>
+<li>Identifying bottlenecks</li>
+<li>Condition monitoring of grid components</li>
+<li>Foutplaatslokalisatie</li>
+<li>Automatic grid restoration</li>
+<li>Optimization of maintenance and investments</li>
+<li>Load control and control of controllable generation</li>
+<li>Charging of electric cars (smart charging)</li>
+<li>Remotely readable electricity meters</li>
+<li>Fraudebestrijding</li>
+<li>Minimizing grid loss</li>
+<li>Tariefdifferentiatie</li>
+<li>Remote switching on and off</li>
+<li>Power Quality monitoring</li>
+<li>Facilitating VPP</li>
+</ul>
+<p>The existing grid is not transformed into an intelligent grid with a simple flick of a switch. The grid is gradually and experimentally made more intelligent through the incremental addition of new technical functionalities. In some cases, an existing grid is made substantially flexible and intelligent through a comprehensive project-based approach. The foundation for achieving more flexibility and intelligence is an extensive and reliable measurement network and a system to efficiently process these measurements. It must then be clear what is done with the measurements: which measurement results are stored and which measurements are only available for gaining insights? All stored data must be easily and quickly retrievable and editable. This promotes practical use. Planners, grid designers, and operators are able to achieve the objectives for the intelligent grid with the many new data points. Below, three concepts that were applied in several projects in 2011 are briefly mentioned.</p>
+<a href="https://www.phasetophase.nl/boek/boek_3_15.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_15.5.1"></div>
+<br/>
+<h3>15.5.1 The Mobile Smart Grid concept</h3>
+<p>To optimally integrate electric cars into the existing medium-voltage (MV) and low-voltage (LV) electricity infrastructure, the Mobile Smart Grid concept is being developed (Veldman, 2011). In this concept, a control layer is developed to make the best possible use of the capacity in the distribution network for the large-scale connection of electric cars and renewable sources. In many MV and LV distribution networks, a significant amount of reserve capacity is available in case the network needs to be switched for recovery after a failure. During periods when the network does not need to be switched, the Mobile Smart Grid concept uses this reserve capacity for charging electric cars. By regulating the charging of electric cars, the total load can be optimized, and the transport capacity of the distribution network can be better utilized. The operation relies on the planning of the driver.</p>
+<ul>
+<li>The driver specifies in advance via a website how far he needs to drive and when. This information is then linked to the charger in the car. In the concept, a schedule for charging electric cars is created based on the measured and predicted behavior of flexible loads, taking into account the customer's preferences, the capacity of the distribution network, and the current and planned availability of decentralized generated energy.</li>
+<li>The communication infrastructure for the necessary data streams is provided, among other things, by the internet. The charging process is, within the charging schedule, adjusted as much as possible to the fluctuating availability of sustainably generated energy. In an emergency, for example, due to a failure in the distribution network, the charging process can be postponed. This way, the reserve capacity in the network can be utilized, while the fault reserve remains fully available.</li>
+</ul>
+<a href="https://www.phasetophase.nl/boek/boek_3_15.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_15.5.2"></div>
+<br/>
+<h3>15.5.2 Storage of electrical energy</h3>
+<p>In various locations, experiments are being conducted with the storage of electrical energy in low-voltage networks. The power balance is automatically monitored in these experiments. In a demonstration project at a vacation park, a system based on lead-sulfur batteries is operational, in combination with PV panels on the roofs of the vacation homes. The electricity generated during the day is stored and can be used at night. The system aims to keep energy exchange with the grid as low as possible. Another energy storage project, also based on lead-sulfur batteries, is part of a housing project. There are also projects where a battery system based on Li-ion batteries is used (CE, 2010). The goal of these projects is to demonstrate that storage systems can help reduce the current peaks and troughs in energy transport and that the operating principle is correct. Additionally, research is being conducted on how to build these systems as compactly as possible.</p>
+<p>Figure 15.11 shows the functional layout of a substation with a storage system. The setup is such that the low-voltage (LV) network can operate both in grid-connected mode and in island mode, and can automatically switch between these states. The inverter operates bidirectionally and can charge and discharge the storage system. The inverter is controlled by the Smart Storage system. In the event of a medium-voltage (MV) network outage, the substation must be disconnected if it switches to island mode. This is because otherwise, the voltage on the MV side of the transformer would remain.</p>
+<p> <img alt="pics_3.15" class="img-responsive-leon-15px center-block" height="252" src="./intelligente netten_files/15.11.png" width="450"/> </p>
+<h5>Figure 15.11           Functional diagram of a substation with storage</h5>
+<a href="https://www.phasetophase.nl/boek/boek_3_15.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_15.5.3"></div>
+<br/>
+<h3>15.5.3 Intelligent distribution substation</h3>
+<p>An intelligent distribution substation (IntDS) is a concept initially set up to explore the possibilities of combining power electronics and storage systems to maintain or improve Power Quality in a low-voltage network. The goals of the IntDS are:</p>
+<ul>
+<li>limiting slow voltage variations</li>
+<li>reducing harmonic distortion</li>
+<li>collecting information about power flows in the low-voltage network with decentralized generation.</li>
+</ul>
+<p>The intelligent distribution station is based on a standard medium-voltage/low-voltage (MV/LV) substation, but is supplemented with a power electronics-controlled network transformer (SmartTrafo).<a href="https://www.phasetophase.nl/boek/boek_1_4.html#_4.3">section 4.3</a>), a storage system connected via a bidirectional inverter, and an extensive measurement system (SASensor,<a href="https://www.phasetophase.nl/boek/boek_3_14.html#_14.2.7">section 14.2.7</a>Figure 15.12 shows the concept of the intelligent distribution station, with the feeding medium-voltage (MV) network and several outgoing low-voltage (LV) branches. The IntDS is equipped with voltage and current measurements on both the MV and LV sides. Additionally, a power quality measurement is installed on the LV side. The online measurements are performed using the SASensor system. A significant number of homes have a micro-CHP installation. To study the effect of the regulations, some homes are equipped with a power quality measurement. The system is described in a publication (Kester, 2009).</p>
+<p> <img alt="pics_3.15" class="img-responsive-leon-15px center-block" height="400" src="./intelligente netten_files/15.12.jpg" width="712"/> </p>
+<h5>Figure 15.12 Overview of the IntDS concept</h5>
+<p>The IntDS has several capabilities to improve Power Quality in the LV network, including: voltage regulation, reduction of harmonic distortion, compensation for voltage dips, and compensation for flicker.</p>
+<h6>Spanningsregeling</h6>
+<p>The MV/LV network transformer is a SmartTrafo, which is continuously adjustable using power electronics. This ensures an almost constant voltage at the LV rack. The set value is chosen in such a way that all connected users have the best possible voltage on average.</p>
+<h6>Reduction of harmonic distortion</h6>
+<p>Harmonic voltages are caused by harmonic distortion in the supplying MV network, by the network transformer, and by the harmonic distortion from the connected users in the LV network. The harmonics on the LV rack can be reduced in two ways:</p>
+<ul>
+<li>resistive harmonic damping by the bidirectional inverter; the harmonics are absorbed by a virtual impedance; the damping works up to and including the thirteenth harmonic</li>
+<li>passive harmonic damping by the capacitors of the bidirectional inverter.</li>
+</ul>
+<h6>Compensation of voltage dips</h6>
+<p>The voltage dips on the low-voltage rack are compensated by the control of the SmartTrafo and by the regulating function of the bidirectional inverter of the storage system.</p>
+<h6>Compensation of flicker</h6>
+<p>The flicker of the voltage on the low-voltage rack is also compensated by the control of the SmartTrafo and by the regulating function of the bidirectional inverter of the storage system.</p>
+<p>The concept is being applied in a pilot project at a substation in a residential area, where micro-CHP installations have been placed in 180 homes. The system was tested for three months (Melnik, 2011). During the test and the subsequent period, it was found that the voltage regulation significantly reduces voltage fluctuations on the low-voltage rack and at the measured connections. Harmonic distortion is also significantly reduced. Voltage dips occurred too infrequently during the test period. The flicker compensation had a positive impact on the level and peaks on the low-voltage rack.</p>
+</div>
+<div class="col-lg-2 hidden-md"> </div>
+</div>
+</div>
+</div>
+<div class="container-fluid-footer" id="includeFooter"><div class="container">
+<div class="row">
+<div class="text-justify col-xs-6 col-sm-3">
+<img alt="ptp_logo" src="./intelligente netten_files/logo-s-360px-grijs.png" width="230"/>
+</div>
+<div class="col-xs-6 col-sm-9">
+<p> Phase to Phase is onderdeel van <a href="https://www.technolution.nl/">Technolution</a>. © 2009-2021 </p>
+</div>
+</div>
+</div></div></body></html>

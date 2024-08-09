@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://www.phasetophase.nl/boek/boek_2_9.html -->
+<html lang="en" class="wf-ffscalasansweb-n7-active wf-ffscalasansweb-n4-active wf-ffscalasansweb-i4-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Phase to Phase – Netten voor distributie van elektriciteit</title>
+    <!-- Bootstrap -->	
+<link href="./loadflowberekeningen_files/bootstrap-2-boek.css" rel="stylesheet">
+<style type="text/css">
+	body,td,th {
+	font-family: ff-scala-sans-web, sans-serif;
+}
+body {
+	background-color: #F7F7F7;
+}
+    </style>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+<script src="./loadflowberekeningen_files/qke6lfb.js.download"></script>
+<style type="text/css">.tk-ff-scala-sans-web{font-family:"ff-scala-sans-web",sans-serif;}</style><style type="text/css">@font-face{font-family:tk-ff-scala-sans-web-n7;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-n4;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-i4;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style><script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script src="./loadflowberekeningen_files/jquery-1.11.3.min.js.download"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./loadflowberekeningen_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H8Q9E8BJ7Q');
+</script>
+<script>
+$(function(){
+  $("#includedHeader").load("/boek/header.html");
+  $("#includeFooter").load("/boek/footer.html"); 
+});
+</script><style type="text/css">@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style>	  
+</head>
+<body style="padding-top: 50px">
+
+<div id="includedHeader"> <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topFixedNavbar1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="https://www.phasetophase.nl/">Phase to Phase</a></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="topFixedNavbar1">
+      <ul class="nav navbar-nav">
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+	<p></p>
+	
+    </div>
+    </div>
+  </div>
+
+<div class="container-fluid-boek">
+  <div class="container">
+
+<div class="row-in-header">
+	<div class="text-justify col-xs-6 col-sm-6">
+    <img class="hidden-xs" src="./loadflowberekeningen_files/logo-s-360px-wit.png" alt="Phase to Phase logo 360px" width="366">
+	<img class="visible-xs" src="./loadflowberekeningen_files/logo-s-360px-wit.png" alt="Phase to Phase logo 261px" width="261"> 
+	</div>
+		<div class="col-xs-6 hidden-xs col-sm-6">
+	</div>
+</div>
+
+<div class="row-in-header">
+	<div class="text-left col-xs-9 col-sm-9">        <p></p><h8>ICT voor elektriciteitsnetten</h8>
+</div>
+	<div class="col-xs-3 col-sm-3">
+	</div>
+</div>
+
+<div class="row-in-header-2">
+	<div class="text-justify col-xs-6 col-sm-6">&nbsp;
+	</div>
+	<div class="col-xs-6 hidden-xs col-sm-6">
+	  <h7>&nbsp;</h7>
+	</div>
+</div>
+
+</div>
+</div>
+
+<div class="container">
+
+<div class="row-intro">
+<h1><a href="https://www.phasetophase.nl/boek/index.html"> Netten voor distributie van elektriciteit</a></h1>
+</div></div></div>
+
+  <div class="row-ohm-center-white"> <a name="top"></a>
+    <div class="row-b">
+		  <a href="https://www.phasetophase.nl/boek/index.html"><button type="button" class="btn btn-default">I – De opbouw van een net</button></a>
+		  <a href="https://www.phasetophase.nl/boek/boek_2_7.html"><button type="button" class="btn  btn-default active">II – Rekenen aan een net</button></a>
+		  <a href="https://www.phasetophase.nl/boek/boek_3_13.html"><button type="button" class="btn  btn-default">III – Ontwerpen en bedrijfsvoeren</button></a>
+	</div>
+    <div class="row-b">
+    <a href="https://www.phasetophase.nl/boek/boek_2_7.html">
+      <button type="button" class="btn btn-default1">7 Rekentechnische basis</button>
+      </a> <a href="https://www.phasetophase.nl/boek/boek_2_8.html">
+      <button type="button" class="btn btn-default1">8 Modellen</button>
+      </a> <a href="https://www.phasetophase.nl/boek/boek_2_9.html">
+      <button type="button" class="btn btn-default1 active">9 Loadflowberekeningen</button>
+      </a> <a href="https://www.phasetophase.nl/boek/boek_2_10.html">
+      <button type="button" class="btn btn-default1">10 Kortsluitstroomberekeningen</button>      </a> <a href="https://www.phasetophase.nl/boek/boek_2_11.html">
+      <button type="button" class="btn btn-default1">11 Power Quality</button>
+      </a> <a href="https://www.phasetophase.nl/boek/boek_2_12.html">
+      <button type="button" class="btn btn-default1">12 Betrouwbaarheid</button>
+      </a>
+    <div class="row">
+      <div class="col-md-12 col-lg-10">
+        <h3>Loadflowberekeningen</h3>
+        <p>Hoofdstuk 9 beschrijft de loadflowberekening, die altijd als eerste op het model van een net wordt uitgevoerd. De loadflowberekening geeft informatie over de verdeling van de stromen in alle kabels en overige verbindingen van het net. Bovendien worden met deze berekening alle spanningen op de knooppunten vastgesteld. Bij de berekening wordt uitgegaan van de vermogens die de belastingen opnemen en die de productie-eenheden leveren. Bovendien zijn de schakeltoestanden in het net en de instellingen van componenten, zoals regelbare transformatoren, van belang.</p>
+        <div class="row">
+          <div class="col-md-6">
+            <ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9">9&nbsp;&nbsp;Loadflowberekeningen</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.1">9.1&nbsp;&nbsp;Theorie</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.2">9.2&nbsp;&nbsp;Belastingen</a></li>
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.2.1">9.2.1&nbsp;&nbsp;Belasting met constant vermogensgedrag</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.2.2">9.2.2&nbsp;&nbsp;Maximum vermogen van een verbinding</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.2.3">9.2.3&nbsp;&nbsp;Valkuilen bij toepassing van het constante vermogensgedrag</a></li>
+</ul>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.3">9.3&nbsp;&nbsp;Generatoren</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.4">9.4&nbsp;&nbsp;Netvoeding</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.5">9.5&nbsp;&nbsp;Spanningshuishouding</a></li>
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.5.1">9.5.1&nbsp;&nbsp;Spanningsregeling voedingstrafo en regeltrafo’s</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.5.2">9.5.2&nbsp;&nbsp;Cos-phi verbetering</a></li>
+</ul>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.6">9.6&nbsp;&nbsp;Netverliezen</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.7">9.7&nbsp;&nbsp;Verwerken van het stochastische gedrag van de belastingen</a></li>
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.7.1">9.7.1&nbsp;&nbsp;Compenseren van de ongelijktijdigheid van de belastingen</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.7.2">9.7.2&nbsp;&nbsp;Stochastische loadflow</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.7.3">9.7.3&nbsp;&nbsp;Pseudo state estimation</a></li>
+</ul>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.8">9.8&nbsp;&nbsp;Specifieke toepassingen</a></li>
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.8.1">9.8.1&nbsp;&nbsp;Netopeningen en optimalisatie</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.8.2">9.8.2&nbsp;&nbsp;Meerdere externe netten en voedingspunten</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_9.html#_9.8.3">9.8.3&nbsp;&nbsp;Parallelle transformatoren</a></li>
+</ul>
+            </ul>
+          </div>
+        </div>
+		
+        <hr>
+		  <h1>9 Loadflowberekeningen</h1>
+        <p> De loadflowberekening is gericht op het toetsen van het netontwerp aan de bedrijfscriteria tijdens normaal bedrijf en tijdens uitzonderlijk bedrijf, zoals
+          storings- en onderhoudssituaties. Hierbij worden spanningen, stromen en vermogensverdeling berekend. Ook verliezen in het net kunnen met de
+          loadflowberekening worden vastgesteld. </p>
+        <p> Apparaten die op het elektriciteitsnet worden aangesloten zijn gespecificeerd om goed te functioneren indien de stromen en spanningen zich binnen
+          specifieke grenzen bevinden. Een al te grote afwijking van deze grenzen kan beschadiging of versnelde veroudering van het apparaat tot gevolg hebben. Dit
+          geldt niet alleen voor apparatuur van aangeslotenen, maar ook voor de componenten van het netwerk zelf, die moeten worden beschermd tegen hoge
+          overspanningen en te grote stromen, veroorzaakt door overbelasting of kortsluiting. Ten behoeve van het plannen, analyseren en bedrijfsvoeren van een
+          elektrisch net op elk spanningsniveau worden loadflowberekeningen gemaakt. Deze berekeningen dienen onder andere voor het verkrijgen van inzicht omtrent: </p>
+        <ul>
+          <li> Belasting van componenten </li>
+          <li> Spanningskwaliteit </li>
+          <li> Zwakke plekken </li>
+          <li> Netverliezen (reductie) </li>
+          <li> Invloed van toename van de opwekking en belasting </li>
+          <li> Invloed van hoge belasting en lage belasting in combinatie met (decentrale) opwekking </li>
+          <li> Bedrijfszekerheid </li>
+          <li> Netconfiguratie tijdens storing en tijdens onderhoud. </li>
+        </ul>
+        <p> Omdat de netspanning en de stroombelastbaarheid van componenten onder alle normale omstandigheden binnen specifieke grenzen moeten blijven, is het nodig
+          aan de hand van loadflowberekeningen de meest voor de hand liggende situaties te analyseren. Een distributienet wordt geanalyseerd bij hoge en lage
+          belasting en bij veel en weinig decentrale opwekking. Maar ook storingssituaties moeten doorgerekend worden. De spanningsgrenzen liggen op internationaal
+          niveau vast en de grenzen voor de belastbaarheid zijn door de fabrikant bepaald of worden door de netbeheerder aan veilige zijde vastgelegd. Het inzicht
+          wordt verkregen aan de hand van de resultaten van een loadflowberekening, waarvan stromen en spanningen de belangrijkste zijn. Kort samengevat levert een
+          loadflowberekening de volgende resultaten: </p>
+        <ul>
+          <li> Knooppuntspanningen: </li>
+          <ul>
+          <li> Grootte (in V) </li>
+          <li> Hoek (in graden) </li>
+          </ul>
+          <li> Stromen </li>
+          <ul>
+          <li> Grootte (in A) en hoek (in graden) </li>
+          <li> Belasting van netcomponenten (in %) </li>
+          </ul>
+          <li> Vermogens </li>
+          <ul>
+          <li> Transport van actief vermogen en blindvermogen door het net (W en var) </li>
+          <li> Opgewekte en gevraagde vermogens (W en var) </li>
+          <li> Verliezen (W en var) </li>
+          </ul>
+          <li> Transformator trapstanden. </li>
+        </ul>
+        <p> Om de berekeningen te kunnen uitvoeren zijn technische gegevens van alle componenten nodig. De belangrijkste gegevens zijn: </p>
+        <ul>
+          <li> Netstructuur en schakeling: nominale knooppuntspanningen en locatie van de netvoeding </li>
+          <li> Verbindingen: weerstand, reactantie, capaciteit, stroombelastbaarheid (typegegevens), lengte van de verbinding, netopeningen </li>
+          <li> Transformatoren: nominaal vermogen, nominale spanningen, relatieve kortsluitspanning, kortsluitverlies, trappenschakelaar, spanningsregeling </li>
+          <li> Belastingen: vermogen, arbeidsfactor, groei, spanningsafhankelijkheid. </li>
+        </ul>
+        <p> De methode die het meest wordt toegepast om de spanningen en stromen in een elektriciteitsnet te berekenen is de loadflow volgens Newton-Raphson. De
+          methode is voor het eerst beschreven in 1959 (Van Ness, 1959) en later in 1967 (Tinney, 1967) en is met succes beproefd en is wereldwijd geaccepteerd. </p>
+        <p> Bij het analyseren van distributienetten wordt in het algemeen uitgegaan van symmetrisch belaste symmetrische netten. Dat wil zeggen dat de
+          distributienetten driefasensymmetrisch zijn aangelegd en tevens driefasensymmetrisch zijn belast. Deze aanname is in de Nederlandse HS- en
+          MS-distributienetten gerechtvaardigd. Hierdoor kan worden volstaan met een éénfasige voorstelling van het net in de loadflowberekening en hoeft
+          niet aan alle drie de fasen te worden gerekend. Het netmodel dat wordt gebruikt is dat van het normale systeem (<a href="https://www.phasetophase.nl/boek/boek_2_7.html">zie hoofdstuk 7</a>). In de meeste
+          West-Europese netten geldt deze aanname ook, maar in bijvoorbeeld Amerikaanse distributienetten mag dat niet zonder meer gedaan worden, omdat die netten op
+          een andere manier worden bedreven en er vaak sprake is van asymmetrie, zowel in aanleg als in belasting. </p>
+        <p> Bij het analyseren van LS-distributienetten kan niet altijd worden uitgegaan van het model van symmetrisch belaste symmetrische netten. Ten eerste is het
+          net niet perfect symmetrisch omdat de toegepaste kabels met drie fasegeleiders en een nulgeleider zijn uitgerust. Hierdoor zijn de impedanties tussen de
+          drie fasegeleiders onderling niet gelijk aan elkaar. Hetzelfde geldt voor de impedanties tussen de fasegeleiders en de nulgeleider. Ten tweede zijn de
+          belastingen in de LS-netten niet altijd perfect driefasensymmetrisch verdeeld. Om die reden wordt voor berekeningen aan deze netten een uitgebreid
+          driefasig model toegepast. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.1"></div>
+        <br>
+<h2> 9.1 Theorie</h2>
+        <p> De basis voor alle netberekeningen wordt gelegd door de Wet van Ohm en de Wet van Kirchhoff. Omdat in distributienetten met wisselstromen gewerkt wordt,
+          worden alle berekeningen in het complexe vlak uitgevoerd. Spanning, stroom, impedantie en vermogen zijn complexe getallen die in modulus en argument kunnen
+          worden gepresenteerd of met hun reële en imaginaire waarde. Dit wordt in figuur 9.1 toegelicht aan de hand van een elementair netwerk met een
+          verbinding met knooppunten aan beide zijden en een referentie aan de onderzijde. De verbinding heeft een impedantie <em><u>Z</u> = R + jX</em> en de stroom <em><u>I</u></em> is het gevolg van een belastingtransport vanuit het linkerknooppunt ter grootte van <em><u>S</u> = P + jQ.</em></p>
+        <img src="./loadflowberekeningen_files/9.1.png" width="390" alt="pics_2.9" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 9.1 Spanning, stroom, vermogen en impedantie </h5>
+        <p> De spanningen op het linker- en rechterknooppunt zijn respectievelijk <em><u>U</u><sub>1</sub></em> en <em><u>U</u><sub>2</sub></em> ten opzichte van de referentie. Het
+          spanningsverschil <em><u>ΔU</u></em> over de verbinding is afhankelijk van de impedantie en de stroom. Onderstaande relaties gelden: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.1.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.1 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Dus voor de spanning op het rechterknooppunt geldt: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.2.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.2 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> De spanning <em><u>U</u><sub>2</sub></em> op het rechterknooppunt kan in een vectordiagram worden afgebeeld, aangenomen dat de spanningsvector <em><u>U</u><sub>1</sub></em> een fasehoek van <em>φ<sub>1</sub></em> graden maakt ten opzichte van de reële as. De stroomvector <em><u>I</u></em> maakt een hoek <em>φ</em> met de spanningsvector <em><u>U</u><sub>1</sub></em>. In het vectordiagram is duidelijk zichtbaar dat het spanningsverschil <em><u>ΔU</u></em> is opgebouwd uit twee vectoren, waarvan de vector
+          <em>–R·<u>I</u></em> evenwijdig loopt aan de stroomvector en de vector <em>–jX·<u>I</u></em> haaks op de stroomvector staat. In dit voorbeeld is de waarde van <em>R</em> iets groter dan de waarde van <em>X</em>. </p>
+        <img src="./loadflowberekeningen_files/9.2.png" width="554" alt="pics_2.9" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 9.2 Spanningsvectoren en constructie met behulp van de stroomvector </h5>
+        <p> Aangezien ook geldt: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.3.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.3 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> gaat formule 9.1 voor het spanningsverschil over in: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.4.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.4 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> De spanning <u>U</u><sub>2</sub> aan de andere zijde van de verbinding kan nu eenvoudig worden berekend: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.5.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.5 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Indien wederom aangenomen wordt dat de spanningsvector <em><u>U</u><sub>1</sub></em> een fasehoek van <em>φ<sub>1</sub></em> graden ten opzichte van de reële as maakt,
+          kunnen de spanningsvectoren afgebeeld worden in onderstaand vectordiagram. In figuur 9.3 is duidelijk zichtbaar dat het spanningsverschil <em><u>ΔU</u></em> is opgebouwd uit twee vectoren, waarvan de vector <em>–(RP+XQ)/<u>U</u><sub>1</sub><sup>*</sup></em> evenwijdig loopt aan de spanningsvector <u><em>U</em></u><em><sub>1</sub></em> en
+          de vector <em>–j(XP-RQ)/<u>U</u><sub>1</sub><sup>*</sup></em> haaks op de spanningsvector <em><u>U</u><sub>1</sub></em> staat. In het diagram heeft de spanning <em><u>U</u><sub>2</sub></em> een fasehoek van <em>φ<sub>2</sub></em> graden. </p>
+        <img src="./loadflowberekeningen_files/9.3.png" width="554" alt="pics_2.9" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 9.3 Spanningsvectoren bij een vermogenstransport </h5>
+        <p> Het is dus mogelijk de waarde van het spanningsverschil <em><u>ΔU</u> </em>in termen van de impedantie en het getransporteerde vermogen uit te drukken. In
+          figuur 9.3 valt op dat de absolute waarde van het spanningsverschil voor het grootste deel wordt bepaald door de vector <em>–(RP+XQ)/<u>U</u><sub>1</sub> <sup>*</sup></em> die evenwijdig loopt met de spanningsvector <em><u>U</u><sub>1</sub></em>. Hierdoor geldt bij benadering voor het spanningsverschil: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.6.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.6 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Met <em>U<sub>1</sub> = |<u>U</u><sub>1</sub>|</em>. Deze benadering gaat alleen op voor kleine waarden van <em>ΔU</em>, tot ongeveer 10% van <em>U<sub>1</sub></em>. In dezelfde
+          figuur 9.3 valt op dat de hoekverdraaiing van de spanningsvectoren <em><u>U</u><sub>1 </sub></em>en <u><em>U</em></u><em><sub>2 </sub></em>ten opzichte van elkaar voor het grootste
+          deel bepaald wordt door de vector <em>–j(XP-RQ)/<u>U</u><sub>1</sub><sup>*</sup></em>, die haaks staat op de spanningsvector <em><u>U</u><sub>1</sub></em>. </p>
+        <p> De absolute waarde en de hoek van het spanningsverschil over een verbinding zijn dus afhankelijk van de impedantie van de verbinding en het te
+          transporteren vermogen. Hierin speelt de verhouding van <em>R</em> en<em> X</em> van de verbinding een grote rol. In een bovengronds hoogspanningsnet is bijvoorbeeld de
+          reactantie veel groter dan de weerstand, waardoor de grootte van het spanningsverschil voornamelijk bepaald wordt door het transport van blindvermogen (het
+          product <em>XQ</em> in vergelijking 9.6). In bekabelde laagspanningsnetten is daarentegen de weerstand veel groter dan de reactantie, waardoor in dat geval de
+          grootte van het spanningsverschil voornamelijk bepaald wordt door het transport van actieve vermogen (het product <em>RP</em> in vergelijking 9.6). In MS-netten
+          zijn weerstand en reactantie van dezelfde ordegrootte, waardoor de spanning zowel door het actieve vermogen als door het blindvermogen bepaald wordt. Tabel
+          9.1 geeft een overzicht. </p>
+        <h5>Tabel 9.1 Invloed van R en X op de spanning </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="57" valign="top"><p> <strong>Spannings-niveau</strong> </p></td>
+              <td width="92" valign="top"><p> <strong>Type</strong> </p></td>
+              <td width="35" valign="top"><p> <strong>R/X</strong> </p></td>
+              <td width="78" valign="top"><p> <strong>Hoofdoorzaak van spanningsverschil</strong> </p></td>
+              <td width="78" valign="top"><p> <strong>Hoofdoorzaak van hoekverdraaiing</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="57" valign="top"><p> HS </p></td>
+              <td width="92" valign="top"><p> Lijn </p></td>
+              <td width="35" valign="top"><p> &lt;&lt; 1 </p></td>
+              <td width="78" valign="top"><p> Q </p></td>
+              <td width="78" valign="top"><p> P </p></td>
+            </tr>
+            <tr>
+              <td width="57" valign="top"><p> MS </p></td>
+              <td width="92" valign="top"><p> Kabel </p></td>
+              <td width="35" valign="top"><p> 1 ... 5 </p></td>
+              <td width="78" valign="top"><p> P en Q </p></td>
+              <td width="78" valign="top"><p> P en Q </p></td>
+            </tr>
+            <tr>
+              <td width="57" valign="top"><p> LS </p></td>
+              <td width="92" valign="top"><p> Kabel tot 150 mm<sup>2</sup> </p></td>
+              <td width="35" valign="top"><p> &gt;&gt; 1 </p></td>
+              <td width="78" valign="top"><p> P </p></td>
+              <td width="78" valign="top"><p> Q </p></td>
+            </tr>
+          </tbody>
+        </table><br>
+        <p> Uit de tabel blijkt dat alleen bij hoogspanningsnetten en laagspanningsnetten een eenvoudige uitspraak gedaan kan worden over de relatie tussen het
+          spanningsverschil en het getransporteerde vermogen. In het geval dat de R/X verhouding in de ordegrootte van 1 komt, zoals bij alle middenspanningsnetten,
+          wordt het spanningsverschil altijd veroorzaakt door een combinatie van het actieve vermogen en het blindvermogen. De invloed van de R/X verhouding op de
+          spanningshuishouding is al merkbaar bij het verschil tussen het toepassen van een circuit met drie enkeladerige kabels of met een drieaderige kabel. Het
+          verschil is dat de reactantie van drie enkeladerige kabels groter is dan van een drieaderige kabel. Figuur 9.4 toont de spanningsdaling bij een belasting
+          van 5 Mvar achter een 10 km lange drieaderige MS-kabel (<em>R=1,26 Ω, X=0,89 Ω</em>). Figuur 9.5 toont de spanningsdaling bij een zelfde belasting van 5 Mvar achter
+          een 10 km lang circuit met enkeladerige MS-kabels (<em>R=1,26 Ω, X=1,6 Ω</em>). Duidelijk zichtbaar is dat het blindvermogenstransport een grotere spanningsdaling
+          veroorzaakt bij een circuit met enkeladerige kabels (<em>R/X=0,8</em>) dan bij een circuit met een drieaderige kabel (<em>R/X=1,4</em>). </p>
+        <img src="./loadflowberekeningen_files/9.4.png" width="697" alt="pics_2.9" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 9.4 Spanningsdaling bij een circuit met drieaderige MS-kabel </h5>
+        <img src="./loadflowberekeningen_files/9.5.png" width="696" alt="pics_2.9" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 9.5 Spanningsdaling bij een circuit met drie enkeladerige MS-kabels </h5>
+        <p> Voor een loadflowberekening zijn drie typen knooppunt belangrijk. Deze typen onderscheiden zich doordat er alleen belasting is aangesloten, een
+          spanningsgeregelde synchrone machine of een netvoeding. Tabel 9.2 geeft een overzicht. </p>
+        <h5> Tabel 9.2 Typen knooppunt voor een loadflowberekening </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="135" valign="top"><p> <strong>Knooppunt met:</strong> </p></td>
+              <td width="56" valign="top"><p> <strong>Type</strong> </p></td>
+              <td width="75" valign="top"><p> <strong>Bekende parameters</strong> </p></td>
+              <td width="74" valign="top"><p> <strong>Onbekende variabelen</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="135" valign="top"><p> Belasting </p></td>
+              <td width="56" valign="top"><p> PQ </p></td>
+              <td width="75" valign="top"><p> P en Q </p></td>
+              <td width="74" valign="top"><p> |U| en arg(U) </p></td>
+            </tr>
+            <tr>
+              <td width="135" valign="top"><p> Spanningsgeregelde generator </p></td>
+              <td width="56" valign="top"><p> PU </p></td>
+              <td width="75" valign="top"><p> |U| en P </p></td>
+              <td width="74" valign="top"><p> Q en arg(U) </p></td>
+            </tr>
+            <tr>
+              <td width="135" valign="top"><p> Netvoeding (swingbus) </p></td>
+              <td width="56" valign="top"><p> UT </p></td>
+              <td width="75" valign="top"><p> |U| en arg(U) </p></td>
+              <td width="74" valign="top"><p> P en Q </p></td>
+            </tr>
+          </tbody>
+        </table><br>
+        <p> Afhankelijk van wat er op de knooppunten is aangesloten, zijn er bekende parameters en onbekende variabelen. Van een belasting is gespecificeerd hoeveel actief vermogen en blindvermogen deze wil opnemen. De waarde van de spanning en de hoek van de spanningsvector op het knooppunt worden door de loadflow berekend. Van een spanningsgeregelde generator zijn de waarde van de spanning op het knooppunt en het door de generator geproduceerde actieve vermogen gespecificeerd. De loadflow berekent het door de generator geproduceerde blindvermogen en de hoek van de spanningsvector op het knooppunt. Van een netvoeding is de absolute waarde van de spanning een vast gegeven en wordt de hoek van de spanning ten opzichte van een referentie meestal op nul graden gehouden. De loadflow berekent het door de netvoeding geleverde of opgenomen actieve en reactieve vermogen. Dit is het resultaat van alle opgenomen en  geproduceerde vermogens, inclusief de verliezen. In de volgende paragrafen wordt nader ingegaan op deze drie typen. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.2"></div>
+        <br>
+<h2>9.2 Belastingen </h2>
+        <p> Zoals in hoofdstuk 8 beschreven, is het vermogen dat de belasting opneemt afhankelijk van de spanning. In de meeste loadflowprogramma's kan worden gekozen uit drie belastingsmodellen voor het actieve vermogen <em>P</em> en voor het blindvermogen <em>Q</em>, namelijk: </p>
+        <ul>
+          <li> constant vermogen </li>
+          <li> constante stroom </li>
+          <li> constante impedantie. </li>
+        </ul>
+        <p> Bij een belasting die zich gedraagt als een afname van constant vermogen zal bij een afnemende spanning de belastingstroom toenemen, want het product van spanning en stroom moet immers constant blijven. Bij een belasting die zich gedraagt als een afname van constante stroom zal bij een afnemende spanning het opgenomen vermogen recht evenredig met de spanning afnemen. Bij een belasting die zich gedraagt als een constante impedantie, neemt bij een afnemende spanning de stroom lineair af volgens de wet van Ohm. Als gevolg neemt het opgenomen vermogen dan kwadratisch af. Tabel 9.3 vat het spanningsafhankelijke gedrag voor deze drie typen samen. </p>
+        <p> In formulevorm kan de belasting worden beschreven als functie van de genormeerde spanning met exponent <em>p</em> voor het actieve vermogen en <em>q</em> voor het blindvermogen: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.7.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.7 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> met: </p>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td width="60"><em>P<sub>nom</sub></em></td>
+              <td>actief vermogen bij nominale spanning</td>
+            </tr>
+            <tr>
+              <td><em>Q<sub>nom</sub></em></td>
+              <td>blindvermogen bij nominale spanning </td>
+            </tr>
+            <tr>
+              <td><em>|U|</em></td>
+              <td>actuele spanning </td>
+            </tr>
+            <tr>
+              <td><em>U<sub>nom</sub></em></td>
+              <td>nominale spanning </td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <h5> Tabel 9.3 Belastingsmodellen en hun spanningsafhankelijkheid </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="125" valign="top"><p> <strong>Belastingsmodel</strong> </p></td>
+              <td width="136" valign="top"><p> <strong> Spanningsafhankelijkheid van het vermogen </strong> </p></td>
+              <td width="35" valign="top"><p> <strong>p, q</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="125" valign="top"><p> Constant vermogen </p></td>
+              <td width="136" valign="top"><p> constant </p></td>
+              <td width="35" valign="top"><p> 0 </p></td>
+            </tr>
+            <tr>
+              <td width="125" valign="top"><p> Constante stroom </p></td>
+              <td width="136" valign="top"><p> lineair </p></td>
+              <td width="35" valign="top"><p> 1 </p></td>
+            </tr>
+            <tr>
+              <td width="125" valign="top"><p> Constante impedantie </p></td>
+              <td width="136" valign="top"><p> kwadratisch </p></td>
+              <td width="35" valign="top"><p> 2 </p></td>
+            </tr>
+          </tbody>
+        </table><br>
+        <p> Figuur 9.6 geeft het verband tussen spanning en vermogen weer voor de drie modellen van tabel 9.3. De horizontale lijn stelt het constante vermogensmodel
+          voor, onafhankelijk van de spanning. Van het constante stroommodel neemt het vermogen lineair toe met de spanning en bij het constante impedantiemodel is
+          dat kwadratisch. Beide laatste modellen beginnen bij de oorsprong. Alle belastingsmodellen gaan door het gezamenlijke punt, dat gekarakteriseerd wordt door
+          het nominale vermogen dat bij de nominale spanning wordt opgenomen. </p>
+        <img src="./loadflowberekeningen_files/9.6.png" width="709" alt="pics_2.9" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 9.6 Spanningsafhankelijkheid van de belasting </h5>
+        <p> Vaak wordt het constante stroommodel niet direct ondersteund. In dat geval is het gebruikelijk het constante stroommodel te benaderen met de combinatie van
+          50% constant vermogen en 50% constante impedantie. Voor spanningen tussen 0,8 en 1,2 pu is de afwijking van de benadering ten opzichte van het constante
+          stroommodel hoogstens 2,5%. Figuur 9.7 illustreert dit. </p>
+        <img src="./loadflowberekeningen_files/9.7.png" width="709" alt="pics_2.9" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 9.7 Spanningsafhankelijkheid van de belasting met het benaderde constante stroommodel </h5>
+        <p> Het is voor praktische gevallen gebruikelijk de belasting te modelleren met een aandeel constant vermogen en een aandeel constante impedantie. Door de
+          actieve en reactieve belasting bij nominale spanning op te delen in een aandeel constant vermogen en een aandeel constante impedantie, kunnen de meeste
+          gevallen goed berekend worden. Dit model is beschreven in hoofdstuk 8. Het complexe vermogen wordt dan als volgt berekend: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.8.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.8 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> De impedantie voor het constante impedantie-aandeel wordt berekend uit de nominale spanning: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.9.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.9 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> <a href="https://www.phasetophase.nl/boek/boek_2_8.html">Hoofdstuk 8</a> geeft voor een aantal typen belasting het spanningsafhankelijke gedrag. Het reactieve deel van de belasting in MS- en LS-netten gedraagt zich
+          in veel gevallen als een constante impedantie. Het actieve deel kan worden samengesteld uit een aandeel constant vermogen en een aandeel constante
+          impedantie. Tabel 9.4 geeft een overzicht van de spanningsafhankelijkheid van een aantal bekende typen. </p>
+        <h5> Tabel 9.4 Belastingen en hun spanningsafhankelijkheid </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="33%" valign="top"><p> <strong>Type belasting</strong> </p></td>
+              <td width="33%" valign="top"><p align="center"> <strong>Aandeel constant vermogen (%)</strong> </p></td>
+              <td width="33%" valign="top"><p align="center"> <strong>Aandeel constante impedantie (%)</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="113" valign="top"><p> Industrieel </p></td>
+              <td width="102" valign="top"><p align="center"> 90 </p></td>
+              <td width="125" valign="top"><p align="center"> 10 </p></td>
+            </tr>
+            <tr>
+              <td width="113" valign="top"><p> Asynchrone machine </p></td>
+              <td width="102" valign="top"><p align="center"> 100 </p></td>
+              <td width="125" valign="top"><p align="center"> 0 </p></td>
+            </tr>
+            <tr>
+              <td width="113" valign="top"><p> Geschakelde voeding </p></td>
+              <td width="102" valign="top"><p align="center"> 100 </p></td>
+              <td width="125" valign="top"><p align="center"> 0 </p></td>
+            </tr>
+            <tr>
+              <td width="113" valign="top"><p> Zakelijk </p></td>
+              <td width="102" valign="top"><p align="center"> 35 </p></td>
+              <td width="125" valign="top"><p align="center"> 65 </p></td>
+            </tr>
+            <tr>
+              <td width="113" valign="top"><p> Woningen </p></td>
+              <td width="102" valign="top"><p align="center"> 30 </p></td>
+              <td width="125" valign="top"><p align="center"> 70 </p></td>
+            </tr>
+            <tr>
+              <td width="113" valign="top"><p> Gloeilampen </p></td>
+              <td width="102" valign="top"><p align="center"> 0 </p></td>
+              <td width="125" valign="top"><p align="center"> 100 </p></td>
+            </tr>
+            <tr>
+              <td width="113" valign="top"><p> Elektrische verwarming </p></td>
+              <td width="102" valign="top"><p align="center"> 0 </p></td>
+              <td width="125" valign="top"><p align="center"> 100 </p></td>
+            </tr>
+            <tr>
+              <td width="113" valign="top"><p> Airconditioner </p></td>
+              <td width="102" valign="top"><p align="center"> 75 </p></td>
+              <td width="125" valign="top"><p align="center"> 25 </p></td>
+            </tr>
+            <tr>
+              <td width="113" valign="top"><p> Verlichting </p></td>
+              <td width="102" valign="top"><p align="center"> 25 </p></td>
+              <td width="125" valign="top"><p align="center"> 75 </p></td>
+            </tr>
+          </tbody>
+        </table><br>
+        <a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.2.1"></div>
+        <br>
+<h3> 9.2.1 Belasting met constant vermogensgedrag</h3>
+        <p> De invloed van het getransporteerde vermogen op de spanning in het netwerk en op de verliezen wordt het beste toegelicht aan de hand van een belasting met
+          een constant vermogensgedrag. Het netwerk van figuur 9.8 wordt gevoed door een oneindig sterke voedingsbron op 10,5 kV gekoppelde spanning. </p>
+        <img src="./loadflowberekeningen_files/9.8.png" width="621" alt="pics_2.9" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 9.8 Voorbeeldnet voor berekening spanningen, stroom en vermogens </h5>
+        <p> De verbinding is een 10 km lange kabel van het type 3 x 150 Cu XLPE 6/10. De impedantie over de gehele lengte is: <em>R = 1,26 Ω</em> en <em>X = 0,93 Ω</em>. </p>
+        <p> De belasting van 4,67 MW en 1,76 Mvar veroorzaakt een vermogenstransport van 5,0 MW en 2,0 Mvar vanuit de voeding. Dit komt overeen met een arbeidsfactor
+          van 0,93. Het vermogen per fase is bij de voeding: 1,67 MW en 0,67 Mvar. </p>
+        <p> De fasespanning op het voedingsknooppunt is: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.10.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.10 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Het spanningsverschil is, volgens vergelijking 9.6: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.11.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.11 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> De spanning aan de belastingszijde is: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.12.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.12 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> De stroom volgt uit vergelijking 9.1: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.13.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.13 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Het vermogen dat de belasting per fase opneemt is dan volgens vergelijking 9.3 gelijk aan: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.14.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.14 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Dit komt overeen met een door de belasting opgenomen driefasig vermogen van 4,67 MW en 1,76 Mvar. Het vermogen aan belastingzijde is kleiner dan het
+          vermogen aan voedingzijde, omdat de spanning op het belastingsknooppunt lager is dan op het voedingsknooppunt en de stroom gelijk is. Het verschil tussen
+          het vermogen aan de voedingszijde en het vermogen aan de belastingszijde is gelijk aan het verlies in de verbinding: <u>S</u><sub>verlies</sub> = 0,34 +
+          0,12 Mvar. </p>
+        <p> Het reële deel kan ook als volgt berekend worden: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.15.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.15 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Door de belasting stapsgewijs te variëren ontstaat een overzicht van de invloed van belastingvariatie op de spanning. Figuur 9.9 toont de spanning op het belastingsknooppunt waarbij het actieve vermogen <em>P</em> van de belasting is gevarieerd tussen –5 en 5 MW en het blindvermogen <em>Q</em> is gevarieerd van –5 tot 5 Mvar. De spanning voor elke combinatie van <em>P</em> en <em>Q</em> is afgebeeld op een vlak in de driedimensionale grafiek. Figuur 9.9 laat zien dat de invloed van variatie van het actieve vermogen en het blindvermogen op de spanning in het voorbeeldnet ongeveer even groot is. Dit komt overeen met het gestelde in tabel 9.1 voor een MS-net. </p>
+        <img src="./loadflowberekeningen_files/9.9.png" width="708" alt="pics_2.9" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 9.9 Spanning U<sub>2</sub> op knooppunt 1 bij variatie van P en Q </h5>
+        <a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.2.2"></div>
+        <br>
+<h3> 9.2.2 Maximum vermogen van een verbinding</h3>
+        <p> In het eenvoudige voorbeeldnet van figuur 9.8 met een voeding, een impedantie en een belastingsknooppunt is een belasting met vermogen <em>P+jQ</em> aangesloten. Deze belasting heeft een arbeidsfactor <em>cos(φ)</em>. De relatie tussen het getransporteerde vermogen en de spanning aan de kant van de belasting vertoont een karakteristieke curve, die de U-P-curve van een verbinding wordt genoemd. Deze curve wordt als volgt berekend (Cigré, 1986),(Johansson, 1995): </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.16.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.16 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> De curven zijn weergegeven in figuur 9.10 voor diverse waarden van <em>cos(φ)</em>. De curven laten zien dat er een maximum is voor het vermogen <em>P+jQ</em> dat over een verbinding met impedantie <em>R+jX</em> getransporteerd kan worden. In dezelfde figuur valt het bovendien op dat theoretisch een vermogen getransporteerd kan worden op twee spanningen. De bovenste helft van elke U-P-curve geeft aan dat bij toenemend getransporteerd vermogen de spanning bij de belasting daalt. Dit is een normale situatie. De onderste helft van elke curve geeft in het gestreepte deel aan dat bij een afnemende belasting de spanning op het afnamepunt afneemt. Dit is geen stabiele situatie en zal dus in de werkelijkheid niet voorkomen. Als het gevraagde vermogen groter is dan het maximale vermogen, zal de spanning instorten tot nul. Dit wordt ook wel spanningsinstorting of 'Voltage Collapse' genoemd. Een loadflowberekeningsprogramma zal in dat geval een melding genereren dat de loadflow niet opgelost kan worden. </p>
+        <img src="./loadflowberekeningen_files/9.10.png" width="707" alt="pics_2.9" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 9.10 U-P curve: spanning bij variatie van P en cos(φ) </h5>
+        <p> Het is dus niet mogelijk bij een gegeven <em>cos(φ)</em> meer vermogen te transporteren dan het meest rechtse punt in de U-P-curve aangeeft. Onderstaande afbeelding geeft het resultaat van de loadflowberekening van het voorbeeldnet voor het maximale vermogen van een van de curven: een belasting van 17 MW bij een <em>cos(φ)</em> van 0,95. Overigens is deze belasting veel groter dan de gespecificeerde maximale belastbaarheid van de kabel. </p>
+        <img src="./loadflowberekeningen_files/9.11.png" width="649" alt="pics_2.9" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 9.11 Loadflowberekening voor het maximum vermogen </h5>
+        <a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.2.3"></div>
+        <br>
+<h3> 9.2.3 Valkuilen bij toepassing van het constante vermogensgedrag </h3>
+        <p> Bij toepassing van het constant vermogensmodel kan het gebeuren dat wegens spanningsinstorting, zoals beschreven in paragraaf 9.2.2, de loadflow niet
+          berekend kan worden omdat bij afnemende spanning de belastingstroom toeneemt. In dat geval schiet de oplossing van de loadflowberekening voorbij het meest
+          rechtse punt van figuur 9.10. Bij toepassing van het constante stroommodel of het constante impedantiemodel kan de loadflow in die gevallen echter meestal
+          wel berekend worden. Indien de loadflow niet opgelost kan worden, wordt dan ook aanbevolen om het probleem te onderzoeken door het constante
+          impedantiemodel te kiezen. In de meeste gevallen zal blijken dat de gespecificeerde vermogens te groot zijn voor de gebruikte verbindingen. </p>
+        <p> Een valkuil ontstaat bij het gebruik van een belasting met het gedrag van 100% constant vermogen achter een spanningsgeregelde transformator. Indien de
+          grootte van de belasting van dezelfde grootteorde is als het nominale vermogen van de transformator, kan een ongewenste wisselwerking tussen de belasting
+          en de transformatorregeling ontstaan. Beter is het in dat geval de belasting met een constante stroom of constante impedantie te modelleren. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.3"></div>
+        <br>
+<h2>9.3 Generatoren</h2>
+        <p> In het algemeen veroorzaakt een generator een spanningsverandering in de elektrische nabijheid van het aankoppelingspunt. De procentuele
+          spanningsverandering op het aankoppelingspunt kan worden geschat met een benaderingsformule (EnergieNed, 1996): </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.17.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.17 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> met: </p>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td width="60"><em>S<sub>G</sub></em></td>
+              <td>nominaal generatorvermogen (MVA)</td>
+            </tr>
+            <tr>
+              <td><em>S<sub>k</sub></em></td>
+              <td>kortsluitvermogen (MVA)</td>
+            </tr>
+            <tr>
+              <td><em>α</em></td>
+              <td>fasehoek kortsluitimpedantie (rad)</td>
+            </tr>
+            <tr>
+              <td><em>φ</em></td>
+              <td>fasehoek generatorstroom (rad)</td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Met deze benaderingsformule wordt aanbevolen voor de maximaal toelaatbare spanningsverhoging door decentrale opwekking in MS-netten 2% aan te houden en 3% in LS-netten (EnergieNed, 1996). Figuur 9.12 toont een MS-streng, waarbij op 'Netstation 4' een decentrale opwekker is aangesloten. Indien de schakelaar van de generator is geopend volgt uit de loadflowberekening een spanning van 10,389 kV voor het netstation. Indien het kortsluitvermogen en de fasehoek van de kortsluitimpedantie gegeven zijn, kan met de generatorgegevens de procentuele spanningsverandering worden benaderd. Gegeven wordt dat het kortsluitvermogen gelijk is aan 96 MVA en dat de fasehoek gelijk is aan 0,82 rad (berekend uit <em>R<sub>i</sub> = 0,783 Ω</em> en <em>X<sub>i</sub> = 0,840 Ω</em>). De gebruikte termen ten aanzien van het kortsluitvermogen en de kortsluitimpedantie worden in hoofdstuk 10 nader toegelicht. Bij een volbelaste generator met een nominaal vermogen van 0,3 MVA en een nominale cos(φ) van 0,85 berekent formule 9.17 een spanningsverandering van 0,3%. Een grotere generator met een nominaal vermogen van 3,0 MVA en een nominale cos(φ) van 0,85 levert een spanningsverandering van 3,0%. </p>
+        <img src="./loadflowberekeningen_files/9.12.png" width="693" alt="pics_2.9" class="img-responsive-leon-15px center-block">
+<h5> Figuur 9.12 MS-streng met een generator </h5>
+        <p> De loadflowberekening moet dit bevestigen. De spanning is bij toepassing van de generator van 0,3 MVA gestegen naar 10,419 kV, hetgeen overeenkomt met 0,3%
+          spanningstijging. Bij toepassing van een 3,0 MVA generator blijkt de spanning inderdaad met ongeveer 3% te stijgen naar 10,684 kV. </p>
+        <p> De generatoren worden volgens hoofdstuk 8 gemodelleerd met een cos(φ)-regeling of met een spanningsregeling. In het eerste geval is de verhouding tussen
+          actief vermogen <em>P</em> en blindvermogen <em>Q</em> vast. De generator met een cos(φ)-regeling kan in de loadflowberekening dan ook worden gemodelleerd als een negatieve
+          belasting met het constante vermogensmodel. </p>
+        <p> Indien de generator een spanningsregeling heeft, is het gegenereerde blindvermogen in de loadflowberekening afhankelijk van de actuele spanning ten
+          opzichte van de gewenste spanning op het geregelde knooppunt: de spanning stijgt indien de generator meer blindvermogen produceert. Volgens tabel 9.1 is de
+          invloed in netten met een kleine R/X-verhouding het grootst, zoals in HS-netten en in mindere mate in MS-netten. Het blindvermogen dat de generator kan
+          produceren of opnemen is begrensd tussen<em> Q<sub>min</sub></em> en <em>Q<sub>max</sub></em>. Tussen deze minimum en maximum waarden van het blindvermogen kan de generator
+          door aanpassing van de productie van blindvermogen de spanning beïnvloeden. En andersom bepaalt de afwijking van de actuele spanning ten opzichte van
+          de ingestelde spanning het geproduceerde blindvermogen. Indien de actuele spanning gelijk is aan de ingestelde spanning <em>U<sub>ref</sub></em> wordt nul var
+          blindvermogen gegenereerd. </p>
+        <p> Figuur 9.13 geeft het verband weer tussen de actuele spanning op het geregelde knooppunt en het gegenereerde blindvermogen. De ingestelde spanning is <em>U<sub>ref</sub></em>. Indien de actuele spanning gelijk is aan <em>U<sub>ref</sub></em>, is het gegenereerde blindvermogen nul. Indien de actuele spanning daalt, zal de
+          generator volgens de schuine lijn meer blindvermogen gaan genereren. Indien de productie van blindvermogen aan de bovengrens <em>Q<sub>max</sub></em> komt, is de
+          spanning lager dan of gelijk aan <em>U<sub>min</sub></em>. Indien de spanning toeneemt, zal de generator minder blindvermogen produceren of zelfs opnemen. Indien de
+          productie van blindvermogen aan de ondergrens <em>Q<sub>mi</sub></em><sub>n</sub> komt, is de spanning hoger dan of gelijk aan <em>U<sub>max</sub></em>. </p>
+        <p> Bij een verandering van de ingestelde spanning <em>U<sub>ref</sub></em> zal de grafiek in zijn geheel naar boven of naar beneden schuiven. Indien de waarde van <em>U<sub>ref</sub></em> hoger wordt ingesteld, zal de generator meer blindvermogen produceren en zal de actuele spanning meestijgen. </p>
+        <img src="./loadflowberekeningen_files/9.13.png" width="450" alt="pics_2.9" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 9.13 Verband tussen generatorblindvermogen en spanning </h5>
+        <p> De hellingshoek van de lijn tussen <em>U<sub>min</sub></em> en <em>U<sub>max</sub></em> is de spanning-blindvermogenstatiek, die de waarde van de spanningsvariatie
+          representeert als gevolg van een variatie in blindvermogen. </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.18.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.18 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.4"></div>
+        <br>
+<h2> 9.4 Netvoeding</h2>
+        <p> De berekening van de loadflow is gebaseerd op de wetten van Kirchhoff en Ohm en op het in orde maken van de complexe vermogensbalans: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="center"><img src="./loadflowberekeningen_files/formule-9.19.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.19 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Hierin is <em>S</em> het complexe vermogen, bestaande uit actief vermogen en blindvermogen. Het door generatoren opgewekte vermogen wordt opgenomen door de
+          belastingen. De netverliezen zijn een gevolg van het transport van de elektriciteit. Aangezien deze vermogens niet automatisch in balans zijn, is de
+          netvoeding nodig om de vermogensbalans kloppend te maken. Distributienetten zijn in de normale bedrijfssituatie gekoppeld met een extern net, waaruit ze
+          gevoed worden. Dat externe net bestaat uit een netwerk van transportverbindingen, generatoren en belastingen, meestal op een hoger spanningsniveau. De
+          netvoeding representeert dit met een constante spanningsbron en een netimpedantie, zoals beschreven in hoofdstuk 8. </p>
+        <p> Het actieve vermogen en het blindvermogen dat de netvoeding levert of opneemt is het resultaat van de loadflowberekening. Daarnaast is de spanning van de
+          netvoeding gegeven en constant, zowel in grootte als in hoek. In de loadflowtechniek wordt een knooppunt waarop de netvoeding is aangesloten ook wel
+          swingbus genoemd. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.5"></div>
+        <br>
+<h2> 9.5 Spanningshuishouding </h2>
+        <p> Voor de goede werking van apparatuur moet de spanning binnen bepaalde grenzen blijven. Op internationaal niveau zijn daarom afspraken gemaakt over de
+          hoogte van de nominale netspanning en de toegestane afwijkingen ervan. Deze zijn vastgelegd in de internationale norm IEC 50160. De norm schrijft de eisen
+          ten aanzien van de spanning in openbare LS- en MS-netten voor. De nominale spanning voor laagspanningsnetten is 230 V. De meeste West-Europese landen
+          hadden voor 1995 een nominale spanning van 220 V. Het Verenigd Koninkrijk had een nominale spanning van 240 V. De nominale waarde van 230 V is ontstaan uit
+          een compromis om te komen tot een Europese standaard. De nominale spanning voor de middenspanningsnetten kan per regio verschillen, zodat de norm spreekt
+          van een gespecificeerde spanning (declared voltage), ingedeeld in de categorie tussen 1 en 35 kV. De eisen voor langzame spanningsvariaties tijdens normale
+          bedrijfsvoering zijn overgenomen door de Energiekamer (Netcode, 2009). </p>
+<ul>         
+<li>Voor netten met U <sub>nom</sub> ≤ 1 kV:</li>
+<ul>
+<li>U<sub>nom</sub> ±10% voor 95% van de over 10 minuten gemiddelde waarden gedurende één week</li>
+<li>U<sub>nom</sub> +10/-15% voor alle over 10 minuten gemiddelde waarden</li>
+</ul>
+<li>Voor netten met 1 kV &lt; U <sub>nom</sub> &lt; 35 kV</li>
+<ul>
+<li>U<sub>nom</sub> ±10% voor 95% van de over 10 minuten gemiddelde waarden gedurende één week</li>
+<li>U<sub>nom</sub> +10/-15% voor alle over 10 minuten gemiddelde waarden</li>
+</ul>
+<li>Voor netten met U<sub>nom</sub> ≥ 35 kV</li>
+<ul>
+<li>U<sub>nom</sub> ±10% voor 99,9% van de over 10 minuten gemiddelde waarden gedurende een beschouwingperiode van één week</li>
+</ul>
+</ul>    
+        <p> De mogelijkheid om tijdelijk een spanningsdaling van 15% toe te staan is bedoeld voor de gevallen van onderhoud of reparatie, waarbij het netwerk anders
+          geschakeld moet kunnen worden. Voor de gewone bedrijfssituaties moet het net zodanig worden ontworpen dat de spanning over een grote periode gemiddeld
+          genomen zo goed mogelijk binnen de marges blijft. Hierbij zijn de instellingen van de distributietransformatoren en de blindvermogensverdeling van belang.
+          Een goede cos(φ) kan daartoe bijdragen. Langzame belastingsvariaties, zoals over een dag, kunnen worden opgevangen met behulp van de spanningsregelingen op
+          de voedingstransformatoren. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.5.1"></div>
+        <br>
+<h3> 9.5.1 Spanningsregeling voedingstrafo en regeltrafo's </h3>
+        <p> In een elektriciteitsnet gaat het transport van elektrisch vermogen altijd gepaard met variaties van de spanningen op de knooppunten. De spanningsvariaties in het distributienet worden veroorzaakt door gebeurtenissen in het HS-net en door het vermogenstransport over de kabelverbindingen en de transformatoren. Spanningsvariaties worden in de onderstations automatisch gecompenseerd met behulp van een spanningsregeling op de HS/MS-transformator. De voedingstransformator wordt daartoe uitgerust met een regelbare trappenschakelaar aan de primaire zijde. De trappenschakelaar wordt aangestuurd door een regeling die de spanning op de MS-zijde meet en binnen grenzen probeert te houden. Omdat de regeling een discrete trappenschakelaar aanstuurt, is het niet mogelijk de spanning aan de secundaire zijde exact een gewenste waarde te laten zijn. Het kan voorkomen dat soms twee of meer trapstanden mogelijk zijn, afhankelijk van de trapgrootte ten opzichte van de te regelen spanningsband. Gebruikelijke trapstanden voor de voedingstransformator zijn: 21 trappen van
+          1,5%. </p>
+        <p> In de laagspanningsnetten is geen sprake van automatische spanningsregeling en kan de trapstand op de MS/LS-distributietransformator handmatig worden ingesteld, zodanig dat alle spanningsvariaties binnen de gespecificeerde grenzen blijven. De distributietransformator is hiertoe instelbaar met 5 trappen op: –7,5%, –5%, –2,5%, 0% en +2,5%. </p>
+        <img src="./loadflowberekeningen_files/9.14.png" width="693" alt="pics_2.9" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 9.14 Typische MS-streng met netstations </h5>
+        <p> Figuur 9.14 geeft een voorbeeld van een typische MS-streng met netstations. Op een onderstation zijn doorgaans 20 velden met MS-strengen aangesloten. De belasting van de overige MS-strengen zijn geconcentreerd in een MS-belasting op de MS-rail van het onderstation. </p>
+        <img src="./loadflowberekeningen_files/9.15.png" width="671" alt="pics_2.9" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 9.15 Spanningsprofiel in het voedende net en in een typische MS-streng </h5>
+        <p> Op dit net is een simulatie uitgevoerd met een variërende spanning aan de HS-zijde van de voedingstransformator en dagelijks variërende
+          belastingen. De variaties zijn opgenomen in profielen als functie van de tijd, waarvan voor elke waarde een loadflowberekening wordt gemaakt. Figuur 9.15
+          toont de knooppuntspanningen van de HS-rail tot en met alle LS-rails als resultaat van de loadflowberekening voor de profielen. De spanning is weergegeven
+          in pu. Duidelijk zichtbaar is de variatie van de spanning op de HS-rail van het onderstation, die ingesteld was op plus en min 5%. Door de regelactie van
+          de voedingstransformator blijft de variatie op de MS-rail van het onderstation beperkt tot ongeveer 2%. De spanningsvariatie neemt in de richting van
+          'Netstation 6' niet noemenswaard toe. De hoogte van de spanning neemt in die richting iets af. Ook goed zichtbaar is dat de spanningsvariatie op de
+          LS-rails met ongeveer 3% iets groter is dan op de MS-rails van de netstations. Dit wordt veroorzaakt door de impedantie van de distributietransformatoren. </p>
+        <p> Indien achter de voedingstransformator het MS-net uitgestrekt is, wordt soms stroomcompensatie (compoundering) toegepast. Hierbij is naast de spanning aan
+          MS-zijde ook de belastingstroom van invloed op de regeling van de trappenschakelaar. Bij een stijgende belastingstroom zal de geregelde spanning aan
+          secundaire zijde extra toenemen, zodat de waarde van MS- en LS-spanning in het net binnen de toegestane grenzen blijft. Figuur 9.16 illustreert dit. </p>
+        <img src="./loadflowberekeningen_files/9.16.png" width="439" alt="pics_2.9" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 9.16 Spanningsgeregelde voedingstransformator met stroomcompensatie </h5>
+        <p> Van de spanning die voor de regeling gebruikt wordt, wordt een correctie afgetrokken, die afhangt van de belastingstroom en een gekozen
+          compensatie-impedantie. </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.20.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.20 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        
+        <p> Figuur 9.17 geeft de secundaire spanning van de voedingstransformator weer als functie van het door de transformator getransporteerde vermogen. Zonder
+          regeling neemt de spanning door de transformatorimpedantie af bij toenemend vermogen. Door aanwezigheid van een gewone spanningsregeling wordt bij het
+          onderschrijden van een spanningsgrens de trappenschakelaar versteld, waardoor een getrapte curve ontstaat die zich tussen de onder- en bovengrens bevindt.
+          Door aanwezigheid van een spanningsregeling met stroomcompensatie zal de gecompenseerde regelspanning eerder een spanningsgrens onderschrijden en vindt het
+          verstellen van de trappenschakelaar eerder plaats. Hierdoor stijgt de getrapte curve met toenemend vermogen. </p>
+        <img src="./loadflowberekeningen_files/9.17.png" width="708" alt="pics_2.9" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 9.17 Invloed van stroomcompensatie op de spanningsregeling </h5>
+        <p> De compensatiefactor wordt opgegeven in Ohm en zorgt ervoor dat de regeling een iets verlaagde spanning 'ziet' als gevolg van een toegenomen stroom in de
+          streng. De compensatie zorgt ervoor dat de spanning in een lange streng gemiddeld aan de door de gebruiker gestelde eisen voldoet. Bij een grote stroom zal
+          de regeling ervoor zorgen dat de spanning extra verhoogt en daardoor in de MS-streng op een gemiddelde afstand van de voedingstransformator verbeterd
+          wordt. Figuur 9.18 illustreert dit met het spanningsprofiel voor alle knooppunten, verdeeld over een lange streng, van voedingstransformator tot aan het
+          einde. Het spanningsprofiel vertoont een dalende lijn door een vermogenstransport vanuit de voedingstransformator. Zonder compensatie ligt de spanning
+          alleen dichtbij het voedingsstation tussen de opgegeven minimale en maximale waarde van de spanning. De spanning aan het einde van de streng kan kleiner
+          worden dan de minimum spanning. Met compensatie is het spanningsprofiel in de streng gemiddeld verbeterd, doordat deze nu regelt op een fictief punt in de
+          buurt van het midden van de streng. Als resultaat bevinden de spanningen van alle knooppunten in de streng zich tussen de grenzen. </p>
+        <img src="./loadflowberekeningen_files/9.18.png" width="659" alt="pics_2.9" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 9.18 Spanningsprofiel transformatorregeling zonder en met stroomcompensatie </h5>
+        <p> Door toepassen van stroomcompensatie is de spanningsvariatie als gevolg van de variërende belasting aan het einde van de streng kleiner dan bij een
+          spanningsregeling zonder stroomcompensatie. Hierdoor kan een zware belasting minder snel aanleiding geven tot onderschrijden van de spanningsgrens. Door
+          toepassen van stroomcompensatie kunnen ook langere kabels worden toegestaan. </p>
+        <p> Indien zich dicht bij de geregelde transformator decentrale opwekkers bevinden, moet stroomcompensatie met beleid worden toegepast. Het opgewekte vermogen
+          vermindert de belastingstroom door de voedingstransformator, waardoor de spanning aan het einde van de streng toch buiten de spanningsgrenzen kan treden.
+          Dit kan worden voorkomen door de decentrale opwekking op een apart veld aan te sluiten, waarvan de stroom niet voor de stroomcompensatie wordt gebruikt.
+          Indien dat niet mogelijk is, moet de stroom van de decentrale opwekkers in de regeling worden afgetrokken van de te compenseren belastingstroom. Deze
+          mogelijkheid wordt door diverse fabrikanten aangeboden (Hiscock, 2007). </p>
+        <p> In uitgestrekte MS-netten worden soms regeltransformatoren toegepast, die staan opgesteld in regelstations. Hiermee kan lokaal en onafhankelijk van de spanningsregeling in het voedingsstation de spanning in een achtergelegen deel van de streng worden geregeld. Regeltransformatoren zijn spaartransformatoren of boostertransformatoren. Net als bij de voedingstransformatoren wordt de spanning geregeld door met behulp van een trappenschakelaar de overzetverhouding te wijzigen. De besturing van de trappenschakelaar wordt verzorgd door een automatische spanningsregeling, die de spanning aan de secundaire zijde meet. Het voordeel is dat de spanning in een gebied met een verschillend belastingspatroon onafhankelijk geregeld kan worden. Nadelen zijn de hoge kosten en het verlaagde kortsluitvermogen. </p>
+        <p> In het netwerk komen naast regelbare transformatoren ook synchrone generatoren met spanningsregeling voor. De regelactie van deze componenten beïnvloedt de spanningen in het netwerk en daarmee de stromen en de belastingstromen. In de praktijk is de regelactie van de generatoren sneller dan de regelactie van de trappenschakelaars van de transformatoren in de onderstations. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.5.2"></div>
+        <br>
+<h3> 9.5.2 Cos-phi verbetering </h3>
+        <p> De hoek die de stroomvector maakt ten opzichte van de spanningsvector wordt aangeduid met <em>φ</em>. In plaats van de hoek wordt meestal gebruik gemaakt van de <em>cos(φ)</em>, ook wel aangeduid met arbeidsfactor of power factor. Bij een kleine hoek is de stroom bijna in fase met de spanning. In dat geval is de <em>cos(φ)</em> ongeveer gelijk aan 1. Bij deze waarde wordt bijna alle stroom gebruikt voor het met actief vermogen verrichten van arbeid. Bij een waarde van <em>cos(φ)</em> die lager is dan 1, wordt niet alle stroom gebruikt voor het verrichten van arbeid. Voor dezelfde hoeveelheid actief vermogen is dan een grotere stroom nodig dan bij een arbeidsfactor van 1. Formule 9.21 beschrijft de relatie tussen het getransporteerde actieve vermogen en de stroom met de <em>cos(φ)</em> in een driefasensysteem. </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.21.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.21 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> In een net met overwegend inductieve belasting ijlt de stroom na op de spanning en wordt blindvermogen opgenomen. Dit blindvermogen wordt door het net
+          getransporteerd en veroorzaakt een toename van de stroom. Een toename van de stroom leidt tot een kwadratische toename van de verliezen in het net. Een
+          verbetering van de <em>cos(φ)</em> leidt tot vermindering van deze extra netverliezen. Bovendien komt door het wegvallen van een hoeveelheid te transporteren
+          blindvermogen meer transportcapaciteit van transformatoren en verbindingen beschikbaar voor het transporteren van actief vermogen. Het is gebruikelijk de
+          <em>cos(φ)</em> te verbeteren met behulp van condensatoren. In hoogspanningsnetten worden regelbare condensatorbanken van 50 tot 150 Mvar ingezet. Op MS-niveau
+          wordt vaak decentraal in de netten gecompenseerd en op LS-niveau op component-niveau, met name bij motoren. Het verlies in de drie fasen van een
+          kabelverbinding is: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.22.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.22 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Indien de <em>cos(φ)</em> wordt verbeterd naar <em>cos(φ<sub>v</sub>)</em>, is de verhouding van het verlies na en voor de verbetering: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.23.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.23 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Bij een verbetering van de <em>cos(φ)</em> van 0,8 naar 0,95 is de verhouding 0,71. Dit betekent een reductie van het verlies van 29%. Doordat een kleinere stroom
+          nodig is voor transport van hetzelfde actieve vermogen, kan na de <em>cos(φ)</em>-verbetering meer actief vermogen worden getransporteerd. De verhouding van de
+          stromen na en voor de verbetering is: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.24.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.24 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Bij de verbetering van de <em>cos(φ)</em> van 0,8 naar 0,95 is de verhouding 0,84. Dit betekent een afname van de benodigde stroom met 16%. Hierdoor lijkt de
+          capaciteit van de kabelverbinding toegenomen. </p>
+        <p> Indien de <em>cos(φ)</em>-verbetering wordt uitgevoerd met een condensatorbank, kan het benodigde blindvermogen (<em>Q<sub>C</sub></em>) worden berekend uit het verschil van
+          de het blindvermogen voor de verbetering (<em>Q</em>) en er na (<em>Q<sub>v </sub></em>). </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.25.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.25 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Hieruit volgt voor het benodigde blindvermogen: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.26.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.26 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Dit blindvermogen wordt bij nominale spanning opgewekt door een condensatorbank, waarvan de capaciteit in <em>F</em> per fase ten opzichte van het sterpunt gelijk
+          is aan: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.27.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.27 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.6"></div>
+        <br>
+<h2> 9.6 Netverliezen </h2>
+        <p> Het transport van de stroom gaat altijd gepaard met verlies, met name in kabels en transformatoren. Voor een elektriciteitsvoorzieningsysteem is het
+          netverlies gelijk aan het verschil tussen het opgewekte en geïmporteerde vermogen en het vermogen dat door de belastingen wordt afgenomen: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.28.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.28 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <img src="./loadflowberekeningen_files/9.19.png" width="609" alt="pics_2.9" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 9.19 Belasting en geïmporteerd vermogen </h5>
+        <p> Het actieve deel van het verlies is gelijk aan de warmteontwikkeling in de betrokken componenten. Het blindvermogensverlies is dat niet. In het
+          voorbeeldnet van figuur 9.19 is het verlies voor het gehele net gelijk aan: </p>
+        <div class="row">
+          <div class="col-md-8">        <p> <em>P<sub>verlies</sub> = P<sub>import</sub> – P<sub>belasting</sub> = 5,00 – 4,67 = 0,33 MW</em></p>
+        <p> <em>Q<sub>verlies</sub> = Q<sub>import</sub> – Q<sub>belasting</sub> = 2,00 – 1,88 = 0,12 Mvar </em></p>
+        <p> Voor elke verbinding van een elektriciteitsnet kan het verlies worden berekend uit de som van de vermogens die aan beide zijden de verbinding invloeien.
+          Figuur 9.20 illustreert dit. </p>
+</div>
+          <div class="col-md-4">
+        <img src="./loadflowberekeningen_files/9.20.jpg" width="180" alt="pics_2.9" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 9.20 Vermogens aan beide zijden van een verbinding </h5>
+</div>
+</div>
+        <p> Aan de voedende zijde zijn de vermogens positief. Aan de belastingszijde zijn de vermogens, die de verbinding invloeien, negatief. </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.29.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.29 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Het verlies kan ook rechtstreeks uit de stroom en de impedantie worden berekend. Hierbij moet rekening worden gehouden met het feit dat de kabel een
+          capaciteit <em>C</em> heeft en daardoor ook zelf blindvermogen opwekt, dat van het verlies moet worden afgetrokken. Het is gebruikelijk de capaciteit van de
+          verbinding in twee gelijke delen op te splitsen en deze aan de van- en naar-zijde van de verbinding te concentreren. Figuur 9.21 toont het gebruikelijke
+          Pi-model van een verbinding. Hierin zijn knooppunt 1 en 2 respectievelijk de knooppunten aan de van- en naar-zijde van de verbinding. De dwars-impedantie
+          wordt meestal alleen gebruikt voor het modelleren van een verliesvrije capaciteit. De totale dwars-impedantie van de verbinding is naar beide zijden van de
+          verbinding evenredig verdeeld over <em>Z<sub>d1</sub></em> en <em>Z<sub>d2</sub></em>. </p>
+        <img src="./loadflowberekeningen_files/9.21.png" width="486" alt="pics_2.9" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 9.21 Pi-model van een verbinding </h5>
+        <p> De complexe vermogens worden als volgt berekend. Voor het door de capaciteit opgewekte blindvermogen geldt: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.30.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.30 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Het totale verliesvermogen in de verbinding, gecorrigeerd voor het in de verbinding opgewekte blindvermogen, is dan: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.31.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.31 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Voor het rekenvoorbeeld is de totale capaciteit voor 10 km kabel van het type 3x150 Cu XLPE 6/10 gelijk aan: <em>C = 3,8 μF</em>. De impedantie van deze capaciteit
+          wordt voor 50% op het voedingsknooppunt aangebracht en voor 50% op het belastingsknooppunt, zodat in het rekenmodel het capacitieve blindvermogen op beide
+          knooppunten verdeeld wordt opgewekt. Voor de verliezen in de drie fasen geldt dan: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.32.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.32 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Door het verlies worden de betrokken netcomponenten warm. Een al te hoge stijging van de temperatuur leidt tot versnelde veroudering van de componenten. De
+          temperatuur van een belaste kabel is afhankelijk van de stroomsterkte en de omgevingsfactoren, waaronder de mogelijkheid voor warmteafgifte. Voor kabels is
+          dit vastgelegd in de internationale standaard IEC 60287. Ook temperatuurschommelingen kunnen leiden tot versnelde veroudering. Een van de oorzaken van
+          dagelijkse temperatuurschommelingen is de dagelijks cyclisch variërende belastingstroom. Door de temperatuurschommelingen zetten materialen uit en
+          krimpen zij. Bij kabels leidt dit tot zwakke punten in de isolatie, waardoor een spontane kortsluiting kan ontstaan (<a href="https://www.phasetophase.nl/boek/boek_1_4.html#_4.1">zie paragraaf 4.1</a>). De toegestane
+          thermische belasting van kabels bij cyclisch variërende belasting is vastgelegd in de internationale norm IEC 60853. </p>
+        <p> Het verlies van een transformator wordt opgesplitst in kortsluitverlies (of koperverlies) en nullastverlies (of ijzerverlies of magnetiseringsverlies). Het
+          kortsluitverlies is afhankelijk van de getransporteerde stroom en is vergelijkbaar met het actieve vermogensverlies in een verbinding. Het nullastverlies
+          ontstaat door wervelstroomverliezen die in het ijzerpakket van de transformator optreden bij het magnetiseren van de kern. Het nullastverlies is niet
+          afhankelijk van de getransporteerde stroom maar wel van de spanning. </p>
+        <p> Zoals beschreven in <a href="https://www.phasetophase.nl/boek/boek_2_8.html">hoofdstuk 8</a>, is het kortsluitverlies gelijk aan: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.33.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.33 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Hierin is de weerstand, betrokken op de secundaire zijde, berekend uit het nominale kortsluitverlies <em>P<sub>k</sub></em> (in kW), de nominale spanning (in kV) en
+          het nominale vermogen (in MVA): </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.34.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.34 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> De modellering van het nullastverlies van de transformator is beschreven in hoofdstuk 8. De waarde is gegeven voor de nominale spanning. Hieruit wordt de
+          hoofdveldweerstand berekend. </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.35.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.35 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Het verlies wordt dan berekend volgens: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.36.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.36 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Indien rekening wordt gehouden met verzadiging, kan de exponent in vergelijking 9.36 groter worden. Een waarde van 2,6 wordt wel genoemd (EnergieNed,
+          1996). </p>
+        <p> Het verliespercentage op landelijk niveau bedraagt ongeveer 4 tot 5% van de totale elektriciteitsproductie. Dit betreft het verlies in alle HS-, TS-, MS-
+          en LS-netten, inclusief de bijbehorende transformatoren. De verliezen kunnen worden toegerekend naar de diverse niveaus van het
+          elektriciteitsvoorzieningsysteem. Voor de elektriciteitsnetten gelden globaal de volgende kengetallen (EnergieNed, 1996): </p>
+        <ul>
+          <li> LS-netten: 0,3 tot 2,1 % (gemiddeld 1,1 %) </li>
+          <li> MS/LS-Nettransformatoren: 1,1 tot 2,6 % </li>
+          <li> MS-distributienetten: 0,1 tot 2,7 % (gemiddeld 0,9 %) </li>
+        
+          <li> HS/TS/MS-Transportnetten: 1 tot 2 %. </li>
+        </ul>
+        <p> Naarmate op een lager spanningsniveau wordt afgenomen, wordt van meerdere bovenliggende spanningsniveaus gebruik gemaakt. Zo is het totale
+          verliespercentage voor elektriciteit die op LS-niveau wordt afgenomen, gemiddeld ongeveer 7 tot 8 %. De kosten van de netverliezen worden via de
+          doorberekening van de brandstofkosten toegerekend naar de diverse verbruikerscategorieën op de verschillende spanningsniveaus. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.7"></div>
+        <br>
+<h2> 9.7 Verwerken van het stochastische gedrag van de belastingen </h2>
+        <p> Het stochastische gedrag van de belasting is besproken in hoofdstuk 3. Hierbij werd het begrip 'gelijktijdigheid' van de belasting geïntroduceerd. Een
+          loadflowberekening kan echter in principe niet goed met gelijktijdigheid van de belasting omgaan. De belastingen worden meestal gespecificeerd voor hun
+          maximale waarden. In werkelijkheid varieert de belasting tussen een minimum en een maximum waarde. De grootte van de belasting is daarom meestal niet exact
+          bekend, maar kan met een kansfunctie worden beschreven (zie hoofdstuk 3). Dit wordt stochastisch gedrag genoemd. Naarmate de omvang van het net afneemt, is
+          het stochastische gedrag belangrijker voor de netontwerper. Bij het plannen van MS- en LS-distributienetten wordt hiermee rekening gehouden. Doet de
+          netontwerper dit niet, zal het net te zwaar worden ontworpen. In deze paragraaf worden drie technieken behandeld die hier meer inzicht in geven: </p>
+<ul>
+          <li> compensatie van ongelijktijdigheid van de belastingen </li>
+          <li> stochastische loadflow </li>
+          <li> pseudo state-estimation. </li>
+        </ul>
+        <a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.7.1"></div>
+        <br>
+<h3> 9.7.1 Compenseren van de ongelijktijdigheid van de belastingen </h3>
+        <p> Er zijn diverse manieren om de ongelijktijdigheid te modelleren. Het eenvoudigst is de gelijktijdigheid te verwerken in alle belastingen. Daartoe worden de
+          belastingen vermenigvuldigd met de gelijktijdigheidfactoren, waardoor zij kleiner worden. Als dit gedaan wordt voor alle belastingen van de netstations, is
+          op deze manier de som van de belasting op het niveau van het onderstation in overeenstemming met de werkelijke waarde, maar zijn de belastingstromen in de
+          MS-strengen kleiner dan de werkelijke waarden. De oorzaak ligt in de ongelijktijdigheid van de belastingen, die ervoor zorgt dat de optredende lokale
+          maximale stromen op hoger niveau 'uitgemiddeld' worden. </p>
+        <p> Een betere aanpak maakt gebruik van negatieve stroominjecties, waarmee in radiaal bedreven netten de ongelijktijdigheid van de belasting kan worden
+          verwerkt. Hiermee wordt bereikt dat in een lager gelegen netdeel met de maximale belastingen kan worden gerekend, terwijl op een hoger niveau de
+          gelijktijdigheid van de belastingen van het lagere netdeel wordt verwerkt door een negatieve belasting aan te sluiten. </p>
+        <img src="./loadflowberekeningen_files/9.22.png" width="690" alt="pics_2.9" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 9.22 Negatieve belasting ter compensatie van de gelijktijdigheid </h5>
+        <p> Figuur 9.22 illustreert hoe een gelijktijdigheidfactor van 0,82 kan worden verwerkt door op een totale belasting van 113 A (56 plus 57 A in de twee
+          strengen) een negatieve belastingstroom van 19 A op de MS-rail van het onderstation te injecteren. De belastingstroom door de voedingstransformator is als
+          gevolg 93 A, terwijl de belastingstromen in de strengen niet worden verminderd. Het voordeel van deze methode is dat de voedingstransformator niet wordt
+          overgedimensioneerd en dat de kabels in de strengen niet te krap worden ontworpen. In het voorbeeld is de gelijktijdigheid van de belastingen over diverse
+          strengen verwerkt door de negatieve belasting op de voedingstransformator. Het is daarentegen ook mogelijk de gelijktijdigheid van de belastingen op
+          overige punten in het MS-distributienet te verwerken. Dit kan bijvoorbeeld in een zeer lange streng worden gedaan met een negatieve belasting die
+          halverwege de streng of op een splitsingspunt wordt aangebracht. Dit laatste kan worden gedaan in radiaal bedreven netten. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.7.2"></div>
+        <br>
+<h3>9.7.2 Stochastische loadflow</h3>
+        <p> Een stochastische loadflow berekent de extremen van de stromen en spanningen in een distributienet waarin de belastingen zich stochastisch gedragen.
+          Hierbij wordt ervan uitgegaan dat de belastingen kunnen worden gemodelleerd met normaal verdeelde kansfuncties. Dit is een benadering van de werkelijkheid,
+          waarmee in praktijk nauwkeurig genoeg gewerkt kan worden. Belastingen die zich niet als een normaal verdeelde kansfunctie gedragen, zoals zeer grote aan-
+          en uitschakelende belastingen en decentrale opwekinstallaties, kunnen niet met de stochastische loadflow worden berekend. Deze methode is met name geschikt
+          voor het berekenen van de loadflow in LS-distributienetten (Phase, 2008). </p>
+        <p> Alle normaal verdeelde stochastische belastingen kunnen volgens hoofdstuk 3 beschreven worden met hun gemiddelde waarde en een spreiding. De stochastische
+          loadflow berekent eerst de loadflow voor de gemiddelde waarden van alle stochastische belastingen. Het resultaat bestaat uit de gemiddelde waarden voor de
+          spanningen (<em><u>U</u></em><em><sub>gemiddeld</sub></em>) en stromen (<em><u>I</u></em><em><sub>gemiddeld</sub></em>) in het net. Daarna worden de
+          stromen en spanningen in het net uitgerekend voor de situatie dat de netvoeding is uitgeschakeld en dat op de plaats van alle stochastische belastingen een
+          stroom wordt geïnjecteerd ter grootte van de variantie (het kwadraat van de spreiding) van de betreffende stochastische kansverdeling. Met deze
+          berekening worden de spreidingen van alle spanningen (<em><u>U</u></em><em><sub>spreiding</sub></em>) en stromen (<em><u>I</u></em><em><sub>spreiding</sub></em>) in het net berekend. Hiermee kunnen boven- en ondergrenzen van de stromen en spanningen in het netwerk worden berekend,
+          waarbij het voldoende is om uit te gaan van het optellen en aftrekken van één maal de spreiding: </p>
+        <ul>
+          <li> <em><u>U</u><sub>max</sub> = <u>U</u><sub>gemiddeld</sub> + <u>U</u><sub>spreiding</sub></em> </li>
+          <li> <em><u>U</u><sub>min</sub> = <u>U</u><sub>gemiddeld</sub> – <u>U</u><sub>spreiding</sub></em> </li>
+          <li> <em><u>I</u><sub>max</sub> = <u>I</u><sub>gemiddeld</sub> + <u>I</u><sub>spreiding</sub></em> </li>
+          <li> <em><u>I</u><sub>min</sub> = <u>I</u><sub>gemiddeld</sub> – <u>I</u><sub>spreiding</sub></em> </li>
+        </ul>
+<p> Figuur 9.23 toont een LS-distributienet, bestaande uit twee strengen met elk 4 LS-kabels, waar op elke kabel 10 vrijstaande woningen zijn aangesloten.
+          Volgens de methode van Velander is de belastingstroom van 10 vrijstaande woningen 24 A (<em>alfa=0,00023, beta=0,023, V=4400 kWh</em>). Volgens dezelfde methode is
+          de belastingstroom van 40 vrijstaande woningen 81 A (aan het begin van iedere streng) en van 80 vrijstaande woningen 153 A (aan de secundaire zijde van de
+          nettransformator). </p>
+        <img src="./loadflowberekeningen_files/9.23.png" width="701" alt="pics_2.9" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 9.23 Twee strengen in een LS-distributienet </h5>
+        <p> In figuur 9.23 zijn voor de knooppunten de minimum en maximum waarden van de spanning weergegeven, gebaseerd op de gemiddelde waarde plus en min
+          één maal de spreiding. Bovendien zijn de minimum en maximum waarden van de stromen weergegeven, ook gebaseerd op gemiddelde waarde plus en min
+          één maal de spreiding. Het valt op dat de berekende maximale waarden van de stromen aan de secundaire zijde van de nettransformator en aan het
+          begin van iedere streng overeenkomen met de volgens de methode van Velander berekende waarden. </p>
+        <p> Het voordeel van de stochastische loadflow boven de methode van injectie van negatieve belastingen is dat hij ook kan worden toegepast op vermaasd bedreven
+          netten. Als bijvoorbeeld de scheider in de laatste verbinding tussen de knooppunten A4 en B4 wordt gesloten, zal aan de gemiddelde waarden niets
+          veranderen, want beide strengen waren immers gelijk aan elkaar. De gemiddelde waarde van de stroom door de verbinding tussen A4 en B4 is dan ook nul.
+          Echter, de spreiding van de stroom over die verbinding is niet nul: de stochastische loadflow berekent een waarde van 5 A. Als gevolg vermindert ook de
+          spreiding van de overige stroom- en spanningswaarden in het net. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.7.3"></div>
+        <br>
+<h3>9.7.3 Pseudo state estimation </h3>
+        <p> Om goed gebruik te kunnen maken van de capaciteit van kabels en transformatoren in MS-distributienetten moet de planner inzicht hebben in de werkelijk
+          optredende netbelasting en spanningshuishouding. Daarvoor zijn gedetailleerde meetgegevens nodig die, in tegenstellingen tot in transportnetten, in
+          distributienetten niet in ruime mate aanwezig zijn. Bij het dimensioneren van deze netten wordt nog vaak uitgegaan van maximale belastingen, waarbij
+          rekening gehouden wordt met de groei van de individuele gebruikers. Daardoor is er vaak meer transportcapaciteit in de middenspanningsnetten is dan nodig
+          is. Maar omdat in deze netten op beperkte schaal gemeten wordt, ontbreekt voldoende inzicht om die capaciteit te kunnen benutten. De laatste jaren komen
+          steeds meer meetgegevens beschikbaar die het gedrag van gebruikers en gebruikersgroepen typeren. De pseudo state estimation maakt hiervan gebruik. Door de
+          ongelijktijdigheid van belastingen per tijdseenheid te bepalen ontstaat een veel beter inzicht in de netbelasting en spanningshuishouding zonder op elk
+          punt in het net te hoeven meten. </p>
+        <p> Het doel van pseudo state estimation is het monitoren van middenspanningsnetten op basis van een beperkte hoeveelheid metingen en belastingprofielen. Het
+          monitoren bestaat uit het berekenen van de spannings- en stroomhuishouding in een netwerk, gedurende een periode. Hierbij wordt gebruik gemaakt van het
+          specifieke gedrag van groepen van klanten. In het recente verleden zijn er in Nederland veel gegevens verzameld over het gedrag van de diverse
+          klantengroepen. Door in de pseudo state estimation de metingen in onderstations te combineren met inzichten over het gedrag van de diverse klantengroepen
+          (profielen en samenstelling), ontstaat inzicht in de verdeling van de belasting in het net, waarmee stromen en spanningen berekend kunnen worden. </p>
+        <p> Een traditionele state-estimator werkt in principe met een meer dan strikt noodzakelijk aantal metingen om de toestand van een net te beschrijven. In
+          tegenstelling werkt de pseudo state estimation met een minder dan noodzakelijk aantal metingen, gecombineerd met kennis van het net en het
+          belastingsgedrag. De methode is toegespitst op gebruik in een MS-distributienet. Hierbij worden metingen in een onderstation gecombineerd met
+          belastingspatronen van netstations. Hierbij dienen de maximaalstroommetingen van netstations als basisverdeling. De belastingspatronen kunnen geconstrueerd
+          worden uit de samenstelling van de klantengroepen per station en de belastingspatronen van de individuele klantengroepen, zoals huishoudens, winkels en
+          kantoren. Ook additionele metingen, zoals bij decentrale opwekkers, kunnen in de methode worden toegevoegd. De pseudo state estimation is gebaseerd op: </p>
+<ul>
+          <li> Belastingmetingen van de afgaande richtingen in het onderstation  </li>
+          <li>Overige belastingsmetingen van decentrale opwekkers of grootverbruikers </li>
+          <li> Maximaalstroommetingen op de netstations </li>
+          <li> Belastingspatronen van de netstations </li>
+          <li> Samenstelling van de klantengroepen per netstation </li>
+          <li> Belastingpatronen van de individuele klantengroepen </li>
+        </ul>
+<p> Figuur 9.24 illustreert het principe van de pseudo state estimation. Van een voedingstransformator is de belastingstroom gemeten. Van alle netstations zijn
+          de maximale belastingstromen bekend en zijn de belastingsprofielen geschat. </p>
+       <img src="./loadflowberekeningen_files/9.24.png" width="706" alt="pics_2.9" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 9.24 MS-streng met verschillende belastingsprofielen </h5>
+        <p> Als de samenstelling met standaardbelastingscategorieën bekend is, is het resulterende belastingsprofiel voor elk netstation gelijk aan het gewogen
+          gemiddelde van alle standaard belastingsprofielen. </p>
+        <p> De transformatorbelasting <em>b<sub>transf,i</sub></em> voor tijdstip <em>i</em> moet gelijk zijn aan de som van de belastingen <em>b<sub>j,i</sub></em> voor alle netstations in de
+          streng. Voor de schatting worden de verliezen in eerste instantie buiten beschouwing gelaten. </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.37.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.37 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> De gelijktijdigheidfactoren <em>g<sub>i</sub></em> voor elk tijdstip <em>i</em> kunnen eenvoudig bepaald worden uit het gemeten transformatorprofiel en de
+          belastingsprofielen voor de netstations. </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.38.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.38 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Door voor elk tijdstip <em>i</em> de belastingen per netstation te corrigeren met de gelijktijdigheidfactor <em>g<sub>i</sub></em> kan de loadflow voor dat tijdstip berekend
+          worden en is daarmee de toestand geschat. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.8"></div>
+        <br>
+<h2> 9.8 Specifieke toepassingen</h2>
+        <p> In deze paragraaf worden drie specifieke toepassingen van de loadflowberekening toegelicht. Eerst wordt ingegaan op de netopeningen in radiaal bedreven
+          distributienetten. Door de locatie van de netopeningen goed te kiezen kan het netverlies geminimaliseerd worden. Vervolgens wordt kort ingegaan op de
+          problematiek dat meerdere distributienetten gemodelleerd worden met ieder hun eigen voedingspunt en netvoeding. Het gevaar bestaat dat bij koppeling van
+          deze netten onjuiste stromen berekend worden. Tenslotte wordt kort ingegaan op het parallel schakelen van transformatoren die niet precies gelijk aan
+          elkaar zijn. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.8.1"></div>
+        <br>
+<h3> 9.8.1 Netopeningen en optimalisatie</h3>
+        <p> Een netopening is een locatie in het distributienet, waar een scheider tijdens normale bedrijfssituaties geopend is. Netopeningen komen voor in MS- en in
+          LS-distributienetten. De plaats van de netopeningen in een MS-distributienet zijn meestal gekozen op grond van bereikbaarheid van het netstation en de
+          mogelijkheid om tijdens storingssituaties een mogelijkheid te hebben om het sluiten van de netopening te combineren met een eventueel andere gewenste
+          schakelhandeling. Bovendien mogen geen kabels overbelast raken. Bij het kiezen van een netopening wordt ook gelet op de netspanning en de verliezen. De
+          netopening is optimaal gekozen indien de verliezen zo klein mogelijk zijn. Dit wordt geïllustreerd aan de hand van een enkele MS-distributiering,
+          bestaande uit twee strengen, die beide even lang zijn en evenveel netstations met gelijke belasting bevatten. </p>
+        <img src="./loadflowberekeningen_files/9.25.png" width="694" alt="pics_2.9" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 9.25 MS-distributiering met een netopening </h5>
+        <p> In de MS-distributiering van figuur 9.25 is een van de scheiders in de kabel tussen knooppunten 'Netstation 16' en 'Netstation 26' geopend. Dit lijkt een
+          logische keuze, met het oog op de netverliezen. Een loadflowberekening geeft inzicht in het netverlies tijdens de maximale belasting. Verplaatsen van de
+          netopening zal aantonen dat het netverlies toeneemt. </p>
+        <p> In werkelijkheid zijn echter beide strengen niet gelijk van lengte en bevatten zij een ongelijk aantal netstations met ongelijke belastingen. Ook de
+          belastingsprofielen kunnen ongelijk zijn. Om de opening te optimaliseren kan ervoor worden gekozen om de netverliezen te minimaliseren over een periode,
+          waarbij de belastingcyclus in zijn geheel wordt doorlopen. Dit is gedaan voor het voorbeeldnet van figuur 9.25, waarbij in figuur 9.26 het
+          belastingsprofiel van de bovenste streng (Netstation 11 t/m 16) in uurwaarden is weergegeven als 'Belasting 11' en het belastingsprofiel van de onderste
+          streng als 'Belasting 21'. </p>
+        <img src="./loadflowberekeningen_files/9.26.png" width="661" alt="pics_2.9" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 9.26 Belastingsprofielen voor de MS-strengen </h5>
+        <p> Met een loadflowberekening worden voor elk uur de verliesvermogens van alle kabels berekend. Indien deze verliezen voor het gehele uur gelden, zijn de
+          berekende getallen gelijk aan het energieverlies gedurende dat uur: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.39.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.39 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Door deze berekening over de periode van een week uit te voeren (168 uren), wordt het totale energieverlies over alle kabels voor de gehele periode als
+          volgt berekend: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%" valign="top"><img src="./loadflowberekeningen_files/formule-9.40.png" alt="formules_2.9"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 9.40 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+		  </tbody>
+		</table><br>
+        <p> Een berekening van de loadflow voor de gespecificeerde belastingsprofielen kan aantonen of de gekozen locatie voor de netopening inderdaad optimaal is en
+          leidt tot de kleinste verliezen, terwijl bovendien aan de spanningseisen wordt voldaan. </p>
+        <a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.8.2"></div>
+        <br>
+<h3> 9.8.2 Meerdere externe netten en voedingspunten </h3>
+        <p> Een distributienet heeft doorgaans één netvoeding. Het is weliswaar mogelijk om in een loadflowberekening meerdere netvoedingen toe te passen,
+          maar hierbij is voorzichtigheid geboden. Indien twee of meer deelnetten gemodelleerd worden, die niet met elkaar verbonden zijn, kan ieder deelnet op een
+          eigen netvoeding worden aangesloten. Indien die deelnetten later met elkaar gekoppeld worden, zullen vereffeningstromen worden berekend die meestal niet
+          kloppen met de werkelijkheid. Dit wordt veroorzaakt door het feit dat een netvoeding is gedefinieerd met een vaste spanning, zowel in grootte als in hoek.
+          De grootte van de spanning is meestal redelijk bekend, maar de hoek is bijna altijd onbekend. Bij het koppelen van meerdere netvoedingen gaan door
+          verschillen in die spanningen stromen lopen. Hierom kan voor het bestuderen van de vereffeningstromen bij (al dan niet van korte duur zijnde) koppelingen
+          het beste ook het hoger gelegen voedende transportnet gemodelleerd worden, zodat met slechts één netvoeding kan worden volstaan. Figuur 9.27
+          geeft een voorbeeld. </p>
+        <img src="./loadflowberekeningen_files/9.27.png" width="691" alt="pics_2.9" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 9.27 Koppelen van deelnetten </h5>
+        <p> Als gevolg van een doortransport in het HS-transportnet ontstaat een spanningsverschil op de HS-rails van beide onderstations. Door de spanningsregelingen
+          van de voedingstransformatoren wordt het spanningsverschil aan de MS-zijden van de beide voedingstransformatoren beperkt, maar het hoekverschil wordt niet
+          geregeld. Dit hoekverschil is ook merkbaar in beide MS-strengen. Indien vanwege onderhoud de scheider bij 'Netstation 26' kortstondig gesloten moet worden,
+          moet het spanningsverschil inclusief de fasehoek beperkt zijn om gevaarlijke situaties te voorkomen. Indien beide MS-strengen gemodelleerd zouden zijn met
+          ieder een eigen netvoeding, wordt een spanningsverschil als gevolg van verschillen in het voedende net niet zichtbaar, waardoor de vereffeningstroom niet
+          berekend kan worden. Meer uitgebreid is hierover gepubliceerd in het kader van het ten behoeve van onderhoud verbinden van deelnetten (Provoost, 2005),
+          (Nuijten, 2006). </p>
+        <a href="https://www.phasetophase.nl/boek/boek_2_9.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_9.8.3"></div>
+        <br>
+<h3> 9.8.3 Parallelle transformatoren </h3>
+        <p> Bij twee parallelle transformatoren moet worden opgelet dat beide dezelfde overzetverhouding hebben, om te voorkomen dat ze ongelijk belast worden. De
+          impedantie van een transformator heeft een kleine R/X verhouding, waardoor de reactantie veel groter is dan de weerstand. Dit overwegend reactieve karakter
+          van de transformatorimpedantie heeft tot gevolg dat een ongelijke overzetverhouding zal resulteren in een verschil in blindvermogenstransport. Het actieve
+          vermogenstransport wordt maar beperkt beïnvloed door een ongelijke trapstand. Figuur 9.28 toont een situatie met twee gelijke en gelijk ingestelde
+          transformatoren. </p>
+        <img src="./loadflowberekeningen_files/9.28.png" width="348" alt="pics_2.9" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 9.28 Twee gelijk ingestelde parallelle transformatoren </h5>
+        <p> Figuur 9.29 toont dezelfde twee transformatoren, waarbij de trappenschakelaar van transformator T2 met één trap is versteld. Hierdoor is de
+          nominale spanning aan de primaire zijde verlaagd van 132 naar 129,75 kV. Als gevolg neemt het blindvermogenstransport door T2 toe met bijna 10%. Ter
+          vergelijking: het actieve vermogen door T2 neemt slechts toe met bijna 1%. </p>
+        <img src="./loadflowberekeningen_files/9.29.png" width="348" alt="pics_2.9" class="img-responsive-leon-15px center-block">
+        <h5> Figuur 9.29 Twee ongelijk ingestelde parallelle transformatoren </h5>
+        <p> Indien niet het blindvermogen maar het actieve vermogen zou moeten worden beïnvloed, zou de hoek van de overzetverhouding moeten worden veranderd.
+          Deze zogenaamde dwarsregeltransformatoren komen alleen sporadisch in de HS-transport-netten voor en worden in de distributienetten nooit toegepast. </p>
+      </div>
+      <div class="col-lg-2 hidden-md">&nbsp;</div>
+    </div>
+</div>
+</div>
+
+
+<div id="includeFooter" class="container-fluid-footer"><div class="container">
+  <div class="row">
+    <div class="text-justify col-xs-6 col-sm-3">
+      <img src="./loadflowberekeningen_files/logo-s-360px-grijs.png" alt="ptp_logo" width="230">
+    </div>
+    <div class="col-xs-6 col-sm-9">
+        <p> Phase to Phase is onderdeel van <a href="https://www.technolution.nl/">Technolution</a>. © 2009-2021 </p>
+    </div>
+  </div>
+</div></div></body></html>

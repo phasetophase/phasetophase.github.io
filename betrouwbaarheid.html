@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://www.phasetophase.nl/boek/boek_2_12.html -->
+<html lang="en" class="wf-ffscalasansweb-n7-active wf-ffscalasansweb-n4-active wf-ffscalasansweb-i4-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Phase to Phase – Netten voor distributie van elektriciteit</title>
+    <!-- Bootstrap -->	
+<link href="./betrouwbaarheid_files/bootstrap-2-boek.css" rel="stylesheet">
+<style type="text/css">
+	body,td,th {
+	font-family: ff-scala-sans-web, sans-serif;
+}
+body {
+	background-color: #F7F7F7;
+}
+    </style>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+<script src="./betrouwbaarheid_files/qke6lfb.js.download"></script>
+<style type="text/css">.tk-ff-scala-sans-web{font-family:"ff-scala-sans-web",sans-serif;}</style><style type="text/css">@font-face{font-family:tk-ff-scala-sans-web-n7;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-n4;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-i4;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style><script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script src="./betrouwbaarheid_files/jquery-1.11.3.min.js.download"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./betrouwbaarheid_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H8Q9E8BJ7Q');
+</script>
+<script>
+$(function(){
+  $("#includedHeader").load("/boek/header.html");
+  $("#includeFooter").load("/boek/footer.html"); 
+});
+</script><style type="text/css">@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style>	  
+</head>
+<body style="padding-top: 50px">
+
+<div id="includedHeader"> <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topFixedNavbar1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="https://www.phasetophase.nl/">Phase to Phase</a></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="topFixedNavbar1">
+      <ul class="nav navbar-nav">
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+	<p></p>
+	
+    </div>
+    </div>
+  </div>
+
+<div class="container-fluid-boek">
+  <div class="container">
+
+<div class="row-in-header">
+	<div class="text-justify col-xs-6 col-sm-6">
+    <img class="hidden-xs" src="./betrouwbaarheid_files/logo-s-360px-wit.png" alt="Phase to Phase logo 360px" width="366">
+	<img class="visible-xs" src="./betrouwbaarheid_files/logo-s-360px-wit.png" alt="Phase to Phase logo 261px" width="261"> 
+	</div>
+		<div class="col-xs-6 hidden-xs col-sm-6">
+	</div>
+</div>
+
+<div class="row-in-header">
+	<div class="text-left col-xs-9 col-sm-9">        <p></p><h8>ICT voor elektriciteitsnetten</h8>
+</div>
+	<div class="col-xs-3 col-sm-3">
+	</div>
+</div>
+
+<div class="row-in-header-2">
+	<div class="text-justify col-xs-6 col-sm-6">&nbsp;
+	</div>
+	<div class="col-xs-6 hidden-xs col-sm-6">
+	  <h7>&nbsp;</h7>
+	</div>
+</div>
+
+</div>
+</div>
+
+<div class="container">
+
+<div class="row-intro">
+<h1><a href="https://www.phasetophase.nl/boek/index.html"> Netten voor distributie van elektriciteit</a></h1>
+</div></div></div>
+
+  <div class="row-ohm-center-white"> <a name="top"></a>
+    <div class="row-b">
+		  <a href="https://www.phasetophase.nl/boek/index.html"><button type="button" class="btn btn-default">I – De opbouw van een net</button></a>
+		  <a href="https://www.phasetophase.nl/boek/boek_2_7.html"><button type="button" class="btn  btn-default active">II – Rekenen aan een net</button></a>
+		  <a href="https://www.phasetophase.nl/boek/boek_3_13.html"><button type="button" class="btn  btn-default">III – Ontwerpen en bedrijfsvoeren</button></a>
+	</div>
+    <div class="row-b">
+ <a href="https://www.phasetophase.nl/boek/boek_2_7.html">
+      <button type="button" class="btn btn-default1">7 Rekentechnische basis</button>
+      </a> <a href="https://www.phasetophase.nl/boek/boek_2_8.html">
+      <button type="button" class="btn btn-default1">8 Modellen</button>
+      </a> <a href="https://www.phasetophase.nl/boek/boek_2_9.html">
+      <button type="button" class="btn btn-default1">9 Loadflowberekeningen</button>
+      </a> <a href="https://www.phasetophase.nl/boek/boek_2_10.html">
+      <button type="button" class="btn btn-default1">10 Kortsluitstroomberekeningen</button>
+      </a> <a href="https://www.phasetophase.nl/boek/boek_2_11.html">
+      <button type="button" class="btn btn-default1">11 Power Quality</button>
+      </a> <a href="https://www.phasetophase.nl/boek/boek_2_12.html">
+      <button type="button" class="btn btn-default1 active">12 Betrouwbaarheid</button>
+      </a> 
+    <div class="row">
+      <div class="col-md-12 col-lg-10">
+        <h3>Betrouwbaarheid </h3>
+        <p>Hoofdstuk 12 geeft een inleiding over de betrouwbaarheid van de levering. Hierbij wordt uitgegaan van de processen: falen, herstellen en repareren. </p>
+        <div class="row">
+          <div class="col-md-6">
+            <ul style="list-style-type:none">
+              <li><a href="https://www.phasetophase.nl/boek/boek_2_12.html#_12"><strong>12&nbsp;&nbsp;Betrouwbaarheid</strong></a></li>
+              <li><a href="https://www.phasetophase.nl/boek/boek_2_12.html#_12.1">12.1&nbsp;&nbsp;Betrouwbaarheidskentallen</a></li>
+              <li><a href="https://www.phasetophase.nl/boek/boek_2_12.html#_12.2">12.2&nbsp;&nbsp;Falen, herstellen en repareren </a></li>
+              <ul style="list-style-type:none">
+                <li><a href="https://www.phasetophase.nl/boek/boek_2_12.html#_12.2.1">12.2.1&nbsp;&nbsp;Falen</a></li>
+                <li><a href="https://www.phasetophase.nl/boek/boek_2_12.html#_12.2.2">12.2.2&nbsp;&nbsp;Herstel van de levering </a></li>
+              </ul>
+              <li><a href="https://www.phasetophase.nl/boek/boek_2_12.html#_12.3">12.3&nbsp;&nbsp;Verbetering van de betrouwbaarheid </a></li>
+            </ul>
+          </div>
+          <div class="col-md-6"> </div>
+        </div>
+		
+        <hr>
+        <h1>12 Betrouwbaarheid</h1>
+        <p> Naast veiligheid, belastbaarheid en de in het vorige hoofdstuk behandelde Power Quality is de betrouwbaarheid van de levering een van de kwaliteitsaspecten
+          waarop een distributienet beoordeeld wordt. De beschikbaarheid wordt bepaald door de voorziene niet-beschikbaarheid en de onvoorziene niet-beschikbaarheid
+          (ONB). De voorziene niet-beschikbaarheid wordt bepaald door onderhoud en werkzaamheden aan het net. In de MS-netten zal onderhoud vrijwel niet leiden tot
+          voorziene niet-beschikbaarheid. De onvoorziene niet-beschikbaarheid wordt veroorzaakt door spontaan optredende storingen in componenten. Afhankelijk van de
+          functie van een net zal een storing al dan niet leiden tot uitval van de levering van elektriciteit. Een transportnet is meestal zodanig ontworpen en
+          beveiligd, dat een storing leidt tot directe uitschakeling van de gestoorde component, zodat de levering ongestoord verder gaat. In het MS-distributienet
+          zal een storing aan een kabel door de gekozen beveiligingsfilosofie in de meeste gevallen leiden tot een uitschakeling van de gestoorde streng. Pas na het
+          isoleren van het kortgesloten kabelsegment kan de levering via een omweg worden hervat. </p>
+        <p> In het verleden is vanuit kostenoverwegingen ervoor gekozen dat een storing in het distributienet leidt tot een onderbreking. Anders dan in het
+          transportnet wegen de kosten van de investeringen voor het garanderen van een ongestoorde levering niet op tegen de kosten van de niet-geleverde energie.
+          Alleen in uitzonderingsituaties kiest de netbeheerder met de aangeslotene voor een duurdere en meer bedrijfszekere aansluiting. Voorbeelden zijn grote
+          industriële aansluitingen en ziekenhuizen. Desalniettemin is de kans op een onderbreking van de levering in Nederland zeer klein. Volgens de
+          jaarlijkse storingsenquête van Netbeheer Nederland was in 2010 de gemiddelde beschikbaarheid 99,994%. De gemiddelde uitvalduur was 33,7 minuten per
+          jaar. Hierbij hebben onderbrekingen in het MS-net het grootste aandeel in de totale gemiddelde uitvalduur (Kema, 2011). In 2009 was de gemiddelde
+          uitvalduur 26,5 minuten per jaar. Het vijfjarige gemiddelde is 30,2 minuten per jaar. </p>
+        <p> De betrouwbaarheid wordt beschreven met een aantal karakteristieke begrippen. Hierbij kan in eerste instantie worden uitgegaan vanuit het standpunt van de
+          aangeslotene. De betrouwbaarheid van de levering wordt gekarakteriseerd door: </p>
+        <ul>
+          <li> <em>f</em> : onderbrekingsfrequentie (of onderbrekingsverwachting) in aantal malen per jaar voor een aangeslotene, ook wel SAIFI genoemd; niet te verwarren met de
+            faalfrequentie van een component </li>
+          <li> <em>d</em> : gemiddelde onderbrekingsduur in minuten, ook wel CAIDI genoemd </li>
+          <li> <em>p</em> : jaarlijkse uitvalduur in minuten per jaar voor een aangeslotene, ook wel SAIDI genoemd </li>
+          <li> <em>NGE</em> : niet geleverde energie, gemiddelde hoeveelheid energie per jaar die als gevolg van storingen niet geleverd kan worden, ook wel ENS of EENS genoemd </li>
+          <li> het aantal getroffen klanten. </li>
+        </ul>
+        <p> De jaarlijkse gemiddelde uitvalduur is een maat voor de kwaliteit van de levering en is gelijk aan het product van de onderbrekingsfrequentie en de
+          gemiddelde onderbrekingsduur: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./betrouwbaarheid_files/formule-12.1.png" alt="formules_2.12"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 12.1 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> De gemiddelde hoeveelheid niet geleverde energie (NGE) aan een aangeslotene of aan een groep aangeslotenen is gelijk aan het product van de jaarlijkse
+          uitvalduur (<em>p</em>, gecorrigeerd naar uren per jaar) en het gemiddelde geleverde vermogen <em>P<sub>gem</sub></em> in kW. </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="90%"><img src="./betrouwbaarheid_files/formule-12.2.png" alt="formules_2.12"></td>
+              <td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 12.2 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Niet elke storing leidt tot uitval van een component of tot onderbreking van de levering. Zo komen door de redundantie onderbrekingen ten gevolge van
+          storingen in het HS-net relatief het minst vaak voor. In 2010 was het percentage van de storingen dat resulteerde in een onderbreking 96,7% voor het
+          LS-net, 80,9% voor het MS-net en 39,8% voor het HS-net. Er zijn drie niveaus voor oplopende gevolgen: </p>
+        <ul>
+          <li> storing: een onvoorzien defect van een component in het elektriciteitsvoorzieningsysteem </li>
+          <li> niet-beschikbaarheid: een storing die tot gevolg heeft dat een component in het elektriciteitsvoorzieningsysteem niet kan worden gebruikt </li>
+          <li> onderbreking van de levering: een storing die tot gevolg heeft dat aan één of meer aangeslotenen geen elektriciteit kan worden geleverd. </li>
+        </ul>
+<a href="https://www.phasetophase.nl/boek/boek_2_12.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_12.1"></div>
+        <br>
+        <h2>12.1 Betrouwbaarheidskentallen</h2>
+        <p> Figuur 12.1 geeft een overzicht van de gemiddelde uitvalduur (<em>p</em>) in minuten per jaar bij een klant in de jaren 2000 tot en met 2010 (Kema, 2011).
+          Hierin kan de invloed van storingen in de LS-, MS- en HS-netten goed worden onderscheiden. Duidelijk zichtbaar is dat de bijdrage van storingen in het
+          LS-net over de jaren heen vrij constant blijft en dat de bijdrage van storingen in de MS- en HS-netten vrij grote variaties vertonen. De gemiddelde
+          bijdrage van storingen in het MS-net schommelt tussen 12 en 23 minuten per jaar. Dit wordt veroorzaakt door het feit dat in de MS-netten, ten opzichte van
+          de LS-netten, veel minder frequent storingen plaatsvinden, terwijl de gevolgen van de storingen veel groter zijn. De gemiddelde bijdrage van storingen in
+          het HS-net schommelt relatief gezien nog meer, tussen 1 en 11 minuten. Zo waren in 2007 twee grote storingen in het HS-net, waardoor van 'uitlopers', die
+          niet konden worden omgeschakeld, beide circuits gestoord waren. Het eerste geval betrof schade door ijzel en het tweede geval betrof een helikopterongeluk.
+          In 2010 waren een railsluiting door lekkage in een gesloten SF<sub>6</sub>-installatie, een kortsluiting in een transformatorveld en een defecte
+          stroomtransformator de oorzaken van drie onderbrekingen in het HS-net die gezamenlijk leidden tot een grote uitvalduur. </p>
+        <p> <img src="./betrouwbaarheid_files/12.1.png" width="708" height="354" alt="pics_2.12" class="img-responsive-leon-15px center-block"> </p>
+        <h5>Figuur 12.1 Jaarlijkse uitvalduur (p) bij een klant (min/jaar) </h5>
+        <p> Figuur 12.2 geeft een overzicht van de gemiddelde onderbrekingsduur (<em>d</em>) per storing, veroorzaakt door storingen in het LS-, MS-, HS- en EHS-net,
+          in minuten, voor de jaren 2000 tot en met 2010. Hier is goed te zien dat de gemiddelde onderbrekingsduur als gevolg van storingen in het LS-net het grootst
+          is. In de meeste LS-netten is geen omschakelmogelijkheid, zodat de levering wordt hersteld door reparatie of door inzet van een generatorwagen. Door het
+          relatief grote aantal storingen vertoont de gemiddelde onderbrekingsduur over de jaren heen weinig schommelingen. In 2010 was de gemiddelde
+          onderbrekingsduur door storingen in het LS-net 154 minuten. </p>
+        <p> <img src="./betrouwbaarheid_files/12.2.png" width="708" height="354" alt="pics_2.12" class="img-responsive-leon-15px center-block"> </p>
+        <h5>Figuur 12.2 Gemiddelde onderbrekingsduur (d) per storing (min) </h5>
+        <p> Ook de gemiddelde onderbrekingsduur door storingen in het MS-net vertoont over de jaren heen weinig schommelingen. Doordat het MS-net zeer uitgestrekt is,
+          komen storingen relatief vaak voor. De gemiddelde duur is korter dan bij storingen in het LS-net, omdat in het MS-net de levering bijna altijd wordt
+          hersteld door omschakelen. In 2010 was de gemiddelde onderbrekingsduur door storingen in het MS-net 89 minuten. </p>
+        <p> De gemiddelde onderbrekingsduur door storingen in het HS- en EHS-net vertoont veel schommelingen over de jaren, want deze is sterk afhankelijk van
+          toevallige incidenten. In 2010 was de gemiddelde onderbrekingsduur door storingen in het HS-net 63 minuten. </p>
+        <p> Figuur 12.3 geeft de gemiddelde onderbrekingsfrequentie (of onderbrekingsverwachting, <em>f</em>) van een aangeslotene ten gevolge van storingen in het
+          LS-, MS-, HS- en EHS-net, in aantal onderbrekingen per jaar. De grafiek is niet opgenomen in de rapportage van de jaarlijkse storingsenquête, maar kan
+          eenvoudig met behulp van de relatie in formule 12. 1 worden berekend uit de jaarlijkse uitvalduur (Figuur 12.1) en de gemiddelde onderbrekingsduur (Figuur
+          12.2). Figuur 12.3 laat zien dat de onderbrekingsfrequentie bij een aangeslotene als gevolg van storingen in het LS-net het kleinst is. In 2010 was de
+          onderbrekingsfrequentie door storingen in het LS-net 0,046 maal per jaar, ofwel eens in de 22 jaar. </p>
+        <p> De onderbrekingsfrequentie ten gevolge van storingen in het MS-net is echter veel groter dan ten gevolge van storingen in het LS-net. Dat komt doordat het
+          MS-net dat een bepaalde aangeslotene van levering voorziet veel uitgestrekter is dan het specifieke LS-net dat dezelfde aangeslotene van levering voorziet.
+          In 2010 was de onderbrekingsfrequentie voor een aangeslotene door storingen in het MS-net 0,21 maal per jaar, ofwel eens in de 5 jaar. </p>
+        <p> De onderbrekingsfrequentie ten gevolge van storingen in het HS-net is weer kleiner dan ten gevolge van storingen in het MS-net. Dit komt doordat het HS-net
+          zodanig is aangelegd dat een enkelvoudige storing direct door de beveiliging wordt afgeschakeld, waarna het net blijft functioneren. Alleen in de gevallen
+          dat er geen enkelvoudige storingsreserve is, of indien een dubbelcircuitverbinding van een uitloper buiten bedrijf raakt, zal de levering onderbroken
+          worden. In 2010 was de onderbrekingsfrequentie voor een aangeslotene door storingen in het HS-net 0,12 maal per jaar, ofwel eens in de 8 jaar. </p>
+        <p> <img src="./betrouwbaarheid_files/12.3.png" width="708" height="354" alt="pics_2.12" class="img-responsive-leon-15px center-block"> </p>
+        <h5>Figuur 12.3 Gemiddelde onderbrekingsfrequentie (f) bij een aangeslotene (aantal/jaar) </h5>
+        <p> Tabel 12.1 geeft een overzicht van de gemiddelde waarden over de jaren 2000 tot en met 2010 van de storingsgegevens, die zijn afgeleid uit de gegevens van
+          figuur 12.1, figuur 12.2 en figuur 12.3. De tabel presenteert de storingsgegevens voor een aangeslotene op het LS-net ten gevolge van storingen in het LS-,
+          MS- en HS-net. Goed te zien is dat de gemiddelde jaarlijkse uitvalduur (P) ten gevolge van storingen in het LS-net van dezelfde orde grootte is als ten
+          gevolge van storingen in het HS-net, maar dat in het HS-net relatief vaak kortdurende onderbrekingen voorkomen, terwijl in het LS-net relatief veel
+          langdurende storingen voorkomen. Vanwege de omvang van het MS-net levert dit de grootste bijdrage aan de jaarlijkse uitvalduur. Mede om deze reden is het
+          belangrijk om veel aandacht te besteden aan de betrouwbaarheid van het MS-net. </p>
+        <h5>Tabel 12.1 Gemiddelde storingsgegevens van LS-aangeslotenen in Nederland (2000-2010) </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="25%" nowrap="" rowspan="2" valign="top"><p> <strong>Kenmerk</strong> </p></td>
+              <td width="75%" nowrap="" colspan="5" valign="top"><p align="center"> <strong>Oorzaak in</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="15%" nowrap="" valign="top"><p align="center"> <strong>&lt; 1kV</strong> </p>
+                <p align="center"> <strong>LS</strong> </p></td>
+              <td width="15%" nowrap="" valign="top"><p align="center"> <strong>1..35 kV</strong> </p>
+                <p align="center"> <strong>MS</strong> </p></td>
+              <td width="15%" nowrap="" valign="top"><p align="center"> <strong>35..220 kV</strong> </p>
+                <p align="center"> <strong>HS</strong> </p></td>
+              <td width="15%" nowrap="" valign="top"><p align="center"> <strong>Totaal</strong> </p></td>
+              <td width="15%" valign="top"><p align="center"> <strong>Eenheid</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="140" nowrap="" valign="bottom"><p> Onderbrekingsverwachting (<em>f</em>) </p></td>
+              <td width="35" valign="center"><p align="center"> 0,03 </p></td>
+              <td width="43" valign="center"><p align="center"> 0,20 </p></td>
+              <td width="50" valign="center"><p align="center"> 0,11 </p></td>
+              <td width="35" valign="center"><p align="center"> 0,34 </p></td>
+              <td width="37" valign="center"><p align="center"> per jaar </p></td>
+            </tr>
+            <tr>
+              <td width="140" nowrap="" valign="bottom"><p> Gemiddelde onderbrekingsduur (<em>d</em>) </p></td>
+              <td width="35" nowrap=""><p align="center"> 158 </p></td>
+              <td width="43" nowrap=""><p align="center"> 90 </p></td>
+              <td width="50" nowrap=""><p align="center"> 50 </p></td>
+              <td width="35" nowrap=""><p align="center"> 83 </p></td>
+              <td width="37"><p align="center"> min </p></td>
+            </tr>
+            <tr>
+              <td width="140" nowrap="" valign="bottom"><p> Jaarlijkse uitvalduur (<em>p</em>) </p></td>
+              <td width="35" nowrap="" valign="bottom"><p align="center"> 4,8 </p></td>
+              <td width="43" nowrap="" valign="bottom"><p align="center"> 18,3 </p></td>
+              <td width="50" nowrap="" valign="bottom"><p align="center"> 5,5 </p></td>
+              <td width="35" nowrap="" valign="bottom"><p align="center"> 28,6 </p></td>
+              <td width="37" valign="top"><p align="center"> min/jaar </p></td>
+            </tr>
+          </tbody>
+        </table><br>
+        <p> In Engelstalige landen worden voor definitie van de betrouwbaarheidsgegevens termen gebruikt die gedefinieerd zijn vanuit het aantal getroffen
+          aangeslotenen. Hoewel iets anders gedefinieerd, zijn de waarden gelijk aan de in Nederland gehanteerde storingskenmerken. </p>
+        <h6> SAIFI: System Average Interruption Frequency Index </h6>
+        <p> Deze term is gelijk aan de onderbrekingsverwachting of onderbrekingsfrequentie (<em>f</em>) van de levering. SAIFI is het gemiddelde aantal onderbrekingen
+          dat een aangeslotene kan verwachten en wordt als volgt berekend: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>              <td width="90%"><img src="./betrouwbaarheid_files/formule-12.3.png" alt="formules_2.12"></td>
+<td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 12.3 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <p> Het aantal onderbrekingen van aangeslotenen heeft meestal betrekking op een jaar. Bij de Noord-Amerikaanse netbeheerders is de gemiddelde waarde 1,1
+          onderbrekingen per klant per jaar (IEEE Standard 1366-1998). In de Nederlandse netten was dit volgens tabel 12.1 gemiddeld 0,34 per jaar voor de periode
+          2000-2010. </p>
+        <h6> SAIDI: System Average Interruption Duration Index </h6>
+        <p> Deze term is gelijk aan de jaarlijkse uitvalduur (<em>p</em>). SAIDI is de te verwachten uitvalduur voor iedere aangeslotene en wordt als volgt berekend: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>              <td width="90%"><img src="./betrouwbaarheid_files/formule-12.4.png" alt="formules_2.12"></td>
+<td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 12.4 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <p> SAIDI wordt gemeten in minuten en heeft meestal betrekking op een jaar. Bij de Noord-Amerikaanse netbeheerders is de gemiddelde waarde 90 minuten per klant
+          per jaar. In de Nederlandse netten was dit volgens tabel 12.1 gemiddeld 28,6 minuten per jaar voor de periode 2000-2010. </p>
+        <h6> CAIDI: Customer Average Interruption Duration Index </h6>
+        <p> Deze term is gelijk aan de gemiddelde onderbrekingsduur (<em>d</em>). CAIDI is gerelateerd aan SAIFI en SAIDI op vergelijkbare wijze als de relatie in
+          formule 12. 1: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>              <td width="90%"><img src="./betrouwbaarheid_files/formule-12.5.png" alt="formules_2.12"></td>
+<td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 12.5 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <p> CAIDI is de gemiddelde uitvalduur die een aangeslotene kan verwachten en kan ook gezien worden als de gemiddelde herstelduur. Bij de Noord-Amerikaanse
+          netbeheerders is de gemiddelde waarde 82 minuten. In Nederland was dit volgens tabel 12.1 gemiddeld 83 minuten voor de periode 2000-2010. </p>
+        <h6> EENS: Expected Energy Not Served </h6>
+        <p> Deze term is gelijk aan de gemiddelde hoeveelheid niet geleverde energie (NGE) aan een aangeslotene of aan een groep aangeslotenen. EENS is gelijk aan het
+          product van de jaarlijkse uitvalduur en het gemiddelde geleverde vermogen in kW: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>              <td width="90%"><img src="./betrouwbaarheid_files/formule-12.6.png" alt="formules_2.12"></td>
+<td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 12.6 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <p> Gemiddeld was in 2010 een aangeslotene 0,38 keer met een onderbreking geconfronteerd. Figuur 12.4 geeft voor de jaren 2000 tot en met 2010 een overzicht
+          van de gemiddelde onderbrekingsduur versus de gemiddelde onderbrekingsfrequentie. Elke markering representeert een jaargemiddelde. In de beschouwde periode
+          varieerde de onderbrekingsfrequentie (<em>f</em>) tussen 0,31 en 0,42 en varieerde de onderbrekingsduur (<em>d</em>) tussen 65 en 101 minuten. Er is geen
+          correlatie tussen de frequentie en de duur. De curven geven de constante jaarlijkse uitvalduur (<em>p</em>) aan, oplopend met 10 min/jaar en gebaseerd op
+          het product van onderbrekingsfrequentie (<em>f</em>) en onderbrekingsduur (<em>d</em>). </p>
+        <p> In vergelijking met andere Europese landen heeft het Nederlandse elektriciteitsvoorzieningsysteem een hoge betrouwbaarheid. In Europa komen jaargemiddelden
+          voor de onderbrekingsduur voor van 30 tot 100 minuten, maar ook met hoge waarden van 200 tot 300 minuten. Ook in de jaargemiddelden van de
+          onderbrekingsfrequentie komen in Europa hoge waarden van 2 maal per jaar voor (Kema, 2011). </p>
+        <p> <img src="./betrouwbaarheid_files/12.4.png" width="708" height="354" alt="pics_2.12" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 12.4 Gemiddelde onderbrekingsduur (d) versus onderbrekingsfrequentie (f) van 2000 tot en met 2010 </h5>
+        <p> Het distributienet is vrijwel geheel ondergronds aangelegd. Uit de registraties is gebleken dat graafwerk een van de belangrijkste oorzaken is voor
+          storingen. Om het aantal graafschades te beperken regelt de Wet Informatie-Uitwisseling Ondergrondse Netten (WION) de informatie-uitwisseling over de
+          ligging van kabels en leidingen. Hiernaast zijn storingen in kabelmoffen berucht. Figuur 12.5 geeft een overzicht van de belangrijkste oorzaken van
+          storingen in het MS-net van een netbeheerder (Alliander, 2009). Dit overzicht maakt duidelijk dat verreweg het grootste deel van alle storingen aan kabels
+          en hun garnituren gerelateerd is. Hierin is namelijk goed te zien dat ongeveer één derde van het aantal storingen wordt veroorzaakt door moffen
+          en één kwart door graafschade. Ongeveer één vijfde van het aantal storingen ontstaat door een defect in een kabel. Zo is het 'pomp- en
+          zuigeffect', veroorzaakt door een hoge wisselende belasting, een belangrijke oorzaak van versnelde veroudering van een GPLK-kabel. </p>
+        <p>Dat het MS-distributienet de grootste invloed heeft op de betrouwbaarheid komt doordat de enkelvoudige storingsreserve alleen in de structuur van het
+          net aanwezig is en niet in de bedrijfsvoering, zoals bij transportnetten. Elke kortsluiting resulteert in afschakeling van de gehele streng. Het
+          opsporen van de fout en het omschakelen na een storing gebeurt met de hand en dat kost meer tijd dan bij een transportnet, dat voorzien is van op
+          afstand uitleesbare metingen en van verrebediening. Bovendien zijn de gevolgen van een storing in het MS-distributienet vrij groot, doordat met het
+          uitvallen van een streng een relatief groot aantal aangeslotenen is getroffen. </p>
+        <p> <img src="./betrouwbaarheid_files/12.5.png" width="708" height="354" alt="pics_2.12" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 12.5 Oorzaken uitvalduur elektriciteit </h5>
+        <p> Iedere netbeheerder hanteert zijn eigen betrouwbaarheidscriteria. De gemiddelde onderbrekingsduur voor de verschillende niveaus zijn afgestemd op de kosten
+          die gemoeid zijn met het niet leveren van energie. In LS-netten wordt soms een absolute tijdsduur gehanteerd voor de gemiddelde onderbreking. In andere
+          gevallen, zoals op MS-niveau, wordt het criterium gesteld dat de hoeveelheid niet-geleverde energie, het product van de gemiddelde hersteltijd en totale
+          getroffen belasting, niet groter mag zijn dan een specifieke waarde, in MWh. Bovendien kan in bepaalde situaties een aangeslotene eisen aan de
+          betrouwbaarheid overeenkomen met de netbeheerder. </p>
+<a href="https://www.phasetophase.nl/boek/boek_2_12.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_12.2"></div>
+        <br>
+        <h2>12.2 Falen, herstellen en repareren </h2>
+        <p> De betrouwbaarheid wordt bepaald door de combinatie van twee processen: falen van een component en herstellen van de levering van het afgeschakelde
+          deelnet. Het is lang niet altijd zo dat de levering pas wordt hervat nadat de gestoorde component gerepareerd is. Daarom is naast kennis over de
+          reparatiegegevens ook inzicht nodig in het herstelproces van de levering. Het falen van een component en het herstellen van de levering zijn twee
+          afzonderlijke processen, die afzonderlijk benaderd worden. </p>
+        <p> Van de individuele componenten zijn de faalfrequentie en de reparatieduur gedefinieerd: </p>
+<ul>
+          <li> faalfrequentie (<em>λ</em>): het gemiddelde aantal malen per jaar dat een component defect raakt </li>
+          <li> reparatieduur (<em>T<sub>rep</sub></em>): de tijdsduur die gemiddeld nodig is om een defecte component te repareren of te vervangen. </li>
+        </ul>
+        <p> De faal- en reparatiegegevens van componenten in het elektriciteitsnet zijn vermeld in de jaarlijkse storingsenquête van Netbeheer Nederland (Kema,
+          2011). In deze jaarlijkse rapportage staan de geregistreerde storingen van dat jaar vermeld. Gezien het relatief gering aantal storingen kunnen de gegevens
+          van jaar tot jaar nogal verschillen, zowel in aantal storingen als in reparatieduur. Ook per netbeheerder zijn er verschillen in faalfrequentie en
+          reparatietijd. Het kan bijvoorbeeld zijn dat een netbeheerder in het verleden moffen van een bepaald type van een specifieke fabrikant heeft toegepast, die
+          na verloop van tijd allemaal dezelfde degeneratieverschijnselen vertonen. Ook kunnen verschillen in reparatiestrategie leiden tot verschillen in
+          reparatietijden. Tabel 12.2, tabel 12.3 en tabel 12.4 geven een overzicht van de storingsgegevens van componenten in de LS-, MS en HS-netten in Nederland
+          in de jaren 2007, 2008, 2009 en 2010. De reparatieduur is de gemiddelde hersteltijd van een component waarvan uitval leidde tot storingen. </p>
+        <h5> Tabel 12.2 Storingsgegevens van LS-componenten in Nederland </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="85" nowrap="" valign="bottom"><p> <a name="_Ref286662897"><strong>LS</strong></a> </p></td>
+              <td width="28" colspan="6" valign="top"><p align="center"> <strong>Faalfrequentie</strong> </p></td>
+              <td width="28" colspan="5" valign="top"><p align="center"> <strong>Reparatieduur (h)</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="85" nowrap=""><p> <strong> </strong> </p>
+                <p> <strong> </strong> </p>
+                <p> <strong> </strong> </p>
+                <p> <strong>Component</strong> </p></td>
+              <td width="18" nowrap=""><p align="right"> 2007 </p></td>
+              <td width="18" nowrap=""><p align="right"> 2008 </p></td>
+              <td width="18" nowrap=""><p align="right"> 2009 </p></td>
+              <td width="18"><p align="right"> 2010 </p></td>
+              <td width="18" nowrap=""><p align="right"> Gemiddeld </p></td>
+              <td width="18" nowrap=""><p align="right"> eenheid </p></td>
+              <td width="18" nowrap=""><p align="right"> 2007 </p></td>
+              <td width="18" nowrap=""><p align="right"> 2008 </p></td>
+              <td width="18" nowrap=""><p align="right"> 2009 </p></td>
+              <td width="18"><p align="right"> 2010 </p></td>
+              <td width="18" nowrap=""><p align="right"> Gemiddeld </p></td>
+            </tr>
+            <tr>
+              <td width="85" nowrap=""><p> Netkabel GPLK </p></td>
+              <td width="18" nowrap=""><p> 0,0465 </p></td>
+              <td width="18" nowrap=""><p> 0,0441 </p></td>
+              <td width="18" nowrap=""><p> 0,0440 </p></td>
+              <td width="18"><p> 0,0502 </p></td>
+              <td width="18" nowrap=""><p> 0,0462 </p></td>
+              <td width="18" nowrap=""><p> /km </p></td>
+              <td width="18" nowrap=""><p> 6 </p></td>
+              <td width="18" nowrap=""><p> 10 </p></td>
+              <td width="18" nowrap=""><p> 10 </p></td>
+              <td width="18"><p> 24 </p></td>
+              <td width="18" nowrap=""><p> 13 </p></td>
+            </tr>
+            <tr>
+              <td width="85" nowrap=""><p> Netkabel kunststof </p></td>
+              <td width="18" nowrap=""><p> 0,0347 </p></td>
+              <td width="18" nowrap=""><p> 0,0308 </p></td>
+              <td width="18" nowrap=""><p> 0,0288 </p></td>
+              <td width="18"><p> 0,0352 </p></td>
+              <td width="18" nowrap=""><p> 0,0324 </p></td>
+              <td width="18" nowrap=""><p> /km </p></td>
+              <td width="18" nowrap=""><p> 5 </p></td>
+              <td width="18" nowrap=""><p> 7 </p></td>
+              <td width="18" nowrap=""><p> 9 </p></td>
+              <td width="18"><p> 16 </p></td>
+              <td width="18" nowrap=""><p> 9 </p></td>
+            </tr>
+            <tr>
+              <td width="85" nowrap=""><p> Aansluitkabel GPLK </p></td>
+              <td width="18" nowrap=""><p> 0,0952 </p></td>
+              <td width="18" nowrap=""><p> 0,1028 </p></td>
+              <td width="18" nowrap=""><p> 0,0975 </p></td>
+              <td width="18"><p> 0,0578 </p></td>
+              <td width="18" nowrap=""><p> 0,0883 </p></td>
+              <td width="18" nowrap=""><p> /km </p></td>
+              <td width="18" nowrap=""><p> 6 </p></td>
+              <td width="18" nowrap=""><p> 13 </p></td>
+              <td width="18" nowrap=""><p> 27 </p></td>
+              <td width="18"><p> 30 </p></td>
+              <td width="18" nowrap=""><p> 19 </p></td>
+            </tr>
+            <tr>
+              <td width="85" nowrap=""><p> Aansluitkabel kunststof </p></td>
+              <td width="18" nowrap=""><p> 0,0658 </p></td>
+              <td width="18" nowrap=""><p> 0,0689 </p></td>
+              <td width="18" nowrap=""><p> 0,0624 </p></td>
+              <td width="18"><p> 0,0816 </p></td>
+              <td width="18" nowrap=""><p> 0,0697 </p></td>
+              <td width="18" nowrap=""><p> /km </p></td>
+              <td width="18" nowrap=""><p> 4 </p></td>
+              <td width="18" nowrap=""><p> 8 </p></td>
+              <td width="18" nowrap=""><p> 17 </p></td>
+              <td width="18"><p> 19 </p></td>
+              <td width="18" nowrap=""><p> 12 </p></td>
+            </tr>
+            <tr>
+              <td width="85" nowrap=""><p> Mof massa </p></td>
+              <td width="18" nowrap=""><p> 0,0002 </p></td>
+              <td width="18" nowrap=""><p> 0,0002 </p></td>
+              <td width="18" nowrap=""><p> 0,0003 </p></td>
+              <td width="18"><p> 0,0005 </p></td>
+              <td width="18" nowrap=""><p> 0,0003 </p></td>
+              <td width="18" nowrap=""><p> /stuk </p></td>
+              <td width="18" nowrap=""><p> 8 </p></td>
+              <td width="18" nowrap=""><p> 9 </p></td>
+              <td width="18" nowrap=""><p> 15 </p></td>
+              <td width="18"><p> 35 </p></td>
+              <td width="18" nowrap=""><p> 17 </p></td>
+            </tr>
+            <tr>
+              <td width="85" nowrap=""><p> Mof kunststof </p></td>
+              <td width="18" nowrap=""><p> 0,0002 </p></td>
+              <td width="18" nowrap=""><p> 0,0001 </p></td>
+              <td width="18" nowrap=""><p> 0,0002 </p></td>
+              <td width="18"><p> 0,0003 </p></td>
+              <td width="18" nowrap=""><p> 0,0002 </p></td>
+              <td width="18" nowrap=""><p> /stuk </p></td>
+              <td width="18" nowrap=""><p> 8 </p></td>
+              <td width="18" nowrap=""><p> 11 </p></td>
+              <td width="18" nowrap=""><p> 14 </p></td>
+              <td width="18"><p> 32 </p></td>
+              <td width="18" nowrap=""><p> 16 </p></td>
+            </tr>
+            <tr>
+              <td width="85" nowrap=""><p> Eindsluiting massa </p></td>
+              <td width="18" nowrap=""><p> 0,0001 </p></td>
+              <td width="18" nowrap=""><p> 0,0001 </p></td>
+              <td width="18" nowrap=""><p> 0,0001 </p></td>
+              <td width="18"><p> 0,0000 </p></td>
+              <td width="18" nowrap=""><p> 0,0001 </p></td>
+              <td width="18" nowrap=""><p> /stuk </p></td>
+              <td width="18" nowrap=""><p> 5 </p></td>
+              <td width="18" nowrap=""><p> 4 </p></td>
+              <td width="18" nowrap=""><p> 4 </p></td>
+              <td width="18"><p> 11 </p></td>
+              <td width="18" nowrap=""><p> 6 </p></td>
+            </tr>
+            <tr>
+              <td width="85" nowrap=""><p> Eindsluiting kunststof </p></td>
+              <td width="18" nowrap=""><p> 0,0001 </p></td>
+              <td width="18" nowrap=""><p> 0,0001 </p></td>
+              <td width="18" nowrap=""><p> 0,0001 </p></td>
+              <td width="18"><p> 0,0001 </p></td>
+              <td width="18" nowrap=""><p> 0,0001 </p></td>
+              <td width="18" nowrap=""><p> /stuk </p></td>
+              <td width="18" nowrap=""><p> 3 </p></td>
+              <td width="18" nowrap=""><p> 3 </p></td>
+              <td width="18" nowrap=""><p> 9 </p></td>
+              <td width="18"><p> 18 </p></td>
+              <td width="18" nowrap=""><p> 8 </p></td>
+            </tr>
+            <tr>
+              <td width="85" nowrap=""><p> Lastscheider, patroon </p></td>
+              <td width="18" nowrap=""><p> 0,0016 </p></td>
+              <td width="18" nowrap=""><p> 0,0017 </p></td>
+              <td width="18" nowrap=""><p> 0,0015 </p></td>
+              <td width="18"><p> 0,0014 </p></td>
+              <td width="18" nowrap=""><p> 0,0016 </p></td>
+              <td width="18" nowrap=""><p> /stuk </p></td>
+              <td width="18" nowrap=""><p> 2 </p></td>
+              <td width="18" nowrap=""><p> 2 </p></td>
+              <td width="18" nowrap=""><p> 2 </p></td>
+              <td width="18"><p> 3 </p></td>
+              <td width="18" nowrap=""><p> 2 </p></td>
+            </tr>
+            <tr>
+              <td width="85" nowrap=""><p> Laagspanningsrek, kast </p></td>
+              <td width="18" nowrap=""><p> 0,0011 </p></td>
+              <td width="18" nowrap=""><p> 0,0012 </p></td>
+              <td width="18" nowrap=""><p> 0,0012 </p></td>
+              <td width="18"><p> 0,0017 </p></td>
+              <td width="18" nowrap=""><p> 0,0013 </p></td>
+              <td width="18" nowrap=""><p> /stuk </p></td>
+              <td width="18" nowrap=""><p> 3 </p></td>
+              <td width="18" nowrap=""><p> 8 </p></td>
+              <td width="18" nowrap=""><p> 16 </p></td>
+              <td width="18"><p> 69 </p></td>
+              <td width="18" nowrap=""><p> 24 </p></td>
+            </tr>
+            <tr>
+              <td width="85" nowrap=""><p> Smeltveiligheid </p></td>
+              <td width="18" nowrap=""><p> 0,0012 </p></td>
+              <td width="18" nowrap=""><p> 0,0013 </p></td>
+              <td width="18" nowrap=""><p> 0,0014 </p></td>
+              <td width="18"><p> 0,0017 </p></td>
+              <td width="18" nowrap=""><p> 0,0014 </p></td>
+              <td width="18" nowrap=""><p> /stuk </p></td>
+              <td width="18" nowrap=""><p> 2 </p></td>
+              <td width="18" nowrap=""><p> 2 </p></td>
+              <td width="18" nowrap=""><p> 4 </p></td>
+              <td width="18"><p> 6 </p></td>
+              <td width="18" nowrap=""><p> 4 </p></td>
+            </tr>
+          </tbody>
+        </table><br>
+        <p> Uit tabel 12.2 blijkt dat de spreiding over de jaren in de faalfrequentie van LS-kabels tussen 5 en 20% is. Met name GPLK-kabels raken eerder gestoord dan
+          kunststof kabels. Ook valt op dat de faalfrequentie van LS-aansluitkabels twee maal zo groot is als van netkabels. De spreiding van de reparatieduur is met
+          name bij de aansluitkabels groot. Voor netkabels zou de reparatieduur naar verwachting ongeveer 8 tot 12 uur kunnen zijn. Het is te verwachten dat de
+          reparatieduur van een mof ongeveer even lang is als van een kabel. </p>
+        <h5>Tabel 12.3 Storingsgegevens van MS-componenten in Nederland </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="100" nowrap="" valign="bottom"><p> <strong>MS</strong> </p></td>
+              <td width="131" colspan="6" valign="top"><p align="center"> <strong>Faalfrequentie</strong> </p></td>
+              <td width="109" colspan="5" valign="top"><p align="center"> <strong>Reparatieduur (h)</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="100" nowrap=""><p> <strong> </strong> </p>
+                <p> <strong> </strong> </p>
+                <p> <strong> </strong> </p>
+                <p> <strong>Component</strong> </p></td>
+              <td width="22" nowrap=""><p align="right"> 2007 </p></td>
+              <td width="22" nowrap=""><p align="right"> 2008 </p></td>
+              <td width="22" nowrap=""><p align="right"> 2009 </p></td>
+              <td width="22"><p align="right"> 2010 </p></td>
+              <td width="22" nowrap=""><p align="right"> Gemiddeld </p></td>
+              <td width="22" nowrap=""><p align="right"> eenheid </p></td>
+              <td width="22" nowrap=""><p align="right"> 2007 </p></td>
+              <td width="22" nowrap=""><p align="right"> 2008 </p></td>
+              <td width="22" nowrap=""><p align="right"> 2009 </p></td>
+              <td width="22"><p align="right"> 2010 </p></td>
+              <td width="22" nowrap=""><p align="right"> Gemiddeld </p></td>
+            </tr>
+            <tr>
+              <td width="100" nowrap=""><p> Kabel GPLK </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0114 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0108 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0110 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0128 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0115 </p></td>
+              <td width="22" nowrap="" valign="top"><p> /km </p></td>
+              <td width="22" nowrap="" valign="top"><p> 87 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 92 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 154 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 120 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 113 </p></td>
+            </tr>
+            <tr>
+              <td width="100" nowrap=""><p> Kabel kunststof </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0069 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0078 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0101 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0048 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0074 </p></td>
+              <td width="22" nowrap="" valign="top"><p> /km </p></td>
+              <td width="22" nowrap="" valign="top"><p> 101 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 66 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 93 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 149 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 102 </p></td>
+            </tr>
+            <tr>
+              <td width="100" nowrap=""><p> Mof massa </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0026 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0029 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0032 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0037 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0031 </p></td>
+              <td width="22" nowrap="" valign="top"><p> /stuk </p></td>
+              <td width="22" nowrap="" valign="top"><p> 96 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 65 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 150 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 126 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 109 </p></td>
+            </tr>
+            <tr>
+              <td width="100" nowrap=""><p> Mof olie </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0004 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0003 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0005 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0004 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0004 </p></td>
+              <td width="22" nowrap="" valign="top"><p> /stuk </p></td>
+              <td width="22" nowrap="" valign="top"><p> 213 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 105 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 159 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 150 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 157 </p></td>
+            </tr>
+            <tr>
+              <td width="100" nowrap=""><p> Mof kunststof </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0019 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0018 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0010 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0011 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0015 </p></td>
+              <td width="22" nowrap="" valign="top"><p> /stuk </p></td>
+              <td width="22" nowrap="" valign="top"><p> 89 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 59 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 105 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 76 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 82 </p></td>
+            </tr>
+            <tr>
+              <td width="100" nowrap=""><p> Eindsluiting massa </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0001 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0000 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0001 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0001 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0001 </p></td>
+              <td width="22" nowrap="" valign="top"><p> /stuk </p></td>
+              <td width="22" nowrap="" valign="top"><p> 50 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 38 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 346 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 63 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 124 </p></td>
+            </tr>
+            <tr>
+              <td width="100" nowrap=""><p> Eindsluiting olie/vet </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0001 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0001 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0002 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0002 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0002 </p></td>
+              <td width="22" nowrap="" valign="top"><p> /stuk </p></td>
+              <td width="22" nowrap="" valign="top"><p> 77 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 51 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 164 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 163 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 114 </p></td>
+            </tr>
+            <tr>
+              <td width="100" nowrap=""><p> Eindsluiting kunststof </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0002 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0001 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0002 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0002 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0002 </p></td>
+              <td width="22" nowrap="" valign="top"><p> /stuk </p></td>
+              <td width="22" nowrap="" valign="top"><p> 28 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 25 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 54 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 97 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 51 </p></td>
+            </tr>
+            <tr>
+              <td width="100" nowrap=""><p> Rail </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0002 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0001 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0003 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0004 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0003 </p></td>
+              <td width="22" nowrap="" valign="top"><p> /stuk </p></td>
+              <td width="22" nowrap="" valign="top"><p> 126 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 128 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 33 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 125 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 103 </p></td>
+            </tr>
+            <tr>
+              <td width="100" nowrap=""><p> Transformator MS/LS </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0007 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0006 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0008 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0006 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0007 </p></td>
+              <td width="22" nowrap="" valign="top"><p> /stuk </p></td>
+              <td width="22" nowrap="" valign="top"><p> 105 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 31 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 59 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 70 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 66 </p></td>
+            </tr>
+            <tr>
+              <td width="100" nowrap=""><p> Vermogenschakelaar </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0019 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0019 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0013 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0009 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0015 </p></td>
+              <td width="22" nowrap="" valign="top"><p> /stuk </p></td>
+              <td width="22" nowrap="" valign="top"><p> 22 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 26 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 88 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 64 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 50 </p></td>
+            </tr>
+            <tr>
+              <td width="100" nowrap=""><p> Lastscheider </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0002 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0002 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0002 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0002 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0002 </p></td>
+              <td width="22" nowrap="" valign="top"><p> /stuk </p></td>
+              <td width="22" nowrap="" valign="top"><p> 43 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 60 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 71 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 53 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 57 </p></td>
+            </tr>
+            <tr>
+              <td width="100" nowrap=""><p> Scheider </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0001 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0000 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0001 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0001 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0001 </p></td>
+              <td width="22" nowrap="" valign="top"><p> /stuk </p></td>
+              <td width="22" nowrap="" valign="top"><p> 236 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 1 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 13 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 154 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 101 </p></td>
+            </tr>
+            <tr>
+              <td width="100" nowrap=""><p> Smoorspoel </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0000 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0000 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0005 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0000 </p></td>
+              <td width="22" nowrap="" valign="top"><p> 0,0001 </p></td>
+              <td width="22" nowrap="" valign="top"><p> /stuk </p></td>
+              <td width="22" nowrap="" valign="top"></td>
+              <td width="22" nowrap="" valign="top"></td>
+              <td width="22" nowrap="" valign="top"><p> 2620 </p></td>
+              <td width="22" nowrap="" valign="top"></td>
+              <td width="22" nowrap="" valign="top"><p> 2620 </p></td>
+            </tr>
+          </tbody>
+        </table><br>
+        <p> Uit tabel 12.3 blijkt dat de faalfrequenties van componenten in het MS-net kleiner zijn dan van componenten in het LS-net: de faalfrequentie van kabels is
+          ongeveer vier maal kleiner. Ook hier raken GPLK-kabels vaker gestoord dan kunststof kabels. Dit hoeft overigens niet geheel aan de ouderdom of de kwaliteit
+          van de kabels te liggen. GPLK-kabels liggen namelijk in oudere bebouwde wijken, waarin zij bijvoorbeeld door graafwerkzaamheden voor
+          stadsvernieuwingsprojecten beschadigd kunnen raken. </p>
+        <p> Het valt direct op dat de reparatieduur van MS-kabels veel groter is dan van LS-kabels. Ook is de spreiding van de reparatieduur over de jaren vrij groot.
+          In het algemeen lijken de reparaties in 2009 en 2010 langer te duren dan in de voorgaande twee jaren. Het feit dat de reparatieduren van MS-kabels langer
+          zijn dan van LS-kabels komt doordat bij storingen in de MS-kabels de levering meestal kan worden hersteld door omschakelen, waardoor de reparatie minder
+          urgent is. Bij de andere componenten, zoals rail, transformator, vermogenschakelaar en smoorspoel is de reparatieduur de duur die gemoeid is met het
+          vervangen van de defecte component. De faalfrequentie van deze componenten is zo klein, dat de reparatieduur een vrij grote spreiding heeft, waardoor het
+          moeilijk is een reële waarde te vinden. Zo is er van de smoorspoel alleen een registratie in 2009, waarbij de vervangingsduur blijkbaar erg lang was. </p>
+        <h5>Tabel 12.4 Storingsgegevens van HS-componenten in Nederland </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="100" nowrap="" valign="bottom"><p> <strong>HS</strong> </p></td>
+              <td width="131" colspan="6" valign="top"><p align="center"> <strong>Faalfrequentie</strong> </p></td>
+              <td width="109" colspan="5" valign="top"><p align="center"> <strong>Reparatieduur (h)</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="100" nowrap=""><p> <strong> </strong> </p>
+                <p> <strong> </strong> </p>
+                <p> <strong> </strong> </p>
+                <p> <strong>Component</strong> </p></td>
+              <td width="22" nowrap=""><p align="right"> 2007 </p></td>
+              <td width="22" nowrap=""><p align="right"> 2008 </p></td>
+              <td width="22" nowrap=""><p align="right"> 2009 </p></td>
+              <td width="22"><p align="right"> 2010 </p></td>
+              <td width="22" nowrap=""><p align="right"> Gemiddeld </p></td>
+              <td width="22" nowrap=""><p align="right"> eenheid </p></td>
+              <td width="22" nowrap=""><p align="right"> 2007 </p></td>
+              <td width="22" nowrap=""><p align="right"> 2008 </p></td>
+              <td width="22" nowrap=""><p align="right"> 2009 </p></td>
+              <td width="22"><p align="right"> 2010 </p></td>
+              <td width="22" nowrap=""><p align="right"> Gemiddeld </p></td>
+            </tr>
+            <tr>
+              <td width="100" nowrap=""><p> Kabel </p></td>
+              <td width="22" nowrap=""><p> 0,0047 </p></td>
+              <td width="22" nowrap=""><p> 0,0025 </p></td>
+              <td width="22" nowrap=""><p> 0,0032 </p></td>
+              <td width="22"><p> 0,0037 </p></td>
+              <td width="22" nowrap=""><p> 0,0035 </p></td>
+              <td width="22" nowrap=""><p> /km </p></td>
+              <td width="22" nowrap=""><p> 145 </p></td>
+              <td width="22" nowrap=""><p> 235 </p></td>
+              <td width="22" nowrap=""><p> 102 </p></td>
+              <td width="22"><p> 397 </p></td>
+              <td width="22" nowrap=""><p> 220 </p></td>
+            </tr>
+            <tr>
+              <td width="100" nowrap=""><p> Bovengrondse lijn </p></td>
+              <td width="22" nowrap=""><p> 0,0060 </p></td>
+              <td width="22" nowrap=""><p> 0,0036 </p></td>
+              <td width="22" nowrap=""><p> 0,0038 </p></td>
+              <td width="22"><p> 0,0057 </p></td>
+              <td width="22" nowrap=""><p> 0,0048 </p></td>
+              <td width="22" nowrap=""><p> /km </p></td>
+              <td width="22" nowrap=""><p> 433 </p></td>
+              <td width="22" nowrap=""><p> 7 </p></td>
+              <td width="22" nowrap=""><p> 4 </p></td>
+              <td width="22"><p> 210 </p></td>
+              <td width="22" nowrap=""><p> 164 </p></td>
+            </tr>
+            <tr>
+              <td width="100" nowrap=""><p> Mof </p></td>
+              <td width="22" nowrap=""><p> 0,0000 </p></td>
+              <td width="22" nowrap=""><p> 0,0000 </p></td>
+              <td width="22" nowrap=""><p> 0,0001 </p></td>
+              <td width="22"><p> 0,0000 </p></td>
+              <td width="22" nowrap=""><p> 0,0000 </p></td>
+              <td width="22" nowrap=""><p> /stuk </p></td>
+              <td width="22" nowrap=""></td>
+              <td width="22" nowrap=""></td>
+              <td width="22" nowrap=""></td>
+              <td width="22"></td>
+              <td width="22" nowrap=""></td>
+            </tr>
+            <tr>
+              <td width="100" nowrap=""><p> Eindsluiting </p></td>
+              <td width="22" nowrap=""><p> 0,0014 </p></td>
+              <td width="22" nowrap=""><p> 0,0013 </p></td>
+              <td width="22" nowrap=""><p> 0,0007 </p></td>
+              <td width="22"><p> 0,0004 </p></td>
+              <td width="22" nowrap=""><p> 0,0010 </p></td>
+              <td width="22" nowrap=""><p> /stuk </p></td>
+              <td width="22" nowrap=""><p> 730 </p></td>
+              <td width="22" nowrap=""><p> 99 </p></td>
+              <td width="22" nowrap=""><p> 89 </p></td>
+              <td width="22"><p> 11 </p></td>
+              <td width="22" nowrap=""><p> 232 </p></td>
+            </tr>
+            <tr>
+              <td width="100" nowrap=""><p> Vermogenschakelaar </p></td>
+              <td width="22" nowrap=""><p> 0,0012 </p></td>
+              <td width="22" nowrap=""><p> 0,0032 </p></td>
+              <td width="22" nowrap=""><p> 0,0044 </p></td>
+              <td width="22"><p> 0,0016 </p></td>
+              <td width="22" nowrap=""><p> 0,0026 </p></td>
+              <td width="22" nowrap=""><p> /stuk </p></td>
+              <td width="22" nowrap=""><p> 48 </p></td>
+              <td width="22" nowrap=""><p> 18 </p></td>
+              <td width="22" nowrap=""><p> 161 </p></td>
+              <td width="22"><p> 3 </p></td>
+              <td width="22" nowrap=""><p> 58 </p></td>
+            </tr>
+            <tr>
+              <td width="100" nowrap=""><p> Scheider </p></td>
+              <td width="22" nowrap=""><p> 0,0004 </p></td>
+              <td width="22" nowrap=""><p> 0,0002 </p></td>
+              <td width="22" nowrap=""><p> 0,0006 </p></td>
+              <td width="22"><p> 0,0005 </p></td>
+              <td width="22" nowrap=""><p> 0,0004 </p></td>
+              <td width="22" nowrap=""><p> /stuk </p></td>
+              <td width="22" nowrap=""><p> 3 </p></td>
+              <td width="22" nowrap=""><p> 4 </p></td>
+              <td width="22" nowrap=""><p> 6 </p></td>
+              <td width="22"><p> 1652 </p></td>
+              <td width="22" nowrap=""><p> 416 </p></td>
+            </tr>
+            <tr>
+              <td width="100" nowrap=""><p> Rail </p></td>
+              <td width="22" nowrap=""><p> 0,0014 </p></td>
+              <td width="22" nowrap=""><p> 0,0015 </p></td>
+              <td width="22" nowrap=""><p> 0,0042 </p></td>
+              <td width="22"><p> 0,0109 </p></td>
+              <td width="22" nowrap=""><p> 0,0045 </p></td>
+              <td width="22" nowrap=""><p> /stuk </p></td>
+              <td width="22" nowrap=""></td>
+              <td width="22" nowrap=""></td>
+              <td width="22" nowrap=""></td>
+              <td width="22"><p> 10 </p></td>
+              <td width="22" nowrap=""><p> 10 </p></td>
+            </tr>
+            <tr>
+              <td width="100" nowrap=""><p> Transformator HS/MS </p></td>
+              <td width="22" nowrap=""><p> 0,0021 </p></td>
+              <td width="22" nowrap=""><p> 0,0197 </p></td>
+              <td width="22" nowrap=""><p> 0,0196 </p></td>
+              <td width="22"><p> 0,0205 </p></td>
+              <td width="22" nowrap=""><p> 0,0155 </p></td>
+              <td width="22" nowrap=""><p> /stuk </p></td>
+              <td width="22" nowrap=""><p> 67 </p></td>
+              <td width="22" nowrap=""><p> 38 </p></td>
+              <td width="22" nowrap=""><p> 123 </p></td>
+              <td width="22"><p> 67 </p></td>
+              <td width="22" nowrap=""><p> 74 </p></td>
+            </tr>
+          </tbody>
+        </table><br>
+        <p> Uit tabel 12.4 blijkt dat de faalfrequentie van componenten in het HS-net in het algemeen kleiner is dan van componenten in het MS-net. In het algemeen is
+          de gemiddelde reparatieduur groter dan van componenten in het MS-net. Omdat het HS-net in verhouding tot de MS- en LS-netten vrij klein is, zijn er
+          relatief weinig storingen, waardoor de spreiding in de reparatieduur groot is. </p>        <a href="https://www.phasetophase.nl/boek/boek_2_12.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_12.2.1"></div>
+        <br>
+        <h3>12.2.1 Falen</h3>
+        <p> Onder falen wordt verstaan: het zodanig defect raken van een component, dat deze component terstond uit bedrijf genomen wordt. De onderbrekingsfrequentie
+          (<em>f</em>) van een streng wordt berekend uit de som van de faalfrequenties (<em>λ</em>) van alle componenten van de streng, plus de onderbrekingsfrequentie (<em>f<sub>voeding</sub></em>) van het bovenliggende net. Figuur 12.6 illustreert dat een aangeslotene in het LS-net te maken heeft met de keten van betrouwbaarheid van het LS-net, het netstation, het MS-net, het voedingsstation en het HS- en EHS-net. Indien in één van de kabels van een MS-streng een kortsluiting optreedt, zal de beveiliging van die streng aanspreken en afschakelen, waardoor de gehele streng inclusief alle aangeslotenen buiten bedrijf zal zijn. </p>
+        <p> <img src="./betrouwbaarheid_files/12.6.png" width="712" height="166" alt="pics_2.12" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 12.6 Keten van betrouwbaarheidsinvloeden </h5>
+        <p> In onderstaande vergelijking wordt de onderbrekingsfrequentie van een punt in het LS-net berekend uit de som van de onderbrekingsfrequentie van de HS-rail
+          van het HS/MS onderstation en de faalfrequenties van de componenten van het onderstation tot aan het LS-net. De onderbrekingsfrequentie van het HS-net
+          wordt niet berekend maar uit de storingsregistratiegegevens van tabel 12.1 gehaald, omdat de betrouwbaarheidsberekening van het N–1 veilige transportnet
+          een uitgebreidere berekening vereist dan de in dit hoofdstuk gepresenteerde methode voor distributienetten. </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr><td width="90%"><img src="./betrouwbaarheid_files/formule-12.7.png" alt="formules_2.12"></td>
+<td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 12.7 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <p> met: </p>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <td width="150"><em>f</em></td>
+              <td>onderbrekingsfrequentie</td>
+            </tr>
+            <tr>
+              <td valign="top"><em>λ<sub>HS/MS-transformator</sub></em></td>
+              <td>faalfrequentie voedingstransformator (per jaar)</td>
+            </tr>
+            <tr>
+              <td valign="top"><em>l<sub>MS</sub></em></td>
+              <td>lengte MS-kabel (km)</td>
+            </tr>
+            <tr>
+              <td valign="top"><em>λ<sub>MS-kabel</sub></em></td>
+              <td>faalfrequentie MS-kabel (per jaar en per km) </td>
+            </tr>
+            <tr>
+              <td valign="top"><em>l<sub>LS</sub></em></td>
+              <td>lengte LS-kabel (km)</td>
+            </tr>
+            <tr>
+              <td valign="top"><em>λ<sub>LS-kabel</sub></em></td>
+              <td>spanningfasehoek (rad)faalfrequentie LS-kabel (per jaar en per km)</td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <p> Het faalproces wordt toegelicht aan de hand van het voorbeeldnet van figuur 12.7. In dit netwerk is de betrouwbaarheid van het EHS- en HS-net en daarmee de
+          betrouwbaarheid van de levering op het HS-knooppunt van het onderstation, gemodelleerd in de betrouwbaarheid van de netvoeding. </p>
+        <p> <img src="./betrouwbaarheid_files/12.7.png" width="712" height="219" alt="pics_2.12" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 12.7 MS- en LS-distributienet met HS-voeding </h5>
+        <p> Alle MS-kabels zijn in dit rekenvoorbeeld even lang: 1000 m. Ook alle LS-kabels achter netstation MS11 zijn even lang: 100 m. De faalfrequentie van een
+          kabel is gelijk aan het product van zijn lengte en zijn faalfrequentie per lengte-eenheid. De faalfrequenties zijn afgeleid van tabel 12.1, tabel 12.2,
+          tabel 12.3 en tabel 12.4. De faalfrequentie van een MS-kabel is gesteld op 0,01 /km/jaar en van een LS-kabel op 0,03 /km/jaar. De faalfrequenties van rails
+          en knooppunten worden in dit voorbeeld verwaarloosd. De faalparameters van de componenten van het net in figuur 12.7 voor gebruik in een
+          betrouwbaarheidsberekening zijn dan: </p>
+        <h5> Tabel 12.5 Storingsgegevens voor het voorbeeldnet van figuur 12.7 </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="133" valign="top"><p> <strong>Component</strong> </p></td>
+              <td width="128" valign="top"><p> <strong>Faalfrequentie </strong> <strong>l (per jaar)</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="133" valign="top"><p> Netvoeding </p></td>
+              <td width="128" valign="top"><p> 0,11 </p></td>
+            </tr>
+            <tr>
+              <td width="133" valign="top"><p> HS/MS-transformator </p></td>
+              <td width="128" valign="top"><p> 0,014 </p></td>
+            </tr>
+            <tr>
+              <td width="133" valign="top"><p> MS-kabel (1 km x l<sub>MS-kabel</sub>) </p></td>
+              <td width="128" valign="top"><p> 0,01 </p></td>
+            </tr>
+            <tr>
+              <td width="133" valign="top"><p> MS/LS-transformator </p></td>
+              <td width="128" valign="top"><p> 0,001 </p></td>
+            </tr>
+            <tr>
+              <td width="133" valign="top"><p> LS-kabel (0,1 km x l<sub>LS-kabel</sub>) </p></td>
+              <td width="128" valign="top"><p> 0,003 </p></td>
+            </tr>
+          </tbody>
+        </table><br>
+        <p> Een kortsluiting heeft alleen invloed op het gedeelte van het net dat gezamenlijk beveiligd is. Dat betekent dat bij een kortsluiting in het onderstation
+          de levering van het gehele onderliggende MS-net onderbroken is. Alle kabels en netstations in de MS-streng zijn gezamenlijk beveiligd. Bij een kortsluiting
+          in een kabel van de MS-streng is de levering van die streng en alle aangesloten netstations onderbroken. Alle kabels in de LS-streng zijn ook gezamenlijk
+          beveiligd. Bij een kortsluiting in een LS-kabel is alleen de levering aan alle aangeslotenen op die LS-streng onderbroken. Dit alles natuurlijk alleen
+          onder de aanname dat de beveiliging selectief is ingesteld en goed functioneert. Door toepassing van formule 12. 7 kan voor alle netdelen de faalfrequentie
+          worden berekend. Elke 'sprong' in de berekende faalfrequentie in tabel 12.6 wordt veroorzaakt door een beveiliging. </p>
+        <h5>Tabel 12.6 Berekende onderbrekingsfrequenties (f) voor het voorbeeldnet van figuur 12.7 </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="105" rowspan="2" valign="top"><p> <strong>Falende component</strong> </p></td>
+              <td width="93" colspan="2" valign="top"><p> <strong>Voedingsstation</strong> </p></td>
+              <td width="90" colspan="2" valign="top"><p> <strong>Netstation MS11</strong> </p></td>
+              <td width="75" valign="top"><p> <strong>LS-knooppunt</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="46" valign="top"><p> <strong>HS-rail</strong> </p></td>
+              <td width="47" valign="top"><p> <strong>MS-rail</strong> </p></td>
+              <td width="47" valign="top"><p> <strong>MS-rail</strong> </p></td>
+              <td width="43" valign="top"><p> <strong>LS-rail</strong> </p></td>
+              <td width="75" valign="top"><p> <strong> </strong> </p></td>
+            </tr>
+            <tr>
+              <td width="105" valign="top"><p> Netvoeding </p></td>
+              <td width="46" valign="top"><p align="center"> 0,110 </p></td>
+              <td width="47" valign="top"><p align="center"> 0,110 </p></td>
+              <td width="47" valign="top"><p align="center"> 0,110 </p></td>
+              <td width="43" valign="top"><p align="center"> 0,110 </p></td>
+              <td width="75" valign="top"><p align="center"> 0,110 </p></td>
+            </tr>
+            <tr>
+              <td width="105" valign="top"><p> HS/MS-transformator </p></td>
+              <td width="46" valign="top"></td>
+              <td width="47" valign="top"><p align="center"> 0,014 </p></td>
+              <td width="47" valign="top"><p align="center"> 0,014 </p></td>
+              <td width="43" valign="top"><p align="center"> 0,014 </p></td>
+              <td width="75" valign="top"><p align="center"> 0,014 </p></td>
+            </tr>
+            <tr>
+              <td width="105" valign="top"><p> 5 MS-kabels </p></td>
+              <td width="46" valign="top"></td>
+              <td width="47" valign="top"></td>
+              <td width="47" valign="top"><p align="center"> 0,050 </p></td>
+              <td width="43" valign="top"><p align="center"> 0,050 </p></td>
+              <td width="75" valign="top"><p align="center"> 0,050 </p></td>
+            </tr>
+            <tr>
+              <td width="105" valign="top"><p> MS/LS-transformator </p></td>
+              <td width="46" valign="top"></td>
+              <td width="47" valign="top"></td>
+              <td width="47" valign="top"></td>
+              <td width="43" valign="top"><p align="center"> 0,001 </p></td>
+              <td width="75" valign="top"><p align="center"> 0,001 </p></td>
+            </tr>
+            <tr>
+              <td width="105" valign="top"><p> 5 LS-kabels </p></td>
+              <td width="46" valign="top"></td>
+              <td width="47" valign="top"></td>
+              <td width="47" valign="top"></td>
+              <td width="43" valign="top"></td>
+              <td width="75" valign="top"><p align="center"> 0,015 </p></td>
+            </tr>
+            <tr>
+              <td width="105" valign="top"><p> Totaal </p></td>
+              <td width="46" valign="top"><p align="center"> 0,110 </p></td>
+              <td width="47" valign="top"><p align="center"> 0,124 </p></td>
+              <td width="47" valign="top"><p align="center"> 0,174 </p></td>
+              <td width="43" valign="top"><p align="center"> 0,175 </p></td>
+              <td width="75" valign="top"><p align="center"> 0,190 </p></td>
+            </tr>
+          </tbody>
+        </table><br>
+        <p> De faalfrequenties (<em>l </em>) van componenten worden vaak als constant verondersteld. In praktijk is de faalfrequentie niet constant, maar onder andere
+          afhankelijk van de leeftijd van de component, de mate van (over)belasting in het verleden en het plegen van onderhoud. Ook beveiligingen kunnen falen, in
+          de zin dat zij onterecht aanspreken dan wel dat zij niet aanspreken terwijl zij dat wel zouden moeten doen (weigeren van de beveiliging). Bij een
+          weigerende beveiliging zal de back-up beveiliging moeten aanspreken, waardoor minder selectief wordt afgeschakeld. </p>
+<a href="https://www.phasetophase.nl/boek/boek_2_12.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_12.2.2"></div>
+        <br>
+        <h3>12.2.2 Herstel van de levering </h3>
+        <p> Naast de reparatieduur is de hersteltijd van belang voor het vaststellen van de niet-beschikbaarheid. De hersteltijd is de tijdsduur tussen het moment van
+          de storing en het herstel van de levering. Hierbij wordt in de meeste gevallen nog niets gerepareerd en wordt de levering hersteld via omschakelacties
+          nadat de gestoorde component is geïsoleerd. De hersteltijd is opgebouwd uit een aantal stappen, met elk een eigen tijdsduur: </p>
+        <ul>
+          <li> signaleren storing </li>
+          <li> inschakelen storingsploeg </li>
+          <li> lokaliseren foutplaats </li>
+          <li> isoleren foutplaats </li>
+          <li> inschakelen geopende schakelaars en omschakelen netopeningen </li>
+        </ul>
+        <h6> Signaleren storing </h6>
+        <p> Nadat een storing heeft plaatsgevonden, waarbij een deel van het net is afgeschakeld, duurt het even voordat de storing bij het bedrijfsvoeringcentrum
+          bekend is. Bij een automatische melding gebeurt dat vrijwel direct. In andere gevallen wordt de storing pas bekend nadat aangeslotenen de storing
+          telefonisch gemeld hebben. </p>
+        <h6> Inschakelen storingsploeg </h6>
+        <p> Nadat de storing is gesignaleerd, wordt een storingsploeg ingeschakeld die zich naar het getroffen gebied verplaatst. De tijd dat dit kost hangt van veel
+          factoren af, zoals tijdstip op de dag en verkeersdruk. Hierbij spelen ervaringscijfers van de betreffende netbeheerder een grote rol. </p>
+        <h6> Lokaliseren foutplaats </h6>
+        <p> Als de storingsploeg ter plaatse is, begint de stap voor het lokaliseren van de foutplaats. Indien op afstand uitleesbare storingsverklikkers zijn
+          toegepast of een foutplaatslokalisatiesysteem wordt gebruikt, is de foutplaats relatief snel te vinden. Als dat niet het geval is, moet de foutplaats
+          worden opgespoord door station voor station de kortsluitverklikkers te inspecteren. Indien één storingsploeg werkzaam is, kan deze kiezen uit de
+          sequentiële en de binaire zoekmethode. Bij de sequentiële methode bekijkt de storingsploeg de toestand van de kortsluitverklikkers van alle
+          netstations in de gestoorde streng vanaf het onderstation in de richting van de netopening (Figuur 12.8). Als de fout zich dicht bij het onderstation
+          bevindt, is dat voordelig. Als de fout zich echter aan het einde van de streng bevindt, kost het zoeken veel tijd. </p>
+        <p> Bij de binaire zoekmethode wordt via een halveringsmethode telkens de helft van het zoekgebied geëlimineerd (Figuur 12.9). Indien een
+          kortsluitverklikker een doorgaande kortsluitstroom heeft gedetecteerd, wordt verder in de richting van de netopening gezocht. Indien dit niet het geval is,
+          wordt terug in de richting van het onderstation gezocht. Met name in lange strengen is de binaire zoekmethode in het voordeel ten opzichte van de
+          sequentiële zoekmethode. Dit is afhankelijk van de afstanden en de reistijden. In praktijk zal de gehanteerde zoekmethode een combinatie zijn van
+          beide methoden, waarbij zoveel mogelijk eerst de netstations met aftakkingen worden bezocht. </p>
+        <p> <img src="./betrouwbaarheid_files/12.8.png" width="712" height="163" alt="pics_2.12" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 12.8 Sequentiële zoekmethode </h5>
+        <p> <img src="./betrouwbaarheid_files/12.9.png" width="712" height="164" alt="pics_2.12" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 12.9 Binaire zoekmethode </h5>
+        <p> Indien de kortsluiting is gelokaliseerd, wordt deze geïsoleerd door de scheiders aan weerszijden te openen. In de meeste gevallen bevindt zich de
+          kortsluiting in een kabelsegment of een mof. De kortsluiting is dan vaak veroorzaakt door graafwerkzaamheden of een spontane storing in een kabel of mof.
+          Indien de kortsluiting zich in een netstation bevindt, worden de kabels aan weerszijden afgeschakeld en kan het netstation niet meer gevoed worden. </p>
+        <h6> Inschakelen geopende schakelaars en omschakelen netopeningen </h6>
+        <p> Bij de meeste storingen in kabeltracés wordt de levering hersteld door de door de beveiliging geopende vermogenschakelaars te sluiten en door een of
+          meer scheiders, die normaal geopend zijn, te sluiten. Nadat de foutplaats is geïsoleerd, is de streng gesplitst in twee gedeeltes. De levering van het
+          eerste gedeelte van de streng kan eenvoudig geschieden door de schakelaar in het onderstation, die door de beveiliging was geopend, te sluiten. Het herstel
+          van de levering van het tweede gedeelte van de streng kan op drie manieren plaatsvinden: </p>
+        <ul>
+          <li> omschakelen via een buurnet door het inschakelen van normaal geopende netscheiders </li>
+          <li> inzetten van een noodstroomvoorziening indien omschakelen niet mogelijk is </li>
+          <li> reparatie of vervanging van de gestoorde component indien omschakelen en inzet van een noodstroomvoorziening niet mogelijk zijn. </li>
+        </ul>
+        <p> Figuur 12.10 toont een ringvormig MS-net met een netopening bij netstation 'MS15'. Indien de kabel tussen netstations 'MS13' en 'MS14' kortgesloten is,
+          wordt de gehele streng afgeschakeld. </p>
+        <p> <img src="./betrouwbaarheid_files/12.10.png" width="712" height="230" alt="pics_2.12" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 12.10 Door kortsluiting uitgeschakelde MS-streng </h5>
+        <p> Figuur 12.11 toont dat de fout is gelokaliseerd tussen de netstations 'MS13' en 'MS14', waarna de scheiders aan beide zijden zijn geopend. De levering is
+          hersteld door enerzijds het inschakelen van de vermogenschakelaar in het onderstation en anderzijds het sluiten van de normaal geopende scheider bij
+          netstation 'MS15'. </p>
+        <p> <img src="./betrouwbaarheid_files/12.11.png" width="712" height="236" alt="pics_2.12" class="img-responsive-leon-15px center-block"> </p>
+        <h5> Figuur 12.11 Geïsoleerde kabelsectie en door inschakeling en omschakeling herstelde levering </h5>
+        <p> Het hangt af van het vermogen van het om te schakelen netdeel of alle netstations door het sluiten van normaal geopende scheiders weer gevoed kunnen
+          worden. Indien de maximale stroombelasting van het alternatieve circuit niet toereikend is, wordt, indien mogelijk, de voeding van de gestoorde netstations
+          verdeeld over twee of meer alternatieve circuits. </p>
+        <h6> Noodstroomvoorziening </h6>
+        <p> In het MS-net komen uitlopers voor, die niet van een andere zijde door het sluiten van normaal geopende scheiders gevoed kunnen worden. Hierbij kan de
+          levering alleen hersteld worden door een noodstroomvoorziening te treffen. Deze bestaat uit een of meerdere aggregaten, die op de netstations kunnen worden
+          aangesloten. De reparatie zal zo snel mogelijk worden uitgevoerd. </p>
+        <p> Indien de kortsluiting zich in een netstation bevindt, kan de levering van het achterliggende LS-net meestal niet worden hersteld via een omschakelactie.
+          In hoofdstuk 2 is toegelicht dat de LS-netten vaak zijn aangelegd met een radiale structuur, waarbij geen storingsreserve aanwezig is. In dat geval kan de
+          levering alleen worden hersteld met behulp van een noodstroomvoorziening. </p>
+        <h6> Reparatie </h6>
+        <p> Indien de levering niet hersteld kan worden door omschakelacties of door inzet van een noodstroomvoorziening, wordt de storingsduur bepaald door de
+          reparatieduur. Volgens tabel 12.2 duurt de reparatie van een LS-kabel ongeveer 10 uren. Volgens tabel 12.3 duurt de reparatie van een MS-kabel gemiddeld
+          ongeveer 100 uren. Deze reparatieduur is gebaseerd op niet-urgente reparatie van een kabel in een MS-distributienet waar de levering door omschakelen is
+          hersteld. Indien de levering niet door omschakelen kan worden hersteld, is de reparatie wel urgent en zal de kabel in kortere tijd gerepareerd worden. </p>
+        <h6> Herstelduur </h6>
+        <p> De te verwachten herstelduur hangt af van de omvang van het net en kan worden berekend uit de som van de tijdsduren die gemoeid zijn met alle individuele
+          herstelacties. Tabel 12.7 geeft een overzicht. De tijdsduren verschillen van bedrijf tot bedrijf en hangen bovendien per distributienet af van de
+          hoeveelheid automatisering, de mogelijkheid de kortsluitverklikkers op afstand uit te lezen en de aanwezigheid van een systeem voor
+          foutplaatslokalisatisatie. </p>
+        <h5>Tabel 12.7 Definitie van tijdsduren voor herstelacties </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="25%" valign="top"><p> T<sub>signaleren</sub> </p></td>
+              <td width="75%" valign="top"><p> Tijdsduur voor het signaleren van een kortsluiting </p></td>
+            </tr>
+            <tr>
+              <td width="64" valign="top"><p> T<sub>storingsploeg</sub> </p></td>
+              <td width="276" valign="top"><p> Tijdsduur voor het inschakelen van de storingsploeg </p></td>
+            </tr>
+            <tr>
+              <td width="64" valign="top"><p> T<sub>lokaliseren</sub> </p></td>
+              <td width="276" valign="top"><p> Tijdsduur voor het lokaliseren van de foutplaats </p></td>
+            </tr>
+            <tr>
+              <td width="64" valign="top"><p> T<sub>isoleren</sub> </p></td>
+              <td width="276" valign="top"><p> Tijdsduur voor het isoleren van de foutplaats </p></td>
+            </tr>
+            <tr>
+              <td width="64" valign="top"><p> T<sub>inschakelen</sub> </p></td>
+              <td width="276" valign="top"><p> Tijdsduur voor het inschakelen van de door de beveiliging afgeschakelde vermogenschakelaar </p></td>
+            </tr>
+            <tr>
+              <td width="64" valign="top"><p> T<sub>omschakelen</sub> </p></td>
+              <td width="276" valign="top"><p> Tijdsduur voor het sluiten van normaal geopende scheiders </p></td>
+            </tr>
+            <tr>
+              <td width="62" valign="top"><p> T<sub>noodstroom</sub> </p></td>
+              <td width="278" valign="top"><p> Tijdsduur voor het inzetten van een noodstroomvoorziening </p></td>
+            </tr>
+            <tr>
+              <td width="62" valign="top"><p> T<sub>reparatie</sub> </p></td>
+              <td width="278" valign="top"><p> Tijdsduur voor het repareren van de gestoorde component </p></td>
+            </tr>
+          </tbody>
+        </table><br>
+        <p> Het hangt af van de structuur van het net of de levering kan worden hersteld door inschakelen en omschakelen of dat een noodstroomvoorziening moet worden
+          getroffen of dat gewacht moet worden op reparatie. Afhankelijk van de wijze waarop wordt hersteld, wordt de hersteltijd bepaald aan de hand van
+          onderstaande formules. Formule 12. 8 berekent het herstel voor het netdeel tussen het onderstation en de foutplaats: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>              <td width="90%"><img src="./betrouwbaarheid_files/formule-12.8.png" alt="formules_2.12"></td>
+<td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 12.8 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <p> Formule 12.9 berekent het herstel voor het netdeel tussen de foutplaats en een netopening: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>              <td width="90%"><img src="./betrouwbaarheid_files/formule-12.9.png" alt="formules_2.12"></td>
+<td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 12.9 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <p> Formule 12.10 berekent het herstel voor een netdeel met behulp van een noodstroomvoorziening: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>              <td width="90%"><img src="./betrouwbaarheid_files/formule-12.10.png" alt="formules_2.12"></td>
+<td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 12.10 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <p> Formule 12.11 berekent het herstel voor een netdeel waarbij op reparatie gewacht moet worden: </p>
+        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>              <td width="90%"><img src="./betrouwbaarheid_files/formule-12.11.png" alt="formules_2.12"></td>
+<td width="2%"><p align="left"> [ </p></td>
+              <td width="6%"><p align="center"> 12.11 </p></td>
+              <td width="2%"><p align="right"> ] </p></td>
+            </tr>
+          </tbody>
+        </table>
+        <p> Voor de kortsluiting in het kabelsegment tussen de knooppunten 'MS13' en 'MS14', zoals afgebeeld in figuur 12.11, wordt hieronder de herstelduur van de
+          middenspanningsknooppunten toegelicht. Hierbij zijn in tabel 12.8 de tijdsduren van de individuele herstelacties willekeurig aangenomen. </p>
+        <h5>Tabel 12.8 Tijdsduren voor herstelacties </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="25%" valign="top"><p> T<sub>signaleren</sub> </p></td>
+              <td width="75%" valign="top"><p> 2 minuten </p></td>
+            </tr>
+            <tr>
+              <td width="64" valign="top"><p> T<sub>storingsploeg</sub> </p></td>
+              <td width="276" valign="top"><p> 30 minuten </p></td>
+            </tr>
+            <tr>
+              <td width="64" valign="top"><p> T<sub>lokaliseren</sub> </p></td>
+              <td width="276" valign="top"><p> 10 minuten per station </p></td>
+            </tr>
+            <tr>
+              <td width="64" valign="top"><p> T<sub>isoleren</sub> </p></td>
+              <td width="276" valign="top"><p> 10 minuten </p></td>
+            </tr>
+            <tr>
+              <td width="64" valign="top"><p> T<sub>inschakelen</sub> </p></td>
+              <td width="276" valign="top"><p> 15 minuten </p></td>
+            </tr>
+            <tr>
+              <td width="64" valign="top"><p> T<sub>omschakelen</sub> </p></td>
+              <td width="276" valign="top"><p> 15 minuten </p></td>
+            </tr>
+            <tr>
+              <td width="64" valign="top"><p> T<sub>noodstroom</sub> </p></td>
+              <td width="276" valign="top"><p> 120 minuten </p></td>
+            </tr>
+            <tr>
+              <td width="64" valign="top"><p> T<sub>reparatie</sub> </p></td>
+              <td width="276" valign="top"><p> gegeven per component </p></td>
+            </tr>
+          </tbody>
+        </table><br>
+        <p> De hersteltijd voor een storing in het HS-net is genomen uit tabel 12.1, waarin de gemiddelde onderbrekingsduur (<em>d</em>) voor storingen in het HS-net
+          50 minuten bedraagt. De hersteltijd voor een storing in de HS/MS-voedingstransformator wordt bepaald door de tijd die gemoeid is met het omschakelen naar
+          de reservetransformator. Voor deze tijdsduur is willekeurig 52 minuten aangenomen. Voor een storing in een van de kabelsegmenten is de hersteltijd door het
+          inschakelen van de afgeschakelde vermogenschakelaar in het onderstation volgens formule 12.8 en tabel 12.8 gelijk aan: T<sub>herstel</sub> = 2 + 30 + 5 x
+          10 + 10 + 15 = 107 minuten. De hersteltijd door het inschakelen van de normaal geopende scheider in netstation 'MS15' is volgens formule 12.9 en tabel 12.8
+          gelijk aan: T<sub>herstel</sub> = 2 + 30 + 5 x 10 + 10 + 15 + 15 = 122 minuten. Hiermee kan tabel 12.9 voor de MS-knooppunten van de gestoorde streng
+          worden samengesteld. </p>
+        <h5>Tabel 12.9 Herstelduren (d) voor de MS-streng </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td rowspan="2" valign="top"><p> <strong>Falende component</strong> </p></td>
+              <td colspan="6" valign="top"><p align="center"> <strong>Herstelduur (min)</strong> </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p align="center"> <strong>MS-rail</strong> </p></td>
+              <td valign="top"><p align="center"> <strong>MS11</strong> </p></td>
+              <td valign="top"><p align="center"> <strong>MS12</strong> </p></td>
+              <td valign="top"><p align="center"> <strong>MS13</strong> </p></td>
+              <td valign="top"><p align="center"> <strong>MS14</strong> </p></td>
+              <td valign="top"><p align="center"> <strong>MS15</strong> </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p> Netvoeding </p></td>
+              <td valign="top"><p align="center"> 50 </p></td>
+              <td valign="top"><p align="center"> 50 </p></td>
+              <td valign="top"><p align="center"> 50 </p></td>
+              <td valign="top"><p align="center"> 50 </p></td>
+              <td valign="top"><p align="center"> 50 </p></td>
+              <td valign="top"><p align="center"> 50 </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p> HS/MS-transformator </p></td>
+              <td valign="top"><p align="center"> 52 </p></td>
+              <td valign="top"><p align="center"> 52 </p></td>
+              <td valign="top"><p align="center"> 52 </p></td>
+              <td valign="top"><p align="center"> 52 </p></td>
+              <td valign="top"><p align="center"> 52 </p></td>
+              <td valign="top"><p align="center"> 52 </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p> MS-kabel: MS-rail-MS11 </p></td>
+              <td valign="top"><p align="center"> 0 </p></td>
+              <td valign="top"><p align="center"> 122 </p></td>
+              <td valign="top"><p align="center"> 122 </p></td>
+              <td valign="top"><p align="center"> 122 </p></td>
+              <td valign="top"><p align="center"> 122 </p></td>
+              <td valign="top"><p align="center"> 122 </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p> MS-kabel: MS11-MS12 </p></td>
+              <td valign="top"><p align="center"> 0 </p></td>
+              <td valign="top"><p align="center"> 107 </p></td>
+              <td valign="top"><p align="center"> 122 </p></td>
+              <td valign="top"><p align="center"> 122 </p></td>
+              <td valign="top"><p align="center"> 122 </p></td>
+              <td valign="top"><p align="center"> 122 </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p> MS-kabel: MS12-MS13 </p></td>
+              <td valign="top"><p align="center"> 0 </p></td>
+              <td valign="top"><p align="center"> 107 </p></td>
+              <td valign="top"><p align="center"> 107 </p></td>
+              <td valign="top"><p align="center"> 122 </p></td>
+              <td valign="top"><p align="center"> 122 </p></td>
+              <td valign="top"><p align="center"> 122 </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p> MS-kabel: MS13-MS14 </p></td>
+              <td valign="top"><p align="center"> 0 </p></td>
+              <td valign="top"><p align="center"> 107 </p></td>
+              <td valign="top"><p align="center"> 107 </p></td>
+              <td valign="top"><p align="center"> 107 </p></td>
+              <td valign="top"><p align="center"> 122 </p></td>
+              <td valign="top"><p align="center"> 122 </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p> MS-kabel: MS14-MS15 </p></td>
+              <td valign="top"><p align="center"> 0 </p></td>
+              <td valign="top"><p align="center"> 107 </p></td>
+              <td valign="top"><p align="center"> 107 </p></td>
+              <td valign="top"><p align="center"> 107 </p></td>
+              <td valign="top"><p align="center"> 107 </p></td>
+              <td valign="top"><p align="center"> 122 </p></td>
+            </tr>
+          </tbody>
+        </table><br>
+        <p> Door gebruik te maken van formule 12.1 kan tabel 12.10 voor de jaarlijkse uitvalduur worden samengesteld. Hierbij worden de berekende herstelduren van
+          tabel 12.9 vermenigvuldigd met de uitvalfrequentie van de betreffende falende component. Zo is de jaarlijkse uitvalduur voor knooppunt 'MS13' voor een
+          kortsluiting in de MS-kabel tussen de knooppunten 'MS12' en 'MS13' gegeven door: </p>
+        <p> p = 0,01 x 122 = 1,22 min/jaar </p>
+        <p> en voor een kortsluiting in de MS-kabel tussen de knooppunten 'MS13' en 'MS14' gegeven door: </p>
+        <p> p = 0,01 x 107 = 1,07 min/jaar. </p>
+        <h5> Tabel 12.10 Jaarlijkse uitvalduur (p) voor de MS-streng </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td rowspan="2" valign="top"><p> <strong>Falende component</strong> </p></td>
+              <td colspan="6" valign="top"><p align="center"> <strong>Jaarlijkse uitvalduur (min/jaar)</strong> </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p align="center"> <strong>MS-rail</strong> </p></td>
+              <td valign="top"><p align="center"> <strong>MS11</strong> </p></td>
+              <td valign="top"><p align="center"> <strong>MS12</strong> </p></td>
+              <td valign="top"><p align="center"> <strong>MS13</strong> </p></td>
+              <td valign="top"><p align="center"> <strong>MS14</strong> </p></td>
+              <td valign="top"><p align="center"> <strong>MS15</strong> </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p> Netvoeding </p></td>
+              <td valign="top"><p align="center"> 5,50 </p></td>
+              <td valign="top"><p align="center"> 5,50 </p></td>
+              <td valign="top"><p align="center"> 5,50 </p></td>
+              <td valign="top"><p align="center"> 5,50 </p></td>
+              <td valign="top"><p align="center"> 5,50 </p></td>
+              <td valign="top"><p align="center"> 5,50 </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p> HS/MS-transformator </p></td>
+              <td valign="top"><p align="center"> 0,73 </p></td>
+              <td valign="top"><p align="center"> 0,73 </p></td>
+              <td valign="top"><p align="center"> 0,73 </p></td>
+              <td valign="top"><p align="center"> 0,73 </p></td>
+              <td valign="top"><p align="center"> 0,73 </p></td>
+              <td valign="top"><p align="center"> 0,73 </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p> MS-kabel: MS-rail-MS11 </p></td>
+              <td valign="top"><p align="center"> 0 </p></td>
+              <td valign="top"><p align="center"> 1,22 </p></td>
+              <td valign="top"><p align="center"> 1,22 </p></td>
+              <td valign="top"><p align="center"> 1,22 </p></td>
+              <td valign="top"><p align="center"> 1,22 </p></td>
+              <td valign="top"><p align="center"> 1,22 </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p> MS-kabel: MS11-MS12 </p></td>
+              <td valign="top"><p align="center"> 0 </p></td>
+              <td valign="top"><p align="center"> 1,07 </p></td>
+              <td valign="top"><p align="center"> 1,22 </p></td>
+              <td valign="top"><p align="center"> 1,22 </p></td>
+              <td valign="top"><p align="center"> 1,22 </p></td>
+              <td valign="top"><p align="center"> 1,22 </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p> MS-kabel: MS12-MS13 </p></td>
+              <td valign="top"><p align="center"> 0 </p></td>
+              <td valign="top"><p align="center"> 1,07 </p></td>
+              <td valign="top"><p align="center"> 1,07 </p></td>
+              <td valign="top"><p align="center"> 1,22 </p></td>
+              <td valign="top"><p align="center"> 1,22 </p></td>
+              <td valign="top"><p align="center"> 1,22 </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p> MS-kabel: MS13-MS14 </p></td>
+              <td valign="top"><p align="center"> 0 </p></td>
+              <td valign="top"><p align="center"> 1,07 </p></td>
+              <td valign="top"><p align="center"> 1,07 </p></td>
+              <td valign="top"><p align="center"> 1,07 </p></td>
+              <td valign="top"><p align="center"> 1,22 </p></td>
+              <td valign="top"><p align="center"> 1,22 </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p> MS-kabel: MS14-MS15 </p></td>
+              <td valign="top"><p align="center"> 0 </p></td>
+              <td valign="top"><p align="center"> 1,07 </p></td>
+              <td valign="top"><p align="center"> 1,07 </p></td>
+              <td valign="top"><p align="center"> 1,07 </p></td>
+              <td valign="top"><p align="center"> 1,07 </p></td>
+              <td valign="top"><p align="center"> 1,22 </p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p> Totaal </p></td>
+              <td valign="top"><p align="center"> 6,23 </p></td>
+              <td valign="top"><p align="center"> 11,73 </p></td>
+              <td valign="top"><p align="center"> 11,88 </p></td>
+              <td valign="top"><p align="center"> 12,03 </p></td>
+              <td valign="top"><p align="center"> 12,18 </p></td>
+              <td valign="top"><p align="center"> 12,33 </p></td>
+            </tr>
+          </tbody>
+        </table><br>
+        <p> De afzonderlijke bijdragen aan de jaarlijkse uitvalduur, zoals vermeld in tabel 12.10, kunnen per knooppunt worden gesommeerd. Zo is de totale jaarlijkse
+          uitvalduur van netstation 'MS13' ten gevolge van alle storingen in dit voorbeeld gelijk aan 12,03 minuten (12 minuten en 2 seconden). </p>
+        <p> Met behulp van de berekende faalfrequenties van tabel 12.6 kan met behulp van formule 12.1 de gemiddelde onderbrekingsduur voor elk netstation worden
+          berekend. Alle berekende betrouwbaarheidskentallen voor dit voorbeeld zijn samengevat in tabel 12.11. </p>
+        <h5>Tabel 12.11 Betrouwbaarheidskentallen voor de MS-streng </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="99" valign="top"><p> <strong> </strong> </p></td>
+              <td width="40" valign="top"><p> <strong>MS-rail</strong> </p></td>
+              <td valign="top"><p> <strong>MS11</strong> </p></td>
+              <td valign="top"><p> <strong>MS12</strong> </p></td>
+              <td valign="top"><p> <strong>MS13</strong> </p></td>
+              <td valign="top"><p> <strong>MS14</strong> </p></td>
+              <td valign="top"><p> <strong>MS15</strong> </p></td>
+              <td valign="top"><p> <strong> </strong> </p></td>
+            </tr>
+            <tr>
+              <td width="99" valign="top"><p> Faalfrequentie (<em>f</em>) </p></td>
+              <td width="40" valign="top"><p> 0,124 </p></td>
+              <td valign="top"><p> 0,174 </p></td>
+              <td valign="top"><p> 0,174 </p></td>
+              <td valign="top"><p> 0,174 </p></td>
+              <td valign="top"><p> 0,174 </p></td>
+              <td valign="top"><p> 0,174 </p></td>
+              <td valign="top"><p> per jaar </p></td>
+            </tr>
+            <tr>
+              <td width="99" valign="top"><p> Jaarlijkse uitvalduur (<em>p</em>) </p></td>
+              <td width="40" valign="top"><p> 6,23 </p></td>
+              <td valign="top"><p> 11,73 </p></td>
+              <td valign="top"><p> 11,88 </p></td>
+              <td valign="top"><p> 12,03 </p></td>
+              <td valign="top"><p> 12,18 </p></td>
+              <td valign="top"><p> 12,33 </p></td>
+              <td valign="top"><p> min/jaar </p></td>
+            </tr>
+            <tr>
+              <td width="99" valign="top"><p> Gemiddelde onderbrekingsduur (<em>d</em>) </p></td>
+              <td width="40"><p> 50 </p></td>
+              <td><p> 67 </p></td>
+              <td><p> 68 </p></td>
+              <td><p> 69 </p></td>
+              <td><p> 70 </p></td>
+              <td><p> 71 </p></td>
+              <td><p> min </p></td>
+            </tr>
+          </tbody>
+        </table><br>
+        <a href="https://www.phasetophase.nl/boek/boek_2_12.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+        <div id="_12.3"></div>
+        <br>
+        <h2>12.3 Verbetering van de betrouwbaarheid </h2>
+        <p> Het economisch belang van een goede betrouwbaarheid is moeilijk eenduidig vast te stellen. Het is weliswaar eenvoudig de kosten van niet geleverde energie
+          (NGE) uit te rekenen aan de hand van de te verwachten jaarlijkse uitvalduur en een prijs per kWh niet-geleverde energie, maar de gevolgen voor alle
+          aangeslotenen zijn zeer divers. Zo wordt aangenomen dat de meeste huishoudelijke aangeslotenen na een korte onderbreking eenvoudig weer verder kunnen met
+          hun processen. Moeilijker wordt het wanneer aangeslotenen voor dataverwerking afhankelijk zijn van een ononderbroken levering. De kosten van dataverlies en
+          de herstelwerkzaamheden kunnen aanzienlijk zijn. Ook in de procestechnologie lopen de gevolgen van een onderbreking sterk uiteen. Sommige met behulp van
+          computers gestuurde processen liggen al na een zeer kortdurende onderbreking geheel stil. Bij andere processen, zoals in de chemie, gaat een onderbreking
+          gepaard met lozingen van chemische stoffen met milieuschade tot gevolg en kunnen leidingen door de stilstand verstopt raken. </p>
+        <p> <img src="./betrouwbaarheid_files/12.12.png" width="708" height="354" alt="pics_2.12" class="img-responsive-leon-15px center-block"> </p>
+        <h5>Figuur 12.12 Onderbrekingsduur versus onderbrekingsfrequentie in Europa </h5>
+        <p> In Nederland bewaakt de toezichthouder de betrouwbaarheid met een bonus/malussysteem. Binnen Netbeheer Nederland is afgesproken dat elke netbeheerder de
+          betrouwbaarheid nauwkeurig registreert volgens een onderling afgesproken systeem. Een van de belangrijkste parameters, waarover wordt gepubliceerd, is de
+          gemiddelde jaarlijkse onderbrekingsduur. Deze belangrijke maatschappelijke parameter wordt vergeleken met het landelijk gemiddelde (Figuur 12.1), waarbij
+          ernaar gestreefd wordt het eigen getal lager te houden dan het landelijk gemiddelde. Overigens heeft het elektriciteitsnet in Nederland een hoge
+          betrouwbaarheid, vergeleken met andere Europese landen, zoals afgebeeld in figuur 12.12 (CEER, 2008), (Kema, 2011). De gemiddelde jaarlijkse
+          onderbrekingsduur van Nederland is met 33,7 minuten per jaar over 2010 (Figuur 12.1), samen met de netten van Denemarken en Duitsland het laagst in Europa.
+          In de netten van de meeste andere Europese landen ligt deze waarde tussen 50 en 100 minuten per jaar. Ook waarden van 200 minuten per jaar en meer komen
+          voor. Daarnaast was de gemiddelde onderbrekingsfrequentie ten gevolge van storingen in het HS-, MS- en LS-net met 0,34 maal per jaar in 2010 (Figuur 12.3)
+          het laagst in Europa. De meeste buurlanden hebben een gemiddelde onderbrekingsfrequentie tussen 0,5 en 1,0 per jaar, maar ook waarden tussen 2,0 en 2,5
+          komen in de Europese landen voor. </p>
+        <p> De betrouwbaarheid kan worden verbeterd door enerzijds het onderbrekingsrisico te verkleinen en anderzijds de consequenties van storingen te beperken. Aan
+          de ene kant zijn er krachten die de betrouwbaarheid bedreigen en aan de andere kant zijn er krachten voor het in stand houden van de betrouwbaarheid. Tabel
+          12.12 geeft een overzicht van de belangrijkste krachten. </p>
+        <h5>Tabel 12.12 Bedreigende en in stand houdende krachten van de betrouwbaarheid </h5>
+        <table border="1" bordercolor="#CBCBCB" cellspacing="0" cellpadding="0" width="100%">
+          <tbody>
+            <tr>
+              <td width="158" valign="top"><p> <strong>Bedreigende krachten</strong> </p></td>
+              <td width="210" valign="top"><p> <strong>In stand houdende krachten</strong> </p></td>
+            </tr>
+            <tr>
+              <td width="158" valign="top"><p> Graafwerkzaamheden </p>
+                <p> Falende componenten </p>
+                <p> Slechte montage </p>
+                <p> Overbelasting </p>
+                <p> Sterk wisselende belasting </p>
+                <p> Overspanning </p></td>
+              <td width="210" valign="top"><p> Registratie van graafwerk en kabeltracés </p>
+                <p> Onderhoud </p>
+                <p> Opleiding van personeel </p>
+                <p> Preventief storingen zoeken </p>
+                <p> Verschakelen bij overbelasting </p>
+                <p> Repareren van stand-by staande componenten </p></td>
+            </tr>
+          </tbody>
+        </table><br>
+        <p> Aangezien de jaarlijkse uitvalduur wordt bepaald door zowel het aantal onderbrekingen als de onderbrekingsduur, gaat de aandacht naar beide aspecten uit.
+          Bij het verkleinen van het onderbrekingsrisico moet eerst gekeken worden naar de oorzaken. Volgens figuur 12.5 wordt een derde van het aantal
+          onderbrekingen veroorzaakt door storingen in moffen en een kwart door beschadigingen tijdens graafwerkzaamheden. Daarnaast wordt een vijfde veroorzaakt
+          door een defect in een kabel. Samenvattend kan het onderbrekingsrisico worden verkleind door: </p>
+<ul>
+          <li> betere registratie van het graafwerk en goede informatie-uitwisseling van kabeltracés </li>
+          <li> ondeugdelijke moffen: opsporen en vervangen  </li>
+          <li>zorgvuldige keuze van netcomponenten: goede dimensionering, waardoor geen overbelasting optreedt </li>
+          <li>zorgvuldige installatie van netcomponenten: het installeren van kabelmoffen is grotendeels handwerk, waarbij fouten zich meestal na langere tijd
+            openbaren </li>
+          <li> zorgen voor een adequaat onderhoudsschema: met name stofvrij en droog houden van onderstations en netstations reduceert het aantal storingen </li>
+          <li>goed net- en belastingsbeheer: hiermee wordt voorkomen dat door uitbreiding van het aantal aangeslotenen het net onvoorzien overbelast wordt </li>
+          <li> sectioneren van strengen: bij een kortsluiting aan het einde van een streng wordt slechts een gedeelte van de streng afgeschakeld. </li>
+        </ul>
+        <p> De consequenties van storingen worden verkleind door: </p>
+        <ul>
+          <li> voorkomen van uitlopers: maak een verbinding naar een in de buurt gelegen voedingspunt </li>
+          <li> meer MS-voedingspunten: hiermee kunnen MS-strenglengtes worden gereduceerd </li>
+          <li> aanbrengen van storingsverklikkers die eventueel op afstand uitleesbaar zijn </li>
+          <li> toepassen van een systeem voor foutplaatslokalisatie. </li>
+        </ul>
+        <p> Alle maatregelen ter verbetering van de betrouwbaarheid zijn alleen zinvol als de kosten lager zijn dan de bereikte voordelen. Maatregelen die leiden tot
+          een lager onderbrekingsrisico hebben bovendien het voordeel dat zij leiden tot verlaging van de reparatiekosten. In dit licht moet ook worden bezien dat
+          het uitstellen van investeringen kan leiden tot een groter uitvalpercentage. Ook hier moeten de besparingen worden vergeleken met de te verwachte kosten
+          die gemoeid zijn met een onderbreking. </p>
+        <p> Het Nederlandse elektriciteitsnet is na 1960 zeer fors uitgebreid. Indien rekening wordt gehouden met een levensduurverwachting van 40 tot 70 jaren voor de
+          meeste componenten van het net, moet binnenkort een groot aantal componenten worden vervangen. Om deze reden worden studies uitgevoerd om te bezien in
+          hoeverre componenten vroeger of later in aanmerking komen om te worden vervangen. Door kritieke componenten op het juiste moment te vervangen worden niet
+          alleen kosten bespaard, maar wordt de te verwachten vervangingsgolf beheersbaar. Met name kabels en moffen die in het verleden zijn blootgesteld aan (te)
+          grote belastingen en kortsluitstromen, komen eerder in aanmerking voor vervanging. Kabels die altijd maximaal tot een optimale stroomsterkte zijn belast
+          (ongeveer 70% van hun nominale waarde) hebben doorgaans een langere levensduur. </p>
+      </div>
+      <div class="col-lg-2 hidden-md">&nbsp;</div>
+    </div>
+  </div>
+</div>
+
+
+<div id="includeFooter" class="container-fluid-footer"><div class="container">
+  <div class="row">
+    <div class="text-justify col-xs-6 col-sm-3">
+      <img src="./betrouwbaarheid_files/logo-s-360px-grijs.png" alt="ptp_logo" width="230">
+    </div>
+    <div class="col-xs-6 col-sm-9">
+        <p> Phase to Phase is onderdeel van <a href="https://www.technolution.nl/">Technolution</a>. © 2009-2021 </p>
+    </div>
+  </div>
+</div></div></body></html>

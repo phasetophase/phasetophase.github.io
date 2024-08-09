@@ -1,0 +1,2634 @@
+<!DOCTYPE html>
+
+<!-- saved from url=(0046)https://www.phasetophase.nl/boek/boek_2_8.html -->
+<html class="wf-ffscalasansweb-n7-active wf-ffscalasansweb-n4-active wf-ffscalasansweb-i4-active wf-active" lang="en"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Phase to Phase – Netten voor distributie van elektriciteit</title>
+<!-- Bootstrap -->
+<link href="./modellen_files/bootstrap-2-boek.css" rel="stylesheet"/>
+<style type="text/css">
+	body,td,th {
+	font-family: ff-scala-sans-web, sans-serif;
+}
+body {
+	background-color: #F7F7F7;
+}
+    </style>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+<script src="./modellen_files/qke6lfb.js.download"></script>
+<style type="text/css">.tk-ff-scala-sans-web{font-family:"ff-scala-sans-web",sans-serif;}</style><style type="text/css">@font-face{font-family:tk-ff-scala-sans-web-n7;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-n4;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:tk-ff-scala-sans-web-i4;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style><script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script src="./modellen_files/jquery-1.11.3.min.js.download"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./modellen_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H8Q9E8BJ7Q');
+</script>
+<script>
+$(function(){
+  $("#includedHeader").load("/boek/header.html");
+  $("#includeFooter").load("/boek/footer.html"); 
+});
+</script><style type="text/css">@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/b1e193/0000000000000000000169ac/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/79b9ae/0000000000000000000169b3/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:ff-scala-sans-web;src:url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/l?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/d?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/cd04b8/0000000000000000000169b0/27/a?primer=4af4cbd7cac4bae9441a53be6e2bf63984266e26c61ed65145fe44d42af09bb1&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-stretch:normal;font-display:auto;}</style>
+</head>
+<body style="padding-top: 50px">
+<div id="includedHeader"> <nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="container">
+<!-- Brand and toggle get grouped for better mobile display -->
+<div class="navbar-header">
+<button aria-expanded="false" class="navbar-toggle collapsed" data-target="#topFixedNavbar1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+<a class="navbar-brand" href="https://www.phasetophase.nl/">Phase to Phase</a></div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="topFixedNavbar1">
+<ul class="nav navbar-nav">
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li></li>
+</ul>
+</div><!-- /.navbar-collapse -->
+</div><!-- /.container -->
+</nav>
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<p></p>
+</div>
+</div>
+</div>
+<div class="container-fluid-boek">
+<div class="container">
+<div class="row-in-header">
+<div class="text-justify col-xs-6 col-sm-6">
+<img alt="Phase to Phase logo 360px" class="hidden-xs" src="./modellen_files/logo-s-360px-wit.png" width="366"/>
+<img alt="Phase to Phase logo 261px" class="visible-xs" src="./modellen_files/logo-s-360px-wit.png" width="261"/>
+</div>
+<div class="col-xs-6 hidden-xs col-sm-6">
+</div>
+</div>
+<div class="row-in-header">
+<div class="text-left col-xs-9 col-sm-9"> <p></p><h8>ICT voor elektriciteitsnetten</h8>
+</div>
+<div class="col-xs-3 col-sm-3">
+</div>
+</div>
+<div class="row-in-header-2">
+<div class="text-justify col-xs-6 col-sm-6"> 
+	</div>
+<div class="col-xs-6 hidden-xs col-sm-6">
+<h7> </h7>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row-intro">
+<h1><a href="https://www.phasetophase.nl/boek/index.html"> Netten voor distributie van elektriciteit</a></h1>
+</div></div></div>
+<div class="row-ohm-center-white"> <a name="top"></a>
+<div class="row-b">
+<a href="https://www.phasetophase.nl/boek/index.html"><button class="btn btn-default" type="button">I – De opbouw van een net</button></a>
+<a href="https://www.phasetophase.nl/boek/boek_2_7.html"><button class="btn btn-default active" type="button">II – Rekenen aan een net</button></a>
+<a href="https://www.phasetophase.nl/boek/boek_3_13.html"><button class="btn btn-default" type="button">III – Ontwerpen en bedrijfsvoeren</button></a>
+</div>
+<div class="row-b">
+<a href="https://www.phasetophase.nl/boek/boek_2_7.html">
+<button class="btn btn-default1" type="button">7 Rekentechnische basis</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_2_8.html">
+<button class="btn btn-default1 active" type="button">8 Modellen</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_2_9.html">
+<button class="btn btn-default1" type="button">9 Loadflowberekeningen</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_2_10.html">
+<button class="btn btn-default1" type="button">10 Kortsluitstroomberekeningen</button> </a> <a href="https://www.phasetophase.nl/boek/boek_2_11.html">
+<button class="btn btn-default1" type="button">11 Power Quality</button>
+</a> <a href="https://www.phasetophase.nl/boek/boek_2_12.html">
+<button class="btn btn-default1" type="button">12 Betrouwbaarheid</button>
+</a>
+<div class="row">
+<div class="col-md-12 col-lg-10">
+<h3>Modellen</h3>
+<p>Chapter 8 provides a description of most models of components that make up an electrical grid and of devices that can be connected to an electrical grid. The models are used for performing load flow and short-circuit current calculations.</p>
+<div class="row">
+<div class="col-md-6">
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8"><strong>8  Models</strong></a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8.1">8.1 The external grid</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8.2">8.2 Cables</a></li>
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8.2.1">8.2.1 Normal impedance</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8.2.2">8.2.2  Inverse impedance</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8.2.3">8.2.3 Loss</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8.2.4">8.2.4  Maximum current-carrying capacity</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8.2.5">8.2.5 Homopolar impedance</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8.2.6">8.2.6 Influence of grounding electrode and earth</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8.2.7">8.2.7  Measurement of the homopolar impedance</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8.2.8">8.2.8  Extended model for the low-voltage cable</a></li>
+</ul>
+</ul>
+</div>
+<div class="col-md-6">
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8.3">8.3  Transformers</a></li>
+<ul style="list-style-type:none">
+<li><a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8.3.1">8.3.1 Winding Configuration</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8.3.2">8.3.2  Transformation Ratio</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8.3.3">8.3.3  Parameters for transformers with two windings</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8.3.4">8.3.4  Parameters for transformers with three windings</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8.3.5">8.3.5  Inverse Impedance</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8.3.6">8.3.6 Homopolar parameters</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8.3.7">8.3.7 Correction for short-circuit calculations according to IEC</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8.3.8">8.3.8  Inrush Currents</a></li>
+</ul>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8.4">8.4 Grounding Transformer and Neutral Point Transformer</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8.5">8.5  Reactors</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8.6">8.6  Load</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8.7">8.7  Generation</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8.8">8.8  Generators</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8.9">8.9  Motors</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8.10">8.10  Converters and rectifiers</a></li>
+<li><a href="https://www.phasetophase.nl/boek/boek_2_8.html#_8.11">8.11  Wind Turbine Generators</a></li>
+</ul>
+</div>
+</div>
+<hr/>
+<h1>8 Models</h1>
+<p>All calculations on an electrical grid use specific properties of the components, which are defined in models. A model describes the behavior of a component for the desired calculations. Each type of calculation uses its own model for each component type. This chapter describes the models for:</p>
+<ul>
+<li>external network</li>
+<li>kabel</li>
+<li>transformator</li>
+<li>belasting</li>
+<li>generator</li>
+<li>motor</li>
+</ul> <a href="https://www.phasetophase.nl/boek/boek_2_8.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_8.1"></div>
+<br/>
+<h2>8.1 The External Network</h2>
+<p>For the study of an electrical network, the expert always limits themselves to the part that needs to be designed or modified. This means that the network model usually consists of a limited portion of the total network, with the part to be studied connected to an external network that represents the outside world. The external network is a simplification of everything that is not modeled but is still important for the calculation. This can be a higher-level distribution network, a medium-voltage transmission network, or a high-voltage network. The basic principle here is that the higher-level supplying network exhibits constant behavior in relation to the network segment being studied. Therefore, it is simplified to a basic network supply.</p>
+<p>A network supply represents the external grid, for which it is assumed that the voltage during normal operation is known. It is not the case that the voltage is constant at all times. If the voltage varies over a large area, calculations are usually performed for the extreme situations of maximum and minimum supply voltage. In load flow calculations, the network supply ensures that the voltage at the node to which it is connected remains constant. This means that the magnitude and angle of the voltage vector are fixed.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.1.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.1</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>in which:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="60"><em>U<sub>eff</sub></em></td>
+<td>effective value of the mains voltage</td>
+</tr>
+<tr>
+<td><em>θ</em></td>
+<td>angle of the voltage vector of the mains supply</td>
+</tr>
+</tbody>
+</table><br/>
+<p>During a short circuit, the voltage of the mains supply can no longer be assumed to be constant as in normal situations. The mains supply represents a section of the electrical grid and has a certain impedance. This impedance is particularly noticeable in short circuit situations and is therefore called the short circuit impedance. During a short circuit in a medium voltage network, such large currents can flow that the voltage at the supply point drops significantly.</p>
+<p>At a certain supply point, the short circuit impedance is not readily known. However, the short circuit power can<em>S<sub>kQ</sub>"</em>or the short circuit current contribution
+          I<sub>kQ</sub>"can be measured or calculated. From this, the short circuit impedance"<em>Z<sub>Q</sub></em>calculated according to:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.2.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.2</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>Herein is<em>U<sub>nQ</sub></em>the nominal coupled voltage of the power supply for the short circuit situation. The factor<em>c</em>is a correction factor. This has been introduced for short-circuit calculations according to the international standard IEC 60909. This factor accounts for a number of uncertainties in the external network, such as:</p>
+<ul>
+<li>random voltage variations in time and place</li>
+<li>changing transformer tap positions</li>
+<li>neglecting loads and capacities</li>
+<li>the subtransient behavior of generators and motors.</li>
+</ul>
+<p>The value of the factor<em>c</em>depends on the calculation and the voltage level. Table 8.1 provides an overview, as used in IEC 60909.</p>
+<h5>Table 8.1  Voltage Factors According to IEC 60909</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td rowspan="2" valign="top" width="50%"><p>Nominal voltage</p></td>
+<td colspan="2" valign="top" width="5	0%	"><p align="center">Spanningsfactor<em>c</em>for the calculation of</p></td>
+</tr>
+<tr>
+<td valign="top" width="93"><p align="center">maximum short-circuit current</p></td>
+<td valign="top" width="94"><p align="center">minimum short-circuit current</p></td>
+</tr>
+<tr>
+<td valign="top" width="161"><p>Low voltage systems with:</p>
+<p>• a tolerance of +6%</p>
+<p>• a tolerance of +10%</p></td>
+<td valign="top" width="93"><p align="center"> </p>
+<p align="center">1.05</p>
+<p align="center">1.10</p></td>
+<td valign="top" width="93"><p align="center"> </p>
+<p align="center">0.95</p>
+<p align="center">0.95</p></td>
+</tr>
+<tr>
+<td valign="top" width="161"><p>Medium voltage and high voltage</p></td>
+<td valign="top" width="93"><p align="center">1.10</p></td>
+<td valign="top" width="94"><p align="center">1.00</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>For all other calculations, the factor is<em>c</em>equal to 1.</p>
+<p>The resistance and reactance of the network supply impedance are calculated from the R/X ratio:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.3.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.3</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>If the R/X ratio is not known, it may be assumed according to IEC 60909:</p>
+<ul>
+<li>for voltage levels higher than 35 kV:<em>R/X = 0.0</em></li>
+<li>for voltage levels lower than or equal to 35 kV:<em>R/X = 0.1</em></li>
+</ul>
+<p>In Dutch medium voltage networks, a value of 0.1 for the R/X ratio is reasonable near a substation, but further into the MV network, this value increases due to the R/X ratio of the MV cables. For the supply of an LV network, network calculations usually assume supply from the MV side of the network transformer.</p>
+<p>For calculations involving asymmetrical situations and situations where contact is made with the ground, such as a phase-to-ground fault, the symmetrical components method is used (see Chapter 7). The impedances used for this are the normal impedance, which is equal to the short-circuit impedance, the inverse impedance, which is equal to the normal impedance, and the homopolar impedance, which is expressed in the ratio of<em>Z<sub>0</sub>/Z<sub>1</sub></em>:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.4.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">8.4</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The ratio of<em>Z<sub>0</sub>/Z<sub>1</sub></em>can be calculated from the three-phase short-circuit current<em>I<sub>k,3</sub>"</em>and the phase-to-ground short-circuit current<em>I<sub>k,1</sub>"</em>from the power supply:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.5.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">8.5</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The three-phase short-circuit current is the short-circuit contribution from the external grid. This contribution is determined for the connection point of the external grid with the network segment under study and is not dependent on the network segment. However, the phase-to-ground short-circuit current contribution from the external grid does depend on the network under study. Therefore, the phase-to-ground short-circuit current contribution is defined as the phase-to-ground short-circuit current in the absence of the network under study. If the power supply cannot carry homopolar current, the ratio of<em>Z<sub>0</sub>/Z<sub>1</sub></em>infinite. This is the case when the power supply is an isolated network. If the neutral point in the external network is impedance-grounded, the ratio is not infinite but on the order of 1. The impedance angle of the homopolar impedance<em>Z<sub>0</sub></em>is assumed to be equal to that of the normal impedance<em>Z<sub>1</sub></em>.</p> <a href="https://www.phasetophase.nl/boek/boek_2_8.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_8.2"></div>
+<br/>
+<h2>8.2 Cables</h2>
+<p>The voltage drop over a cable connection is determined according to Ohm's law by the current through and the impedance of the cable. The impedances of cables are usually reasonably described in the brochures of cable manufacturers. Sometimes data is missing, which can then be calculated using the construction data. However, some impedances are dependent on environmental factors, making the behavior of a cable connection in practice difficult to predict in certain cases. This paragraph provides an explanation of the calculation of cable impedances and the influence of the environment on them.</p>
+<p>For performing short-circuit calculations, the method of symmetrical components (chapter 7) is usually used. This method makes it possible to more easily calculate asymmetrical loads and disturbances in a symmetrical three-phase system using a transformation.</p>
+<p>For standard symmetrical calculations, the data from the normal system are sufficient. For calculating asymmetrical phenomena, such as phase-to-ground faults, the inverse and homopolar data of cables and transformers, among others, are also necessary. The inverse data are in most cases equal to the normal data. The homopolar data are not equal to the normal data and, in the case of cables, depend on factors such as grounding and their position in the ground. The proximity of other conductive objects, such as steel pipes or tram rails, also affects the homopolar impedance. For this reason, the homopolar impedance of cables is usually not specified by manufacturers.</p>
+<p>A cable can be modeled with a normal, an inverse, and a homopolar impedance. The normal impedance is equal to the operational impedance. This is usually known and can be derived from brochures and nameplate data. The inverse impedance of cables is equal to the normal impedance. The actual homopolar impedance can only be obtained by measuring the existing circuit. High-voltage lines are always measured, and the model impedances are well known to the grid operator in those cases. The impedances of medium-voltage cable connections are, in most cases, not measured. For a cable, only a limited general guideline can be given for the value of the impedances. The impedances depend, among other things, on:</p>
+<ul>
+<li>configuration: three single-phase cables or one three-phase cable</li>
+<li>position: mutual distance in a flat plane or in a triangle</li>
+<li>presence of other conductive objects such as other cables or pipelines.</li>
+</ul>
+<p>Because the homopolar data are influenced by the laying conditions and the environment, they are best measured on the existing connection before it is put into operation. For planning purposes, these values must be estimated. If no reliable values are available, an estimate must be made.</p>
+<p>In summary, the following can be distinguished from the cable:</p>
+<ul>
+<li>normal impedance: Z<sub>1</sub>= R<sub>1</sub>+ jX<sub>1</sub> </li>
+<li>homopolar impedance: Z<sub>0</sub>= R<sub>0</sub>+ jX<sub>0</sub> </li>
+<li>normal capacitance: C<sub>1</sub> </li>
+<li>homopolar capacitance: C<sub>0</sub> </li>
+</ul> <a href="https://www.phasetophase.nl/boek/boek_2_8.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_8.2.1"></div>
+<br/>
+<h3>8.2.1 Normal Impedance</h3>
+<p>The impedance for the normal component consists of the normal resistance and the normal reactance. The normal impedance is used for all calculations.</p>
+<h6>Normal resistance</h6>
+<p>The normal resistance<em>R<sub>1</sub></em>is equal to the operating resistance. This is usually specified by the manufacturer.<em>as R<sub>DC,20</sub></em>, the direct current resistance at 20°C. If this value is not known, it can be looked up in the standard IEC 60228 'Conductors of insulated cables', in the tables for Class 1 (Solid conductors) and Class 2 (Stranded conductors). Sometimes the manufacturer provides the alternating current resistance for the given frequency and the maximum operating temperature.</p>
+<p>For short-circuit calculations according to IEC 60909, the resistance at 20°C must be used to calculate the initial short-circuit current. For load flow calculations, deviations from this can be made. Sometimes the manufacturer provides the resistance at the maximum conductor temperature. However, it is not always realistic to work with the resistance at the maximum conductor temperature (50°C for GPLK cables, 65°C for Alkudia cables, and 90°C for XLPE cables). Most cables are not continuously fully loaded, so the temperature will never reach the maximum value. A company-specific value can be determined by the user's organization. The conductor resistance is then calculated using the formula below.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.6.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">8.6</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>in which:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="60"><em>R<sub>DC,20</sub></em></td>
+<td>conductor direct current resistance at 20 degrees Celsius, according to manufacturer specifications (Ω/m)</td>
+</tr>
+<tr>
+<td><em>alpha<sub>20</sub></em></td>
+<td>temperature coefficient (0.00403 per degree Celsius for aluminum;<br/>0.00393 per degree Celsius for copper)</td>
+</tr>
+<tr>
+<td><em>theta</em></td>
+<td>conductor temperature (degrees Celsius)</td>
+</tr>
+</tbody>
+</table><br/>
+<p>In low voltage networks, the conductor resistance has the greatest influence, and self-induction plays a much smaller role. Therefore, the impact of temperature on voltages is mainly limited to low voltage networks. The temperature coefficient<em>alpha<sub>20</sub></em>leads to a deviation of approximately 0.4% of the conductor resistance per degree and an equally large deviation of the voltage drop over the respective cable. This means that an increase in conductor temperature from 30 degrees to 55 degrees Celsius results in a change in the voltage drop over the cable of approximately 10%.</p>
+<p>The calculated value for<em>R'</em>is the temperature-corrected direct current resistance. Formally, this calculated value must still be corrected for the skin effect and the proximity effect to obtain the alternating current resistance. For standard cables:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.7.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">8.7</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>with:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="60"><em>y<sub>s</sub></em></td>
+<td>skin effect factor</td>
+</tr>
+<tr>
+<td><em>y<sub>p</sub></em></td>
+<td>proximity effect factor</td>
+</tr>
+</tbody>
+</table><br/>
+<p>The skin effect is caused by the tendency of current to flow on the surface of a conductor, resulting in a lower current density in the center of the conductor compared to the surface, thereby increasing the effective resistance. The skin effect factor can be calculated according to IEC 60287 using the following formula:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.8.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">8.8</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>with:</p><p>
+<img alt="" height="46" src="./modellen_files/formule-8.8-a.png" width="130"/><br/>
+<em>f</em>= frequency (Hz)</p>
+<br/>
+<p>Values for<em>k<sub>s</sub></em>provided by IEC 60287. For round stranded conductors, it is<em>k<sub>s</sub></em>equal to 1. For round solid aluminum conductors, 1 is assumed.</p>
+<p>The proximity effect is caused in neighboring conductors, where like-directed currents repel each other due to the magnetic field. As a result of current displacement, the effective resistance increases. The proximity effect factor depends on the position of the conductors relative to each other and can be calculated according to IEC 60287 using the formula below:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.9.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">8.9</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>with:</p>
+<img alt="" height="57" src="./modellen_files/formule-8.9-a.png" width="136"/><br/>
+<img alt="" height="46" src="./modellen_files/formule-8.9-b.png" width="132"/>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="60"><em>d<sub>c</sub></em></td>
+<td>diameter of the conductor (mm)</td>
+</tr>
+<tr>
+<td><em>s</em></td>
+<td>center-to-center distance of adjacent conductors (mm)</td>
+</tr>
+</tbody>
+</table><br/>
+<p>Values for<em>k<sub>p</sub></em>given by IEC 60287. For round stranded conductors, it is<em>k<sub>p</sub></em>equal to 1. For round solid aluminum conductors, 1 is assumed.</p>
+<p>Table 8.2 provides an example of the calculated values of the skin and proximity effect for some LV and MV cables. The table illustrates how the skin effect depends on the DC resistance: below a conductor cross-section of 240 mm<sup>2</sup>the factor is small to negligible, and above that, the factor increases rapidly. Moreover, the skin effect is greater in cables with Cu conductors than in cables with Al conductors. The proximity effect also increases with decreasing DC resistance. For single-core cables of 1000 mm<sup>2</sup>It is clearly visible that the proximity effect in a triangular formation, where the cables touch each other, is much greater than in a flat formation, where the cables do not touch each other (70 mm spacing).</p>
+<h5>Table 8.2  Skin and proximity effect in individual distribution cables</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="50%"><p> <strong>Kabeltype</strong> </p></td>
+<td valign="top" width="25%"><p align="center"> <strong>Skin-effect factor</strong> </p></td>
+<td valign="top" width="25%"><p align="center"> <strong>Proximity-effect factor</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="156"><p>3x240 mm<sup>2</sup>Al 0.6/1 kV</p></td>
+<td valign="top" width="85"><p align="center">0.004</p></td>
+<td valign="top" width="106"><p align="center">0.011</p></td>
+</tr>
+<tr>
+<td valign="top" width="156"><p>3x240 mm<sup>2</sup>Cu 0.6/1 kV</p></td>
+<td valign="top" width="85"><p align="center">0.010</p></td>
+<td valign="top" width="106"><p align="center">0.030</p></td>
+</tr>
+<tr>
+<td valign="top" width="156"><p>3x50 mm<sup>2</sup>Cu 6/10 kV</p></td>
+<td valign="top" width="85"><p align="center">&lt;0.001</p></td>
+<td valign="top" width="106"><p align="center">&lt;0.001</p></td>
+</tr>
+<tr>
+<td valign="top" width="156"><p>3x95 mm<sup>2</sup>Cu 6/10 kV</p></td>
+<td valign="top" width="85"><p align="center">0.001</p></td>
+<td valign="top" width="106"><p align="center">0.002</p></td>
+</tr>
+<tr>
+<td valign="top" width="156"><p>3x150 mm<sup>2</sup>Cu 6/10 kV</p></td>
+<td valign="top" width="85"><p align="center">0.003</p></td>
+<td valign="top" width="106"><p align="center">0.005</p></td>
+</tr>
+<tr>
+<td valign="top" width="156"><p>3x240 mm<sup>2</sup>Cu 6/10 kV</p></td>
+<td valign="top" width="85"><p align="center">0.008</p></td>
+<td valign="top" width="106"><p align="center">0.015</p></td>
+</tr>
+<tr>
+<td valign="top" width="156"><p>3 x 1x240 mm<sup>2</sup>Al 6/10 kV, delta</p></td>
+<td valign="top" width="85"><p align="center">0.003</p></td>
+<td valign="top" width="106"><p align="center">0.003</p></td>
+</tr>
+<tr>
+<td valign="top" width="156"><p>3 x 1x630 mm<sup>2</sup>Al 6/10 kV, delta</p></td>
+<td valign="top" width="85"><p align="center">0.022</p></td>
+<td valign="top" width="106"><p align="center">0.031</p></td>
+</tr>
+<tr>
+<td valign="top" width="156"><p>3 x 1x800 mm<sup>2</sup>Al 6/10 kV, delta</p></td>
+<td valign="top" width="85"><p align="center">0.036</p></td>
+<td valign="top" width="106"><p align="center">0.053</p></td>
+</tr>
+<tr>
+<td valign="top" width="156"><p>3 x 1x240 mm<sup>2</sup>Cu 6/10 kV, delta</p></td>
+<td valign="top" width="85"><p align="center">0.009</p></td>
+<td valign="top" width="106"><p align="center">0.010</p></td>
+</tr>
+<tr>
+<td valign="top" width="156"><p>3 x 1x1000 mm<sup>2</sup>Cu 6/10 kV, delta</p></td>
+<td valign="top" width="85"><p align="center">0.148</p></td>
+<td valign="top" width="106"><p align="center">0.187</p></td>
+</tr>
+<tr>
+<td valign="top" width="156"><p>3 x 1x1000 mm<sup>2</sup>Cu 6/10 kV, flat surface</p></td>
+<td valign="top" width="85"><p align="center">0.148</p></td>
+<td valign="top" width="106"><p align="center">0.037</p></td>
+</tr>
+</tbody>
+</table><br/>
+<h6>Normal reactance</h6>
+<p>The normal reactance can easily be derived from the induction specification in the manufacturer's brochure. This is independent of external conditions for three- and four-core cables. For single-core medium- and high-voltage cables, the configuration (triangle or flat surface) is important.</p>
+<p>In the event that the inductance is not provided, it can be calculated. The inductance<em>L</em>of an ideal round infinitely long conductor, in the case of two parallel conductors, can be calculated according to (Heinhold, 1999):</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.10.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">8.10</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>where:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="60"><em>µ<sub>0</sub></em></td>
+<td>permeability constant in vacuum:<em>µ<sub>0</sub>= 4π10<sup>-7</sup></em><sup> </sup>H/m</td>
+</tr>
+<tr>
+<td valign="top"><em>s</em></td>
+<td>center-to-center distance of the conductors in triangular formation (mm) or<em><sup>3</sup>√2 = 1.26</em>times the center-to-center distance of the conductors in a flat plane</td>
+</tr>
+<tr>
+<td><em>ρ</em></td>
+<td>geometric mean radius of the conductor:<em>ρ</em>= e<sup>-1/4</sup>d<sub>c</sub>/2 ≅ 0.779 d<sub>c</sub>/2 mm</td>
+</tr>
+<tr>
+<td><em>d<sub>c</sub></em></td>
+<td>conductor diameter (mm)</td>
+</tr>
+</tbody>
+</table><br/>
+<p>Substituting the permeability constant and the factor for the geometric mean diameter of the conductor yields the simplified formula:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="center" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.11.png"/>mH/km</td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">8.11</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>Ultimately, the normal reactance is calculated by multiplying the inductance by the angular frequency:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="center" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.12.png"/>Ω/km</td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">8.12</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>This also applies to shielded cables and cables with non-circular conductor cross-sections. The normal impedance can also be calculated using an electromagnetic field strength program based on finite element analysis.</p>
+<h6>Normal capacitance</h6>
+<p>The capacitance mainly plays a role in reactive power management. The higher the voltage level, the greater the influence. Capacitance also determines the dielectric loss, which, due to heat development, is a limiting factor for the maximum current-carrying capacity of cables at voltage levels of 50 kV and higher. In the case of floating medium voltage networks with an isolated neutral point, capacitance affects the magnitude of the current in the event of a phase-to-ground fault. For low voltage cables, capacitance is not important for most load flow and short-circuit calculations.</p>
+<p>The normal capacitance of cables is typically specified by the cable manufacturers. It can also be calculated using the formula below for single-core cables and multi-core cables with separate screens (Happoldt, 1978):</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="center" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.13.png"/>μF/km</td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">8.13</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>with:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="60"><em>ε<sub>0</sub></em></td>
+<td>absolute permittivity: 8.854 · 10<sup>-12</sup>F/m</td>
+</tr>
+<tr>
+<td valign="top"><em>ε<sub>r</sub></em></td>
+<td>relative permittivity of the insulation (2.5 for XLPE; 3.6 for mass-impregnated paper)</td>
+</tr>
+<tr>
+<td><em>D<sub>i</sub></em></td>
+<td>diameter over the insulation, excluding the insulation screen (mm)</td>
+</tr>
+<tr>
+<td><em>d<sub>c</sub></em> </td>
+<td>diameter over the conductor, including the conductor screen (mm)</td>
+</tr>
+</tbody>
+</table><br/>
+<p>The calculation for cables with a common screen and for belt cables is quite difficult. The literature (Heinhold, 1999) provides a formula that will not be further discussed here.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_8.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_8.2.2"></div>
+<br/>
+<h3>8.2.2 Inverse Impedance</h3>
+<p>The three-core cables used in medium voltage networks are always constructed in a three-phase symmetrical manner. As a result, the inverse impedance<em>Z<sub>2</sub></em>) is equal to the normal impedance (<em>Z<sub>1</sub></em>). A circuit with three single-phase cables laid in a triangular formation is also always three-phase symmetrical. If the circuit consists of three single-phase cables laid flat, this is not the case. Low-voltage cables with three phase conductors and a neutral conductor are also not purely three-phase symmetrical. The deviations from the ideal scenario are minor and small enough to assume that for most applications, such as load flow and short-circuit calculations, the inverse impedance can be considered equal to the normal impedance. This assumption is made for all cable connections.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_8.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_8.2.3"></div>
+<br/>
+<h3>8.2.3 Loss</h3>
+<p>The loss in a cable is composed of two components. The majority is caused by the current transport and is directly proportional to the resistance of the cable:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.14.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">8.14</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The second part is the dielectric loss and is caused by the alternating electric field in the insulation. The loss is only calculated for shielded cables and is directly proportional to the capacitance:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.15.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">8.15</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>Here, tan(δ) is the loss factor of the insulation. Values for common insulation materials are included in the IEC 60287 standard.</p>
+<p>Dielectric loss is usually neglected in network calculations. For high-voltage cables, it affects the temperature and thereby the current-carrying capacity.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_8.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_8.2.4"></div>
+<br/>
+<h3>8.2.4 Maximum current-carrying capacity</h3>
+<p>The maximum current-carrying capacity of cables is highly dependent on several environmental factors (see paragraph 4.1.5). The most significant influences are the specific thermal resistivity of the soil, the soil temperature, and the heating caused by parallel cable circuits and hot pipes. Additionally, road crossings have poor thermal properties and must be considered separately. The method for calculating the maximum current-carrying capacity is established in the international standard IEC 60287. When using this calculation, the 'hot spot' must be taken into account, which is the location in the entire cable connection with the highest specific thermal resistivity and the highest soil temperature.</p>
+<p>If the construction data of the cable is not known and a quicker approximation is acceptable, the nominal load capacity specified by the manufacturer (or in a standard) can be used. In the case of different laying conditions, several correction factors can be applied to this. The correction factors are often listed in the manufacturer's brochure. They can also be derived from a standard, such as NEN 1010.</p>
+<p>There are correction factors for abnormal conditions in underground and above-ground installations. For underground installations, there are correction factors for deviations in:</p>
+<ul>
+<li>bodemtemperatuur</li>
+<li>liggingdiepte</li>
+<li>location is a pipe or directly in the ground</li>
+<li>specific thermal resistivity of the soil</li>
+<li>multiple parallel circuits in the same plane</li>
+</ul>
+<p>For above-ground installation, there are correction factors for deviations in:</p>
+<ul>
+<li>luchttemperatuur</li>
+<li>solar radiation and color of the outer sheath</li>
+<li>installation method and multiple parallel circuits</li>
+</ul>
+<p>For other deviations, a specific calculation according to IEC 60287 must be performed. The correction factors from NEN 1010 are applicable to the mentioned situations and provide a sufficiently accurate result. Although the NEN 1010 standard is written for low-voltage cables, the correction factors from that standard are also applicable to medium- and high-voltage cables, as the voltage level has no influence from a thermal perspective.</p>
+<p>The correction factor for underground cables is composed of separate factors:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="center" width="90%"><em>f = fT • fL • fG • fc</em></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">8.16</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>These are:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="60"><em>f<sub>T</sub></em></td>
+<td>correction factor for deviating soil temperature</td>
+</tr>
+<tr>
+<td><em>f<sub>L</sub></em></td>
+<td>correction factor for deviating burial depth</td>
+</tr>
+<tr>
+<td><em>f<sub>G</sub></em></td>
+<td>correction factor for deviating thermal resistance</td>
+</tr>
+<tr>
+<td><em>f<sub>c</sub></em></td>
+<td>correction factor for multiple parallel circuits</td>
+</tr>
+</tbody>
+</table><br/>
+<p>The use of the correction factors is explained using a single underground installed three-core Cu XLPE insulated cable with an outer diameter of 57 mm. The total correction factor for converting the maximum current-carrying capacity, as specified by the manufacturer, to the maximum current-carrying capacity that corresponds to deviating installation conditions, can be calculated using the correction factors from NEN 1010:</p>
+<h5>Table 8.3 Correction Factors for Deviating Installation Conditions</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="190"><p> <strong>Liggingomstandigheden</strong> </p></td>
+<td valign="top" width="78"><p align="center"> <strong>Fabrikant</strong> </p></td>
+<td valign="top" width="78"><p align="center"> <strong>Afwijkend</strong> </p></td>
+<td valign="top" width="87"><p align="center"> <strong>Correctiefactor</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="190"><p>Soil temperature:</p></td>
+<td valign="top" width="78"><p align="center">68 °F</p></td>
+<td valign="top" width="78"><p align="center">77 °F</p></td>
+<td valign="top" width="87"><p align="center"> <em>f<sub>T</sub></em>= 0.9632</p></td>
+</tr>
+<tr>
+<td valign="top" width="190"><p>Installation depth:</p></td>
+<td valign="top" width="78"><p align="center">1 m</p></td>
+<td valign="top" width="78"><p align="center">0.7 m</p></td>
+<td valign="top" width="87"><p align="center"> <em>f<sub>L</sub></em>= 1.0479</p></td>
+</tr>
+<tr>
+<td valign="top" width="190"><p>Specific thermal soil resistance:</p></td>
+<td width="78"><p align="center">1 K·m/W</p></td>
+<td width="78"><p align="center">2.5 K·m/W</p></td>
+<td width="87"><p align="center"> <em>f<sub>G</sub></em>= 0.6662</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The total correction factor then becomes:</p>
+<p> <em>f = f<sub>T</sub> </em> <sup>•</sup> <em>f<sub>L</sub></em> <sup>•</sup> <em>f<sub>G</sub></em> <sup>•</sup> <em>f<sub>c</sub>= 0.96</em> <sup>•</sup> <em>1.05</em> <sup>•</sup> <em>0.67</em> <sup>•</sup> <em>1.00 = 0.67</em> </p>
+<p>With a nominal continuous current according to the manufacturer of 380 A, the nominal continuous current for the deviating location condition then becomes: 255 A.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_8.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_8.2.5"></div>
+<br/>
+<h3>8.2.5 Homopolar impedance</h3>
+<p>The impedance for the homopolar component consists of the homopolar resistance and the homopolar reactance. The homopolar impedance is used for all calculations where a return current flows through paths other than the phase conductors, such as neutral conductors, shielding, and ground. The homopolar impedance of a circuit is determined by both the impedance of the cable itself and the impedance of the return circuit. This paragraph will first address the homopolar impedance of the cable itself.</p>
+<h6>Homopolar resistance</h6>
+<p>In general, for a cable, the homopolar resistance per phase is equal to the alternating current resistance of the phase conductor, without the influence of the proximity effect but with the influence of the skin effect, with the influence of the return conductor added (BICC, 1990):</p>
+<ul>
+<li>three-core cables: three times the resistance of the metal shielding, possibly in parallel with the resistance of the armor</li>
+<li>SL-type cables (each conductor separately shielded): the resistance of a metal shielding, in parallel with three times the resistance of the armor.</li>
+<li>single-core cables: the resistance of the metal shielding (usually no armor).</li>
+</ul>
+<p>For cables frequently used in the Netherlands, this means:</p>
+<p>LS three-core cable with common shielding:<em>R<sub>0</sub>= R<sub>F</sub>+ 3(R<sub>S</sub>//R<sub>A</sub>)</em><br/>LS four-core cable with common shielding:<em>R<sub>0</sub>= R<sub>F</sub>+ 3(R<sub>S</sub>//R<sub>N</sub>//R<sub>A</sub>)</em><br/>MS GPLK three-core cable with common shielding:<em>R<sub>0</sub>= R<sub>F</sub>+ 3(R<sub>S</sub>//R<sub>A</sub>)</em><br/>MS XLPE three-core cable with common shielding:<em>R<sub>0</sub>= R<sub>F</sub>+ 3(R<sub>S</sub>//R<sub>A</sub>)</em><br/>MS XLPE three-core cable with separate shields:<em>R<sub>0</sub>= R<sub>F</sub>+ (R<sub>S</sub>//3R<sub>A</sub>)</em><br/>MS XLPE single-core cable with shield:<em>R<sub>0</sub>= R<sub>F</sub>+ R<sub>S</sub></em> </p>
+<p>where:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="60"><em>R<sub>F</sub></em> </td>
+<td>resistance of the phase conductor, equal to: R'(1+y)<sub>s</sub>)</td>
+</tr>
+<tr>
+<td><em>R<sub>N</sub></em></td>
+<td>resistance of the neutral conductor</td>
+</tr>
+<tr>
+<td><em>R<sub>S</sub> </em></td>
+<td>resistance of the shield</td>
+</tr>
+<tr>
+<td><em>R<sub>A</sub></em></td>
+<td>resistance of the armor</td>
+</tr>
+</tbody>
+</table><br/>
+<p>In general, the following applies. Some three-core cables are equipped per phase with a separate shield capable of conducting a single-phase short-circuit current. In that case, the resistance of that shield must be used. When there is a single shield common to the three conductors, three times the resistance of that shield must be used. If both types are combined, such as a shield per phase and a common armor, the example of the SL-type cable should be used. In principle, the resistances must<em>R<sub>i</sub></em>calculated separately for all individual return paths, and the equivalent resistance of all these parallel-connected return paths must be determined. The homopolar resistance is then<em>R<sub>F</sub></em>plus this value, multiplied by 3.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.17.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">8.17</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>From this, it appears that the homopolar resistance is never smaller than the normal resistance.</p>
+<p>For example, an MS XLPE three-core cable with separate screens uses the three screens and the armor as return paths. Substituting into the above equation yields:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.18.png" width="600"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">8.18</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The resistances are calculated from the conductive cross-sectional area and the specific resistance of the respective conductors. For a screen, the conductive area is calculated from the diameter and thickness. For individual wires, the resistance is determined from that of a single wire, divided by the number of wires and corrected for the pitch. In cables with a meandering screen, the length of the screen is greater than that of the entire cable.</p>
+<p>The homopolar resistance, like the normal resistance, depends on the cable temperature and can be calculated as indicated in paragraph 8.2.1.</p>
+<h6>Homopolar induction and reactance</h6>
+<p>The homopolar reactance of a cable usually cannot be derived from the manufacturer's brochure. This is because the homopolar impedance of a circuit is greatly influenced by the impedance of the return path. In this case, the homopolar impedance can be determined using an electromagnetic field strength program based on finite element calculation.</p>
+<p>In the case where the return circuit consists solely of the neutral, shield, and armor, the homopolar reactance per phase of a single-core cable can be calculated fairly easily. By replacing twice the conductor spacing in the formula for calculating normal inductance with the diameter of the metallic shielding, the formula for homopolar inductance per phase is obtained.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.19.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">8.19</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>in which:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="60"><em>µ<sub>0</sub></em></td>
+<td>permeability constant in a vacuum:<em>µ<sub>0</sub>= 4π10<sup>-7</sup> </em>H/m</td>
+</tr>
+<tr>
+<td><em>D<sub>s</sub></em></td>
+<td>average diameter of the metal shielding (mm)</td>
+</tr>
+<tr>
+<td><em>ρ</em></td>
+<td>geometric mean radius of the conductor:<em>ρ = e<sup>-1/4</sup>d<sub>c</sub>/2</em> <em>≅</em> <em>0.779 d<sub>c</sub>/2</em>mm</td>
+</tr>
+<tr>
+<td><em>d<sub>c</sub></em></td>
+<td>conductor diameter (mm)</td>
+</tr>
+</tbody>
+</table><br/>
+<p>Substituting the permeability constant and the factor for the geometric mean diameter of the conductor yields the homopolar inductance per phase of a single-core cable (BICC, 1990):</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.20.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">8.20</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>For three-core cables with a common shielding, the homopolar inductance per phase can be calculated using the equation below.
+          A factor of 3 is included to convert the reactance of the common shield to the reactance per phase.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.21.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">8.21</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>in which:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="60"><em>D<sub>s</sub></em></td>
+<td>average diameter of the metal shielding over the combined conductors (mm)</td>
+</tr>
+<tr>
+<td><em>gmd</em> </td>
+<td>geometric mean diameter of the conductors in the cable (mm).</td>
+</tr>
+</tbody>
+</table><br/>
+<p>The value of<em>gmd</em>may be taken as 0.75 times<em>D<sub>ogg</sub></em>, the diameter of the circle that touches the three combined conductors in the cable, assuming the conductors are circular (BICC, 1990). The diameter of the circle over the bundled conductors can be calculated as follows from the diameter over the insulated conductor (D<sub>i</sub>) and the conductor diameter (d<sub>c</sub>):</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="center" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.22.png"/>mm</td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">8.22</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>Ultimately, the normal reactance is calculated by multiplying the inductance by the angular frequency:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="center" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.23.png"/>Ω/km</td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">8.23</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>If the cable does not have a shield, as is the case with some low-voltage cables, the homopolar impedance can be calculated from the results of a finite element analysis using an electromagnetic field strength program. This also applies to cables whose conductor cross-section is not round.</p>
+<h6>Homopolar capacitance</h6>
+<p>The small distances between the conductors within a cable and between the conductors and shielding, as well as the dielectric constant of the insulating medium, result in a higher capacitance compared to overhead lines. Cable capacitance ranges from 0.1 to 1.2 µF/km. The homopolar capacitance depends on the construction of the cable.</p>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/8.1.png" width="705"/>
+<h5>Figure 8.1 	Capacitances in various types of cables</h5>
+<p>Table 8.4 provides an approximation of the normal capacitance<em>C<sub>1</sub></em>) and the homopolar capacitance (<em>C<sub>0</sub></em>) for the cable types in figure 8.1 (Happoldt, 1978). In this table,<em>C<sub>E</sub></em>the capacitance between a conductor and the shield and is<em>C</em>the
+          capacitance between two conductors.</p>
+<h5>Table 8.4 	Normal and Homopolar Capacitances</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="33%"><p> <strong>Type of cable</strong> </p></td>
+<td valign="top" width="33%"><p> <strong>C<sub>1</sub></strong> </p></td>
+<td valign="top" width="33%"><p> <strong>C<sub>0</sub></strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="144"><p>Gordelkabel</p></td>
+<td valign="top" width="53"><p>C<sub>E</sub>+ 3 C</p></td>
+<td valign="top" width="50"><p>0.6 C<sub>1</sub> </p></td>
+</tr>
+<tr>
+<td valign="top" width="144"><p>Separated shields</p></td>
+<td valign="top" width="53"><p>C<sub>E</sub> </p></td>
+<td valign="top" width="50"><p>C<sub>1</sub> </p></td>
+</tr>
+<tr>
+<td valign="top" width="144"><p>Single-core cable</p></td>
+<td valign="top" width="53"><p>C<sub>E</sub> </p></td>
+<td valign="top" width="50"><p>C<sub>1</sub> </p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>From this, it follows that the homopolar capacitance can be easily expressed in terms of the capacitance of the normal system.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_8.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_8.2.6"></div>
+<br/>
+<h3>8.2.6 Influence of Ground Electrode and Earth</h3>
+<p>The homopolar impedance is significantly influenced by the return path. The return path consists of the path through the cable itself (including the shielding) and, in parallel, the path through the earth. The path through the earth consists of the ground electrodes (at least two) and the path through the earth itself. The return path through the earth runs as close as possible to the respective cable. As a result, the resistance of the path through the earth is usually different from purely theoretical calculations. Additionally, the return path through the earth has a reactive component, determined by the enclosed flux and the electromagnetic coupling with other conductive objects in the ground. Therefore, it is not easy to predict the extent of the influence of the parallel connection of the return path through the earth on the total homopolar impedance. Generally, it is true that the parallel connection of the earth reduces the homopolar resistance and increases the homopolar reactance.</p>
+<p>The ground electrode is modeled with a resistance to the 'remote earth'. The resistance of the ground electrode depends on the specific soil resistivity.<em>ρ</em>and the physical dimensions of the ground electrode. For a single round rod-shaped ground electrode, the following formula applies for calculating the ground spreading resistance (Happoldt, 1978):</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="center" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.24.png"/>Ohms</td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">8.24</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>with:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="60"><em>ρ</em> </td>
+<td>specific soil resistivity (Ωm)</td>
+</tr>
+<tr>
+<td><em>L</em></td>
+<td>length of the vertical electrode in the ground (m)</td>
+</tr>
+<tr>
+<td><em>d</em></td>
+<td>diameter of the ground electrode (m)</td>
+</tr>
+</tbody>
+</table><br/>
+<p>The specific soil resistivity depends on the soil material and the amount of moisture and temperature of the soil. Table 8.5 provides an overview for the materials.</p>
+<h5>Table 8.5 	Specific Soil Resistivity</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="33%"><p> <strong>Bodemsoort</strong> </p></td>
+<td valign="top" width="33%"><p align="center"> <strong>ρ minimum [Ωm]</strong> </p></td>
+<td valign="top" width="33%"><p align="center"> <strong>ρ maximum [Ωm]</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="90"><p>Veen</p></td>
+<td valign="top" width="92"><p align="center">5</p></td>
+<td valign="top" width="92"><p align="center">40</p></td>
+</tr>
+<tr>
+<td valign="top" width="90"><p>Klei</p></td>
+<td valign="top" width="92"><p align="center">20</p></td>
+<td valign="top" width="92"><p align="center">200</p></td>
+</tr>
+<tr>
+<td valign="top" width="90"><p>Zand</p></td>
+<td valign="top" width="92"><p align="center">200</p></td>
+<td valign="top" width="92"><p align="center">2500</p></td>
+</tr>
+<tr>
+<td valign="top" width="90"><p>Kiezel</p></td>
+<td valign="top" width="92"><p align="center">2000</p></td>
+<td valign="top" width="92"><p align="center">3000</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The difference between the minimum and maximum values of the specific soil resistivity is determined by the weight percentage of the moisture present in the material. This can be measured during the driving of the electrode, assuming that the measurement is representative of the lowest moisture content of the soil throughout the year.</p>
+<p>In the Netherlands, the grounding electrode is often a driven electrode made of round copper wire with a diameter of 50 mm.<sup>2</sup>(<em>d</em>= 0.0075 m). Several other types are also used, such as solid steel (round, star-shaped, or cross-shaped) with a well-adhering copper layer on the surface and a galvanized round steel variant.</p>
+<p>To create a grounding electrode with a ground resistance of less than 1 Ω, multiple parallel electrodes often need to be driven into the ground at a considerable distance from each other. According to the above formula, the ground resistance for a 10 m grounding electrode with a diameter of 7.5 mm in soil with a specific resistance of 100 Ωm is 13.7 Ω. The literature (Happoldt, 1978) provides formulas for calculating parallel or other forms of grounding electrodes.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_8.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_8.2.7"></div>
+<br/>
+<h3>8.2.7 Measurement of the homopolar impedance</h3>
+<p>Since the homopolar impedance of high-voltage cables cannot be calculated with great accuracy, measurements are necessary. Using these practical measurements, an estimate can be made for values that are useful in the planning of a new route. Moreover, numerous practical measurements show that the variation in the measurement results is considerable.</p>
+<p>The symmetrical components transformation describes the relationship between the currents in the component network and the physical system (paragraph 7.5).</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.25.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">8.25</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>From this, it appears that the homopolar current is equal to one-third of the sum of the three phase currents. In the case of a three-phase symmetrical system with three-phase symmetrical currents, the homopolar current will be zero. If the three phase currents are not three-phase symmetrical, the current flowing through the return path is equal to the sum of the three phase currents and, according to equation 8.25, is equal to<em>3I<sub>0</sub></em>From this follows the method to measure the homopolar impedance, by applying a homopolar voltage, as indicated in figure 8.2.</p>
+<p>The homopolar impedance is measured using a power supply with a homopolar system. This is achieved by connecting the phases in parallel at both ends. At the end, this parallel connection is linked to the return conductor and possibly grounded. The return impedance, consisting of the parallel connection of the cable's return conductor and the return path through the ground, is represented in figure 8.2 by<em>Z<sub>E</sub></em>At the beginning of the circuit, the parallel connection is fed single-phase to ground. The homopolar impedance is then the quotient of voltage and current. If the cable sheaths are grounded at both ends, the current is divided between the sheaths and the ground. With single-sided grounding (where the sheaths on the other side are floating and not connected to the sheaths of other cables), the return current flows only through the ground. The current through the ground is significantly influenced by other conductive objects in or on the ground, such as other cable sheaths, metal gas, and water pipes, and the like. Because the homopolar impedance is thus also dependent on the cable's surroundings, a universally valid homopolar impedance cannot be specified for a particular cable type. Sometimes a homopolar impedance is specified under the condition that the return current flows only through the sheaths. With three single-phase cables, these sheath currents are equal.</p>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/8.2.png" width="710"/>
+<h5>Figure 8.2 Measurement of the homopolar impedance</h5>
+<p>In a three-phase symmetrical network,<em>Z<sub>A</sub>= Z<sub>B</sub>= Z<sub>C</sub>= Z<sub>L</sub>,</em>zodat<em>I<sub>A</sub>= I<sub>B</sub>= I<sub>C</sub>= I<sub>0</sub></em>. Then follows for the measurement:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.26.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">8.26</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>From this follows for the homopolar impedance:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.27.png"/></td>
+<td valign="center" width="2%"><p align="left">[</p></td>
+<td valign="center" width="6%"><p align="center">8.27</p></td>
+<td valign="center" width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>and for the measurement:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.28.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.28</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>For planning purposes, the homopolar impedance can be estimated, depending on the situation, as a constant value or as a factor of the normal impedance.</p>
+<p>In summary, the homopolar impedance of a cable connection is determined by the total circuit of the homopolar current. The total circuit consists of the forward path (the phase conductors) and the return path (the neutral conductors, the shielding and armor of the cable, plus the ground via the ground electrodes (including in medium voltage spaces) and any other contact with the ground. Conductive materials present in the ground (other cables, metal pipes, and railroad tracks) can significantly influence the homopolar impedance.</p>
+<p>It is possible to calculate the homopolar impedance of a cable for cases where the return circuit consists of the sheath and possibly a neutral conductor. This is also the value that the manufacturer usually provides. However, if the return current (as in most practical cases) also flows through the ground, the homopolar resistance will decrease and the homopolar reactance will increase. The value in those cases is very difficult to calculate, and the calculation is usually inaccurate.</p>
+<p>For certain cable types and situations, the homopolar impedances have been calculated for the case where the return path runs only through the cable itself. All provided values are for informational purposes only. The ratios of the homopolar to the normal impedances are summarized below. The results vary for cables with small to large conductor diameters.</p>
+<h5>Table 8.6 Homopolar impedance with return path only through the cable itself</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td rowspan="2" valign="top" width="40%"><p> <strong>Cable type</strong> </p></td>
+<td colspan="2" valign="top" width="30%"><p> <strong>Zero return</strong> </p></td>
+<td colspan="2" valign="top" width="30%"><p> <strong>Zero return + sheath</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="50"><p>R<sub>0</sub>/R<sub>1</sub> </p></td>
+<td valign="top" width="50"><p>X<sub>0</sub>/X<sub>1</sub> </p></td>
+<td valign="top" width="50"><p>R<sub>0</sub>/R<sub>1</sub> </p></td>
+<td valign="top" width="51"><p>X<sub>0</sub>/X<sub>1</sub> </p></td>
+</tr>
+<tr>
+<td valign="top" width="140"><p>LS 4-core cable (25..300 mm)</p></td>
+<td valign="top" width="50"><p>4.0</p></td>
+<td valign="top" width="50"><p>3.5..4.0</p></td>
+<td valign="top" width="50"><p>2.5..3.0</p></td>
+<td valign="top" width="51"><p>1.5..2.0</p></td>
+</tr>
+</tbody>
+</table><br/>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td rowspan="2" valign="top" width="40%"><p> <strong>Type of cable</strong> </p></td>
+<td colspan="2" valign="top" width="60%"><p> <strong>Return sheath</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="99"><p>R<sub>0</sub>/R<sub>1</sub> </p></td>
+<td valign="top" width="101"><p>X<sub>0</sub>/X<sub>1</sub> </p></td>
+</tr>
+<tr>
+<td valign="top" width="140"><p>MS belt cable (25..300 mm)</p></td>
+<td valign="top" width="99"><p>4..15</p></td>
+<td valign="top" width="101"><p>1.7..1.4</p></td>
+</tr>
+<tr>
+<td valign="top" width="140"><p>MS 3-core XLPE (50..300 mm)</p></td>
+<td valign="top" width="99"><p>7..20</p></td>
+<td valign="top" width="101"><p>1</p></td>
+</tr>
+<tr>
+<td valign="top" width="140"><p>MS 1-core XLPE (95..400 mm)</p></td>
+<td valign="top" width="99"><p>7..18</p></td>
+<td valign="top" width="101"><p>0.4..0.3</p></td>
+</tr>
+</tbody>
+</table><br/>
+<a href="https://www.phasetophase.nl/boek/boek_2_8.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_8.2.8"></div>
+<br/>
+<h3>8.2.8 Extended model for the low voltage cable</h3>
+<p>For calculations regarding touch safety, specific cable data is required, which cannot be directly derived from the tables provided by cable manufacturers. These tables only contain information about the use of the cable under normal conditions and its behavior during a short circuit. However, in the case of a single-phase ground fault, the short-circuit current influences the voltage in the other conductors through induction. The electromagnetic couplings between the conductors of the cable and between the conductors and the ground shield are not documented and must be calculated. This concerns PVC and GPLK cables with sector-shaped and round conductors, both copper and aluminum, with and without auxiliary cores. In this section, the impedances of the cables are calculated using a program for analyzing electric and magnetic fields in rotationally symmetric cross-sections.</p>
+<p>The low-voltage cable is composed of:</p>
+<ul>
+<li>conductors and auxiliary cores,</li>
+<li>usually insulated with plastic,</li>
+<li>held together by an inner sheath,</li>
+<li>often surrounded by a grounding shield,</li>
+<li>protected by an outer sheath,</li>
+<li>where sometimes additional armoring is applied.</li>
+</ul>
+<p>A typical cross-section of the conductive parts of an LS cable with circular and sector-shaped conductors is shown in figure 8.3 for a cable of the type GPLKh 4x35 Cu round + 4x2.5 Cu and of the type GPLKh 4x95 Cu sector + 4x6 Cu. From the inside out, the following are visible: main cores and auxiliary cores with insulation, shield, filling, armoring, and outer sheath.</p>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/8.3.jpg" width="710"/>
+<h5>Figure 8.3  Cable construction of low-voltage cables with round and sector-shaped conductors</h5>
+<p>It is clearly visible that the contact surfaces between the conductors themselves and between the conductors and the sheath are much larger in the case of sector-shaped conductors than with round conductors. As a result, the mutual coupling is stronger in sector-shaped conductors.</p>
+<p>When distinguishing between phase conductors, neutral conductor, auxiliary conductors, and shield, up to 11 different impedances can be identified in the low-voltage cable:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="60"><em>Z<sub>c</sub></em> </td>
+<td>longitudinal impedance of the main conductor circuit (phase and neutral)</td>
+</tr>
+<tr>
+<td><em>Z<sub>cc,n</sub></em></td>
+<td>mutual impedance of adjacent main conductors</td>
+</tr>
+<tr>
+<td><em>Z<sub>cc,t</sub></em></td>
+<td>mutual impedance of main conductors located opposite each other</td>
+</tr>
+<tr>
+<td><em>Z<sub>e</sub></em></td>
+<td>longitudinal impedance of the shielding circuit</td>
+</tr>
+<tr>
+<td><em>Z<sub>ce</sub></em> </td>
+<td>mutual impedance of main conductor and shield</td>
+</tr>
+<tr>
+<td><em>Z<sub>h</sub></em></td>
+<td>longitudinal impedance of the auxiliary conductor circuit</td>
+</tr>
+<tr>
+<td><em>Z<sub>ch,n</sub></em></td>
+<td>mutual impedance of adjacent main and auxiliary conductors</td>
+</tr>
+<tr>
+<td><em>Z<sub>ch,t</sub></em></td>
+<td>mutual impedance of opposing main and auxiliary conductors</td>
+</tr>
+<tr>
+<td><em>Z<sub>hh,n</sub></em></td>
+<td>mutual impedance of 'adjacent' auxiliary conductors</td>
+</tr>
+<tr>
+<td><em>Z<sub>mutual impedance of 'opposing' auxiliary conductors</sub></em></td>
+<td>mutual impedance of 'opposing' auxiliary conductors</td>
+</tr>
+<tr>
+<td><em>Z<sub>he</sub></em> </td>
+<td>mutual impedance of auxiliary conductor and shield</td>
+</tr>
+</tbody>
+</table><br/>
+<p>In matrix form:</p>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/kabelmatrix.png" width="870"/>
+<p>The cable consists of 3 identical phase and neutral conductors. If the neutral conductor differs from the phase conductors, the numbers in column 4 and row 4 of the matrix change. Optionally, 4 identical auxiliary conductors may be present. If the auxiliary conductors or the conductive shield are missing, the respective impedances are not present in the matrix.</p>
+<p>The operational impedance of a cable is not the same as the longitudinal impedance of a main conductor circuit, but is calculated from the individual impedances of the entire cable as a closed system. Thus, the operational impedance can be calculated from the longitudinal impedance of a main conductor circuit.<em>Z<sub>c</sub></em>and the average of the mutual impedances from one phase conductor to an adjacent phase conductor<em>Z<sub>cc,n</sub></em>and from one phase conductor
+          to an opposite phase conductor<em>Z<sub>cc,t</sub></em>.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.29.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.29</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>Similarly, the internal homopolar impedance of the cable can be calculated:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.30.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.30</p></td>
+<td width="37"><p align="left">]</p></td>
+</tr>
+</tbody>
+</table>
+<div id="_8.3"></div>
+<br/>
+<h2>8.3 Transformers</h2>
+<p>Transformers come in many types and sizes. For the connection between high-voltage (HV) and medium-voltage (MV) levels, power transformers with nominal capacities ranging from 10 to 70 MVA are used. These are usually two-winding transformers, but in some cases, three-winding transformers (150/50/10 kV) are also used. The distribution transformers between MV and low-voltage (LV) levels are standardized. These standard transformers are available for capacities from 50 to 1600 kVA. Additionally, in extensive networks, regulating transformers are sometimes used to improve the voltage profile.</p> <a href="https://www.phasetophase.nl/boek/boek_2_8.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_8.3.1"></div>
+<br/>
+<h3>8.3.1 Winding Configurations</h3>
+<p>The transformer windings are connected in three ways, namely in star, delta, and zigzag configurations. Additionally, the phases can be interchanged so that the phase angle can be adjusted in steps of 30 degrees. Since there are 12 possibilities for this, it is indicated by the clock number. The rotation direction of the three-phase system can also be reversed by this means. To avoid misunderstandings, transformers are classified according to winding configuration and clock number.</p>
+<p>Table 8.7 provides an overview of the main possibilities for transformers with two windings. In this, the letter indicates whether the winding configuration is star (Y), delta (D), or zigzag (Z). The capital letter indicates the primary side, and the lowercase letter indicates the secondary side.</p>
+<p>If the neutral point of one of the windings can be connected, this is indicated by the letter N for the primary winding and n for the secondary winding. A commonly used distribution transformer has the Dyn5 configuration.</p>
+<h5>Table 8.7 Winding Configurations</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="52"><p> <strong>Klokgetal</strong> </p></td>
+<td valign="top" width="59"><p> <strong>Schakeling</strong> </p></td>
+<td align="center" valign="top" width="86">
+<strong>Primair</strong></td>
+<td align="center" valign="top" width="86">
+<strong>Secundair</strong></td>
+</tr>
+<tr>
+<td rowspan="3" width="52"><p>0</p></td>
+<td width="59"><p>Dd0</p></td>
+<td align="center" width="86"><img alt="" height="60" src="./modellen_files/driehoek-kap.png" width="69"/></td>
+<td align="center" width="86"><img alt="" src="./modellen_files/tabel-8.7-01.png" width="66"/></td>
+</tr>
+<tr>
+<td width="59"><p>Yy0</p></td>
+<td align="center" width="86"><img alt="" height="60" src="./modellen_files/ster-kap.png" width="69"/></td>
+<td align="center" width="86"><img alt="" src="./modellen_files/tabel-8.7-02.png" width="66"/></td>
+</tr>
+<tr>
+<td width="59"><p>Dz0</p></td>
+<td align="center" width="86"><img alt="" height="60" src="./modellen_files/driehoek-kap.png" width="69"/></td>
+<td align="center" width="86"><img alt="" height="58" src="./modellen_files/tabel-8.7-03.png" width="66"/></td>
+</tr>
+<tr>
+<td rowspan="3" width="52"><p>5</p></td>
+<td width="59"><p>Dy5</p></td>
+<td align="center" width="86"><img alt="" height="60" src="./modellen_files/driehoek-kap.png" width="69"/></td>
+<td align="center" width="86"><img alt="" src="./modellen_files/tabel-8.7-04.png" width="55"/></td>
+</tr>
+<tr>
+<td width="59"><p>Yd5</p></td>
+<td align="center" width="86"><img alt="" height="60" src="./modellen_files/ster-kap.png" width="69"/></td>
+<td align="center" width="86"><img alt="" src="./modellen_files/tabel-8.7-05.png" width="55"/></td>
+</tr>
+<tr>
+<td width="59"><p>Yz5</p></td>
+<td align="center" width="86"><img alt="" height="60" src="./modellen_files/driehoek-kap.png" width="69"/></td>
+<td align="center" width="86"><img alt="" src="./modellen_files/tabel-8.7-06.png" width="55"/></td>
+</tr>
+<tr>
+<td rowspan="3" width="52"><p>6</p></td>
+<td width="59"><p>Dd6</p></td>
+<td align="center" width="86"><img alt="" height="60" src="./modellen_files/driehoek-kap.png" width="69"/></td>
+<td align="center" width="86"><img alt="" height="55" src="./modellen_files/tabel-8.7-07.png" width="63"/></td>
+</tr>
+<tr>
+<td width="59"><p>Yy6</p></td>
+<td align="center" width="86"><img alt="" height="60" src="./modellen_files/ster-kap.png" width="69"/></td>
+<td align="center" width="86"><img alt="" height="54" src="./modellen_files/tabel-8.7-08.png" width="62"/></td>
+</tr>
+<tr>
+<td width="59"><p>Dz6</p></td>
+<td align="center" width="86"><img alt="" height="60" src="./modellen_files/driehoek-kap.png" width="69"/></td>
+<td align="center" width="86"><img alt="" height="54" src="./modellen_files/tabel-8.7-09.png" width="62"/></td>
+</tr>
+<tr>
+<td rowspan="3" width="52"><p>11</p></td>
+<td width="59"><p>Dy11</p></td>
+<td align="center" width="86"><img alt="" height="60" src="./modellen_files/driehoek-kap.png" width="69"/></td>
+<td align="center" width="86"><img alt="" src="./modellen_files/tabel-8.7-10.png" width="55"/></td>
+</tr>
+<tr>
+<td width="59"><p>Yd11</p></td>
+<td align="center" width="86"><img alt="" height="60" src="./modellen_files/ster-kap.png" width="69"/></td>
+<td align="center" width="86"><img alt="" src="./modellen_files/tabel-8.7-11.png" width="55"/></td>
+</tr>
+<tr>
+<td width="59"><p>Yz11</p></td>
+<td align="center" width="86"><img alt="" height="60" src="./modellen_files/driehoek-kap.png" width="69"/></td>
+<td align="center" width="86"><img alt="" src="./modellen_files/tabel-8.7-12.png" width="55"/></td>
+</tr>
+</tbody>
+</table><br/>
+<p>On the high voltage side, a star winding is usually chosen because the star point is available in those networks and the transformer can be impedance-grounded. Medium voltage networks often have a floating star point, and therefore a delta winding is usually chosen at this voltage level. If the medium voltage network still needs to be grounded, this will be done with a separate grounding transformer. Low voltage networks are usually solidly grounded, so a star winding is chosen at this voltage level. The zigzag winding is less common, except in grounding transformers.</p>
+<p>When paralleling transformers, careful attention must be paid to the clock number and winding configuration. It is possible to parallel transformers with different winding configurations. However, this should not be done without proper consideration. The terminals of the different transformers must be correctly swapped to achieve the correct clock number and phase sequence on the secondary side of the transformer. The diagram below provides an example of paralleling a Dy5 and a Dy11 transformer. The paralleling is achieved by connecting the primary side terminals of the Dy11 transformer.<em>U</em>en<em>V</em>to swap and on the secondary side the terminals<em>v</em>en<em>w</em>to swap.</p>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/8.4.png" width="709"/>
+<h5>Figure 8.4 Paralleling a Dy5 and a Dy11 transformer</h5>
+<a href="https://www.phasetophase.nl/boek/boek_2_8.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_8.3.2"></div>
+<br/>
+<h3>8.3.2 Transformation Ratio</h3>
+<p>In addition to the winding configuration, the transformer is characterized by its nominal power and the nominal primary and secondary voltage. The transformation ratio is the quotient of the primary and secondary voltage:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.31.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.31</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The nominal voltages apply to the transformer and not to the windings. The nominal voltages are line-to-line voltages. This means that in a delta winding, this voltage is also present across each of the windings. In a star winding, the voltage across a winding is √3 times smaller than the nominal voltage.</p>
+<p>Most transformers are equipped with a tap changer, which allows the turns ratio to be adjusted in steps. If the tap changer is in the neutral position, the transformer has the nominal turns ratio. By selecting a different tap position, the turns ratio changes by the number of steps times the voltage per step. If a single step corresponds to a voltage ΔV, the turns ratio for n steps relative to the neutral position is:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.32.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.32</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The taps are numbered and usually arranged so that a higher number corresponds to a higher secondary voltage, even though the tap changer is on the primary side. The voltage change per step is usually 1.3 to 2% of the nominal voltage.</p>
+<p>A HV/MV power transformer is usually equipped with an adjustable tap changer, which is controlled by a system that measures the voltage on the MV side and tries to keep it within limits. The principle is explained in paragraph 4.3. Because the system controls a discrete tap changer, it is not possible to set the voltage on the secondary side to an exact desired value. In fact, two or more tap positions may be possible, depending on the step size relative to the voltage regulation band.</p> <a href="https://www.phasetophase.nl/boek/boek_2_8.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_8.3.3"></div>
+<br/>
+<h3>8.3.3 Parameters for transformers with two windings</h3>
+<p>With the nominal power and the nominal voltages, the nominal currents on the primary and secondary sides can be calculated:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.33.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.33</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>Two other important parameters are the relative short-circuit voltage<em>u<sub>k</sub></em>and the short-circuit loss<em>P<sub>k</sub></em>The short-circuit voltage is the voltage that must be applied to the primary side of the transformer so that the nominal current flows when the secondary side is short-circuited. The relative short-circuit voltage is expressed as a percentage of the nominal voltage. The short-circuit loss, also known as copper loss, is responsible for the heating of the transformer due to the power being transmitted. These two parameters are used to calculate the transformer impedance:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.34.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.34</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>In the above equations, the transformer impedance is referred to the secondary side. If the transformer impedance needs to be referred to the primary side, the same calculation is performed using the nominal voltage on the primary side. The relationship between the two values is the square of the turns ratio:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.35.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.35</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The copper loss of the transformer is calculated using the resistance and the actual current, either on the primary or the secondary side:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.36.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.36</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The transformer also has a no-load loss. This is caused by eddy current loss.<em>P<sub>nullast</sub></em>in the iron core. This eddy current loss is modeled with a main field resistance R<sub>f</sub>. Additionally, there is the magnetizing current, which is caused by the main field reactance<em>X<sub>μ</sub></em>The eddy current loss and the magnetizing current are measured together at no load in the no-load current.<em>I<sub>nullast</sub></em>The no-load loss and the no-load current are measured at nominal voltage. This leads to the equivalent circuit of figure 8.5.</p>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/8.5.png" width="576"/>
+<h5>Figure 8.5 Equivalent circuit of the transformer</h5>
+<p>The main field resistance and the main field reactance can be calculated from their parallel connection and the measurement of<em>P<sub>nullast</sub></em>en<em>I<sub>nullast</sub></em>If the no-load measurement is performed on the secondary side of the transformer, the no-load impedance is calculated from:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.37.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.37</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The main field resistance<em>R<sub>f</sub></em>and the magnetizing reactance<em>X<sub>m</sub></em>are then calculated using:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.38.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.38</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.39.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.39</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The actual no-load loss is therefore dependent on the voltage and can then be easily calculated with:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.40.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.40</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>In summary, the loss of the transformer consists of two parts. One part, the copper loss, is quadratically dependent on the current through the transformer and depends on the operating time of the transformer. The other part, the no-load loss, is quadratically dependent on the voltage and is always present as long as the transformer is in operation:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.41.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.41</p></td>
+<td width="37"><p align="left">]</p></td>
+</tr>
+</tbody>
+</table>
+<a href="https://www.phasetophase.nl/boek/boek_2_8.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_8.3.4"></div>
+<br/>
+<h3>8.3.4 Parameters for transformers with three windings</h3>
+<p>Most transformers are constructed with two windings. Many power transformers and industrial transformers that supply converters and rectifiers are equipped with three windings. A power transformer is often of the YNynd type, where the primary winding and the secondary winding have a star connection with a grounded neutral point, and the tertiary winding has a delta connection with a floating neutral point. This transformer can be adjustable with a tap changer at the high voltage level on the primary winding. The secondary winding can have an adjustable tap changer that is not adjusted during operation. A transformer that supplies a converter or a rectifier is usually not adjustable in distribution networks.</p>
+<p>The power that the three windings can handle is usually not equal. Often, the tertiary winding has a lower power rating. Therefore, the nominal power of each winding is specified. As a result, the through powers are always equal to the minimum of the two respective windings:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.42.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.42</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>While only one measurement is needed to determine the short-circuit voltage in a two-winding transformer, three measurements are required for a three-winding transformer. The short-circuit voltage is measured on two of the three windings, with the winding having the lowest power being short-circuited. The third winding remains open. A voltage is then applied to the winding with the highest power such that the nominal current flows in the winding with the lowest power. Short-circuit voltage and short-circuit power are always defined in a fixed direction: primary - secondary (1-2), primary - tertiary (1-3), and secondary - tertiary (2-3). Often,<em>u<sub>k,ij</sub></em>en<em>P<sub>k,ij</sub></em>refers to the (smaller) continuous power of the winding<em>i</em>to winding<em>j</em>. It happens that in test reports<em>u<sub>k,ij</sub></em>en<em>P<sub>k,ij</sub></em>are not related to the (smaller) continuous power, but to the power of the winding with the highest power, for example<em>u<sub>k,ij,large</sub></em>en<em>P<sub>k,ij,large</sub></em>. In that case, must<em>u<sub>k,ij,large</sub></em>en<em>P<sub>k,ij,large</sub></em>must be converted to the corresponding (smaller) continuous power according to the formulas below. The voltage does not appear in this conversion.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.43.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.43</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The transformer impedances are derived from the short-circuit voltage and the short-circuit loss. First, the magnitudes of the impedances are determined. 
+Next, the resistances are calculated, and from those, the reactances. For the purpose of the calculations, the transformer impedances are usually referenced to the same voltage level. The formulas below provide the calculation for<em>Z<sub>T</sub></em>en<em>R<sub>T</sub></em>, referred to the primary side (1).</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.44.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.44</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>Finally, the reactance is<em>Z<sub>T,ij</sub></em>en<em>R<sub>T,ij</sub></em>determined:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.45.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.45</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>Figure 8.6 provides the equivalent circuit for the three-winding transformer, with the impedances referred to the primary side. In this diagram, the turns ratio is omitted. This diagram is therefore useful for calculations that are referred to a single voltage level, for example, on the primary side. For the application of this equivalent circuit, all impedances must be referred to that same voltage level. The equivalent circuit is also applicable for another voltage level, but then the impedances must be referred to the side corresponding to that voltage level. The impedances are then calculated by using the above formulas instead of<em>U<sub>nom,1</sub></em>to use the other desired voltage level.</p>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/8.6.png" width="518"/>
+<h5>Figure 8.6 Replacement diagram of the three-winding transformer</h5>
+<p>In the replacement diagram of the three-winding transformer, the relationship between the internal impedances is straightforward.<em>Z<sub>1</sub></em>,<em>Z<sub>2</sub></em>en<em>Z<sub>3</sub></em>and the transformer impedances<em>Z<sub>12</sub></em>,<em>Z<sub>13</sub></em>en<em>Z<sub>23</sub></em>visible. The internal impedances can be easily derived from the transformer impedances:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.46.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.46</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The no-load loss is determined in the same way as with the transformer with two windings. The no-load loss and the no-load current are measured on one of the windings, and the impedances can be related to any other winding by converting them.</p>
+<p>As an example, the impedances of a YNynd transformer for HV, LV, and MV are calculated. The nameplate data are listed below.</p>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="48"><p> <strong>Gegeven</strong> </p></td>
+<td valign="top" width="92"><p align="center"> <strong>Primair</strong> </p></td>
+<td valign="top" width="85"><p align="center"> <strong>Secundair</strong> </p></td>
+<td valign="top" width="92"><p align="center"> <strong>Tertiair</strong> </p></td>
+<td valign="top" width="44"><p> <strong>Eenheid</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="48"><p>U<sub>nom</sub> </p></td>
+<td valign="top" width="92"><p align="center">150</p></td>
+<td valign="top" width="85"><p align="center">52.5</p></td>
+<td valign="top" width="92"><p align="center">10.5</p></td>
+<td valign="top" width="44"><p>kV</p></td>
+</tr>
+<tr>
+<td valign="top" width="48"><p>S<sub>nom</sub> </p></td>
+<td valign="top" width="92"><p align="center">100</p></td>
+<td valign="top" width="85"><p align="center">100</p></td>
+<td valign="top" width="92"><p align="center">27</p></td>
+<td valign="top" width="44"><p>MVA</p></td>
+</tr>
+<tr>
+<td valign="top" width="48"></td>
+<td valign="top" width="92"><p align="center">Primary - Secondary</p></td>
+<td valign="top" width="85"><p align="center">Primary - Tertiary</p></td>
+<td valign="top" width="92"><p align="center">Secondary - Tertiary</p></td>
+<td valign="top" width="44"></td>
+</tr>
+<tr>
+<td valign="top" width="48"><p>u<sub>k</sub> </p></td>
+<td valign="top" width="92"><p align="center">14.8</p></td>
+<td valign="top" width="85"><p align="center">9.3</p></td>
+<td valign="top" width="92"><p align="center">4.9</p></td>
+<td valign="top" width="44"><p>%</p></td>
+</tr>
+<tr>
+<td valign="top" width="48"><p>P<sub>k</sub> </p></td>
+<td valign="top" width="92"><p align="center">465</p></td>
+<td valign="top" width="85"><p align="center">78</p></td>
+<td valign="top" width="92"><p align="center">69</p></td>
+<td valign="top" width="44"><p>kW</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>All impedances in this example are referenced to the high voltage side, thus at the nominal voltage of 150 kV. For the magnitudes of the impedances, the following applies:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.47.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.47</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>For the resistances, after substitution, the following applies:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.48.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.48</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>From this, the reactances ultimately follow:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.49.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.49</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The reactances are in this case approximately equal to the magnitudes of the impedances because the resistances are relatively small. The internal impedances of the equivalent circuit can now be calculated:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.50.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.50</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>Notably, one of the reactances has a small negative value. This is the reactance of the winding that is located in the middle of the two other windings (Happoldt, 1978). The reactances of the two other windings, placed on the inside and outside, are approximately equal to the short-circuit reactance between them and the winding placed in the middle.<em>X<sub>1</sub>≈ X<sub>12</sub></em>en<em>X<sub>3</sub>≈ X<sub>23</sub></em>).</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_8.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_8.3.5"></div>
+<br/>
+<h3>8.3.5 Inverse impedance</h3>
+<p>For a transformer, the same applies as for the connection, if the phase angle shift is disregarded. Due to the construction of the transformer, it can be assumed that it is sufficiently three-phase symmetrical. The inverse impedance<em>Z<sub>2</sub></em>is therefore equated to
+          the normal impedance<em>Z<sub>1</sub></em>For most applications, such as load flow and short-circuit calculations, this approach is sufficient. However, if the phase shift must be taken into account in the modeling, it is incorporated into the transformation ratio. In the inverse system, the transformation ratio is equal to the complex conjugate of the transformation ratio in the normal system.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_8.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_8.3.6"></div>
+<br/>
+<h3>8.3.6 Homopolar parameters</h3>
+<p>In transformers, the neutral point can be loaded if it is grounded through a coil or resistor. For transformers with Yd, Dy, Yz, and Yyd winding configurations, the neutral point is generally fully loadable and can carry the nominal current. In the Yz transformer, this loadability applies to the zigzag winding, and in the Yyd transformer, it applies to one of the two star windings. In these transformers, a homopolar current can flow, making the homopolar parameters important.</p>
+<p>The construction of the transformer core and the transformer tank does not affect the normal and inverse impedances, but it does affect the homopolar impedances. The homopolar impedance of the transformer does not depend on the dispersion of the magnetic fields, but on the electrical configuration of the windings and the magnetic configuration of the transformer core.</p>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/8.7.png" width="693"/>
+<h5>Figure 8.7 Homopolar voltage source connected to a delta winding</h5>
+<h6>Delta-star</h6>
+<p>The homopolar impedance of a star-delta transformer is infinite when viewed from the delta side, because the delta configuration has no connection to the ground. Figure 8.7 illustrates what happens when the delta winding is connected to a homopolar voltage source. Since the circuit is not closed, no current flows under normal conditions.</p>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/8.9.png" width="697"/>
+<h5>Figure 8.8  Phase-to-ground connection on the star winding side</h5>
+<p>If the transformer is fed from the delta winding on the secondary side and if a phase-to-ground fault occurs on the star winding on the primary side, a homopolar short-circuit current will flow in the primary circuit.<em>I<sub>k</sub>"</em>flow, as shown in figure 8.8. This current flows only through the coil located in the faulty phase. This current is transformed with the transformation ratio<em>t</em>to the magnetically
+          coupled coil in the secondary circuit. Because the primary coils are connected in a star configuration and the secondary coils in a delta configuration, the factor
+          √3 appears in the transformation of the current. As a result, a current will flow in two phases on the supply side in the secondary circuit.
+        However, this current in the secondary circuit is not a homopolar current, because there is no contact with the ground on that side of the transformer.</p>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/8.9.png" width="697"/>
+<h5>Figure 8.9  Homopolar voltage source connected to a star winding</h5>
+<p>For the star winding, the homopolar reactance is approximately the same as the short-circuit reactance. The homopolar currents in the star winding are balanced by the current in the delta winding. Figure 8.9 illustrates that when a homopolar voltage source is applied to the star winding, the homopolar current is distributed across the three primary phase coils. These currents are transformed according to the turns ratio.<em>t</em>and the
+        factor √3.</p>
+<p>The transformed current flows through all the coils of the secondary winding. Since the phasors of these currents in all secondary coils are equal in magnitude and direction, they are short-circuited by the delta connection. This explains that the homopolar reactance in this direction is approximately equal to the normal short-circuit reactance. Therefore, the transformed currents do not flow into the network. If a phase-to-ground fault occurs in the secondary circuit, it will not be noticeable in the primary circuit. The homopolar equivalent circuit of this transformer configuration is given in Table 8.9.</p>
+<h6>Zigzagwikkeling</h6>
+<p>In the homopolar situation, a star winding is magnetically coupled with other star windings or with delta windings. However, a zigzag winding is not coupled with other windings (see Figure 8.10). The homopolar reactance of a star-zigzag transformer or a delta-zigzag transformer is determined solely by the leakage between the zig and zag windings, because no homopolar currents are induced in the star or delta windings (Figure 8.10).</p>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/8.10.png" width="693"/>
+<h5>Figure 8.10  Homopolar voltage source connected to a zigzag winding</h5>
+<p>Since the 'zig and zag windings' belong to the same circuit and are therefore relatively close to each other, the leakage and consequently the homopolar reactance is small. The homopolar reactance corresponds to the short-circuit reactance between the two sub-windings and is in the order of 0.1 to 0.2 times the short-circuit reactance.</p>
+<p>A neutral grounding transformer is a coil with only a zigzag winding. This allows for the creation of an impedance-grounded neutral point in an ungrounded network. This transformer is used in medium voltage networks with an ungrounded neutral when the designer decides to provide the ungrounded network with a grounded neutral point, for example, for safety reasons. Any phase-to-ground fault in the medium voltage network will now cause a homopolar current, which will flow through the neutral grounding transformer and can be detected by the protection system. More about the neutral grounding transformer can be found in section 8.4.</p>
+<h6>Star-star transformer</h6>
+<p>A YNy winding configuration is generally not recommended for three-phase transformers because they have a relatively high zero-sequence impedance. In these transformers, unlike the delta-star transformer and the transformer with zigzag winding, balance in Ampere-turns is not possible. The value of the zero-sequence impedance is largely determined by the construction of the transformer core, which affects the reluctance (magnetic resistance) and the magnetizing reactance. The magnetizing reactance is inversely proportional to the reluctance. The reluctance of the path for the magnetic flux outside the iron core is many times higher than that of the path through the iron core. Therefore, in general, the magnetizing reactance is high when the path of the magnetic flux is entirely within the iron core. If the flux is forced to travel outside the iron core, the magnetizing reactance is low. Finally, the zero-sequence reactance is determined by the sum of the leakage reactance and the magnetizing reactance.</p>
+<p>Most three-phase transformers are composed of three separate single-phase transformers or are built around a core with five or three 'legs'.</p>
+<p> <strong>Three separate single-phase transformers</strong> </p>
+<p>Figure 8.11 shows the configuration with three separate transformers. In each separate core, the homopolar magnetic flux can flow completely, resulting in very low reluctance. The magnetizing reactance is inversely proportional to the reluctance and is very high. Consequently, the homopolar impedance, which is determined from the sum of the leakage reactance and the magnetizing reactance, is also high (Tleis, 2008). The ratio X0/X1 of the homopolar to the normal transformer reactance is in the order of magnitude of 10 to 100 (Happoldt, 1978).</p>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/8.11.png" width="417"/>
+<h5>Figure 8.11  Homopolar fluxes in three separate transformers</h5>
+<p> <strong>Star-star transformer with five-legged iron core</strong> </p>
+<p>Figure 8.12 shows the three-phase transformer with a five-legged iron core. In this transformer, the homopolar magnetic fluxes can completely close over the path via the outer two legs, resulting in very low reluctance. Consequently, the homopolar reactance can reach very high values. However, there is a risk that in the event of a phase-to-ground short circuit, the outer two legs of the iron core may become saturated, which reduces the value of the homopolar impedance (Tleis, 2008). The ratio of X0/X1 is in the order of magnitude of 10 to 100 (Happoldt, 1978).</p>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/8.12.png" width="325"/>
+<h5>Figure 8.12  Homopolar fluxes in a transformer with a five-legged iron core</h5>
+<p> <strong>Star-star transformer with three-legged iron core</strong> </p>
+<p>Figure 8.13 shows the coils and the core of a three-phase transformer with a three-legged iron core. With a three-phase symmetrical current through the coils, the magnetic fluxes in the core also exhibit the same three-phase symmetry, resulting in the three magnetic fluxes canceling each other out in the iron core. However, the homopolar currents magnetize the three legs of the transformer core in the same direction. In that case, the sum of the magnetic fluxes in the three legs is not equal to zero. The magnetic fluxes then need to find a return path outside the iron core. As a result, in such transformers, the sum of the magnetic fluxes will close through the air and over the transformer tank. The transformer tank thus has the same effect as an additional delta winding.</p>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/8.13.png" width="284"/>
+<h5>Figure 8.13  Homopolar fluxes in a transformer with a three-legged iron core</h5>
+<p>The reluctance of the flux path outside the iron core is high, resulting in a low magnetizing reactance. The resulting homopolar reactance is smaller than that of the transformer with a five-legged core but greater than the normal short-circuit reactance. The ratio of X0/X1 is in the order of magnitude of 3 to 10 (Happoldt, 1978).</p>
+<p>In situations of asymmetry in the three-phase system, the homopolar current can become quite large. Because the magnetic fluxes close within the transformer tank, it can heat up to an unacceptably high temperature.</p>
+<p>To improve performance in situations where a homopolar current flows, transformers with a star-star winding configuration are usually equipped with a third delta winding, where the homopolar currents can flow in a controlled manner. The ratio of X0/X1 for this type of transformer ranges from approximately 1 to 2.4 (Happoldt, 1978).</p>
+<p>Table 8.8 provides an overview of the homopolar reactance<em>X<sub>0</sub></em>of several transformers, expressed as a factor of the normal short-circuit reactance<em>X<sub>1</sub></em>. The factors apply to the side of the transformers whose neutral point is grounded, indicated by the letter<em>N</em>of<em>n</em>.</p>
+<h5>Table 8.8  Zero-sequence reactances of transformers</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td rowspan="2" valign="top" width="110"><p> <strong>Transformatorkern</strong> </p></td>
+<td colspan="4" valign="top" width="269"><p> <strong>Ratio X0/X1 for connection</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="64"><p>Yzn</p></td>
+<td valign="top" width="71"><p>YNd or Dyn</p></td>
+<td valign="top" width="64"><p>YNy + D</p></td>
+<td valign="top" width="71"><p>YNy or YNz</p></td>
+</tr>
+<tr>
+<td valign="top" width="110"><p>Three cores</p></td>
+<td valign="top" width="64"><p>0.10 --- 0.15</p></td>
+<td valign="top" width="71"><p>0.7 … 1.0<sup>a)</sup> </p></td>
+<td valign="top" width="64"><p>1 … 2.4<sup>b)</sup> </p></td>
+<td valign="top" width="71"><p>3 .. 10<sup>b)</sup> </p></td>
+</tr>
+<tr>
+<td valign="top" width="110"><p>Five cores</p></td>
+<td valign="top" width="64"><p>0.10 --- 0.15</p></td>
+<td valign="top" width="71"><p>1.0</p></td>
+<td valign="top" width="64"><p>1 … 2.4<sup>b)</sup> </p></td>
+<td valign="top" width="71"><p>10 .. 100<sup>b)</sup> </p></td>
+</tr>
+<tr>
+<td valign="top" width="110"><p>Three separate single-phase transformers</p></td>
+<td width="64"><p>0.10 --- 0.15</p></td>
+<td width="71"><p>1.0</p></td>
+<td width="64"><p>1 … 2.4<sup>b)</sup> </p></td>
+<td width="71"><p>10 .. 100<sup>b)</sup> </p></td>
+</tr>
+</tbody>
+</table><br/>
+<ol type="a">
+<li>For low-power transformers (MV/LV distribution transformers), the ratio<em>X<sub>0</sub>/X<sub>1</sub></em>approximately equal to 1.0.</li>
+<li>Highly dependent on the construction of the transformer and the proportion of the leakage flux relative to the working flux (the leakage flux partially closes through the transformer housing).</li></ol>
+<p>Using table 8.8, the homopolar impedances of the transformer can be estimated. First, the correct homopolar equivalent circuit for the winding configuration must be selected from table 8.9. Table 8.9 contains the homopolar transformer impedances and the external neutral point impedance.<em>Z<sub>e</sub></em>displayed.</p>
+<p>For example, for the YNynd transformer in the example of paragraph 8.3.4, according to table 8.8, the ratio of<em>X<sub>0</sub>/X<sub>1</sub></em>between 1.0 and 2.4. In this explanatory example, it is assumed that the ratio is 1.0 and that the method also applies to the resistance. For the internal homopolar impedances of the equivalent circuit in table 8.9, this means that when using the calculated values of the internal impedances of the normal component system according to equation 8.50:</p>
+<p>Z<sub>0.1</sub>= Z<sub>1</sub>= 0.7 + j35.0 Ω</p>
+<p>Z<sub>0.2</sub>= Z<sub>2</sub>= 0.4 – j1.7 Ω</p>
+<p>Z<sub>0.3</sub>= Z<sub>3</sub>= 1.7 + j42.5 Ω</p>
+<p>For a YNynd three-winding transformer, the normal transformer impedances are first calculated from the nameplate data and then the internal impedances.<em>Z<sub>1</sub></em>,<em>Z<sub>2</sub></em>en<em>Z<sub>3</sub></em>the equivalent circuit of figure 8.6. The ratio of<em>X<sub>0</sub>/X<sub>1</sub></em>for this type of transformer lies between 1.0 and 2.4. It is also assumed for this transformer that this ratio can be applied to the resistance. With the ratio, the impedances can now<em>Z<sub>0.1</sub></em>,<em>Z<sub>0.2</sub></em>en<em>Z<sub>0.3</sub></em>be calculated. In the equivalent circuit, it is assumed for all circuits in table 8.9 that all impedances are referred to the voltage level of the primary side. Therefore, for the YNynd transformer configuration, the grounding impedance can be referred to the primary winding.<em>Z<sub>e1</sub></em>simply be filled in the equivalent circuit. However, the grounding impedance on the secondary side must first be converted to the voltage level of the primary side by multiplying the value by<em>(U<sub>1</sub>/U<sub>2</sub>)<sup>2</sup></em>. If the secondary winding is not grounded, then for<em>Z<sub>e2</sub></em>infinity is substituted.</p>
+<h5>Table 8.9 Zero-sequence equivalent circuits for transformers</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="62"><p> <strong>Configuratie</strong> </p></td>
+<td align="center" valign="top" width="113"><p> <strong>Schakeling</strong> </p></td>
+<td align="center" valign="top" width="220"><p> <strong>Zero-sequence equivalent circuit</strong> </p></td>
+</tr>
+<tr>
+<td width="62"><p>YNy</p></td>
+<td align="center" width="113"><img alt="" height="119" src="./modellen_files/tabel-8.9-1a.png"/></td>
+<td align="center" width="113"><img alt="" height="119" src="./modellen_files/tabel-8.9-1b.png"/></td>
+</tr>
+<tr>
+<td width="62"><p>YNd</p></td>
+<td align="center" width="113"><img alt="" height="120" src="./modellen_files/tabel-8.9-2a.png"/></td>
+<td align="center" width="113"><img alt="" height="119" src="./modellen_files/tabel-8.9-1b.png"/></td>
+</tr>
+<tr>
+<td width="62"><p>ZNy</p></td>
+<td align="center" width="113"><img alt="" height="122" src="./modellen_files/tabel-8.9-3a.png"/></td>
+<td align="center" width="113"><img alt="" height="119" src="./modellen_files/tabel-8.9-1b.png"/></td>
+</tr>
+<tr>
+<td width="62"><p>ZNd</p></td>
+<td align="center" width="113"><img alt="" height="120" src="./modellen_files/tabel-8.9-4a.png"/></td>
+<td align="center" width="113"><img alt="" height="119" src="./modellen_files/tabel-8.9-1b.png"/></td>
+</tr>
+<tr>
+<td width="62"><p>YNynd</p> </td>
+<td align="center" width="113"><img alt="" height="120" src="./modellen_files/tabel-8.9-5a.png"/></td>
+<td align="center" width="113"><img alt="" height="119" src="./modellen_files/tabel-8.9-5b.png"/></td>
+</tr>
+</tbody>
+</table><br/>
+<p>If the estimation method is not found to be sufficiently accurate, the zero-sequence impedances must be measured. Depending on the type of transformer and the applied configuration in the windings, 1, 2, or 3 measurements are needed. In the case where no neutral point is implemented, a zero-sequence measurement is not possible. A zero-sequence measurement can only be conducted from a YN or ZN winding. In the case of a transformer with a YNd configuration, a measurement on the primary side with the star winding is sufficient. In the case of a transformer with a YNynd configuration, at least three measurements must be performed. This can be done in the following two ways.</p>
+<h6>The delta winding of the YNynd transformer can be opened</h6>
+<p>If it is possible to open the delta winding (some transformers have a provision for this), the homopolar impedances from winding 1 to 2, from 1 to 3, and from 2 to 3 can be measured directly (Kraaij). The measurement is performed by applying a homopolar voltage to the three parallel-connected coils on the side to be measured. The following method is used for this purpose:</p>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="40"><p> <strong>Meting</strong> </p></td>
+<td valign="top" width="102"><p> <strong>Primary winding</strong> </p></td>
+<td valign="top" width="106"><p> <strong>Secondary winding</strong> </p></td>
+<td valign="top" width="92"><p> <strong>Tertiary winding</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="40"><p>Z<sub>0.12</sub> </p></td>
+<td valign="top" width="102"><p>Homopolar voltage</p></td>
+<td valign="top" width="106"><p>Kortsluiten</p></td>
+<td valign="top" width="92"><p>Open delta</p></td>
+</tr>
+<tr>
+<td valign="top" width="40"><p>Z<sub>0.13</sub> </p></td>
+<td valign="top" width="102"><p>Homopolar voltage</p></td>
+<td valign="top" width="106"><p>Leave open</p></td>
+<td valign="top" width="92"><p>Close delta</p></td>
+</tr>
+<tr>
+<td valign="top" width="40"><p>Z<sub>0.23</sub> </p></td>
+<td valign="top" width="102"><p>Leave open</p></td>
+<td valign="top" width="106"><p>Homopolar voltage</p></td>
+<td valign="top" width="92"><p>Close delta</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>All measured impedances must then be referenced to the same voltage level, for example, from the primary side. After this, the impedances can<em>Z<sub>0.1</sub></em>,<em>Z<sub>0.2</sub></em>en<em>Z<sub>0.3</sub></em>of the equivalent circuit can be calculated in the same way as the normal impedances.</p>
+<h5>Rekenvoorbeeld</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="85"><p> <strong>Impedantie</strong> </p></td>
+<td valign="top" width="113"><p> <strong>Measured value (Ω)</strong> </p></td>
+<td valign="top" width="142"><p> <strong>Referred to the primary side (Ω)</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="85"><p>Z<sub>0.12</sub> </p></td>
+<td valign="top" width="113"><p>1.1 + j33.3</p></td>
+<td valign="top" width="142"><p>1.1 + j33.3</p></td>
+</tr>
+<tr>
+<td valign="top" width="85"><p>Z<sub>0.13</sub> </p></td>
+<td valign="top" width="113"><p>2.4 + j77.5</p></td>
+<td valign="top" width="142"><p>2.4 + j77.5</p></td>
+</tr>
+<tr>
+<td valign="top" width="85"><p>Z<sub>0.23</sub> </p></td>
+<td valign="top" width="113"><p>0.3 + j5.0</p></td>
+<td valign="top" width="142"><p>2.5 + j40.8</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>From this, the impedances can<em>Z<sub>0.1</sub></em>,<em>Z<sub>0.2</sub></em>en<em>Z<sub>0.3</sub></em>can be calculated from the replacement diagram:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.51.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.51</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<h6>The delta winding of the YNynd transformer cannot be opened.</h6>
+<p>If it is not possible to open the delta winding, a slightly modified method is followed during the measurement. Specifically, when measuring from winding 1 to winding 2, with winding 2 short-circuited, the non-opened winding 3 is also included in the measurement. Essentially, the impedance is then measured from winding 1 to the parallel connection of windings 2 and 3. This is indicated with // in the index. Conversely, the impedance is measured from winding 1 to 3 and from winding 2 to 3.</p>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="40"><p> <strong>Meting</strong> </p></td>
+<td valign="top" width="102"><p> <strong>Primary winding</strong> </p></td>
+<td valign="top" width="106"><p> <strong>Secondary winding</strong> </p></td>
+<td valign="top" width="92"><p> <strong>Tertiary winding</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="40"><p>Z<sub>0.12//3</sub> </p></td>
+<td valign="top" width="102"><p>Zero-sequence voltage</p></td>
+<td valign="top" width="106"><p>Kortsluiten</p></td>
+<td valign="top" width="92"><p>Delta closed</p></td>
+</tr>
+<tr>
+<td valign="top" width="40"><p>Z<sub>0.13</sub> </p></td>
+<td valign="top" width="102"><p>Zero-sequence voltage</p></td>
+<td valign="top" width="106"><p>Leave open</p></td>
+<td valign="top" width="92"><p>Delta closed</p></td>
+</tr>
+<tr>
+<td valign="top" width="40"><p>Z<sub>0.23</sub> </p></td>
+<td valign="top" width="102"><p>Leave open</p></td>
+<td valign="top" width="106"><p>Zero-sequence voltage</p></td>
+<td valign="top" width="92"><p>Delta closed</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>All measured impedances must then be referenced to the same voltage level, for example, from the primary side. After this, the impedances can<em>Z<sub>0.1</sub></em>,<em>Z<sub>0.2</sub></em>en<em>Z<sub>0.3</sub></em>can be calculated from the equivalent circuit. The derivation of the formulas below is not provided here.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.52.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.52</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<h5>Rekenvoorbeeld</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="85"><p> <strong>Impedantie</strong> </p></td>
+<td valign="top" width="113"><p> <strong>Measured value (Ω)</strong> </p></td>
+<td valign="top" width="142"><p> <strong>Referred to the primary side (Ω)</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="85"><p>Z<sub>0.12//3</sub> </p></td>
+<td valign="top" width="113"><p>1.1 + j33.2</p></td>
+<td valign="top" width="142"><p>1.1 + j33.2</p></td>
+</tr>
+<tr>
+<td valign="top" width="85"><p>Z<sub>0.13</sub> </p></td>
+<td valign="top" width="113"><p>2.4 + j77.5</p></td>
+<td valign="top" width="142"><p>2.4 + j77.5</p></td>
+</tr>
+<tr>
+<td valign="top" width="85"><p>Z<sub>0.23</sub> </p></td>
+<td valign="top" width="113"><p>0.3 + j5.0</p></td>
+<td valign="top" width="142"><p>2.5 + j40.8</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>From this, the impedances can<em>Z<sub>0.1</sub>, Z<sub>0.2</sub>and Z<sub>0.3</sub></em>can be calculated from the replacement diagram:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.53.png" width="600"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.53</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<h6>Measurement on a transformer with ZN winding</h6>
+<p>When measuring a YN winding, there may be a coupling with another winding. For instance, there is always a coupling to a delta winding. However, a zigzag winding is not homopolar coupled. A ZN winding can always be measured directly.</p>
+<p>In a YNdzn transformer, two independent measurements are performed, namely a measurement from the YN winding to the d winding and a measurement of the zn winding.</p>
+<h6>Sterpuntimpedantie</h6>
+<p>The impedance from the neutral point to ground belongs in the homopolar scheme. As described in paragraph 8.2.7, this impedance must be multiplied by 3 for inclusion in the homopolar component network.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.54.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.54</p></td>
+<td width="37"><p align="left">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<a href="https://www.phasetophase.nl/boek/boek_2_8.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_8.3.7"></div>
+<br/>
+<h3>8.3.7 Correction for short-circuit calculations according to IEC</h3>
+<p>A transformer connects two or more networks of different voltage levels. The international standard IEC 60909 prescribes that for short-circuit calculations according to that standard, a correction factor<em>K<sub>T</sub></em>on the impedance of the normal system is applied. This factor represents the influence of the transformer being in operation through a correction on the impedance. The correction factor is calculated as follows:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.55.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.55</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>where:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="60"><em>c<sub>max</sub></em></td>
+<td>voltage parameter for the short-circuit calculation; 1.05 for low-voltage networks with a tolerance of +6% and in all other cases 1.1</td>
+</tr>
+<tr>
+<td><em>x<sub>T</sub></em></td>
+<td>per unit value of the reactance:<em>x<sub>T</sub>= X<sub>T</sub>/ (U<sub>nom,T</sub><sup>2</sup>/ S<sub>nom,T</sub>)</em></td>
+</tr>
+</tbody>
+</table><br/>
+<p>This correction factor is applied to the transformer impedances in the normal, inverse, and homopolar systems. For transformers with two windings, the corrected impedances are:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.56.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.56</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>For a three-winding transformer, three correction factors are determined:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.57.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.57</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>This correction factor is applied to the transformer impedances in the normal, inverse, and homopolar systems. For transformers with two windings, the corrected impedances are:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="center" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.58a.png"/>en<img alt="formules_2.8" src="./modellen_files/formule-8.58b.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.58</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>Afterward, the corrected impedances are converted to the internal transformer impedances of the equivalent circuit.</p>
+<p>The correction factor is not applied to any grounding impedance that may be present between the neutral point and ground.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_8.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_8.3.8"></div>
+<br/>
+<h3>8.3.8 Inrush Currents</h3>
+<p>When energizing an unloaded transformer, inrush currents occur. These currents can reach values of 10 to 15 times the nominal current. These currents affect transformer protection and cause voltage dips. The magnitude of the inrush current can be determined by measurement or by calculation.</p>
+<p>The inrush current is caused by the presence of residual flux in the transformer core that can remain for a long time after switching off. Depending on the moment in the 50 Hz voltage sine wave when switching on occurs, this flux, combined with the buildup of flux after switching on the mains voltage, can lead to saturation of the iron core. The inrush current is characterized by a strong second harmonic. The inrush current diminishes relatively slowly. This is dependent on the R/X ratio in the supplying network.</p>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/8.14.png" width="600"/>
+<h5>Figure 8.14 Inrush current when energizing an unloaded transformer</h5>
+<p>There are models for calculating the inrush current, but these are complex and use parameters that the network planner usually does not have at their disposal. In many cases, only the maximum value of the inrush current is important. This value can be approximated using a short-circuit calculation, where the transformer is short-circuited on the secondary side. In the case of a network with impedance<em>Z<sub>Q</sub></em>(equation 8.2) and a transformer with impedance<em>Z<sub>T</sub></em>(equation 8.34) is the maximum value of the inrush current:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.59.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.59</p></td>
+<td width="37"><p align="left">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<a href="https://www.phasetophase.nl/boek/boek_2_8.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_8.4"></div>
+<br/>
+<h2>8.4 Grounding Transformer and Neutral Point Transformer</h2>
+<p>A grounding transformer and a neutral point transformer are essentially the same device. Both are constructed as a zigzag transformer. These transformers are used in medium voltage (MV) networks and low voltage (LV) networks. In MV networks that are supplied with a Yd transformer, there is no neutral point on the secondary side of the transformer. If a neutral point is desired in these networks so that the network can be impedance-grounded, a grounding transformer is used. In LV networks, it can occur that the loads are distributed asymmetrically across the phases to such an extent that the phase voltages differ from each other. The result is that a current flows through the neutral conductor, causing additional losses, and furthermore, the voltage on the neutral conductor is no longer zero (neutral point shift). This phenomenon is most pronounced in extensive LV networks with relatively few connections.</p>
+<p>A neutral point transformer reduces the imbalance of currents in the LV network and thereby the imbalance of voltages.</p>
+<p>By applying the grounding or neutral point transformer, the current distribution in the network changes. In the case of a single-phase load in an LV network, this reduces the voltage drop of the loaded phase relative to the neutral conductor. At the same time, it reduces the voltage rise on the unloaded phases relative to the neutral conductor.</p>
+<p>A grounding or neutral point transformer is essentially a three-phase transformer with a turns ratio of 1. The windings on a three-legged core are connected in a zigzag configuration, as shown in figure 8.15. When the transformer is connected to a normally symmetrical three-phase system, the impedance is very high. Only the magnetizing current flows then. The voltage at the neutral point of the neutral point transformer is then zero.</p>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/8.15.png" width="360"/>
+<h5>Figure 8.15 Operation of a grounding or neutral point transformer in a medium voltage network</h5>
+<p>If a homopolar current flows through the transformer, the homopolar impedance is very small. This is demonstrated with the help of figure 8.15. This figure shows the operation of a grounding transformer in a medium voltage network, where a short circuit is created between phase C and the ground. The arrows along the windings indicate the direction of the current.<em>I<sub>0</sub></em>on. The field direction is thus coupled. It turns out that in each leg of the yoke, the magnetic fields cancel each other out, resulting in very low reactance. Since the copper resistance of the coils is small, it can be considered a short-circuit situation. For equal currents in the same direction, the neutral point transformer therefore has negligible impedance. The short-circuit current is<em>3I<sub>0</sub></em>. In each phase, 1/3 of the total (homopolar) short-circuit current flows, namely<em>I<sub>0</sub></em>On the supply side, it is visible how the currents are distributed over the three phases, namely 1/3 of the short-circuit current over the undisturbed phases and 2/3 of the short-circuit current over the disturbed phase.</p>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/8.16.png" width="360"/>
+<h5>Figure 8.16  Operation of an ideal grounding or neutral point transformer in an LV network</h5>
+<p>Figure 8.16 shows the situation of a neutral point transformer under an asymmetric load in an LV network. In the network, a single-phase load is connected between phase L3 and the neutral conductor, resulting in a current of<em>I</em>flows. Without the neutral point transformer, the return current would flow through the neutral conductor.
+          By using the neutral point transformer, ideally, one-third of the return current flows through each of the windings, resulting in no current flowing through the neutral conductor on the supply side. This ensures a better distribution of currents through the phase conductors: 1/3 through the unloaded phase conductors and 2/3 through the loaded phase conductor. In practice, the neutral point transformer is not ideal and has a certain impedance, which means not all the return current is removed from the neutral conductor by the transformer.</p>
+<p>The neutral point transformer has no effect on the normal and inverse component systems and therefore has no equivalent circuit in those systems. The equivalent circuit in the homopolar system is given in Table 8.10. This includes the homopolar impedance of the grounding transformer and the external neutral point impedance Z.<sub>e</sub>shown.</p>
+<h5>Table 8.10  Homopolar equivalent circuits for a grounding or neutral point transformer</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top"><p> <strong>Configuratie</strong> </p></td>
+<td align="center" valign="top"><p> <strong>Schakeling</strong> </p></td>
+<td align="center" valign="top"><p> <strong>Homopolar equivalent circuit</strong> </p></td>
+</tr>
+<tr>
+<td><p>ZN</p></td>
+<td align="center"><img alt="" height="128" src="./modellen_files/tabel-8.10a.png" width="56"/>
+</td>
+<td align="center"><img alt="" height="124" src="./modellen_files/tabel-8.10b.png" width="236"/>
+</td>
+</tr>
+</tbody>
+</table><br/>
+<p>The homopolar impedance of a grounding or neutral point transformer is measured in the same way as for a cable, as described in paragraph 8.2.7. During the measurement, the three phases of the transformer are connected to each other. A voltage source with voltage is applied across the three terminals and the neutral.<em>U<sub>0</sub></em>connected. The measured current from the power supply is, according to figure 8.1, equal to<em>I<sub>M</sub></em>and this branches into three currents of<em>I<sub>0</sub> </em>that flows through each of the phases. The homopolar impedance of the neutral point transformer is then:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.60.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.60</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The possibly present grounding impedance<em>Z<sub>sterpunt</sub></em>is in series with the transformer and must be multiplied by 3 for the calculations and added to the homopolar transformer impedance:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.61.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.61</p></td>
+<td width="37"><p>]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>A neutral point transformer in an LV network is sometimes combined with a voltage regulator, which is connected to several taps of the windings.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_8.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_8.5"></div>
+<br/>
+<h2>8.5 Chokes</h2>
+<p>In MV distribution networks, chokes are used to limit short-circuit currents. They are placed in the substation at the beginning of the medium-voltage line, right after the circuit breaker. Due to the impedance of the choke, the line is electrically extended, thereby reducing the short-circuit power behind the choke. This limits the damage caused by short-circuit currents.</p>
+<p>The choke is designed for a specific nominal current and impedance. Often, the nominal current and impedance are not provided, but rather the nominal power, the relative short-circuit voltage, and the short-circuit power. The following equations indicate how these parameters can be converted into each other.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.62.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.62</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>Usually, the resistance is much smaller than the reactance. For a choke coil of<em>U<sub>S,nom</sub>= 10 kV</em>applies, for example:<br/>
+<em>S<sub>S,nom</sub>= 5.8 MVA</em><br/>
+<em>u<sub>k</sub>= 1.74%</em><br/>
+<em>P<sub>k</sub>= 2.69 kW</em></p>
+<p>This corresponds to:<br/>
+<em>I<sub>nom</sub>= 335 A</em><br/>
+<em>R<sub>S</sub>= 0.008 Ω</em><br/>
+<em>X<sub>S</sub>= 0.3 Ω</em></p>
+<p>It is often assumed that for a choke coil, the homopolar impedance and the inverse impedance are equal to the normal impedance:<br/>
+<em>Z<sub>S,0</sub>≈ Z<sub>S</sub></em> <br/>
+<em>Z<sub>S,2</sub>≈ Z<sub>S</sub></em> </p>
+<a href="https://www.phasetophase.nl/boek/boek_2_8.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_8.6"></div>
+<br/>
+<h2>8.6 Load</h2>
+<p>The load in an electrical grid is the sum of currents drawn by an unspecified mix of devices of various kinds, such as motors, lighting, and power electronics. In industry, the load mainly consists of motors. In a residential area, it mainly consists of lighting and, to a lesser extent, motors and electronic devices. On a national scale, the load is formed by industrial networks and distribution networks. It should be clear that the load does not exist. If a load does not need to be broken down into specific types, a general aggregated load will suffice.</p>
+<p>The load is specified by the absorbed three-phase power or the absorbed current and the power factor. Both can be converted into each other. For the three-phase power, the following applies:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.63.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.63</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>Where:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="60"><em>S</em></td>
+<td>three-phase complex power</td>
+</tr>
+<tr>
+<td><em>P</em></td>
+<td>three-phase active power</td>
+</tr>
+<tr>
+<td><em>Q</em></td>
+<td>three-phase reactive power</td>
+</tr>
+<tr>
+<td><em>U</em></td>
+<td>line-to-line voltage</td>
+</tr>
+<tr>
+<td><em>I</em></td>
+<td>fasestroom</td>
+</tr>
+<tr>
+<td><em>cos(φ)</em></td>
+<td>arbeidsfactor</td>
+</tr>
+</tbody>
+</table><br/>
+<p>By using Ohm's law, the load can also be expressed as a function of the voltage and the load impedance.<em><u>Z</u></em>:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.64.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.64</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The above formulas show that the load is not always constant but depends on the voltage. The load model is chosen according to the voltage-dependent behavior. If the load is represented by a constant impedance, the actual value of the absorbed load depends on the square of the voltage. In that case, the absorbed current increases linearly with increasing voltage. If the load is represented by a constant absorbed current, the actual value of the absorbed load is linearly proportional to the voltage. It is also possible to model the load with a constant absorbed power. In that case, the absorbed current decreases inversely with increasing voltage.</p>
+<p>The behavior of the load with respect to changes in voltage is determined by the mix of devices it represents. Specifically, the difference in voltage level is crucial for the mix of devices and thus for the voltage-dependent behavior. Table 8.11 provides an overview of the voltage-dependent behavior of various types of loads, where the load is composed of a mix of constant power and constant impedance (Kundur, 1994). In this context, a device can behave as follows:</p>
+<ul>
+<li>the impedance is constant, as with an incandescent lamp;</li>
+<li>the current drawn is constant, as with a power electronic device;</li>
+<li>the power consumption is constant, as with a motor.</li>
+</ul>
+<h5>Table 8.11  Load Behavior</h5>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td rowspan="2" valign="top" width="19%"><p> <strong>Type of load</strong> </p></td>
+<td rowspan="2" valign="top" width="19%"><p align="center"> <strong>Arbeidsfactor</strong> </p></td>
+<td colspan="2" valign="top" width="33%"><p align="center"> <strong>Constant share</strong> </p>
+<p align="center"> <strong>power (%)</strong> </p></td>
+<td colspan="2" valign="top" width="33%"><p align="center"> <strong>Constant share</strong> </p>
+<p align="center"> <strong>impedance (%)</strong> </p></td>
+</tr>
+<tr>
+<td valign="top" width="78"><p align="center">P<sub>constant</sub> </p></td>
+<td valign="top" width="71"><p align="center">Q<sub>constant</sub> </p></td>
+<td valign="top" width="78"><p align="center">P<sub>impedance, nominal</sub> </p></td>
+<td valign="top" width="78"><p align="center">Q<sub>impedance, nominal</sub> </p></td>
+</tr>
+<tr>
+<td valign="top" width="70"><p>Industrieel</p></td>
+<td valign="top" width="49"><p align="center">0.85</p></td>
+<td valign="top" width="78"><p align="center">90</p></td>
+<td valign="top" width="71"><p align="center">0</p></td>
+<td valign="top" width="78"><p align="center">10</p></td>
+<td valign="top" width="78"><p align="center">100</p></td>
+</tr>
+<tr>
+<td valign="top" width="70"><p>Zakelijk</p></td>
+<td valign="top" width="49"><p align="center">0.90</p></td>
+<td valign="top" width="78"><p align="center">35</p></td>
+<td valign="top" width="71"><p align="center">0</p></td>
+<td valign="top" width="78"><p align="center">65</p></td>
+<td valign="top" width="78"><p align="center">100</p></td>
+</tr>
+<tr>
+<td valign="top" width="70"><p>Woningen</p></td>
+<td valign="top" width="49"><p align="center">0.95</p></td>
+<td valign="top" width="78"><p align="center">30</p></td>
+<td valign="top" width="71"><p align="center">0</p></td>
+<td valign="top" width="78"><p align="center">70</p></td>
+<td valign="top" width="78"><p align="center">100</p></td>
+</tr>
+<tr>
+<td valign="top" width="70"><p>Verwarming</p></td>
+<td valign="top" width="49"><p align="center">1.00</p></td>
+<td valign="top" width="78"><p align="center">0</p></td>
+<td valign="top" width="71"><p align="center">0</p></td>
+<td valign="top" width="78"><p align="center">100</p></td>
+<td valign="top" width="78"><p align="center">100</p></td>
+</tr>
+<tr>
+<td valign="top" width="70"><p>Airconditioner</p></td>
+<td valign="top" width="49"><p align="center">0.82</p></td>
+<td valign="top" width="78"><p align="center">75</p></td>
+<td valign="top" width="71"><p align="center">0</p></td>
+<td valign="top" width="78"><p align="center">25</p></td>
+<td valign="top" width="78"><p align="center">100</p></td>
+</tr>
+<tr>
+<td valign="top" width="70"><p>Verlichting</p></td>
+<td valign="top" width="49"><p align="center">1.00</p></td>
+<td valign="top" width="78"><p align="center">25</p></td>
+<td valign="top" width="71"><p align="center">0</p></td>
+<td valign="top" width="78"><p align="center">75</p></td>
+<td valign="top" width="78"><p align="center">100</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>Accurately modeling the voltage-dependent behavior is challenging because the voltage-dependent behavior of individual devices is often not well known. The exact composition of the mix of device types is difficult to estimate and also varies seasonally. Sometimes figures are provided in the literature, but these can differ from one publication to another.</p>
+<p>In table 8.11, the sum of the constant power and constant impedance parts is always 100% for both active power and reactive power. The actual value of the load in this case is equal to the sum of the constant power share and the constant impedance share, adjusted to the actual voltage:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.65.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.65</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The impedance for the constant impedance share is calculated from the nominal voltage:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.66.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.66</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>Figure 8.17 illustrates the composition of a load, consisting of a constant impedance share and a constant power share. Here, the single-phase representation of the three-phase system is used.</p>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/8.17.png" width="570"/>
+<h5>Figure 8.17 	Single-phase representation of a three-phase load with constant impedance and constant power</h5>
+<p>In high voltage networks, a model with 100% constant power is generally used for all loads, because these loads are usually located behind regulated transformers, which ensure that the voltage on the loads remains constant within margins. In distribution networks, however, the load behavior tends more towards constant current and sometimes constant impedance.</p>
+<p>The load is not included in short-circuit calculations according to IEC 60909. For other fault analyses, the load can be modeled. In various fault analyses, it can happen that the voltage drops significantly. In such cases, it is not desirable for the load to behave as a constant power load. For such calculations, the load is always converted to an equivalent constant impedance load.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_8.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_8.7"></div>
+<br/>
+<h2>8.7 Generation</h2>
+<p>It is possible to model a certain amount of generated power without specifying the equipment in detail. The power can be generated with a synchronous generator or with a PV installation. In the load flow calculation, this is then modeled as a negative load. It is common for this negative load to be modeled with constant power behavior. This type of generation unit usually has a very limited short-circuit contribution and is typically quickly disconnected from the grid during short circuits. Therefore, generation modeled in this way does not participate in short-circuit calculations according to IEC 60909. For other fault analyses, this generation can be converted to an equivalent constant (negative) impedance load.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_8.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_8.8"></div>
+<br/>
+<h2>8.8 Generators</h2>
+<p>Generators are designed as synchronous or asynchronous generators, but the most common is the synchronous generator. These are available in sizes ranging from small to very large capacities. A generator is driven by a motor or a turbine. For smaller capacities up to a few MW, a motor resembling marine diesels or a gas engine is usually used. The gas engine-CHP is widely used in greenhouse horticulture. For larger capacities, starting from a few tens of MW, the generator is driven by a gas turbine or, as in large power plants, by steam turbines. The delivered power is determined by the motor or the turbine. For electrical calculations on a production unit, it is assumed that the mechanical power is constant. The delivered electrical power then depends on the efficiency, which is usually specified as a percentage. The specified active power of the production unit is usually the electrical power in W.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.67.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.67</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>In grid calculations, the synchronous generator is always modeled as a source of constant active electrical power.<em>P</em>). The reactive power (<em>Q</em>), which the generator can deliver, is largely independent of that. There are various limitations that follow from the power diagram of the generator.</p>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/8.18.png" width="717"/>
+<h5>Figure 8.18 Power diagram of the synchronous generator</h5>
+<p>The limitations are explained below.</p>
+<ul>
+<li>The limitation of the maximum drive power and the mechanical load of the machine, which determines the maximum electrical power. This is represented by a horizontal line.</li>
+<li>The limitation of the maximum stator current, which is calculated from the nominal power and the nominal voltage. This limitation is represented by an arc with a radius equal to the nominal apparent power.<em>S<sub>nom</sub></em>.</li>
+<li>The limitation of the rotor current, which results from the excitation of the generator. Generally speaking, the reactive power produced depends on the excitation.</li>
+<li>The limitation of loss of stability. With a small rotor current, the generator absorbs reactive power. However, a small rotor current also results in weaker excitation, which poses the risk that the synchronous generator may no longer run in sync with the grid. If that happens, the generator can no longer deliver its electrical power and must be disconnected.</li>
+</ul>
+<p>In the power plant, the power diagram is used to monitor the operation of the generator. In electrical engineering calculations, it is customary to limit by the maximum active power.<em>P<sub>max</sub></em>and the minimum and maximum reactive power<em>Q<sub>min</sub></em>en<em>Q<sub>max</sub></em>The produced reactive power depends on the excitation, which is set by an automatic control system. In practice, the generator is set to a fixed power factor or a voltage regulation.</p>
+<h6>Fixed power factor</h6>
+<p>This control option is also known as cos(φ) control. The regulation ensures that the reactive power is such that the ratio between active and reactive power remains constant. For use in load flow calculations, this translates to a source of constant active power.<em>P</em>and reactive power<em>Q</em>. This control option is often used in decentralized generation and in the industry.</p>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/8.19.png" width="716"/>
+<h5>Figure 8.19  Voltage regulation of the synchronous generator</h5>
+<h6>Spanningsregeling</h6>
+<p>Larger production units are often equipped with voltage regulation and will ensure that the voltage in the grid is maintained at a desired level by additionally supplying or reducing the amount of reactive power delivered. In island mode, small generators will also need to be equipped with voltage regulation. The voltage regulation adjusts the excitation in such a way that the voltage matches a set value.<em>U<sub>ref</sub></em>. In figure 8.19, this is illustrated with the difference<img alt="" height="18" src="./modellen_files/formule-spanningsregeling.png" width="108"/>, which must be zero. As a result, the reactive power produced can take on any value between the minimum and maximum reactive power.<em>Q<sub>min</sub></em>en<em>Q<sub>max</sub></em>.</p>
+<h6>Behavior during a short circuit</h6>
+<p>A synchronous generator contributes to the short-circuit current. The contribution is determined by the generator impedance. For a synchronous generator, in addition to the nominal apparent power, the stator resistance and the subtransient reactance are also known. This resistance and reactance are usually given in per unit, normalized to the base impedance of the generator itself. The generator impedance is then calculated as follows:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.68.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.68</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<p>with:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="60"><em>r<sub>G</sub></em></td>
+<td>stator resistance (pu)</td>
+</tr>
+<tr>
+<td><em>x<sub>d</sub>"</em></td>
+<td>subtransient reactance (pu)</td>
+</tr>
+<tr>
+<td><em>Z<sub>G,base</sub></em></td>
+<td>generator base impedance:<em>Z<sub>G,base</sub>= U<sub>G,nom</sub><sup>2</sup>/ S<sub>nom,G</sub></em></td>
+</tr>
+</tbody>
+</table><br/>
+<p>For use in short-circuit calculations according to IEC 60909, the value of the generator impedance must be corrected by a factor<em>K<sub>G</sub></em>according to the formula below:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.69.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.69</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<p>with:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="60"><em>U<sub>nom</sub></em></td>
+<td>nominal node voltage</td>
+</tr>
+<tr>
+<td valign="top"><em>U<sub>G,nom</sub></em></td>
+<td>nominal voltage of the generator</td>
+</tr>
+<tr>
+<td valign="top"><em>c<sub>max</sub></em></td>
+<td>voltage parameter for the short-circuit calculation; 1.05 for LV networks with a tolerance of +6% and in all other cases 1.1</td>
+</tr>
+<tr>
+<td valign="top"><em>φ<sub>G,nom</sub></em></td>
+<td>nominal angle between current and voltage of the generator, derived from the nominal power factor</td>
+</tr>
+</tbody>
+</table><br/>
+<p>This results in the generator impedance corrected for IEC 60909 being equal to:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.70.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.70</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The correction factor is introduced because in the calculation the corrected node voltage<em>c<sub>max</sub>·U<sub>nom</sub>/√3</em>is used instead of the subtransient voltage that occurs in the synchronous machine.</p>
+<p>If the stator resistance is not specified, the following guidelines according to IEC 60909 may be assumed:</p>
+<ul>
+<li> <em>R<sub>G</sub>= 0.05·X<sub>d</sub>"</em>for generators with<em>U<sub>G,nom</sub>&gt; 1 kV and S<sub>G,nom</sub>≥ 100 MVA</em></li>
+<li> <em>R<sub>G</sub>= 0.07·X<sub>d</sub>"</em>for generators with<em>U<sub>G,nom</sub>&gt; 1 kV and S<sub>G,nom</sub>&lt; 100 MVA</em></li>
+<li> <em>R<sub>G</sub>= 0.15·X<sub>d</sub>"</em>for generators with<em>U<sub>G,nom</sub>≤ 1 kV</em></li>
+</ul>
+<p>The impedance for the inverse system is generally considered to be equal to the impedance of the normal system.</p>
+<p>The stator windings of the generator are usually connected in a delta configuration, so there is no neutral point and no connection to neutral or ground. If the generator does have a neutral point that is brought out and grounded, there is a homopolar impedance, which for short-circuit calculations according to IEC 60909 must also be multiplied by the correction factor:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.71.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.71</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The correction factor is not applied to any grounding impedance that may be present between the neutral point and the ground.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_8.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_8.9"></div>
+<br/>
+<h2>8.9 Motors</h2>
+<p>Motors are designed as synchronous or asynchronous machines. Synchronous motors are usually used for very high power in industrial networks. The handling of these motors for use in load flow and short-circuit calculations is done in a manner entirely similar to that of synchronous generators (Phase, 2006-2).</p>
+<p>Most motors are designed as asynchronous machines with a wound rotor or a squirrel-cage rotor. Their operation is based on the fact that the currents with frequency<em>f<sub>stator</sub></em>in the three-phase stator winding generate a rotating electromagnetic field in the air gap between rotor and stator.
+          This electromagnetic field induces currents in the rotor windings with frequency<em>f<sub>rotor</sub> </em>The rotor currents, in turn, generate a rotating electromagnetic field in the air gap and attempt to counteract their cause according to Lenz's law. As a result, a torque is produced, and the rotor begins to rotate in the direction of the electromagnetic field generated by the stator. The rotor speed<em>n<sub>rotor</sub></em>deviates from the synchronous speed<em>n<sub>stator</sub></em>, hence the name asynchronous machine. The rotational speed depends on the number of magnetic pole pairs.<em>p</em>in the machine:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.72.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.72</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>Since the rotational speed of the asynchronous motor always differs from the synchronous speed, it is referred to as slip.<em>s</em>:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.73.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.73</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>This demonstrates that the frequency of the currents in the rotor windings is proportional to the difference between the synchronous speed and the rotor speed.</p>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/8.20.png" width="711"/>
+<h5>Figure 8.20 Torque-speed curve and slip of the asynchronous motor</h5>
+<p>An important curve that describes the motor's behavior at different speeds is the torque-speed curve. Figure 8.20 illustrates the torque-speed curve of a motor with two pole pairs and a synchronous speed of 1500 revolutions per minute. The maximum torque is 1 pu and is delivered at a slip of 0.2; thus, at a speed of 1200 revolutions per minute. The curve shows that the normal operating range is between 1200 and 1500 revolutions per minute. If the motor is loaded from no load to maximum torque, the speed will drop from 1500 to 1200 revolutions per minute according to the curve. If the motor is loaded beyond the maximum torque, it cannot deliver this torque and will come to a stop according to the curve. The motor 'trips' at the maximum torque (the trip torque). In the region where the asynchronous machine runs faster than the synchronous speed, it is mechanically driven by the coupled load instead of being loaded and operates as a generator.</p>
+<p>The specified power of the motor is usually the mechanical power in W. The electrical power drawn from the grid then depends on the efficiency, which is typically given as a percentage.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.74.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.74</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The nominal apparent power is calculated from the nominal mechanical power, the nominal efficiency, and the nominal power factor:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.75.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.75</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The nominal current is calculated from the nominal apparent power and the nominal voltage:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.76.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.76</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>For a load flow calculation, a constant active power can be assumed for the motor model, depending on the required mechanical power. The asynchronous motor always absorbs reactive power. However, the amount of absorbed reactive power is less straightforward to describe and depends on the voltage and mechanical power. Figure 8.21 shows the efficiency and the power factor (cos(φ)) as a function of the mechanical load. It is noticeable that the efficiency curve follows a relatively flat line over the largest working area. The value of the power factor (cos(φ)) decreases rapidly with decreasing mechanical load. The behavior of the motor becomes increasingly inductive with decreasing load. At no load, the motor almost exclusively absorbs reactive power. This is caused by the main field reactance in the motor.</p>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/8.21.png" width="711"/>
+<h5>Figure 8.21 Efficiency and power factor (cos(phi)) of the asynchronous motor as a function of power</h5>
+<p>From this data, the motor impedances can be derived (Cotton, 1967). For the load flow, the following simplification is often sufficient:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.77.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.77</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>with:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="60"><em>P<sub>M</sub></em></td>
+<td>electrically consumed active power</td>
+</tr>
+<tr>
+<td><em>Q<sub>M</sub></em></td>
+<td>reactive power consumed for the chosen operating point</td>
+</tr>
+<tr>
+<td><em>cos(φ)</em></td>
+<td>power factor for the chosen operating point</td>
+</tr>
+<tr>
+<td><em>alpha</em></td>
+<td>distribution between the constant power and constant impedance part</td>
+</tr>
+</tbody>
+</table><br/>
+<p>From the above, it is evident that the active electrical power depends on the requested mechanical power and that the reactive power depends on the requested mechanical power and the voltage. For the distribution α between the constant power and constant impedance part, a value of 0.5 can be chosen.</p>
+<h6>Starting the asynchronous motor</h6>
+<p>An asynchronous machine can be considered a special type of transformer with a small air gap in the magnetic circuit. Therefore, a squirrel-cage motor can be seen as a transformer permanently short-circuited on the secondary side, where the resistance in the secondary circuit depends on the rotational speed. When starting the motor from a standstill, the slip is<em>s</em>equal to 1. As a result, the resistance<em>R<sub>rotor</sub></em>in the rotor circuit
+          small and the starting current is large. The starting current of an asynchronous motor is always specified and is typically in the range of 6 to 8 times the
+          nominal current. In the specifications, this is usually referred to as the starting current ratio<em>I<sub>a</sub>/I<sub>nom</sub></em>specified. The power factor at startup is usually small and is in the order of 0.1. Sometimes the<em>cos(φ)<sub>a</sub></em>) specified and sometimes the<em>R<sub>M</sub>/X<sub>M</sub></em>ratio at startup. Below is an indication of how these values can be converted into each other.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.78.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.78</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>There are several ways to limit the high inrush current of an asynchronous motor. These methods essentially involve reducing the voltage on the stator windings:</p>
+<ul>
+<li>DOL: Direct On Line. In this method, the starting current is not limited and is directly connected to the grid.</li>
+<li>Star-Delta Connection. In this method, the stator windings are initially connected in a star configuration during startup and are switched to a delta configuration after startup. The voltage applied to the motor coils in the startup situation (star connection) is a factor of √3 lower than in the final situation (delta connection). As a result, the starting current through the stator windings is a factor of √3 lower than in the DOL situation.</li>
+<li>Autotransformer. In this method, during startup, a reduced voltage is applied to the stator windings using an autotransformer.</li>
+<li>Soft starter. The motor starts with the help of a power electronic controller. The power electronics ensure that the voltage at the motor terminals is reduced during startup, thereby limiting the inrush current. A disadvantage of using soft starters is that the starting torque is significantly reduced.</li>
+</ul>
+<h6>Behavior during a short circuit</h6>
+<p>Asynchronous motors contribute to the short-circuit current because they are still running at nominal speed when the short circuit occurs. From that moment, the motor will not suddenly come to a stop but will continue to operate as a generator for a short period. Until the motor comes to a complete stop, it will thus contribute to the short-circuit current. The magnitude of the short-circuit current contribution is determined by the short-circuit impedance of the motor, which is calculated from the inrush current ratio.<em>I<sub>a</sub>/I<sub>nom</sub>:</em></p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.78.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.79</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>With the help of the<em>R<sub>M</sub>/X<sub>M</sub></em>ratio of the<em>cos(φ)<sub>a</sub></em>) during startup, the distribution between<em>R<sub>M</sub></em>en<em>X<sub>M</sub></em>calculated:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.80.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.80</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>If the<em>R<sub>M</sub>/X<sub>M</sub></em>ratio of the<em>cos(φ)<sub>a</sub></em>) are not specified during startup, the following assumptions can be made according to IEC 60909:</p>
+<table border="1" bordercolor="#CBCBCB" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="254"><p> <strong>Motortype</strong> </p></td>
+<td valign="top" width="50"><p> <em><strong>R<sub>M</sub>/X<sub>M</sub></strong> </em></p></td>
+</tr>
+<tr>
+<td valign="top" width="254"><p>Medium voltage motor; power per pole pair ≥ 1 MW</p></td>
+<td valign="top" width="50"><p>0.10</p></td>
+</tr>
+<tr>
+<td valign="top" width="254"><p>Medium voltage motor; power per pole pair &lt; 1 MW</p></td>
+<td valign="top" width="50"><p>0.15</p></td>
+</tr>
+<tr>
+<td valign="top" width="254"><p>Laagspanningsmotor</p></td>
+<td valign="top" width="50"><p>0.42</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The short-circuit impedance in the inverse system is taken to be the same as that of the normal system. Asynchronous motors are usually connected in a delta configuration, resulting in an infinite homopolar impedance. If the stator windings of the motors are connected in a star configuration with a grounded neutral point during normal operation, the homopolar impedance must be specified by the manufacturer.</p>
+<h6>With or without short-circuit current contribution</h6>
+<p>Motors that are directly connected to the grid during normal operation will always contribute to the short-circuit current in short-circuit situations. If the motor is controlled using a converter, it depends on the converter whether and how much it contributes to the short-circuit current. Most converters do not allow current to flow in the reverse direction and therefore will not contribute to the short-circuit current. There are also converters that do allow reverse flow. These so-called 'Reversible static converter-fed drives' will contribute to the short-circuit current to a lesser extent. The IEC 60909 standard assumes the following:</p>
+<ul>
+<li> <em>I<sub>a</sub>/I<sub>nom</sub>= 3</em></li>
+<li> <em>R<sub>M</sub>/X<sub>M</sub>= 0.1</em></li>
+</ul>
+<a href="https://www.phasetophase.nl/boek/boek_2_8.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_8.10"></div>
+<br/>
+<h2>8.10 Converters and rectifiers</h2>
+<p>Converters usually power motors that need to run at variable speeds. Rectifiers, on the other hand, power different processes. Railways and tramways are also powered via rectifiers. Therefore, the electrical behavior from the grid's perspective is very diverse. In most load flow calculations, a simple general load model is often sufficient, where the load is determined by the underlying process. It is also often assumed that the power factor is equal to 1, so no reactive power is consumed.</p>
+<p>Rectifiers do not contribute to the short-circuit current. Converters sometimes provide a short-circuit current contribution. For this, a value of up to 1.2 times the nominal current is usually assumed.</p>
+<a href="https://www.phasetophase.nl/boek/boek_2_8.html#top"><span class="glyphicon glyphicon glyphicon-arrow-up"></span></a>
+<div id="_8.11"></div>
+<br/>
+<h2>8.11 Wind Turbine Generators</h2>
+<p>The power generated by the wind turbine is produced by a synchronous or asynchronous generator or by a doubly-fed asynchronous generator, which is driven directly or via a gearbox by the wind turbine blades. The generator is connected to the grid either through a converter or directly. Figure 8.22 shows the generated power as a function of wind speed. The power depends on the cube of the wind speed. Below a certain low wind speed, the power is zero because the generator is no longer able to produce net power. Above a certain wind speed, the delivered power is limited by the nominal power of the generator. The characteristic then shows a flat curve, and the power no longer increases with increasing wind speed. Above an even higher wind speed, the wind turbine is taken out of operation to prevent mechanical damage.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.81.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.81</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>with:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td width="60"><em>P<sub>nom</sub></em></td>
+<td>nominal generator power (MW)</td>
+</tr>
+<tr>
+<td><em>V<sub>nom</sub></em></td>
+<td>nominal wind speed (m/s)</td>
+</tr>
+<tr>
+<td><em>V<sub>act</sub></em></td>
+<td>actual wind speed (m/s)</td>
+</tr>
+</tbody>
+</table><br/>
+<p>In asynchronous generators, there is 'slip'. This is the deviation of the generator speed relative to the synchronous speed. It is calculated as follows:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.82.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.82</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/8.22.png" width="711"/>
+<h5>Figure 8.22 Power characteristic of a wind turbine</h5>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/8.23.png" width="711"/>
+<h5>Figure 8.23 Slip as a function of wind speed</h5>
+<p>In the example of figure 8.23, a slip of +35% corresponds to 975 RPM and a slip of -35% corresponds to 2025 RPM. A higher rotational speed is not allowed to prevent damage. The relationship between rotational speed and wind speed is a characteristic of the wind turbine.</p>
+<p>The rotational speed of the rotor is much lower than the electrical frequency. Therefore, a gearbox and multipole machines are often used. There are four main types of wind turbine systems:</p>
+<ol>
+<li>fixed-speed wind turbine with an asynchronous machine</li>
+<li>variable speed wind turbine with an asynchronous machine or with a synchronous machine</li>
+<li>variable speed wind turbine with a multipole synchronous generator or a multipole permanent magnet synchronous generator</li>
+<li>variable speed wind turbine with a doubly-fed asynchronous generator</li>
+</ol>
+<h6>Fixed speed wind turbine</h6>
+<p>The asynchronous machine in a fixed-speed wind turbine is directly connected to the grid. The rotor speed is essentially determined by the gearbox and the number of pole pairs of the generator. This type of wind turbine often has two fixed speeds: one for low wind speed and one for high wind speed. This allows the wind turbine to operate more frequently around an optimal torque. This system was widely used between 1980 and 1990.</p>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/8.24.jpg" width="710"/>
+<h5>Figure 8.24 Fixed-speed wind turbine with an asynchronous generator</h5>
+<p>The asynchronous machine in this wind turbine delivers active power and absorbs reactive power. The active power depends on the wind speed. The reactive power is determined by the machine parameters. A capacitor bank is included in the wind turbine to compensate for the reactive power. In many cases, the capacitors are automatically switched on depending on the delivered power. In the event of a short circuit, the wind turbine contributes to the short-circuit current.</p>
+<p>Figure 8.25 shows a model of this wind turbine. The asynchronous generator is connected in the nacelle via several parallel cables. It is assumed that the transformer is located at the base of the mast. If the transformer were located in the nacelle, the parallel cables would be unnecessary. The capacitors for reactive power compensation are modeled as a single capacitor connected to the secondary side of the transformer. The capacity of the capacitor depends on the produced active power. It is clearly visible that the asynchronous generator produces active power and absorbs reactive power. This reactive power is compensated by the capacitor.</p>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/8.25.png" width="755"/>
+<h5>Figure 8.25 	Model of a fixed-speed wind turbine with an asynchronous generator</h5>
+<h6>Variable speed wind turbine with a converter</h6>
+<p>In the wind turbine system in figure 8.26, the stator of the generator is connected to the grid via a converter. The generator can be an asynchronous squirrel-cage generator or a synchronous generator. The gearbox is designed such that the maximum rotor speed corresponds to the nominal speed of the generator.</p>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/8.26.jpg" width="710"/>
+<h5>Figure 8.26 	Variable speed wind turbine with a synchronous/asynchronous generator</h5>
+<p>In the case of a synchronous generator, it can be equipped with a higher number of pole pairs, making a gearbox unnecessary (Figure 8.27). Since there is extensive experience with the application of these 'full-power' converter/generator systems, the concept is well-developed.</p>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/8.27.jpg" width="710"/>
+<h5>Figure 8.27 Variable speed wind turbine with a synchronous generator without a gearbox</h5>
+<p>The wind turbine delivers active power. The exchange of reactive power with the grid is regulated by the converter. In the event of a short circuit, the wind turbine provides little to no contribution to the short-circuit current.</p>
+<p>Figure 8.28 shows a model of this wind turbine. The generator is connected in the nacelle via several parallel cables. It is assumed that the transformer is located at the base of the tower. If the transformer were located in the nacelle, the parallel cables would be unnecessary. Since the generator is positioned behind a converter, it is modeled together with the converter as a synchronous generator with a fixed cos(φ). In the example, the cos(φ) is equal to 0.9835.</p>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/8.28.png" width="698"/>
+<h5>Figure 8.28 	Model of a variable speed wind turbine with a converter</h5>
+<p>To limit the maximum short-circuit contribution of the generator with converter to 1.2 times the nominal generator current, the subtransient reactance<em>X<sub>d</sub>"</em>of the synchronous generator is calculated as follows:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.83.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.83</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>with:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.84.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.84</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>Example:</p>
+<p> <em>S<sub>G,nom</sub>= 3 MVA<br/>U<sub>G,nom</sub>= 0.96 kV<br/>I<sub>Gnom</sub>= 1.8 kA<br/>I<sub>k</sub>" = 2.2 kA<br/>Z<sub>G</sub>= 0.256 Ω</em></p>
+<p>Neglecting the generator resistance, this results in the following for the subtransient reactance:<em>x<sub>d</sub>" = 0.83 pu</em>.</p>
+<h6>Variable speed wind turbine with a doubly-fed induction generator (DFIG)</h6>
+<p>The wind turbine system in figure 8.29 is equipped with a doubly-fed induction generator (DFIG). This means that the stator is directly connected to the grid and the rotor winding is connected to a converter via slip rings. Particularly because the power electronic converter only needs to supply about a quarter of the total power, this concept has become very popular for variable speed wind turbines, as the losses in the converter are much less than in a system with a 'full-power' converter. Additionally, the converter is cheaper.</p>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/8.29.jpg" width="710"/>
+<h5>Figure 8.29 Variable speed wind turbine with a doubly-fed synchronous generator</h5>
+<p>The converter is a 'back-to-back' converter and consists of two converters with a direct current link between them. The converter connected to the rotor windings controls the torque, speed, and power factor at the stator terminals.</p>
+<p>During normal operation, the wind turbine behaves like a synchronous machine. By regulating the frequency of the current through the rotor winding, the generator can still run synchronously at any desired rotor speed. The rotor winding is supplied with an alternating current in such a way that the electromagnetic field in the air gap compensates for the difference between the rotor and stator fields.</p>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/8.30.png" width="562"/>
+<h5>Figure 8.30 Power balance of wind turbine with DFIG</h5>
+<p>The mechanical power is calculated analogously to equation 8.81 as a function of wind speed. The following equation describes the relationship between the mechanical and the total electrical power.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.85.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.85</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>In this equation, the efficiency represents the conversion of the entire system, including the gearbox, the generator, and the converter. The electrical power of the wind turbine is equal to the difference between the stator power and the rotor power, assuming that for positive values, the stator supplies electrical power and the rotor absorbs electrical power:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.86.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.86</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>The distribution between the stator power and the rotor power is determined by the slip.<em>s</em>.</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.87.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.87</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>In a wind turbine driven by sufficient wind, the generator operates 'above synchronous' and the slip is negative. For example, with a slip of -0.3 (-30%), the rotor speed is 1.3 times the synchronous speed. The stator power is then 0.77 times<em>P<sub>el</sub></em>and the rotor power is then -0.23 times<em>P<sub>el</sub></em>That means that at full power, approximately three-quarters of the wind turbine power comes from the stator circuit and one-quarter from the rotor circuit. At no load, the slip is zero, and both the stator and rotor power are zero.</p>
+<p>In the event of a short circuit in the grid, the wind turbine contributes to this short circuit, and the stator current becomes large. Consequently, the rotor current will also become large. To protect the power electronics in the converter, the rotor circuit is immediately short-circuited. As a result, the generator behaves as an asynchronous machine during the short circuit.</p>
+<img alt="pics_2.8" class="img-responsive-leon-15px center-block" src="./modellen_files/8.31.png" width="697"/>
+<h5>Figure 8.31 	Model of a variable speed wind turbine with a doubly-fed induction generator</h5>
+<p>Figure 8.31 shows a model of this wind turbine. The generator is connected in the nacelle via several parallel cables: separately for the stator circuit and the rotor circuit. It is assumed that the transformer is located at the base of the mast. If the transformer were located in the nacelle, the parallel cables would be unnecessary. The transformer is a non-regulable three-winding transformer (Dyn5yn5) that feeds the rotor and stator circuits of the doubly-fed asynchronous generator. In the model, the generator is split into the rotor and stator circuits. The stator is modeled with the model of a synchronous generator. The rotor is connected via a converter. The rotor power is modeled with a constant power load.</p>
+<p>The active power delivered by the generator is calculated using equations 8.81 and 8.85. The distribution of the active powers delivered by the stator and rotor depends on the slip (Figure 8.23) and is calculated using equation 8.87.</p>
+<p>It is assumed that the converter does not supply reactive power, so the total reactive power is supplied by the stator of the generator. The value follows from the cos(φ), assuming that the generator supplies reactive power:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.88.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.88</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>During a short circuit, a protection device (crowbar) directly shorts the rotor circuit of the generator, causing the machine's character to change from a doubly-fed to a normal asynchronous generator, which contributes to the short-circuit current. The converter will not contribute to the short-circuit current. The behavior during a short circuit is primarily determined by the subtransient impedance.<em>z<sub>d</sub>"</em>, the value of which can be calculated from the maximum short-circuit current contribution:</p>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tbody>
+<tr>
+<td valign="top" width="90%"><img alt="formules_2.8" src="./modellen_files/formule-8.89.png"/></td>
+<td width="2%"><p align="left">[</p></td>
+<td width="6%"><p align="center">8.89</p></td>
+<td width="2%"><p align="right">]</p></td>
+</tr>
+</tbody>
+</table><br/>
+<p>Hereafter, the distribution over<em>r<sub>g</sub></em>en<em>x<sub>d</sub>"</em>according to equation 8.80 calculated from the R/X ratio of the generator.</p>
+</div>
+<div class="col-lg-2 hidden-md"> </div>
+</div>
+</div>
+</div>
+<div class="container-fluid-footer" id="includeFooter"><div class="container">
+<div class="row">
+<div class="text-justify col-xs-6 col-sm-3">
+<img alt="ptp_logo" src="./modellen_files/logo-s-360px-grijs.png" width="230"/>
+</div>
+<div class="col-xs-6 col-sm-9">
+<p> Phase to Phase is onderdeel van <a href="https://www.technolution.nl/">Technolution</a>. © 2009-2021 </p>
+</div>
+</div>
+</div></div></body></html>
